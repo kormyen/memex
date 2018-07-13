@@ -1,0 +1,1066 @@
+DATABASE = {}
+
+DATABASE.memex = `
+AGAINST BEAUTY IN PHYSICS
+  PERS : faun
+  SRCE : Merveilles
+  LINK : http://rationallyspeakingpodcast.org/show/rs-211-sabine-hossenfelder-on-the-case-against-beauty-in-phy.html
+  TYPE : podcast
+  DATE : 12018-07-03
+  TAGS : philosophy, science
+  QOTE : 'It hit me pretty hard. Some of this stuff is really philosophically potent in a way that's easy to overlook.' - faun
+  SEEN : true
+  REVI : true
+
+HACKETY HACK
+  PERS : cblgh
+  SRCE : Merveilles
+  LINK : https://vimeo.com/5047563
+  TYPE : lecture
+  DATE : 12018-07-03
+  TAGS : code
+  QOTE : 'It's super inspiring in general, but he also presents a game he made to teach programming without the players realizing until it's too late and they're already wizards' - cblgh
+  SEEN : true
+
+FOR AND AGAINST EDU
+  PERS : neauoire
+  SRCE : Merveilles
+  LINK : https://80000hours.org/podcast/episodes/bryan-caplan-case-for-and-against-education/
+  TYPE : podcast
+  DATE : 12018-07-03
+  TAGS : philosophy
+  NOTE : Testing anti school sentiments
+  SEEN : false
+
+OCCAM'S RAZOR
+  LINK : https://en.wikipedia.org/wiki/Occam%27s_razor
+  TYPE : article
+  TAGS : philosophy
+  DATE : 12018-07-03
+  SEEN : false
+
+NEAUOIRE AESTHETICS
+  PERS : neauoire
+  SRCE : Merveilles
+  LINK : https://wiki.xxiivv.com/#aesthetics
+  TYPE : article
+  TAGS : philosophy, design, inspiration
+  DATE : 12018-07-03
+  SEEN : true
+  REVI : true
+
+SQUARING THE TRIANGLE
+  PERS : cblgh
+  SRCE : Merveilles
+  LINK : http://www.aaronsw.com/weblog/squarezooko
+  TYPE : article
+  TAGS : p2p
+  DATE : 12018-07-03
+  QOTE : Secure, Decentralized, Human-Readable Names
+  SEEN : false
+
+SETHIAN GLYPH RUNE GAME
+  PERS : rezmason
+  SRCE : Merveilles
+  LINK : https://gqul.itch.io/sethian
+  TYPE : game
+  DATE : 12018-07-03
+  NOTE : Glyph / rune game
+  SEEN : false
+
+LIFE WITHOUT PLASTIC
+  PERS : neauoire
+  SRCE : Merveilles
+  LINK : https://www.lifewithoutplastic.com/store/
+  TYPE : store
+  TAGS : env
+  DATE : 12018-07-03
+  SEEN : false
+
+THOREAU JOURNAL
+  PERS : neauoire
+  SRCE : Merveilles
+  LINK : https://www.walden.org/wp-content/uploads/2016/02/Chapter1.pdf
+  TYPE : article
+  DATE : 12018-07-03
+  SEEN : false
+
+CLOCK OF THE LONG NOW
+  LINK : https://en.wikipedia.org/wiki/Clock_of_the_Long_Now
+  TYPE : article
+  DATE : 12018-07-03
+  TAGS : time
+  SEEN : true
+  REVI : true
+
+GAMEDEV TOOLS +
+  LINK : https://www.slideshare.net/KatharineNeil/game-design-tools-for-when-spreadsheets-and-flowcharts-arent-enough
+  TYPE : lecture
+  DATE : 12018-07-03
+  TAGS : gamedev
+  SEEN : false
+
+MOD SUPPORT IN UNITY
+  LINK : http://nihilocrat.tumblr.com/post/157890290188/mod-support-in-unity
+  TYPE : article
+  DATE : 12018-07-03
+  TAGS : gamedev
+  SEEN : false
+
+PSALM 46
+  LINK : http://ludix.com/moriarty/psalm46.html
+  TYPE : lecture
+  DATE : 12018-07-03
+  TAGS : gamedev
+  SEEN : true
+  REVI : true
+
+C# GC
+  LINK : http://benbowen.blog/post/three_garbage_examples/
+  TYPE : article
+  DATE : 12018-07-03
+  TAGS : gamedev, code
+  SEEN : true
+  REVI : true
+
+DECIDE TO MAKE
+  LINK : http://www.gdcvault.com/play/1023135/Deciding-What-to-Make-A
+  TYPE : lecture
+  DATE : 12018-07-03
+  TAGS : gamedev
+  NOTE : Deciding what to make.
+  SEEN : false
+
+ALT WAD
+  PERS : Phil James
+  LINK : https://unwinnable.com/2013/10/24/lost-worlds-a-l-t/
+  TYPE : article
+  DATE : 12018-07-03
+  TAGS : gamedev
+  NOTE : ALT explained. Finish playing it.
+  SEEN : true
+
+PROC GEN RESEARCH
+  LINK : http://pcgbook.com/
+  TYPE : book
+  TAGS : gamedev
+  QOTE : 'generation in games - a textbook and an overview of current research'
+  SEEN : false
+  DATE : 12018-07-03
+
+TYPOGRAPHY FOR UI
+  LINK : https://viljamis.com/2016/typography-for-user-interfaces/
+  TYPE : article
+  TAGS : ux
+  SEEN : true
+  DATE : 12018-07-03
+
+EARLY ACCESS STUDY
+  LINK : https://www.gamasutra.com/view/news/275719/7_successful_Early_Access_games_that_all_developers_should_study.php
+  TYPE : article
+  DATE : 12018-07-03
+  TAGS : gamedev
+  SEEN : true
+
+CYCLIC DUNGEON
+  LINK : http://ctrl500.com/tech/handcrafted-feel-dungeon-generation-unexplored-explores-cyclic-dungeon-generation/
+  TYPE : article
+  DATE : 12018-07-03
+  TAGS : gamedev
+  SEEN : false
+
+GENERATE GREAT DUNGEONS
+  LINK : https://www.rockpapershotgun.com/2017/03/10/how-unexplored-generates-great-roguelike-dungeons/
+  TYPE : article
+  DATE : 12018-07-03
+  TAGS : gamedev
+  SEEN : false
+
+TECHNOLOGIST CLIMATE REACT
+  LINK : http://worrydream.com/ClimateChange/
+  TYPE : article
+  DATE : 12018-07-03
+  TAGS : advice, env
+  SEEN : true
+
+NETWORKED PHYSICS
+  LINK : https://gafferongames.com/post/introduction_to_networked_physics/
+  TYPE : article
+  DATE : 12018-07-03
+  TAGS : gamedev
+  SEEN : true
+
+MEAT
+  LINK : http://www.terrybisson.com/page6/page6.html
+  TYPE : story
+  DATE : 12018-07-03
+  QOTE : 'Meat. They're made out of meat.'
+  SEEN : true
+  TAGS : fiction
+
+ENCRYPT LIFE
+  LINK : https://medium.freecodecamp.org/tor-signal-and-beyond-a-law-abiding-citizens-guide-to-privacy-1a593f2104c3
+  TYPE : article
+  DATE : 12018-07-03
+  TAGS : privacy
+  SEEN : true
+
+INTERACTION DESIGN FUTURE
+  LINK : http://worrydream.com/ABriefRantOnTheFutureOfInteractionDesign/
+  TYPE : article
+  DATE : 12018-07-03
+  TAGS : ux, design
+  SEEN : true
+
+MAGIC INK
+  LINK : http://worrydream.com/MagicInk/
+  TYPE : article
+  DATE : 12018-07-03
+  TAGS : ux, design
+  SEEN : true
+
+PROCEDURAL WORLD NARRATIVES
+  LINK : https://www.gamasutra.com/blogs/JoshGe/20161116/285647/Weaving_Narratives_into_Procedural_Worlds.php
+  TYPE : article
+  DATE : 12018-07-03
+  TAGS : gamedev
+  SEEN : false
+
+SIGNAL TOLVA
+  LINK : https://killscreen.com/articles/quick-look-landscape-art-signal-tolva/
+  TYPE : article
+  DATE : 12018-07-03
+  TAGS : gamedev
+  QOTE : 'I would have been even more cryptic if I thought I could get away with it'
+  SEEN : false
+
+FOLDED LEVEL DESIGN
+  LINK : http://critical-gaming.com/blog/2008/8/5/folded-level-design.html
+  TYPE : article
+  DATE : 12018-07-03
+  TAGS : gamedev, inspiration
+  QOTE : 'I want to focus on a type of level design that is like climbing a tall tree to rescue a cat; going one way provides one kind of challenge (ie. climbing a tree), and getting back is a different challenge that builds upon the original challenge by adding a layer of depth/complexity (ie. climbing down a tree with a cat in one hand). I call this kind of level design folded level design.'
+  SEEN : false
+
+STEAM CONTROLLER LARS
+  LINK : https://www.gamasutra.com/blogs/LarsDoucet/20170125/289904/The_Steam_Controller_Configurators_Untapped_Power.php
+  TYPE : article
+  DATE : 12018-07-03
+  TAGS : gamedev
+  SEEN : true
+
+COST DISEASE
+  LINK : http://slatestarcodex.com/2017/02/09/considerations-on-cost-disease/
+  TYPE : article
+  DATE : 12018-07-03
+  SEEN : false
+
+RV BATTERY RANT
+  LINK : https://handybobsolar.wordpress.com/the-rv-battery-charging-puzzle-2/
+  TYPE : article
+  DATE : 12018-07-03
+  TAGS : offgrid
+  NOTE : rant
+  SEEN : true
+
+HLD DIFFICULTY
+  LINK : https://www.gamasutra.com/view/news/269957/How_Hyper_Light_Drifter_balances_difficulty_with_fairness.php
+  TYPE : article
+  DATE : 12018-07-03
+  TAGS : gamedev
+  SEEN : false
+
+CAVE ALLEGORY
+  LINK : http://www.historyguide.org/intellect/allegory.html
+  TYPE : article
+  DATE : 12018-07-03
+  TAGS : philosohpy
+  SEEN : false
+
+NEWCOMB'S PARADOX
+  PERS : faun
+  SRCE : Merveilles
+  LINK : https://en.wikipedia.org/wiki/Newcomb's_paradox
+  TYPE : article
+  DATE : 12018-07-04
+  TAGS : philosohpy, paradox
+  SEEN : true
+  REVI : true
+
+GNOSTICISM
+  PERS : faun
+  SRCE : Merveilles
+  LINK : https://en.wikipedia.org/wiki/Gnosticism
+  TYPE : article
+  DATE : 12018-07-04
+  TAGS : philosohpy
+  SEEN : true
+  REVI : true
+
+KOAN
+  PERS : faun
+  SRCE : Merveilles
+  TYPE : term
+  DATE : 12018-07-04
+  QOTE : "A paradoxical anecdote or riddle without a solution, used in Zen Buddhism to demonstrate the inadequacy of logical reasoning and provoke enlightenment."
+  TAGS : philosohpy, paradox
+  SEEN : true
+  REVI : true
+
+HISTORICAL MINI DOC GERMANY POST WW
+  LINK : https://www.youtube.com/watch?v=DJUf8MxbcdA
+  TYPE : video
+  DATE : 12018-07-04
+  TAGS : politics
+  SEEN : true
+  NOTE : Not endorsement. Wondering how this happened.
+
+DECISIONS THAT MATTER
+  LINK : https://www.dropbox.com/s/6axk95bl2htagt5/Matthias_Worch_Decisions_That_Matterv101.pdf
+  TYPE : lecture
+  DATE : 12018-07-04
+  TAGS : gamedev
+  SEEN : true
+
+THE FRANKFURT SCHOOL SERIES
+  LINK : http://philosophizethis.org/frankfurt-school-intro/
+  TYPE : podcast
+  DATE : 12018-07-05
+  TAGS : philosophy
+  SEEN : true
+  REVI : true
+  NOTE : The Frankfurt School
+
+ART AS A TOOL FOR LIBERATION
+  LINK : http://philosophizethis.org/art-as-a-tool-for-liberation/
+  TYPE : podcast
+  DATE : 12018-07-05
+  TAGS : philosophy
+  SEEN : true
+  REVI : true
+  NOTE : The Frankfurt School
+
+METAPHYSICS AND LOVE
+  LINK : http://philosophizethis.org/schopenhauer-pt-1/
+  TYPE : podcast
+  DATE : 12018-07-05
+  TAGS : philosophy
+  SEEN : true
+  REVI : true
+  NOTE : Arthur Schopenhauer (1788-1860)
+
+PHENOMENOLOGY AND DASEIN
+  LINK : http://philosophizethis.org/heidegger-dasein/
+  TYPE : podcast
+  DATE : 12018-07-05
+  TAGS : philosophy
+  SEEN : true
+  REVI : true
+  NOTE : Martin Heidegger (1889-1976)
+
+A LOOK AT SUFFERING
+  PERS : neauoire
+  SRCE : Merveilles
+  LINK : http://philosophizethis.org/a-look-at-suffering/
+  TYPE : podcast
+  DATE : 12018-07-05
+  TAGS : philosophy
+  SEEN : true
+  REVI : true
+  NOTE : Fyodor Dostoyevsky (1821–1881)
+
+NIETZSCHE
+  LINK : http://philosophizethis.org/god-is-dead-and-so-is/
+  TYPE : podcast
+  DATE : 12018-07-05
+  TAGS : philosophy
+  SEEN : true
+  REVI : true
+  NOTE : Friedrich Nietzsche (1844–1900)
+
+SARTRE AND CAMUS FREEDOM
+  LINK : http://philosophizethis.org/sartre-on-freedom/
+  TYPE : podcast
+  DATE : 12018-07-05
+  TAGS : philosophy
+  SEEN : true
+  REVI : true
+  NOTE : Jean-Paul Sartre (1905–1980)
+
+EFFECTIVE ALTRUISM
+  PERS : neauoire
+  SRCE : Merveilles
+  LINK : http://philosophizethis.org/peter-singer/
+  TYPE : podcast
+  DATE : 12018-07-05
+  TAGS : philosophy
+  SEEN : true
+  REVI : true
+  NOTE : Peter Singer (1946-present)
+
+ROUSSEAU
+  LINK : http://philosophizethis.org/rousseau-government/
+  TYPE : podcast
+  DATE : 12018-07-05
+  TAGS : philosophy
+  SEEN : true
+  REVI : true
+  NOTE : Jean-Jacques Rousseau (1712-1778)
+
+PHILANTHROPY ANALYSIS
+  PERS : neauoire
+  SRCE : Merveilles
+  LINK : https://80000hours.org/podcast/episodes/holden-karnofsky-open-philanthropy/
+  TYPE : podcast
+  DATE : 12018-07-05
+  TAGS : research
+  QOTE : "it’s basically a 'transhumanistic vegan sci-fi' podcast"
+  SEEN : true
+
+THE INTELLECTUAL DARK WEB
+  PERS : anand
+  SRCE : Merveilles
+  LINK : https://integrallife.com/the-intellectual-dark-web-an-integral-view/
+  TYPE : video
+  DATE : 12018-07-05
+  TAGS : philosophy, psychology
+  SEEN : true
+  NOTE : Wtf 'Spiral Dynamics Integral'
+
+TRUMP AND A POST-TRUTH WORLD
+  PERS : anand
+  SRCE : Merveilles
+  LINK : https://integrallife.com/trump-post-truth-world/
+  TYPE : article
+  DATE : 12018-07-05
+  TAGS : philosophy, psychology, politics
+  SEEN : false
+
+LONG-TERM MEMORY
+  PERS : alx
+  SRCE : Merveilles
+  LINK : http://augmentingcognition.com/ltm.html
+  TYPE : article
+  DATE : 12018-07-06
+  TAGS : psychology
+  TERM : Anki, Memex
+  SEEN : false
+
+DECLARATION OF INDEPENDENCE OF CYBERSPACE
+  PERS : ark
+  SRCE : Merveilles
+  LINK : https://www.eff.org/cyberspace-independence
+  TYPE : article
+  DATE : 12018-07-06
+  TAGS : philosophy
+  SEEN : true
+
+DESIGNING THE MIND OF AN ONLINE CURATOR
+  LINK : https://medium.com/@lintropy/murat-pak-designing-the-mind-of-an-online-curator-5785e373127d
+  TYPE : article
+  DATE : 12018-07-06
+  TAGS : philosophy, design
+  SEEN : true
+
+THE CANCER IN BITCOIN
+  LINK : https://www.yours.org/content/the-cancer-in-bitcoin-e75381d0fd75
+  TYPE : article
+  DATE : 12018-07-06
+  TAGS : bitcoin
+  SEEN : false
+
+DIY WRISTWATCH
+  PERS : nomand
+  SRCE : Merveilles
+  LINK : http://blog.zakkemble.co.uk/diy-digital-wristwatch/
+  TYPE : article
+  DATE : 12018-07-06
+  TAGS : time, diy
+  SEEN : true
+  REVI : true
+  NOTE : https://github.com/zkemble/NWatch
+
+BITCOIN HOT-WIRED FOR SETTLEMENT
+  LINK : https://medium.com/@jgarzik/bitcoin-is-being-hot-wired-for-settlement-a5beb1df223a
+  TYPE : article
+  DATE : 12018-07-06
+  TAGS : bitcoin
+  SEEN : false
+
+BITCOIN CONSPIRACY
+  LINK : https://np.reddit.com/r/BitcoinMarkets/comments/6rxw7k/informative_btc_vs_bch_articles/dl8v4lp/
+  TYPE : article
+  DATE : 12018-07-06
+  TAGS : bitcoin
+  SEEN : true
+
+NEWWEB
+  LINK : https://blog.plan99.net/what-should-follow-the-web-8dcbbeaccd93
+  TYPE : article
+  DATE : 12018-07-06
+  TAGS : web, design, code
+  SEEN : true
+
+OVERWHELM
+  LINK : https://store.steampowered.com/app/785880/OVERWHELM/
+  TYPE : game
+  DATE : 12018-07-06
+  SEEN : true
+  NOTE : Stylish pixel platformer
+
+COMPASS
+  PERS : faun
+  SRCE : Merveilles
+  LINK : https://dlareme.bandcamp.com/album/compass
+  TYPE : music
+  DATE : 12018-07-06
+  SEEN : true
+  REVI : true
+  TAGS : inspiration
+
+TOP SLATE STAR CODEX
+  PERS : neauoire
+  SRCE : Merveilles
+  LINK : http://slatestarcodex.com/top-posts/
+  TYPE : list
+  DATE : 12018-07-06
+  SEEN : false
+  REVI : true
+  TAGS : psychology, society, research, philosophy
+
+UNDER THE SKIN: JORDAN PETERSON
+  LINK : https://youtu.be/r2S58rH0PAw?t=1h1m38s
+  TYPE : podcast
+  Date : 12018-07-06
+  SEEN : true
+  REVI : false
+  TAGS : society, psychology, philosophy
+  QOTE
+    - The good quote is "The proper exchange of ideas between free individuals keeps tyranny at bay."
+    - However media centralization and widely popular material escapism distorts societal discourse.
+    - And the related quote is: '...the problem with hierarchies is that people stack up at the bottom and that they tilt toward tyranny across time'. 
+    - Fuller context: "If you're going to values some things more than others then hierarchies are inevitable. You have to value some things more than others or you don't have anything valuable." "Like beauty or strength or something." "Or competence. ...whatever it happens to be. The ability to play the flute. It doesn't matter what it is. Obviously if you value music you are going to value some musicians more than others because some are better. So you have to value things in order to more forward in life, and you have to value things in order to have something valuable to produce. But if you play out the value in a social landscape you produce a hierarchy. The problem with producing a hierarchy is that a small number of people are going to be more successful than the majority, and a very large number of people are not going to be successful at all - at that particular thing. It's inevitable. 
+    - ...So you say 'we have to put up with that because we need to pursue things of value'. OK fine, so that is the right wing perspective - the hierarchies are justifiable and necessary. 
+    - The left wing perspective is 'yeah but wait a minute, the problem with hierarchies is that people stack up at the bottom and that they tilt toward tyranny across time' and that's also true. 
+    - You need that dialect in society between the right wing that says you know 'we need the hierarchies and they are useful and you should be grateful for them, they structure you and give you form and provide value' 
+    - and the left that says 'yeah but they exclude people, people stack up at the bottom and that is dangerous to the hierarchy itself, it means that people might not have opportunity' and you have to say yes to that (too). 
+    - The problem comes -and this is the situation we are in right now- where the radical left-ists (and this is mostly a problem that really permeates the Universities) say 'Yeah but all hierarchies are just tyrannical power', it's like oh no their not. Hierarchies are based on competence in a functioning society and mostly our society functions... ...That doesn't mean that hierarchies don't tilt toward self interest and tyranny across time but that's a bad thing. Even a bad thing from a conservative perspective. There's room for the left because the poor will always be with us and the dispossessed need a voice, not least because there are talented people among the dispossessed and if they are stuck at zero everyone suffers because we don't have access to their talents. It's bad use of resources. On the right its like 'no, we need the damn value hierarchies, we need to be grateful for our traditions and structures because they stop us from degenerating into chaos.'"
+
+JAPANESE POST-WAR DESIGN
+  LINK : https://www.disegnodaily.com/article/the-story-of-design-japanese-post-war-design
+  TYPE : design
+  DATE : 12018-07-06
+  SEEN : false
+  TAGS : design
+
+SCP FOUNDATION
+  LINK : http://www.scp-wiki.net/
+  TYPE : list
+  DATE : 12018-07-06
+  SEEN : true
+  REVI : true
+  TAGS : fiction
+
+TENDRILS OF MESS IN OUR BRAINS
+  LINK : https://www.ribbonfarm.com/2017/01/05/tendrils-of-mess-in-our-brains/
+  TYPE : article
+  DATE : 12018-07-06
+  SEEN : false
+  TAGS : psychology
+
+RIBBONFARM 2017
+  LINK : https://www.ribbonfarm.com/2017/12/21/complete-2017-roundup/
+  TYPE : list
+  DATE : 12018-07-06
+  SEEN : false
+  REVI : true
+  TAGS : psychology, society, research, philosophy
+
+THE BATTLE FOR PSYCHOLOGY
+  LINK : https://www.lesswrong.com/posts/GpkoTHJzsAAJx7c5T/the-battle-for-psychology
+  TYPE : article
+  DATE : 12018-07-06
+  SEEN : false
+  TAGS : psychology
+
+CIRCULAR ECONOMY
+  LINK : https://en.wikipedia.org/wiki/Circular_economy
+  TYPE : article
+  DATE : 12018-07-06
+  SEEN : true
+  TAGS : society, economics
+
+SPACESHIP EARTH ECONOMICS
+  LINK : http://arachnid.biosci.utexas.edu/courses/THOC/Readings/Boulding_SpaceshipEarth.pdf
+  TYPE : article
+  DATE : 12018-07-06
+  SEEN : false
+  TAGS : society, economics
+  FILE : 12018-07-06_Boulding_SpaceshipEarth.pdf
+
+FUNGI FROM YUFFOTH
+  LINK : http://www.hplovecraft.com/writings/texts/poetry/p289.aspx
+  TYPE : article
+  DATE : 12018-07-06
+  SEEN : false
+  FILE : 12018-07-06_FungiFromYuggoth_byHP.pdf
+  TAGS : fiction
+
+TWO ENVELOPE PROBLEM
+  PERS : neauoire
+  SRCE : Merveilles
+  LINK : https://brilliant.org/wiki/two-envelope-paradox/
+  TYPE : article
+  DATE : 12018-07-06
+  SEEN : true
+  TAGS : paradox
+
+WIKTOPHER
+  PERS : Rekka
+  LINK : https://wiktopher.kokorobot.ca/
+  TYPE : book
+  DATE : 12018-07-06
+  SEEN : true
+  REVI : true
+  TAGS : fiction
+
+JAN VERWOERT 2017-11-09
+  PERS : Phil James
+  LINK : https://www.youtube.com/watch?v=VlyLQFcoFP0
+  TYPE : video
+  DATE : 12018-07-06
+  SEEN : false
+  TAGS : art, philosophy
+
+SELF AUTHORING
+  LINK : https://selfauthoring.com/
+  TYPE : course
+  DATE : 12018-07-06
+  SEEN : true
+  REVI : true
+  TAGS : psychology
+
+FRANKFURT SCHOOL
+  LINK : https://en.wikipedia.org/wiki/Frankfurt_School
+  TYPE : article
+  DATE : 12018-07-06
+  SEEN : false
+  TAGS : philosophy
+
+POV FIGHT
+  DATE : 12018-07-06
+  SEEN : true
+  QOTE : "Fuck political correctness, resist, fight. If you have a point of view, fight for it in the proper manner."
+
+BORROWED TIME
+  PERS : neauoire
+  SRCE : Merveilles
+  NOTE : "Marcus Aurelius - Meditation - Book 3"
+  TYPE : book
+  QOTE : "The average person lives about 75 years. Now then, I multiplied 75 times 52 and came up with 3,900, which is the number of Saturdays that the average person has in his lifetime. It took me until I was 55 years old to think about this in any detail, and by that time I had lived through over 2,800 Saturdays.", "Now let me tell you one last thought before I sign off and take my lovely wife out to breakfast. This morning, I took the very last marble out of the container. I figure if I make it until next Saturday, then I have been given a little extra time."
+  DATE : 12018-07-08
+  TAGS : philosophy
+
+WIDSOM CALENDAR
+  PERS : neauoire
+  SRCE : Merveilles
+  LINK : https://a-calendar-of-wisdom.blogspot.com/
+  TYPE : article
+  QOTE : "You can read it online, it’s 'not that great' — I pointed this out more like an example of tooling, rather than content."
+  DATE : 12018-07-08
+
+SULLIVAN
+  PERS : alx
+  SRCE : Merveilles
+  LINK : http://ep.yimg.com/ty/cdn/paulgraham/sullivan.html
+  TYPE : article
+  SEEN : false
+  DATE : 12018-07-08
+
+TASTE FOR MAKERS
+  PERS : alx
+  SRCE : Merveilles
+  LINK : http://www.paulgraham.com/taste.html
+  TYPE : article
+  SEEN : false
+  DATE : 12018-07-08
+  TAGS : design
+
+MIND THE GAP
+  PERS : neaoire
+  SRCE : Merveilles
+  LINK : http://www.paulgraham.com/gap.html
+  TYPE : article
+  SEEN : false
+  DATE : 12018-07-08
+  TAGS : society, economics
+
+PYTHON PARADOX
+  PERS : neaoire
+  SRCE : Merveilles
+  LINK : http://www.paulgraham.com/pypar.html
+  TYPE : article
+  SEEN : false
+  DATE : 12018-07-08
+  TAGS : code, paradox
+
+VANILLA JS
+  PERS : alx
+  SRCE : Merveilles
+  LINK : http://vanilla-js.com/
+  TYPE : article
+  SEEN : true
+  DATE : 12018-07-08
+  TAGS : funny
+
+GREENSPACE
+  PERS : alx
+  SRCE : Merveilles
+  LINK : https://www.uea.ac.uk/about/-/it-s-official-spending-time-outside-is-good-for-you
+  TYPE : article
+  TERM : greenspace
+  SEEN : true
+  DATE : 12018-07-08
+  TAGS : psychology, economics, env
+
+CLIENT SIDE ROUTING
+  PERS : james
+  SRCE : Merveilles
+  LINK : http://krasimirtsonev.com/blog/article/deep-dive-into-client-side-routing-navigo-pushstate-hash
+  TYPE : article
+  SEEN : false
+  DATE : 12018-07-09
+  TAGS : web
+
+METHOD OF LOCI
+  LINK : https://en.wikipedia.org/wiki/Method_of_loci
+  SEEN : false
+  REVI : true
+  NOTE : Memory palace
+  DATE : 12018-07-09
+  TAGS : psychology
+
+MALICK'S OBSESSIONS
+  PERS : dormin
+  SRCE : Merveilles
+  LINK : https://www.youtube.com/watch?v=5f6rpDlfX5A
+  TYPE : video
+  SEEN : true
+  DATE : 12018-07-09
+  TAGS : film
+
+ARCANE ALGO ARCHIVE
+  PERS : alx
+  SRCE : Merveilles
+  LINK : https://www.algorithm-archive.org/
+  TYPE : website
+  SEEN : true
+  DATE : 12018-07-10
+  TAGS : code
+
+INCREMENTALISM
+  LINK : http://freakonomics.com/podcast/in-praise-of-incrementalism-rebroadcast/
+  TYPE : podcast
+  SEEN : true
+  DATE : 12018-07-10
+  NOTE 
+    - Social movement advice (Linda Hershman):
+    - 1) Put your own interest first
+    - 2) Take the moral highground
+    - 3) Have weekly meetings
+  TAGS : society
+
+SEE IN EVERYTHING
+  QOTE : Miyamoto Musashi — 'If you know the way broadly you will see it in everything.'
+  TYPE : quote
+  DATE : 12018-07-10
+
+AZOLLA
+  PERS : alx
+  SRCE : Merveilles
+  LINK : https://en.wikipedia.org/wiki/Azolla_event
+  TYPE : article
+  SEEN : true
+  DATE : 12018-07-11
+  TAGS : time
+
+INCORRECT USE TERM AI
+  PERS : alx
+  SRCE : Merveilles
+  LINK : https://becominghuman.ai/are-you-using-the-term-ai-incorrectly-911ac23ab4f5
+  TYPE : article
+  SEEN : true
+  DATE : 12018-07-11
+  TAGS : etymology, ai
+
+CEPHALOPOD INTELLIGENCE
+  PERS : alx
+  SRCE : Merveilles
+  LINK : https://en.m.wikipedia.org/wiki/Cephalopod_intelligence
+  TYPE : article
+  DATE : 12018-07-11
+  SEEN : true
+  TAGS : psychology, animal
+
+REINFORCEMENT LEARNING FLAW
+  PERS : alif
+  SRCE : Merveilles
+  LINK : https://thegradient.pub/why-rl-is-flawed/
+  TYPE : article
+  SEEN : false
+  DATE : 12018-07-11
+  TAGS : ai
+
+GLOBAL 1%
+  QOTE : "You need just $34,000 USD annual income to be in the global elite... half the world's richest people live in the U.S."
+  TYPE : quote
+  DATE : 12018-07-11
+
+DISCOURSE CHEATSHEET
+  PERS : Neauoire
+  SRCE : Merveilles
+  LINK : https://wiki.xxiivv.com/#discourse
+  TYPE : article
+  SEEN : true
+  REVI : true
+  DATE : 12018-07-11
+  TAGS : etymology, psychology
+
+ARGUMENT VARIETIES
+  PERS : Neauoire
+  SRCE : Merveilles
+  LINK : http://slatestarcodex.com/2018/05/08/varieties-of-argumentative-experience/
+  TYPE : article
+  SEEN : false
+  REVI : true
+  DATE : 12018-07-11
+  TAGS : etymology, psychology
+
+DISAGREE
+  PERS : Neauoire
+  SRCE : Merveilles
+  LINK : http://www.paulgraham.com/disagree.html
+  TYPE : article
+  SEEN : false
+  REVI : true
+  DATE : 12018-07-11
+  TAGS : etymology, psychology
+
+THREE TIER MIND
+  PERS : Neauoire
+  SRCE : Merveilles
+  LINK : https://www.pftq.com/blabberbox/?page=Three_Tiers_of_Mind
+  TYPE : article
+  SEEN : false
+  REVI : true
+  DATE : 12018-07-11
+  TAGS : etymology, psychology
+
+JORDAN PETERSON JRE 1139
+  LINK : http://jrecompanion.com/jordan-peterson-jre-1139/
+  TYPE : podcast
+  NOTE : Incrementalism in position and trajectory
+  QOTE : "The spoken word is now as powerful as the written word, thats never happen before in human history." 2:34:XX
+  DATE : 12018-07-11
+
+SKEPTOID APE SIGN LANGUAGE
+  PERS : faun
+  SRCE : Merveilles
+  LINK : https://skeptoid.com/episodes/4630
+  TYPE : podcast
+  TAGS : animal, psychology
+  SEEN : false
+
+BLINDSIGHT
+  PERS : tttlllrrr
+  SRCE : Merveilles
+  LINK : http://www.rifters.com/real/shorts/PeterWatts_Blindsight.pdf
+  TYPE : book
+  DATE : 12018-07-12
+  FILE : 12018-07-12_PeterWatts_Blindsight.pdf
+  TAGS : fiction
+
+ZEIT STATIC HOSTING
+  PERS : atteinmos
+  SRCE : Merveilles
+  LINK : https://zeit.co/
+  TYPE : service
+  TAGS : web
+  DATE : 12018-07-12
+  NOTE : Web hosting
+
+PRIVACY POSSUM
+  PERS : alx
+  SRCE : Merveilles
+  LINK : https://github.com/cowlicks/privacypossum
+  TYPE : tool
+  TAGS : web
+  DATE : 12018-07-12
+
+KNOWLEDGE NOTES
+  LINK : https://github.com/yoshuawuyts/knowledge
+  TYPE : list
+  SEEN : false
+  REVI : true
+  DATE : 12018-07-13
+  NOTE : Notes on everything
+  TAGS : research
+
+WONDERBOOK
+  PERS : stephen
+  SRCE : Merveilles
+  LINK : http://wonderbooknow.com/
+  TYPE : book
+  NOTE : "The Illustrated Guide to Creating Imaginative Fiction."
+  DATE : 12018-07-13
+  SEEN : false
+  TAGS : art, design
+
+WORRYDREAM REFERENCES
+  PERS : neauoire
+  SRCE : Merveilles
+  LINK : http://worrydream.com/refs/
+  TYPE : list
+  DATE : 12018-07-13
+  FILE : 12018-07-13_WDR_*
+  TAGS : philosophy, design, inspiration, science, research, society, code, ai, psychology
+  SEEN : false
+  REVI : true
+
+HELLO
+  LINK : https://www.wnycstudios.org/story/hello
+  TYPE : podcast
+  DATE : 12018-07-13
+  TAGS : philosophy, science, society, psychology, animal
+  SEEN : true
+  REVI : true
+
+5till L1 Complex
+  PERS : Phil James
+  LINK : https://www.doomworld.com/idgames/levels/doom2/Ports/0-9/5l1c
+  NOTE : Doom level
+  FILE : 12018-07-14_5l1c.zip
+  TYPE : game
+  TAGS : gamedev
+  SEEN : false
+  DATE : 12018-07-14
+
+BLADE RUNNER 2049 DESIGN
+  LINK : https://www.engadget.com/2017/10/20/designing-the-technology-of-blade-runner-2049/
+  TYPE : article
+  TAGS : design, film
+  DATE : 12018-07-14
+  SEEN : false
+
+REACTIVE PROGRAMMING INTRO
+  LINK : https://gist.github.com/staltz/868e7e9bc2a7b8c1f754
+  TYPE : article
+  TAGS : code
+  DATE : 12018-07-14
+  SEEN : false
+  REVI : true
+
+FRACTAL FILM CGI
+  LINK : https://www.fxguide.com/featured/the-fractal-nature-of-guardians-of-the-galaxy-vol-2/
+  TYPE : article
+  TAGS : fractal, film
+  DATE : 12018-07-14
+  SEEN : false
+
+VORTICAL FLOW + FRACTAL MACHINES
+  LINK : https://www.fxguide.com/featured/suicide-squad-vortical-flows-and-fractal-machines/
+  TYPE : article
+  TAGS : fractal, film
+  DATE : 12018-07-14
+  SEEN : false
+
+VORTICAL FLOW + FRACTAL MACHINES
+  LINK : https://www.ted.com/talks/benoit_mandelbrot_fractals_the_art_of_roughness
+  TYPE : video
+  TAGS : fractal, research
+  DATE : 12018-07-14
+  SEEN : false
+  
+AI IN A BOX
+  LINK : https://www.lesswrong.com/posts/c5GHf2kMGhA4Tsj4g/the-ai-in-a-box-boxes-you
+  TYPE : article
+  TAGS : philosophy, ai, paradox
+  DATE : 12018-07-14
+  SEEN : true
+
+LEARNING SHADERS
+  LINK : https://www.alanzucconi.com/category/shader/
+  TYPE : list
+  TAGS : gamedev, code
+  DATE : 12018-07-14
+  SEEN : false
+  REVI : true
+
+ACID BODHISATTVA
+  LINK : http://acid.kommak.ch/en.php
+  TYPE : article
+  TAGS : psychedelics, psychology, philosophy
+  DATE : 12018-07-14
+  SEEN : false
+  REVI : true
+
+THE DOORS OF PERCEPTION
+  LINK : https://www.erowid.org/psychoactives/writings/huxley_doors.shtml
+  TYPE : article
+  TAGS :  psychedelics, psychology, philosophy
+  DATE : 12018-07-14
+  SEEN : false
+  REVI : true
+  FILE : 12018-07-14_TheDoorsOfPerception_byAldousHuxley.pdf
+
+VULTR
+  LINK : https://www.vultr.com
+  TYPE : service
+  TAGS : web
+  DATE : 12018-07-14
+  NOTE : Web hosting
+  SEEN : true
+
+WW1 BY WEEK
+  LINK : https://www.youtube.com/playlist?list=PLB2vhKMBjSxOb_127vxjaRRC7yu2TJlJX
+  TYPE : video
+  TAGS : history, war
+  DATE : 12018-07-14
+  NOTE : Week by week history of WW1. Week 7.
+  SEEN : false
+
+SOLARPUNK REFERENCES
+  LINK : https://medium.com/solarpunks/solarpunk-a-reference-guide-8bcf18871965
+  TYPE : article
+  TAGS : solarpunk, env
+  DATE : 12018-07-14
+  SEEN : false
+
+SYSTEMS ARE EVERYWHERE
+  LINK : https://www.youtube.com/watch?v=Gelpn4mksXQ
+  TYPE : video
+  TAGS : gamedev
+  DATE : 12018-07-14
+  SEEN : false
+
+NZ EXCHANGE
+  LINK : https://www.tokenroom.co.nz/
+  TYPE : service
+  TAGS : bitcoin
+  DATE : 12018-07-14
+  SEEN : true
+
+PRINCETON CRYPTO LECTURES
+  LINK : https://www.reddit.com/r/Bitcoin/comments/7il1sx/sixty_free_lectures_from_princeton_on_bitcoin_and/
+  TYPE : list
+  TAGS : bitcoin
+  DATE : 12018-07-14
+  SEEN : false
+
+PILANESBERY DELINQUENTS
+  LINK : https://www.kotafoundation.org/the-delinquents-in-pilanesberg/
+  TYPE : article
+  TAGS : psychology, animals
+  DATE : 12018-07-14
+  SEEN : false
+`

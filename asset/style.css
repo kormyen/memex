@@ -1,0 +1,49 @@
+html { 
+	background:#DCDCDC; 
+	font-family:'Monaco', 'Andale Mono', 'Deja Vu Sans Mono', 'Consolas', monospace;
+	font-size:1em; 
+}
+
+/* LINK */
+a { 
+	color:#000; 
+	text-decoration:underline; 
+}
+#entryImportant a { 
+	color:#fff; 
+}
+a#urlseen { 
+	color:#666;  
+}
+
+/* ENTRY */
+#entry, #entryImportant { 
+	color:#000; 
+	background:#999;
+	margin-bottom:1em;
+	padding:0.5em; 
+	min-height:2.4em;
+}
+#entryImportant { 
+	color:#DCDCDC; 
+	background:#333333; 
+}
+
+/* TAGS */
+#tags { 
+	font-size:0.8em;
+	color:#000; 
+}
+#entryImportant #tags { 
+	color:#808080; 
+}
+
+/* NOTE, QUOTE, TERM */
+#note, #quote, #term {
+	padding-top: 1em;
+	font-size:0.8em;
+	color:#000; 
+}
+#entryImportant #note, #entryImportant #quote, #entryImportant #term { 
+	color:#808080; 
+}
