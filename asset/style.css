@@ -30,52 +30,77 @@ body {
 .grid-item {
   width: 350px;
   float: left;
-  background: #D26;
   margin-bottom: 20px;
   border-radius: 2px;
 }
 
 
 /* LINK */
-a { 
+a#url { 
 	color:#000; 
 	text-decoration:underline; 
 }
 a#urlseen { 
 	color:#666;  
 }
+a#url:hover, a#urlseen:hover {
+	color:#DCDCDC;
+	background-color: #000;
+}
+
 
 /* ENTRY */
 .grid-item { 
 	color:#000; 
 	background:#999;
-	padding:0.5em; 
+	padding:20px; 
 	min-height:2.4em;
 	float:left;
 }
 
-/* TAGS */
-#tags { 
-	font-size:0.8em;
+/* TITLE */
+.title {
+	margin-right: 45px;
+	font-size:1em;
 	color:#000; 
+	/*background-color: #000;*/
 }
 
-/* NOTE, QUOTE, TERM */
-#note, #quote, #term {
+/* LINK, NOTE, QUOTE, TERM, TAGS */
+.link, .note, .quote, .term, .tags, .prog {
 	padding-top: 1em;
 	font-size:0.8em;
 	color:#000; 
 }
+.tags a {
+	color:#000; 
+	text-decoration:none; 
+}
+.tags a:hover {
+	color:#DCDCDC;
+	background-color: #000;
+}
 
 /* TYPE */
-#type {
+#type a {
 	text-align: center;
 	vertical-align: top;
-	width: 40px; 
-	height: 40px;
+	width: 70px; 
+	height: 62px;
 	position: absolute;
-    top: 8px;
-    right: 5px;
-	color:#666; 
+	padding-top: 18px;
+    top: 0px;
+    right: 0px;
+	color:#888; 
 	font-size:1.5em;
+	/*background: #000;*/
+}
+#type a:hover {
+	color:#000;
+	text-decoration:none; 
+}
+
+.textIcon {
+	color:#888;
+	margin-right:0.75em; 
 }

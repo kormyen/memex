@@ -39,7 +39,7 @@ function displayEntries(db)
 
     	// ENTRY
 	    entries += `<div class="grid-item">`;
-	    entries += `${keys[i].toProperCase()}`;
+	    entries += `<div class="title">${keys[i].toProperCase()}</div>`;
 
 	    // LINK
 		if (typeof value.LINK !== 'undefined')
@@ -52,13 +52,14 @@ function displayEntries(db)
 					idUrl = "urlseen";
 				}
 			}
-			entries += `<div id="link"><a href="${String(value.LINK)}" id="${idUrl}">${extractRootDomain(value.LINK)}</a></div>`;
+			entries += `<div class="link"><i class="fas fa-link textIcon"></i><a href="${String(value.LINK)}" id="${idUrl}">${extractRootDomain(value.LINK)}</a></div>`;
 		}
 
 		// TYPE
 		if (typeof value.TYPE !== 'undefined')
 		{
 			entries += `<div id="type">`;
+			entries += `<a href='#type:${String(value.TYPE)}'>`;
 			if (value.TYPE == 'article')
 			{
 				entries += `<i class="far fa-newspaper"></i>`;
@@ -104,43 +105,38 @@ function displayEntries(db)
 				entries += `<i class="fas fa-music"></i>`;
 			}
 			 
+			entries += `</a>`;
 			entries += `</div>`;
 		}
 
 		// TAGS
 		if (typeof value.TAGS !== 'undefined')
 		{
-			entries += `<div id="tags">${value.TAGS.toLowerCase()}</div>`;
+			entries += `<div class="tags"><i class="fas fa-tag textIcon"></i><a href=#tag:${value.TAGS.toLowerCase()}>${value.TAGS.toLowerCase()}</a></div>`;
 		}
 
 		// NOTE
 		if (typeof value.NOTE !== 'undefined')
 		{
-			entries += `<div id="note">NOTE: ${value.NOTE}</div>`;
+			entries += `<div class="note"><i class="fas fa-sticky-note textIcon"></i>${value.NOTE}</div>`;
 		}
 
 		// QUOTE
 		if (typeof value.QOTE !== 'undefined')
 		{
-			entries += `<div id="quote">QUOTE: ${value.QOTE}</div>`;
+			entries += `<div class="quote"><i class="fas fa-comment textIcon"></i>${value.QOTE}</div>`;
 		}
 
 		// TERM
 		if (typeof value.TERM !== 'undefined')
 		{
-			entries += `<div id="term">TERM(S): ${value.TERM}</div>`;
-		}
-
-		// TERM
-		if (typeof value.TERM !== 'undefined')
-		{
-			entries += `<div id="term">TERM(S): ${value.TERM}</div>`;
+			entries += `<div class="term"><i class="fas fa-ribbon textIcon"></i>${value.TERM}</div>`;
 		}
 
 		// PROGRESS
 		if (typeof value.PROG !== 'undefined')
 		{
-			entries += `<div id="term">PROGRESS: ${value.PROG}</div>`;
+			entries += `<div class="prog"><i class="fas fa-clock textIcon"></i>${value.PROG}</div>`;
 		}
 
 		entries += `</div>`;
