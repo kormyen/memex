@@ -11,7 +11,7 @@ function Main()
     let view = ``;
     let html = document.body;
     
-    view += `<div id="content">${displayEntries(DB)}</div>`;
+    view += `<div id="masonry">${displayEntries(DB)}</div>`;
 
     html.innerHTML = view;
 }
@@ -28,14 +28,14 @@ function displayEntries(db)
 	    value = db[keys[i]];
 
     	// ENTRY
-    	var idEntry = "entry";
-	    if (typeof value.REVI !== 'undefined')
-		{
-			if (value.REVI == "true")
-			{
-				idEntry = "entryImportant";
-			}
-		}
+    	var idEntry = "item";
+	 //    if (typeof value.REVI !== 'undefined')
+		// {
+		// 	if (value.REVI == "true")
+		// 	{
+		// 		idEntry = "entryImportant";
+		// 	}
+		// }
 
 	    entries += `<div id="${idEntry}">`;
 	    entries += `${keys[i].toProperCase()}`;
