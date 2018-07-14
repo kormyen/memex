@@ -131,6 +131,18 @@ function displayEntries(db)
 			entries += `<div id="term">TERM(S): ${value.TERM}</div>`;
 		}
 
+		// TERM
+		if (typeof value.TERM !== 'undefined')
+		{
+			entries += `<div id="term">TERM(S): ${value.TERM}</div>`;
+		}
+
+		// PROGRESS
+		if (typeof value.PROG !== 'undefined')
+		{
+			entries += `<div id="term">PROGRESS: ${value.PROG}</div>`;
+		}
+
 		entries += `</div>`;
 
         lastEntry = i;
