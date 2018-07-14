@@ -56,7 +56,7 @@ SQUARING THE TRIANGLE
   TYPE : article
   TAGS : p2p
   DATE : 12018-07-03
-  QOTE : Secure, Decentralized, Human-Readable Names
+  QOTE : 'Secure, Decentralized, Human-Readable Names'
   SEEN : false
 
 SETHIAN GLYPH RUNE GAME
@@ -137,8 +137,9 @@ ALT WAD
   TYPE : article
   DATE : 12018-07-03
   TAGS : gamedev
-  NOTE : ALT explained. Finish playing it.
+  NOTE : ALT explained.
   SEEN : true
+  PROG : Finish playing it. Level 7?
 
 PROC GEN RESEARCH
   LINK : http://pcgbook.com/

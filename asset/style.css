@@ -1,5 +1,5 @@
 html { 
-	background:#DCDCDC; 
+	background:#ddd; 
 	font-family:'Monaco', 'Andale Mono', 'Deja Vu Sans Mono', 'Consolas', monospace;
 	font-size:1em; 
 	box-sizing: border-box;
@@ -19,7 +19,6 @@ body {
   margin: 0 auto;
   margin-top: 20px;
 }
-
 /* clearfix */
 .grid:after {
   content: '';
@@ -27,35 +26,34 @@ body {
   clear: both;
 }
 
-.grid-item {
-  width: 350px;
-  float: left;
-  margin-bottom: 20px;
-  border-radius: 2px;
+.grid-item { 
+	width: 350px;
+	margin-bottom: 20px;
+	border-radius: 2px;
+	color:#000; 
+	background:#ccc;
+	padding:20px; 
+	min-height:2.4em;
+	float:left;
+	/*box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .05);*/
 }
-
 
 /* LINK */
 a#url { 
-	color:#000; 
+	color:#000;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em; 
 	text-decoration:underline; 
 }
 a#urlseen { 
-	color:#666;  
+	color:#666;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em; 
+	text-decoration:underline; 
 }
 a#url:hover, a#urlseen:hover {
 	color:#DCDCDC;
 	background-color: #000;
-}
-
-
-/* ENTRY */
-.grid-item { 
-	color:#000; 
-	background:#999;
-	padding:20px; 
-	min-height:2.4em;
-	float:left;
 }
 
 /* TITLE */
@@ -73,12 +71,18 @@ a#url:hover, a#urlseen:hover {
 	color:#000; 
 }
 .tags a {
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
 	color:#000; 
 	text-decoration:none; 
 }
 .tags a:hover {
 	color:#DCDCDC;
 	background-color: #000;
+}
+.textIcon {
+	color:#888;
+	margin-right:0.75em; 
 }
 
 /* TYPE */
@@ -91,16 +95,11 @@ a#url:hover, a#urlseen:hover {
 	padding-top: 18px;
     top: 0px;
     right: 0px;
-	color:#888; 
+	color:#bbb; 
 	font-size:1.5em;
 	/*background: #000;*/
 }
 #type a:hover {
 	color:#000;
 	text-decoration:none; 
-}
-
-.textIcon {
-	color:#888;
-	margin-right:0.75em; 
 }
