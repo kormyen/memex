@@ -29,30 +29,41 @@ body {
 .grid-item { 
 	width: 350px;
 	margin-bottom: 20px;
-	border-radius: 2px;
+	border-radius: 3px;
 	color:#000; 
 	background:#ccc;
 	padding:20px; 
 	min-height:2.4em;
 	float:left;
-	/*box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .05);*/
+	
+}
+.grid-item:hover { 
+	background:#bbb;
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .1);
 }
 
 /* LINK */
 a#url { 
-	color:#000;
-	padding-top: 0.5em;
-	padding-bottom: 0.5em; 
+	color:#aaa;
 	text-decoration:underline; 
 }
 a#urlseen { 
-	color:#666;
-	padding-top: 0.5em;
-	padding-bottom: 0.5em; 
+	color:#aaa;
 	text-decoration:underline; 
 }
-a#url:hover, a#urlseen:hover {
-	color:#DCDCDC;
+
+.grid-item:hover a#url {
+	color:#000;
+}
+.grid-item:hover a#url:hover {
+	color:#bbb;
+	background-color: #000;
+}
+.grid-item:hover a#urlseen {
+	color:#666;
+}
+.grid-item:hover a#urlseen:hover {
+	color:#bbb;
 	background-color: #000;
 }
 
@@ -68,21 +79,34 @@ a#url:hover, a#urlseen:hover {
 .link, .note, .quote, .term, .tags, .prog {
 	padding-top: 1em;
 	font-size:0.8em;
-	color:#000; 
+	color:#999; 
+}
+.grid-item:hover .link, 
+.grid-item:hover .note, 
+.grid-item:hover .quote, 
+.grid-item:hover .term, 
+.grid-item:hover .prog 
+{
+	color:#000;
 }
 .tags a {
-	padding-top: 0.5em;
-	padding-bottom: 0.5em;
-	color:#000; 
+	color:#999; 
 	text-decoration:none; 
 }
-.tags a:hover {
-	color:#DCDCDC;
+.grid-item:hover .tags a {
+	color:#000; 
+}
+.grid-item:hover .tags a:hover {
+	color:#bbb;
 	background-color: #000;
 }
+
 .textIcon {
-	color:#888;
+	color:#bbb;
 	margin-right:0.75em; 
+}
+.grid-item:hover .textIcon {
+	color:#999;
 }
 
 /* TYPE */
@@ -99,7 +123,10 @@ a#url:hover, a#urlseen:hover {
 	font-size:1.5em;
 	/*background: #000;*/
 }
-#type a:hover {
+
+.grid-item:hover #type a:hover {
 	color:#000;
-	text-decoration:none; 
+}
+.grid-item:hover #type a {
+	color:#999;
 }
