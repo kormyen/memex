@@ -3,63 +3,36 @@ html {
 	font-family:'Monaco', 'Andale Mono', 'Deja Vu Sans Mono', 'Consolas', monospace;
 	font-size:1em; 
 	box-sizing: border-box;
+	padding: 0em;
+	margin:0; 
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
+body { 
+	padding: 0em;
+	margin:0; 
 }
 
-/* Masonry */
-#masonry {
-  max-width: 1550px;
-  min-width: 300px;
-  column-gap: 1em;
-  margin-left: 0.75em;
-  margin-right: 0.75em;
-  margin-top: 1em;
-  page-break-inside: avoid; 
-  break-inside: avoid; 
+* { box-sizing: border-box; }
+
+.grid {
+  /* center */
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
-#item {
-  background: #fff;
-  margin-bottom: 1em;
-  padding: 1em;
-  display: inline-block;
-  overflow: hidden;
-  width: 100% !important;
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
 }
 
-@media only screen and (min-width: 1550px) {
-  #masonry {
-    column-count: 5;
-  }
-}
-
-@media only screen and (max-width: 1549px) and (min-width: 1250px) {
-  #masonry {
-    column-count: 4;
-  }
-}
-
-@media only screen and (max-width: 1249px) and (min-width: 950px) {
-  #masonry {
-    column-count: 3;
-  }
-}
-
-@media only screen and (max-width: 949px) and (min-width: 650px) {
-  #masonry {
-    column-count: 2;
-  }
-}
-
-@media only screen and (max-width: 649px) and (min-width: 0px) {
-  #masonry {
-    column-count: 1;
-  }
+.grid-item {
+  width: 350px;
+  float: left;
+  background: #D26;
+  margin-bottom: 20px;
+  border-radius: 2px;
 }
 
 
@@ -76,7 +49,7 @@ a#urlseen {
 }
 
 /* ENTRY */
-#entry, #entryImportant { 
+.grid-item, #entryImportant { 
 	color:#000; 
 	background:#999;
 	padding:0.5em; 

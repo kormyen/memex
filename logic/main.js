@@ -11,9 +11,19 @@ function Main()
     let view = ``;
     let html = document.body;
     
-    view += `<div id="masonry">${displayEntries(DB)}</div>`;
+    view += `<div class="grid">`;
+    view += `${displayEntries(DB)}`;
+    view += `</div>`;
 
     html.innerHTML = view;
+
+    var msnry = new Masonry( '.grid', {
+		itemSelector: '.grid-item',
+		columnWidth: 350,
+		gutter: 20,
+		fitWidth: true,
+		transitionDuration: 0,
+	});
 }
 
 function displayEntries(db)
@@ -28,7 +38,7 @@ function displayEntries(db)
 	    value = db[keys[i]];
 
     	// ENTRY
-    	var idEntry = "item";
+    	var idEntry = "grid-item";
 	 //    if (typeof value.REVI !== 'undefined')
 		// {
 		// 	if (value.REVI == "true")
@@ -37,7 +47,7 @@ function displayEntries(db)
 		// 	}
 		// }
 
-	    entries += `<div id="${idEntry}">`;
+	    entries += `<div class="${idEntry}">`;
 	    entries += `${keys[i].toProperCase()}`;
 
 	    // LINK
