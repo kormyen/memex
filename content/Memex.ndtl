@@ -315,6 +315,7 @@ GERMANY POST WW
   TAGS : politics
   SEEN : true
   NOTE : Not endorsement. Wondering how this happened.
+  TAGS : history, war
 
 DECISIONS THAT MATTER
   LINK : https://www.dropbox.com/s/6axk95bl2htagt5/Matthias_Worch_Decisions_That_Matterv101.pdf
@@ -590,6 +591,7 @@ CIRCULAR ECONOMY
   DATE : 12018-07-06
   SEEN : true
   TAGS : society, economics
+  TERM : 'Circular economy'
 
 SPACESHIP EARTH ECONOMICS
   LINK : http://arachnid.biosci.utexas.edu/courses/THOC/Readings/Boulding_SpaceshipEarth.pdf
@@ -648,11 +650,13 @@ FRANKFURT SCHOOL
   SEEN : false
   TAGS : philosophy
 
-POV FIGHT
+POLITCAL CORRECTNESS DEBATE
+  LINK : https://www.youtube.com/watch?v=GxYimeaoea0
+  TYPE : video
   DATE : 12018-07-06
   SEEN : true
-  QOTE : "Fuck political correctness, resist, fight. If you have a point of view, fight for it in the proper manner."
-  TYPE : quote
+  QOTE : "Fuck political correctness, resist, fight. If you have a point of view, fight for it in the proper manner." - Stephen Fry
+  TAGS : politics
 
 BORROWED TIME
   PERS : neauoire
@@ -1082,6 +1086,7 @@ THE EMPIRE
   TYPE : podcast
   DATE : 12018-07-14
   SEEN : true
+  TAGS : politics
 
 HORSESHIT PROBLEM
   LINK : http://www.duncantrussell.com/episodes/2018/7/12/taryn-southern
@@ -1098,4 +1103,146 @@ TUDOR MONASTERY FARM
   DATE : 12018-07-14
   SEEN : false
   PROG : Episode 04
+  TAGS : history
+
+CLIMATE CHANGE IN POST TRUTH
+  LINK : https://medium.com/@christinelariviere/the-fisher-king-solving-climate-change-in-a-post-truth-world-7b18c8eafd53
+  TYPE : article
+  DATE : 12018-07-15
+  SEEN : false
+  TAGS : env
+
+JIM CRAWFORD INTERVIEW
+  LINK : https://pokyfriends.com/blog/36/an-interview-with-jim-crawford-frog-fractions-2-and-zzt
+  TYPE : article
+  DATE : 12018-07-15
+  SEEN : false
+  TAGS : gamedev
+
+TARN ADAMS INTERVIEW
+  LINK : https://www.pcgamer.com/dwarf-fortress-creator-tarn-adams-talks-about-simulating-the-most-complex-magic-system-ever/
+  TYPE : article
+  DATE : 12018-07-15
+  SEEN : false
+  TAGS : gamedev
+  NOTE : Dwarf Fortress
+
+WHISTLE BLOWING
+  LINK : https://theintercept.com/2016/05/03/edward-snowden-whistleblowing-is-not-just-leaking-its-an-act-of-political-resistance/
+  TYPE : article
+  DATE : 12018-07-15
+  SEEN : false
+  TAGS : political
+
+TACTICAL SEMIOTICS
+  LINK : https://d.rip/mikerugnetta/posts/RHJvcFBvc3QtMzM0NA==
+  TYPE : article
+  DATE : 12018-07-15
+  SEEN : true
+  TAGS : design
+
+SAD POSTING
+  LINK : http://humaniterations.net/2018/05/22/sadposting
+  TYPE : article
+  DATE : 12018-07-15
+  SEEN : false
+  TAGS : psychology
+
+CHANTING TEMPLES
+  LINK : http://viewzone2.com/archeosoundx.html
+  TYPE : article
+  DATE : 12018-07-15
+  SEEN : false
+  TAGS : architecture, history
+  TERM : '111hz'
+
+THE PSYCHOLOGY OF MONEY
+  LINK : http://www.collaborativefund.com/blog/the-psychology-of-money/
+  TYPE : article
+  DATE : 12018-07-15
+  SEEN : false
+  TAGS : economics, psychology
+
+FRACTAL CONSCIOUSNESS
+  LINK : http://nautil.us/issue/47/consciousness/is-consciousness-fractal
+  TYPE : article
+  DATE : 12018-07-15
+  SEEN : false
+  TAGS : philosophy, psychology
+
+HIGH DIMENSIONAL SPACE
+  LINK : https://marckhoury.github.io/counterintuitive-properties-of-high-dimensional-space/
+  TYPE : article
+  DATE : 12018-07-15
+  SEEN : false
+  TAGS : philosophy
+
+SEXAGESIMAL SYSTEM
+  LINK : https://www.tapatalk.com/groups/tranquility/the-sexagesimal-system-t4647.html
+  TYPE : article
+  DATE : 12018-07-15
+  SEEN : false
+  TAGS : time
+  FILE : 12018-07-15_TheSexagesimalSystem-IntoInfinity.pdf
+
+ZOMBIES REDACTED
+  LINK : https://www.lesswrong.com/posts/7DmA3yWwa6AT5jFXt/zombies-redacted
+  TYPE : article
+  DATE : 12018-07-15
+  SEEN : false
+  TAGS : philosophy
+  TERM : 'Zombie' - 'in the philosophical usage of the term, is putatively a being that is exactly like you in every respect—identical behavior, identical speech, identical brain; every atom and quark in exactly the same position, moving according to the same causal laws of motion—except that your zombie is not conscious.'
+
+KREMLIN MEDIA
+  LINK : https://meduza.io/en/feature/2015/08/13/this-is-how-russian-internet-censorship-works
+  TYPE : article
+  DATE : 12018-07-15
+  SEEN : false
+  TAGS : politics
+  FILE : 12018-07-15_KremlinMedia.pdf
+
+FUNDAMENTAL MISCONCEPTIONS
+  LINK : http://mwil.co/articles/03/
+  TYPE : article
+  DATE : 12018-07-15
+  SEEN : false
+  TAGS : bitcoin
+  FILE : 12018-07-15_FundamentalMisconceptions.pdf
+
+CALENDAR REFORM
+  LINK : http://myweb.ecu.edu/mccartyr/eastman.html
+  TYPE : article
+  DATE : 12018-07-15
+  SEEN : false
+  TAGS : time
+
+NON EUCLIDEAN ROOM
+  LINK : http://ludumdare.com/compo/2016/12/23/non-euclidean-room-postmortem/
+  TYPE : article
+  DATE : 12018-07-15
+  SEEN : false
+  TAGS : gamedev
+  FILE : 12018-07-15_NonEuclideanRoom.pdf
+
+SAN JUAN ISLANDS
+  LINK : https://arachnoid.com/sailbook/Chapter_1_--_Introduction,_San_Juan_Islands.html
+  TYPE : article
+  DATE : 12018-07-15
+  SEEN : false
+  FILE : 12018-07-15_SanJuanIslands.pdf
+
+PROGRAMMERS KNOW FEELINGS
+  LINK : https://medium.com/enspiral-tales/good-programmers-know-more-about-feelings-than-computers-fa19f62495ae
+  TYPE : article
+  DATE : 12018-07-15
+  SEEN : false
+  TAGS : code
+  FILE : 12018-07-15_GoodProgrammersKnowMoreAboutFeelingsThanComputers.pdf
+
+THE EMPIRE FILES
+  LINK : http://theempirefiles.tv/
+  TYPE : list
+  DATE : 12018-07-15
+  SEEN : false
+  TAGS : politics
 `
