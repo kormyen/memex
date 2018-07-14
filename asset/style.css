@@ -41,33 +41,23 @@ a {
 	color:#000; 
 	text-decoration:underline; 
 }
-#entryImportant a { 
-	color:#fff; 
-}
 a#urlseen { 
 	color:#666;  
 }
 
 /* ENTRY */
-.grid-item, #entryImportant { 
+.grid-item { 
 	color:#000; 
 	background:#999;
 	padding:0.5em; 
 	min-height:2.4em;
 	float:left;
 }
-#entryImportant { 
-	color:#DCDCDC; 
-	background:#333333; 
-}
 
 /* TAGS */
 #tags { 
 	font-size:0.8em;
 	color:#000; 
-}
-#entryImportant #tags { 
-	color:#808080; 
 }
 
 /* NOTE, QUOTE, TERM */
@@ -76,6 +66,16 @@ a#urlseen {
 	font-size:0.8em;
 	color:#000; 
 }
-#entryImportant #note, #entryImportant #quote, #entryImportant #term { 
-	color:#808080; 
+
+/* TYPE */
+#type {
+	text-align: center;
+	vertical-align: top;
+	width: 40px; 
+	height: 40px;
+	position: absolute;
+    top: 8px;
+    right: 5px;
+	color:#666; 
+	font-size:1.5em;
 }

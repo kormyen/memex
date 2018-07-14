@@ -72,7 +72,7 @@ LIFE WITHOUT PLASTIC
   PERS : neauoire
   SRCE : Merveilles
   LINK : https://www.lifewithoutplastic.com/store/
-  TYPE : store
+  TYPE : list
   TAGS : env
   DATE : 12018-07-03
   SEEN : false
@@ -192,7 +192,7 @@ NETWORKED PHYSICS
 
 MEAT
   LINK : http://www.terrybisson.com/page6/page6.html
-  TYPE : story
+  TYPE : article
   DATE : 12018-07-03
   QOTE : 'Meat. They're made out of meat.'
   SEEN : true
@@ -303,11 +303,12 @@ KOAN
   TYPE : term
   DATE : 12018-07-04
   QOTE : "A paradoxical anecdote or riddle without a solution, used in Zen Buddhism to demonstrate the inadequacy of logical reasoning and provoke enlightenment."
+  TYPE : quote
   TAGS : philosohpy, paradox
   SEEN : true
   REVI : true
 
-HISTORICAL MINI DOC GERMANY POST WW
+GERMANY POST WW
   LINK : https://www.youtube.com/watch?v=DJUf8MxbcdA
   TYPE : video
   DATE : 12018-07-04
@@ -548,7 +549,7 @@ UNDER THE SKIN: JORDAN PETERSON
 
 JAPANESE POST-WAR DESIGN
   LINK : https://www.disegnodaily.com/article/the-story-of-design-japanese-post-war-design
-  TYPE : design
+  TYPE : article
   DATE : 12018-07-06
   SEEN : false
   TAGS : design
@@ -634,7 +635,7 @@ JAN VERWOERT 2017-11-09
 
 SELF AUTHORING
   LINK : https://selfauthoring.com/
-  TYPE : course
+  TYPE : lecture
   DATE : 12018-07-06
   SEEN : true
   REVI : true
@@ -651,6 +652,7 @@ POV FIGHT
   DATE : 12018-07-06
   SEEN : true
   QOTE : "Fuck political correctness, resist, fight. If you have a point of view, fight for it in the proper manner."
+  TYPE : quote
 
 BORROWED TIME
   PERS : neauoire
@@ -734,6 +736,7 @@ CLIENT SIDE ROUTING
 
 METHOD OF LOCI
   LINK : https://en.wikipedia.org/wiki/Method_of_loci
+  TYPE : article
   SEEN : false
   REVI : true
   NOTE : Memory palace
@@ -753,7 +756,7 @@ ARCANE ALGO ARCHIVE
   PERS : alx
   SRCE : Merveilles
   LINK : https://www.algorithm-archive.org/
-  TYPE : website
+  TYPE : list
   SEEN : true
   DATE : 12018-07-10
   TAGS : code
@@ -884,7 +887,7 @@ ZEIT STATIC HOSTING
   PERS : atteinmos
   SRCE : Merveilles
   LINK : https://zeit.co/
-  TYPE : service
+  TYPE : tool
   TAGS : web
   DATE : 12018-07-12
   NOTE : Web hosting
@@ -1015,7 +1018,7 @@ THE DOORS OF PERCEPTION
 
 VULTR
   LINK : https://www.vultr.com
-  TYPE : service
+  TYPE : tool
   TAGS : web
   DATE : 12018-07-14
   NOTE : Web hosting
@@ -1026,8 +1029,9 @@ WW1 BY WEEK
   TYPE : video
   TAGS : history, war
   DATE : 12018-07-14
-  NOTE : Week by week history of WW1. Week 7.
+  NOTE : Week by week history of WW1.
   SEEN : false
+  PROG : Week 7
 
 SOLARPUNK REFERENCES
   LINK : https://medium.com/solarpunks/solarpunk-a-reference-guide-8bcf18871965
@@ -1093,5 +1097,5 @@ TUDOR MONASTERY FARM
   TYPE : video
   DATE : 12018-07-14
   SEEN : false
-  NOTE : 03
+  PROG : Episode 04
 `

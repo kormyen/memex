@@ -38,16 +38,7 @@ function displayEntries(db)
 	    value = db[keys[i]];
 
     	// ENTRY
-    	var idEntry = "grid-item";
-	 //    if (typeof value.REVI !== 'undefined')
-		// {
-		// 	if (value.REVI == "true")
-		// 	{
-		// 		idEntry = "entryImportant";
-		// 	}
-		// }
-
-	    entries += `<div class="${idEntry}">`;
+	    entries += `<div class="grid-item">`;
 	    entries += `${keys[i].toProperCase()}`;
 
 	    // LINK
@@ -62,6 +53,58 @@ function displayEntries(db)
 				}
 			}
 			entries += `<div id="link"><a href="${String(value.LINK)}" id="${idUrl}">${extractRootDomain(value.LINK)}</a></div>`;
+		}
+
+		// TYPE
+		if (typeof value.TYPE !== 'undefined')
+		{
+			entries += `<div id="type">`;
+			if (value.TYPE == 'article')
+			{
+				entries += `<i class="far fa-newspaper"></i>`;
+			}
+			else if (value.TYPE == 'podcast')
+			{
+				entries += `<i class="fas fa-podcast"></i>`;
+			}
+			else if (value.TYPE == 'video')
+			{
+				entries += `<i class="fas fa-tv"></i>`;
+			}
+			else if (value.TYPE == 'list')
+			{
+				entries += `<i class="fas fa-file-alt"></i>`;
+			}
+			else if (value.TYPE == 'book')
+			{
+				entries += `<i class="fas fa-book-open"></i>`;
+			}
+			else if (value.TYPE == 'game')
+			{
+				entries += `<i class="fas fa-gamepad"></i>`;
+			}
+			else if (value.TYPE == 'service')
+			{
+				entries += `<i class="fas fa-server"></i>`;
+			}
+			else if (value.TYPE == 'lecture')
+			{
+				entries += `<i class="fas fa-chalkboard-teacher"></i>`;
+			}
+			else if (value.TYPE == 'quote')
+			{
+				entries += `<i class="fas fa-comment"></i>`;
+			}
+			else if (value.TYPE == 'tool')
+			{
+				entries += `<i class="fas fa-wrench"></i>`;
+			}
+			else if (value.TYPE == 'music')
+			{
+				entries += `<i class="fas fa-music"></i>`;
+			}
+			 
+			entries += `</div>`;
 		}
 
 		// TAGS
