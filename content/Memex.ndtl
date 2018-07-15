@@ -1,6 +1,5 @@
-DATABASE = {}
+let DATABASE = `
 
-DATABASE.memex = `
 AGAINST BEAUTY IN PHYSICS
   PERS : faun
   SRCE : Merveilles
