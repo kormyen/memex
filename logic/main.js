@@ -26,10 +26,10 @@ function Main()
 
   this.start = function()
   {
-    this.load(window.document.location.hash == "" ? 'Home' : window.document.location.hash);
+    this.load(window.document.location.hash == "" ? 'home' : window.document.location.hash);
   }
 
-  this.load = function(target = "Home")
+  this.load = function(target = "home")
   {
     target = target.substr(0,1) == "#" ? target.substr(1,target.length-1) : target
     target = target.trim() == "" ? "home" : target
@@ -48,7 +48,9 @@ function Main()
     {
       console.log('home');
 
+      this.grid.innerHTML = '';
       this.displayEntries(this.database);
+      this.msnry.reloadItems();
       this.msnry.layout();
 
       console.log(this.database);
@@ -79,6 +81,7 @@ function Main()
 
         this.grid.innerHTML = '';
         this.displayEntries(tempDatabase);
+        this.msnry.reloadItems();
         this.msnry.layout();
       }
       else if (splitTarget[0] == 'type')
@@ -259,6 +262,7 @@ function Main()
     entry += `</div>`;
 
     this.grid.innerHTML += entry;
+    // this.msnry.appended( entry );
   }
 
   // this.doPagination = function()

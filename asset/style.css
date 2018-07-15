@@ -35,7 +35,7 @@ body {
 	padding:20px; 
 	min-height:2.4em;
 	float:left;
-	
+	box-sizing: border-box;
 }
 .grid-item:hover { 
 	background:#bbb;
