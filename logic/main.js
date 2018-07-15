@@ -5,12 +5,23 @@ function Main()
   this.page = 0;
   this.lastEntry = -1;
   this.postPerPage = 1000;
+  this.msnry = null;
+  this.grid = null;
 
   this.install = function()
   {
     this.database = new Indental(DATABASE).parse();
     this.keys = Object.keys(this.database);
     this.processDatabase();
+
+    this.grid = document.getElementById("grid");
+    this.msnry = new Masonry( '.grid', {
+        itemSelector: '.grid-item',
+        columnWidth: 350,
+        gutter: 20,
+        fitWidth: true,
+        transitionDuration: 0,
+      });
   }
 
   this.start = function()
@@ -25,37 +36,50 @@ function Main()
 
     if(target === '')
     {
-        window.history.replaceState(undefined, undefined, "#" + target)
+      window.history.replaceState(undefined, undefined, "#" + target)
     }
     else 
     {
-        window.location.hash = target.to_url()
+      // window.location.hash = target.to_url()
+      window.location.hash = target;
     }
 
     if (target == 'home')
     {
-      let view = ``;
-      view += `<div class="grid">`;
-      view += `${this.displayEntries(this.database)}`;
-      view += `</div>`;
-      document.body.innerHTML = view;
+      console.log('home');
 
-      var msnry = new Masonry( '.grid', {
-        itemSelector: '.grid-item',
-        columnWidth: 350,
-        gutter: 20,
-        fitWidth: true,
-        transitionDuration: 0,
-      });
+      this.displayEntries(this.database);
+      this.msnry.layout();
 
       console.log(this.database);
     }
     else
     {
-      var splitTarget = target.split(":");
+      var splitTarget = target.split("-");
       if (splitTarget[0] == 'tag')
       {
-        console.log('tag');
+        console.log('tag-'+splitTarget[1]);
+
+        var tempDatabase = {}
+        for (i = 0; i < this.keys.length; i++) 
+        { 
+          let value = this.database[this.keys[i]];
+          if (typeof value.TAGS !== 'undefined')
+          {
+            for (var t = 0; t < value.TAGS.length; t++)
+            {
+              if (value.TAGS[t] == splitTarget[1])
+              {
+                tempDatabase[this.keys[i]] = this.database[this.keys[i]];
+              }
+            }
+          }
+        }
+        console.log(tempDatabase);
+
+        this.grid.innerHTML = '';
+        this.displayEntries(tempDatabase);
+        this.msnry.layout();
       }
       else if (splitTarget[0] == 'type')
       {
@@ -67,9 +91,11 @@ function Main()
   this.processDatabase = function()
   {
     var tempDatabase = this.database;
-    for (i = 0; i < this.keys.length; i++) 
+    var dbKeys = Object.keys(this.database);
+
+    for (i = 0; i < dbKeys.length; i++) 
     { 
-      let value = this.database[this.keys[i]];
+      let value = this.database[dbKeys[i]];
       if (typeof value.TAGS !== 'undefined')
       {
         var tags = value.TAGS.split(",");
@@ -79,7 +105,7 @@ function Main()
           tags[t] = tags[t].trim().toLowerCase();
         }
 
-        this.database[this.keys[i]].TAGS = tags;
+        this.database[dbKeys[i]].TAGS = tags;
       }
     }
   }
@@ -102,26 +128,26 @@ function Main()
 
   document.addEventListener('mouseup',  (e)=>{ this.touch(e.target); e.preventDefault(); });
 
-  this.displayEntries = function()
+  this.displayEntries = function(db)
   {
-    let entries = ``;
+    var dbKeys = Object.keys(db);
+
     this.page += this.postPerPage;
     var i = this.lastEntry + 1;
-    while (i < Math.min(this.keys.length, this.page)) 
+    while (i < Math.min(dbKeys.length, this.page)) 
     {
-      entries += this.buildEntry(i);
+      this.buildEntry(db, dbKeys[i]);
       this.lastEntry = i;
       i += 1;
     }
-    entries += this.doPagination();
-    return entries;
+    // entries += this.doPagination();
   }
 
-  this.buildEntry = function(id)
+  this.buildEntry = function(db, key)
   {
-    let value = this.database[this.keys[id]];
+    let value = db[key];
     let entry = `<div class="grid-item">`;
-    entry += `<div class="title">${this.keys[id].to_properCase()}</div>`;
+    entry += `<div class="title">${key.to_properCase()}</div>`;
 
     // LINK
     if (typeof value.LINK !== 'undefined')
@@ -197,7 +223,7 @@ function Main()
       entry += `<div class="tags"><i class="fas fa-tag textIcon"></i>`;
       for (var i = 0; i < value.TAGS.length; i++)
       {
-        entry += `<a href=#tag:${value.TAGS[i]}>${value.TAGS[i]}</a>`;
+        entry += `<a href=#tag-${value.TAGS[i]}>${value.TAGS[i]}</a>`;
         if (i+1 != value.TAGS.length)
         {
           entry += `, `;
@@ -231,23 +257,24 @@ function Main()
     }
 
     entry += `</div>`;
-    return entry;
+
+    this.grid.innerHTML += entry;
   }
 
-  this.doPagination = function()
-  {
-    return `
-    <div id="pagination">
-      <a id="loadmore" onClick="loadMore();">${this.lastEntry < this.keys.length -1 ? `Load more ▼` : ``}</a>
-    </div>
-    `
-  }
+  // this.doPagination = function()
+  // {
+  //   return `
+  //   <div id="pagination">
+  //     <a id="loadmore" onClick="loadMore();">${this.lastEntry < this.keys.length -1 ? `Load more ▼` : ``}</a>
+  //   </div>
+  //   `
+  // }
 
-  this.loadMore = function()
-  {
-    pagination.remove();
-    document.getElementById("content").innerHTML += doJournal(this.database);
-  }
+  // this.loadMore = function()
+  // {
+  //   pagination.remove();
+  //   document.getElementById("content").innerHTML += doJournal(this.database);
+  // }
 
   String.prototype.to_url = function()
   {
@@ -303,30 +330,30 @@ function Main()
   }
 }
 
-var detectBackOrForward = function(onBack, onForward)
-{
-  hashHistory = [window.location.hash];
-  historyLength = window.history.length;
+// var detectBackOrForward = function(onBack, onForward)
+// {
+//   hashHistory = [window.location.hash];
+//   historyLength = window.history.length;
 
-  return function()
-  {
-    var hash = window.location.hash, length = window.history.length;
-    if (hashHistory.length && historyLength == length) {
-      if (hashHistory[hashHistory.length - 2] == hash) {
-        hashHistory = hashHistory.slice(0, -1);
-        onBack();
-      } else {
-        hashHistory.push(hash);
-        onForward();
-      }
-    } else {
-      hashHistory.push(hash);
-      historyLength = length;
-    }
-  }
-};
+//   return function()
+//   {
+//     var hash = window.location.hash, length = window.history.length;
+//     if (hashHistory.length && historyLength == length) {
+//       if (hashHistory[hashHistory.length - 2] == hash) {
+//         hashHistory = hashHistory.slice(0, -1);
+//         onBack();
+//       } else {
+//         hashHistory.push(hash);
+//         onForward();
+//       }
+//     } else {
+//       hashHistory.push(hash);
+//       historyLength = length;
+//     }
+//   }
+// };
 
-window.addEventListener("hashchange", detectBackOrForward(
-  function() { console.log("back"); main.load(); },
-  function() { console.log("forward"); main.load(); }
-));
+// window.addEventListener("hashchange", detectBackOrForward(
+//   function() { console.log("back"); main.load(); },
+//   function() { console.log("forward"); main.load(); }
+// ));
