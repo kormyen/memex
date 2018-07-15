@@ -6,8 +6,6 @@ let postPerPage = 1000;
 
 function Main()
 {
-	console.log(DB);
-
     let view = ``;
     let html = document.body;
     
@@ -24,129 +22,152 @@ function Main()
 		fitWidth: true,
 		transitionDuration: 0,
 	});
+
+	console.log(DB);
 }
 
-function displayEntries(db)
+function displayEntries()
 {
     let entries = ``;
     page += postPerPage;
-
-	var i = lastEntry+1;
-	var value;
+	var i = lastEntry + 1;
 	while (i < Math.min(keys.length, page)) 
 	{
-	    value = db[keys[i]];
-
-    	// ENTRY
-	    entries += `<div class="grid-item">`;
-	    entries += `<div class="title">${keys[i].toProperCase()}</div>`;
-
-	    // LINK
-		if (typeof value.LINK !== 'undefined')
-		{
-			var idUrl = "url";
-			if (typeof value.SEEN !== 'undefined')
-			{
-				if (value.SEEN == "true")
-				{
-					idUrl = "urlseen";
-				}
-			}
-			entries += `<div class="link"><i class="fas fa-link textIcon"></i><a href="${String(value.LINK)}" id="${idUrl}">${extractRootDomain(value.LINK)}</a></div>`;
-		}
-
-		// TYPE
-		if (typeof value.TYPE !== 'undefined')
-		{
-			entries += `<div id="type">`;
-			entries += `<a href='#type:${String(value.TYPE)}'>`;
-			if (value.TYPE == 'article')
-			{
-				entries += `<i class="far fa-newspaper"></i>`;
-			}
-			else if (value.TYPE == 'podcast')
-			{
-				entries += `<i class="fas fa-podcast"></i>`;
-			}
-			else if (value.TYPE == 'video')
-			{
-				entries += `<i class="fas fa-tv"></i>`;
-			}
-			else if (value.TYPE == 'list')
-			{
-				entries += `<i class="fas fa-file-alt"></i>`;
-			}
-			else if (value.TYPE == 'book')
-			{
-				entries += `<i class="fas fa-book-open"></i>`;
-			}
-			else if (value.TYPE == 'game')
-			{
-				entries += `<i class="fas fa-gamepad"></i>`;
-			}
-			else if (value.TYPE == 'service')
-			{
-				entries += `<i class="fas fa-server"></i>`;
-			}
-			else if (value.TYPE == 'lecture')
-			{
-				entries += `<i class="fas fa-chalkboard-teacher"></i>`;
-			}
-			else if (value.TYPE == 'quote')
-			{
-				entries += `<i class="fas fa-comment"></i>`;
-			}
-			else if (value.TYPE == 'tool')
-			{
-				entries += `<i class="fas fa-wrench"></i>`;
-			}
-			else if (value.TYPE == 'music')
-			{
-				entries += `<i class="fas fa-music"></i>`;
-			}
-			 
-			entries += `</a>`;
-			entries += `</div>`;
-		}
-
-		// TAGS
-		if (typeof value.TAGS !== 'undefined')
-		{
-			entries += `<div class="tags"><i class="fas fa-tag textIcon"></i><a href=#tag:${value.TAGS.toLowerCase()}>${value.TAGS.toLowerCase()}</a></div>`;
-		}
-
-		// NOTE
-		if (typeof value.NOTE !== 'undefined')
-		{
-			entries += `<div class="note"><i class="fas fa-sticky-note textIcon"></i>${value.NOTE}</div>`;
-		}
-
-		// QUOTE
-		if (typeof value.QOTE !== 'undefined')
-		{
-			entries += `<div class="quote"><i class="fas fa-comment textIcon"></i>${value.QOTE}</div>`;
-		}
-
-		// TERM
-		if (typeof value.TERM !== 'undefined')
-		{
-			entries += `<div class="term"><i class="fas fa-ribbon textIcon"></i>${value.TERM}</div>`;
-		}
-
-		// PROGRESS
-		if (typeof value.PROG !== 'undefined')
-		{
-			entries += `<div class="prog"><i class="fas fa-clock textIcon"></i>${value.PROG}</div>`;
-		}
-
-		entries += `</div>`;
-
+	    entries += buildEntry(i);
         lastEntry = i;
         i += 1;
 	}
 
     entries += doPagination();
     return entries;
+}
+
+function buildEntry(id)
+{
+	var value = this.DB[keys[id]];
+
+	var entry = `<div class="grid-item">`;
+    entry += `<div class="title">${keys[id].toProperCase()}</div>`;
+
+    // LINK
+	if (typeof value.LINK !== 'undefined')
+	{
+		var idUrl = "url";
+		if (typeof value.SEEN !== 'undefined')
+		{
+			if (value.SEEN == "true")
+			{
+				idUrl = "urlseen";
+			}
+		}
+		entry += `<div class="link"><i class="fas fa-link textIcon"></i><a href="${String(value.LINK)}" id="${idUrl}">${extractRootDomain(value.LINK)}</a></div>`;
+	}
+
+	// TYPE
+	if (typeof value.TYPE !== 'undefined')
+	{
+		entry += `<div id="type">`;
+		entry += `<a href='#type:${String(value.TYPE)}'>`;
+		if (value.TYPE == 'article')
+		{
+			entry += `<i class="far fa-newspaper"></i>`;
+		}
+		else if (value.TYPE == 'podcast')
+		{
+			entry += `<i class="fas fa-podcast"></i>`;
+		}
+		else if (value.TYPE == 'video')
+		{
+			entry += `<i class="fas fa-tv"></i>`;
+		}
+		else if (value.TYPE == 'list')
+		{
+			entry += `<i class="fas fa-file-alt"></i>`;
+		}
+		else if (value.TYPE == 'book')
+		{
+			entry += `<i class="fas fa-book-open"></i>`;
+		}
+		else if (value.TYPE == 'game')
+		{
+			entry += `<i class="fas fa-gamepad"></i>`;
+		}
+		else if (value.TYPE == 'service')
+		{
+			entry += `<i class="fas fa-server"></i>`;
+		}
+		else if (value.TYPE == 'lecture')
+		{
+			entry += `<i class="fas fa-chalkboard-teacher"></i>`;
+		}
+		else if (value.TYPE == 'quote')
+		{
+			entry += `<i class="fas fa-comment"></i>`;
+		}
+		else if (value.TYPE == 'tool')
+		{
+			entry += `<i class="fas fa-wrench"></i>`;
+		}
+		else if (value.TYPE == 'music')
+		{
+			entry += `<i class="fas fa-music"></i>`;
+		}
+		 
+		entry += `</a>`;
+		entry += `</div>`;
+	}
+
+	// TAGS
+	if (typeof value.TAGS !== 'undefined')
+	{
+		var  tags = value.TAGS.split(",");
+		for (var i = 0; i < tags.length; i++)
+		{
+			tags[i] = tags[i].trim().toLowerCase();
+		}
+
+		this.DB[keys[id]].TAGS = tags;
+
+		entry += `<div class="tags"><i class="fas fa-tag textIcon"></i>`;
+		for (var i = 0; i < tags.length; i++)
+		{
+			entry += `<a href=#tag:${tags[i]}>${tags[i]}</a>`;
+			if (i+1 != tags.length)
+			{
+				entry += `, `;
+			}
+		};
+		entry += `</div>`;
+	}
+	
+
+	// NOTE
+	if (typeof value.NOTE !== 'undefined')
+	{
+		entry += `<div class="note"><i class="fas fa-sticky-note textIcon"></i>${value.NOTE}</div>`;
+	}
+
+	// QUOTE
+	if (typeof value.QOTE !== 'undefined')
+	{
+		entry += `<div class="quote"><i class="fas fa-comment textIcon"></i>${value.QOTE}</div>`;
+	}
+
+	// TERM
+	if (typeof value.TERM !== 'undefined')
+	{
+		entry += `<div class="term"><i class="fas fa-ribbon textIcon"></i>${value.TERM}</div>`;
+	}
+
+	// PROGRESS
+	if (typeof value.PROG !== 'undefined')
+	{
+		entry += `<div class="prog"><i class="fas fa-clock textIcon"></i>${value.PROG}</div>`;
+	}
+
+	entry += `</div>`;
+
+	return entry;
 }
 
 function doPagination()
