@@ -3,14 +3,12 @@ function Main()
   // REFERENCE
   this.database = null;
   this.keys = null;
-  // this.page = 0;
-  this.lastEntry = -1;
   this.msnry = null;
   this.grid = null;
+  this.menu = null;
 
   // SETTINGS
   this.useMasonry = true;
-  this.postPerPage = 1000;
   this.divNamePre = 'item';
 
   // MAIN
@@ -21,6 +19,7 @@ function Main()
     this.processDatabase();
 
     this.grid = document.getElementById("grid");
+    this.menu = document.getElementById("menu");
 
     if (this.useMasonry)
     {
@@ -32,6 +31,8 @@ function Main()
         transitionDuration: 0,
       });
     }
+
+    this.displayStats(this.database);
   }
 
   this.start = function()
@@ -56,18 +57,12 @@ function Main()
       window.location.hash = target;
     }
 
+    var tempDatabase = {}
+
     if (target == 'home')
     {
       console.log('Display \'home\'');
-
-      this.grid.innerHTML = '';
-      this.displayEntries(this.database);
-
-      if (this.useMasonry)
-      {
-        this.msnry.reloadItems();
-        this.msnry.layout();
-      }
+      tempDatabase = this.database;
     }
     else
     {
@@ -79,7 +74,6 @@ function Main()
         // TAG
         console.log('Display tag \'' + splitTarget[1] + '\'');
 
-        var tempDatabase = {}
         for (i = 0; i < this.keys.length; i++) 
         { 
           let value = this.database[this.keys[i]];
@@ -93,15 +87,6 @@ function Main()
               }
             }
           }
-        }
-
-        this.grid.innerHTML = '';
-        this.displayEntries(tempDatabase);
-        
-        if (this.useMasonry)
-        {
-          this.msnry.reloadItems();
-          this.msnry.layout();
         }
       }
       else if (splitTarget[0] == 'type')
@@ -121,17 +106,20 @@ function Main()
             }
           }
         }
-
-        this.grid.innerHTML = '';
-        this.displayEntries(tempDatabase);
-        
-        if (this.useMasonry)
-        {
-          this.msnry.reloadItems();
-          this.msnry.layout();
-        }
       }
     }
+
+    // DISPLAY
+    this.grid.innerHTML = '';
+    this.displayEntries(tempDatabase);
+    
+    if (this.useMasonry)
+    {
+      this.msnry.reloadItems();
+      this.msnry.layout();
+    }
+
+    // this.displayStats(tempDatabase);
   }
 
   this.processDatabase = function()
@@ -142,6 +130,8 @@ function Main()
     for (i = 0; i < dbKeys.length; i++) 
     { 
       let value = this.database[dbKeys[i]];
+
+      // TAGS
       if (typeof value.TAGS !== 'undefined')
       {
         var tags = value.TAGS.split(",");
@@ -152,6 +142,25 @@ function Main()
         }
 
         this.database[dbKeys[i]].TAGS = tags;
+      }
+
+      // TERMS
+      if (typeof value.TERM !== 'undefined')
+      {
+        let termRunic = new Runic(value.TERM).raw;
+        let formattedTerms = [];
+
+        for (var t = 0; t < termRunic.length; t++) 
+        {
+          term = termRunic[t].substr(2).split(':');
+          for (var e = 0; e < term.length; e++) 
+          {
+            term[e] = term[e].trim();
+          }
+          formattedTerms.push(term);
+        }
+
+        this.database[dbKeys[i]].TERM = formattedTerms;
       }
 
       this.database[dbKeys[i]].DIID = i;
@@ -179,21 +188,157 @@ function Main()
 
   //document.addEventListener('mouseup',  (e)=>{ this.touch(e.target); e.preventDefault(); });
 
+  this.displayStats = function(db)
+  {
+    // CALCULATE
+    let dbKeys = Object.keys(db);
+    let types = {};
+    let terms = 0;
+    let i = 0;
+    while (i < dbKeys.length) 
+    {
+      // TYPE
+      if (typeof db[dbKeys[i]].TYPE !== 'undefined')
+      {
+        if (typeof types[db[dbKeys[i]].TYPE] !== 'undefined')
+        {
+          types[db[dbKeys[i]].TYPE] ++;
+        }
+        else
+        {
+          types[db[dbKeys[i]].TYPE] = 1;
+        }
+
+        if (typeof db[dbKeys[i]].TERM !== 'undefined')
+        {
+          terms += db[dbKeys[i]].TERM.length;
+        }
+      }
+      i++;
+    }
+    console.log(types);
+
+    // DISPLAY
+    let menuContent = ``;
+     
+    menuContent += `<a href='#home'>`;
+    menuContent += `<div class="menu-item">`;
+    menuContent += `<i class="fas fa-asterisk"></i><div class="count">${this.keys.length}</div>`;
+    menuContent += `</div>`;
+    menuContent += `</a>`;
+
+    if (typeof types['article'] !== 'undefined')
+    {
+      menuContent += `<a href='#type-article'>`;
+      menuContent += `<div class="menu-item">`;
+      menuContent += `<i class="far fa-newspaper"></i><div class="count">${types['article']}</div>`;
+      menuContent += `</div>`;
+      menuContent += `</a>`;
+    }
+    if (typeof types['podcast'] !== 'undefined')
+    {
+      menuContent += `<a href='#type-podcast'>`;
+      menuContent += `<div class="menu-item">`;
+      menuContent += `<i class="fas fa-podcast"></i><div class="count">${types['podcast']}</div>`;
+      menuContent += `</div>`;
+      menuContent += `</a>`;
+    }
+    if (typeof types['video'] !== 'undefined')
+    {
+      menuContent += `<a href='#type-video'>`;
+      menuContent += `<div class="menu-item">`;
+      menuContent += `<i class="fas fa-tv"></i><div class="count">${types['video']}</div>`;
+      menuContent += `</div>`;
+      menuContent += `</a>`;
+    }
+    if (typeof types['list'] !== 'undefined')
+    {
+      menuContent += `<a href='#type-list'>`;
+      menuContent += `<div class="menu-item">`;
+      menuContent += `<i class="fas fa-file-alt"></i><div class="count">${types['list']}</div>`;
+      menuContent += `</div>`;
+      menuContent += `</a>`;
+    }
+    if (typeof types['book'] !== 'undefined')
+    {
+      menuContent += `<a href='#type-book'>`;
+      menuContent += `<div class="menu-item">`;
+      menuContent += `<i class="fas fa-book-open"></i><div class="count">${types['book']}</div>`;
+      menuContent += `</div>`;
+      menuContent += `</a>`;
+    }
+    if (typeof types['game'] !== 'undefined')
+    {
+      menuContent += `<a href='#type-game'>`;
+      menuContent += `<div class="menu-item">`;
+      menuContent += `<i class="fas fa-gamepad"></i><div class="count">${types['game']}</div>`;
+      menuContent += `</div>`;
+      menuContent += `</a>`;
+    }
+    if (typeof types['service'] !== 'undefined')
+    {
+      menuContent += `<a href='#type-service'>`;
+      menuContent += `<div class="menu-item">`;
+      menuContent += `<i class="fas fa-server"></i><div class="count">${types['service']}</div>`;
+      menuContent += `</div>`;
+      menuContent += `</a>`;
+    }
+    if (typeof types['lecture'] !== 'undefined')
+    {
+      menuContent += `<a href='#type-lecture'>`;
+      menuContent += `<div class="menu-item">`;
+      menuContent += `<i class="fas fa-chalkboard-teacher"></i><div class="count">${types['lecture']}</div>`;
+      menuContent += `</div>`;
+      menuContent += `</a>`;
+    }
+    if (typeof types['quote'] !== 'undefined')
+    {
+      menuContent += `<a href='#type-quote'>`;
+      menuContent += `<div class="menu-item">`;
+      menuContent += `<i class="fas fa-comment"></i><div class="count">${types['quote']}</div>`;
+      menuContent += `</div>`;
+      menuContent += `</a>`;
+    }
+    if (typeof types['tool'] !== 'undefined')
+    {
+      menuContent += `<a href='#type-tool'>`;
+      menuContent += `<div class="menu-item">`;
+      menuContent += `<i class="fas fa-wrench"></i><div class="count">${types['tool']}</div>`;
+      menuContent += `</div>`;
+      menuContent += `</a>`;
+    }
+    if (typeof types['music'] !== 'undefined')
+    {
+      menuContent += `<a href='#type-music'>`;
+      menuContent += `<div class="menu-item">`;
+      menuContent += `<i class="fas fa-music"></i><div class="count">${types['music']}</div>`;
+      menuContent += `</div>`;
+      menuContent += `</a>`;
+    }
+
+    if (terms > 0)
+    {
+      // menuContent += `<div class="menu-item-space"></div>`;
+      menuContent += `<a href='#term'>`;
+      menuContent += `<div class="menu-item">`;
+      menuContent += `<i class="fas fa-ribbon"></i><div class="count">${terms}</div>`;
+      menuContent += `</div>`;
+      menuContent += `</a>`;
+    }
+
+    this.menu.innerHTML = ``;
+    this.menu.innerHTML += menuContent;
+  }
+
   this.displayEntries = function(db)
   {
     var dbKeys = Object.keys(db);
-
-    //this.page += this.postPerPage;
-    //var i = this.lastEntry + 1;
     var i = 0;
     while (i < dbKeys.length) 
-    // while (i < Math.min(dbKeys.length, this.page)) 
     {
       this.buildEntry(db, dbKeys[i]);
-      this.lastEntry = i;
-      i += 1;
+      i++;
     }
-    // entries += this.doPagination();
   }
 
   this.buildEntry = function(db, key)
@@ -301,7 +446,10 @@ function Main()
     // TERM
     if (typeof value.TERM !== 'undefined')
     {
-      entry += `<div class="term"><i class="fas fa-ribbon textIcon"></i>${value.TERM}</div>`;
+      for (var i = 0; i < value.TERM.length; i++) 
+      {
+        entry += `<div class="term"><i class="fas fa-ribbon textIcon"></i><b>${value.TERM[i][0]}</b>: ${value.TERM[i][1]}</div>`;
+      }
     }
 
     // PROGRESS
@@ -313,27 +461,7 @@ function Main()
     entry += `</div>`;
 
     this.grid.innerHTML += entry;
-
-    // if (this.useMasonry)
-    // {
-    //   this.msnry.appended( entry );
-    // }
   }
-
-  // this.doPagination = function()
-  // {
-  //   return `
-  //   <div id="pagination">
-  //     <a id="loadmore" onClick="loadMore();">${this.lastEntry < this.keys.length -1 ? `Load more ▼` : ``}</a>
-  //   </div>
-  //   `
-  // }
-
-  // this.loadMore = function()
-  // {
-  //   pagination.remove();
-  //   document.getElementById("content").innerHTML += doJournal(this.database);
-  // }
 
   String.prototype.to_url = function()
   {
@@ -416,13 +544,6 @@ function Main()
 //   function() { console.log("back"); main.load(); },
 //   function() { console.log("forward"); main.load(); }
 // ));
-
-// var doThing = function()
-// {
-//   console.log('do thing');
-// }
-
-// window.addEventListener("hashchange", doThing());
 
 window.addEventListener("hashchange", navigate );
 

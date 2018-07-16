@@ -14,31 +14,63 @@ body {
 
 * { box-sizing: border-box; }
 
-.optionsPanel {
-	width: 100px;
+/* MENU */
+.menu {
 	height: 100%;
 	background:#000;
 	position:fixed;
 	left: 0px;
 	top: 0px;
 	z-index: 100;
+	padding-top:20px;
+	font-size:1.5em;
 	/*-webkit-transition: width 0.05s ease-in-out;
   transition: width 0.05s ease-in-out;*/
 }
-.optionsPanel:hover {
-	width: 370px;
+.menu:hover {
+	/*width: 370px;*/
   /*-webkit-transition: width 0.05s ease-in-out;
   transition: width 0.05s ease-in-out;*/
-	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .1);
+	/*box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .1);*/
+}
+.menu a {
+	color: #333;
+}
+.menu:hover a {
+	color: #999;
+}
+.menu:hover a:hover {
+	color: #eee;
+}
+.menu-item {
+	height: 50px;
+	padding-top:10px;
+	margin-top: 5px;
+	margin-right: 20px;
+}
+.menu-item-space {
+	margin-top: 50px;
+}
+.menu-item i {
+	width: 50%;
+	float: left;
+	padding: 2px 0 0 25px;
+	text-align: center;
+}
+.menu-item .count {
+	width: 50%;
+	float: left;
+	padding: 0 0 0 15px;
+	text-align: center;
 }
 
 .container {
 	margin-left: 120px;
 }
-.optionsPanel:hover + .container{
-  /*transition: 0.05s -webkit-filter ease-in;*/
+/*.menu:hover + .container{
+  transition: 0.05s -webkit-filter ease-in;
 	filter: blur(3px);
-}
+}*/
 
 .grid {
 	border: 1px;

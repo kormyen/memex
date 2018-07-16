@@ -304,13 +304,13 @@ GNOSTICISM
 KOAN
   PERS : faun
   SRCE : Merveilles
-  TYPE : term
+  TYPE : list
   DATE : 12018-07-04
-  QOTE : "A paradoxical anecdote or riddle without a solution, used in Zen Buddhism to demonstrate the inadequacy of logical reasoning and provoke enlightenment."
-  TYPE : quote
   TAGS : philosohpy, paradox
   SEEN : true
   REVI : true
+  TERM 
+    > Koan: 'A paradoxical anecdote or riddle without a solution, used in Zen Buddhism to demonstrate the inadequacy of logical reasoning and provoke enlightenment.'
 
 GERMANY POST WW
   LINK : https://www.youtube.com/watch?v=DJUf8MxbcdA
@@ -449,8 +449,10 @@ LONG-TERM MEMORY
   TYPE : article
   DATE : 12018-07-06
   TAGS : psychology
-  TERM : Anki, Memex
-  SEEN : false
+  TERM 
+    > Anki: memory tool/app. Manually entered questions and answers. The app repeatedly asks you every question, every time you know the answer the duration it waits before asking that question again doubles. If you forget an answer then the wait duration resets to one day.
+    > Memex: external memory tool. 'Data storage and retrieval system'.
+  SEEN : true
 
 INDEPENDENCE IN CYBERSPACE
   PERS : ark
@@ -461,7 +463,7 @@ INDEPENDENCE IN CYBERSPACE
   TAGS : philosophy
   SEEN : true
 
-DESIGNING THE MIND OF AN ONLINE CURATOR
+CURATOR MIND DESIGN
   LINK : https://medium.com/@lintropy/murat-pak-designing-the-mind-of-an-online-curator-5785e373127d
   TYPE : article
   DATE : 12018-07-06
@@ -596,7 +598,8 @@ CIRCULAR ECONOMY
   DATE : 12018-07-06
   SEEN : true
   TAGS : society, economics
-  TERM : 'Circular economy'
+  TERM 
+    > Circular economy: 'is a regenerative system in which resource input and waste, emission, and energy leakage are minimised by slowing, closing, and narrowing energy and material loops. This can be achieved through long-lasting design, maintenance, repair, reuse, remanufacturing, refurbishing, and recycling. This is in contrast to a linear economy which is a "take, make, dispose" model of production.'
 
 SPACESHIP EARTH ECONOMICS
   LINK : http://arachnid.biosci.utexas.edu/courses/THOC/Readings/Boulding_SpaceshipEarth.pdf
@@ -729,7 +732,8 @@ GREENSPACE
   SRCE : Merveilles
   LINK : https://www.uea.ac.uk/about/-/it-s-official-spending-time-outside-is-good-for-you
   TYPE : article
-  TERM : greenspace
+  TERM 
+    > Greenspace: 'open, undeveloped land with natural vegetation as well as urban greenspaces, which include urban parks and street greenery.'
   SEEN : true
   DATE : 12018-07-08
   TAGS : psychology, economics, env
@@ -979,14 +983,14 @@ FRACTAL FILM CGI
   DATE : 12018-07-14
   SEEN : false
 
-VORTICAL FLOW + FRACTAL MACHINES
+VORTICAL + FRACTAL MACHINES
   LINK : https://www.fxguide.com/featured/suicide-squad-vortical-flows-and-fractal-machines/
   TYPE : article
   TAGS : fractal, film
   DATE : 12018-07-14
   SEEN : false
 
-VORTICAL FLOW + FRACTAL MACHINES
+FRACTALS AND ROUGHNESS
   LINK : https://www.ted.com/talks/benoit_mandelbrot_fractals_the_art_of_roughness
   TYPE : video
   TAGS : fractal, research
@@ -1058,7 +1062,7 @@ SYSTEMS ARE EVERYWHERE
 
 NZ EXCHANGE
   LINK : https://www.tokenroom.co.nz/
-  TYPE : service
+  TYPE : tool
   TAGS : bitcoin
   DATE : 12018-07-14
   SEEN : true
@@ -1096,7 +1100,8 @@ THE EMPIRE
 HORSESHIT PROBLEM
   LINK : http://www.duncantrussell.com/episodes/2018/7/12/taryn-southern
   TYPE : podcast
-  TERM : 'Horseshit problem' - a problem that seems existentially bad but is later solved indirectly by technology. The name refers to horse manue starting to be a major problem when horses were extensively used for transport their manure was everywhere and poisoning water etc. When the cars were invented and mass adopted it was suddenly not an issue.
+  TERM 
+    > Horseshit problem: a problem that seems existentially bad but is later solved trivially/indirectly by technology. The name refers to horse manue starting to be a major problem when horses were extensively used for transport, their manure ending up everywhere - poisoning water wells etc. When the car was invented and mass adopted it was suddenly no longer an issue.
   DATE : 12018-07-14
   SEEN : true
 
@@ -1153,13 +1158,15 @@ SAD POSTING
   SEEN : false
   TAGS : psychology
 
-CHANTING TEMPLES
+CHANNELING ARCHTECTURE
   LINK : http://viewzone2.com/archeosoundx.html
   TYPE : article
   DATE : 12018-07-15
   SEEN : false
   TAGS : architecture, history
-  TERM : '111hz'
+  TERM 
+    > 111hz: '...Findings of MRI scans suggest that at exactly 111hz, the brain switches off the prefrontal cortex, deactivating the language center, and temporaryly switches from left to right-sided dominance, that is responsible for intuition, creativity, holistic processing, inducing a state of meditation or a trance. Further research directed by Prof. Robert Jahn has tested acoustic behaviour in megalithic sites in the UK, showing that they sustained a strong resonance at a sound frequency between 95 and 120 heartz.' ...can't find source of the 'MRI' studies. Prof. Robert Jahn seems controversial. None-the-less interesting.
+  FILE : 12018-07-15_AcousticalResonancesOfAssortedAncientStructures.pdf
 
 THE PSYCHOLOGY OF MONEY
   LINK : http://www.collaborativefund.com/blog/the-psychology-of-money/
@@ -1196,7 +1203,8 @@ ZOMBIES REDACTED
   DATE : 12018-07-15
   SEEN : false
   TAGS : philosophy
-  TERM : 'Zombie' - 'in the philosophical usage of the term, is putatively a being that is exactly like you in every respect—identical behavior, identical speech, identical brain; every atom and quark in exactly the same position, moving according to the same causal laws of motion—except that your zombie is not conscious.'
+  TERM 
+    > Zombie: 'in the philosophical usage of the term, is putatively a being that is exactly like you in every respect—identical behavior, identical speech, identical brain; every atom and quark in exactly the same position, moving according to the same causal laws of motion—except that your zombie is not conscious.'
 
 KREMLIN MEDIA
   LINK : https://meduza.io/en/feature/2015/08/13/this-is-how-russian-internet-censorship-works
@@ -1273,6 +1281,56 @@ CLIENT SIDE ROUTING
   TYPE : article
   DATE : 12018-07-16
   SEEN : false
-  NOTE : Research for memex
   TAGS : web, code
+  PROJ : Memex
+
+NOON GUEST
+  LINK : https://aliceffekt.bandcamp.com/album/noon-guest
+  TYPE : music
+  DATE : 12018-07-16
+  SEEN : true
+  TAGS : game
+
+SECRETS OF THE CASTLE
+  LINK : https://www.youtube.com/watch?v=jWZWTwJ_5Ag
+  TYPE : video
+  DATE : 12018-07-16
+  SEEN : true
+  TAGS : history
+  NOTE : Modern day 25 year project to build a castle with traditional methods and tools.
+
+VICTORIAN FARM
+  LINK : https://www.youtube.com/watch?v=BodKsqkZk2Q
+  TYPE : video
+  DATE : 12018-07-16
+  SEEN : true
+  TAGS : history
+  TERM
+    > Shoddy: 'a type of woollen yarn produced by tearing old woollen rags into shreds and weaving the strands.'
+
+LOW TECH MAGAZINE
+  PERS : josh
+  SRCE : Merveilles
+  LINK : http://www.lowtechmagazine.com/
+  TYPE : list
+  DATE : 12018-07-16
+  SEEN : false
+  TAGS : history, solarpunk, env
+
+GWERN
+  PERS : neauoire
+  SRCE : Merveilles
+  LINK : http://www.gwern.net/
+  TYPE : list
+  DATE : 12018-07-16
+  SEEN : false
+  TAGS : history, psychology, science, ai, bitcoin, code, psychedelics, env
+
+ISOTOPE MANSONRY
+  LINK : https://isotope.metafizzy.co/
+  TYPE : tool
+  DATE : 12018-07-17
+  SEEN : true
+  TAGS : code, web
+  PROJ : Memex
 `
