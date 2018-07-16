@@ -137,12 +137,9 @@ function Main()
 
   this.processDatabase = function()
   {
-    var tempDatabase = this.database;
-    var dbKeys = Object.keys(this.database);
-
-    for (i = 0; i < dbKeys.length; i++) 
+    for (i = 0; i < this.keys.length; i++) 
     { 
-      let value = this.database[dbKeys[i]];
+      let value = this.database[this.keys[i]];
 
       // TAGS
       if (typeof value.TAGS !== 'undefined')
@@ -154,7 +151,7 @@ function Main()
           tags[t] = tags[t].trim().toLowerCase();
         }
 
-        this.database[dbKeys[i]].TAGS = tags;
+        this.database[this.keys[i]].TAGS = tags;
       }
 
       // TERMS
@@ -173,10 +170,10 @@ function Main()
           formattedTerms.push(term);
         }
 
-        this.database[dbKeys[i]].TERM = formattedTerms;
+        this.database[this.keys[i]].TERM = formattedTerms;
       }
 
-      this.database[dbKeys[i]].DIID = i;
+      this.database[this.keys[i]].DIID = i;
     }
     console.log(this.database);
   }
@@ -206,6 +203,7 @@ function Main()
     // CALCULATE
     let dbKeys = Object.keys(db);
     let types = {};
+    let tags = {};
     let terms = 0;
     let i = 0;
     while (i < dbKeys.length) 
@@ -221,22 +219,57 @@ function Main()
         {
           types[db[dbKeys[i]].TYPE] = 1;
         }
+      }
 
-        if (typeof db[dbKeys[i]].TERM !== 'undefined')
+      // TAGS
+      if (typeof db[dbKeys[i]].TAGS !== 'undefined')
+      {
+        for (var t = 0; t < db[dbKeys[i]].TAGS.length; t++) 
         {
-          terms += db[dbKeys[i]].TERM.length;
+          if (typeof tags[db[dbKeys[i]].TAGS[t]] !== 'undefined')
+          {
+            tags[db[dbKeys[i]].TAGS[t]] ++;
+          }
+          else
+          {
+            tags[db[dbKeys[i]].TAGS[t]] = 1;
+          }
         }
       }
+
+      // TERM
+      if (typeof db[dbKeys[i]].TERM !== 'undefined')
+      {
+        terms += db[dbKeys[i]].TERM.length;
+      }
+
       i++;
     }
-    console.log(types);
+
+    // SORT TAGS, TAKE TOP 5
+    // Create items array
+    var items = Object.keys(tags).map(function(key) {
+      return [key, tags[key]];
+    });
+
+    // Sort the array based on the second element
+    items.sort(function(first, second) {
+      return second[1] - first[1];
+    });
+
+    tags = items.slice(0, 5);
+    console.log(tags);
+
+
 
     // DISPLAY
     let menuContent = ``;
-     
+    
+    // TYPE
     menuContent += `<a href='#home'>`;
     menuContent += `<div class="menu-item">`;
-    menuContent += `<i class="fas fa-asterisk"></i><div class="count">${this.keys.length}</div>`;
+    menuContent += `<div class="count">${this.keys.length}</div>`;
+    menuContent += `<i class="fas fa-asterisk"></i>`;
     menuContent += `</div>`;
     menuContent += `</a>`;
 
@@ -244,7 +277,8 @@ function Main()
     {
       menuContent += `<a href='#type-article'>`;
       menuContent += `<div class="menu-item">`;
-      menuContent += `<i class="far fa-newspaper"></i><div class="count">${types['article']}</div>`;
+      menuContent += `<div class="count">${types['article']}</div>`;
+      menuContent += `<i class="far fa-newspaper"></i>`;
       menuContent += `</div>`;
       menuContent += `</a>`;
     }
@@ -252,7 +286,8 @@ function Main()
     {
       menuContent += `<a href='#type-podcast'>`;
       menuContent += `<div class="menu-item">`;
-      menuContent += `<i class="fas fa-podcast"></i><div class="count">${types['podcast']}</div>`;
+      menuContent += `<div class="count">${types['podcast']}</div>`;
+      menuContent += `<i class="fas fa-podcast"></i>`;
       menuContent += `</div>`;
       menuContent += `</a>`;
     }
@@ -260,7 +295,8 @@ function Main()
     {
       menuContent += `<a href='#type-video'>`;
       menuContent += `<div class="menu-item">`;
-      menuContent += `<i class="fas fa-tv"></i><div class="count">${types['video']}</div>`;
+      menuContent += `<div class="count">${types['video']}</div>`;
+      menuContent += `<i class="fas fa-tv"></i>`;
       menuContent += `</div>`;
       menuContent += `</a>`;
     }
@@ -268,7 +304,8 @@ function Main()
     {
       menuContent += `<a href='#type-list'>`;
       menuContent += `<div class="menu-item">`;
-      menuContent += `<i class="fas fa-file-alt"></i><div class="count">${types['list']}</div>`;
+      menuContent += `<div class="count">${types['list']}</div>`;
+      menuContent += `<i class="fas fa-file-alt"></i>`;
       menuContent += `</div>`;
       menuContent += `</a>`;
     }
@@ -276,7 +313,8 @@ function Main()
     {
       menuContent += `<a href='#type-book'>`;
       menuContent += `<div class="menu-item">`;
-      menuContent += `<i class="fas fa-book-open"></i><div class="count">${types['book']}</div>`;
+      menuContent += `<div class="count">${types['book']}</div>`;
+      menuContent += `<i class="fas fa-book-open"></i>`;
       menuContent += `</div>`;
       menuContent += `</a>`;
     }
@@ -284,7 +322,8 @@ function Main()
     {
       menuContent += `<a href='#type-game'>`;
       menuContent += `<div class="menu-item">`;
-      menuContent += `<i class="fas fa-gamepad"></i><div class="count">${types['game']}</div>`;
+      menuContent += `<div class="count">${types['game']}</div>`;
+      menuContent += `<i class="fas fa-gamepad"></i>`;
       menuContent += `</div>`;
       menuContent += `</a>`;
     }
@@ -292,7 +331,8 @@ function Main()
     {
       menuContent += `<a href='#type-service'>`;
       menuContent += `<div class="menu-item">`;
-      menuContent += `<i class="fas fa-server"></i><div class="count">${types['service']}</div>`;
+      menuContent += `<div class="count">${types['service']}</div>`;
+      menuContent += `<i class="fas fa-server"></i>`;
       menuContent += `</div>`;
       menuContent += `</a>`;
     }
@@ -300,7 +340,8 @@ function Main()
     {
       menuContent += `<a href='#type-lecture'>`;
       menuContent += `<div class="menu-item">`;
-      menuContent += `<i class="fas fa-chalkboard-teacher"></i><div class="count">${types['lecture']}</div>`;
+      menuContent += `<div class="count">${types['lecture']}</div>`;
+      menuContent += `<i class="fas fa-chalkboard-teacher"></i>`;
       menuContent += `</div>`;
       menuContent += `</a>`;
     }
@@ -308,7 +349,8 @@ function Main()
     {
       menuContent += `<a href='#type-quote'>`;
       menuContent += `<div class="menu-item">`;
-      menuContent += `<i class="fas fa-comment"></i><div class="count">${types['quote']}</div>`;
+      menuContent += `<div class="count">${types['quote']}</div>`;
+      menuContent += `<i class="fas fa-comment"></i>`;
       menuContent += `</div>`;
       menuContent += `</a>`;
     }
@@ -316,7 +358,8 @@ function Main()
     {
       menuContent += `<a href='#type-tool'>`;
       menuContent += `<div class="menu-item">`;
-      menuContent += `<i class="fas fa-wrench"></i><div class="count">${types['tool']}</div>`;
+      menuContent += `<div class="count">${types['tool']}</div>`;
+      menuContent += `<i class="fas fa-wrench"></i>`;
       menuContent += `</div>`;
       menuContent += `</a>`;
     }
@@ -324,19 +367,40 @@ function Main()
     {
       menuContent += `<a href='#type-music'>`;
       menuContent += `<div class="menu-item">`;
-      menuContent += `<i class="fas fa-music"></i><div class="count">${types['music']}</div>`;
+      menuContent += `<div class="count">${types['music']}</div>`;
+      menuContent += `<i class="fas fa-music"></i>`;
       menuContent += `</div>`;
       menuContent += `</a>`;
     }
 
+    // TERM
     if (terms > 0)
     {
       // menuContent += `<div class="menu-item-space"></div>`;
       menuContent += `<a href='#term'>`;
       menuContent += `<div class="menu-item">`;
-      menuContent += `<i class="fas fa-ribbon"></i><div class="count">${terms}</div>`;
+      menuContent += `<div class="count">${terms}</div>`;
+      menuContent += `<i class="fas fa-ribbon"></i>`;
       menuContent += `</div>`;
       menuContent += `</a>`;
+    }
+
+    // TAGS
+    if (tags.length > 0)
+    {
+      menuContent += `<div class="menu-tag-container">`;
+      menuContent += `<i class="fas fa-tag"></i>`;
+      for (var t = 0; t < tags.length; t++) 
+      {
+        menuContent += `<a href='#tag-${tags[t][0]}'>`;
+        menuContent += `<div class="menu-tag">`;
+        // menuContent += `<i class="fas fa-tag textIcon"></i>`;
+        menuContent += `<div class="menu-tag-count">${tags[t][1]}</div>`;
+        menuContent += `<div class="menu-tag-label">${tags[t][0]}</div>`;
+        menuContent += `</div>`;
+        menuContent += `</a>`;
+      }
+      menuContent += `</div>`;
     }
 
     this.menu.innerHTML = ``;

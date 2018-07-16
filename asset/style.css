@@ -16,6 +16,7 @@ body {
 
 /* MENU */
 .menu {
+	color: #fff;
 	height: 100%;
 	background:#000;
 	position:fixed;
@@ -23,7 +24,7 @@ body {
 	top: 0px;
 	z-index: 100;
 	padding-top:20px;
-	font-size:1.5em;
+	width: 150px;
 	/*-webkit-transition: width 0.05s ease-in-out;
   transition: width 0.05s ease-in-out;*/
 }
@@ -43,29 +44,62 @@ body {
 	color: #eee;
 }
 .menu-item {
+	font-size:1.5em;
 	height: 50px;
-	padding-top:10px;
-	margin-top: 5px;
-	margin-right: 20px;
-}
-.menu-item-space {
-	margin-top: 50px;
-}
-.menu-item i {
-	width: 50%;
-	float: left;
-	padding: 2px 0 0 25px;
-	text-align: center;
+	padding-top: 10px;
+	margin: 0px auto;
 }
 .menu-item .count {
-	width: 50%;
 	float: left;
-	padding: 0 0 0 15px;
+	text-align: right;
+	width: 50%;
+	padding-right: 10px;
+}
+.menu-item i {
+	float: left;
 	text-align: center;
+	width: 50px;
+	margin-top: 2px;
 }
 
+.menu-tag-container {
+	display: table;
+	margin: 40px auto;
+}
+.menu-tag-container i {
+	display: table-row;
+	font-size:1.5em;
+	width: 100%;
+	text-align: center;
+	color: #333;
+	height: 30px;
+}
+.menu:hover .menu-tag-container i {
+	color: #999;
+}
+.menu-tag {
+	display: table-row;
+	font-size:0.8em;
+	height: 20px;
+	margin-top: 5px;
+	padding-top: 2px;
+	float: left;
+	clear: left;
+}
+.menu-tag-count {
+	float: left;
+	text-align: right;
+	padding-right: 10px;
+}
+.menu-tag-label {
+	float: left;
+	text-align: left;
+}
+
+
+
 .container {
-	margin-left: 120px;
+	margin-left: 150px; /* This should be the width of the menu */
 }
 /*.menu:hover + .container{
   transition: 0.05s -webkit-filter ease-in;
