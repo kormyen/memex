@@ -91,6 +91,7 @@ CLOCK OF THE LONG NOW
   TAGS : time
   SEEN : true
   REVI : true
+  PROJ : Dastime
 
 GAMEDEV TOOLS +
   LINK : https://www.slideshare.net/KatharineNeil/game-design-tools-for-when-spreadsheets-and-flowcharts-arent-enough
@@ -304,6 +305,7 @@ GNOSTICISM
 KOAN
   PERS : faun
   SRCE : Merveilles
+  LINK : http://www.ashidakim.com/zenkoans/zenindex.html
   TYPE : list
   DATE : 12018-07-04
   TAGS : philosohpy, paradox
@@ -311,6 +313,7 @@ KOAN
   REVI : true
   TERM 
     > Koan: 'A paradoxical anecdote or riddle without a solution, used in Zen Buddhism to demonstrate the inadequacy of logical reasoning and provoke enlightenment.'
+  NOTE : https://en.wikipedia.org/wiki/K%C5%8Dan
 
 GERMANY POST WW
   LINK : https://www.youtube.com/watch?v=DJUf8MxbcdA
@@ -420,7 +423,7 @@ PHILANTHROPY ANALYSIS
   TYPE : podcast
   DATE : 12018-07-05
   TAGS : research
-  QOTE : "it’s basically a 'transhumanistic vegan sci-fi' podcast"
+  QOTE : "It’s basically a 'transhumanistic vegan sci-fi' podcast" - neauoire
   SEEN : true
 
 THE INTELLECTUAL DARK WEB
@@ -487,6 +490,7 @@ DIY WRISTWATCH
   SEEN : true
   REVI : true
   NOTE : https://github.com/zkemble/NWatch
+  PROJ : Dastime
 
 BITCOIN HOT-WIRED FOR SETTLEMENT
   LINK : https://medium.com/@jgarzik/bitcoin-is-being-hot-wired-for-settlement-a5beb1df223a
@@ -545,15 +549,15 @@ UNDER THE SKIN: JORDAN PETERSON
   REVI : false
   TAGS : society, psychology, philosophy
   QOTE
-    - The good quote is "The proper exchange of ideas between free individuals keeps tyranny at bay."
-    - However media centralization and widely popular material escapism distorts societal discourse.
-    - And the related quote is: '...the problem with hierarchies is that people stack up at the bottom and that they tilt toward tyranny across time'. 
-    - Fuller context: "If you're going to values some things more than others then hierarchies are inevitable. You have to value some things more than others or you don't have anything valuable." "Like beauty or strength or something." "Or competence. ...whatever it happens to be. The ability to play the flute. It doesn't matter what it is. Obviously if you value music you are going to value some musicians more than others because some are better. So you have to value things in order to more forward in life, and you have to value things in order to have something valuable to produce. But if you play out the value in a social landscape you produce a hierarchy. The problem with producing a hierarchy is that a small number of people are going to be more successful than the majority, and a very large number of people are not going to be successful at all - at that particular thing. It's inevitable. 
-    - ...So you say 'we have to put up with that because we need to pursue things of value'. OK fine, so that is the right wing perspective - the hierarchies are justifiable and necessary. 
-    - The left wing perspective is 'yeah but wait a minute, the problem with hierarchies is that people stack up at the bottom and that they tilt toward tyranny across time' and that's also true. 
-    - You need that dialect in society between the right wing that says you know 'we need the hierarchies and they are useful and you should be grateful for them, they structure you and give you form and provide value' 
-    - and the left that says 'yeah but they exclude people, people stack up at the bottom and that is dangerous to the hierarchy itself, it means that people might not have opportunity' and you have to say yes to that (too). 
-    - The problem comes -and this is the situation we are in right now- where the radical left-ists (and this is mostly a problem that really permeates the Universities) say 'Yeah but all hierarchies are just tyrannical power', it's like oh no their not. Hierarchies are based on competence in a functioning society and mostly our society functions... ...That doesn't mean that hierarchies don't tilt toward self interest and tyranny across time but that's a bad thing. Even a bad thing from a conservative perspective. There's room for the left because the poor will always be with us and the dispossessed need a voice, not least because there are talented people among the dispossessed and if they are stuck at zero everyone suffers because we don't have access to their talents. It's bad use of resources. On the right its like 'no, we need the damn value hierarchies, we need to be grateful for our traditions and structures because they stop us from degenerating into chaos.'"
+    > The good quote is 'The proper exchange of ideas between free individuals keeps tyranny at bay.' 
+    & ...however media centralization and widely popular material escapism distorts societal discourse.
+    > A the related quote is: '...the problem with hierarchies is that people stack up at the bottom and that they tilt toward tyranny across time'. 
+    > Fuller context: 'If you're going to values some things more than others then hierarchies are inevitable. You have to value some things more than others or you don't have anything valuable." "Like beauty or strength or something." "Or competence. ...whatever it happens to be. The ability to play the flute. It doesn't matter what it is. Obviously if you value music you are going to value some musicians more than others because some are better. So you have to value things in order to more forward in life, and you have to value things in order to have something valuable to produce. But if you play out the value in a social landscape you produce a hierarchy. The problem with producing a hierarchy is that a small number of people are going to be more successful than the majority, and a very large number of people are not going to be successful at all - at that particular thing. It's inevitable. 
+    & ...So you say "we have to put up with that because we need to pursue things of value". OK fine, so that is the right wing perspective - the hierarchies are justifiable and necessary. 
+    & The left wing perspective is 'yeah but wait a minute, the problem with hierarchies is that people stack up at the bottom and that they tilt toward tyranny across time' and that's also true. 
+    & You need that dialect in society between the right wing that says you know "we need the hierarchies and they are useful and you should be grateful for them, they structure you and give you form and provide value" 
+    & and the left that says "yeah but they exclude people, people stack up at the bottom and that is dangerous to the hierarchy itself, it means that people might not have opportunity" and you have to say yes to that (too). 
+    & The problem comes -and this is the situation we are in right now- where the radical left-ists (and this is mostly a problem that really permeates the Universities) say "Yeah but all hierarchies are just tyrannical power", it's like oh no their not. Hierarchies are based on competence in a functioning society and mostly our society functions... ...That doesn't mean that hierarchies don't tilt toward self interest and tyranny across time but that's a bad thing. Even a bad thing from a conservative perspective. There's room for the left because the poor will always be with us and the dispossessed need a voice, not least because there are talented people among the dispossessed and if they are stuck at zero everyone suffers because we don't have access to their talents. It's bad use of resources. On the right its like "no, we need the damn value hierarchies, we need to be grateful for our traditions and structures because they stop us from degenerating into chaos."'
 
 JAPANESE POST-WAR DESIGN
   LINK : https://www.disegnodaily.com/article/the-story-of-design-japanese-post-war-design
@@ -670,10 +674,13 @@ BORROWED TIME
   PERS : neauoire
   SRCE : Merveilles
   NOTE : "Marcus Aurelius - Meditation - Book 3"
-  TYPE : book
-  QOTE : "The average person lives about 75 years. Now then, I multiplied 75 times 52 and came up with 3,900, which is the number of Saturdays that the average person has in his lifetime. It took me until I was 55 years old to think about this in any detail, and by that time I had lived through over 2,800 Saturdays.", "Now let me tell you one last thought before I sign off and take my lovely wife out to breakfast. This morning, I took the very last marble out of the container. I figure if I make it until next Saturday, then I have been given a little extra time."
+  TYPE : quote
+  QOTE 
+    > "The average person lives about 75 years. Now then, I multiplied 75 times 52 and came up with 3,900, which is the number of Saturdays that the average person has in his lifetime. It took me until I was 55 years old to think about this in any detail, and by that time I had lived through over 2,800 Saturdays."
+    & "Now let me tell you one last thought before I sign off and take my lovely wife out to breakfast. This morning, I took the very last marble out of the container. I figure if I make it until next Saturday, then I have been given a little extra time."
   DATE : 12018-07-08
   TAGS : philosophy
+  PROJ : Dastime
 
 WIDSOM CALENDAR
   PERS : neauoire
@@ -1097,13 +1104,14 @@ THE EMPIRE
   SEEN : true
   TAGS : politics
 
-HORSESHIT PROBLEM
+TARYN SOUTHERN DTFH
   LINK : http://www.duncantrussell.com/episodes/2018/7/12/taryn-southern
   TYPE : podcast
   TERM 
     > Horseshit problem: a problem that seems existentially bad but is later solved trivially/indirectly by technology. The name refers to horse manue starting to be a major problem when horses were extensively used for transport, their manure ending up everywhere - poisoning water wells etc. When the car was invented and mass adopted it was suddenly no longer an issue.
   DATE : 12018-07-14
   SEEN : true
+  TAGS : politics
 
 TUDOR MONASTERY FARM
   PERS : faun
@@ -1113,6 +1121,7 @@ TUDOR MONASTERY FARM
   DATE : 12018-07-14
   SEEN : true
   TAGS : history
+  PROJ : Swordy
 
 CLIMATE CHANGE IN POST TRUTH
   LINK : https://medium.com/@christinelariviere/the-fisher-king-solving-climate-change-in-a-post-truth-world-7b18c8eafd53
@@ -1167,6 +1176,7 @@ CHANNELING ARCHTECTURE
   TERM 
     > 111hz: '...Findings of MRI scans suggest that at exactly 111hz, the brain switches off the prefrontal cortex, deactivating the language center, and temporaryly switches from left to right-sided dominance, that is responsible for intuition, creativity, holistic processing, inducing a state of meditation or a trance. Further research directed by Prof. Robert Jahn has tested acoustic behaviour in megalithic sites in the UK, showing that they sustained a strong resonance at a sound frequency between 95 and 120 heartz.' ...can't find source of the 'MRI' studies. Prof. Robert Jahn seems controversial. None-the-less interesting.
   FILE : 12018-07-15_AcousticalResonancesOfAssortedAncientStructures.pdf
+  PROJ : Swordy
 
 THE PSYCHOLOGY OF MONEY
   LINK : http://www.collaborativefund.com/blog/the-psychology-of-money/
@@ -1196,6 +1206,7 @@ SEXAGESIMAL SYSTEM
   SEEN : false
   TAGS : time
   FILE : 12018-07-15_TheSexagesimalSystem-IntoInfinity.pdf
+  PROJ : Dastime
 
 ZOMBIES REDACTED
   LINK : https://www.lesswrong.com/posts/7DmA3yWwa6AT5jFXt/zombies-redacted
@@ -1228,6 +1239,7 @@ CALENDAR REFORM
   DATE : 12018-07-15
   SEEN : false
   TAGS : time
+  PROJ : Dastime
 
 NON EUCLIDEAN ROOM
   LINK : http://ludumdare.com/compo/2016/12/23/non-euclidean-room-postmortem/
@@ -1298,6 +1310,7 @@ SECRETS OF THE CASTLE
   SEEN : true
   TAGS : history
   NOTE : Modern day 25 year project to build a castle with traditional methods and tools.
+  PROJ : Swordy
 
 VICTORIAN FARM
   LINK : https://www.youtube.com/watch?v=BodKsqkZk2Q
@@ -1307,6 +1320,7 @@ VICTORIAN FARM
   TAGS : history
   TERM
     > Shoddy: 'a type of woollen yarn produced by tearing old woollen rags into shreds and weaving the strands.'
+  PROJ : Swordy
 
 LOW TECH MAGAZINE
   PERS : josh
@@ -1333,4 +1347,159 @@ ISOTOPE MANSONRY
   SEEN : true
   TAGS : code, web
   PROJ : Memex
+
+MEASURED ITERATION
+  QOTE : 'The most important thing you can do is to get into an iteration cycle where you can measure the impact of your work, have a hypothesis about how making changes will affect those variables, and ship changes regularly. It doesn't even matter that much what the content is - it's the iteration of hypothesis, changes, and measurement that will make you better at a faster rate than anything else we have seen.' - Gabe Newell
+  LINK : https://www.reddit.com/r/The_Gaben/comments/5olhj4/hi_im_gabe_newell_ama/
+  DATE : 12018-07-17
+  SEEN : true
+  REVI : true
+  TAGS : gamedev
+  TYPE : quote
+
+ENVIRONMENT INFLUENCE
+  QOTE
+    > 'Our environment, architecture influences how we think'
+    > 'What is without becomes within'
+    > 'We build the tools and the tools build us'
+    > 'Our thoughts shape out spaces, and our spaces return the favor'
+  NOTE : Rat park cocaine. Heroin Vietnam.
+  LINK : https://www.youtube.com/watch?v=nH9IPpDrVTs
+  DATE : 12018-07-17
+  SEEN : true
+  REVI : true
+  TAGS : env, design
+  TYPE : quote
+
+BREATH
+  QOTE : 'Keep breathing'
+  DATE : 12018-07-17
+  SEEN : true
+  TAGS : philosophy
+  TYPE : quote
+
+LIVE
+  QOTE : 'Life should be lived to the point of tears'
+  DATE : 12018-07-17
+  SEEN : true
+  TAGS : philosophy
+  TYPE : quote
+
+ZOO
+  QOTE : 'Zoos are animal prisons that operate for profit. It’s not education, it’s "entertainment".'
+  DATE : 12018-07-17
+  SEEN : true
+  TAGS : philosophy, env
+  TYPE : quote
+
+SEE
+  QOTE : 'Do you yearn to defend your own beliefs or to see the world as clearly as you possibly can?'
+  DATE : 12018-07-17
+  SEEN : true
+  TAGS : philosophy
+  TYPE : quote
+
+MARRIAGE
+  QOTE 
+    >'Child of divorce, professional who dealt with divorcing couples for many years, Adult who went through a divorce, remarried and volunteer counseling/mentoring for couples today.
+    & Here are the most common mistakes I've seen (my own as well as collectively) in the failed and struggling marriages I've seen:
+    & One or both spouses have unresolved childhood baggage issues that will rear its head in their adult relationships. Examples of these include (but not limited to) physical or emotional abuse/neglect in the home; sexual abuse; one or both parents had substance abuse/addiction issues; one or both partners came from a divorced or single parent household. Among the many reasons why this is such a significant factor is if you grow up in a dysfunctional environment, you have no idea how dysfunctional and unhealthy it really is. To you, its normal, it is all you've ever known. So if Mom and Dad resolved conflict by getting drunk, yelling at each other and then not speaking for days, guess what you have a chance of modeling as an adult in your own relationships?
+    & Understanding what "marriage as a priority" really means. When you get married, your marriage has to be the main priority in your life. Not your career, not your spouse (i.e. don't put them on a pedestal), not your kids, not your hobbies or your personal fitness. The fact is, when you get married, you no longer get to call all of the shots. Gotten used to staying up all night playing XBOX with your boys on weekends? Not going to work in a marriage for an extended period of time. You're going to have to accept the fact that if you want to have a healthy marriage, compromise is your new word of the day. In some cases you may have to give things up entirely, or learn to say "no for now." While this often tends to be more of a struggle for men, women can also struggle with this issue. I'm not saying that getting married means giving up you completely, or kiss all of your favorite activities goodbye. What I am saying is, if you want your marriage to be healthy, you now have someone else in your life who gets an equal (not dominant--equal) say in how you spend your free time.
+    & Poor communication skills. A shockingly high number of adults lack basic healthy communication skills and conflict resolution skills. Its heart breaking to have conversations with struggling couples who won't speak to each other with a kind word for any reason. Both spouses should feel that their marriage is the one safe place in the world for each other. Unfortunately, in many instances, it is the last place a spouse can go for emotional safety. If you don't feel your partner is your first friend, your best friend, your most trusted friend, then something is broken in your communications with each other.
+    & Vastly different backgrounds. Don't get me wrong. Anyone can be successfully married to someone else if both people are committed to it and willing to work on it. But most of the time, that's just not the case. Societal/familial pressures are real, and it is important to assess them if you find yourself in a relationship that is impacted by them. Are you dating a trust fund baby/very wealthy child and you are the Jack Dawson? Tread carefully. It makes a great movie, but statistically, Rose winds up marrying Cal far more often than running off with Jack, because she doesn't want to deal with the family pressure or get cut off financially. Sorry, that's reality, not the movies.
+    & Similar to different backgrounds, different motivations in life. Do you know what your partner wants out of life? Do they aspire to be an artist who welds clown sculptures out of mufflers? That's great, but will it support the two of you, and if it won't, will you be okay supporting them while they're making Pennywise the Dual Exhaust Killer? Do they want to be a stay at home parent? Are you okay being the sole breadwinner? What if it is the reverse?
+    & One. Union. Combined. Together. This notion is one that I see a lot of guys--especially high wage earners who are the sole income for the family--stumble over. Whether you are religious or not, the fact is when you get married you are no longer two individuals. You're one. The law sees you that way, the tax code (at least in the US) sees you that way, and society sees you that way. There is no such thing as "mine and yours" in a marriage. There is only "ours." The faster you get that concept nailed down, the better off you'll be. I've seen many marriages collapse just over this issue alone.
+    & Marriage is not an event, its a journey. So many couples stop trying to pursue each other after the wedding day. Guys and girls do this. Stereotypically/historically, men tend to focus on their careers/making money; women tend to focus on raising the children and/or managing the household. (I realize not in every situation) Both spouses stop taking time to compliment each other, appreciate each other, go out on dates, weekend getaways, or generally just spending time chasing after each other. They take each other for granted and begin to drift apart. "We just fell out of love" is one of the most common phrases I hear in couples struggling, and the sad thing is, its one of the easiest traps to avoid.
+    & Friends and family around the marriage. This is especially hard for people who come from dysfunctional families. When you get married, your new spouse automatically gets moved to the front of the line. In front of your parents, siblings, lifelong besties, etc. They're great to have in your life, but all of them have to take a distant back seat to your new spouse. If you're a guy who has had a doting mother all your life and she's told you what to do, who to marry, where to go to college, etc, you have a tough job ahead of you. The Monster-In-Law stereotype exists for a reason. If your new wife turns pale when your Mom's number pops up on your cellphone, you need to talk to your wife and find out what boundaries she'd like to have installed. If you are Daddy's little girl and nobody has ever been good enough in your Dad's eyes, its time for you to tell Dad that you're so grateful for his love and support, but Jim is more than good enough in your eyes, so you need him to be in his eyes, too. And sadly, if you have friends or family members who are toxic to you or your marriage, you may be forced to make a very difficult decision in your life. Anyone who sits around bitching about how much they hate their life, their spouse, their kids or how you're going to eventually feel the same way about yours--put distance between you as fast as you possibly can. We tend to adopt the attitudes of the company we keep. So if you spend all your time with negative people...guess where you're going to be mentally?
+    & Date to establish trust. Time is actually your friend, not your enemy. Do not ignore ANY red flag you see in a relationship. Examine it for what it is, then determine if it is something you can work through with the other person, or is it something they refuse to acknowledge or deal with? If you're dating someone who is selfish and they refuse to see it, they will not magically become unselfish because you were kind enough to marry them. Red Flags ignored in dating will become the rocks upon which your marriage boat smashes in the coming storms. If there are multiple red flags and they won't talk to you about any of them, walk away. It doesn't matter if you've already moved in, share the bank account, the dog, and a car. Get out now. If they're not willing to work on things that impact the security of a relationship today, you can count on them not working on them after you get married.
+    & Marriage is not easy. It requires a lot of work sometimes, even when you are both on the same page, have great communication, great sex (which will happen very easily if the rest of the relationship is healthy by the way) and great chemistry. People get sick, they get laid off, their family members die, children get sick, get hurt in accidents, friends have affairs, get divorced...life is challenging and it impacts our relationships, sometimes in ways we're not expecting or prepared for. If you're not willing to value your marriage above everything else in your life, its going to be really hard for it to survive the day in and day out challenges of living.'
+  LINK : https://np.reddit.com/r/AskMen/comments/52h1h8/whats_the_most_common_mistake_people_make_when/d7kyny9?context=3
+  DATE : 12018-07-17
+  SEEN : true
+  TAGS : psychology
+  TYPE : quote
+
+GROWTH
+  QOTE : 'Growth for the sake of growth is the ideology of the cancer cell.' - Edward Abbey
+  NOTE : The Journey Home: Some Words in Defense of the American West
+  DATE : 12018-07-17
+  SEEN : true
+  TAGS : philosophy
+  TYPE : quote
+
+EDUCATION
+  QOTE : 'Education is the passport to the future, for tomorrow belongs to those who prepare for it today.' - Malcom X
+  DATE : 12018-07-17
+  SEEN : true
+  TAGS : philosophy
+  TYPE : quote
+
+CODEX
+  LINK : https://github.com/uonai/Codex
+  TYPE : list
+  QOTE 
+    > 'If someone contacts you, always respond.'
+    > 'Elevate the stories of the exiles.'
+    > 'Support your partner in all forms of growth.'
+    > 'Make time for yourself.'
+    > 'Don't idealize a future. Be there in the present.'
+    > 'Computers are difficult and struggling with technology means you're learning.'
+    > 'Programming languages are for building things. The more things you build, the more programming languages will make sense.'
+    > 'All technologists are both designers and developers.'
+    > 'Social media is a form of gambling. Treat it with caution.'
+    > 'Running away from technology is pointless. Build something better on top of existing technology.'
+    > 'Optimize for skills, not pay grade.'
+  DATE : 12018-07-17
+  SEEN : true
+  REVI : true
+  TAGS : philosophy, code, psychology
+
+LET'S ENCRYPT
+  LINK : https://letsencrypt.org/
+  TYPE : tool
+  DATE : 12018-07-17
+  SEEN : true
+  TAGS : code, web
+  NOTE : Free encryption ssl cert
+
+LIGAND
+  PERS : deuveir
+  SRCE : Merveilles
+  LINK : https://ultimae.bandcamp.com/album/ligand-24bit
+  TYPE : music
+  DATE : 12018-07-17
+  SEEN : true
+  NOTE : Ambient
+
+COMPRO
+  PERS : deuveir
+  SRCE : Merveilles
+  LINK : https://iliantape.bandcamp.com/album/itlp04-skee-mask-compro
+  TYPE : music
+  DATE : 12018-07-17
+  SEEN : true
+  NOTE : Ambient
+
+UNYT
+  PERS : deuveir
+  SRCE : Merveilles
+  LINK : https://ultimae.bandcamp.com/album/unyt-24bit
+  TYPE : music
+  DATE : 12018-07-17
+  SEEN : false
+
+JS PROTOTYPE
+  LINK : https://medium.freecodecamp.org/prototype-in-js-busted-5547ec68872
+  TYPE : article
+  DATE : 12018-07-17
+  SEEN : false
+  TAGS : web, code
+
+INTERNAL FLIGHTS
+  LINK : https://estastonne.bandcamp.com/album/internal-flight-2013-guitar-version
+  TYPE : music
+  DATE : 12018-07-17
+  SEEN : true
+  REVI : true
+  NOTE : Amaze
 `
