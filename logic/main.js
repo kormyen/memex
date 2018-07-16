@@ -64,6 +64,19 @@ function Main()
       console.log('Display \'home\'');
       tempDatabase = this.database;
     }
+    else if (target == 'term')
+    {
+      console.log('Display \'terms\'');
+
+      for (i = 0; i < this.keys.length; i++) 
+      { 
+        let value = this.database[this.keys[i]];
+        if (typeof value.TERM !== 'undefined')
+        {
+          tempDatabase[this.keys[i]] = this.database[this.keys[i]];
+        }
+      }
+    }
     else
     {
       var splitTarget = target.split("-");
