@@ -11,6 +11,7 @@ function Main()
   // SETTINGS
   this.useMasonry = true;
   this.postPerPage = 1000;
+  this.divNamePre = 'item';
 
   // MAIN
   this.install = function()
@@ -124,6 +125,8 @@ function Main()
 
         this.database[dbKeys[i]].TAGS = tags;
       }
+
+      this.database[dbKeys[i]].DIID = i;
     }
     console.log(this.database);
   }
@@ -168,7 +171,8 @@ function Main()
   this.buildEntry = function(db, key)
   {
     let value = db[key];
-    let entry = `<div class="grid-item">`;
+
+    let entry = `<div class="grid-item" id="${this.divNamePre + db[key].DIID}">`;
     entry += `<div class="title">${key.to_properCase()}</div>`;
 
     // LINK
