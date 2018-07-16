@@ -130,13 +130,13 @@ DECIDE TO MAKE
   NOTE : Deciding what to make.
   SEEN : false
 
-ALT WAD
+ALT WAD EXPLAINED
   PERS : Phil James
   LINK : https://unwinnable.com/2013/10/24/lost-worlds-a-l-t/
   TYPE : article
   DATE : 12018-07-03
-  TAGS : gamedev
-  NOTE : ALT explained.
+  TAGS : gamedev, game
+  NOTE : 'ALT' an original Doom level pack collab
   SEEN : true
   PROG : Finish playing it. Level 7?
 
@@ -166,15 +166,17 @@ CYCLIC DUNGEON
   LINK : http://ctrl500.com/tech/handcrafted-feel-dungeon-generation-unexplored-explores-cyclic-dungeon-generation/
   TYPE : article
   DATE : 12018-07-03
-  TAGS : gamedev
+  TAGS : gamedev, game
   SEEN : false
+  NOTE : 'Unexplored' game
 
 GENERATE GREAT DUNGEONS
   LINK : https://www.rockpapershotgun.com/2017/03/10/how-unexplored-generates-great-roguelike-dungeons/
   TYPE : article
   DATE : 12018-07-03
-  TAGS : gamedev
+  TAGS : gamedev, game
   SEEN : false
+  NOTE : 'Unexplored' game
 
 TECHNOLOGIST CLIMATE
   LINK : http://worrydream.com/ClimateChange/
@@ -230,9 +232,10 @@ SIGNAL TOLVA
   LINK : https://killscreen.com/articles/quick-look-landscape-art-signal-tolva/
   TYPE : article
   DATE : 12018-07-03
-  TAGS : gamedev
+  TAGS : gamedev, game
   QOTE : 'I would have been even more cryptic if I thought I could get away with it'
   SEEN : false
+  NOTE : 'Signal From Tolva'
 
 FOLDED LEVEL DESIGN
   LINK : http://critical-gaming.com/blog/2008/8/5/folded-level-design.html
@@ -267,8 +270,9 @@ HYPER LIGHT DIFFICULTY
   LINK : https://www.gamasutra.com/view/news/269957/How_Hyper_Light_Drifter_balances_difficulty_with_fairness.php
   TYPE : article
   DATE : 12018-07-03
-  TAGS : gamedev
+  TAGS : gamedev, game
   SEEN : false
+  NOTE : 'Hyper Light Drifter'
 
 CAVE ALLEGORY
   LINK : http://www.historyguide.org/intellect/allegory.html
@@ -509,6 +513,7 @@ OVERWHELM
   DATE : 12018-07-06
   SEEN : true
   NOTE : Stylish pixel platformer
+  NOTE : 'Overwhelm'
 
 COMPASS
   PERS : faun
@@ -945,12 +950,12 @@ HELLO
 5till L1 Complex
   PERS : Phil James
   LINK : https://www.doomworld.com/idgames/levels/doom2/Ports/0-9/5l1c
-  NOTE : Doom level
-  FILE : 12018-07-14_5l1c.zip
   TYPE : game
-  TAGS : gamedev
+  FILE : 12018-07-14_5l1c.zip
+  TAGS : gamedev, game
   SEEN : false
   DATE : 12018-07-14
+  NOTE : '5till L1 Complex' a large custom Doom level.
 
 BLADE RUNNER 2049 DESIGN
   LINK : https://www.engadget.com/2017/10/20/designing-the-technology-of-blade-runner-2049/
@@ -1117,15 +1122,16 @@ JIM CRAWFORD INTERVIEW
   TYPE : article
   DATE : 12018-07-15
   SEEN : false
-  TAGS : gamedev
+  TAGS : gamedev, game
+  NOTE : 'Frog Fractions 2'
 
 TARN ADAMS INTERVIEW
   LINK : https://www.pcgamer.com/dwarf-fortress-creator-tarn-adams-talks-about-simulating-the-most-complex-magic-system-ever/
   TYPE : article
   DATE : 12018-07-15
   SEEN : false
-  TAGS : gamedev
-  NOTE : Dwarf Fortress
+  TAGS : gamedev, game
+  NOTE : 'Dwarf Fortress'
 
 WHISTLE BLOWING
   LINK : https://theintercept.com/2016/05/03/edward-snowden-whistleblowing-is-not-just-leaking-its-an-act-of-political-resistance/
@@ -1255,11 +1261,19 @@ PRODUCTIVE DISTORTIONS
   SEEN : false
   TAGS : psychology
 
-PRODUCTIVE DISTORTIONS
+KILLED GREEN SCREEN
   PERS : goldbuick
   SRCE : Merveilles
   LINK : https://vimeo.com/264282403
   TYPE : video
   DATE : 12018-07-15
   SEEN : false
+
+CLIENT SIDE ROUTING
+  LINK : https://blog.risingstack.com/writing-a-javascript-framework-client-side-routing/
+  TYPE : article
+  DATE : 12018-07-16
+  SEEN : false
+  NOTE : Research for memex
+  TAGS : web, code
 `

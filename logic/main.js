@@ -1,13 +1,18 @@
 function Main()
 {
+  // REFERENCE
   this.database = null;
   this.keys = null;
-  this.page = 0;
+  // this.page = 0;
   this.lastEntry = -1;
-  this.postPerPage = 1000;
   this.msnry = null;
   this.grid = null;
 
+  // SETTINGS
+  this.useMasonry = true;
+  this.postPerPage = 1000;
+
+  // MAIN
   this.install = function()
   {
     this.database = new Indental(DATABASE).parse();
@@ -15,13 +20,17 @@ function Main()
     this.processDatabase();
 
     this.grid = document.getElementById("grid");
-    this.msnry = new Masonry( '.grid', {
+
+    if (this.useMasonry)
+    {
+      this.msnry = new Masonry( '.grid', {
         itemSelector: '.grid-item',
         columnWidth: 350,
         gutter: 20,
         fitWidth: true,
         transitionDuration: 0,
       });
+    }
   }
 
   this.start = function()
@@ -46,21 +55,23 @@ function Main()
 
     if (target == 'home')
     {
-      console.log('home');
+      console.log('Display \'home\'');
 
       this.grid.innerHTML = '';
       this.displayEntries(this.database);
-      this.msnry.reloadItems();
-      this.msnry.layout();
 
-      console.log(this.database);
+      if (this.useMasonry)
+      {
+        this.msnry.reloadItems();
+        this.msnry.layout();
+      }
     }
     else
     {
       var splitTarget = target.split("-");
       if (splitTarget[0] == 'tag')
       {
-        console.log('tag-'+splitTarget[1]);
+        console.log('Display tag \'' + splitTarget[1] + '\'');
 
         var tempDatabase = {}
         for (i = 0; i < this.keys.length; i++) 
@@ -77,12 +88,15 @@ function Main()
             }
           }
         }
-        console.log(tempDatabase);
 
         this.grid.innerHTML = '';
         this.displayEntries(tempDatabase);
-        this.msnry.reloadItems();
-        this.msnry.layout();
+        
+        if (this.useMasonry)
+        {
+          this.msnry.reloadItems();
+          this.msnry.layout();
+        }
       }
       else if (splitTarget[0] == 'type')
       {
@@ -111,6 +125,7 @@ function Main()
         this.database[dbKeys[i]].TAGS = tags;
       }
     }
+    console.log(this.database);
   }
 
   this.missing = function(target)
@@ -121,6 +136,8 @@ function Main()
 
   this.touch = function(target)
   {
+    console.log('touch');
+
     var link = target.getAttribute("href") ? target.getAttribute("href") : target.parentNode.getAttribute("href")
 
     if(!link){ return; }
@@ -129,15 +146,17 @@ function Main()
     this.load(link.substr(1,link.length-1));
   }
 
-  document.addEventListener('mouseup',  (e)=>{ this.touch(e.target); e.preventDefault(); });
+  //document.addEventListener('mouseup',  (e)=>{ this.touch(e.target); e.preventDefault(); });
 
   this.displayEntries = function(db)
   {
     var dbKeys = Object.keys(db);
 
-    this.page += this.postPerPage;
-    var i = this.lastEntry + 1;
-    while (i < Math.min(dbKeys.length, this.page)) 
+    //this.page += this.postPerPage;
+    //var i = this.lastEntry + 1;
+    var i = 0;
+    while (i < dbKeys.length) 
+    // while (i < Math.min(dbKeys.length, this.page)) 
     {
       this.buildEntry(db, dbKeys[i]);
       this.lastEntry = i;
@@ -262,7 +281,11 @@ function Main()
     entry += `</div>`;
 
     this.grid.innerHTML += entry;
-    // this.msnry.appended( entry );
+
+    // if (this.useMasonry)
+    // {
+    //   this.msnry.appended( entry );
+    // }
   }
 
   // this.doPagination = function()
@@ -361,3 +384,17 @@ function Main()
 //   function() { console.log("back"); main.load(); },
 //   function() { console.log("forward"); main.load(); }
 // ));
+
+// var doThing = function()
+// {
+//   console.log('do thing');
+// }
+
+// window.addEventListener("hashchange", doThing());
+
+window.addEventListener("hashchange", navigate );
+
+function navigate()
+{
+    main.load(window.document.location.hash);
+}
