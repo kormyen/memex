@@ -41,6 +41,8 @@ function Main()
 
   this.load = function(target = "home")
   {
+    console.log('load');
+
     target = target.substr(0,1) == "#" ? target.substr(1,target.length-1) : target
     target = target.trim() == "" ? "home" : target
 
@@ -70,8 +72,11 @@ function Main()
     else
     {
       var splitTarget = target.split("-");
+      console.log('split: ' + splitTarget[0]);
+
       if (splitTarget[0] == 'tag')
       {
+        // TAG
         console.log('Display tag \'' + splitTarget[1] + '\'');
 
         var tempDatabase = {}
@@ -101,7 +106,30 @@ function Main()
       }
       else if (splitTarget[0] == 'type')
       {
-        console.log('type');
+        // TYPE
+        console.log('Display type \'' + splitTarget[1] + '\'');
+
+        var tempDatabase = {}
+        for (i = 0; i < this.keys.length; i++) 
+        { 
+          let value = this.database[this.keys[i]];
+          if (typeof value.TYPE !== 'undefined')
+          {
+            if (value.TYPE == splitTarget[1])
+            {
+              tempDatabase[this.keys[i]] = this.database[this.keys[i]];
+            }
+          }
+        }
+
+        this.grid.innerHTML = '';
+        this.displayEntries(tempDatabase);
+        
+        if (this.useMasonry)
+        {
+          this.msnry.reloadItems();
+          this.msnry.layout();
+        }
       }
     }
   }
@@ -193,7 +221,7 @@ function Main()
     if (typeof value.TYPE !== 'undefined')
     {
       entry += `<div id="type">`;
-      entry += `<a href='#type:${String(value.TYPE)}'>`;
+      entry += `<a href='#type-${String(value.TYPE)}'>`;
       if (value.TYPE == 'article')
       {
         entry += `<i class="far fa-newspaper"></i>`;
