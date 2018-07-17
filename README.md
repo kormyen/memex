@@ -17,7 +17,6 @@ Small self contained project for playing with [Indental](https://wiki.xxiivv.com
 - Project list
 - Done %
 - Filter done/not done
-- Limit types to top x
 - Full tags page
 - Full types page
 - Settings file (list of type icons etc)

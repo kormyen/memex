@@ -4,9 +4,6 @@ function DataWrap()
   this.database = null;
   this.keys = null;
 
-  // SETTINGS
-  this.statsNumTags = 10;
-
   this.install = function()
   {
     this.database = new Indental(DATABASE).parse();
@@ -170,21 +167,34 @@ function DataWrap()
       {
         stats.terms += db[dbKeys[i]].TERM.length;
       }
-    }
+    } 
+
+    // SORT TYPES, TAKE TOP X
+    // Create items array
+    var typeItems = Object.keys(stats.types).map(function(key) 
+    {
+      return [key, stats.types[key]];
+    });
+    // Sort the array based on the second element
+    typeItems.sort(function(first, second) 
+    {
+      return second[1] - first[1];
+    });
+    stats.types = typeItems;
+
 
     // SORT TAGS, TAKE TOP X
     // Create items array
-    var items = Object.keys(stats.tags).map(function(key) 
+    var tagItems = Object.keys(stats.tags).map(function(key) 
     {
       return [key, stats.tags[key]];
     });
     // Sort the array based on the second element
-    items.sort(function(first, second) 
+    tagItems.sort(function(first, second) 
     {
       return second[1] - first[1];
     });
-
-    stats.tags = items.slice(0, this.statsNumTags);
+    stats.tags = tagItems;
 
     return stats;
   }

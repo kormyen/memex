@@ -43,6 +43,9 @@ body {
 .menu:hover a:hover {
 	color: #eee;
 }
+.menu-spacer {
+	height: 30px;
+}
 .menu-item {
 	font-size:1.5em;
 	height: 50px;
