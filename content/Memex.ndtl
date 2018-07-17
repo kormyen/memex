@@ -1349,7 +1349,15 @@ GWERN
   DONE : false
   TAGS : history, psychology, science, ai, bitcoin, code, psychedelics, env
 
-ISOTOPE MANSONRY
+MANSONRY GRID LIB
+  LINK : https://masonry.desandro.com/
+  TYPE : tool
+  DATE : 12018-07-17
+  DONE : true
+  TAGS : code, web
+  PROJ : Memex
+
+ISOTOPE GRID LIB
   LINK : https://isotope.metafizzy.co/
   TYPE : tool
   DATE : 12018-07-17
@@ -1503,6 +1511,7 @@ JS PROTOTYPE
   DATE : 12018-07-17
   DONE : false
   TAGS : web, code
+  PROJ : memex
 
 INTERNAL FLIGHTS
   LINK : https://estastonne.bandcamp.com/album/internal-flight-2013-guitar-version
@@ -1581,4 +1590,30 @@ OVEN
   PROJ : Van
   DATE : 12018-07-17
   DONE : false
+
+MISE EN BAG
+  PERS : cblgh
+  SRCE : Merveilles
+  LINK : https://miseenbag.com/
+  TYPE : article
+  DATE : 12018-07-18
+  DONE : true
+  TAGS : food
+  NOTE : Guerilla cooking backpack
+
+PRELUDIO A COLON
+  PERS : Symbol
+  SRCE : Merveilles
+  LINK : https://www.youtube.com/watch?v=lOihGnn6HoE
+  TYPE : music
+  DATE : 12018-07-18
+  DONE : true
+  NOTE : Julián Carrillo
+
+EDWARDIAN FARM
+  LINK : https://www.youtube.com/playlist?list=PLDJIWiwfNABlM7J0d3e63sZ6U2bwg_hMX
+  TYPE : video
+  DATE : 12018-07-18
+  DONE : false
+  TAGS : history
 `
