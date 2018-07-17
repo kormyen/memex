@@ -300,7 +300,6 @@ function ViewMasonry()
       }
     }
 
-    // SPACER
     menuContent += `<div class="menu-spacer"></div>`;
 
     // TERM
@@ -314,6 +313,8 @@ function ViewMasonry()
       menuContent += `</div>`;
       menuContent += `</a>`;
     }
+
+    menuContent += `<div class="menu-spacer"></div>`;
 
     // TAGS
     if (stats.tags.length > 0)
