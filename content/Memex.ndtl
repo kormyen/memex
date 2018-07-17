@@ -8,7 +8,7 @@ AGAINST BEAUTY IN PHYSICS
   DATE : 12018-07-03
   TAGS : philosophy, science
   QOTE : 'It hit me pretty hard. Some of this stuff is really philosophically potent in a way that's easy to overlook.' - faun
-  SEEN : true
+  DONE : true
   REVI : true
 
 HACKETY HACK
@@ -19,7 +19,7 @@ HACKETY HACK
   DATE : 12018-07-03
   TAGS : code
   QOTE : 'It's super inspiring in general, but he also presents a game he made to teach programming without the players realizing until it's too late and they're already wizards' - cblgh
-  SEEN : true
+  DONE : true
 
 FOR AND AGAINST EDU
   PERS : neauoire
@@ -29,14 +29,14 @@ FOR AND AGAINST EDU
   DATE : 12018-07-03
   TAGS : philosophy
   NOTE : Testing anti school sentiments
-  SEEN : false
+  DONE : false
 
 OCCAM'S RAZOR
   LINK : https://en.wikipedia.org/wiki/Occam%27s_razor
   TYPE : article
   TAGS : philosophy
   DATE : 12018-07-03
-  SEEN : false
+  DONE : false
 
 NEAUOIRE AESTHETICS
   PERS : neauoire
@@ -45,7 +45,7 @@ NEAUOIRE AESTHETICS
   TYPE : article
   TAGS : philosophy, design, inspiration
   DATE : 12018-07-03
-  SEEN : true
+  DONE : true
   REVI : true
 
 SQUARING THE TRIANGLE
@@ -56,7 +56,7 @@ SQUARING THE TRIANGLE
   TAGS : p2p
   DATE : 12018-07-03
   QOTE : 'Secure, Decentralized, Human-Readable Names'
-  SEEN : false
+  DONE : false
 
 SETHIAN GLYPH RUNE GAME
   PERS : rezmason
@@ -65,7 +65,7 @@ SETHIAN GLYPH RUNE GAME
   TYPE : game
   DATE : 12018-07-03
   NOTE : Glyph / rune game
-  SEEN : false
+  DONE : false
 
 LIFE WITHOUT PLASTIC
   PERS : neauoire
@@ -74,7 +74,7 @@ LIFE WITHOUT PLASTIC
   TYPE : list
   TAGS : env
   DATE : 12018-07-03
-  SEEN : false
+  DONE : false
 
 THOREAU JOURNAL
   PERS : neauoire
@@ -82,14 +82,14 @@ THOREAU JOURNAL
   LINK : https://www.walden.org/wp-content/uploads/2016/02/Chapter1.pdf
   TYPE : article
   DATE : 12018-07-03
-  SEEN : false
+  DONE : false
 
 CLOCK OF THE LONG NOW
   LINK : https://en.wikipedia.org/wiki/Clock_of_the_Long_Now
   TYPE : article
   DATE : 12018-07-03
   TAGS : time
-  SEEN : true
+  DONE : true
   REVI : true
   PROJ : Dastime
 
@@ -98,21 +98,21 @@ GAMEDEV TOOLS +
   TYPE : lecture
   DATE : 12018-07-03
   TAGS : gamedev
-  SEEN : false
+  DONE : false
 
 MOD SUPPORT IN UNITY
   LINK : http://nihilocrat.tumblr.com/post/157890290188/mod-support-in-unity
   TYPE : article
   DATE : 12018-07-03
   TAGS : gamedev, unity3d
-  SEEN : false
+  DONE : false
 
 PSALM 46
   LINK : http://ludix.com/moriarty/psalm46.html
   TYPE : lecture
   DATE : 12018-07-03
   TAGS : gamedev
-  SEEN : true
+  DONE : true
   REVI : true
 
 C# GC
@@ -120,7 +120,7 @@ C# GC
   TYPE : article
   DATE : 12018-07-03
   TAGS : gamedev, code, unity3d
-  SEEN : true
+  DONE : true
   REVI : true
 
 DECIDE TO MAKE
@@ -129,7 +129,7 @@ DECIDE TO MAKE
   DATE : 12018-07-03
   TAGS : gamedev
   NOTE : Deciding what to make.
-  SEEN : false
+  DONE : false
 
 ALT WAD EXPLAINED
   PERS : Phil James
@@ -138,7 +138,7 @@ ALT WAD EXPLAINED
   DATE : 12018-07-03
   TAGS : gamedev, game
   NOTE : 'ALT' an original Doom level pack collab
-  SEEN : true
+  DONE : true
   PROG : Finish playing it. Level 7?
 
 PROC GEN RESEARCH
@@ -146,14 +146,14 @@ PROC GEN RESEARCH
   TYPE : book
   TAGS : gamedev
   QOTE : 'generation in games - a textbook and an overview of current research'
-  SEEN : false
+  DONE : false
   DATE : 12018-07-03
 
 TYPOGRAPHY FOR UI
   LINK : https://viljamis.com/2016/typography-for-user-interfaces/
   TYPE : article
   TAGS : ux
-  SEEN : true
+  DONE : true
   DATE : 12018-07-03
 
 EARLY ACCESS STUDY
@@ -161,14 +161,14 @@ EARLY ACCESS STUDY
   TYPE : article
   DATE : 12018-07-03
   TAGS : gamedev
-  SEEN : true
+  DONE : true
 
 CYCLIC DUNGEON
   LINK : http://ctrl500.com/tech/handcrafted-feel-dungeon-generation-unexplored-explores-cyclic-dungeon-generation/
   TYPE : article
   DATE : 12018-07-03
   TAGS : gamedev, game
-  SEEN : false
+  DONE : false
   NOTE : 'Unexplored' game
 
 GENERATE GREAT DUNGEONS
@@ -176,7 +176,7 @@ GENERATE GREAT DUNGEONS
   TYPE : article
   DATE : 12018-07-03
   TAGS : gamedev, game
-  SEEN : false
+  DONE : false
   NOTE : 'Unexplored' game
 
 TECHNOLOGIST CLIMATE
@@ -184,21 +184,21 @@ TECHNOLOGIST CLIMATE
   TYPE : article
   DATE : 12018-07-03
   TAGS : advice, env
-  SEEN : true
+  DONE : true
 
 NETWORKED PHYSICS
   LINK : https://gafferongames.com/post/introduction_to_networked_physics/
   TYPE : article
   DATE : 12018-07-03
   TAGS : gamedev
-  SEEN : true
+  DONE : true
 
 MEAT
   LINK : http://www.terrybisson.com/page6/page6.html
   TYPE : article
   DATE : 12018-07-03
   QOTE : 'Meat. They're made out of meat.'
-  SEEN : true
+  DONE : true
   TAGS : fiction
 
 ENCRYPT LIFE
@@ -206,28 +206,28 @@ ENCRYPT LIFE
   TYPE : article
   DATE : 12018-07-03
   TAGS : privacy
-  SEEN : true
+  DONE : true
 
 INTERACTION DESIGN FUTURE
   LINK : http://worrydream.com/ABriefRantOnTheFutureOfInteractionDesign/
   TYPE : article
   DATE : 12018-07-03
   TAGS : ux, design
-  SEEN : true
+  DONE : true
 
 MAGIC INK
   LINK : http://worrydream.com/MagicInk/
   TYPE : article
   DATE : 12018-07-03
   TAGS : ux, design
-  SEEN : true
+  DONE : true
 
 PROCEDURAL NARRATIVES
   LINK : https://www.gamasutra.com/blogs/JoshGe/20161116/285647/Weaving_Narratives_into_Procedural_Worlds.php
   TYPE : article
   DATE : 12018-07-03
   TAGS : gamedev
-  SEEN : false
+  DONE : false
 
 SIGNAL TOLVA
   LINK : https://killscreen.com/articles/quick-look-landscape-art-signal-tolva/
@@ -235,7 +235,7 @@ SIGNAL TOLVA
   DATE : 12018-07-03
   TAGS : gamedev, game
   QOTE : 'I would have been even more cryptic if I thought I could get away with it'
-  SEEN : false
+  DONE : false
   NOTE : 'Signal From Tolva'
 
 FOLDED LEVEL DESIGN
@@ -244,20 +244,20 @@ FOLDED LEVEL DESIGN
   DATE : 12018-07-03
   TAGS : gamedev, inspiration
   QOTE : 'I want to focus on a type of level design that is like climbing a tall tree to rescue a cat; going one way provides one kind of challenge (ie. climbing a tree), and getting back is a different challenge that builds upon the original challenge by adding a layer of depth/complexity (ie. climbing down a tree with a cat in one hand). I call this kind of level design folded level design.'
-  SEEN : false
+  DONE : false
 
 STEAM CONTROLLER LARS
   LINK : https://www.gamasutra.com/blogs/LarsDoucet/20170125/289904/The_Steam_Controller_Configurators_Untapped_Power.php
   TYPE : article
   DATE : 12018-07-03
   TAGS : gamedev
-  SEEN : true
+  DONE : true
 
 COST DISEASE
   LINK : http://slatestarcodex.com/2017/02/09/considerations-on-cost-disease/
   TYPE : article
   DATE : 12018-07-03
-  SEEN : false
+  DONE : false
 
 RV BATTERY RANT
   LINK : https://handybobsolar.wordpress.com/the-rv-battery-charging-puzzle-2/
@@ -265,7 +265,7 @@ RV BATTERY RANT
   DATE : 12018-07-03
   TAGS : offgrid
   NOTE : Rant
-  SEEN : true
+  DONE : true
   PROJ : Van
 
 HYPER LIGHT DIFFICULTY
@@ -273,7 +273,7 @@ HYPER LIGHT DIFFICULTY
   TYPE : article
   DATE : 12018-07-03
   TAGS : gamedev, game
-  SEEN : false
+  DONE : false
   NOTE : 'Hyper Light Drifter'
 
 CAVE ALLEGORY
@@ -281,7 +281,7 @@ CAVE ALLEGORY
   TYPE : article
   DATE : 12018-07-03
   TAGS : philosohpy
-  SEEN : false
+  DONE : false
 
 NEWCOMB'S PARADOX
   PERS : faun
@@ -290,7 +290,7 @@ NEWCOMB'S PARADOX
   TYPE : article
   DATE : 12018-07-04
   TAGS : philosohpy, paradox
-  SEEN : true
+  DONE : true
   REVI : true
 
 GNOSTICISM
@@ -300,7 +300,7 @@ GNOSTICISM
   TYPE : article
   DATE : 12018-07-04
   TAGS : philosohpy
-  SEEN : true
+  DONE : true
   REVI : true
 
 KOAN
@@ -310,7 +310,7 @@ KOAN
   TYPE : list
   DATE : 12018-07-04
   TAGS : philosohpy, paradox
-  SEEN : true
+  DONE : true
   REVI : true
   TERM 
     > Koan: 'A paradoxical anecdote or riddle without a solution, used in Zen Buddhism to demonstrate the inadequacy of logical reasoning and provoke enlightenment.'
@@ -321,7 +321,7 @@ GERMANY POST WW
   TYPE : video
   DATE : 12018-07-04
   TAGS : politics
-  SEEN : true
+  DONE : true
   NOTE : Not endorsement. Wondering how this happened.
   TAGS : history, war
 
@@ -330,14 +330,14 @@ DECISIONS THAT MATTER
   TYPE : lecture
   DATE : 12018-07-04
   TAGS : gamedev
-  SEEN : true
+  DONE : true
 
 THE FRANKFURT SCHOOL SERIES
   LINK : http://philosophizethis.org/frankfurt-school-intro/
   TYPE : podcast
   DATE : 12018-07-05
   TAGS : philosophy
-  SEEN : true
+  DONE : true
   REVI : true
   NOTE : The Frankfurt School
 
@@ -346,7 +346,7 @@ ART AS A TOOL FOR LIBERATION
   TYPE : podcast
   DATE : 12018-07-05
   TAGS : philosophy
-  SEEN : true
+  DONE : true
   REVI : true
   NOTE : The Frankfurt School
 
@@ -355,7 +355,7 @@ METAPHYSICS AND LOVE
   TYPE : podcast
   DATE : 12018-07-05
   TAGS : philosophy
-  SEEN : true
+  DONE : true
   REVI : true
   NOTE : Arthur Schopenhauer (1788-1860)
 
@@ -364,7 +364,7 @@ PHENOMENOLOGY AND DASEIN
   TYPE : podcast
   DATE : 12018-07-05
   TAGS : philosophy
-  SEEN : true
+  DONE : true
   REVI : true
   NOTE : Martin Heidegger (1889-1976)
 
@@ -375,7 +375,7 @@ A LOOK AT SUFFERING
   TYPE : podcast
   DATE : 12018-07-05
   TAGS : philosophy
-  SEEN : true
+  DONE : true
   REVI : true
   NOTE : Fyodor Dostoyevsky (1821–1881)
 
@@ -384,7 +384,7 @@ NIETZSCHE
   TYPE : podcast
   DATE : 12018-07-05
   TAGS : philosophy
-  SEEN : true
+  DONE : true
   REVI : true
   NOTE : Friedrich Nietzsche (1844–1900)
 
@@ -393,7 +393,7 @@ SARTRE AND CAMUS FREEDOM
   TYPE : podcast
   DATE : 12018-07-05
   TAGS : philosophy
-  SEEN : true
+  DONE : true
   REVI : true
   NOTE : Jean-Paul Sartre (1905–1980)
 
@@ -404,7 +404,7 @@ EFFECTIVE ALTRUISM
   TYPE : podcast
   DATE : 12018-07-05
   TAGS : philosophy
-  SEEN : true
+  DONE : true
   REVI : true
   NOTE : Peter Singer (1946-present)
 
@@ -413,7 +413,7 @@ ROUSSEAU
   TYPE : podcast
   DATE : 12018-07-05
   TAGS : philosophy
-  SEEN : true
+  DONE : true
   REVI : true
   NOTE : Jean-Jacques Rousseau (1712-1778)
 
@@ -425,7 +425,7 @@ PHILANTHROPY ANALYSIS
   DATE : 12018-07-05
   TAGS : research
   QOTE : "It’s basically a 'transhumanistic vegan sci-fi' podcast" - neauoire
-  SEEN : true
+  DONE : true
 
 THE INTELLECTUAL DARK WEB
   PERS : anand
@@ -434,7 +434,7 @@ THE INTELLECTUAL DARK WEB
   TYPE : video
   DATE : 12018-07-05
   TAGS : philosophy, psychology
-  SEEN : true
+  DONE : true
   NOTE : Wtf 'Spiral Dynamics Integral'
 
 TRUMP AND A POST-TRUTH WORLD
@@ -444,7 +444,7 @@ TRUMP AND A POST-TRUTH WORLD
   TYPE : article
   DATE : 12018-07-05
   TAGS : philosophy, psychology, politics
-  SEEN : false
+  DONE : false
 
 LONG-TERM MEMORY
   PERS : alx
@@ -456,7 +456,7 @@ LONG-TERM MEMORY
   TERM 
     > Anki: memory tool/app. Manually entered questions and answers. The app repeatedly asks you every question, every time you know the answer the duration it waits before asking that question again doubles. If you forget an answer then the wait duration resets to one day.
     > Memex: external memory tool. 'Data storage and retrieval system'.
-  SEEN : true
+  DONE : true
 
 INDEPENDENCE IN CYBERSPACE
   PERS : ark
@@ -465,21 +465,21 @@ INDEPENDENCE IN CYBERSPACE
   TYPE : article
   DATE : 12018-07-06
   TAGS : philosophy
-  SEEN : true
+  DONE : true
 
 CURATOR MIND DESIGN
   LINK : https://medium.com/@lintropy/murat-pak-designing-the-mind-of-an-online-curator-5785e373127d
   TYPE : article
   DATE : 12018-07-06
   TAGS : philosophy, design
-  SEEN : true
+  DONE : true
 
 THE CANCER IN BITCOIN
   LINK : https://www.yours.org/content/the-cancer-in-bitcoin-e75381d0fd75
   TYPE : article
   DATE : 12018-07-06
   TAGS : bitcoin
-  SEEN : false
+  DONE : false
 
 DIY WRISTWATCH
   PERS : nomand
@@ -488,7 +488,7 @@ DIY WRISTWATCH
   TYPE : article
   DATE : 12018-07-06
   TAGS : time, diy
-  SEEN : true
+  DONE : true
   REVI : true
   NOTE : https://github.com/zkemble/NWatch
   PROJ : Dastime
@@ -498,27 +498,27 @@ BITCOIN HOT-WIRED FOR SETTLEMENT
   TYPE : article
   DATE : 12018-07-06
   TAGS : bitcoin
-  SEEN : false
+  DONE : false
 
 BITCOIN CONSPIRACY
   LINK : https://np.reddit.com/r/BitcoinMarkets/comments/6rxw7k/informative_btc_vs_bch_articles/dl8v4lp/
   TYPE : article
   DATE : 12018-07-06
   TAGS : bitcoin
-  SEEN : true
+  DONE : true
 
 NEWWEB
   LINK : https://blog.plan99.net/what-should-follow-the-web-8dcbbeaccd93
   TYPE : article
   DATE : 12018-07-06
   TAGS : web, design, code
-  SEEN : true
+  DONE : true
 
 OVERWHELM
   LINK : https://store.steampowered.com/app/785880/OVERWHELM/
   TYPE : game
   DATE : 12018-07-06
-  SEEN : true
+  DONE : true
   NOTE : Stylish pixel platformer
   NOTE : 'Overwhelm'
 
@@ -528,7 +528,7 @@ COMPASS
   LINK : https://dlareme.bandcamp.com/album/compass
   TYPE : music
   DATE : 12018-07-06
-  SEEN : true
+  DONE : true
   REVI : true
   TAGS : inspiration
 
@@ -538,7 +538,7 @@ TOP SLATE STAR CODEX
   LINK : http://slatestarcodex.com/top-posts/
   TYPE : list
   DATE : 12018-07-06
-  SEEN : false
+  DONE : false
   REVI : true
   TAGS : psychology, society, research, philosophy
 
@@ -546,7 +546,7 @@ UNDER THE SKIN: J PETERSON
   LINK : https://youtu.be/r2S58rH0PAw?t=1h1m38s
   TYPE : podcast
   Date : 12018-07-06
-  SEEN : true
+  DONE : true
   REVI : false
   TAGS : society, psychology, philosophy
   QOTE
@@ -564,14 +564,14 @@ JAPANESE POST-WAR DESIGN
   LINK : https://www.disegnodaily.com/article/the-story-of-design-japanese-post-war-design
   TYPE : article
   DATE : 12018-07-06
-  SEEN : false
+  DONE : false
   TAGS : design
 
 SCP FOUNDATION
   LINK : http://www.scp-wiki.net/
   TYPE : list
   DATE : 12018-07-06
-  SEEN : true
+  DONE : true
   REVI : true
   TAGS : fiction
 
@@ -579,14 +579,14 @@ TENDRILS OF MESS IN OUR BRAINS
   LINK : https://www.ribbonfarm.com/2017/01/05/tendrils-of-mess-in-our-brains/
   TYPE : article
   DATE : 12018-07-06
-  SEEN : false
+  DONE : false
   TAGS : psychology
 
 RIBBONFARM 2017
   LINK : https://www.ribbonfarm.com/2017/12/21/complete-2017-roundup/
   TYPE : list
   DATE : 12018-07-06
-  SEEN : false
+  DONE : false
   REVI : true
   TAGS : psychology, society, research, philosophy
 
@@ -594,14 +594,14 @@ THE BATTLE FOR PSYCHOLOGY
   LINK : https://www.lesswrong.com/posts/GpkoTHJzsAAJx7c5T/the-battle-for-psychology
   TYPE : article
   DATE : 12018-07-06
-  SEEN : false
+  DONE : false
   TAGS : psychology
 
 CIRCULAR ECONOMY
   LINK : https://en.wikipedia.org/wiki/Circular_economy
   TYPE : article
   DATE : 12018-07-06
-  SEEN : true
+  DONE : true
   TAGS : society, economics
   TERM 
     > Circular economy: 'is a regenerative system in which resource input and waste, emission, and energy leakage are minimised by slowing, closing, and narrowing energy and material loops. This can be achieved through long-lasting design, maintenance, repair, reuse, remanufacturing, refurbishing, and recycling. This is in contrast to a linear economy which is a "take, make, dispose" model of production.'
@@ -610,7 +610,7 @@ SPACESHIP EARTH ECONOMICS
   LINK : http://arachnid.biosci.utexas.edu/courses/THOC/Readings/Boulding_SpaceshipEarth.pdf
   TYPE : article
   DATE : 12018-07-06
-  SEEN : false
+  DONE : false
   TAGS : society, economics
   FILE : 12018-07-06_Boulding_SpaceshipEarth.pdf
 
@@ -618,7 +618,7 @@ FUNGI FROM YUFFOTH
   LINK : http://www.hplovecraft.com/writings/texts/poetry/p289.aspx
   TYPE : article
   DATE : 12018-07-06
-  SEEN : false
+  DONE : false
   FILE : 12018-07-06_FungiFromYuggoth_byHP.pdf
   TAGS : fiction
 
@@ -628,7 +628,7 @@ TWO ENVELOPE PROBLEM
   LINK : https://brilliant.org/wiki/two-envelope-paradox/
   TYPE : article
   DATE : 12018-07-06
-  SEEN : true
+  DONE : true
   TAGS : paradox
 
 WIKTOPHER
@@ -636,7 +636,7 @@ WIKTOPHER
   LINK : https://wiktopher.kokorobot.ca/
   TYPE : book
   DATE : 12018-07-06
-  SEEN : true
+  DONE : true
   REVI : true
   TAGS : fiction
 
@@ -645,14 +645,14 @@ JAN VERWOERT 2017-11-09
   LINK : https://www.youtube.com/watch?v=VlyLQFcoFP0
   TYPE : video
   DATE : 12018-07-06
-  SEEN : false
+  DONE : false
   TAGS : art, philosophy
 
 SELF AUTHORING
   LINK : https://selfauthoring.com/
   TYPE : lecture
   DATE : 12018-07-06
-  SEEN : true
+  DONE : true
   REVI : true
   TAGS : psychology
 
@@ -660,14 +660,14 @@ FRANKFURT SCHOOL
   LINK : https://en.wikipedia.org/wiki/Frankfurt_School
   TYPE : article
   DATE : 12018-07-06
-  SEEN : false
+  DONE : false
   TAGS : philosophy
 
 POLITCAL CORRECTNESS DEBATE
   LINK : https://www.youtube.com/watch?v=GxYimeaoea0
   TYPE : video
   DATE : 12018-07-06
-  SEEN : true
+  DONE : true
   QOTE : "Fuck political correctness, resist, fight. If you have a point of view, fight for it in the proper manner." - Stephen Fry
   TAGS : politics
 
@@ -682,6 +682,7 @@ BORROWED TIME
   DATE : 12018-07-08
   TAGS : philosophy
   PROJ : Dastime
+  DONE : true
 
 WIDSOM CALENDAR
   PERS : neauoire
@@ -690,13 +691,14 @@ WIDSOM CALENDAR
   TYPE : article
   QOTE : "You can read it online, it’s 'not that great' — I pointed this out more like an example of tooling, rather than content."
   DATE : 12018-07-08
+  DONE : false
 
 SULLIVAN
   PERS : alx
   SRCE : Merveilles
   LINK : http://ep.yimg.com/ty/cdn/paulgraham/sullivan.html
   TYPE : article
-  SEEN : false
+  DONE : false
   DATE : 12018-07-08
 
 TASTE FOR MAKERS
@@ -704,7 +706,7 @@ TASTE FOR MAKERS
   SRCE : Merveilles
   LINK : http://www.paulgraham.com/taste.html
   TYPE : article
-  SEEN : false
+  DONE : false
   DATE : 12018-07-08
   TAGS : design
 
@@ -713,7 +715,7 @@ MIND THE GAP
   SRCE : Merveilles
   LINK : http://www.paulgraham.com/gap.html
   TYPE : article
-  SEEN : false
+  DONE : false
   DATE : 12018-07-08
   TAGS : society, economics
 
@@ -722,7 +724,7 @@ PYTHON PARADOX
   SRCE : Merveilles
   LINK : http://www.paulgraham.com/pypar.html
   TYPE : article
-  SEEN : false
+  DONE : false
   DATE : 12018-07-08
   TAGS : code, paradox
 
@@ -731,7 +733,7 @@ VANILLA JS
   SRCE : Merveilles
   LINK : http://vanilla-js.com/
   TYPE : article
-  SEEN : true
+  DONE : true
   DATE : 12018-07-08
   TAGS : funny
 
@@ -742,7 +744,7 @@ GREENSPACE
   TYPE : article
   TERM 
     > Greenspace: 'open, undeveloped land with natural vegetation as well as urban greenspaces, which include urban parks and street greenery.'
-  SEEN : true
+  DONE : true
   DATE : 12018-07-08
   TAGS : psychology, economics, env
 
@@ -751,25 +753,27 @@ CLIENT SIDE ROUTING
   SRCE : Merveilles
   LINK : http://krasimirtsonev.com/blog/article/deep-dive-into-client-side-routing-navigo-pushstate-hash
   TYPE : article
-  SEEN : false
+  DONE : false
   DATE : 12018-07-09
   TAGS : web
 
 METHOD OF LOCI
   LINK : https://en.wikipedia.org/wiki/Method_of_loci
   TYPE : article
-  SEEN : false
+  DONE : false
   REVI : true
   NOTE : Memory palace
   DATE : 12018-07-09
-  TAGS : psychology
+  TAGS : psychology, philosophy
+  TERM 
+    > Memory Palace: 'the subject memorizes the layout of some building, or the arrangement of shops on a street, or any geographical entity which is composed of a number of discrete loci. When desiring to remember a set of items the subject 'walks' through these loci in their imagination and commits an item to each one by forming an image between the item and any feature of that locus. Retrieval of items is achieved by 'walking' through the loci, allowing the latter to activate the desired items.'
 
 MALICK'S OBSESSIONS
   PERS : dormin
   SRCE : Merveilles
   LINK : https://www.youtube.com/watch?v=5f6rpDlfX5A
   TYPE : video
-  SEEN : true
+  DONE : true
   DATE : 12018-07-09
   TAGS : film
 
@@ -778,14 +782,14 @@ ARCANE ALGO ARCHIVE
   SRCE : Merveilles
   LINK : https://www.algorithm-archive.org/
   TYPE : list
-  SEEN : true
+  DONE : true
   DATE : 12018-07-10
   TAGS : code
 
 INCREMENTALISM
   LINK : http://freakonomics.com/podcast/in-praise-of-incrementalism-rebroadcast/
   TYPE : podcast
-  SEEN : true
+  DONE : true
   DATE : 12018-07-10
   NOTE 
     - Social movement advice (Linda Hershman):
@@ -804,7 +808,7 @@ AZOLLA
   SRCE : Merveilles
   LINK : https://en.wikipedia.org/wiki/Azolla_event
   TYPE : article
-  SEEN : true
+  DONE : true
   DATE : 12018-07-11
   TAGS : time
 
@@ -813,7 +817,7 @@ INCORRECT USE TERM AI
   SRCE : Merveilles
   LINK : https://becominghuman.ai/are-you-using-the-term-ai-incorrectly-911ac23ab4f5
   TYPE : article
-  SEEN : true
+  DONE : true
   DATE : 12018-07-11
   TAGS : etymology, ai
 
@@ -823,7 +827,7 @@ CEPHALOPOD INTELLIGENCE
   LINK : https://en.m.wikipedia.org/wiki/Cephalopod_intelligence
   TYPE : article
   DATE : 12018-07-11
-  SEEN : true
+  DONE : true
   TAGS : psychology, animal
 
 REINFORCEMENT LEARNING FLAW
@@ -831,7 +835,7 @@ REINFORCEMENT LEARNING FLAW
   SRCE : Merveilles
   LINK : https://thegradient.pub/why-rl-is-flawed/
   TYPE : article
-  SEEN : false
+  DONE : false
   DATE : 12018-07-11
   TAGS : ai
 
@@ -845,7 +849,7 @@ DISCOURSE CHEATSHEET
   SRCE : Merveilles
   LINK : https://wiki.xxiivv.com/#discourse
   TYPE : article
-  SEEN : true
+  DONE : true
   REVI : true
   DATE : 12018-07-11
   TAGS : etymology, psychology
@@ -855,7 +859,7 @@ ARGUMENT VARIETIES
   SRCE : Merveilles
   LINK : http://slatestarcodex.com/2018/05/08/varieties-of-argumentative-experience/
   TYPE : article
-  SEEN : false
+  DONE : false
   REVI : true
   DATE : 12018-07-11
   TAGS : etymology, psychology
@@ -865,7 +869,7 @@ DISAGREE
   SRCE : Merveilles
   LINK : http://www.paulgraham.com/disagree.html
   TYPE : article
-  SEEN : false
+  DONE : false
   REVI : true
   DATE : 12018-07-11
   TAGS : etymology, psychology
@@ -875,7 +879,7 @@ THREE TIER MIND
   SRCE : Merveilles
   LINK : https://www.pftq.com/blabberbox/?page=Three_Tiers_of_Mind
   TYPE : article
-  SEEN : false
+  DONE : false
   REVI : true
   DATE : 12018-07-11
   TAGS : etymology, psychology
@@ -886,6 +890,7 @@ JORDAN PETERSON JRE 1139
   NOTE : Incrementalism in position and trajectory
   QOTE : "The spoken word is now as powerful as the written word, thats never happen before in human history." 2:34:XX
   DATE : 12018-07-11
+  DONE : true
 
 SKEPTOID APE SIGN LANGUAGE
   PERS : faun
@@ -893,7 +898,7 @@ SKEPTOID APE SIGN LANGUAGE
   LINK : https://skeptoid.com/episodes/4630
   TYPE : podcast
   TAGS : animal, psychology
-  SEEN : false
+  DONE : false
 
 BLINDSIGHT
   PERS : tttlllrrr
@@ -903,6 +908,7 @@ BLINDSIGHT
   DATE : 12018-07-12
   FILE : 12018-07-12_PeterWatts_Blindsight.pdf
   TAGS : fiction
+  DONE : false
 
 ZEIT STATIC HOSTING
   PERS : atteinmos
@@ -912,6 +918,7 @@ ZEIT STATIC HOSTING
   TAGS : web
   DATE : 12018-07-12
   NOTE : Web hosting
+  DONE : true
 
 PRIVACY POSSUM
   PERS : alx
@@ -920,11 +927,12 @@ PRIVACY POSSUM
   TYPE : tool
   TAGS : web
   DATE : 12018-07-12
+  DONE : false
 
 KNOWLEDGE NOTES
   LINK : https://github.com/yoshuawuyts/knowledge
   TYPE : list
-  SEEN : false
+  DONE : false
   REVI : true
   DATE : 12018-07-13
   NOTE : Notes on everything
@@ -937,7 +945,7 @@ WONDERBOOK
   TYPE : book
   NOTE : "The Illustrated Guide to Creating Imaginative Fiction."
   DATE : 12018-07-13
-  SEEN : false
+  DONE : false
   TAGS : art, design
 
 WORRYDREAM REFERENCES
@@ -948,7 +956,7 @@ WORRYDREAM REFERENCES
   DATE : 12018-07-13
   FILE : 12018-07-13_WDR_*
   TAGS : philosophy, design, inspiration, science, research, society, code, ai, psychology
-  SEEN : false
+  DONE : false
   REVI : true
 
 HELLO
@@ -956,7 +964,7 @@ HELLO
   TYPE : podcast
   DATE : 12018-07-13
   TAGS : philosophy, science, society, psychology, animal
-  SEEN : true
+  DONE : true
   REVI : true
 
 5till L1 Complex
@@ -965,7 +973,7 @@ HELLO
   TYPE : game
   FILE : 12018-07-14_5l1c.zip
   TAGS : gamedev, game
-  SEEN : false
+  DONE : false
   DATE : 12018-07-14
   NOTE : '5till L1 Complex' a large custom Doom level.
 
@@ -974,14 +982,14 @@ BLADE RUNNER 2049 DESIGN
   TYPE : article
   TAGS : design, film
   DATE : 12018-07-14
-  SEEN : false
+  DONE : false
 
 REACTIVE PROGRAMMING INTRO
   LINK : https://gist.github.com/staltz/868e7e9bc2a7b8c1f754
   TYPE : article
   TAGS : code
   DATE : 12018-07-14
-  SEEN : false
+  DONE : false
   REVI : true
 
 FRACTAL FILM CGI
@@ -989,35 +997,35 @@ FRACTAL FILM CGI
   TYPE : article
   TAGS : fractal, film
   DATE : 12018-07-14
-  SEEN : false
+  DONE : false
 
 VORTICAL + FRACTAL MACHINES
   LINK : https://www.fxguide.com/featured/suicide-squad-vortical-flows-and-fractal-machines/
   TYPE : article
   TAGS : fractal, film
   DATE : 12018-07-14
-  SEEN : false
+  DONE : false
 
 FRACTALS AND ROUGHNESS
   LINK : https://www.ted.com/talks/benoit_mandelbrot_fractals_the_art_of_roughness
   TYPE : video
   TAGS : fractal, research
   DATE : 12018-07-14
-  SEEN : false
+  DONE : false
   
 AI IN A BOX
   LINK : https://www.lesswrong.com/posts/c5GHf2kMGhA4Tsj4g/the-ai-in-a-box-boxes-you
   TYPE : article
   TAGS : philosophy, ai, paradox
   DATE : 12018-07-14
-  SEEN : true
+  DONE : true
 
 LEARNING SHADERS
   LINK : https://www.alanzucconi.com/category/shader/
   TYPE : list
   TAGS : gamedev, code
   DATE : 12018-07-14
-  SEEN : false
+  DONE : false
   REVI : true
 
 ACID BODHISATTVA
@@ -1025,7 +1033,7 @@ ACID BODHISATTVA
   TYPE : article
   TAGS : psychedelics, psychology, philosophy
   DATE : 12018-07-14
-  SEEN : false
+  DONE : false
   REVI : true
 
 THE DOORS OF PERCEPTION
@@ -1033,7 +1041,7 @@ THE DOORS OF PERCEPTION
   TYPE : article
   TAGS : psychedelics, psychology, philosophy
   DATE : 12018-07-14
-  SEEN : false
+  DONE : false
   REVI : true
   FILE : 12018-07-14_TheDoorsOfPerception_byAldousHuxley.pdf
 
@@ -1043,7 +1051,7 @@ VULTR
   TAGS : web
   DATE : 12018-07-14
   NOTE : Web hosting
-  SEEN : true
+  DONE : true
 
 WW1 BY WEEK
   LINK : https://www.youtube.com/playlist?list=PLB2vhKMBjSxOb_127vxjaRRC7yu2TJlJX
@@ -1051,7 +1059,7 @@ WW1 BY WEEK
   TAGS : history, war
   DATE : 12018-07-14
   NOTE : Week by week history of WW1.
-  SEEN : false
+  DONE : false
   PROG : Week 7
 
 SOLARPUNK REFERENCES
@@ -1059,35 +1067,35 @@ SOLARPUNK REFERENCES
   TYPE : article
   TAGS : solarpunk, env
   DATE : 12018-07-14
-  SEEN : false
+  DONE : false
 
 SYSTEMS ARE EVERYWHERE
   LINK : https://www.youtube.com/watch?v=Gelpn4mksXQ
   TYPE : video
   TAGS : gamedev
   DATE : 12018-07-14
-  SEEN : false
+  DONE : false
 
 NZ EXCHANGE
   LINK : https://www.tokenroom.co.nz/
   TYPE : tool
   TAGS : bitcoin
   DATE : 12018-07-14
-  SEEN : true
+  DONE : true
 
 PRINCETON CRYPTO LECTURES
   LINK : https://www.reddit.com/r/Bitcoin/comments/7il1sx/sixty_free_lectures_from_princeton_on_bitcoin_and/
   TYPE : list
   TAGS : bitcoin
   DATE : 12018-07-14
-  SEEN : false
+  DONE : false
 
 PILANESBERY DELINQUENTS
   LINK : https://www.kotafoundation.org/the-delinquents-in-pilanesberg/
   TYPE : article
   TAGS : psychology, animals
   DATE : 12018-07-14
-  SEEN : false
+  DONE : false
 
 FIND PASSION BAD ADVICE
   PERS : alx
@@ -1096,13 +1104,13 @@ FIND PASSION BAD ADVICE
   TYPE : article
   TAGS : psychology
   DATE : 12018-07-14
-  SEEN : false
+  DONE : false
 
 THE EMPIRE
   LINK : http://www.duncantrussell.com/episodes/2018/7/10/abby-martin
   TYPE : podcast
   DATE : 12018-07-14
-  SEEN : true
+  DONE : true
   TAGS : politics
 
 TARYN SOUTHERN DTFH
@@ -1111,7 +1119,7 @@ TARYN SOUTHERN DTFH
   TERM 
     > Horseshit problem: a problem that seems existentially bad but is later solved trivially/indirectly by technology. The name refers to horse manue starting to be a major problem when horses were extensively used for transport, their manure ending up everywhere - poisoning water wells etc. When the car was invented and mass adopted it was suddenly no longer an issue.
   DATE : 12018-07-14
-  SEEN : true
+  DONE : true
   TAGS : politics
 
 TUDOR MONASTERY FARM
@@ -1120,7 +1128,7 @@ TUDOR MONASTERY FARM
   LINK : https://www.youtube.com/watch?v=t1ERDYjsHBg
   TYPE : video
   DATE : 12018-07-14
-  SEEN : true
+  DONE : true
   TAGS : history
   PROJ : Swordy
 
@@ -1128,14 +1136,14 @@ CLIMATE CHANGE IN POST TRUTH
   LINK : https://medium.com/@christinelariviere/the-fisher-king-solving-climate-change-in-a-post-truth-world-7b18c8eafd53
   TYPE : article
   DATE : 12018-07-15
-  SEEN : false
+  DONE : false
   TAGS : env
 
 JIM CRAWFORD INTERVIEW
   LINK : https://pokyfriends.com/blog/36/an-interview-with-jim-crawford-frog-fractions-2-and-zzt
   TYPE : article
   DATE : 12018-07-15
-  SEEN : false
+  DONE : false
   TAGS : gamedev, game
   NOTE : 'Frog Fractions 2'
 
@@ -1143,7 +1151,7 @@ TARN ADAMS INTERVIEW
   LINK : https://www.pcgamer.com/dwarf-fortress-creator-tarn-adams-talks-about-simulating-the-most-complex-magic-system-ever/
   TYPE : article
   DATE : 12018-07-15
-  SEEN : false
+  DONE : false
   TAGS : gamedev, game
   NOTE : 'Dwarf Fortress'
 
@@ -1151,28 +1159,28 @@ WHISTLE BLOWING
   LINK : https://theintercept.com/2016/05/03/edward-snowden-whistleblowing-is-not-just-leaking-its-an-act-of-political-resistance/
   TYPE : article
   DATE : 12018-07-15
-  SEEN : false
+  DONE : false
   TAGS : political
 
 TACTICAL SEMIOTICS
   LINK : https://d.rip/mikerugnetta/posts/RHJvcFBvc3QtMzM0NA==
   TYPE : article
   DATE : 12018-07-15
-  SEEN : true
+  DONE : true
   TAGS : design
 
 SAD POSTING
   LINK : http://humaniterations.net/2018/05/22/sadposting
   TYPE : article
   DATE : 12018-07-15
-  SEEN : false
+  DONE : false
   TAGS : psychology
 
 CHANNELING ARCHTECTURE
   LINK : http://viewzone2.com/archeosoundx.html
   TYPE : article
   DATE : 12018-07-15
-  SEEN : false
+  DONE : false
   TAGS : architecture, history
   TERM 
     > 111hz: '...Findings of MRI scans suggest that at exactly 111hz, the brain switches off the prefrontal cortex, deactivating the language center, and temporaryly switches from left to right-sided dominance, that is responsible for intuition, creativity, holistic processing, inducing a state of meditation or a trance. Further research directed by Prof. Robert Jahn has tested acoustic behaviour in megalithic sites in the UK, showing that they sustained a strong resonance at a sound frequency between 95 and 120 heartz.' ...can't find source of the 'MRI' studies. Prof. Robert Jahn seems controversial. None-the-less interesting.
@@ -1183,28 +1191,28 @@ THE PSYCHOLOGY OF MONEY
   LINK : http://www.collaborativefund.com/blog/the-psychology-of-money/
   TYPE : article
   DATE : 12018-07-15
-  SEEN : false
+  DONE : false
   TAGS : economics, psychology
 
 FRACTAL CONSCIOUSNESS
   LINK : http://nautil.us/issue/47/consciousness/is-consciousness-fractal
   TYPE : article
   DATE : 12018-07-15
-  SEEN : false
+  DONE : false
   TAGS : philosophy, psychology
 
 HIGH DIMENSIONAL SPACE
   LINK : https://marckhoury.github.io/counterintuitive-properties-of-high-dimensional-space/
   TYPE : article
   DATE : 12018-07-15
-  SEEN : false
+  DONE : false
   TAGS : philosophy
 
 SEXAGESIMAL SYSTEM
   LINK : https://www.tapatalk.com/groups/tranquility/the-sexagesimal-system-t4647.html
   TYPE : article
   DATE : 12018-07-15
-  SEEN : false
+  DONE : false
   TAGS : time
   FILE : 12018-07-15_TheSexagesimalSystem-IntoInfinity.pdf
   PROJ : Dastime
@@ -1213,7 +1221,7 @@ ZOMBIES REDACTED
   LINK : https://www.lesswrong.com/posts/7DmA3yWwa6AT5jFXt/zombies-redacted
   TYPE : article
   DATE : 12018-07-15
-  SEEN : false
+  DONE : false
   TAGS : philosophy
   TERM 
     > Zombie: 'in the philosophical usage of the term, is putatively a being that is exactly like you in every respect—identical behavior, identical speech, identical brain; every atom and quark in exactly the same position, moving according to the same causal laws of motion—except that your zombie is not conscious.'
@@ -1222,7 +1230,7 @@ KREMLIN MEDIA
   LINK : https://meduza.io/en/feature/2015/08/13/this-is-how-russian-internet-censorship-works
   TYPE : article
   DATE : 12018-07-15
-  SEEN : false
+  DONE : false
   TAGS : politics
   FILE : 12018-07-15_KremlinMedia.pdf
 
@@ -1230,7 +1238,7 @@ FUNDAMENTAL MISCONCEPTIONS
   LINK : http://mwil.co/articles/03/
   TYPE : article
   DATE : 12018-07-15
-  SEEN : false
+  DONE : false
   TAGS : bitcoin
   FILE : 12018-07-15_FundamentalMisconceptions.pdf
 
@@ -1238,7 +1246,7 @@ CALENDAR REFORM
   LINK : http://myweb.ecu.edu/mccartyr/eastman.html
   TYPE : article
   DATE : 12018-07-15
-  SEEN : false
+  DONE : false
   TAGS : time
   PROJ : Dastime
 
@@ -1246,7 +1254,7 @@ NON EUCLIDEAN ROOM
   LINK : http://ludumdare.com/compo/2016/12/23/non-euclidean-room-postmortem/
   TYPE : article
   DATE : 12018-07-15
-  SEEN : false
+  DONE : false
   TAGS : gamedev
   FILE : 12018-07-15_NonEuclideanRoom.pdf
 
@@ -1254,14 +1262,14 @@ SAN JUAN ISLANDS
   LINK : https://arachnoid.com/sailbook/Chapter_1_--_Introduction,_San_Juan_Islands.html
   TYPE : article
   DATE : 12018-07-15
-  SEEN : false
+  DONE : false
   FILE : 12018-07-15_SanJuanIslands.pdf
 
 PROGRAMMERS KNOW FEELINGS
   LINK : https://medium.com/enspiral-tales/good-programmers-know-more-about-feelings-than-computers-fa19f62495ae
   TYPE : article
   DATE : 12018-07-15
-  SEEN : false
+  DONE : false
   TAGS : code
   FILE : 12018-07-15_GoodProgrammersKnowMoreAboutFeelingsThanComputers.pdf
 
@@ -1269,7 +1277,7 @@ THE EMPIRE FILES
   LINK : http://theempirefiles.tv/
   TYPE : list
   DATE : 12018-07-15
-  SEEN : false
+  DONE : false
   TAGS : politics
 
 PRODUCTIVE DISTORTIONS
@@ -1278,7 +1286,7 @@ PRODUCTIVE DISTORTIONS
   LINK : https://pdfs.semanticscholar.org/presentation/1a59/7a9ca8b03d86ae9a2f86dd90e7bbff481fab.pdf
   TYPE : article
   DATE : 12018-07-15
-  SEEN : false
+  DONE : false
   TAGS : psychology
 
 KILLED GREEN SCREEN
@@ -1287,13 +1295,13 @@ KILLED GREEN SCREEN
   LINK : https://vimeo.com/264282403
   TYPE : video
   DATE : 12018-07-15
-  SEEN : false
+  DONE : false
 
 CLIENT SIDE ROUTING
   LINK : https://blog.risingstack.com/writing-a-javascript-framework-client-side-routing/
   TYPE : article
   DATE : 12018-07-16
-  SEEN : false
+  DONE : false
   TAGS : web, code
   PROJ : Memex
 
@@ -1301,14 +1309,14 @@ NOON GUEST
   LINK : https://aliceffekt.bandcamp.com/album/noon-guest
   TYPE : music
   DATE : 12018-07-16
-  SEEN : true
+  DONE : true
   TAGS : game
 
 SECRETS OF THE CASTLE
   LINK : https://www.youtube.com/watch?v=jWZWTwJ_5Ag
   TYPE : video
   DATE : 12018-07-16
-  SEEN : true
+  DONE : true
   TAGS : history
   NOTE : Modern day 25 year project to build a castle with traditional methods and tools.
   PROJ : Swordy
@@ -1317,7 +1325,7 @@ VICTORIAN FARM
   LINK : https://www.youtube.com/watch?v=BodKsqkZk2Q
   TYPE : video
   DATE : 12018-07-16
-  SEEN : true
+  DONE : true
   TAGS : history
   TERM
     > Shoddy: 'a type of woollen yarn produced by tearing old woollen rags into shreds and weaving the strands.'
@@ -1329,7 +1337,7 @@ LOW TECH MAGAZINE
   LINK : http://www.lowtechmagazine.com/
   TYPE : list
   DATE : 12018-07-16
-  SEEN : false
+  DONE : false
   TAGS : history, solarpunk, env, offgrid
 
 GWERN
@@ -1338,14 +1346,14 @@ GWERN
   LINK : http://www.gwern.net/
   TYPE : list
   DATE : 12018-07-16
-  SEEN : false
+  DONE : false
   TAGS : history, psychology, science, ai, bitcoin, code, psychedelics, env
 
 ISOTOPE MANSONRY
   LINK : https://isotope.metafizzy.co/
   TYPE : tool
   DATE : 12018-07-17
-  SEEN : true
+  DONE : true
   TAGS : code, web
   PROJ : Memex
 
@@ -1353,7 +1361,7 @@ MEASURED ITERATION
   QOTE : 'The most important thing you can do is to get into an iteration cycle where you can measure the impact of your work, have a hypothesis about how making changes will affect those variables, and ship changes regularly. It doesn't even matter that much what the content is - it's the iteration of hypothesis, changes, and measurement that will make you better at a faster rate than anything else we have seen.' - Gabe Newell
   LINK : https://www.reddit.com/r/The_Gaben/comments/5olhj4/hi_im_gabe_newell_ama/
   DATE : 12018-07-17
-  SEEN : true
+  DONE : true
   REVI : true
   TAGS : gamedev
   TYPE : quote
@@ -1367,7 +1375,7 @@ ENVIRONMENT INFLUENCE
   NOTE : Rat park cocaine. Heroin Vietnam.
   LINK : https://www.youtube.com/watch?v=nH9IPpDrVTs
   DATE : 12018-07-17
-  SEEN : true
+  DONE : true
   REVI : true
   TAGS : env, design
   TYPE : quote
@@ -1375,28 +1383,28 @@ ENVIRONMENT INFLUENCE
 BREATH
   QOTE : 'Keep breathing'
   DATE : 12018-07-17
-  SEEN : true
+  DONE : true
   TAGS : philosophy
   TYPE : quote
 
 LIVE
   QOTE : 'Life should be lived to the point of tears'
   DATE : 12018-07-17
-  SEEN : true
+  DONE : true
   TAGS : philosophy
   TYPE : quote
 
 ZOO
   QOTE : 'Zoos are animal prisons that operate for profit. It’s not education, it’s "entertainment".'
   DATE : 12018-07-17
-  SEEN : true
+  DONE : true
   TAGS : philosophy, env
   TYPE : quote
 
 SEE
   QOTE : 'Do you yearn to defend your own beliefs or to see the world as clearly as you possibly can?'
   DATE : 12018-07-17
-  SEEN : true
+  DONE : true
   TAGS : philosophy
   TYPE : quote
 
@@ -1416,7 +1424,7 @@ MARRIAGE
     & Marriage is not easy. It requires a lot of work sometimes, even when you are both on the same page, have great communication, great sex (which will happen very easily if the rest of the relationship is healthy by the way) and great chemistry. People get sick, they get laid off, their family members die, children get sick, get hurt in accidents, friends have affairs, get divorced...life is challenging and it impacts our relationships, sometimes in ways we're not expecting or prepared for. If you're not willing to value your marriage above everything else in your life, its going to be really hard for it to survive the day in and day out challenges of living.'
   LINK : https://np.reddit.com/r/AskMen/comments/52h1h8/whats_the_most_common_mistake_people_make_when/d7kyny9?context=3
   DATE : 12018-07-17
-  SEEN : true
+  DONE : true
   TAGS : psychology
   TYPE : quote
 
@@ -1424,14 +1432,14 @@ GROWTH
   QOTE : 'Growth for the sake of growth is the ideology of the cancer cell.' - Edward Abbey
   NOTE : The Journey Home: Some Words in Defense of the American West
   DATE : 12018-07-17
-  SEEN : true
+  DONE : true
   TAGS : philosophy
   TYPE : quote
 
 EDUCATION
   QOTE : 'Education is the passport to the future, for tomorrow belongs to those who prepare for it today.' - Malcom X
   DATE : 12018-07-17
-  SEEN : true
+  DONE : true
   TAGS : philosophy
   TYPE : quote
 
@@ -1451,7 +1459,7 @@ CODEX
     > 'Running away from technology is pointless. Build something better on top of existing technology.'
     > 'Optimize for skills, not pay grade.'
   DATE : 12018-07-17
-  SEEN : true
+  DONE : true
   REVI : true
   TAGS : philosophy, code, psychology
 
@@ -1459,7 +1467,7 @@ LET'S ENCRYPT
   LINK : https://letsencrypt.org/
   TYPE : tool
   DATE : 12018-07-17
-  SEEN : true
+  DONE : true
   TAGS : code, web
   NOTE : Free encryption ssl cert
 
@@ -1469,7 +1477,7 @@ LIGAND
   LINK : https://ultimae.bandcamp.com/album/ligand-24bit
   TYPE : music
   DATE : 12018-07-17
-  SEEN : true
+  DONE : true
   NOTE : Ambient
 
 COMPRO
@@ -1478,7 +1486,7 @@ COMPRO
   LINK : https://iliantape.bandcamp.com/album/itlp04-skee-mask-compro
   TYPE : music
   DATE : 12018-07-17
-  SEEN : true
+  DONE : true
   NOTE : Ambient
 
 UNYT
@@ -1487,20 +1495,20 @@ UNYT
   LINK : https://ultimae.bandcamp.com/album/unyt-24bit
   TYPE : music
   DATE : 12018-07-17
-  SEEN : false
+  DONE : false
 
 JS PROTOTYPE
   LINK : https://medium.freecodecamp.org/prototype-in-js-busted-5547ec68872
   TYPE : article
   DATE : 12018-07-17
-  SEEN : false
+  DONE : false
   TAGS : web, code
 
 INTERNAL FLIGHTS
   LINK : https://estastonne.bandcamp.com/album/internal-flight-2013-guitar-version
   TYPE : music
   DATE : 12018-07-17
-  SEEN : true
+  DONE : true
   REVI : true
   NOTE : Amaze
 
@@ -1511,7 +1519,7 @@ LICENSE ZERO
   TYPE : tool
   DATE : 12018-07-17
   TAGS : code, web
-  SEEN : true
+  DONE : true
 
 CATASTROPHE JOURNAL
   PERS : cblgh
@@ -1520,39 +1528,57 @@ CATASTROPHE JOURNAL
   TYPE : article
   DATE : 12018-07-17
   TAGS : philosophy, psychology
-  SEEN : true
+  DONE : true
 
 ZERO CARBON BILL SUB
   LINK : https://blog.greens.org.nz/2018/06/22/guide-making-submission-zero-carbon-bill/
   TYPE : tool
   DATE : 12018-07-17
   TAGS : env
-  SEEN : true
+  DONE : true
   FILE : 12018-07-17_zeroCarbonBill-DiscussionDocument.pdf
 
 SKY INTERVIEW
   LINK : http://shareaslicepodcast.com/2016/11/16/sky/
   TYPE : podcast
   DATE : 12018-07-17
-  SEEN : true
+  DONE : true
 
 LITTLE SOUND DJ
   LINK : https://www.littlesounddj.com
   TYPE : tool
   DATE : 12018-07-17
-  SEEN : true
+  DONE : true
 
 COVOX DUBSLIDE
   LINK : https://www.littlesounddj.com/lsd/sounds/covox_-_dubslide.mp3
   TYPE : music
   DATE : 12018-07-17
-  SEEN : true
+  DONE : true
   NOTE : Made with LSDJ
 
 THE POT COVER
   LINK : https://www.youtube.com/watch?v=8zfYO9sZjrE
   TYPE : music
   DATE : 12018-07-17
-  SEEN : true
+  DONE : true
   NOTE : Four trumpeteers, a drummer, guitarist, saxman and epic Sophia Urista cover 'The Pot'
+
+OVEN
+  NOTE
+    > Oven close to bed, then bench with sink can be cut diagonal
+    & Build right to edge (including counter lip)
+    & 
+    & ENO
+    & Height (400 - 470)
+    & Width (504 - 517)
+    & Depth (410 - 418)
+    & 
+    & GAS
+    & Height (470)
+    & Width (530)
+    & Depth (310)
+  PROJ : Van
+  DATE : 12018-07-17
+  DONE : false
 `

@@ -8,3 +8,17 @@ Small self contained project for playing with [Indental](https://wiki.xxiivv.com
 
 - The database format is [Indental](https://wiki.xxiivv.com/#indental).
 - The templating language is [Runic](https://wiki.xxiivv.com/#runic).
+
+## Todo
+
+- Web input (save to db)
+- Format quotes and notes 
+- Project display
+- Project list
+- Done %
+- Filter done/not done
+- Limit types to top x
+- Full tags page
+- Full types page
+- Settings file (list of type icons etc)
+- Sort (date, IMPI, IMPE)
