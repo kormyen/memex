@@ -1,8 +1,7 @@
 function Main()
 {
   // REFERENCE
-  this.database = null;
-  this.keys = null;
+  this.db = null;
   this.msnry = null;
   this.grid = null;
   this.menu = null;
@@ -10,14 +9,12 @@ function Main()
   // SETTINGS
   this.useMasonry = true;
   this.divNamePre = 'item';
-  this.statsNumTags = 10;
 
   // MAIN
   this.install = function()
   {
-    this.database = new Indental(DATABASE).parse();
-    this.keys = Object.keys(this.database);
-    this.processDatabase();
+    this.db = new DataWrap(DATABASE);
+    this.db.install();
 
     this.grid = document.getElementById("grid");
     this.menu = document.getElementById("menu");
@@ -33,7 +30,7 @@ function Main()
       });
     }
 
-    this.displayStats(this.database);
+    this.displayStats(this.db.getStats());
   }
 
   this.start = function()
@@ -43,12 +40,10 @@ function Main()
 
   this.load = function(target = "home")
   {
-    console.log('load');
-
     target = target.substr(0,1) == "#" ? target.substr(1,target.length-1) : target
     target = target.trim() == "" ? "home" : target
 
-    if(target === '')
+    if (target === '')
     {
       window.history.replaceState(undefined, undefined, "#" + target)
     }
@@ -58,346 +53,159 @@ function Main()
       window.location.hash = target;
     }
 
-    var tempDatabase = {}
-
-    if (target == 'home')
-    {
-      console.log('Display \'home\'');
-      tempDatabase = this.database;
-    }
-    else if (target == 'term')
-    {
-      console.log('Display \'terms\'');
-
-      for (i = 0; i < this.keys.length; i++) 
-      { 
-        let value = this.database[this.keys[i]];
-        if (typeof value.TERM !== 'undefined')
-        {
-          tempDatabase[this.keys[i]] = this.database[this.keys[i]];
-        }
-      }
-    }
-    else
-    {
-      var splitTarget = target.split("-");
-      console.log('split: ' + splitTarget[0]);
-
-      if (splitTarget[0] == 'tag')
-      {
-        // TAG
-        console.log('Display tag \'' + splitTarget[1] + '\'');
-
-        for (i = 0; i < this.keys.length; i++) 
-        { 
-          let value = this.database[this.keys[i]];
-          if (typeof value.TAGS !== 'undefined')
-          {
-            for (var t = 0; t < value.TAGS.length; t++)
-            {
-              if (value.TAGS[t] == splitTarget[1])
-              {
-                tempDatabase[this.keys[i]] = this.database[this.keys[i]];
-              }
-            }
-          }
-        }
-      }
-      else if (splitTarget[0] == 'type')
-      {
-        // TYPE
-        console.log('Display type \'' + splitTarget[1] + '\'');
-
-        var tempDatabase = {}
-        for (i = 0; i < this.keys.length; i++) 
-        { 
-          let value = this.database[this.keys[i]];
-          if (typeof value.TYPE !== 'undefined')
-          {
-            if (value.TYPE == splitTarget[1])
-            {
-              tempDatabase[this.keys[i]] = this.database[this.keys[i]];
-            }
-          }
-        }
-      }
-    }
+    var entries = this.db.filter(target);
 
     // DISPLAY
     this.grid.innerHTML = '';
-    this.displayEntries(tempDatabase);
+    this.displayEntries(entries);
     
+    // LAYOUT
     if (this.useMasonry)
     {
       this.msnry.reloadItems();
       this.msnry.layout();
     }
 
-    // this.displayStats(tempDatabase);
+    // this.displayStats(this.db.getStats(entries));
   }
 
-  this.processDatabase = function()
+  this.displayStats = function(stats)
   {
-    for (i = 0; i < this.keys.length; i++) 
-    { 
-      let value = this.database[this.keys[i]];
-
-      // TAGS
-      if (typeof value.TAGS !== 'undefined')
-      {
-        var tags = value.TAGS.split(",");
-
-        for (var t = 0; t < tags.length; t++)
-        {
-          tags[t] = tags[t].trim().toLowerCase();
-        }
-
-        this.database[this.keys[i]].TAGS = tags;
-      }
-
-      // TERMS
-      if (typeof value.TERM !== 'undefined')
-      {
-        let termRunic = new Runic(value.TERM).raw;
-        let formattedTerms = [];
-
-        for (var t = 0; t < termRunic.length; t++) 
-        {
-          term = termRunic[t].substr(2).split(':');
-          for (var e = 0; e < term.length; e++) 
-          {
-            term[e] = term[e].trim();
-          }
-          formattedTerms.push(term);
-        }
-
-        this.database[this.keys[i]].TERM = formattedTerms;
-      }
-
-      this.database[this.keys[i]].DIID = i;
-    }
-    console.log(this.database);
-  }
-
-  this.missing = function(target)
-  {
-    console.warn(`Could not find ${target}.`);
-    //this.el.innerHTML = `<page><p>Could not find page ${target}</p></page>`;
-  }
-
-  this.touch = function(target)
-  {
-    console.log('touch');
-
-    var link = target.getAttribute("href") ? target.getAttribute("href") : target.parentNode.getAttribute("href")
-
-    if(!link){ return; }
-    if(link.substr(0,1) != "#"){ return; }
-
-    this.load(link.substr(1,link.length-1));
-  }
-
-  //document.addEventListener('mouseup',  (e)=>{ this.touch(e.target); e.preventDefault(); });
-
-  this.displayStats = function(db)
-  {
-    // CALCULATE
-    let dbKeys = Object.keys(db);
-    let types = {};
-    let tags = {};
-    let terms = 0;
-    let i = 0;
-    while (i < dbKeys.length) 
-    {
-      // TYPE
-      if (typeof db[dbKeys[i]].TYPE !== 'undefined')
-      {
-        if (typeof types[db[dbKeys[i]].TYPE] !== 'undefined')
-        {
-          types[db[dbKeys[i]].TYPE] ++;
-        }
-        else
-        {
-          types[db[dbKeys[i]].TYPE] = 1;
-        }
-      }
-
-      // TAGS
-      if (typeof db[dbKeys[i]].TAGS !== 'undefined')
-      {
-        for (var t = 0; t < db[dbKeys[i]].TAGS.length; t++) 
-        {
-          if (typeof tags[db[dbKeys[i]].TAGS[t]] !== 'undefined')
-          {
-            tags[db[dbKeys[i]].TAGS[t]] ++;
-          }
-          else
-          {
-            tags[db[dbKeys[i]].TAGS[t]] = 1;
-          }
-        }
-      }
-
-      // TERM
-      if (typeof db[dbKeys[i]].TERM !== 'undefined')
-      {
-        terms += db[dbKeys[i]].TERM.length;
-      }
-
-      i++;
-    }
-
-    // SORT TAGS, TAKE TOP 5
-    // Create items array
-    var items = Object.keys(tags).map(function(key) {
-      return [key, tags[key]];
-    });
-
-    // Sort the array based on the second element
-    items.sort(function(first, second) {
-      return second[1] - first[1];
-    });
-
-    tags = items.slice(0, this.statsNumTags);
-    console.log(tags);
-
-
-
     // DISPLAY
     let menuContent = ``;
     
     // TYPE
     menuContent += `<a href='#home'>`;
     menuContent += `<div class="menu-item">`;
-    menuContent += `<div class="count">${this.keys.length}</div>`;
+    menuContent += `<div class="count">${stats.total}</div>`;
     menuContent += `<i class="fas fa-asterisk"></i>`;
     menuContent += `</div>`;
     menuContent += `</a>`;
 
-    if (typeof types['article'] !== 'undefined')
+    if (typeof stats.types['article'] !== 'undefined')
     {
       menuContent += `<a href='#type-article'>`;
       menuContent += `<div class="menu-item">`;
-      menuContent += `<div class="count">${types['article']}</div>`;
+      menuContent += `<div class="count">${stats.types['article']}</div>`;
       menuContent += `<i class="far fa-newspaper"></i>`;
       menuContent += `</div>`;
       menuContent += `</a>`;
     }
-    if (typeof types['podcast'] !== 'undefined')
+    if (typeof stats.types['podcast'] !== 'undefined')
     {
       menuContent += `<a href='#type-podcast'>`;
       menuContent += `<div class="menu-item">`;
-      menuContent += `<div class="count">${types['podcast']}</div>`;
+      menuContent += `<div class="count">${stats.types['podcast']}</div>`;
       menuContent += `<i class="fas fa-podcast"></i>`;
       menuContent += `</div>`;
       menuContent += `</a>`;
     }
-    if (typeof types['video'] !== 'undefined')
+    if (typeof stats.types['video'] !== 'undefined')
     {
       menuContent += `<a href='#type-video'>`;
       menuContent += `<div class="menu-item">`;
-      menuContent += `<div class="count">${types['video']}</div>`;
+      menuContent += `<div class="count">${stats.types['video']}</div>`;
       menuContent += `<i class="fas fa-tv"></i>`;
       menuContent += `</div>`;
       menuContent += `</a>`;
     }
-    if (typeof types['list'] !== 'undefined')
+    if (typeof stats.types['list'] !== 'undefined')
     {
       menuContent += `<a href='#type-list'>`;
       menuContent += `<div class="menu-item">`;
-      menuContent += `<div class="count">${types['list']}</div>`;
+      menuContent += `<div class="count">${stats.types['list']}</div>`;
       menuContent += `<i class="fas fa-file-alt"></i>`;
       menuContent += `</div>`;
       menuContent += `</a>`;
     }
-    if (typeof types['book'] !== 'undefined')
+    if (typeof stats.types['book'] !== 'undefined')
     {
       menuContent += `<a href='#type-book'>`;
       menuContent += `<div class="menu-item">`;
-      menuContent += `<div class="count">${types['book']}</div>`;
+      menuContent += `<div class="count">${stats.types['book']}</div>`;
       menuContent += `<i class="fas fa-book-open"></i>`;
       menuContent += `</div>`;
       menuContent += `</a>`;
     }
-    if (typeof types['game'] !== 'undefined')
+    if (typeof stats.types['game'] !== 'undefined')
     {
       menuContent += `<a href='#type-game'>`;
       menuContent += `<div class="menu-item">`;
-      menuContent += `<div class="count">${types['game']}</div>`;
+      menuContent += `<div class="count">${stats.types['game']}</div>`;
       menuContent += `<i class="fas fa-gamepad"></i>`;
       menuContent += `</div>`;
       menuContent += `</a>`;
     }
-    if (typeof types['service'] !== 'undefined')
+    if (typeof stats.types['service'] !== 'undefined')
     {
       menuContent += `<a href='#type-service'>`;
       menuContent += `<div class="menu-item">`;
-      menuContent += `<div class="count">${types['service']}</div>`;
+      menuContent += `<div class="count">${stats.types['service']}</div>`;
       menuContent += `<i class="fas fa-server"></i>`;
       menuContent += `</div>`;
       menuContent += `</a>`;
     }
-    if (typeof types['lecture'] !== 'undefined')
+    if (typeof stats.types['lecture'] !== 'undefined')
     {
       menuContent += `<a href='#type-lecture'>`;
       menuContent += `<div class="menu-item">`;
-      menuContent += `<div class="count">${types['lecture']}</div>`;
+      menuContent += `<div class="count">${stats.types['lecture']}</div>`;
       menuContent += `<i class="fas fa-chalkboard-teacher"></i>`;
       menuContent += `</div>`;
       menuContent += `</a>`;
     }
-    if (typeof types['quote'] !== 'undefined')
+    if (typeof stats.types['quote'] !== 'undefined')
     {
       menuContent += `<a href='#type-quote'>`;
       menuContent += `<div class="menu-item">`;
-      menuContent += `<div class="count">${types['quote']}</div>`;
+      menuContent += `<div class="count">${stats.types['quote']}</div>`;
       menuContent += `<i class="fas fa-comment"></i>`;
       menuContent += `</div>`;
       menuContent += `</a>`;
     }
-    if (typeof types['tool'] !== 'undefined')
+    if (typeof stats.types['tool'] !== 'undefined')
     {
       menuContent += `<a href='#type-tool'>`;
       menuContent += `<div class="menu-item">`;
-      menuContent += `<div class="count">${types['tool']}</div>`;
+      menuContent += `<div class="count">${stats.types['tool']}</div>`;
       menuContent += `<i class="fas fa-wrench"></i>`;
       menuContent += `</div>`;
       menuContent += `</a>`;
     }
-    if (typeof types['music'] !== 'undefined')
+    if (typeof stats.types['music'] !== 'undefined')
     {
       menuContent += `<a href='#type-music'>`;
       menuContent += `<div class="menu-item">`;
-      menuContent += `<div class="count">${types['music']}</div>`;
+      menuContent += `<div class="count">${stats.types['music']}</div>`;
       menuContent += `<i class="fas fa-music"></i>`;
       menuContent += `</div>`;
       menuContent += `</a>`;
     }
 
     // TERM
-    if (terms > 0)
+    if (stats.terms > 0)
     {
       // menuContent += `<div class="menu-item-space"></div>`;
       menuContent += `<a href='#term'>`;
       menuContent += `<div class="menu-item">`;
-      menuContent += `<div class="count">${terms}</div>`;
+      menuContent += `<div class="count">${stats.terms}</div>`;
       menuContent += `<i class="fas fa-ribbon"></i>`;
       menuContent += `</div>`;
       menuContent += `</a>`;
     }
 
     // TAGS
-    if (tags.length > 0)
+    if (stats.tags.length > 0)
     {
       menuContent += `<div class="menu-tag-container">`;
       menuContent += `<i class="fas fa-tag"></i>`;
-      for (var t = 0; t < tags.length; t++) 
+      for (var t = 0; t < stats.tags.length; t++) 
       {
-        menuContent += `<a href='#tag-${tags[t][0]}'>`;
+        menuContent += `<a href='#tag-${stats.tags[t][0]}'>`;
         menuContent += `<div class="menu-tag">`;
         // menuContent += `<i class="fas fa-tag textIcon"></i>`;
-        menuContent += `<div class="menu-tag-count">${tags[t][1]}</div>`;
-        menuContent += `<div class="menu-tag-label">${tags[t][0]}</div>`;
+        menuContent += `<div class="menu-tag-count">${stats.tags[t][1]}</div>`;
+        menuContent += `<div class="menu-tag-label">${stats.tags[t][0]}</div>`;
         menuContent += `</div>`;
         menuContent += `</a>`;
       }
