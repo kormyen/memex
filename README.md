@@ -2,6 +2,8 @@
 
 Bookmarks and notes storage and review.
 
+[Live version here](https://kormyen.github.io/Memex/).
+
 ## Goals:
 
 - Small self contained project for getting up to speed with html/css/js.
