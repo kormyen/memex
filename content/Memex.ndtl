@@ -266,6 +266,7 @@ RV BATTERY RANT
   TAGS : offgrid
   NOTE : Rant
   SEEN : true
+  PROJ : Van
 
 HYPER LIGHT DIFFICULTY
   LINK : https://www.gamasutra.com/view/news/269957/How_Hyper_Light_Drifter_balances_difficulty_with_fairness.php
@@ -541,7 +542,7 @@ TOP SLATE STAR CODEX
   REVI : true
   TAGS : psychology, society, research, philosophy
 
-UNDER THE SKIN: JORDAN PETERSON
+UNDER THE SKIN: J PETERSON
   LINK : https://youtu.be/r2S58rH0PAw?t=1h1m38s
   TYPE : podcast
   Date : 12018-07-06
@@ -1030,7 +1031,7 @@ ACID BODHISATTVA
 THE DOORS OF PERCEPTION
   LINK : https://www.erowid.org/psychoactives/writings/huxley_doors.shtml
   TYPE : article
-  TAGS :  psychedelics, psychology, philosophy
+  TAGS : psychedelics, psychology, philosophy
   DATE : 12018-07-14
   SEEN : false
   REVI : true
@@ -1329,7 +1330,7 @@ LOW TECH MAGAZINE
   TYPE : list
   DATE : 12018-07-16
   SEEN : false
-  TAGS : history, solarpunk, env
+  TAGS : history, solarpunk, env, offgrid
 
 GWERN
   PERS : neauoire
@@ -1502,4 +1503,49 @@ INTERNAL FLIGHTS
   SEEN : true
   REVI : true
   NOTE : Amaze
+
+LICENSE ZERO
+  PERS : cblgh
+  SRCE : Merveilles
+  LINK : https://licensezero.com/
+  TYPE : tool
+  DATE : 12018-07-17
+  TAGS : code, web
+  SEEN : true
+
+CATASTROPHE JOURNAL
+  PERS : cblgh
+  SRCE : Merveilles
+  LINK : https://seths.blog/2018/07/a-catastrophe-journal/
+  TYPE : article
+  DATE : 12018-07-17
+  TAGS : philosophy, psychology
+  SEEN : true
+
+ZERO CARBON BILL SUB
+  LINK : https://blog.greens.org.nz/2018/06/22/guide-making-submission-zero-carbon-bill/
+  TYPE : tool
+  DATE : 12018-07-17
+  TAGS : env
+  SEEN : true
+  FILE : 12018-07-17_zeroCarbonBill-DiscussionDocument.pdf
+
+SKY INTERVIEW
+  LINK : http://shareaslicepodcast.com/2016/11/16/sky/
+  TYPE : podcast
+  DATE : 12018-07-17
+  SEEN : true
+
+LITTLE SOUND DJ
+  LINK : https://www.littlesounddj.com
+  TYPE : tool
+  DATE : 12018-07-17
+  SEEN : true
+
+COVOX DUBSLIDE
+  LINK : https://www.littlesounddj.com/lsd/sounds/covox_-_dubslide.mp3
+  TYPE : music
+  DATE : 12018-07-17
+  SEEN : true
+  NOTE : Made with LSDJ
 `

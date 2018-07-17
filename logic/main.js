@@ -10,6 +10,7 @@ function Main()
   // SETTINGS
   this.useMasonry = true;
   this.divNamePre = 'item';
+  this.statsNumTags = 10;
 
   // MAIN
   this.install = function()
@@ -257,7 +258,7 @@ function Main()
       return second[1] - first[1];
     });
 
-    tags = items.slice(0, 5);
+    tags = items.slice(0, this.statsNumTags);
     console.log(tags);
 
 
