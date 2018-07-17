@@ -8,6 +8,7 @@ function ViewMasonry()
   // SETTINGS
   this.statsNumTags = 5;
   this.statsNumTypes = 10;
+  this.doDoubleWide = true;
 
   // SETTINGS
   this.useMasonry = true;
@@ -54,7 +55,19 @@ function ViewMasonry()
   {
     let value = db[key];
 
-    let entry = `<div class="grid-item" id="${this.divNamePre + db[key].DIID}">`;
+    let itemClass = "grid-item";
+    if (this.doDoubleWide)
+    {
+      if (typeof value.QOTE !== 'undefined')
+      {
+        if (Array.isArray(value.QOTE) && value.QOTE.length > 4)
+        {
+          itemClass = "grid-item grid-item--width2";
+        } 
+      }
+    }
+
+    let entry = `<div class="${itemClass}" id="${this.divNamePre + db[key].DIID}">`;
     entry += `<div class="title">${key.to_properCase()}</div>`;
 
     // LINK

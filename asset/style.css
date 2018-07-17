@@ -122,7 +122,7 @@ body {
   clear: both;
 }
 
-.grid-item { 
+.grid-item, .grid-item--width2 { 
 	width: 350px;
 	margin-bottom: 20px;
 	border-radius: 3px;
@@ -132,6 +132,14 @@ body {
 	min-height:2.4em;
 	float:left;
 	box-sizing: border-box;
+}
+@media screen and (min-width: 886px) {
+	.grid-item--width2 { 
+		width: 720px;
+	}
+	/*html { 
+		background:#000; 
+	}*/
 }
 .grid-item:hover { 
 	background:#bbb;
