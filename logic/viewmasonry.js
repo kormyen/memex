@@ -365,6 +365,15 @@ function ViewMasonry()
         menuContent += `</div>`;
         menuContent += `</a>`;
       }
+      else if (stats.types[ty][0] == 'image')
+      {
+        menuContent += `<a href='#type-image'>`;
+        menuContent += `<div class="menu-item">`;
+        menuContent += `<div class="count">${stats.types[ty][1]}</div>`;
+        menuContent += `<i class="fas fa-image"></i>`;
+        menuContent += `</div>`;
+        menuContent += `</a>`;
+      }
     }
 
     menuContent += `<div class="menu-spacer"></div>`;
