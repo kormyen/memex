@@ -1631,13 +1631,14 @@ SLIDE
   TYPE : image
   DONE : true
   WIDE : true
+  TAGS : log, example
 
 VAN
   DATE : 12017-01-20
   FILE : 12017-01-20_van.jpg
   TYPE : image
   PROJ : Van
-  TAGS : diy
+  TAGS : diy, log, example
   DONE : true
 
 FPV MOD
@@ -1645,7 +1646,7 @@ FPV MOD
   FILE : 12018-03-20_fpvMod.jpg
   TYPE : image
   PROJ : Drone
-  TAGS : diy
+  TAGS : diy, log, example
   DONE : true
 
 SWITCH PANEL
@@ -1653,7 +1654,7 @@ SWITCH PANEL
   FILE : 12018-07-10_switchPanel.jpg
   TYPE : image
   PROJ : Van
-  TAGS : diy
+  TAGS : diy, arduino, log, example
   DONE : true
   LINK : https://github.com/kormyen/VNS
 
@@ -1689,20 +1690,24 @@ WHITE
   DATE : 12018-07-19
   FILE : 12018-07-19_white.jpg
   TYPE : image
+  TAGS : black and white, example
 
 BLACK
   DATE : 12018-07-19
   FILE : 12018-07-19_black.jpg
   TYPE : image
+  TAGS : black and white, example
 
 TALL CUT SHORT
   DATE : 12018-07-19
   FILE : 12018-07-19_tall.jpg
   TYPE : image
+  TAGS : black and white, example
 
-WIDE
+RANGITOTO
   DATE : 12018-07-19
   FILE : 12018-07-19_wide.jpg
   TYPE : image
   WIDE : true
+  TAGS : log, wide, example
 `
