@@ -68,7 +68,11 @@ function ViewMasonry()
     let itemClass = "grid-item";
     if (this.doDoubleWide)
     {
-      if (typeof value.QOTE !== 'undefined')
+      if (typeof value.WIDE !== 'undefined' && value.WIDE)
+      {
+        itemClass += " grid-item--width2";
+      }
+      else if (typeof value.QOTE !== 'undefined')
       {
         if (Array.isArray(value.QOTE) && value.QOTE.length > 4)
         {
@@ -83,7 +87,8 @@ function ViewMasonry()
     }
 
     let entry = ``;
-    // DIV
+
+    // ITEM DIV
     entry += `<div class="${itemClass}" id="${this.divNamePre + value.DIID}">`;
 
     if (typeof value.LINK !== 'undefined')
