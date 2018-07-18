@@ -180,47 +180,71 @@ body {
 }
 
 /* LINK */
-.grid-item a { 
-  text-decoration: none;
+.grid-item .link {
+  width: calc(100% - var(--type-icon-size)*2);
+  float: left;
+  clear: both;
 }
-.grid-item a .title { 
-  color: var(--color-content2);
-  margin-right: calc(var(--type-icon-size) * 2);
+.grid-item .link { 
+  text-decoration: none;
+  display: inline-block;
+}
+.grid-item .link .title { 
+  color: var(--color-content3);
   font-size: var(--size-font-title);
-  color: var(--color-content3); 
   text-decoration: none;
   float: left;
   clear: both;
 }
-.grid-item a .link-line { 
+.grid-item .link .link-line { 
   color: var(--color-content2);
-  font-size: var(--size-font-body);
   margin-top: var(--size-item-elem-padding);
   float: left;
   clear: both;
 }
-.grid-item a i { 
+.grid-item .link i { 
   color: var(--color-content2);
   float: left;
 }
-.grid-item a .link-title { 
+.grid-item .link .link-title { 
   color: var(--color-content2);
+  font-size: var(--size-font-body);
   float: left;
 }
-.grid-item:hover a .link-title { 
+.grid-item:hover .link .link-title { 
   color: var(--color-content3);
 }
-.grid-item a:hover .title { 
+.grid-item .link:hover .title { 
   /*background-color: var(--color-content3);
   color: var(--color-content1);*/ 
 }
-.grid-item a:hover .link-title { 
+.grid-item .link:hover .link-title { 
   background-color: var(--color-content3);
   color: var(--color-content1);
 }
 
+/* TYPE */
+.grid-item a .type {
+  color: var(--color-content2);
+  font-size: var(--type-icon-size);
+  padding-top: var(--size-gutter);
+  padding-bottom: var(--size-gutter);
+  width: calc(var(--type-icon-size)*2 + var(--size-gutter));
+  vertical-align: top;
+  text-align: center;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.grid-item:hover a .type {
+  color: var(--color-content2);
+}
+.grid-item:hover a .type:hover {
+  color: var(--color-content3);
+}
+
 /* LINK, NOTE, QUOTE, TERM, TAGS */
-.link, .note, .quote, .term, .tags, .prog {
+.note, .quote, .term, .tags, .prog {
 	padding-top: var(--size-item-elem-padding);
 	font-size: var(--size-font-body);
 	color: var(--color-content2); 
@@ -247,28 +271,11 @@ body {
 	color: var(--color-content1);
 }
 
+/* SMALL ICONS */
 .textIcon {
 	color: var(--color-content1);
 	margin-right: var(--size-item-elem-sep); 
 }
 .grid-item:hover .textIcon {
 	color: var(--color-content2);
-}
-
-/* TYPE */
-#type a {
-	color: var(--color-content1);
-	font-size: var(--type-icon-size);
-	padding: var(--size-gutter);
-	vertical-align: top;
-	text-align: center;
-	position: absolute;
-  right: 0px;
-  top: 0px;
-}
-.grid-item:hover #type a {
-	color: var(--color-content2);
-}
-.grid-item:hover #type a:hover {
-	color: var(--color-content3);
 }

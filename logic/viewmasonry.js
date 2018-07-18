@@ -100,7 +100,7 @@ function ViewMasonry()
       }
 
       // LINK START
-      entry += `<a href="${String(value.LINK)}" id="${idUrl} class="link">`;
+      entry += `<a href="${String(value.LINK)}" id="${idUrl}" class="link">`;
     }
 
     // TITLE
@@ -115,8 +115,9 @@ function ViewMasonry()
     // TYPE
     if (typeof value.TYPE !== 'undefined')
     {
-      entry += `<div id="type">`;
       entry += `<a href='#type-${String(value.TYPE)}'>`;
+      entry += `<div class="type">`;
+
       if (value.TYPE == 'article')
       {
         entry += `<i class="far fa-newspaper"></i>`;
@@ -162,8 +163,8 @@ function ViewMasonry()
         entry += `<i class="fas fa-music"></i>`;
       }
        
-      entry += `</a>`;
       entry += `</div>`;
+      entry += `</a>`;
     }
 
     // TAGS
