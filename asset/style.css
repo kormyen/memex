@@ -165,31 +165,62 @@ body {
   content: '';
   clear: both;
 }
+
+/* GRID ITEM */
 .grid-item, .grid-item--width2 { 
 	border-radius: var(--size-item-corner);
   background: var(--color-content-bg-i);
 	margin-bottom: var(--size-gutter);
 	width: var(--size-grid-column);
-	padding: var(--size-gutter); 
 	box-sizing: border-box;
   text-decoration: none; 
 	float: left;
+  clear: both;
 }
 @media screen and (min-width: 886px) {
 	.grid-item--width2 { 
 		width: calc(var(--size-grid-column) * 2 + var(--size-gutter));
 	}
 }
+.grid-item-upper-content {
+  padding: var(--size-gutter) var(--size-gutter) var(--size-gutter) var(--size-gutter);
+  display: inline-block;
+  width: 100%;
+}
+.grid-item-image .grid-item-upper-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.grid-item-lower-content {
+  padding: 0 var(--size-gutter) 0 var(--size-gutter);
+  height: 100%;
+  display: inline-block;
+}
+.grid-item-lower-content:empty {
+  display: none;
+}
+.grid-item-image .grid-item-lower-content {
+  visibility: hidden;
+}
+.grid-item-image {
+  background: transparent;
+}
 .grid-item img {
+  border-radius: var(--size-item-corner);
   /*margin: calc(var(--size-gutter) * -1);
-  width: calc(100% + var(--size-gutter)*2);*/
-  max-width: 100%; 
-  height: auto;
-  clear: both;
+  width: calc(var(--size-gutter) + 100%);*/
+  width: 100%;
 }
 .grid-item:hover { 
 	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .1);
 	background: var(--color-content-bg-e);
+}
+.grid-item-image:hover { 
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .1);
+  background: transparent;
 }
 
 /* LINK */
@@ -208,6 +239,12 @@ body {
   text-decoration: none;
   float: left;
   clear: both;
+}
+.grid-item-image .title {
+  display: none;
+}
+.grid-item-image:hover .title {
+  display: initial;
 }
 .grid-item .link .link-line { 
   margin-top: var(--size-item-elem-padding);
@@ -252,7 +289,6 @@ body {
 
 /* LINK, NOTE, QUOTE, TERM, TAGS */
 .note, .quote, .term, .tags, .prog {
-	padding-top: var(--size-item-elem-padding);
   color: var(--color-content-item-i); 
 	font-size: var(--size-font-body);
   float: left;
@@ -265,6 +301,9 @@ body {
 .grid-item:hover .tags,
 .grid-item:hover .prog {
 	color: var(--color-content-item-e);
+}
+.grid-item-image .grid-item-lower-content {
+  display: none;
 }
 .tags a {
 	color: var(--color-content-item-i); 

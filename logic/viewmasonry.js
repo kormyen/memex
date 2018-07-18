@@ -33,19 +33,19 @@ function ViewMasonry()
       });
     console.log(3 + ' ' + this.msnry);
 
-      // var imgLoad = imagesLoaded('.grid');
-      // function onAlways( instance ) {
-      //   console.log('all images are loaded');
-      //   parent.msnry.reloadItems();
-      //   parent.msnry.layout();
-      // }
-      // imgLoad.on( 'always', onAlways );
-      // // imgLoad.off( 'always', onAlways );
-      // imgLoad.on( 'progress', function(instance, image)
-      // {
-      //   var result = image.isLoaded ? 'loaded' : 'broken';
-      //   console.log( 'image is ' + result + ' for ' + image.img.src );
-      // });
+    var imgLoad = imagesLoaded('.grid');
+    function onAlways( instance ) {
+      console.log('all images are loaded');
+      parent.msnry.reloadItems();
+      parent.msnry.layout();
+    }
+    imgLoad.on( 'always', onAlways );
+    // imgLoad.off( 'always', onAlways );
+    imgLoad.on( 'progress', function(instance, image)
+    {
+      var result = image.isLoaded ? 'loaded' : 'broken';
+      console.log( 'image is ' + result + ' for ' + image.img.src );
+    });
     }
   }
 
@@ -85,6 +85,11 @@ function ViewMasonry()
       }
     }
 
+    if (typeof value.TYPE !== 'undefined' && value.TYPE == 'image')
+    {
+      itemClass += " grid-item-image";
+    }
+
     let entry = ``;
     // DIV
     entry += `<div class="${itemClass}" id="${this.divNamePre + value.DIID}">`;
@@ -103,6 +108,9 @@ function ViewMasonry()
       // LINK START
       entry += `<a href="${String(value.LINK)}" id="${idUrl}" class="link">`;
     }
+
+    // UPPER CONTENT START
+    entry += `<div class="grid-item-upper-content">`;
 
     // TITLE
     entry += `<div class="title">${key.to_properCase()}</div>`;
@@ -168,6 +176,17 @@ function ViewMasonry()
       entry += `</a>`;
     }
 
+    // UPPER CONTENT END
+    entry += `</div>`;
+
+
+
+
+
+
+    // LOWER CONTENT START
+    entry += `<div class="grid-item-lower-content">`;
+
     // TAGS
     if (typeof value.TAGS !== 'undefined')
     {
@@ -210,6 +229,12 @@ function ViewMasonry()
       entry += `<div class="prog"><i class="fas fa-clock textIcon"></i>${value.PROG}</div>`;
     }
 
+    // LOWER CONTENT END
+    entry += `</div>`;
+
+
+
+    // IMAGE
     if (typeof value.TYPE !== 'undefined' && value.TYPE == 'image')
     {
       if (typeof value.FILE !== 'undefined')
