@@ -176,6 +176,7 @@ body {
   text-decoration: none; 
 	float: left;
   clear: both;
+  padding-bottom: var(--size-gutter);
 }
 @media screen and (min-width: 886px) {
 	.grid-item--width2 { 
@@ -183,7 +184,7 @@ body {
 	}
 }
 .grid-item-upper-content {
-  padding: var(--size-gutter) var(--size-gutter) var(--size-gutter) var(--size-gutter);
+  padding: var(--size-gutter) var(--size-gutter) 0 var(--size-gutter);
   display: inline-block;
   width: 100%;
 }
@@ -206,6 +207,7 @@ body {
   visibility: hidden;
 }
 .grid-item-image {
+  padding-bottom: 0;
   background: transparent;
 }
 .grid-item img {
@@ -289,6 +291,7 @@ body {
 
 /* LINK, NOTE, QUOTE, TERM, TAGS */
 .note, .quote, .term, .tags, .prog {
+	padding-top: var(--size-item-elem-padding);
   color: var(--color-content-item-i); 
 	font-size: var(--size-font-body);
   float: left;
