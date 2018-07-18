@@ -31,21 +31,21 @@ function ViewMasonry()
         fitWidth: true,
         transitionDuration: 0,
       });
-    console.log(3 + ' ' + this.msnry);
+    console.log(3);
 
-      // var imgLoad = imagesLoaded('.grid');
-      // function onAlways( instance ) {
-      //   console.log('all images are loaded');
-      //   parent.msnry.reloadItems();
-      //   parent.msnry.layout();
-      // }
-      // imgLoad.on( 'always', onAlways );
-      // // imgLoad.off( 'always', onAlways );
-      // imgLoad.on( 'progress', function(instance, image)
-      // {
-      //   var result = image.isLoaded ? 'loaded' : 'broken';
-      //   console.log( 'image is ' + result + ' for ' + image.img.src );
-      // });
+      var imgLoad = imagesLoaded('.grid');
+      function onAlways( instance ) {
+        console.log('all images are loaded');
+        this.msnry.layout();
+        console.log(this.msnry);
+      }
+      imgLoad.on( 'always', onAlways.bind(this) );
+      // imgLoad.off( 'always', onAlways );
+      imgLoad.on( 'progress', function(instance, image)
+      {
+        var result = image.isLoaded ? 'loaded' : 'broken';
+        console.log( 'image is ' + result + ' for ' + image.img.src );
+      });
     }
   }
 
