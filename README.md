@@ -32,12 +32,6 @@ Formatted for long term storage (['Long site'](https://www.gwern.net/About)) and
 - Settings file (list of type icons etc)
 - Sort entries (date, IMPI, IMPE)
 
-## Questions
-
-- Web input insert into Indental format
-- Indental formatting of notes/quotes (currently datawrap.processDatabase())
-- Indental formatting of comma seperated tags (currently datawrap.processDatabase())
-
 ## Inspirations / Reference (thanks)
 
 - [Oscean](https://github.com/XXIIVV/Oscean)
