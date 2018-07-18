@@ -1,1 +1,3 @@
-/content/media/*
+/content/media/*.pdf
+/content/media/*.zip
+/content/media/*.html

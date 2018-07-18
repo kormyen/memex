@@ -19,14 +19,31 @@ function ViewMasonry()
     this.grid = document.getElementById("grid");
     this.menu = document.getElementById("menu");
 
+    console.log(1);
     if (this.useMasonry)
     {
-      this.msnry = new Masonry( '.grid', {
+    console.log(2);
+      this.msnry = new Masonry('.grid', {
         itemSelector: '.grid-item',
         columnWidth: 350,
         gutter: 20,
         fitWidth: true,
         transitionDuration: 0,
+      });
+    console.log(3);
+
+      var imgLoad = imagesLoaded('.grid');
+      function onAlways( instance ) {
+        console.log('all images are loaded');
+        //this.msnry.layout();
+        console.log(this.msnry);
+      }
+      imgLoad.on( 'always', onAlways );
+      // imgLoad.off( 'always', onAlways );
+      imgLoad.on( 'progress', function(instance, image)
+      {
+        var result = image.isLoaded ? 'loaded' : 'broken';
+        console.log( 'image is ' + result + ' for ' + image.img.src );
       });
     }
   }
@@ -62,15 +79,15 @@ function ViewMasonry()
       {
         if (Array.isArray(value.QOTE) && value.QOTE.length > 4)
         {
-          itemClass = "grid-item grid-item--width2";
+          itemClass += " grid-item--width2";
         } 
       }
     }
 
-    let entry = `<div class="${itemClass}" id="${this.divNamePre + db[key].DIID}">`;
-    entry += `<div class="title">${key.to_properCase()}</div>`;
+    let entry = ``;
+    // DIV
+    entry += `<div class="${itemClass}" id="${this.divNamePre + value.DIID}">`;
 
-    // LINK
     if (typeof value.LINK !== 'undefined')
     {
       var idUrl = "url";
@@ -81,7 +98,18 @@ function ViewMasonry()
           idUrl = "urlseen";
         }
       }
-      entry += `<div class="link"><i class="fas fa-link textIcon"></i><a href="${String(value.LINK)}" id="${idUrl}">${this.extractRootDomain(value.LINK)}</a></div>`;
+
+      // LINK START
+      entry += `<a href="${String(value.LINK)}" id="${idUrl} class="link">`;
+    }
+
+    // TITLE
+    entry += `<div class="title">${key.to_properCase()}</div>`;
+
+    // LINK END
+    if (typeof value.LINK !== 'undefined')
+    {
+      entry += `<div class="link-line"><i class="fas fa-link textIcon"></i><div class="link-title">${this.extractRootDomain(value.LINK)}</div></div></a>`;
     }
 
     // TYPE
@@ -178,6 +206,14 @@ function ViewMasonry()
     if (typeof value.PROG !== 'undefined')
     {
       entry += `<div class="prog"><i class="fas fa-clock textIcon"></i>${value.PROG}</div>`;
+    }
+
+    if (typeof value.TYPE !== 'undefined' && value.TYPE == 'image')
+    {
+      if (typeof value.FILE !== 'undefined')
+      {
+        entry += `<img src="content/media/${value.FILE}">`;
+      }
     }
 
     entry += `</div>`;

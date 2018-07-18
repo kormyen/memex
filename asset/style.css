@@ -152,6 +152,7 @@ body {
   clear: both;
 }
 .grid-item, .grid-item--width2 { 
+  text-decoration: none; 
 	border-radius: var(--size-item-corner);
 	margin-bottom: var(--size-gutter);
 	background: var(--color-content0);
@@ -159,11 +160,19 @@ body {
 	padding: var(--size-gutter); 
 	box-sizing: border-box;
 	float: left;
+  color: #000;
 }
 @media screen and (min-width: 886px) {
 	.grid-item--width2 { 
 		width: calc(var(--size-grid-column) * 2 + var(--size-gutter));
 	}
+}
+.grid-item img {
+  /*margin: calc(var(--size-gutter) * -1);
+  width: calc(100% + var(--size-gutter)*2);*/
+  max-width: 100%; 
+  height: auto;
+  clear: both;
 }
 .grid-item:hover { 
 	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .1);
@@ -171,23 +180,43 @@ body {
 }
 
 /* LINK */
-a#url, a#urlseen { 
-	color: var(--color-content2);
-	text-decoration: underline; 
+.grid-item a { 
+  text-decoration: none;
 }
-.grid-item:hover a#url, .grid-item:hover a#urlseen {
-	color: var(--color-content3);
+.grid-item a .title { 
+  color: var(--color-content2);
+  margin-right: calc(var(--type-icon-size) * 2);
+  font-size: var(--size-font-title);
+  color: var(--color-content3); 
+  text-decoration: none;
+  float: left;
+  clear: both;
 }
-.grid-item:hover a#url:hover, .grid-item:hover a#urlseen:hover {
-	background-color: var(--color-content3);
-	color: var(--color-content1);
+.grid-item a .link-line { 
+  color: var(--color-content2);
+  font-size: var(--size-font-body);
+  margin-top: var(--size-item-elem-padding);
+  float: left;
+  clear: both;
 }
-
-/* TITLE */
-.title {
-	margin-right: calc(var(--type-icon-size) * 2);
-	font-size: var(--size-font-title);
-	color: var(--color-content3); 
+.grid-item a i { 
+  color: var(--color-content2);
+  float: left;
+}
+.grid-item a .link-title { 
+  color: var(--color-content2);
+  float: left;
+}
+.grid-item:hover a .link-title { 
+  color: var(--color-content3);
+}
+.grid-item a:hover .title { 
+  /*background-color: var(--color-content3);
+  color: var(--color-content1);*/ 
+}
+.grid-item a:hover .link-title { 
+  background-color: var(--color-content3);
+  color: var(--color-content1);
 }
 
 /* LINK, NOTE, QUOTE, TERM, TAGS */
@@ -195,6 +224,8 @@ a#url, a#urlseen {
 	padding-top: var(--size-item-elem-padding);
 	font-size: var(--size-font-body);
 	color: var(--color-content2); 
+  float: left;
+  clear: both;
 }
 .grid-item:hover .link, 
 .grid-item:hover .note, 

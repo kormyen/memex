@@ -1616,4 +1616,50 @@ EDWARDIAN FARM
   DATE : 12018-07-18
   DONE : false
   TAGS : history
+
+CSS VARIABLES
+  LINK : https://css-tricks.com/difference-between-types-of-css-variables/
+  TYPE : article
+  DATE : 12018-07-18
+  DONE : true
+  TAGS : web, code
+  PROJ : Memex
+
+SLIDE
+  DATE : 12018-05-03
+  FILE : 12018-05-03_slide.jpg
+  TYPE : image
+  DONE : true
+
+VAN
+  DATE : 12017-01-20
+  FILE : 12017-01-20_van.jpg
+  TYPE : image
+  PROJ : Van
+  TAGS : diy
+  DONE : true
+
+FPV MOD
+  DATE : 12018-03-20
+  FILE : 12018-03-20_fpvMod.jpg
+  TYPE : image
+  PROJ : Drone
+  TAGS : diy
+  DONE : true
+
+SWITCH PANEL
+  DATE : 12018-03-20
+  FILE : 12018-07-10_switchPanel.jpg
+  TYPE : image
+  PROJ : Van
+  TAGS : diy
+  DONE : true
+
+APPLIED MINIMALISM
+  PERS : Symbol
+  SRCE : Merveilles
+  LINK : https://vimeo.com/13617755
+  DATE : 12018-07-18
+  TYPE : music
+  DONE : true
 `
