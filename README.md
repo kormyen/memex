@@ -16,7 +16,7 @@ Formatted for long term storage (['Long site'](https://www.gwern.net/About)) and
 
 ## Data
 
-- [content/Memex.ndtl](content/Memex.ndtl)
+- [content/database.ndtl](content/database.ndtl)
 
 ## Dependencies
 
