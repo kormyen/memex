@@ -1631,7 +1631,7 @@ SLIDE
   TYPE : image
   DONE : true
   WIDE : true
-  TAGS : log, example
+  TAGS : log, example, hamish
 
 VAN
   DATE : 12017-01-20
@@ -1654,7 +1654,7 @@ SWITCH PANEL
   FILE : 12018-07-10_switchPanel.jpg
   TYPE : image
   PROJ : Van
-  TAGS : diy, arduino, log, example
+  TAGS : diy, arduino, log, example, hamish
   DONE : true
   LINK : https://github.com/kormyen/VNS
 
@@ -1690,19 +1690,19 @@ WHITE
   DATE : 12018-07-19
   FILE : 12018-07-19_white.jpg
   TYPE : image
-  TAGS : black and white, example
+  TAGS : b+w, example, hamish
 
 BLACK
   DATE : 12018-07-19
   FILE : 12018-07-19_black.jpg
   TYPE : image
-  TAGS : black and white, example
+  TAGS : b+w, example, hamish
 
 TALL CUT SHORT
   DATE : 12018-07-19
   FILE : 12018-07-19_tall.jpg
   TYPE : image
-  TAGS : black and white, example
+  TAGS : b+w, example, hamish
 
 RANGITOTO
   DATE : 12018-07-19
