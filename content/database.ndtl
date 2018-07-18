@@ -1710,4 +1710,30 @@ RANGITOTO
   TYPE : image
   WIDE : true
   TAGS : log, wide, example
+
+MQTT
+  PERS : autophagy
+  SRCE : Merveilles
+  LINK : http://mqtt.org/
+  TYPE : tool
+  DATE : 12018-07-19
+  TAGS : code, web
+  TERM
+    > MQTT: 'MQTT is a machine-to-machine (M2M)/"Internet of Things" connectivity protocol. It was designed as an extremely lightweight publish/subscribe messaging transport. It is useful for connections with remote locations where a small code footprint is required and/or network bandwidth is at a premium.'
+
+CHART.JS
+  PERS : autophagy
+  SRCE : Merveilles
+  LINK : https://www.chartjs.org/
+  TYPE : tool
+  DATE : 12018-07-19
+  TAGS : code, web
+
+CSS UTIL CLASSES
+  PERS : stephen
+  SRCE : Merveilles
+  LINK : https://adamwathan.me/css-utility-classes-and-separation-of-concerns/
+  TYPE : article
+  DATE : 12018-07-19
+  TAGS : code, web
 `
