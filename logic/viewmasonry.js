@@ -168,6 +168,10 @@ function ViewMasonry()
       {
         entry += `<i class="fas fa-music"></i>`;
       }
+      else if (value.TYPE == 'image')
+      {
+        entry += `<i class="fas fa-image"></i>`;
+      }
        
       entry += `</div>`;
       entry += `</a>`;
@@ -236,7 +240,10 @@ function ViewMasonry()
     {
       if (typeof value.FILE !== 'undefined')
       {
+        entry += `<div class="image">`;
+        entry += `<div class="image-overlay"></div>`;
         entry += `<img src="content/media/${value.FILE}">`;
+        entry += `</div>`;
       }
     }
 

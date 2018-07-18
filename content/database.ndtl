@@ -1655,6 +1655,7 @@ SWITCH PANEL
   PROJ : Van
   TAGS : diy
   DONE : true
+  LINK : https://github.com/kormyen/VNS
 
 APPLIED MINIMALISM
   PERS : Symbol
@@ -1683,4 +1684,25 @@ JOHN LAW
   DATE : 12018-07-18
   TYPE : podcast
   DONE : true
+
+WHITE
+  DATE : 12018-07-19
+  FILE : 12018-07-19_white.jpg
+  TYPE : image
+
+BLACK
+  DATE : 12018-07-19
+  FILE : 12018-07-19_black.jpg
+  TYPE : image
+
+TALL CUT SHORT
+  DATE : 12018-07-19
+  FILE : 12018-07-19_tall.jpg
+  TYPE : image
+
+WIDE
+  DATE : 12018-07-19
+  FILE : 12018-07-19_wide.jpg
+  TYPE : image
+  WIDE : true
 `

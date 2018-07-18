@@ -16,6 +16,12 @@
   --color-content-item-t: #000; /*title*/
   --color-content-item-a: #000; /*ascent*/
 
+  --color-content-image-s: rgba(255, 255, 255, .1); /*sub*/
+  --color-content-image-i: rgba(255, 255, 255, .3); /*idle*/
+  --color-content-image-e: rgba(255, 255, 255, .5); /*enabled*/
+  --color-content-image-t: #fff; /*title*/
+  --color-content-image-a: #fff; /*ascent*/
+
   --color-menu-item-i: #333; /*idle*/
   --color-menu-item-e: #999; /*enabled*/
   --color-menu-item-a: #ddd; /*ascent*/
@@ -184,6 +190,7 @@ body {
 	}
 }
 .grid-item-upper-content {
+  z-index: 100;
   padding: var(--size-gutter) var(--size-gutter) 0 var(--size-gutter);
   display: inline-block;
   width: 100%;
@@ -196,6 +203,7 @@ body {
   width: 100%;
 }
 .grid-item-lower-content {
+  z-index: 100;
   padding: 0 var(--size-gutter) 0 var(--size-gutter);
   height: 100%;
   display: inline-block;
@@ -208,23 +216,34 @@ body {
 }
 .grid-item-image {
   padding-bottom: 0;
+  overflow: hidden;
   background: transparent;
 }
 .grid-item img {
   border-radius: var(--size-item-corner);
   /*margin: calc(var(--size-gutter) * -1);
   width: calc(var(--size-gutter) + 100%);*/
-  vertical-align: middle;
+  vertical-align: middle; /* vertical-align css hack removes bottom padding */
+  object-fit: cover;
   margin-bottom: 0px;
   width: 100%;
+  max-height: 1000px;
 }
+
 .grid-item:hover { 
 	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .1);
 	background: var(--color-content-bg-e);
 }
-.grid-item-image:hover { 
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .1);
-  background: transparent;
+.image-overlay { 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+  background-color: #000;
+  opacity: 0;
+}
+.grid-item-image:hover .image-overlay { 
+  opacity: 0.1;
 }
 
 /* LINK */
@@ -236,6 +255,13 @@ body {
 .grid-item .link { 
   text-decoration: none;
   display: inline-block;
+}
+.grid-item-image .link {
+  display: none;
+}
+.grid-item-image:hover .link {
+  display: initial;
+  text-shadow: 0 0 3em #000;
 }
 .grid-item .link .title { 
   color: var(--color-content-item-t);
@@ -249,6 +275,8 @@ body {
 }
 .grid-item-image:hover .title {
   display: initial;
+  text-shadow: 0 0 3em #000;
+  color: white;
 }
 .grid-item .link .link-line { 
   margin-top: var(--size-item-elem-padding);
@@ -272,7 +300,7 @@ body {
 }
 
 /* TYPE */
-.grid-item a .type {
+.grid-item .type {
   width: calc(var(--type-icon-size)*2 + var(--size-gutter));
   color: var(--color-content-item-s);
   padding-bottom: var(--size-gutter);
@@ -284,10 +312,22 @@ body {
   right: 0px;
   top: 0px;
 }
-.grid-item:hover a .type {
+.grid-item-image .grid-item-upper-content a .type i {
+  display: none;
+}
+.grid-item-image:hover .grid-item-upper-content a .type i  {
+  display: initial;
+  text-shadow: 0 0 3em #000;
+  color: var(--color-content-image-i);
+}
+.grid-item-image:hover .grid-item-upper-content a:hover .type i {
+  display: initial;
+  color: var(--color-content-image-a);
+}
+.grid-item:hover .type {
   color: var(--color-content-item-i);
 }
-.grid-item:hover a .type:hover {
+.grid-item:hover .type:hover {
   color: var(--color-content-item-a);
 }
 
@@ -310,6 +350,9 @@ body {
 .grid-item-image .grid-item-lower-content {
   display: none;
 }
+/*.grid-item-image:hover .grid-item-lower-content {
+  display: initial;
+}*/
 .tags a {
 	color: var(--color-content-item-i); 
 	text-decoration:none; 
