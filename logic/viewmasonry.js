@@ -35,10 +35,10 @@ function ViewMasonry()
       var imgLoad = imagesLoaded('.grid');
       function onAlways( instance ) {
         console.log('all images are loaded');
-        //this.msnry.layout();
+        this.msnry.layout();
         console.log(this.msnry);
       }
-      imgLoad.on( 'always', onAlways );
+      imgLoad.on( 'always', onAlways.bind(this) );
       // imgLoad.off( 'always', onAlways );
       imgLoad.on( 'progress', function(instance, image)
       {
