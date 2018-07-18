@@ -214,6 +214,8 @@ body {
   border-radius: var(--size-item-corner);
   /*margin: calc(var(--size-gutter) * -1);
   width: calc(var(--size-gutter) + 100%);*/
+  vertical-align: middle;
+  margin-bottom: 0px;
   width: 100%;
 }
 .grid-item:hover { 
