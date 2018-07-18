@@ -1,22 +1,24 @@
 # Memex
 
-Bookmarks and notes storage and review.
+Simple bookmarks and notes.
+
+Formatted for long term storage (['Long site'](https://www.gwern.net/About)) and review (sorting/filtering).
 
 [Live version here](https://kormyen.github.io/Memex/).
 
 ## Goals:
 
-- Small self contained project for getting up to speed with html/css/js.
+- Small self contained project for getting back up to speed with html/css/js.
 - Explore 'serverless' client-side routing.
-- Explore [Indental](https://wiki.xxiivv.com/#indental) and [Runic](https://wiki.xxiivv.com/#runic) (flat file database).
+- Explore [Indental](https://wiki.xxiivv.com/#indental) (flat-file database) and [Runic](https://wiki.xxiivv.com/#runic) (templating).
 - Develop a tag/type filtering/sorting system for re-use in website.
-- Bookmarks and notes storage and review.
+- Personal notes system.
 
 ## Dependencies
 
-- The database format is [Indental](https://wiki.xxiivv.com/#indental).
-- The templating language is [Runic](https://wiki.xxiivv.com/#runic).
-- The grid layout library is [Masonry](https://masonry.desandro.com/).
+- Flat-file database: [Indental](https://wiki.xxiivv.com/#indental).
+- Templating: [Runic](https://wiki.xxiivv.com/#runic).
+- Grid layout: [Masonry](https://masonry.desandro.com/).
 
 ## Wishlist
 
