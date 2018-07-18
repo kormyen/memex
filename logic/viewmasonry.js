@@ -4,7 +4,8 @@ function ViewMasonry()
   this.msnry = null;
   this.grid = null;
   this.menu = null;
-
+  var parent = this;
+  
   // SETTINGS
   this.statsNumTags = 5;
   this.statsNumTypes = 10;
