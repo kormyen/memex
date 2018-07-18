@@ -20,10 +20,8 @@ function ViewMasonry()
     this.grid = document.getElementById("grid");
     this.menu = document.getElementById("menu");
 
-    console.log(1);
     if (this.useMasonry)
     {
-    console.log(2);
       this.msnry = new Masonry('.grid', {
         itemSelector: '.grid-item',
         columnWidth: 350,
@@ -31,21 +29,14 @@ function ViewMasonry()
         fitWidth: true,
         transitionDuration: 0,
       });
-    console.log(3 + ' ' + this.msnry);
 
-    var imgLoad = imagesLoaded('.grid');
-    function onAlways( instance ) {
-      console.log('all images are loaded');
-      parent.msnry.reloadItems();
-      parent.msnry.layout();
-    }
-    imgLoad.on( 'always', onAlways );
-    // imgLoad.off( 'always', onAlways );
-    imgLoad.on( 'progress', function(instance, image)
-    {
-      var result = image.isLoaded ? 'loaded' : 'broken';
-      console.log( 'image is ' + result + ' for ' + image.img.src );
-    });
+      var imgLoad = imagesLoaded('.grid');
+      function onAlways( instance ) 
+      {
+        this.msnry.layout();
+      }
+      imgLoad.on( 'always', onAlways.bind(this) );
+      // imgLoad.off( 'always', onAlways );
     }
   }
 
