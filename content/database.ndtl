@@ -536,7 +536,7 @@ TOP SLATE STAR CODEX
   PERS : neauoire
   SRCE : Merveilles
   LINK : http://slatestarcodex.com/top-posts/
-  TYPE : encyclopedia
+  TYPE : list
   DATE : 12018-07-06
   DONE : false
   REVI : true
@@ -584,7 +584,7 @@ TENDRILS OF MESS IN OUR BRAINS
 
 RIBBONFARM 2017
   LINK : https://www.ribbonfarm.com/2017/12/21/complete-2017-roundup/
-  TYPE : encyclopedia
+  TYPE : list
   DATE : 12018-07-06
   DONE : false
   REVI : true
@@ -952,7 +952,7 @@ WORRYDREAM REFERENCES
   PERS : neauoire
   SRCE : Merveilles
   LINK : http://worrydream.com/refs/
-  TYPE : encyclopedia
+  TYPE : list
   DATE : 12018-07-13
   FILE : 12018-07-13_WDR_*
   TAGS : philosophy, design, inspiration, science, research, society, code, ai, psychology
@@ -1783,5 +1783,5 @@ SAILING RESOURCES
   PERS : neauoire
   SRCE : Merveilles
   LINK : https://100r.co/resources.html
-  TYPE : article
+  TYPE : list
 `
