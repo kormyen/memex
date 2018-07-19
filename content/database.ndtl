@@ -1767,8 +1767,21 @@ ETIDORHPA
 
 KNOWLEDGE WIKI
   PERS : Josh
-  TYPE : encyclopedia
   SRCE : Merveilles
   LINK : https://wiki.nikitavoloboev.xyz
+  TYPE : encyclopedia
   TAGS : inspiration
+
+KNOWLEDGE
+  PERS : neauoire
+  SRCE : Merveilles
+  LINK : http://wiki.xxiivv.com/knowledge
+  TYPE : encyclopedia
+  TAGS : inspiration
+
+SAILING RESOURCES
+  PERS : neauoire
+  SRCE : Merveilles
+  LINK : https://100r.co/resources.html
+  TYPE : article
 `
