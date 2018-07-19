@@ -6,13 +6,15 @@ Formatted for long term storage (['Long site'](https://www.gwern.net/About)) and
 
 [Live version here](https://kormyen.github.io/memex/).
 
-## Goals:
+## Project Goals
 
-- Small project for getting back up to speed with html/css/js.
-- Explore 'serverless' client-side routing.
-- Explore [Indental](https://wiki.xxiivv.com/#indental) (flat-file database) and [Runic](https://wiki.xxiivv.com/#runic) (templating).
-- Develop a content tag/type/project filtering/sorting system for re-use in website.
-- Personal notes system with simple, portable data storage.
+- Simple
+- Portable
+
+## Design
+
+- [Cards-based design pattern](http://ui-patterns.com/patterns/cards)
+- [Tagging](http://ui-patterns.com/patterns/Tag)
 
 ## Data
 
@@ -41,3 +43,10 @@ Formatted for long term storage (['Long site'](https://www.gwern.net/About)) and
 - [Oscean](https://github.com/XXIIVV/Oscean)
 - [Kokorobot](https://github.com/rekkabell/kokorobot)
 - [Legacy](https://github.com/nomand/Legacy)
+
+## Personal Goals
+
+- Small project for getting back up to speed with html/css/js.
+- Explore 'serverless' client-side routing.
+- Explore [Indental](https://wiki.xxiivv.com/#indental) (flat-file database) and [Runic](https://wiki.xxiivv.com/#runic) (minimal templating).
+- Develop a content tag/type/project filtering/sorting system for re-use in website.

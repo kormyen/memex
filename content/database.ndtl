@@ -1784,4 +1784,118 @@ SAILING RESOURCES
   SRCE : Merveilles
   LINK : https://100r.co/resources.html
   TYPE : list
+
+A DEPTH OF BEGINNING
+  PERS : sebastian
+  SRCE : Merveilles
+  LINK : http://sebastiansiverand.com/library/NoK.pdf
+  FILE : 12018-07-19_NoK.pdf
+  TYPE : book
+  TAGS : occult
+  NOTE : 'Notes on Kabbalah' - Colin Low
+
+UI PATTERN SMART
+  PERS : yoshuawuyts
+  SRCE : knowledge
+  LINK : https://www.awwwards.com/mastering-ui-patterns-for-smarter-design.html
+  DONE : true
+
+OCTOBER
+  PERS : alx
+  SRCE : Merveilles
+  NOTE : 'October' - Chine Meiville
+  TYPE : book
+  QOTE 
+    > It's very easy to read, extremely lucid
+    & The problem is, it's still a difficult read
+    & At least at the moment, I'm early in the book, so there are a lot of things going on, some of them horrifying
+    & A mix of xenophobes, fascists, and antisemites did some horrible things to toddlers :c
+    & Traditional teaching of the history of the revolution in russia kind of ignores the horrific things that were happening that led up to it
+    & I'm also going through the TTC russian history course ('From Peter the Great to Gorbachev'), and as far as I can tell, they completely pass over the mass protests and the sheer disregard for human life that the previous regime had (edited)
+    & I recommend it, but it's a difficult read for the same sorts of reasons that "Why I don't talk [to white people] about race" is a difficult read
+
+BLACK TRUTHS
+  LINK : https://dreamflesh.com/post/2017/black-truths-jordan-peterson/
+  TYPE : article
+  NOTE : Critique of Jordan Peterson
+  QOTE 
+    > Important
+    & "(This is the core of the bill: making sure people aren’t denied employment or housing, for example, because of their gender expression or identity. The pronouns stuff is supplementary, besides being misrepresented by Peterson.)"
+    > Funny
+    & "We should note that Peterson is very comfortable with non-binary approaches to categories he sees as forming the roots of civilisation — when it suits him. In another interview he says:"
+    & "People often ask me if I believe in God. I don’t like that question. First of all, it’s an attempt to box me in, in a sense. The reason it’s an attempt to box me in is because the question is asked so I can be firmly placed on one side of a binary argument. The reason I don’t like to answer it is, (a) I don’t like to be boxed in, and (b) because I don’t know what the person means by ‘believe’ or ‘God’. And they think they know. And the probability that they construe ‘belief’ and construe ‘God’ the same way I do is virtually zero."
+    > Summary
+    & "The root dynamic of the clash here, though, seems to be between the fact that legislation like C-16 is specifically meant to protect a minority who often suffer at the hands of rigid categories that work for the majority, whereas Peterson’s general fight is with the radicalism in postmodernism which seeks to completely dismantle those categories. Peterson sees the latter at work in the former, which I think is a paranoid overstatement."
+    > "In trying to get an easy-to-grasp handle on all this, it’s interesting that Peterson himself supplied me with the crucial tools. As with his opposition to binary ideas of belief in God, it’s testimony to the fact that he’s worth listening to for insight, even if you have to wade through some bile, and make some connections which he doesn’t manage."
+    > "Peterson isn’t intending harm, or intending to undermine people. But — as he’ll be the first to point out in other contexts, e.g. communism — good intent is never enough. One has to pay attention to systemic unintended harms. There’s some truth in what Peterson is saying (alongside the distortions and occasional falsehoods). But even this truth is sometimes — especially in the transgender debate — blackened by a certain blindness."
+    > Conclusion
+    & "There are serious and present threats to stability and social cohesion, but they owe far more to shifts in economics and ecology than to shifts in sexuality and gender. Postmodernism needs critiquing, since, as David Kidner showed, it’s implicated in our ecological crisis. But it needs better, less blind critics than Peterson. And freedom and civilisation need better, more far-sighted champions."
+  DONE : true
+
+EGREGORE
+  TERM 
+    > Egregore: 'is an occult concept representing a "thoughtform" or "collective group mind", an autonomous psychic entity made up of, and influencing, the thoughts of a group of people. The symbiotic relationship between an egregore and its group has been compared to the more recent, non-occult concepts of the corporation (as a legal entity) and the meme.' 'a kind of group mind that is created when people consciously come together for a common purpose.'
+
+NATURE AND PSYCHE
+  TYPE : book
+  LINK : https://dreamflesh.com/review/book/nature-and-psyche/
+  TAGS : env, politics, psychology
+
+LEARN ANYTHING
+  TYPE : tool
+  LINK : https://learn-anything.xyz/
+  TAGS : research
+  DONE : true
+  REVI : true
+
+LIKE A DOG ON A LEASH
+  TYPE : article
+  LINK : https://medium.com/@NikitaVoloboev/like-a-dog-on-a-leash-c0cdb8839079
+  TAGS : privacy
+  NOTE : Why privacy
+  DONE : true
+
+PRIVACY RESPECTING TOOLS
+  TYPE : list
+  LINK : https://github.com/nikitavoloboev/privacy-respecting#readme
+  TAGS : privacy
+  DONE : true
+
+PRIVACY TOOLS
+  TYPE : list
+  LINK : https://www.privacytools.io/
+  TAGS : privacy
+  DONE : true
+
+PRISM BREAK
+  TYPE : list
+  LINK : https://prism-break.org/
+  TAGS : privacy
+  DONE : true
+
+PROJECT BASED LEARNING
+  TYPE : article
+  LINK : https://medium.com/@NikitaVoloboev/project-based-learning-e511641869ca
+  TAGS : productivity
+  DONE : true
+
+HAIKU DEFINITIONS
+  PERS : alx
+  SRCE : Merveilles
+  TYPE : list
+  LINK : http://simplytom.com/definitions.txl
+
+MARCUS MEDITATIONS
+  PERS : neauoire
+  SRCE : Merveilles
+  LINK : http://files.libertyfund.org/files/2133/Aurelius_1464_LFeBk.pdf
+  FILE : 12018-07-20_Aurelius_1464_LFeBk.pdf
+
+
+WORK HURTS < PROCRASTINATION
+  PERS : neauoire
+  SRCE : Merveilles
+  LINK : https://www.lesswrong.com/posts/9o3QBg2xJXcRCxGjS/working-hurts-less-than-procrastinating-we-fear-the-twinge
+  DONE : true
+  TAGS : productivity, psychology
 `
