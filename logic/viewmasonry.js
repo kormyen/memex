@@ -45,6 +45,7 @@ function ViewMasonry()
   {
     // BUILD
     this.grid.innerHTML = '';
+    this.grid.innerHTML += "<div class='grid-sizer'></div>"; 
     var dbKeys = Object.keys(db);
     var i = 0;
     while (i < dbKeys.length) 
@@ -171,6 +172,10 @@ function ViewMasonry()
       else if (value.TYPE == 'image')
       {
         entry += `<i class="fas fa-image"></i>`;
+      }
+      else if (value.TYPE == 'encyclopedia')
+      {
+        entry += `<i class="fas fa-globe"></i>`;
       }
        
       entry += `</div>`;
@@ -371,6 +376,15 @@ function ViewMasonry()
         menuContent += `<div class="menu-item">`;
         menuContent += `<div class="count">${stats.types[ty][1]}</div>`;
         menuContent += `<i class="fas fa-image"></i>`;
+        menuContent += `</div>`;
+        menuContent += `</a>`;
+      }
+      else if (stats.types[ty][0] == 'encyclopedia')
+      {
+        menuContent += `<a href='#type-encyclopedia'>`;
+        menuContent += `<div class="menu-item">`;
+        menuContent += `<div class="count">${stats.types[ty][1]}</div>`;
+        menuContent += `<i class="fas fa-globe"></i>`;
         menuContent += `</div>`;
         menuContent += `</a>`;
       }
