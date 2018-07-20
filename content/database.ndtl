@@ -511,7 +511,7 @@ NEWWEB
   LINK : https://blog.plan99.net/what-should-follow-the-web-8dcbbeaccd93
   TYPE : article
   DATE : 12018-07-06
-  TAGS : web, design, code
+  TAGS : web, design, code, newweb
   DONE : true
 
 OVERWHELM
@@ -1968,4 +1968,39 @@ GIT IMPERATIVE VERB
     - *Update* dependency x
     - *Refactor* function y
     - *Fix* crazy bug
+
+LOST WEB
+  LINK : https://github.com/pzwang/lostweb
+  TYPE : article
+  TAGS : web, research, newweb
+
+NEVER SHOW FOOLS
+  DATE : 12018-07-20
+  PERS : josh
+  SRCE : Merveilles
+  QOTE : “Never show fools unfinished work.” — Michael Schrage
+
+STATICRYPT
+  DATE : 12018-07-20
+  PERS : eel
+  SRCE : Merveilles
+  TYPE : tool
+  LINK : http://eelfroth.com/protec.htm
+  NOTE : Link is example. ps: test123
+
+CALM TECH
+  DATE : 12018-07-20
+  PERS : josh
+  SRCE : Merveilles
+  LINK : https://calmtech.com/
+
+VR LEARNINGS
+  PERS : changbai
+  SRCE : Merveilles
+  LINK : https://docs.google.com/document/d/1-UYCZcxKDmy5BF_-IXg1KDtwShJ5imNOch5xGPXzPr0/edit
+  TAGS : gamedev, vr
+
+RADICAL MARKETS
+  LINK : http://radicalmarkets.com/chapters/
+  TYPE : book
 `
