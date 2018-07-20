@@ -11,6 +11,9 @@
   <script src="logic/runic.js"></script>
   <script src="logic/indental.js"></script>
 
+  <script src="content/settingsUser.js"></script>
+  <script src="logic/settings.js"></script>
+
   <script src="content/database.ndtl"></script>
   <script src="logic/datawrap.js"></script>
   <script src="logic/viewmasonry.js"></script>
@@ -25,6 +28,17 @@
   </div>
 
   <script>
+    if (typeof SettingsUser !== 'undefined' )
+    {
+      var settings = new SettingsUser();
+      console.log('USER settings!');
+    }
+    else
+    {
+      var settings = new SettingsDefault();
+      console.log('DEFAULT settings!');
+    }
+
     var main = new Main();
     main.install();
     main.start();
