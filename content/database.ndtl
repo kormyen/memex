@@ -1952,5 +1952,20 @@ MUSIC THEORY
   PERS : Symbol
   SRCE : Merveilles
   LINK : https://www.youtube.com/user/Rhaptapsody/videos
+  TYPE : list
+  TAGS : music, research
 
+GIT IMPERATIVE VERB
+  LINK : https://medium.com/@danielfeelfine/commit-verbs-101-why-i-like-to-use-this-and-why-you-should-also-like-it-d3ed2689ef70
+  TYPE : article
+  TAGS : code
+  NOTE 
+    > Convension for Git commit messages
+    & If applied, this commit will 'YOUR GIT COMMIT MESSAGE'
+    & The first word of your message should always be a common verb:
+    - *Add* some feature
+    - *Remove* class whatever
+    - *Update* dependency x
+    - *Refactor* function y
+    - *Fix* crazy bug
 `
