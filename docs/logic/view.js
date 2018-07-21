@@ -9,11 +9,25 @@ function View()
   // SETTINGS
   this.statsNumTags = 5;
   this.statsNumTypes = 10;
-  this.doDoubleWide = true;
+  this.doDoubleWide = false;
 
   // SETTINGS
-  this.useMasonry = true;
+  this.useMasonry = false;
   this.divNamePre = 'item';
+
+  this.showUpper = true;
+  this.showTitle = true;
+  this.showType = true;
+  this.showLink = true;
+
+  this.showLower = true;
+  this.showTags = true;
+  this.showNotes = true;
+  this.showQuote = true;
+  this.showTerm = true;
+  this.showProgress = true;
+  this.showImage = true;
+  this.showOverlay = true;
 
   this.install = function()
   {
@@ -82,9 +96,12 @@ function View()
       }
     }
 
-    if (typeof value.TYPE !== 'undefined' && value.TYPE == 'image')
+    if (this.showImage)
     {
-      itemClass += " grid-item-image";
+      if (typeof value.TYPE !== 'undefined' && value.TYPE == 'image')
+      {
+        itemClass += " grid-item-image";
+      }
     }
 
     let entry = ``;
@@ -104,151 +121,187 @@ function View()
       }
 
       // LINK START
-      entry += `<a href="${String(value.LINK)}" id="${idUrl}" class="link">`;
+      if (this.showLink)
+      {
+        entry += `<a href="${String(value.LINK)}" id="${idUrl}" class="link">`;
+      }
     }
 
     // UPPER CONTENT START
-    entry += `<div class="grid-item-upper-content">`;
-
-    // TITLE
-    entry += `<div class="title">${key.to_properCase()}</div>`;
-
-    // LINK END
-    if (typeof value.LINK !== 'undefined')
+    if (this.showUpper)
     {
-      entry += `<div class="link-line"><i class="fas fa-link textIcon"></i><div class="link-title">${this.extractRootDomain(value.LINK)}</div></div></a>`;
-    }
+      entry += `<div class="grid-item-upper-content">`;
 
-    // TYPE
-    if (typeof value.TYPE !== 'undefined')
-    {
-      entry += `<a href='#type-${String(value.TYPE)}'>`;
-      entry += `<div class="type">`;
+      // TITLE
+      if (this.showTitle)
+      {
+        entry += `<div class="title">${key.to_properCase()}</div>`;
+      }
 
-      if (value.TYPE == 'article')
+      // LINK END
+      if (this.showLink)
       {
-        entry += `<i class="far fa-newspaper"></i>`;
+        if (typeof value.LINK !== 'undefined')
+        {
+          entry += `<div class="link-line"><i class="fas fa-link textIcon"></i><div class="link-title">${this.extractRootDomain(value.LINK)}</div></div></a>`;
+        }
       }
-      else if (value.TYPE == 'podcast')
+
+      // TYPE
+      if (this.showType)
       {
-        entry += `<i class="fas fa-podcast"></i>`;
+        if (typeof value.TYPE !== 'undefined')
+        {
+          entry += `<a href='#type-${String(value.TYPE)}'>`;
+          entry += `<div class="type">`;
+
+          if (value.TYPE == 'article')
+          {
+            entry += `<i class="far fa-newspaper"></i>`;
+          }
+          else if (value.TYPE == 'podcast')
+          {
+            entry += `<i class="fas fa-podcast"></i>`;
+          }
+          else if (value.TYPE == 'video')
+          {
+            entry += `<i class="fas fa-tv"></i>`;
+          }
+          else if (value.TYPE == 'list')
+          {
+            entry += `<i class="fas fa-file-alt"></i>`;
+          }
+          else if (value.TYPE == 'book')
+          {
+            entry += `<i class="fas fa-book-open"></i>`;
+          }
+          else if (value.TYPE == 'game')
+          {
+            entry += `<i class="fas fa-gamepad"></i>`;
+          }
+          else if (value.TYPE == 'service')
+          {
+            entry += `<i class="fas fa-server"></i>`;
+          }
+          else if (value.TYPE == 'lecture')
+          {
+            entry += `<i class="fas fa-chalkboard-teacher"></i>`;
+          }
+          else if (value.TYPE == 'quote')
+          {
+            entry += `<i class="fas fa-comment"></i>`;
+          }
+          else if (value.TYPE == 'tool')
+          {
+            entry += `<i class="fas fa-wrench"></i>`;
+          }
+          else if (value.TYPE == 'music')
+          {
+            entry += `<i class="fas fa-music"></i>`;
+          }
+          else if (value.TYPE == 'image')
+          {
+            entry += `<i class="fas fa-image"></i>`;
+          }
+          else if (value.TYPE == 'encyclopedia')
+          {
+            entry += `<i class="fas fa-globe"></i>`;
+          }
+           
+          entry += `</div>`;
+          entry += `</a>`;
+        }
       }
-      else if (value.TYPE == 'video')
-      {
-        entry += `<i class="fas fa-tv"></i>`;
-      }
-      else if (value.TYPE == 'list')
-      {
-        entry += `<i class="fas fa-file-alt"></i>`;
-      }
-      else if (value.TYPE == 'book')
-      {
-        entry += `<i class="fas fa-book-open"></i>`;
-      }
-      else if (value.TYPE == 'game')
-      {
-        entry += `<i class="fas fa-gamepad"></i>`;
-      }
-      else if (value.TYPE == 'service')
-      {
-        entry += `<i class="fas fa-server"></i>`;
-      }
-      else if (value.TYPE == 'lecture')
-      {
-        entry += `<i class="fas fa-chalkboard-teacher"></i>`;
-      }
-      else if (value.TYPE == 'quote')
-      {
-        entry += `<i class="fas fa-comment"></i>`;
-      }
-      else if (value.TYPE == 'tool')
-      {
-        entry += `<i class="fas fa-wrench"></i>`;
-      }
-      else if (value.TYPE == 'music')
-      {
-        entry += `<i class="fas fa-music"></i>`;
-      }
-      else if (value.TYPE == 'image')
-      {
-        entry += `<i class="fas fa-image"></i>`;
-      }
-      else if (value.TYPE == 'encyclopedia')
-      {
-        entry += `<i class="fas fa-globe"></i>`;
-      }
-       
+
+      // UPPER CONTENT END
       entry += `</div>`;
-      entry += `</a>`;
     }
-
-    // UPPER CONTENT END
-    entry += `</div>`;
-
 
 
 
 
 
     // LOWER CONTENT START
-    entry += `<div class="grid-item-lower-content">`;
-
-    // TAGS
-    if (typeof value.TAGS !== 'undefined')
+    if (this.showLower)
     {
-      entry += `<div class="tags"><i class="fas fa-tag textIcon"></i>`;
-      for (var i = 0; i < value.TAGS.length; i++)
+      entry += `<div class="grid-item-lower-content">`;
+
+      // TAGS
+      if (this.showTags)
       {
-        entry += `<a href=#tag-${value.TAGS[i]}>${value.TAGS[i]}</a>`;
-        if (i+1 != value.TAGS.length)
+        if (typeof value.TAGS !== 'undefined')
         {
-          entry += `, `;
+          entry += `<div class="tags"><i class="fas fa-tag textIcon"></i>`;
+          for (var i = 0; i < value.TAGS.length; i++)
+          {
+            entry += `<a href=#tag-${value.TAGS[i]}>${value.TAGS[i]}</a>`;
+            if (i+1 != value.TAGS.length)
+            {
+              entry += `, `;
+            }
+          };
+          entry += `</div>`;
         }
-      };
+      }
+
+      // NOTE
+      if (this.showNotes)
+      {
+        if (typeof value.NOTE !== 'undefined')
+        {
+          entry += `<div class="note"><i class="fas fa-sticky-note textIcon"></i>${value.NOTE}</div>`;
+        }
+      }
+
+      // QUOTE
+      if (this.showQuote)
+      {
+        if (typeof value.QOTE !== 'undefined')
+        {
+          entry += `<div class="quote"><i class="fas fa-comment textIcon"></i>${value.QOTE}</div>`;
+        }
+      }
+
+      // TERM
+      if (this.showTerm)
+      {
+        if (typeof value.TERM !== 'undefined')
+        {
+          for (var i = 0; i < value.TERM.length; i++) 
+          {
+            entry += `<div class="term"><i class="fas fa-ribbon textIcon"></i><b>${value.TERM[i][0]}</b>: ${value.TERM[i][1]}</div>`;
+          }
+        }
+      }
+
+      // PROGRESS
+      if (this.showProgress)
+      {
+        if (typeof value.PROG !== 'undefined')
+        {
+          entry += `<div class="prog"><i class="fas fa-clock textIcon"></i>${value.PROG}</div>`;
+        }
+      }
+
+      // LOWER CONTENT END
       entry += `</div>`;
     }
 
-    // NOTE
-    if (typeof value.NOTE !== 'undefined')
-    {
-      entry += `<div class="note"><i class="fas fa-sticky-note textIcon"></i>${value.NOTE}</div>`;
-    }
-
-    // QUOTE
-    if (typeof value.QOTE !== 'undefined')
-    {
-      entry += `<div class="quote"><i class="fas fa-comment textIcon"></i>${value.QOTE}</div>`;
-    }
-
-    // TERM
-    if (typeof value.TERM !== 'undefined')
-    {
-      for (var i = 0; i < value.TERM.length; i++) 
-      {
-        entry += `<div class="term"><i class="fas fa-ribbon textIcon"></i><b>${value.TERM[i][0]}</b>: ${value.TERM[i][1]}</div>`;
-      }
-    }
-
-    // PROGRESS
-    if (typeof value.PROG !== 'undefined')
-    {
-      entry += `<div class="prog"><i class="fas fa-clock textIcon"></i>${value.PROG}</div>`;
-    }
-
-    // LOWER CONTENT END
-    entry += `</div>`;
-
-
-
     // IMAGE
-    if (typeof value.TYPE !== 'undefined' && value.TYPE == 'image')
+    if (this.showImage)
     {
-      if (typeof value.FILE !== 'undefined')
+      if (typeof value.TYPE !== 'undefined' && value.TYPE == 'image')
       {
-        entry += `<div class="image">`;
-        entry += `<div class="image-overlay"></div>`;
-        entry += `<img src="content/media/${value.FILE}">`;
-        entry += `</div>`;
+        if (typeof value.FILE !== 'undefined')
+        {
+          entry += `<div class="image">`;
+          if (this.showOverlay)
+          {
+            entry += `<div class="image-overlay"></div>`;
+          }
+          entry += `<img src="content/media/${value.FILE}">`;
+          entry += `</div>`;
+        }
       }
     }
 

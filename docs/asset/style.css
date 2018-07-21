@@ -177,12 +177,13 @@ body {
 	border-radius: var(--size-item-corner);
   background: var(--color-content-bg-i);
 	margin-bottom: var(--size-gutter);
+  margin-left: var(--size-gutter);
 	width: var(--size-grid-column);
 	box-sizing: border-box;
   text-decoration: none; 
 	float: left;
-  clear: both;
   padding-bottom: var(--size-gutter);
+  position: relative;
 }
 @media screen and (min-width: 886px) {
 	.grid-item--width2 { 
@@ -190,9 +191,9 @@ body {
 	}
 }
 .grid-item-upper-content {
-  z-index: 100;
   padding: var(--size-gutter) var(--size-gutter) 0 var(--size-gutter);
   display: inline-block;
+  z-index: 100;
   width: 100%;
 }
 .grid-item-image .grid-item-upper-content {
@@ -201,6 +202,10 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
+  /*background-color: #000;
+  position: relative; 
+  top: 0px;
+  z-index: 200;*/
 }
 .grid-item-lower-content {
   padding: 0 var(--size-gutter) 0 var(--size-gutter);
@@ -239,6 +244,7 @@ body {
   margin-bottom: 0px;
   width: 100%;
   max-height: 1000px;
+  z-index: 0;
 }
 
 .grid-item:hover { 
