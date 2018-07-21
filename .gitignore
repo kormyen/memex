@@ -3,6 +3,6 @@ builds/
 .DS_Store
 */.DS_Store
 
-sources/content/media/*.pdf
-sources/content/media/*.zip
-sources/content/media/*.html
+docs/content/media/*.pdf
+docs/content/media/*.zip
+docs/content/media/*.html

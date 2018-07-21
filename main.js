@@ -52,7 +52,7 @@ app.on('ready', () =>
       nodeIntegration: false
     }, width: 950, height: 950, backgroundColor:"#000", minWidth: 587, minHeight: 540, frame:true, autoHideMenuBar: true, icon: __dirname + '/icon.ico'})
 
-  app.win.loadURL(`file://${__dirname}/sources/index.html`)
+  app.win.loadURL(`file://${__dirname}/docs/index.html`)
   // app.win.toggleDevTools();
   
   app.win.on('closed', () => {
