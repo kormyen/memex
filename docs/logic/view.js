@@ -1,4 +1,4 @@
-function ViewMasonry()
+function View()
 {
   // REFERENCE
   this.msnry = null;

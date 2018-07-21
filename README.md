@@ -30,6 +30,6 @@ Data is stored in a flat-file, human-readable database format called [Indental](
 ## Dependencies
 
 - App builder: [Electron](https://electronjs.org/)
-- Database parser: [Indental](https://wiki.xxiivv.com/#indental).
-- Template parser: [Runic](https://wiki.xxiivv.com/#runic).
-- Grid layout: [Masonry](https://masonry.desandro.com/).
+- Database parser: [Indental](https://wiki.xxiivv.com/#indental)
+- Template parser: [Runic](https://wiki.xxiivv.com/#runic)
+- Grid layout: [Masonry](https://masonry.desandro.com/)

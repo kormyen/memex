@@ -6,10 +6,10 @@ function Main()
 
   this.install = function()
   {
-    this.db = new DataWrap(DATABASE);
+    this.db = new Wrap(DATABASE);
     this.db.install();
 
-    this.view = new ViewMasonry();
+    this.view = new View();
     this.view.install();
   }
 
