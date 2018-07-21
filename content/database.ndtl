@@ -1631,14 +1631,14 @@ SLIDE
   TYPE : image
   DONE : true
   WIDE : true
-  TAGS : log, example, hamish
+  TAGS : log, hamish
 
 VAN
   DATE : 12017-01-20
   FILE : 12017-01-20_van.jpg
   TYPE : image
   PROJ : Van
-  TAGS : diy, log, example
+  TAGS : log
   DONE : true
 
 FPV MOD
@@ -1646,17 +1646,19 @@ FPV MOD
   FILE : 12018-03-20_fpvMod.jpg
   TYPE : image
   PROJ : Drone
-  TAGS : diy, log, example
+  TAGS : log, kor
   DONE : true
+  NOTE : Diy modified large battery and record module onto drone fpv headset
 
 SWITCH PANEL
   DATE : 12018-03-20
   FILE : 12018-07-10_switchPanel.jpg
   TYPE : image
   PROJ : Van
-  TAGS : diy, arduino, log, example, hamish
+  TAGS : arduino, log, hamish, kor
   DONE : true
   LINK : https://github.com/kormyen/VNS
+  NOTE : Self built light/fan/mode switch panel for RV IoT system.
 
 APPLIED MINIMALISM
   PERS : Symbol
@@ -1690,26 +1692,26 @@ WHITE
   DATE : 12018-07-19
   FILE : 12018-07-19_white.jpg
   TYPE : image
-  TAGS : b+w, example, hamish
+  TAGS : hamish, test
 
 BLACK
   DATE : 12018-07-19
   FILE : 12018-07-19_black.jpg
   TYPE : image
-  TAGS : b+w, example, hamish
+  TAGS : hamish, test
 
 TALL CUT SHORT
   DATE : 12018-07-19
   FILE : 12018-07-19_tall.jpg
   TYPE : image
-  TAGS : b+w, example, hamish
+  TAGS : hamish, test
 
 RANGITOTO
   DATE : 12018-07-19
   FILE : 12018-07-19_wide.jpg
   TYPE : image
   WIDE : true
-  TAGS : log, wide, example
+  TAGS : log
 
 MQTT
   PERS : autophagy
@@ -2003,4 +2005,32 @@ VR LEARNINGS
 RADICAL MARKETS
   LINK : http://radicalmarkets.com/chapters/
   TYPE : book
+
+ARDUSAMBER TIME
+  TYPE : image
+  TAGS : log, kor, arduino
+  FILE : 12018-05-18_ardusamberTimeAndDate.jpg
+  LINK : https://github.com/kormyen/ardusamber
+  NOTE : Arduino experiements with Devine Lu Linvega's time format Desamber.
+
+ARDUSAMBER
+  TYPE : image
+  TAGS : log, kor, arduino
+  FILE : 12018-06-04_ardusamber.jpg
+  LINK : https://github.com/kormyen/ardusamber
+  NOTE : Arduino experiements with Devine Lu Linvega's time format Desamber.
+
+DASTIME
+  TYPE : image
+  TAGS : log, kor, arduino
+  FILE : 12018-07-04_dastime.jpg
+  NOTE : Self designed/built clock. Shows year, month, day and lunation visually from an overview perspective.
+  LINK : https://github.com/kormyen/dastime
+
+VAN NERVOUS SYSTEM
+  TYPE : image
+  TAGS : log, kor, arduino
+  FILE : 12018-07-05_vns.jpg
+  NOTE : Power distribution unit of self built RV IoT system.
+  LINK : https://github.com/kormyen/VNS
 `
