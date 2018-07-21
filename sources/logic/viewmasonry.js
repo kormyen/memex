@@ -32,10 +32,10 @@ function ViewMasonry()
 
       ///////////////////////////
       // Fix squashed image divs
-      var imgLoad = imagesLoaded('.grid');
-      imgLoad.on( 'always', function (instance) { parent.msnry.layout(); } );
-      // Above imgLoad on always msnry.layout() should work but occassionally doesn't in Chrome and NEVER does in Firefox.
-      window.onload = function () { parent.msnry.layout(); }
+      // var imgLoad = imagesLoaded('.grid');
+      // imgLoad.on( 'always', function (instance) { parent.msnry.layout(); } );
+      // // Above imgLoad on always msnry.layout() should work but occassionally doesn't in Chrome and NEVER does in Firefox.
+      // window.onload = function () { parent.msnry.layout(); }
       // msnry.layout() called by window onload fixes things but not ideal. 
       ///////////////////////////
     }

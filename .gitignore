@@ -1,3 +1,8 @@
-/content/media/*.pdf
-/content/media/*.zip
-/content/media/*.html
+node_modules/
+builds/
+.DS_Store
+*/.DS_Store
+
+sources/content/media/*.pdf
+sources/content/media/*.zip
+sources/content/media/*.html
