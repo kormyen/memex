@@ -9,7 +9,7 @@ Memex is a simple open-source bookmarks and notes application to help with stora
 Memex has two modes:
 
 - standalone application for bookmark and note cataloging
-- read-only static 'sever-less' website for sharing with sorting/filtering
+- read-only static 'sever-less' website for sharing with sorting and filtering
 
 Memex supports:
 
@@ -18,14 +18,14 @@ Memex supports:
 - notes
 - quotes
 - terms
-- tagging
-- type filting
+- tags
+- filting
 
 ## Data
 
-Data is stored in a flat-file, human-readable database format called [Indental](https://wiki.xxiivv.com/#indental) by Devine Lu Linvega
+Data is stored in a human-readable, flat-file database format called [Indental](https://wiki.xxiivv.com/#indental) which is made by Devine Lu Linvega
 
-- [docs/content/database.ndtl](docs/content/database.ndtl)
+- [docs/content/data.ndtl](docs/content/data.ndtl)
 
 ## Dependencies
 
