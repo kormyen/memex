@@ -21,7 +21,6 @@ function Main()
   {
     target = target.substr(0,1) == "#" ? target.substr(1,target.length-1) : target;
     target = target.trim();
-    window.location.hash = target;
     var entries = this.db.filter(target);
     this.view.display(entries);
   }
