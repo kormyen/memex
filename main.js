@@ -50,7 +50,7 @@ app.on('ready', () =>
   app.win = new BrowserWindow({
     webPreferences: {
       nodeIntegration: false
-    }, width: 950, height: 950, backgroundColor:"#000", minWidth: 587, minHeight: 540, frame:true, autoHideMenuBar: true, icon: __dirname + '/icon.ico'})
+    }, width: 950, height: 950, backgroundColor:"#ddd", minWidth: 587, minHeight: 540, frame:true, autoHideMenuBar: true, icon: __dirname + '/icon.ico'})
 
   app.win.loadURL(`file://${__dirname}/docs/index.html`)
   // app.win.toggleDevTools();

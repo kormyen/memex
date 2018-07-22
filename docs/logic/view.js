@@ -11,8 +11,7 @@ function View()
   this.statsNumTypes = 10;
   this.doDoubleWide = false;
 
-  // SETTINGS
-  this.useMasonry = false;
+  this.useMasonry = true;
   this.divNamePre = 'item';
 
   this.showUpper = true;
@@ -36,22 +35,14 @@ function View()
 
     if (this.useMasonry)
     {
-      this.msnry = new Masonry('.grid', {
+      this.msnry = new Masonry('.grid', 
+      {
         itemSelector: '.grid-item',
         columnWidth: 350,
         gutter: 20,
         fitWidth: true,
         transitionDuration: 0,
       });
-
-      ///////////////////////////
-      // Fix squashed image divs
-      // var imgLoad = imagesLoaded('.grid');
-      // imgLoad.on( 'always', function (instance) { parent.msnry.layout(); } );
-      // // Above imgLoad on always msnry.layout() should work but occassionally doesn't in Chrome and NEVER does in Firefox.
-      // window.onload = function () { parent.msnry.layout(); }
-      // msnry.layout() called by window onload fixes things but not ideal. 
-      ///////////////////////////
     }
   }
 
@@ -74,6 +65,10 @@ function View()
       this.msnry.reloadItems();
       this.msnry.layout();
     }
+
+    var imgLoad = imagesLoaded( container );
+    // When all images finish: redo mansonry layout
+    imgLoad.on( 'always', function() { parent.msnry.layout(); } );
   }
 
   this.buildEntry = function(db, key)
@@ -216,10 +211,6 @@ function View()
       // UPPER CONTENT END
       entry += `</div>`;
     }
-
-
-
-
 
     // LOWER CONTENT START
     if (this.showLower)
@@ -494,15 +485,15 @@ function View()
     splitArr = domain.split('.'),
     arrLen = splitArr.length;
 
-    //extracting the root domain here
-    //if there is a subdomain 
+    // extracting the root domain here
+    // if there is a subdomain 
     if (arrLen > 2) 
     {
       domain = splitArr[arrLen - 2] + '.' + splitArr[arrLen - 1];
-      //check to see if it's using a Country Code Top Level Domain (ccTLD) (i.e. ".me.uk")
+      // check to see if it's using a Country Code Top Level Domain (ccTLD) (i.e. ".me.uk")
       if (splitArr[arrLen - 2].length == 2 && splitArr[arrLen - 1].length == 2)
       {
-        //this is using a ccTLD
+        // this is using a ccTLD
         domain = splitArr[arrLen - 3] + '.' + domain;
       }
     }
@@ -513,7 +504,7 @@ function View()
   this.extractHostname = function(url)
   {
     var hostname;
-    //find & remove protocol (http, ftp, etc.) and get hostname
+    // find & remove protocol (http, ftp, etc.) and get hostname
 
     if (url.indexOf("://") > -1) {
       hostname = url.split('/')[2];
@@ -522,9 +513,9 @@ function View()
       hostname = url.split('/')[0];
     }
 
-    //find & remove port number
+    // find & remove port number
     hostname = hostname.split(':')[0];
-    //find & remove "?"
+    // find & remove "?"
     hostname = hostname.split('?')[0];
 
     return hostname;
