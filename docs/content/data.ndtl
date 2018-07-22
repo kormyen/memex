@@ -1738,7 +1738,7 @@ CSS UTIL CLASSES
   TYPE : article
   DATE : 12018-07-19
   TAGS : code, web
-That is an improvement for my tastes. 
+  
 SIBYLLINE BOOKS
   PERS : neauoire
   SRCE : Merveilles
@@ -2040,4 +2040,117 @@ VIOLENCE
   LINK : https://www.youtube.com/watch?v=PL41EXic65g
   TYPE : music
   DONE : true
+
+ANIMATION
+  DATE : 12018-07-22
+  TAGS : ux
+  TYPE : note
+  NOTE 
+    > For animations for productivity or frequent use:
+    & Translation of self (think rollercoaster) or desired targets (teasing, shifting hitboxes) that the user is not in control of (scrolling is OK) should be avoided.
+    - Subtle translation animation *out* is acceptable.
+    - Translation animation *in* of dense content is not desireable.
+    & eg: Horizontally sliding pages. Translate out and fade out the old content, fade in (no translate) the new content."
+
+BRAIN NARRATIVE
+  QOTE 
+    > "The human brain needs a narrative, even if that narrative is told through code."
+    > "Writing deletable code is writing good code."
+  LINK : https://kellysutton.com/2017/05/29/deletability.html
+  TYPE : article
+  DATE : 12018-07-22
+  TAGS : psychology
+
+AMOR FATI
+  DATE : 12018-07-22
+  LINK : https://en.wikipedia.org/wiki/Amor_fati
+  TYPE : article
+  TERM 
+    > Amor fati: (lit. "love of fate") is a Latin phrase that may be translated as "love of fate" or "love of one's fate". It is used to describe an attitude in which one sees everything that happens in one's life, including suffering and loss, as good or, at the very least, necessary, in that they are among the facts of one's life and existence, so they are always necessarily there whether one likes them or not. Moreover, amor fati is characterized by an acceptance of the events or situations that occur in one's life.
+  TAGS : philosophy
+
+CSS MASONRY
+  DATE : 12018-07-23
+  LINK : https://codeburst.io/how-to-the-masonry-layout-56f0fe0b19df
+  TYPE : article
+  TAGS : code, web
+
+THE LAST-BUT-ONE ?
+  DATE : 12018-07-23
+  PERS : alx
+  SRCE : Merveilles
+  LINK : https://qntm.org/question
+  TYPE : article
+  TAGS : fiction
+  NOTE : "It's a parody of the Issac Asimov story"
+
+DAILY LOG
+  DATE : 12018-07-23
+  LINK : https://github.com/zehfernandes/dailylog/tree/master/2018
+  TYPE : article
+  REVI : true
+  TAGS : productivity
+
+VIOLENT GAMES
+  DATE : 12018-07-23
+  LINK : http://www.cracked.com/podcast/why-everyone-wrong-about-violent-video-games-your-brain/
+  TYPE : podcast
+  TAGS : gamedev
+
+SEVEN YEAR SHIP
+  DATE : 12018-07-23
+  LINK : http://www.gamasutra.com/blogs/BenPorter/20180718/322277/How_to_take_7_years_to_ship_a_beta.php
+  TYPE : article
+  TAGS : gamedev
+
+ART OF MASTERING
+  DATE : 12018-07-23
+  LINK : https://www.ableton.com/en/blog/mandy-parnell-art-mastering/
+  TYPE : video
+  TAGS : audio
+
+WEB DIE
+  DATE : 12018-07-23
+  LINK : https://staltz.com/the-web-began-dying-in-2014-heres-how.html
+  TYPE : article
+  TAGS : web, philosophy
+
+THE FOUR
+  DATE : 12018-07-23
+  LINK : https://www.youtube.com/watch?v=GWBjUsmO-Lw
+  TYPE : video
+  TAGS : privacy
+
+MOSQUITOES
+  DATE : 12018-07-23
+  LINK : https://100r.co/blog.html#rainy_with_a_chance_of_mosquitoes
+  TYPE : article
+
+MORE DATA SIMPLE LOG
+  DATE : 12018-07-23
+  LINK : https://gist.github.com/neauoire/71f7f63038db0bf24302f44a31027294#file-hannah-md
+  TYPE : article
+  TAGS : productivity
+  QOTE 
+    > The hardest thing about logging, is logging itself, and to keep doing it. Optimizing redundant logs, turning them into quick codes, like the fh/ch codes to generate the task/hour made this whole process a lot more fun. Giving instant feedback, through dataviz for instance, was excellent too.
+    > The biggest adjustment to my lifestyle, that I made recently, that yeilded the biggest difference, was to record more data. I've recently pushed this further, and started offloading almost all thought that goes through my mind at all time onto this digital paper. It has slowed time, helped me with focus and mindfulness.
+
+LOCAL IGNORE
+  DATE : 12018-07-23
+  LINK : https://medium.com/@igloude/git-skip-worktree-and-how-i-used-to-hate-config-files-e84a44a8c859
+  TYPE : code
+  SNIP : git update-index --skip-worktree
+  TAGS : git, code
+  NOTE : Local ignore changes to file
+
+TAILWIND
+  DATE : 12018-07-23
+  LINK : https://tailwindcss.com/docs/what-is-tailwind/
+  TYPE : tool
+  TAGS : code, web
+
+DAY EVAL
+  LINK : https://medium.com/@NikitaVoloboev/day-evaluations-5706f31c9c5e
+  TYPE : article
+  TAGS : productivity
 `
