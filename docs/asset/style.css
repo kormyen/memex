@@ -153,7 +153,8 @@ body {
 /* CONTENT */
 .container {
   background: var(--color-main-bg-i); 
-	margin-left: var(--menu-width);
+  margin-left: calc(var(--menu-width) + var(--size-gutter));
+	margin-right: var(--size-gutter);
 }
 .container:hover {
   background: var(--color-main-bg-e); 
@@ -173,7 +174,6 @@ body {
 	border-radius: var(--size-item-corner);
   background: var(--color-content-bg-i);
 	margin-bottom: var(--size-gutter);
-  margin-left: var(--size-gutter);
 	width: var(--size-grid-column);
   text-decoration: none; 
 	float: left;
