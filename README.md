@@ -25,7 +25,7 @@ Memex supports:
 
 Data is stored in a flat-file, human-readable database format called [Indental](https://wiki.xxiivv.com/#indental) by Devine Lu Linvega
 
-- [sources/content/database.ndtl](sources/content/database.ndtl)
+- [docs/content/database.ndtl](docs/content/database.ndtl)
 
 ## Dependencies
 
