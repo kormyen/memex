@@ -23,7 +23,7 @@ Memex supports:
 
 ## Data
 
-Data is stored in a human-readable, flat-file database format called [Indental](https://wiki.xxiivv.com/#indental) which is made by Devine Lu Linvega
+Data is stored in a human-readable, flat-file database called [Indental](https://wiki.xxiivv.com/#indental) which is made by Devine Lu Linvega
 
 - [docs/content/data.ndtl](docs/content/data.ndtl)
 
@@ -33,3 +33,5 @@ Data is stored in a human-readable, flat-file database format called [Indental](
 - Database parser: [Indental](https://wiki.xxiivv.com/#indental)
 - Template parser: [Runic](https://wiki.xxiivv.com/#runic)
 - Grid layout: [Masonry](https://masonry.desandro.com/)
+
+Thanks to Devine Lu Linvega ([Oscean](https://github.com/XXIIVV/Oscean)), Josh Avanier ([Log](https://github.com/joshavanier/log)), Rekka Bell ([kokorobot](https://github.com/rekkabell/kokorobot)) and Alexey Botkov ([Legacy](https://github.com/nomand/Legacy))
