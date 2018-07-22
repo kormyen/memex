@@ -1,6 +1,5 @@
 function Wrap()
 {
-  // REFERENCE
   this.database = null;
   this.keys = null;
 
@@ -8,10 +7,10 @@ function Wrap()
   {
     this.database = new Indental(DATABASE).parse();
     this.keys = Object.keys(this.database);
-    this.processDatabase();
+    this.process();
   }
 
-  this.processDatabase = function()
+  this.process = function()
   {
     for (i = 0; i < this.keys.length; i++) 
     { 
@@ -51,22 +50,17 @@ function Wrap()
 
       this.database[this.keys[i]].DIID = i;
     }
-    console.log(this.database);
   }
 
   this.filter = function(target)
   {
     var tempDatabase = {};
-
-    if (target == 'home')
+    if (target == '')
     {
-      console.log('Display \'home\'');
       tempDatabase = this.database;
     }
     else if (target == 'term')
     {
-      console.log('Display \'terms\'');
-
       for (i = 0; i < this.keys.length; i++) 
       { 
         let value = this.database[this.keys[i]];
@@ -82,7 +76,6 @@ function Wrap()
       if (splitTarget[0] == 'tag')
       {
         // TAG
-        console.log('Display tag \'' + splitTarget[1] + '\'');
         for (i = 0; i < this.keys.length; i++) 
         { 
           let value = this.database[this.keys[i]];
@@ -101,7 +94,6 @@ function Wrap()
       else if (splitTarget[0] == 'type')
       {
         // TYPE
-        console.log('Display type \'' + splitTarget[1] + '\'');
         var tempDatabase = {}
         for (i = 0; i < this.keys.length; i++) 
         { 
@@ -119,7 +111,7 @@ function Wrap()
     return tempDatabase;
   }
 
-  this.getStats = function(db = this.database)
+  this.stats = function(db = this.database)
   {
     // CALCULATE
     let dbKeys = Object.keys(db);
@@ -181,7 +173,6 @@ function Wrap()
       return second[1] - first[1];
     });
     stats.types = typeItems;
-
 
     // SORT TAGS, TAKE TOP X
     // Create items array

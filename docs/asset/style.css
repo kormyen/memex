@@ -45,18 +45,15 @@
   --type-icon-size: 24px; /*font size of type icon/count*/
 }
 
+* {
+  box-sizing: border-box;
+}
 html {
 	font-family: 'Monaco', 'Andale Mono', 'Deja Vu Sans Mono', 'Consolas', monospace;
 	background: var(--color-main-bg-i); 
-	box-sizing: border-box;
 	padding: 0em;
 	margin: 0; 
 }
-
-* {
-	box-sizing: border-box;
-}
-
 body {
 	padding: 0em;
 	margin: 0; 
@@ -96,7 +93,6 @@ body {
   padding-bottom: calc(var(--menu-item-vert-sep) / 2);
 	padding-top: calc(var(--menu-item-vert-sep) / 2);
 	font-size: var(--type-icon-size);
-	box-sizing: border-box;
 	margin: 0px auto;
 	width: 100%;
 	float: left;
@@ -179,7 +175,6 @@ body {
 	margin-bottom: var(--size-gutter);
   margin-left: var(--size-gutter);
 	width: var(--size-grid-column);
-	box-sizing: border-box;
   text-decoration: none; 
 	float: left;
   padding-bottom: var(--size-gutter);
@@ -202,23 +197,10 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  /*background-color: #000;
-  position: relative; 
-  top: 0px;
-  z-index: 200;*/
 }
 .grid-item-lower-content {
   padding: 0 var(--size-gutter) 0 var(--size-gutter);
   z-index: 100;
-  /*padding: 0 var(--size-gutter) 0 var(--size-gutter);
-  height: 100%;
-  display: inline-block;*/
-  /*float: left;
-  clear: both;
-  width: 100%;
-  top: 0;
-  left: 0;*/
-
 }
 .grid-item-image .grid-item-lower-content {
   position: absolute;
@@ -237,8 +219,6 @@ body {
 }
 .grid-item img {
   border-radius: var(--size-item-corner);
-  /*margin: calc(var(--size-gutter) * -1);
-  width: calc(var(--size-gutter) + 100%);*/
   vertical-align: middle; /* vertical-align css hack removes bottom padding */
   object-fit: cover;
   margin-bottom: 0px;
