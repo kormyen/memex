@@ -1,4 +1,4 @@
-**Memex** is a simple open-source bookmarks and notes application to help with storage and overview
+**Memex** is a bookmarks and notes application to help with storage and overview
 
 [Live web version here](https://kormyen.github.io/memex/)
 
@@ -6,22 +6,22 @@
 
 Memex has two modes:
 
-- standalone application for bookmark and note cataloging
-- read-only static 'sever-less' website for sharing with sorting and filtering
+1. **website** that is read-only and 'sever-less' for easy sharing
+2. **standalone** application for bookmark and note cataloging
 
 Memex supports:
 
+- filtering
 - links
 - images
 - notes
 - quotes
 - terms
 - tags
-- filtering
 
 #### Data
 
-Data is stored in a human-readable, flat-file database called [Indental](https://wiki.xxiivv.com/#indental) which is made by Devine Lu Linvega
+Stored in a human-readable, flat-file database called [Indental](https://wiki.xxiivv.com/#indental) which is made by Devine Lu Linvega
 
 - [docs/content/data.ndtl](docs/content/data.ndtl)
 
