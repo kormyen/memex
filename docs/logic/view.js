@@ -1,10 +1,15 @@
 function View()
 {
   this.msnry = null;
+  this.overlay = null;
+  this.container = null;
   this.grid = null;
   this.menu = null;
   var parent = this;
-  
+    
+  // STATE
+  this.enabledOverlay = false;
+
   const SETTINGS = {
     STATSNUMTAGS: 5,
     STATSNUMTYPE: 10,
@@ -27,8 +32,11 @@ function View()
 
   this.install = function()
   {
+    this.overlay = document.getElementById("overlay");
+    this.container = document.getElementById("container");
     this.grid = document.getElementById("grid");
     this.menu = document.getElementById("menu");
+    this.setupAdd();
 
     if (SETTINGS.USEMASONRY)
     {
@@ -43,8 +51,75 @@ function View()
     }
   }
 
+  this.add = function()
+  {
+    this.setOverlay(true);
+  }
+
+  this.setupAdd = function()
+  {
+    this.overlay.innerHTML = '';
+    content += `<div class="content"><form>`;
+    
+    content += this.createFormInput('Title');
+    content += this.createFormInput('Date');
+    content += this.createFormInput('Person');
+    content += this.createFormInput('Source');
+
+    content += this.createFormInput('Project');
+    content += this.createFormInput('Type');
+    content += this.createFormInput('Link');
+    content += this.createFormInput('Tags');
+    content += this.createFormInput('Note');
+    content += this.createFormInput('Quote');
+    content += this.createFormInput('Terms');
+    content += this.createFormInput('Progress');
+    // DONE
+    // REVI
+
+    content += `</form></div>`;
+    this.overlay.innerHTML += content;
+  }
+
+  this.createFormInput = function(id)
+  {
+    return `<div class="row">
+            <div class="input-field">
+              <input placeholder="${id}" id="${id}">
+            </div>
+          </div>`;
+  }
+
+  this.setOverlay = function(value)
+  {
+    if (value && !this.enabledOverlay)
+    {
+      overlay.style.opacity = '1';
+      // overlay.style.visibility = 'hidden';
+      // overlay.style.display = 'none';
+      overlay.style.zIndex  = '1000';
+      this.enabledOverlay = true;
+      setTimeout(function()
+      {
+        this.grid.innerHTML = '';
+        this.grid.style.height = 0;
+      }, 200);
+    }
+    else if (!value && this.enabledOverlay)
+    {
+      overlay.style.opacity = '0';
+      setTimeout(function()
+      {
+        overlay.style.zIndex  = '-100';
+      }, 200);
+      this.enabledOverlay = false;
+    }
+  }
+
   this.display = function(db)
   {
+    this.setOverlay(false);
+
     // BUILD
     this.grid.innerHTML = '';
     this.grid.innerHTML += "<div class='grid-sizer'></div>"; 
@@ -302,6 +377,13 @@ function View()
   {
     let menuContent = ``;
     
+    // ADD
+    menuContent += `<a href='#add'>`;
+    menuContent += `<div class="menu-item"><b>a</b>dd</div>`;
+    menuContent += `</a>`;
+
+    menuContent += `<div class="menu-spacer"></div>`;
+
     // TYPE
     menuContent += `<a href='#'>`;
     menuContent += `<div class="menu-item">`;

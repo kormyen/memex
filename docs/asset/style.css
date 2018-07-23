@@ -43,6 +43,8 @@
   --size-font-title: 1em;
   --size-font-body: 0.8em;
   --type-icon-size: 24px; /*font size of type icon/count*/
+
+  --animation-time: 200ms;
 }
 
 * {
@@ -53,6 +55,7 @@ html {
 	background: var(--color-main-bg-i); 
 	padding: 0em;
 	margin: 0; 
+  overflow-y: scroll; 
 }
 body {
 	padding: 0em;
@@ -96,6 +99,7 @@ body {
 	margin: 0px auto;
 	width: 100%;
 	float: left;
+  text-align: center;
 }
 .menu-item .count {
 	padding-right: calc(var(--menu-item-elem-sep) / 2);
@@ -150,6 +154,46 @@ body {
 	float: left;
 }
 
+/* PAGE */
+.page-overlay {
+  /* visual */
+  background-color: #000;
+  opacity: 0;
+  -webkit-transition: opacity var(--animation-time) linear;
+  transition: opacity var(--animation-time) linear;
+  width: 100%;
+  height: 100%;
+  /* position */
+  position: absolute;
+  z-index: -100;
+  left: 0;
+  top: 0;
+  /* content */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-overlay .content .row {
+  /*float: left;
+  clear: both;*/
+  /*height: 40px;*/
+}
+.page-overlay .content .row input {
+  padding: 10px;
+  width: 400px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  color: #fff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--color-menu-item-i);
+  border-radius: var(--size-item-corner);
+}
+.page-overlay .content .row input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  opacity: 1;
+  color: var(--color-menu-item-i);
+}
+
 /* CONTENT */
 .container {
   background: var(--color-main-bg-i); 
@@ -161,6 +205,9 @@ body {
 }
 .grid {
   margin: var(--size-gutter) auto;
+  opacity: 1;
+  -webkit-transition: opacity 1000ms linear;
+  transition: opacity 1000ms linear;
 }
 .grid:after {
   /* clearfix */
