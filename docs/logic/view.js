@@ -13,7 +13,7 @@ function View()
   const SETTINGS = {
     STATSNUMTAGS: 5,
     STATSNUMTYPE: 10,
-    WIDEGRIDITEM: false,
+    WIDEGRIDITEM: true,
     USEMASONRY: true,
     GRIDITEMIDBASE: 'item',
     SHOWUPPER: true,
@@ -59,35 +59,45 @@ function View()
   this.setupAdd = function()
   {
     this.overlay.innerHTML = '';
-    content += `<div class="content"><form>`;
-    
-    content += this.createFormInput('Title');
-    content += this.createFormInput('Date');
-    content += this.createFormInput('Person');
-    content += this.createFormInput('Source');
+    let content = `<div class="content">`
 
-    content += this.createFormInput('Project');
-    content += this.createFormInput('Type');
-    content += this.createFormInput('Link');
-    content += this.createFormInput('Tags');
-    content += this.createFormInput('Note');
-    content += this.createFormInput('Quote');
-    content += this.createFormInput('Terms');
-    content += this.createFormInput('Progress');
+    // ESCAPE
+    content += `<div class="content-menu">`;
+    content += `<a href="javascript:void(0);" id="escape">`;
+    content += `<div class="content-menu-option">`;
+    content += `<b>Esc</b>`;
+    content += `</div>`;
+    content += `</a>`;
+    content += `</div>`;
+
+    // FORM
+    content += `<form>`;
+    content += this.createFormInput('TITLE', 'Title');
+    content += this.createFormInput('DATE', 'Date');
+    content += this.createFormInput('PERS', 'Person');
+    content += this.createFormInput('SRCE', 'Source');
+    content += this.createFormInput('PROJ', 'Project');
+    content += this.createFormInput('TYPE', 'Type');
+    content += this.createFormInput('LINK', 'Link');
+    content += this.createFormInput('TAGS', 'Tags');
+    content += this.createFormInput('NOTE', 'Note');
+    content += this.createFormInput('QOTE', 'Quote');
+    content += this.createFormInput('TERM', 'Terms');
+    content += this.createFormInput('PROG', 'Progress');
     // DONE
     // REVI
+    content += `</form>`;
 
-    content += `</form></div>`;
+    content += `</div>`;
     this.overlay.innerHTML += content;
   }
 
-  this.createFormInput = function(id)
+  this.createFormInput = function(key, desc)
   {
     return `<div class="row">
-            <div class="input-field">
-              <input placeholder="${id}" id="${id}">
-            </div>
-          </div>`;
+              <div class="key">${key}</div>
+              <input placeholder="${desc}" id="${desc}">
+            </div>`;
   }
 
   this.setOverlay = function(value)

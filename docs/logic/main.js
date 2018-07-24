@@ -11,6 +11,12 @@ function Main()
     this.db.install();
     this.view = new View();
     this.view.install();
+
+    var escape = document.getElementById("escape");
+    escape.onclick = function()
+    {
+      main.load(main.queryPrev);
+    }
   }
 
   this.start = function()
@@ -21,7 +27,12 @@ function Main()
 
   this.load = function(target)
   {
-    this.queryPrev = this.queryCur;
+    document.activeElement.blur();
+    if (this.queryCur != 'add')
+    {
+      this.queryPrev = this.queryCur;
+    }
+    
     target = target.substr(0,1) == "#" ? target.substr(1,target.length-1) : target;
     this.queryCur = target.trim();
 
@@ -47,6 +58,7 @@ document.onkeydown = function(evt)
 {
   evt = evt || window.event;
   var isEscape = false;
+  var isA = false;
   
   if ("key" in evt)
   {
@@ -56,6 +68,7 @@ document.onkeydown = function(evt)
   {
     isEscape = (evt.keyCode == 27);
   }
+  isA = (evt.keyCode == 65);
   
   if (isEscape)
   {
@@ -63,5 +76,9 @@ document.onkeydown = function(evt)
     {
       main.load(main.queryPrev);
     }
+  }
+  else if (isA && main.queryCur != 'add')
+  {
+    main.load('add');
   }
 };
