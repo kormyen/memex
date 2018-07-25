@@ -7,9 +7,6 @@ function View()
   this.menu = null;
   var parent = this;
     
-  // STATE
-  this.enabledOverlay = false;
-
   const SETTINGS = {
     STATSNUMTAGS: 5,
     STATSNUMTYPE: 10,
@@ -36,7 +33,6 @@ function View()
     this.container = document.getElementById("container");
     this.grid = document.getElementById("grid");
     this.menu = document.getElementById("menu");
-    this.setupAdd();
 
     if (SETTINGS.USEMASONRY)
     {
@@ -51,84 +47,9 @@ function View()
     }
   }
 
-  this.add = function()
-  {
-    this.setOverlay(true);
-  }
-
-  this.setupAdd = function()
-  {
-    this.overlay.innerHTML = '';
-    let content = `<div class="content">`
-
-    // ESCAPE
-    content += `<div class="content-menu">`;
-    content += `<a href="javascript:void(0);" id="escape">`;
-    content += `<div class="content-menu-option">`;
-    content += `<b>Esc</b>`;
-    content += `</div>`;
-    content += `</a>`;
-    content += `</div>`;
-
-    // FORM
-    content += `<form>`;
-    content += this.createFormInput('TITLE', 'Title');
-    content += this.createFormInput('DATE', 'Date');
-    content += this.createFormInput('PERS', 'Person');
-    content += this.createFormInput('SRCE', 'Source');
-    content += this.createFormInput('PROJ', 'Project');
-    content += this.createFormInput('TYPE', 'Type');
-    content += this.createFormInput('LINK', 'Link');
-    content += this.createFormInput('TAGS', 'Tags');
-    content += this.createFormInput('NOTE', 'Note');
-    content += this.createFormInput('QOTE', 'Quote');
-    content += this.createFormInput('TERM', 'Terms');
-    content += this.createFormInput('PROG', 'Progress');
-    // DONE
-    // REVI
-    content += `</form>`;
-
-    content += `</div>`;
-    this.overlay.innerHTML += content;
-  }
-
-  this.createFormInput = function(key, desc)
-  {
-    return `<div class="row">
-              <div class="key">${key}</div>
-              <input placeholder="${desc}" id="${desc}">
-            </div>`;
-  }
-
-  this.setOverlay = function(value)
-  {
-    if (value && !this.enabledOverlay)
-    {
-      overlay.style.opacity = '1';
-      // overlay.style.visibility = 'hidden';
-      // overlay.style.display = 'none';
-      overlay.style.zIndex  = '1000';
-      this.enabledOverlay = true;
-      setTimeout(function()
-      {
-        this.grid.innerHTML = '';
-        this.grid.style.height = 0;
-      }, 200);
-    }
-    else if (!value && this.enabledOverlay)
-    {
-      overlay.style.opacity = '0';
-      setTimeout(function()
-      {
-        overlay.style.zIndex  = '-100';
-      }, 200);
-      this.enabledOverlay = false;
-    }
-  }
-
   this.display = function(db)
   {
-    this.setOverlay(false);
+    main.add.setOverlay(false);
 
     // BUILD
     this.grid.innerHTML = '';

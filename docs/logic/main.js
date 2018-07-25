@@ -2,6 +2,7 @@ function Main()
 {
   this.db = null;
   this.view = null;
+  this.add = null;
   this.queryPrev = '';
   this.queryCur = '';
 
@@ -11,6 +12,8 @@ function Main()
     this.db.install();
     this.view = new View();
     this.view.install();
+    this.add = new Add();
+    this.add.install();
 
     var escape = document.getElementById("escape");
     escape.onclick = function()
@@ -43,7 +46,7 @@ function Main()
 
     if (this.queryCur == 'add')
     {
-      this.view.add();
+      this.add.show();
     }
     else
     {
@@ -53,32 +56,3 @@ function Main()
 }
 
 window.addEventListener("hashchange", function() { main.load(window.document.location.hash); });
-
-document.onkeydown = function(evt) 
-{
-  evt = evt || window.event;
-  var isEscape = false;
-  var isA = false;
-  
-  if ("key" in evt)
-  {
-    isEscape = (evt.key == "Escape" || evt.key == "Esc");
-  }
-  else
-  {
-    isEscape = (evt.keyCode == 27);
-  }
-  isA = (evt.keyCode == 65);
-  
-  if (isEscape)
-  {
-    if (main.queryCur == 'add')
-    {
-      main.load(main.queryPrev);
-    }
-  }
-  else if (isA && main.queryCur != 'add')
-  {
-    main.load('add');
-  }
-};

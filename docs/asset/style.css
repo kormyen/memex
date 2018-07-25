@@ -224,8 +224,8 @@ body {
 }
 .page-overlay .content .row .key {
   width: 100px;
-  color: var(--color-overlay-item-e);
-  color: #000;
+  color: var(--color-overlay-item-a);
+  visibility: hidden;
   float: left;
   padding: 9px 7px 10px 0;
   text-align: right;
