@@ -30,16 +30,17 @@ function Add()
       
     this.setupElement('Title', 'TITLE');
     this.setupElement('Date', 'DATE');
+    this.setupElement('Type', 'TYPE');
+
+    this.setupElement('Link', 'LINK');
     this.setupElement('Person', 'PERS');
     this.setupElement('Source', 'SRCE');
     this.setupElement('Project', 'PROJ');
-    this.setupElement('Type', 'TYPE');
-    this.setupElement('Link', 'LINK');
     this.setupElement('Tags', 'TAGS');
-    this.setupElement('Note', 'NOTE');
-    this.setupElement('Quote', 'QOTE');
-    this.setupElement('Terms', 'TERM');
     this.setupElement('Progress', 'PROG');
+    this.setupElement('Note', 'NOTE'); // long
+    this.setupElement('Quote', 'QOTE'); // long
+    this.setupElement('Terms', 'TERM'); // long
     // DONE
     // REVI
     this.keys = Object.keys(this.elementList);
@@ -81,8 +82,8 @@ function Add()
     {
       this.elementList[this.keys[i]].elem = document.getElementById(this.elementList[this.keys[i]].key);
       this.elementList[this.keys[i]].elem.oninput = this.onElemChanged;
-      this.elementList[this.keys[i]].elem.onElemFocus = this.onElemFocus;
-      this.elementList[this.keys[i]].elem.onElemBlur = this.onElemBlur;
+      this.elementList[this.keys[i]].elem.onfocus = this.onElemFocus;
+      this.elementList[this.keys[i]].elem.onblur = this.onElemBlur;
       this.elementList[this.keys[i]].elemKey = document.getElementById("key" + this.elementList[this.keys[i]].key);
     }
   }
@@ -131,6 +132,19 @@ function Add()
   this.show = function()
   {
     this.setOverlay(true);
+
+    var date = new Date();
+    var dateString = "1" + date.getFullYear()
+                    + "-" + ("0"+(date.getMonth()+1)).slice(-2) 
+                    + "-" + ("0" + date.getDate()).slice(-2);
+    this.elementList['Date'].elem.value = dateString;
+    this.elementList['Date'].added = true;
+    this.elementList['Date'].elemKey.style.visibility = "visible";
+
+    setTimeout(function()
+    { 
+      parent.elementList['Title'].elem.focus();
+    }, 100);
   }
 
   this.setOverlay = function(value)
@@ -138,8 +152,6 @@ function Add()
     if (value && !this.enabledOverlay)
     {
       overlay.style.opacity = '1';
-      // overlay.style.visibility = 'hidden';
-      // overlay.style.display = 'none';
       overlay.style.zIndex  = '1000';
       this.enabledOverlay = true;
       setTimeout(function()
