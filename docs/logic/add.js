@@ -28,19 +28,18 @@ function Add()
     this.grid = document.getElementById("grid");
     this.overlay = document.getElementById("overlay");
       
-    this.setupElement('Title', 'TITLE');
-    this.setupElement('Date', 'DATE');
-    this.setupElement('Type', 'TYPE');
-
-    this.setupElement('Link', 'LINK');
-    this.setupElement('Person', 'PERS');
-    this.setupElement('Source', 'SRCE');
-    this.setupElement('Project', 'PROJ');
-    this.setupElement('Tags', 'TAGS');
-    this.setupElement('Progress', 'PROG');
-    this.setupElement('Note', 'NOTE'); // long
-    this.setupElement('Quote', 'QOTE'); // long
-    this.setupElement('Terms', 'TERM'); // long
+    this.setupElement('Title', 'TITLE', 'upper');
+    this.setupElement('Date', 'DATE', 'lower');
+    this.setupElement('Type', 'TYPE', 'lower');
+    this.setupElement('Link', 'LINK', 'url');
+    this.setupElement('Person', 'PERS', 'text');
+    this.setupElement('Source', 'SRCE', 'title');
+    this.setupElement('Project', 'PROJ', 'text');
+    this.setupElement('Tags', 'TAGS', 'tags');
+    this.setupElement('Progress', 'PROG', 'text');
+    this.setupElement('Note', 'NOTE', 'text'); // long
+    this.setupElement('Quote', 'QOTE', 'quote'); // long
+    this.setupElement('Terms', 'TERM', 'quote'); // long
     // DONE
     // REVI
     this.keys = Object.keys(this.elementList);
@@ -73,7 +72,19 @@ function Add()
     content += `<div class="display" id="display">`;
     content += `</div>`;
 
+    // ENTER
+    content += `<div class="content-enter">`;
+    content += `<a href="javascript:void(0);" id="enter">`;
+    content += `<div class="content-menu-option">`;
+    content += `<b>Enter</b>`;
     content += `</div>`;
+    content += `</a>`;
+    content += `</div>`;
+    
+    content += `</div>`;
+
+    
+
     this.overlay.innerHTML += content;
 
     this.display = document.getElementById("display");
@@ -86,15 +97,21 @@ function Add()
       this.elementList[this.keys[i]].elem.onblur = this.onElemBlur;
       this.elementList[this.keys[i]].elemKey = document.getElementById("key" + this.elementList[this.keys[i]].key);
     }
+    setTimeout(function()
+    { 
+      parent.setupData();
+    }, 100);
   }
 
-  this.setupElement = function(key, desc)
+  this.setupElement = function(key, desc, type)
   {
-    this.elementList[key] = { key: key, desc: desc, added: false};
+    this.elementList[key] = { key: key, desc: desc, type: type, added: false};
   }
 
   this.onElemChanged = function(e)
   {
+    // TODO: Autocomplete tags, type 
+    parent.setupData();
   }
 
   this.onElemFocus = function(e)
@@ -127,6 +144,65 @@ function Add()
         break;
       }
     }
+  }
+
+  this.setupData = function()
+  {
+    let value = '';
+    for (var i = 0; i < parent.keys.length; i++)
+    {
+      if (parent.elementList[parent.keys[i]].key == 'Title')
+      {
+        if (parent.elementList[parent.keys[i]].elem.value != '')
+        {
+          value += parent.elementList[parent.keys[i]].elem.value.toUpperCase() + '<br>'
+        }
+        else
+        {
+          value += 'TITLE<br>';
+        }
+      }
+      else if (parent.elementList[parent.keys[i]].elem.value != '')
+      {
+        value += '&nbsp;&nbsp;';
+        value += parent.elementList[parent.keys[i]].desc.toUpperCase() + ' : ';
+
+        if (parent.elementList[parent.keys[i]].type == 'lower')
+        {
+          value += parent.elementList[parent.keys[i]].elem.value.toLowerCase();
+        }
+        else if (parent.elementList[parent.keys[i]].type == 'text')
+        {
+          value += parent.elementList[parent.keys[i]].elem.value;
+        }
+        else if (parent.elementList[parent.keys[i]].type == 'url')
+        {
+          // TODO: validate
+          value += parent.elementList[parent.keys[i]].elem.value;
+        }
+        else if (parent.elementList[parent.keys[i]].type == 'tags')
+        {
+          // TODO: Format
+          value += parent.elementList[parent.keys[i]].elem.value;
+        }
+        else if (parent.elementList[parent.keys[i]].type == 'quote')
+        {
+          // TODO: Format
+          value += parent.elementList[parent.keys[i]].elem.value;
+        }
+        else if (parent.elementList[parent.keys[i]].type == 'title')
+        {
+          value += parent.elementList[parent.keys[i]].elem.value.toProperCase();
+        }
+        else if (parent.elementList[parent.keys[i]].type == 'upper')
+        {
+          value += parent.elementList[parent.keys[i]].elem.value.toLowerCase();
+        }
+
+        value += '<br>';
+      }
+    }
+    parent.display.innerHTML = value;
   }
 
   this.show = function()
@@ -171,6 +247,10 @@ function Add()
     }
   }
 }
+
+String.prototype.toProperCase = function () {
+    return this.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+};
 
 document.onkeydown = function(evt) 
 {

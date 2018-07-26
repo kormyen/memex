@@ -208,13 +208,10 @@ body {
   color: var(--color-overlay-item-e);
   text-decoration: none;
 }
-.page-overlay .content-menu a {
-}
 
 .page-overlay .content-menu .content-menu-option {
   height: 100px;
   width: 100px;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -256,6 +253,49 @@ body {
   /*background-color: var(--color-content-item-a);*/
   background-color: var(--color-overlay-item-e);
 }
+.page-overlay .content .display {
+  float: left;
+  height: 100%;
+  width: 400px;
+  padding: 10px;
+  margin-left: 50px;
+  color: var(--color-overlay-item-e);
+}
+.page-overlay .content-enter {
+  margin-top: 50px;
+  float: left;
+  width: 100%;
+  height: 100px;
+  clear: both;
+  text-align: center;
+  padding-top: auto;
+  padding-bottom: auto;
+  vertical-align: center;
+  border-radius: var(--size-item-corner);
+}
+.page-overlay .content-enter .content-menu-option {
+  height: 100%;
+  vertical-align: center;
+  padding-top: auto;
+  padding-bottom: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-overlay .content-enter:hover {
+  background-color: var(--color-overlay-item-i);
+}
+.page-overlay .content-enter:hover a {
+  color: var(--color-overlay-item-a);
+}
+.page-overlay .content-enter a {
+  color: var(--color-overlay-item-e);
+  text-decoration: none;
+}
+
+
+
+
 
 /* CONTENT */
 .container {
