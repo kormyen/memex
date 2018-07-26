@@ -2153,4 +2153,18 @@ DAY EVAL
   LINK : https://medium.com/@NikitaVoloboev/day-evaluations-5706f31c9c5e
   TYPE : article
   TAGS : productivity
+
+SAPIENS
+  TYPE : book
+  NOTE : 'Sapiens: A Brief History of Humankind' - Yuval Noah Harari
+  PERS : faun
+  SRCE : Merveilles
+  DATE : 12018-07-18
+
+AESTHETICS
+  DATE : 12018-07-26
+  TYPE : video
+  PERS : theneko
+  SRCE : Merveilles
+  LINK : https://www.youtube.com/watch?v=HCHFjj_qr5Q
 `
