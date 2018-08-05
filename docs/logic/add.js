@@ -1,3 +1,7 @@
+const { ipcRenderer } = nodeRequire('electron');
+// const mainProcess = remote.nodeRequire('./main.js');
+//const mainProcess = nodeRequire('./main.js');
+
 function Add()
 {
   this.overlay = null;
@@ -83,11 +87,23 @@ function Add()
     
     content += `</div>`;
 
-    
-
     this.overlay.innerHTML += content;
 
     this.display = document.getElementById("display");
+
+    document.getElementById("enter").addEventListener('click', 
+    () => 
+    {
+      console.log('test test');
+      // ipcRenderer.send('write', 'test');
+      let Data = 
+      {
+          message: "Hi",
+          someData: "Let's go"
+      };
+
+      ipcRenderer.send('request-mainprocess-action', Data);
+    });
 
     for (var i = 0; i < this.keys.length; i++)
     {

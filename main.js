@@ -2,6 +2,7 @@ const {app, BrowserWindow, webFrame, Menu} = require('electron')
 const path = require('path')
 const url = require('url')
 const shell = require('electron').shell;
+const fs = require('fs');
 
 let is_shown = true;
 
@@ -49,10 +50,28 @@ app.on('ready', () =>
 {
   app.win = new BrowserWindow({
     webPreferences: {
-      nodeIntegration: false
+      nodeIntegration: true
     }, width: 950, height: 950, backgroundColor:"#ddd", minWidth: 587, minHeight: 540, frame:true, autoHideMenuBar: true, icon: __dirname + '/icon.ico'})
 
-  app.win.loadURL(`file://${__dirname}/docs/index.html`)
+  app.win.loadURL(`file://${__dirname}/docs/index.html`);
+
+  // app.win.webContents.on('did-finish-load', () => {
+  //     let code = `
+  //     console.log("3");
+  //     document.getElementById("enter").addEventListener("click", 
+  //     function (e) 
+  //     {
+  //       let foo = fs.openSync('foo.txt','r+');
+  //       let buf = new Buffer("hello");
+  //       fs.writeSync(foo, buf, 0, buf.length, 5);
+  //       fs.close(foo);
+  //       console.log('WROTE!');
+
+  //       console.log(document.getElementById("display").value);
+  //     });`;
+  //     app.win.webContents.executeJavaScript(code);
+  // });
+
   // app.win.toggleDevTools();
   
   app.win.on('closed', () => {
@@ -79,11 +98,6 @@ app.on('ready', () =>
   app.win.webContents.on('new-window', this.handleRedirect)
 })
 
-
-
-
-
-
 app.on('window-all-closed', () => 
 {
   app.quit()
@@ -94,3 +108,26 @@ app.on('activate', () => {
     createWindow()
   }
 })
+
+// write = function(data)
+// {
+//   let foo = fs.openSync('foo.txt','r+');
+//   let buf = new Buffer("hello");
+//   fs.writeSync(foo, buf, 0, buf.length, 5);
+//   fs.close(foo);
+//   console.log('WROTE!');
+// }
+
+const {ipcMain} = require('electron');
+
+// Attach listener in the main process with the given ID
+ipcMain.on('request-mainprocess-action', (event, arg) => {
+    // Displays the object sent from the renderer process:
+    //{
+    //    message: "Hi",
+    //    someData: "Let's go"
+    //}
+    console.log(
+        arg
+    );
+});

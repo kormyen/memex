@@ -3,6 +3,7 @@ function Main()
   this.db = null;
   this.view = null;
   this.add = null;
+  this.write = null;
   this.queryPrev = '';
   this.queryCur = '';
 
@@ -14,6 +15,8 @@ function Main()
     this.view.install();
     this.add = new Add();
     this.add.install();
+    this.write = new Write();
+    this.write.install();
 
     var escape = document.getElementById("escape");
     escape.onclick = function()
