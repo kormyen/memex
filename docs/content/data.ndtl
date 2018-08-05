@@ -2236,11 +2236,21 @@ ON ICONS
   LINK : https://ia.net/topics/on-icons
   PERS : rutherford
   SRCE : Merveilles
+  TAGS : design
 
 TURBO
+  DATE : 12018-08-05
+  TYPE : term
+  TAGS : car
   TERM
     > Turbo: compressor forcing additional air into an engine to allow for increased fuel ignition and thus increased power output. A turbo has two halves, one is driven by the exhaust from the engine the other forces air into the engine. Negative 'turbo lag' time until the engine can provide enough exhaust to spin up the turbo compressor. 
     > Supercharger: Like a turbo but instead of being driven by exhaust gas it is driven mechanically (belt to engine). Negative  Takes power/efficiency away from driving engine output in order to drive the compressor.
     > Electic supercharger: fully electronically driven turbo (generally powered by a higher voltage (48v) seperate from car 12v). Negative  high electricity use.
     > Electic turbo: a hybrid electric-assisted turbo (generally powered by a higher voltage (48v) seperate from car 12v) using a DC motor to start the turbo spinning sooner to remove turbo lag or at low revs when not enough exhaust to produced. Once the engine is providing enough exhaust to spin the turbo the motor will stop output. It can also be a seperate electric supercharger working in conjunction with a standard turbo. Negative complexity.
+
+ELECTRON IPC
+  DATE : 12018-08-06
+  LINK : https://ourcodeworld.com/articles/read/537/how-to-execute-a-function-of-the-main-process-inside-the-renderer-process-in-electron-framework
+  PROJ : Memex
+  TAGS : web, code
 `

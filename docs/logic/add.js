@@ -94,15 +94,8 @@ function Add()
     document.getElementById("enter").addEventListener('click', 
     () => 
     {
-      console.log('test test');
-      // ipcRenderer.send('write', 'test');
-      let Data = 
-      {
-          message: "Hi",
-          someData: "Let's go"
-      };
-
-      ipcRenderer.send('request-mainprocess-action', Data);
+      console.log('called write');
+      ipcRenderer.send('write', '<br>'+this.display.innerHTML);
     });
 
     for (var i = 0; i < this.keys.length; i++)
