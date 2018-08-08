@@ -7,18 +7,17 @@ function Main()
   this.queryPrev = '';
   this.queryCur = '';
   var parent = this;
+  const FILELOCATION = 'content/data.ndtl';
 
   this.install = function()
   {
-    let dbLoaded = false;
-    const FILELOCATION = 'content/data.ndtl';
     var client = new XMLHttpRequest();
     client.open('GET', FILELOCATION);
     client.onreadystatechange = function() 
     {
-      if (!dbLoaded && client.responseText.trim() != '')
+      if (client.responseText.trim() != '')
       {
-        dbLoaded = true;
+        client.onreadystatechange = null;
         parent.setup(client.responseText);
       }
     }
