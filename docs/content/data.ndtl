@@ -1,5 +1,3 @@
-let DATABASE = `
-
 AGAINST BEAUTY IN PHYSICS
   PERS : faun
   SRCE : Merveilles
@@ -2253,4 +2251,79 @@ ELECTRON IPC
   LINK : https://ourcodeworld.com/articles/read/537/how-to-execute-a-function-of-the-main-process-inside-the-renderer-process-in-electron-framework
   PROJ : Memex
   TAGS : web, code
-`
+
+IROHA
+  DATE : 12018-08-06
+  PERS : james
+  SRCE : Merveilles
+  TYPE : quote
+  QOTE 
+    > Even the blossoming flowers
+    & Will eventually scatter
+    & Who in our world
+    & Is unchanging?
+    & The deep mountains of karma—
+    & We cross them today
+    & And we shall not have superficial dreams
+    & Nor be deluded
+  LINK : http://rendakud.tumblr.com/post/156991025541/iroha-poem
+
+THE WAY
+  DATE : 12018-08-06
+  PERS : ypm
+  SRCE : Merveilles
+  TYPE : quote
+  QOTE 
+    > Therefore the wise go about doing nothing, teaching no-talking.
+    & The ten thousand things rise and fall without cease,
+    & Creating, yet not possessing,
+    & Working, yet not taking credit.
+    & Working, yet not taking credit.
+    & Work i_____HERE_____orgotten.
+    & Therefore it lasts forever. 
+  LINK : http://peacefulrivers.homestead.com/laotzu.html
+
+COMMON GROUND
+  DATE : 12018-08-09
+  TYPE : podcast
+  LINK : http://rationallyspeakingpodcast.org/show/rs-214-anthony-aguirre-on-predicting-the-future-of-science-a.html
+  QOTE 
+    > "When we're exchanging individual sound bites or one paragraph arguments it's really easy to find ways to disagree with people and have lots of contention where as if you take the time to sort of engage in a little bit more a full way with a book or with a person or with multi paragraphs - the common ground is there if you look for it at all... I think looking for that common ground and then working your way back from there to see... now that we have that common ground where are the places that we disagree and can we identify why? Its just a so much more pleasent way of interacting with different ideas and different people than... saying OK my premise is that they think this and I think that and so we are in disagreement, now how am I going to defend my point of view..." - Anthony Aguirre on Rationally Speaking podcast #214 @ 44:30+
+  SEEN : true
+
+CLEAR TAMEI
+  DATE : 12018-08-09
+  LINK : https://iglooghost.bandcamp.com/album/clear-tamei
+  TYPE : music
+  SEEN : true
+
+STEEL MOGU
+  DATE : 12018-08-09
+  LINK : https://iglooghost.bandcamp.com/album/steel-mogu
+  TYPE : music
+  SEEN : false
+
+WATER WARS
+  DATE : 12018-08-09
+  PERS : neauoire
+  SRCE : Merveilles
+  LINK : https://www.thenation.com/article/the-future-of-climate-change-is-widespread-civil-war/
+  TYPE : article
+  SEEN : true
+  TAGS : env
+
+BROWSER TIMELINE
+  DATE : 12018-08-09
+  PERS : neauoire
+  SRCE : Merveilles
+  LINK : https://en.wikipedia.org/wiki/Timeline_of_web_browsers
+  TYPE : article
+  TAGS : web
+
+DARPA WEB
+  DATE : 12018-08-09
+  PERS : neauoire
+  SRCE : Merveilles
+  LINK : https://medium.com/@giacomo_59737/the-web-is-still-a-darpa-weapon-31e3c3b032b8
+  TYPE : article
+  TAGS : web
