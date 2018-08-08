@@ -6,23 +6,41 @@ function Main()
   this.write = null;
   this.queryPrev = '';
   this.queryCur = '';
+  var parent = this;
 
   this.install = function()
   {
-    this.db = new Wrap(DATABASE);
-    this.db.install();
+    let dbLoaded = false;
+    const FILELOCATION = 'content/data.ndtl';
+    var client = new XMLHttpRequest();
+    client.open('GET', FILELOCATION);
+    client.onreadystatechange = function() 
+    {
+      if (!dbLoaded && client.responseText.trim() != '')
+      {
+        dbLoaded = true;
+        parent.setup(client.responseText);
+      }
+    }
+    client.send();
+  }
+
+  this.setup = function(data)
+  {
+    this.db = new Wrap();
+    this.db.install(data);
     this.view = new View();
     this.view.install();
     this.add = new Add();
     this.add.install();
-    this.write = new Write();
-    this.write.install();
 
     var escape = document.getElementById("escape");
     escape.onclick = function()
     {
       main.load(main.queryPrev);
     }
+
+    this.start();
   }
 
   this.start = function()

@@ -1,6 +1,4 @@
 const { ipcRenderer } = nodeRequire('electron');
-// const mainProcess = remote.nodeRequire('./main.js');
-//const mainProcess = nodeRequire('./main.js');
 
 function Add()
 {
@@ -95,7 +93,10 @@ function Add()
     () => 
     {
       console.log('called write');
-      ipcRenderer.send('write', '<br>'+this.display.innerHTML);
+      let content = this.display.innerHTML.replace(/\s?(<br\s?\/?>)\s?/g, "\r\n"); // replace line breaks
+      content = content.replace(/&nbsp;/g, ' '); // replace tabs/spaces
+      // var content = content.replace(/\u00a0/g, ' ');
+      ipcRenderer.send('write', "\r\n" + "\r\n" + content);
     });
 
     for (var i = 0; i < this.keys.length; i++)
@@ -164,15 +165,16 @@ function Add()
       {
         if (parent.elementList[parent.keys[i]].elem.value != '')
         {
-          value += parent.elementList[parent.keys[i]].elem.value.toUpperCase() + '<br>'
+          value += parent.elementList[parent.keys[i]].elem.value.toUpperCase();
         }
         else
         {
-          value += 'TITLE<br>';
+          value += 'TITLE';
         }
       }
       else if (parent.elementList[parent.keys[i]].elem.value != '')
       {
+        value += '<br>';
         value += '&nbsp;&nbsp;';
         value += parent.elementList[parent.keys[i]].desc.toUpperCase() + ' : ';
 
@@ -207,8 +209,6 @@ function Add()
         {
           value += parent.elementList[parent.keys[i]].elem.value.toLowerCase();
         }
-
-        value += '<br>';
       }
     }
     parent.display.innerHTML = value;

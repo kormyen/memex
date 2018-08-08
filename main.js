@@ -4,6 +4,7 @@ const url = require('url')
 const shell = require('electron').shell;
 const fs = require('fs');
 const { ipcMain } = require('electron');
+const FILELOCATION = 'docs/content/data.ndtl';
 
 let is_shown = true;
 
@@ -94,10 +95,37 @@ app.on('activate', () => {
 
 ipcMain.on('write', (event, arg) => 
 {
-    console.log('Write called! Entry = ' + arg);
+  // var fileLength = fs.statSync(FILELOCATION)['size'];
+  // console.log('Write called! Length = ' + fileLength);
+  // console.log('Write called! Entry = ' + arg);
 
-    let foo = fs.openSync('foo.txt','r+');
-    let buf = new Buffer(arg);
-    fs.writeSync(foo, buf, 0, buf.length, 5);
-    fs.close(foo);
+  // const stream = fs.createReadStream(FILELOCATION, { encoding: 'utf8' });
+  // stream.on('data', data => {
+  //   header = data.split(/\n/)[0];
+  //   stream.destroy();
+  // });
+  // stream.on('close', () => {
+  //   console.timeEnd(label);
+  //   resolve();
+  // });
+
+  // fs.readFile(FILELOCATION, "utf8", 
+  //   function(err, data) 
+  //   {
+  //     console.log(data);
+  //     var position = data.lastIndexOf('`');
+  //     console.log('Write called! position = ' + position);
+
+  //     let fileStream = fs.openSync(FILELOCATION, 'r+');
+  //     // let buf = new Buffer(arg);
+  //     let buf = new Buffer('_____HERE_____');
+  //     fs.writeSync(fileStream, buf, 0, buf.length, position);
+  //     fs.close(fileStream);
+  //   }
+  // );
+
+  fs.appendFile(FILELOCATION, arg, function (err) {
+    if (err) throw err;
+    console.log('Saved!');
+  }); 
 });
