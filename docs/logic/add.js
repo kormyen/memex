@@ -99,6 +99,8 @@ if (window.showAdd != undefined && window.showAdd)
         content = content.replace(/&nbsp;/g, ' '); // replace tabs/spaces
         // var content = content.replace(/\u00a0/g, ' ');
         ipcRenderer.send('write', "\r\n" + "\r\n" + content);
+        this.setOverlay(false);
+        this.clearForm();
       });
 
       for (var i = 0; i < this.keys.length; i++)
@@ -113,6 +115,14 @@ if (window.showAdd != undefined && window.showAdd)
       { 
         parent.setupData();
       }, 100);
+    }
+
+    this.clearForm = function()
+    {
+      for (var i = 0; i < this.keys.length; i++)
+      {
+        this.elementList[this.keys[i]].elem.value = '';
+      }
     }
 
     this.setupElement = function(key, desc, type)
