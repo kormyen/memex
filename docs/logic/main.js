@@ -70,7 +70,14 @@ function Main()
 
     if (this.queryCur == 'add')
     {
-      this.add.show();
+      if (window.showAdd != undefined && window.showAdd)
+      {
+        this.add.show();
+      }
+      else
+      {
+        window.location.hash = this.queryPrev;
+      }
     }
     else
     {

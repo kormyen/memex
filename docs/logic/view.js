@@ -311,12 +311,15 @@ function View()
   {
     let menuContent = ``;
     
-    // ADD
-    menuContent += `<a href='#add'>`;
-    menuContent += `<div class="menu-item"><b>a</b>dd</div>`;
-    menuContent += `</a>`;
+    if (window.showAdd != undefined && window.showAdd)
+    {
+      // ADD
+      menuContent += `<a href='#add'>`;
+      menuContent += `<div class="menu-item"><b>a</b>dd</div>`;
+      menuContent += `</a>`;
 
-    menuContent += `<div class="menu-spacer"></div>`;
+      menuContent += `<div class="menu-spacer"></div>`;
+    }
 
     // TYPE
     menuContent += `<a href='#'>`;
