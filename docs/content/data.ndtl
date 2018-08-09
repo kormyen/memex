@@ -2235,6 +2235,7 @@ ON ICONS
   PERS : rutherford
   SRCE : Merveilles
   TAGS : design
+  SEEN : true
 
 TURBO
   DATE : 12018-08-05
@@ -2282,6 +2283,7 @@ THE WAY
     & Work i_____HERE_____orgotten.
     & Therefore it lasts forever. 
   LINK : http://peacefulrivers.homestead.com/laotzu.html
+  SEEN : true
 
 COMMON GROUND
   DATE : 12018-08-09
@@ -2327,3 +2329,143 @@ DARPA WEB
   LINK : https://medium.com/@giacomo_59737/the-web-is-still-a-darpa-weapon-31e3c3b032b8
   TYPE : article
   TAGS : web
+
+DWEB SSB SOCIAL FEED
+  DATE : 12018-08-10
+  TYPE : article
+  LINK : https://hacks.mozilla.org/2018/08/dweb-social-feeds-with-secure-scuttlebutt/
+  PERS : Andre Staltz
+  SRCE : Twitter
+  TAGS : web, code
+
+FLORAL DIAGRAM GEN
+  DATE : 12018-08-10
+  TYPE : tool
+  LINK : http://kvetnidiagram.8u.cz/index_en.php?tvarokv=1&amp;napodobap=1&amp;nuhelnikokv=7&amp;posunokv=0&amp;tvarkal=1&amp;napodobak=2&amp;nuhelnikkal=6&amp;posunkal=0&amp;tvarkor=1&amp;napodobac=3&amp;nuhelnikkor=5&amp;posunkor=36&amp;nuhelniklis=1&amp;stonek=1&amp;listence=1&amp;srpro=1&amp;priblizpro=&amp;nektaria=&amp;styl=0&amp;osy=&amp;posunosy=&amp;cba=1&amp;barvaokv=ora&amp;barvakal=zel&amp;barvatyc=zlu&amp;barvanek=zlz&amp;nuhelniktyc=4&amp;posuntyc=&amp;tvartyc=1&amp;upravytyc=&amp;upravytycs=&amp;srpes=0&amp;nuhelnikpes=3&amp;posunpes=&amp;tvarpes=10&amp;plosrust=2&amp;pespoloha=1&amp;pesvaj=1&amp;tvarvaj=0&amp;vernaceokv=1&amp;vernacekal=1&amp;vernacekor=1&amp;vernacekor2=1&amp;mezeryokv=1&amp;mezerykal=1&amp;mezerykor=1&amp;mezerykor2=1&amp;mezerylis=1&amp;aa=submit+form&amp;vzorec=P7+K6+C5+A4+_G%283%29
+  PERS : cinnamon
+  SRCE : Merveilles
+  SEEN : true
+
+XINGTIAN
+  DATE : 12018-08-10
+  TYPE : article
+  LINK : https://en.m.wikipedia.org/wiki/Xingtian
+  PERS : changbai
+  SRCE : Merveilles
+
+NISSE
+  DATE : 12018-08-10
+  TYPE : article
+  LINK : https://en.wikipedia.org/wiki/Nisse_(folklore)
+  PERS : dormin
+  SRCE : Merveilles
+
+SKOGSRA
+  DATE : 12018-08-10
+  TYPE : article
+  LINK : https://en.wikipedia.org/wiki/Skogsr%C3%A5
+  PERS : dormin
+  SRCE : Merveilles
+
+JAPANESE CREATURES
+  DATE : 12018-08-10
+  TYPE : list
+  LINK : https://en.wikipedia.org/wiki/List_of_legendary_creatures_from_Japan
+  PERS : josh
+  SRCE : Merveilles
+
+NECK
+  DATE : 12018-08-10
+  TYPE : article
+  LINK : https://en.wikipedia.org/wiki/Neck_(water_spirit)#N%C3%A4ck,_N%C3%B8kk
+  PERS : dormin
+  SRCE : Merveilles
+
+SMALL SCREEN UX
+  DATE : 12018-08-10
+  TYPE : article
+  LINK : https://medium.com/dropbox-design/fostering-focus-for-small-screens-34a9f338668c
+  PROJ : Memex
+  TAGS : ux, design, web
+
+ZCCOUNT MANIFESTO
+  DATE : 12018-08-10
+  TYPE : article
+  LINK : https://tilde.team/~aewens/manifesto/
+  TAGS : web, code
+
+BUSY DISEASE
+  DATE : 12018-08-10
+  TYPE : article
+  LINK : https://onbeing.org/blog/the-disease-of-being-busy/
+  PERS : ypm
+  SRCE : Merveilles
+
+HITFILM EXPRESS
+  DATE : 12018-08-10
+  TYPE : tool
+  LINK : https://fxhome.com/express
+  TAGS : video, software
+  NOTE : Free video editor like Premier or iMovie
+
+PARADICHLORISSE
+  DATE : 12018-08-10
+  TYPE : article
+  LINK : https://wiki.xxiivv.com/#paradichlorisse
+  PERS : neauoire
+  SRCE : Merveilles
+  TAGS : inspiration
+
+NEAUSEA
+  DATE : 12018-08-10
+  TYPE : article
+  LINK : https://wiki.xxiivv.com/#neausea
+  PERS : neauoire
+  SRCE : Merveilles
+  TAGS : inspiration
+
+FRATH
+  DATE : 12018-08-10
+  TYPE : list
+  LINK : http://www.frathwiki.com/Main_Page
+  PERS : neauoire
+  SRCE : Merveilles
+  TAGS : conlang, conworld
+
+SIXTH MASS EXTINCTION
+  DATE : 12018-08-10
+  TYPE : article
+  LINK : http://advances.sciencemag.org/content/1/5/e1400253.full
+  PERS : neauoire
+  SRCE : Merveilless
+  TAGS : env
+
+WHATS WARMING
+  DATE : 12018-08-10
+  TYPE : article
+  LINK : https://www.bloomberg.com/graphics/2015-whats-warming-the-world/
+  TAGS : env
+
+NOTATION AND THOUGHT
+  DATE : 12018-08-10
+  TYPE : article
+  LINK : https://github.com/hypotext/notation
+  TAGS : psychology
+
+PROBLEM SOLVE CRAYON
+  DATE : 12018-08-10
+  TYPE : article
+  LINK : https://www.lesswrong.com/posts/CPBmbgYZpsGqkiz2R/problem-solving-with-mazes-and-crayon
+
+MYST TWO HISTORY
+  DATE : 12018-08-10
+  TYPE : article
+  LINK : https://medium.com/picking-up-the-pieces/two-histories-of-myst-8b37e1504f9e
+  TAGS : game
+
+GOOD GOALS
+  DATE : 12018-08-10
+  TYPE : article
+  LINK : https://medium.com/@Marianattestad/set-goals-you-have-complete-control-over-71cbf440cd1f
+  QOTE 
+    > "Setgoals you have complete control over"
