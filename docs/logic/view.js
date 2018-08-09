@@ -1,14 +1,16 @@
 function View()
 {
   this.msnry = null;
+  this.overlay = null;
+  this.container = null;
   this.grid = null;
   this.menu = null;
   var parent = this;
-  
+    
   const SETTINGS = {
     STATSNUMTAGS: 5,
     STATSNUMTYPE: 10,
-    WIDEGRIDITEM: false,
+    WIDEGRIDITEM: true,
     USEMASONRY: true,
     GRIDITEMIDBASE: 'item',
     SHOWUPPER: true,
@@ -27,6 +29,8 @@ function View()
 
   this.install = function()
   {
+    this.overlay = document.getElementById("overlay");
+    this.container = document.getElementById("container");
     this.grid = document.getElementById("grid");
     this.menu = document.getElementById("menu");
 
@@ -45,6 +49,11 @@ function View()
 
   this.display = function(db)
   {
+    if (window.showAdd != undefined && window.showAdd)
+    {
+      main.add.setOverlay(false);
+    }
+
     // BUILD
     this.grid.innerHTML = '';
     this.grid.innerHTML += "<div class='grid-sizer'></div>"; 
@@ -302,6 +311,13 @@ function View()
   {
     let menuContent = ``;
     
+    // ADD
+    menuContent += `<a href='#add'>`;
+    menuContent += `<div class="menu-item"><b>a</b>dd</div>`;
+    menuContent += `</a>`;
+
+    menuContent += `<div class="menu-spacer"></div>`;
+
     // TYPE
     menuContent += `<a href='#'>`;
     menuContent += `<div class="menu-item">`;

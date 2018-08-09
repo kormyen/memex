@@ -40,7 +40,7 @@ npm start
 - Template parser: [Runic](https://wiki.xxiivv.com/#runic)
 - Grid layout: [Masonry](https://masonry.desandro.com/)
 
-Thanks to Devine Lu Linvega ([Oscean](https://github.com/XXIIVV/Oscean)), Josh Avanier ([Log](https://github.com/joshavanier/log)), Rekka Bell ([kokorobot](https://github.com/rekkabell/kokorobot)) and Alexey Botkov ([Legacy](https://github.com/nomand/Legacy))
+Thanks to Devine Lu Linvega ([Oscean](https://github.com/XXIIVV/Oscean)), Josh Avanier ([Log](https://github.com/joshavanier/log)), Rekka Bell ([kokorobot](https://github.com/rekkabell/kokorobot)), Alexey Botkov ([Legacy](https://github.com/nomand/Legacy)), Seena Burns ([Isolate](https://github.com/seenaburns/isolate))
 
 ---
 

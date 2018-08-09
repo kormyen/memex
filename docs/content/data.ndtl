@@ -1,5 +1,3 @@
-let DATABASE = `
-
 AGAINST BEAUTY IN PHYSICS
   PERS : faun
   SRCE : Merveilles
@@ -2153,4 +2151,179 @@ DAY EVAL
   LINK : https://medium.com/@NikitaVoloboev/day-evaluations-5706f31c9c5e
   TYPE : article
   TAGS : productivity
-`
+
+SAPIENS
+  TYPE : book
+  NOTE : 'Sapiens: A Brief History of Humankind' - Yuval Noah Harari
+  PERS : faun
+  SRCE : Merveilles
+  DATE : 12018-07-18
+
+AESTHETICS
+  DATE : 12018-07-26
+  TYPE : video
+  PERS : theneko
+  SRCE : Merveilles
+  LINK : https://www.youtube.com/watch?v=HCHFjj_qr5Q
+  TAGS : design
+
+TYPEFACE PAIRING
+  DATE : 12018-07-27
+  PERS : rutherford
+  SRCE : Merveilles
+  TYPE : article
+  LINK : https://craze.co.uk/typeface+pairing
+  TAGS : design
+
+DECISIONS
+  DATE : 12018-07-28
+  QOTE : 'Personal decisions are the leading cause of death'
+  TYPE : quote
+  LINK : https://pdfs.semanticscholar.org/375e/8c9e3df49a7962d12bb186a4ec7dc7d2b3ab.pdf
+  FILE : 12018-07-28_PersonalDecisionsAreTheLeading.pdf
+
+MICROMORT
+  DATE : 12018-07-28
+  TYPE : term
+  TERM 
+    > Micromort: 'a unit of risk defined as one-in-a-million chance of death.'
+  LINK : https://en.wikipedia.org/wiki/Micromort
+
+ARTISTS
+  DATE : 12018-07-28
+  TYPE : quote
+  QOTE 
+    > Alan Moore: “In latter times, I think that artists and writers have allowed themselves to be sold down the river. They have accepted the prevailing belief that art and writing are merely forms of entertainment. They are not seen as transformative forces that can change a human being, that can change a society. They are seen as simple entertainment. Things with which to fill 20 minutes, half an hour while we are waiting to die.
+    & It is not the job of artists to give the audience what the audience wants. If the audience knew what they needed then they wouldn’t be audience, they would be the artists. It is the job of artists to give the audience what they need.”
+  LINK : http://intellectual-thoughts.com/Alan%20Moore%20Quote.htm
+  TAGS : philosophy
+
+ELECTRON MEMORY
+  DATE : 12018-08-05
+  TYPE : article
+  LINK : http://seenaburns.com/debugging-electron-memory-usage/
+  PERS : nnkd
+  SRCE : Merveilles
+  PROJ : Memex
+
+ISOLATE
+  DATE : 12018-08-05
+  TYPE : tool
+  LINK : https://github.com/seenaburns/isolate
+  TAGS : gallery, masonry, web, code, inspiration
+  PROJ : Memex
+
+CHEMICAL IMBALANCE
+  DATE : 12018-08-05
+  TYPE : article
+  LINK : https://www.anxietycentre.com/anxiety/chemical-imbalance.shtml
+  TAGS : psychology
+  PERS : Adam Strauss
+  SRCE : DTFH
+  DONE : true
+
+SSL EXPLAINED
+  DATE : 12018-08-05
+  TYPE : article
+  LINK : http://seenaburns.com/archive/
+  TAGS : code
+
+ON ICONS
+  DATE : 12018-08-05
+  TYPE : article
+  LINK : https://ia.net/topics/on-icons
+  PERS : rutherford
+  SRCE : Merveilles
+  TAGS : design
+
+TURBO
+  DATE : 12018-08-05
+  TYPE : term
+  TAGS : car
+  TERM
+    > Turbo: compressor forcing additional air into an engine to allow for increased fuel ignition and thus increased power output. A turbo has two halves, one is driven by the exhaust from the engine the other forces air into the engine. Negative 'turbo lag' time until the engine can provide enough exhaust to spin up the turbo compressor. 
+    > Supercharger: Like a turbo but instead of being driven by exhaust gas it is driven mechanically (belt to engine). Negative  Takes power/efficiency away from driving engine output in order to drive the compressor.
+    > Electic supercharger: fully electronically driven turbo (generally powered by a higher voltage (48v) seperate from car 12v). Negative  high electricity use.
+    > Electic turbo: a hybrid electric-assisted turbo (generally powered by a higher voltage (48v) seperate from car 12v) using a DC motor to start the turbo spinning sooner to remove turbo lag or at low revs when not enough exhaust to produced. Once the engine is providing enough exhaust to spin the turbo the motor will stop output. It can also be a seperate electric supercharger working in conjunction with a standard turbo. Negative complexity.
+
+ELECTRON IPC
+  DATE : 12018-08-06
+  LINK : https://ourcodeworld.com/articles/read/537/how-to-execute-a-function-of-the-main-process-inside-the-renderer-process-in-electron-framework
+  PROJ : Memex
+  TAGS : web, code
+
+IROHA
+  DATE : 12018-08-06
+  PERS : james
+  SRCE : Merveilles
+  TYPE : quote
+  QOTE 
+    > Even the blossoming flowers
+    & Will eventually scatter
+    & Who in our world
+    & Is unchanging?
+    & The deep mountains of karma—
+    & We cross them today
+    & And we shall not have superficial dreams
+    & Nor be deluded
+  LINK : http://rendakud.tumblr.com/post/156991025541/iroha-poem
+
+THE WAY
+  DATE : 12018-08-06
+  PERS : ypm
+  SRCE : Merveilles
+  TYPE : quote
+  QOTE 
+    > Therefore the wise go about doing nothing, teaching no-talking.
+    & The ten thousand things rise and fall without cease,
+    & Creating, yet not possessing,
+    & Working, yet not taking credit.
+    & Working, yet not taking credit.
+    & Work i_____HERE_____orgotten.
+    & Therefore it lasts forever. 
+  LINK : http://peacefulrivers.homestead.com/laotzu.html
+
+COMMON GROUND
+  DATE : 12018-08-09
+  TYPE : podcast
+  LINK : http://rationallyspeakingpodcast.org/show/rs-214-anthony-aguirre-on-predicting-the-future-of-science-a.html
+  QOTE 
+    > "When we're exchanging individual sound bites or one paragraph arguments it's really easy to find ways to disagree with people and have lots of contention where as if you take the time to sort of engage in a little bit more a full way with a book or with a person or with multi paragraphs - the common ground is there if you look for it at all... I think looking for that common ground and then working your way back from there to see... now that we have that common ground where are the places that we disagree and can we identify why? Its just a so much more pleasent way of interacting with different ideas and different people than... saying OK my premise is that they think this and I think that and so we are in disagreement, now how am I going to defend my point of view..." - Anthony Aguirre on Rationally Speaking podcast #214 @ 44:30+
+  SEEN : true
+
+CLEAR TAMEI
+  DATE : 12018-08-09
+  LINK : https://iglooghost.bandcamp.com/album/clear-tamei
+  TYPE : music
+  SEEN : true
+
+STEEL MOGU
+  DATE : 12018-08-09
+  LINK : https://iglooghost.bandcamp.com/album/steel-mogu
+  TYPE : music
+  SEEN : false
+
+WATER WARS
+  DATE : 12018-08-09
+  PERS : neauoire
+  SRCE : Merveilles
+  LINK : https://www.thenation.com/article/the-future-of-climate-change-is-widespread-civil-war/
+  TYPE : article
+  SEEN : true
+  TAGS : env
+
+BROWSER TIMELINE
+  DATE : 12018-08-09
+  PERS : neauoire
+  SRCE : Merveilles
+  LINK : https://en.wikipedia.org/wiki/Timeline_of_web_browsers
+  TYPE : article
+  TAGS : web
+
+DARPA WEB
+  DATE : 12018-08-09
+  PERS : neauoire
+  SRCE : Merveilles
+  LINK : https://medium.com/@giacomo_59737/the-web-is-still-a-darpa-weapon-31e3c3b032b8
+  TYPE : article
+  TAGS : web

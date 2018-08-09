@@ -3,9 +3,9 @@ function Wrap()
   this.database = null;
   this.keys = null;
 
-  this.install = function()
+  this.install = function(data)
   {
-    this.database = new Indental(DATABASE).parse();
+    this.database = new Indental(data).parse();
     this.keys = Object.keys(this.database);
     this.process();
   }
