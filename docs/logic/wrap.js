@@ -76,6 +76,7 @@ function Wrap()
       if (splitTarget[0] == 'tag')
       {
         // TAG
+        var tagDecoded = decodeURI(splitTarget[1]);
         for (i = 0; i < this.keys.length; i++) 
         { 
           let value = this.database[this.keys[i]];
@@ -83,7 +84,7 @@ function Wrap()
           {
             for (var t = 0; t < value.TAGS.length; t++)
             {
-              if (value.TAGS[t] == splitTarget[1])
+              if (value.TAGS[t] == tagDecoded)
               {
                 tempDatabase[this.keys[i]] = this.database[this.keys[i]];
               }
@@ -94,13 +95,14 @@ function Wrap()
       else if (splitTarget[0] == 'type')
       {
         // TYPE
+        var tagDecoded = decodeURI(splitTarget[1]);
         var tempDatabase = {}
         for (i = 0; i < this.keys.length; i++) 
         { 
           let value = this.database[this.keys[i]];
           if (typeof value.TYPE !== 'undefined')
           {
-            if (value.TYPE == splitTarget[1])
+            if (value.TYPE == tagDecoded)
             {
               tempDatabase[this.keys[i]] = this.database[this.keys[i]];
             }

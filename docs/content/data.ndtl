@@ -1709,7 +1709,7 @@ RANGITOTO
   FILE : 12018-07-19_wide.jpg
   TYPE : image
   WIDE : true
-  TAGS : log
+  TAGS : log, test test
 
 MQTT
   PERS : autophagy
