@@ -76,6 +76,10 @@ body {
 	z-index: 100;
 	left: 0px;
 	top: 0px;
+  overflow-y: scroll;
+}
+.menu::-webkit-scrollbar {
+  display: none;
 }
 .menu:hover {
   background: var(--color-menu-bg-e);
