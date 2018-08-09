@@ -13,7 +13,8 @@ function Main()
   {
     var client = new XMLHttpRequest();
     client.open('GET', FILELOCATION);
-    client.onreadystatechange = function() 
+    client.overrideMimeType("text/plain");
+    client.onreadystatechange = function(req, res) 
     {
       if (client.responseText.trim() != '')
       {
@@ -30,13 +31,16 @@ function Main()
     this.db.install(data);
     this.view = new View();
     this.view.install();
-    this.add = new Add();
-    this.add.install();
 
-    var escape = document.getElementById("escape");
-    escape.onclick = function()
+    if (window.showAdd != undefined && window.showAdd)
     {
-      main.load(main.queryPrev);
+      this.add = new Add();
+      this.add.install();
+      var escape = document.getElementById("escape");
+      escape.onclick = function()
+      {
+        main.load(main.queryPrev);
+      }
     }
 
     this.start();

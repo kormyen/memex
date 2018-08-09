@@ -49,7 +49,10 @@ function View()
 
   this.display = function(db)
   {
-    main.add.setOverlay(false);
+    if (window.showAdd != undefined && window.showAdd)
+    {
+      main.add.setOverlay(false);
+    }
 
     // BUILD
     this.grid.innerHTML = '';
