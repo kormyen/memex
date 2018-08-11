@@ -246,7 +246,7 @@ function View()
       {
         if (typeof value.NOTE !== 'undefined')
         {
-          entry += `<div class="note"><i class="fas fa-sticky-note textIcon"></i>${value.NOTE}</div>`;
+          entry += this.buildArrayElement(value.NOTE, "note", "fas fa-sticky-note textIcon");
         }
       }
 
@@ -255,7 +255,7 @@ function View()
       {
         if (typeof value.QOTE !== 'undefined')
         {
-          entry += `<div class="quote"><i class="fas fa-comment textIcon"></i>${value.QOTE}</div>`;
+          entry += this.buildArrayElement(value.QOTE, "quote", "fas fa-comment textIcon");
         }
       }
 
@@ -486,6 +486,42 @@ function View()
 
     this.menu.innerHTML = ``;
     this.menu.innerHTML += menuContent;
+  }
+
+  this.buildArrayElement = function(data, className, iconName)
+  {
+    let result = '';
+    if (Array.isArray(data))
+    {
+      for (var i in data)
+      {
+        if (data[i] == "& ")
+        {
+          // blank line, do nothing
+        }
+        else if (data[i].substring(0, 2) == "> ")
+        {
+          // New item
+          result += `<div class="${className}"><i class="${iconName}"></i>${data[i].substring(2)}</div>`;
+        }
+        else if (data[i].substring(0, 2) == "& ")
+        {
+          // New line in current item
+          result += `<div class="${className}">${data[i].substring(2)}</div>`;
+        }
+        else
+        {
+          // Handle unformatted
+          result += `<div class="${className}"><i class="${iconName}"></i>${data[i]}</div>`;
+        }
+      }
+    }
+    else
+    {
+      // Handle not array
+      result += `<div class="${className}"><i class="${iconName}"></i>${data}</div>`;
+    }
+    return result;
   }
 
   // HELPER
