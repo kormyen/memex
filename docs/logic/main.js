@@ -11,18 +11,11 @@ function Main()
 
   this.install = function()
   {
-    var client = new XMLHttpRequest();
-    client.open('GET', FILELOCATION);
-    client.overrideMimeType("text/plain");
-    client.onreadystatechange = function(req, res) 
-    {
-      if (client.responseText.trim() != '')
-      {
-        client.onreadystatechange = null;
-        parent.setup(client.responseText);
-      }
-    }
-    client.send();
+    var oReq = new XMLHttpRequest();
+    oReq.open('GET', FILELOCATION);
+    oReq.overrideMimeType("text/plain");
+    oReq.addEventListener("load", function() { parent.setup(this.responseText); } );
+    oReq.send();
   }
 
   this.setup = function(data)
