@@ -506,7 +506,7 @@ function View()
             {
               titleSplit[e] = titleSplit[e].trim();
             }
-            result += `<div class="term"><i class="fas fa-ribbon textIcon"></i><b>${titleSplit[0]}</b>: ${titleSplit[1]}</div>`;
+            result += `<div class="${className}"><i class="${iconName}"></i><b>${titleSplit[0]}</b>: ${titleSplit[1]}</div>`;
           }
           else
           {
