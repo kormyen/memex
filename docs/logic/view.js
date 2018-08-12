@@ -264,10 +264,7 @@ function View()
       {
         if (typeof value.TERM !== 'undefined')
         {
-          for (var i = 0; i < value.TERM.length; i++) 
-          {
-            entry += `<div class="term"><i class="fas fa-ribbon textIcon"></i><b>${value.TERM[i][0]}</b>: ${value.TERM[i][1]}</div>`;
-          }
+          entry += this.buildArrayElement(value.TERM, "term", "fas fa-ribbon textIcon");
         }
       }
 
@@ -502,7 +499,19 @@ function View()
         else if (data[i].substring(0, 2) == "> ")
         {
           // New item
-          result += `<div class="${className}"><i class="${iconName}"></i>${data[i].substring(2)}</div>`;
+          if (data[i].includes(": "))
+          {
+            let titleSplit = data[i].substring(2).split(': '); // .substring(2) removes the "> "
+            for (var e = 0; e < titleSplit.length; e++) 
+            {
+              titleSplit[e] = titleSplit[e].trim();
+            }
+            result += `<div class="term"><i class="fas fa-ribbon textIcon"></i><b>${titleSplit[0]}</b>: ${titleSplit[1]}</div>`;
+          }
+          else
+          {
+            result += `<div class="${className}"><i class="${iconName}"></i>${data[i].substring(2)}</div>`;
+          }
         }
         else if (data[i].substring(0, 2) == "& ")
         {
@@ -558,10 +567,12 @@ function View()
     var hostname;
     // find & remove protocol (http, ftp, etc.) and get hostname
 
-    if (url.indexOf("://") > -1) {
+    if (url.indexOf("://") > -1)
+    {
       hostname = url.split('/')[2];
     }
-    else {
+    else
+    {
       hostname = url.split('/')[0];
     }
 

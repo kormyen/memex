@@ -29,25 +29,6 @@ function Wrap()
         this.database[this.keys[i]].TAGS = tags;
       }
 
-      // TERMS
-      if (typeof value.TERM !== 'undefined')
-      {
-        let termRunic = new Runic(value.TERM).raw;
-        let formattedTerms = [];
-
-        for (var t = 0; t < termRunic.length; t++) 
-        {
-          term = termRunic[t].substr(2).split(':');
-          for (var e = 0; e < term.length; e++) 
-          {
-            term[e] = term[e].trim();
-          }
-          formattedTerms.push(term);
-        }
-
-        this.database[this.keys[i]].TERM = formattedTerms;
-      }
-
       this.database[this.keys[i]].DIID = i;
     }
   }
@@ -159,7 +140,16 @@ function Wrap()
       // TERM
       if (typeof db[dbKeys[i]].TERM !== 'undefined')
       {
-        stats.terms += db[dbKeys[i]].TERM.length;
+        let count = 0;
+        for (var t = 0; t < db[dbKeys[i]].TERM.length; t++)
+        {
+          if (db[dbKeys[i]].TERM[t].substr(0,2) == '> ')
+          {
+            count++;
+          }
+        }
+
+        stats.terms += count;
       }
     } 
 
