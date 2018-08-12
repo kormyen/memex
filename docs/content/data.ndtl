@@ -2552,20 +2552,21 @@ HORAIRE
   LINK : https://wiki.xxiivv.com/#horaire
   TAGS : inspiration, tracking
   TYPE : tool
-  QOTE 
-    > Fh: (PERCENTAGE OF DAY) The Focus Hour(Fh) or value, is an index of attention for the day's task — where 1 indicates that no time was invested in the task, and 9 indicates that all available time was invested in the task.
-    > Ch: (PROGRESS) The Concrete Hour(Ch) or vector, represents a value of concrete output, or index of progress toward the release of a project. It is also a vague indicator of a log's task type when combined with the sector value.
-    > Effectiveness: is doing the right thing.
-    > Efficiency: is doing it the right way.
+  TERM 
+    > Fh (PERCENTAGE OF DAY) The Focus Hour(Fh) or value: is an index of attention for the day's task — where 1 indicates that no time was invested in the task, and 9 indicates that all available time was invested in the task.
+    > Ch (PROGRESS) The Concrete Hour(Ch) or vector: represents a value of concrete output, or index of progress toward the release of a project. It is also a vague indicator of a log's task type when combined with the sector value.
     > HDF, or Hour Day Focus: is Fh/Days.
     > HDC, or Hour Day Concrete: is Ch/Days.
     > EFEC, or Effectiveness: is AVRG(Fh)/Topics.
     > EFIC, or Efficiency: is AVRG(Ch)/Topics.
     > OSC: is an Oscillation index of ABS(EFEC-EFIC).
     > FOCUS: is an Average Focus Index AVRG(EFEC+EFIC).
+  QOTE 
+    > Effectiveness: is doing the right thing.
+    > Efficiency: is doing it the right way.
   NOTE
     > Neauoire's sectors:
-    & 1 = Hearing   | Audio         | Sound/Music
-    & 2 = Sight     | Visual        | Physical/Drawing/3D/UX/UI
-    & 3 = Thought   | Research      | Text/Words/Code/Writing/Reading
+    & 1 = Hearing   | Audio         | Sound / Music
+    & 2 = Sight     | Visual        | Art / UI
+    & 3 = Thought   | Research      | Code / Writing
     & 4 = Misc 
