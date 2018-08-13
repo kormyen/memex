@@ -1112,6 +1112,7 @@ THE EMPIRE
   TAGS : politics
 
 TARYN SOUTHERN DTFH
+  AUTH : DTFH
   LINK : http://www.duncantrussell.com/episodes/2018/7/12/taryn-southern
   TYPE : podcast
   TERM 
@@ -2487,6 +2488,7 @@ COMMON GROUND UP
   NOTE : Anthony Aguirre on Rationally Speaking podcast #214 @ 44:30+
 
 MEDITATION CLASS
+  AUTH : DTFH
   DATE : 12018-08-11
   TAGS : psychology, spirit
   TERM 
@@ -2497,6 +2499,7 @@ MEDITATION CLASS
   NOTE : Centered and deep. Softened not dulled.
 
 ITS JUST GONE
+  AUTH : No Cartridge
   DATE : 12018-08-11
   TAGS : gamedev, game
   NOTE : Demon's Souls with Scott Benson
@@ -2504,6 +2507,7 @@ ITS JUST GONE
   LINK : https://www.no-cartridge.net/episode-81-its-just-gone-demons-souls-with-scott-benson
 
 FAKE FRIENDS
+  AUTH : Shannon Strucci
   DATE : 12018-08-13
   PERS : theneko
   SRCE : Merveilles
@@ -2534,6 +2538,7 @@ EXOCORTEX
     & Individuals with significant exocortices could be classified as cyborgs or posthumans."
 
 V OS LOG
+  AUTH : Victor Ivanov
   DATE : 12018-08-13
   LINK : https://log.v-os.ca/
   TYPE : tool
@@ -2542,12 +2547,14 @@ V OS LOG
   SRCE : Merveilles
 
 JOSH'S LOG
+  AUTH : Josh Avanier
   DATE : 12018-08-13
   LINK : https://github.com/joshavanier/log
   TAGS : inspiration, tracking
   TYPE : tool
 
 HORAIRE
+  AUTH : Devine Lu Linvega 
   DATE : 12018-08-13
   LINK : https://wiki.xxiivv.com/#horaire
   TAGS : inspiration, tracking
