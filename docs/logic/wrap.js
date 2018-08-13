@@ -77,13 +77,44 @@ function Wrap()
       {
         // TYPE
         var tagDecoded = decodeURI(splitTarget[1]);
-        var tempDatabase = {}
         for (i = 0; i < this.keys.length; i++) 
         { 
           let value = this.database[this.keys[i]];
           if (typeof value.TYPE !== 'undefined')
           {
             if (value.TYPE == tagDecoded)
+            {
+              tempDatabase[this.keys[i]] = this.database[this.keys[i]];
+            }
+          }
+        }
+      }
+      else if (splitTarget[0] == 'done')
+      {
+        // DONE
+        var doneValue = decodeURI(splitTarget[1]);
+        for (i = 0; i < this.keys.length; i++) 
+        { 
+          let value = this.database[this.keys[i]];
+          if (doneValue == 'true')
+          {
+            // true
+            if (typeof value.DONE !== 'undefined')
+            {
+              if (value.DONE == 'true')
+              {
+                tempDatabase[this.keys[i]] = this.database[this.keys[i]];
+              }
+            }
+          }
+          else
+          {
+            // false
+            if (typeof value.DONE === 'undefined')
+            {
+              tempDatabase[this.keys[i]] = this.database[this.keys[i]];
+            }
+            else if (value.DONE == false)
             {
               tempDatabase[this.keys[i]] = this.database[this.keys[i]];
             }
@@ -104,6 +135,7 @@ function Wrap()
       types: {},
       tags: {},
       terms: 0,
+      done: 0
     };
 
     for (var i = 0; i < dbKeys.length; i++)
@@ -150,6 +182,15 @@ function Wrap()
         }
 
         stats.terms += count;
+      }
+
+      // DONE
+      if (typeof db[dbKeys[i]].DONE !== 'undefined')
+      {
+        if (db[dbKeys[i]].DONE == 'true')
+        {
+          stats.done ++;
+        } 
       }
     } 
 

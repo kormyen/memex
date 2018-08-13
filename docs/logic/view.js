@@ -50,6 +50,7 @@ function View()
 
   this.display = function(db)
   {
+
     if (window.showAdd != undefined && window.showAdd)
     {
       main.add.setOverlay(false);
@@ -328,13 +329,32 @@ function View()
       menuContent += `<div class="menu-spacer"></div>`;
     }
 
-    // TYPE
+    // TOTAL
     menuContent += `<a href='#'>`;
     menuContent += `<div class="menu-item">`;
     menuContent += `<div class="count">${value.total}</div>`;
     menuContent += `<i class="fas fa-asterisk"></i>`;
     menuContent += `</div>`;
     menuContent += `</a>`;
+
+    // DONE
+    menuContent += `<div class="menu-spacer"></div>`;
+
+    menuContent += `<a href='#done-true'>`;
+    menuContent += `<div class="menu-item">`;
+    menuContent += `<div class="count">${value.done}</div>`;
+    menuContent += `<i class="fas fa-check"></i>`;
+    menuContent += `</div>`;
+    menuContent += `</a>`;
+
+    menuContent += `<a href='#done-false'>`;
+    menuContent += `<div class="menu-item">`;
+    menuContent += `<div class="count">${value.total - value.done}</div>`;
+    menuContent += `<i class="fas fa-times"></i>`;
+    menuContent += `</div>`;
+    menuContent += `</a>`;
+
+    menuContent += `<div class="menu-spacer"></div>`;
 
     for (var ty = 0; ty < Math.min(value.types.length, SETTINGS.STATSNUMTYPE); ty++) 
     {
