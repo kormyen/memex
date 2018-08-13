@@ -482,7 +482,7 @@ body {
 }
 
 /* LINK, NOTE, QUOTE, TERM, TAGS */
-.note, .quote, .term, .tags, .prog {
+.note, .quote, .term, .tags, .auth, .prog {
 	padding-top: var(--size-item-elem-padding);
   color: var(--color-content-item-i); 
 	font-size: var(--size-font-body);
@@ -494,6 +494,7 @@ body {
 .grid-item:hover .quote, 
 .grid-item:hover .term, 
 .grid-item:hover .tags,
+.grid-item:hover .auth,
 .grid-item:hover .prog {
 	color: var(--color-content-item-e);
 }
@@ -502,6 +503,7 @@ body {
 .grid-item-image .grid-item-lower-content .quote, 
 .grid-item-image .grid-item-lower-content .term, 
 .grid-item-image .grid-item-lower-content .tags,
+.grid-item-image .grid-item-lower-content .auth,
 .grid-item-image .grid-item-lower-content .prog {
   color: var(--color-content-image-t); 
 }

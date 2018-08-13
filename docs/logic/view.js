@@ -15,6 +15,7 @@ function View()
     GRIDITEMIDBASE: 'item',
     SHOWUPPER: true,
     SHOWTITLE: true,
+    SHOWAUTH: true,
     SHOWTYPE: true,
     SHOWLINK: true,
     SHOWLOWER: true,
@@ -222,6 +223,15 @@ function View()
     if (SETTINGS.SHOWLOWER)
     {
       entry += `<div class="grid-item-lower-content">`;
+
+      // AUTHOR
+      if (SETTINGS.SHOWAUTH)
+      {
+        if (typeof value.AUTH !== 'undefined')
+        {
+          entry += `<div class="auth"><i class="fas fa-user textIcon"></i>${value.AUTH}</div>`;
+        }
+      }
 
       // TAGS
       if (SETTINGS.SHOWTAGS)
