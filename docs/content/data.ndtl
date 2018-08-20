@@ -760,7 +760,7 @@ METHOD OF LOCI
   TYPE : article
   DONE : false
   REVI : true
-  NOTE : Memory palace
+  NOTE : First encountered in book "Season of the Witch" by Natasha Mostert
   DATE : 12018-07-09
   TAGS : psychology, philosophy
   TERM 
@@ -1175,7 +1175,7 @@ SAD POSTING
   DONE : false
   TAGS : psychology
 
-CHANNELING ARCHTECTURE
+CHANNELING ARCHITECTURE
   LINK : http://viewzone2.com/archeosoundx.html
   TYPE : article
   DATE : 12018-07-15
@@ -2493,6 +2493,8 @@ MEDITATION CLASS
   TAGS : psychology, spirit
   TERM 
     > Middle Way: "the middle way of moderation, between the extremes of sensual indulgence and self-mortification"
+  QOTE 
+    > "Be in this world but not of it"
   LINK : http://www.duncantrussell.com/episodes/2018/5/10/david-nichtern
   FILE : 12018-08-11_med.gif
   TYPE : image
@@ -2577,3 +2579,99 @@ HORAIRE
     & 2 = Sight     | Visual        | Art / UI
     & 3 = Thought   | Research      | Code / Writing
     & 4 = Misc 
+  SEEN : true
+
+OPEN DESK
+  DATE : 12018-08-15
+  PERS : Jono Shields
+  SRCE : Hakland
+  LINK : https://www.opendesk.cc/
+  SEEN : true
+
+100:10:1
+  DATE : 12018-08-15
+  PERS : neauoire
+  SRCE : Merveilles
+  LINK : http://blog.fogus.me/2015/11/04/the-100101-method-my-approach-to-open-source/
+  TAGS : philosophy, code
+
+SNORT
+  DATE : 12018-08-15
+  LINK : https://www.snort.org
+  TYPE : tool
+  TAGS : security, code, net
+  SEEN : true
+
+WALKAWAY
+  DATE : 12018-08-17
+  AUTH : Cory Doctorow
+  PERS : cinnamon
+  SRCE : Merveilles
+  TYPE : podcast
+  SEEN : true
+  LINK : https://thefinalstrawradio.noblogs.org/post/2018/05/27/cory-doctorow-walkaway/
+  QOTE : "There are no atheists in a foxhole" like "its hard to be authoritarian on the internet"
+  TAGS : philosophy, politics, code
+
+TOKI PONA
+  DATE : 12018-08-17
+  PERS : stephen
+  SRCE : Merveilles
+  TYPE : tool
+  LINK : https://tokipona.org/
+
+P2P RESOURCES
+  LINK : https://p2pforever.org/
+  TYPE : list
+  PERS : zach!
+  SRCE : Cabal
+  TAGS : p2p, code
+
+ISAAC ARTHUR
+  DATE : 12018-08-17
+  LINK : https://www.youtube.com/channel/UCZFipeZtQM5CKUjx6grh54g
+  TYPE : video
+  TAGS : inspiration, future, space 
+
+HOW TO BE HAPPY
+  DATE : 12018-08-17
+  TYPE : podcast
+  TERM : Hygge: (Hoo-gah) "The Danish Art of Cosiness" "In essence, hygge means creating a warm atmosphere and enjoying the good things in life with good people. The warm glow of candlelight is hygge. Cosying up with a loved one for a movie – that’s hygge, too. And there's nothing more hygge than sitting around with friends and family, discussing the big and small things in life."
+  LINK : http://freakonomics.com/podcast/happiness/
+  TAGS : politics, psychology
+
+CRYPTOSTORM VPN
+  DATE : 12018-08-18
+  LINK : https://cryptostorm.is/
+  TYPE : tool
+  TAGS : security
+
+PARTICLE MESH
+  DATE : 12018-08-19
+  LINK : https://www.particle.io/mesh/
+  TYPE : tool
+  TAGS : iot, hardware
+
+RUN DMC ON HIP HOP
+  DATE : 12018-08-19
+  LINK : https://www.youtube.com/watch?v=QPRmFJ_U8Ug
+  TYPE : video
+  TAGS : inspiration
+  
+OH SHIT GIT
+  DATE : 12018-08-20
+  LINK : http://ohshitgit.com/
+  TYPE : tool
+  TAGS : code, git
+
+NOTE BEST PRACTICES
+  DATE : 12018-08-20
+  LINK : https://github.com/i0natan/nodebestpractices
+  TYPE : list
+  TAGS : code
+
+JAVASCRIPT TALKS
+  DATE : 12018-08-20
+  LINK : https://github.com/AllThingsSmitty/must-watch-javascript
+  TYPE : list
+  TAGS : code
