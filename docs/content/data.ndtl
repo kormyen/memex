@@ -2725,9 +2725,27 @@ MURRAY BOOKCHIN
   TYPE : article
   LINK : https://en.wikipedia.org/wiki/Murray_Bookchin
   AUTH : Murray Bookchin
-  TAGS : inspiration, design
+  TAGS : inspiration, design, politics
   NOTE 
     > "A pioneer in the ecology movement,[4] Bookchin formulated and developed the theory of social ecology and urban planning, within anarchist, libertarian socialist, and ecological thought. He was the author of two dozen books covering topics in politics, philosophy, history, urban affairs, and ecology. Among the most important were Our Synthetic Environment (1962), Post-Scarcity Anarchism (1971), The Ecology of Freedom (1982) and Urbanization Without Cities (1987). In the late-1990s he became disenchanted with the increasingly apolitical lifestylism of the contemporary anarchist movement, stopped referring to himself as an anarchist, and founded his own libertarian socialist ideology called Communalism."
     > "...a prominent anti-capitalist and advocate of society's decentralisation along ecological and democratic lines."
   TERM 
     > Communalism: "a theory of government or a system of government in which independent communes participate in a federation", "the principles and practice of communal ownership."
+
+Hypocognition
+  DATE : 12018-08-21
+  PERS : alx
+  SRCE : Merveilles
+  NOTE : "What is hypocognition? If you don’t know, you’ve just experienced it."
+  TAGS : psychology
+  TYPE : term
+  TERM 
+    > Hypocognition: a term introduced to modern behavioral science by anthropologist Robert Levy, means the lack of a linguistic or cognitive representation for an object, category, or idea. The Martinique islanders were hypocognitive because they lacked a cognitive representation of refrigeration. But so are we hypocognitive of the numerous concepts that elude our awareness. We wander about the unknown terrains of life as novices more often than experts, complacent of what we know and oblivious to what we miss.
+
+FRONT END DEV THOUGHTS
+  DATE : 12018-08-21
+  PERS : jim
+  SRCE : Merveilles
+  LINK : https://reading.supply/@jim/thoughts-about-front-end-development-2WwhaP
+  DONE : true
+  TAGS : code
