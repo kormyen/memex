@@ -50,12 +50,22 @@ function Runic(raw)
     var lines = raw;
     var lines = !Array.isArray(raw) ? raw.split("\n") : raw;
 
-    for(id in lines){
+    for(let id in lines)
+    {
       var char = lines[id].substr(0,1).trim().toString()
       var rune = this.runes[char];
+
       var trail = lines[id].substr(1,1);
-      if(char == "%"){ html += this.media(lines[id].substr(2)); continue; }
-      if(char == "@"){ html += this.quote(lines[id].substr(2)); continue; }
+      if(char == "%"){
+        if(this.stash.is_pop(rune)){ html += this.render_stash(); }
+        html += this.media(lines[id].substr(2));
+        continue;
+      }
+      if(char == "@"){
+        if(this.stash.is_pop(rune)){ html += this.render_stash(); }
+        html += this.media(lines[id].substr(2));
+        continue;
+      }
       var line = lines[id].substr(2).to_markup();
       if(!line || line.trim() == ""){ continue; }
       if(!rune){ console.log(`Unknown rune:${char} : ${line}`); }
@@ -75,7 +85,7 @@ function Runic(raw)
     var stash = this.stash.pop();
 
     var html = "";
-    for(id in stash){
+    for(let id in stash){
       var rune = stash[id].rune;
       var line = stash[id].item;
       html += rune.wrap ? `<${rune.sub}><${rune.wrap}>${line.replace(/\|/g,`</${rune.wrap}><${rune.wrap}>`).trim()}</${rune.wrap}></${rune.sub}>` : `<${rune.sub}>${line}</${rune.sub}>`;  
@@ -94,21 +104,21 @@ function Runic(raw)
   this.media = function(val)
   {
     var service = val.split(" ")[0];
-    var id = val.split(" ")[1];
+    let id = val.split(" ")[1];
 
     if(service == "itchio"){
-      return `<iframe frameborder="0" src="https://itch.io/embed/${id}?link_color=000000" width="600" height="167"></iframe>`;
+      return `<iframe frameborder="0" src="https://itch.io/embed/${id}?bg_color=262626&amp;fg_color=e4e4e3&amp;link_color=e4e4e3&amp;border_color=262626&amp" width="600" height="167"></iframe>`;
     }
     if(service == "bandcamp"){
       return `<iframe style="border: 0; width: 600px; height: 274px;" src="https://bandcamp.com/EmbeddedPlayer/album=${id}/size=large/bgcol=ffffff/linkcol=333333/artwork=small/transparent=true/" seamless></iframe>`;
     }
     if(service == "youtube"){
-      return `<iframe width="600" height="315" src="https://www.youtube.com/embed/${id}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
+      return `<iframe width="600" height="315" src="https://www.youtube.com/embed/${id}?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
     }
     if(service == "custom"){
       return `<iframe src='${id}' style='width:100%;height:350px;'></iframe>`;
     }
-    return `<img src='media/${service}' class='${id}'/>`
+    return `<img src='content/images/${service}' class='${id}'/>`
   }
 
   this.quote = function(content)
@@ -156,7 +166,7 @@ String.prototype.to_markup = function()
   html = html.replace(/{\#/g,"<code class='inline'>").replace(/\#}/g,"</code>")
 
   var parts = html.split("{{")
-  for(id in parts){
+  for(let id in parts){
     var part = parts[id];
     if(part.indexOf("}}") == -1){ continue; }
     var content = part.split("}}")[0];
@@ -168,4 +178,7 @@ String.prototype.to_markup = function()
   return html;
 }
 
-
+String.prototype.toProperCase = function ()
+{
+  return this.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+}
