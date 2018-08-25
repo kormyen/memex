@@ -2,6 +2,7 @@ node_modules/
 builds/
 .DS_Store
 */.DS_Store
+package-lock.json
 
 docs/content/media/*.pdf
 docs/content/media/*.zip
