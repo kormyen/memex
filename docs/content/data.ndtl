@@ -2749,3 +2749,50 @@ FRONT END DEV THOUGHTS
   LINK : https://reading.supply/@jim/thoughts-about-front-end-development-2WwhaP
   DONE : true
   TAGS : code
+
+CSS WHAT USE
+  DATE : 12018-08-21
+  LINK : http://clubmate.fi/oocss-acss-bem-smacss-what-are-they-what-should-i-use/
+  PERS : jim
+  SRCE : Merveilles
+  TYPE : article
+  TAGS : code, web
+  NOTE 
+    > Object Oriented CSS (OOCSS)
+    & Bad: ul li.list-item { ... }
+    & Good: .list-item { ... }
+
+CELESTIAL NAVIGATION
+  DATE : 12018-08-21
+  TAGS : boat, env
+  NOTE 
+    > 'Celestial Navigation in the GPS age'
+    > "Personally, learning celestial nav, really added to my journeys, making me feel incredibly connected to the surface of the sphere we are rotating on, and within the sphere of stars we  live within. It has added a real 'beauty' for me, admittedly I am mathematical, and a bit of a hippy, but the added awareness of seeing stars move overhead as you move North and South, and over the equator, is pretty magic. 120 nm moved north or south changes all the angles of the stars you see, and the angle they rise at from the equator. (It's called amplitude) You can then really FEEL how you're moving over the surface of the globe. YOu can really start to 'feel' the spherical nature of the planet/galaxy/universe where we all live. You can 'feel' the equator. The world stops being flat, and becomes 'angles' and spheres. For me, I stopped thinking in terms of countries and boundaries, and just started to feel 'curves' and rotation."
+    & "You're artists, and 'tech nerds', you are in a perfect position to understand celestial nav for its utter eye-opening magic. It's not just about working out a lat/long, it's about understanding your relationship on the globe to it's rotation, it's angle to the sun, the position of the sun and stars as they themselves move. Then picking a single magic moment, measuring some simple things, and starting to work out intersecting circles and lines."
+  AUTH : John Karl
+  TYPE : book
+
+EMERGENCY NAVIGATION
+  DATE : 12018-08-21
+  TYPE : book
+  TAGS : boat, env
+  NOTE 
+    > 'Emergency navigation' (1989)
+    > "He outlines ancient Polynesian and Arab navigation methods, which I used to love to practice when on watch at night. It's a book that might take you 30 years to master. it's an old book, new copies are for sale at $950, whilst used ones can be found for $0.01. I have a digital and print version. I'd LOVE to practice these skills on another Pacific trip, or two. He outlines methods using an old bit of stick with some string (a kamal) for measuring angles. And your fingers. And they work!!!"
+  AUTH : David Burch
+
+OUTGUESS
+  DATE : 12018-08-22
+  LINK : https://web.archive.org/web/20140629194046/http://www.outguess.org/
+  TYPE : tool
+  TERM 
+    > Steganography: "is the practice of concealing a file, message, image, or video within another file, message, image, or video. The word steganography combines the Greek words steganos (στεγανός), meaning covered, concealed, or protected, and graphein (γράφειν) meaning writing."
+
+META KNOWLEDGE
+  PERS : neauiore
+  SRCE : Github
+  LINK : https://github.com/RichardLitt/meta-knowledge
+  DATE : 12018-08-22
+  TYPE : encyclopedia
+  TAGS : inspiration, history, psychology, science, ai, code, env
+  REVI : true
