@@ -1,7 +1,7 @@
 :root {
   --color-bg: var(--background);
 
-  --color-menu: var(--f_high); /*previously --b_med*/
+  --color-menu: var(--f_high);        /*previously --b_med*/
   --color-menubg: var(--b_low);
   --color-menuascent: var(--b_inv);
 
@@ -9,8 +9,8 @@
   --color-itembg: var(--b_low);
   --color-itemascent: var(--b_inv);
 
-  --color-image: #fff; /*Text overlaying an image item*/
-  --color-imagedarken: #000; /*Overlay on image as text background */
+  --color-image: #fff;                /*Text overlaying an image item*/
+  --color-imagedarken: #000;          /*Overlay on image as text background */
 
   --alpha-darken: 0.2;
   --alpha-idle: 0.4;
@@ -18,35 +18,35 @@
   --alpha-ascent: 1.0;
 
   --size-menu: 150px;
-  --size-menu-item-sepv: 14px; /*vertical space between menu items*/
-  --size-menu-item-seph: 10px; /*horizontal space between menu item count and icon*/
-  --size-menu-itemgroup-sepv: 30px; /*vertical space between menu types (types to terms, terms to tags)*/
-  --size-menu-tag-sepv: 10px; /*space between tag items*/
+  --size-menu-item-sepv: 14px;        /*vertical space between menu items*/
+  --size-menu-item-seph: 10px;        /*horizontal space between menu item count and icon*/
+  --size-menu-itemgroup-sepv: 30px;   /*vertical space between menu types (types to terms, terms to tags)*/
+  --size-menu-tag-sepv: 10px;         /*space between tag items*/
 
   --size-grid-gutter: 20px;
   --size-grid-column: 350px;
 
   --size-item-corner: 3px;
-  --size-item-elem-padding: 1em; /*vertical space between grid item internal elements (tags, notes, quotes etc)*/
-  --size-item-elem-sep: 0.75em; /*horizontal space between item element icon and element text (tag icon and tags)*/
+  --size-item-elem-padding: 1em;      /*vertical space between grid item internal elements (tags, notes, quotes etc)*/
+  --size-item-elem-sep: 0.75em;       /*horizontal space between item element icon and element text (tag icon and tags)*/
 
   --size-font-title: 1em;
   --size-font-body: 0.8em;
   --size-font-menutypes: 1em;
   --size-font-menutags: 0.8em;
-  --size-font-bodytypes: 1em; /*font size of type icon/count*/
+  --size-font-bodytypes: 1em;         /*font size of type icon/count*/
 
 
 
 
 
 
-    /*TODO: refactor these; */
-  --color-overlay-bg-i: #000; /*idle*/
-  --color-overlay-bg-e: #111; /*enabled*/
-  --color-overlay-item-i: #222; /*idle*/
-  --color-overlay-item-e: #333; /*enabled*/
-  --color-overlay-item-a: #666; /*ascent*/
+  /*TODO: refactor variables below; */
+  --color-overlay-bg-i: #000;         /*idle*/
+  --color-overlay-bg-e: #111;         /*enabled*/
+  --color-overlay-item-i: #222;       /*idle*/
+  --color-overlay-item-e: #333;       /*enabled*/
+  --color-overlay-item-a: #666;       /*ascent*/
 }
 
 * {
@@ -63,22 +63,20 @@ body {
 	padding: 0em;
 	margin: 0; 
 }
-
-/* MENU */
 .menu {
-	background: var(--color-menubg);
 	padding-top: var(--size-grid-gutter);
+  background: var(--color-bg);
+  opacity: var(--alpha-idle);
 	width: var(--size-menu);
 	position: fixed;
 	height: 100%;
 	z-index: 100;
 	left: 0px;
 	top: 0px;
-  overflow-y: scroll;
-  opacity: var(--alpha-idle);
+  /*overflow-y: scroll;*/                 /*allow menu to scroll on small screens*/
 }
 .menu:hover {
-  opacity: var(--alpha-enabled);
+  opacity: var(--alpha-ascent);
 }
 .menu::-webkit-scrollbar {
   display: none;
@@ -89,15 +87,15 @@ body {
   float: left;
 }
 .menu-item {
-  color: var(--color-menu);
-  opacity: var(--alpha-idle);
   padding-bottom: calc(var(--size-menu-item-sepv) / 2);
 	padding-top: calc(var(--size-menu-item-sepv) / 2);
 	font-size: var(--size-font-menutypes);
+  opacity: var(--alpha-idle);
+  color: var(--color-menu);
+  text-align: center;
 	margin: 0px auto;
 	width: 100%;
 	float: left;
-  text-align: center;
 }
 .menu-item:hover {
   color: var(--color-menuascent);
@@ -113,7 +111,6 @@ body {
 .menu-itemicon {
 	margin-left: calc(var(--size-menu-item-seph) / 2);
 	margin-top: calc(var(--size-font-bodytypes) / 10);
-
 	width: calc(var(--size-font-bodytypes) * 1.25);
 	display: inline-block;
 	text-align: center;
@@ -124,10 +121,10 @@ body {
 	display: table;
 }
 .menu-tagicon {
-  opacity: var(--alpha-idle);
 	padding-bottom: calc(var(--size-menu-item-sepv) / 2);
 	padding-top: calc(var(--size-menu-item-sepv) / 2);
 	font-size: var(--size-font-menutags);
+  opacity: var(--alpha-idle);
 	color: var(--color-menu);
 	display: table-row;
 	text-align: center;
@@ -135,11 +132,11 @@ body {
 	float: left;
 }
 .menu-tag {
-  opacity: var(--alpha-idle);
-  color: var(--color-menu);
   padding-bottom: calc(var(--size-menu-tag-sepv) / 2);
   padding-top: calc(var(--size-menu-tag-sepv) / 2);
   font-size: var(--size-font-body);
+  opacity: var(--alpha-idle);
+  color: var(--color-menu);
   width: 100%;
   float: left;
   clear: left;
@@ -157,8 +154,8 @@ body {
   opacity: var(--alpha-ascent);
 }
 .menu-tag:hover .menu-taglabel {
-  color: var(--color-menubg);
   background-color: var(--color-itemascent);
+  color: var(--color-menubg);
 }
 .menu-tag:hover .menu-tagcount {
   color: var(--color-itemascent);
@@ -181,14 +178,14 @@ body {
   clear: both;
 }
 .grid-item, .grid-itemwide {
+  padding-bottom: var(--size-grid-gutter);
 	border-radius: var(--size-item-corner);
+  margin-bottom: var(--size-grid-gutter);
   background: var(--color-itembg);
-	margin-bottom: var(--size-grid-gutter);
 	width: var(--size-grid-column);
   text-decoration: none; 
-	float: left;
-  padding-bottom: var(--size-grid-gutter);
   position: relative;
+	float: left;
 }
 .grid-item:hover, .grid-itemwide:hover {
   opacity: var(--alpha-ascent);
@@ -199,86 +196,81 @@ body {
 	}
 }
 
-
-
-
-
-
-
-.grid-item-upper-content {
+.grid-item:hover { 
+  background: var(--color-itembg);
+  opacity: 1;
+}
+.grid-itemupper {
   padding: var(--size-grid-gutter) var(--size-grid-gutter) 0 var(--size-grid-gutter);
   display: inline-block;
   z-index: 100;
   width: 100%;
 }
-.grid-item-image .grid-item-upper-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-}
-.grid-item-lower-content {
+.grid-itemlower {
   padding: 0 var(--size-grid-gutter) 0 var(--size-grid-gutter);
   z-index: 100;
 }
-.grid-item-image .grid-item-lower-content {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding-bottom: var(--size-grid-gutter);
-}
-.grid-item-lower-content:empty {
+.grid-itemlower:empty {
   display: none;
 }
 .grid-item-image {
+  background: transparent;
   padding-bottom: 0;
   overflow: hidden;
-  background: transparent;
 }
-.grid-item img {
+.grid-item-image .grid-itemupper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.grid-item-image .grid-itemlower {
+  padding-bottom: var(--size-grid-gutter);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+.grid-item-imageimg {
   border-radius: var(--size-item-corner);
   vertical-align: middle; /* vertical-align css hack removes bottom padding */
-  object-fit: cover;
-  margin-bottom: 0px;
-  width: 100%;
   max-height: 1000px;
+  margin-bottom: 0px;
+  object-fit: cover;
+  width: 100%;
   z-index: 0;
 }
-
-.grid-item:hover { 
-	/*box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .1);*/
-  /*mix-blend-mode: multiply;*/
-  background: var(--color-itembg);
-  opacity: 1;
-}
 .image-overlay { 
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 10;
   background-color: var(--color-imagedarken);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
   opacity: 0;
 }
 .grid-item-image:hover .image-overlay { 
   opacity: var(--alpha-darken);
 }
 
+
+
+
+/*TODO: refactor below; */
+
+
 /* LINK */
-.grid-item .link {
+.grid-itemlink {
   width: calc(100% - var(--size-font-bodytypes)*2);
   float: left;
   clear: both;
-}
-.grid-item .link { 
   text-decoration: none;
   display: inline-block;
 }
-.grid-item-image .link {
+.grid-item-image .grid-itemlink {
   display: none;
 }
-.grid-item-image:hover .link {
+.grid-item-image:hover .grid-itemlink {
   display: initial;
   text-shadow: 0 0 3em #000;
 }
@@ -301,26 +293,29 @@ body {
   text-shadow: 0 0 3em #000;
   color: white;
 }
-.grid-item .link .link-line { 
+.grid-itemlink .link-line { 
   margin-top: var(--size-item-elem-padding);
   float: left;
   clear: both;
 }
-.grid-item .link i { 
+.grid-itemlinkicon { 
   float: left;
+  opacity: var(--alpha-idle);
 }
-.grid-item .link .link-title { 
+.grid-itemlink .link-title { 
   color: var(--color-item);
   font-size: var(--size-font-body);
   float: left;
 }
-.grid-item:hover .link .link-title { 
-  color: var(--color-item);
-}
-.grid-item .link:hover .link-title { 
+.grid-itemlink:hover .link-title { 
   background-color: var(--color-itemascent);
   color: var(--color-itembg);
 }
+
+
+
+
+
 
 /* TYPE */
 .grid-item .type {
@@ -336,15 +331,15 @@ body {
   right: 0px;
   top: 0px;
 }
-.grid-item-image .grid-item-upper-content a .type i {
+.grid-item-image .grid-itemupper a .type i {
   display: none;
 }
-.grid-item-image:hover .grid-item-upper-content a .type i  {
+.grid-item-image:hover .grid-itemupper a .type i  {
   display: initial;
   color: var(--color-image);
   opacity: var(--alpha-enabled);
 }
-.grid-item-image:hover .grid-item-upper-content a:hover .type i {
+.grid-item-image:hover .grid-itemupper a:hover .type i {
   display: initial;
   color: var(--color-image);
 }
@@ -398,20 +393,20 @@ body {
 /*.grid-item:hover .tags:hover {
   opacity: var(--alpha-ascent);
 }*/
-.grid-item-image .grid-item-lower-content .link, 
-.grid-item-image .grid-item-lower-content .note, 
-.grid-item-image .grid-item-lower-content .quote, 
-.grid-item-image .grid-item-lower-content .term, 
-.grid-item-image .grid-item-lower-content .tags,
-.grid-item-image .grid-item-lower-content .auth,
-.grid-item-image .grid-item-lower-content .prog {
+.grid-item-image .grid-itemlower .link, 
+.grid-item-image .grid-itemlower .note, 
+.grid-item-image .grid-itemlower .quote, 
+.grid-item-image .grid-itemlower .term, 
+.grid-item-image .grid-itemlower .tags,
+.grid-item-image .grid-itemlower .auth,
+.grid-item-image .grid-itemlower .prog {
   color: var(--color-image); 
 }
 
-.grid-item-image .grid-item-lower-content {
+.grid-item-image .grid-itemlower {
   display: none;
 }
-.grid-item-image:hover .grid-item-lower-content {
+.grid-item-image:hover .grid-itemlower {
   display: initial;
 }
 .tags a {
