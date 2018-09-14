@@ -50,6 +50,7 @@ function View()
 
   this.display = function(db)
   {
+    console.log('display ' + db)
 
     if (window.showAdd != undefined && window.showAdd)
     {

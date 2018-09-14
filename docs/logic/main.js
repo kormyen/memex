@@ -4,13 +4,17 @@ function Main()
   this.view = null;
   this.add = null;
   this.write = null;
-  this.queryPrev = '';
   this.queryCur = '';
+  this.queryPrev = '';
+  this.queryPrevAdd = '';
+  this.theme = new Theme();
   var parent = this;
   const FILELOCATION = 'content/data.ndtl';
 
   this.install = function()
   {
+    this.theme.install();
+
     var oReq = new XMLHttpRequest();
     oReq.open('GET', FILELOCATION);
     oReq.overrideMimeType("text/plain");
@@ -29,11 +33,11 @@ function Main()
     {
       this.add = new Add();
       this.add.install();
-      var escape = document.getElementById("escape");
-      escape.onclick = function()
-      {
-        main.load(main.queryPrev);
-      }
+      // var escape = document.getElementById("escape");
+      // escape.onclick = function()
+      // {
+      //   main.add.close();
+      // }
     }
 
     this.start();
@@ -41,12 +45,15 @@ function Main()
 
   this.start = function()
   {
+    this.theme.start();
     this.load(window.document.location.hash);
     this.view.stats(this.db.stats());
   }
 
   this.load = function(target)
   {
+    console.log('main.load: ' + target)
+
     document.activeElement.blur();
     if (this.queryCur != 'add')
     {

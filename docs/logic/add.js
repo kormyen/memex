@@ -89,6 +89,12 @@ if (window.showAdd != undefined && window.showAdd)
 
       this.overlay.innerHTML += content;
 
+      document.getElementById("escape").onclick = function()
+      {
+        console.log('escape onclick');
+        main.add.close();
+      }
+
       this.display = document.getElementById("display");
 
       document.getElementById("enter").addEventListener('click', 
@@ -228,6 +234,8 @@ if (window.showAdd != undefined && window.showAdd)
 
     this.show = function()
     {
+      console.log('add.show');
+
       this.setOverlay(true);
 
       var date = new Date();
@@ -244,18 +252,29 @@ if (window.showAdd != undefined && window.showAdd)
       }, 100);
     }
 
+    this.close = function()
+    {
+      console.log('close. prev: ' + main.queryPrev);
+      main.load(main.queryPrev);
+      this.grid.style.display = "block";
+      this.setOverlay(false);
+    }
+
     this.setOverlay = function(value)
     {
+      console.log('add.setOverlay ' + value);
+
       if (value && !this.enabledOverlay)
       {
         overlay.style.opacity = '1';
         overlay.style.zIndex  = '1000';
         this.enabledOverlay = true;
-        setTimeout(function()
-        {
-          this.grid.innerHTML = '';
-          this.grid.style.height = 0;
-        }, 200);
+        // setTimeout(function()
+        // {
+        //   this.grid.innerHTML = '';
+        //   this.grid.style.height = 0;
+        // }, 200);
+        this.grid.style.display = "none";
       }
       else if (!value && this.enabledOverlay)
       {
@@ -269,12 +288,16 @@ if (window.showAdd != undefined && window.showAdd)
     }
   }
 
-  String.prototype.toProperCase = function () {
+  String.prototype.toProperCase = function ()
+  {
       return this.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
   };
 
   document.onkeydown = function(evt) 
   {
+    console.log('onkeydown');
+    console.log(evt);
+
     evt = evt || window.event;
     if (!evt.ctrlKey)
     {
@@ -295,7 +318,8 @@ if (window.showAdd != undefined && window.showAdd)
       {
         if (main.queryCur == 'add')
         {
-          main.load(main.queryPrev);
+          console.log('did it');
+          this.close();
         }
       }
       else if (isA && main.queryCur != 'add')
