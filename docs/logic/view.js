@@ -89,13 +89,13 @@ function View()
     {
       if (typeof value.WIDE !== 'undefined' && value.WIDE)
       {
-        itemClass += " grid-item--width2";
+        itemClass += " grid-itemwide";
       }
       else if (typeof value.QOTE !== 'undefined')
       {
         if (Array.isArray(value.QOTE) && value.QOTE.length > 4)
         {
-          itemClass += " grid-item--width2";
+          itemClass += " grid-itemwide";
         } 
       }
     }
@@ -323,194 +323,162 @@ function View()
     if (window.showAdd != undefined && window.showAdd)
     {
       // ADD
-      menuContent += `<a href='#add'>`;
-      menuContent += `<div class="menu-item"><b>a</b>dd</div>`;
+      menuContent += `<div class="menu-itemgroup">`;
+      menuContent += `<a href='#add' class="menu-item">`;
+      menuContent += `<b>a</b>dd`;
       menuContent += `</a>`;
-
-      menuContent += `<div class="menu-spacer"></div>`;
+      menuContent += `</div>`;
     }
 
     // TOTAL
-    menuContent += `<a href='#'>`;
-    menuContent += `<div class="menu-item">`;
-    menuContent += `<div class="count">${value.total}</div>`;
-    menuContent += `<i class="fas fa-asterisk"></i>`;
-    menuContent += `</div>`;
+    menuContent += `<div class="menu-itemgroup">`;
+    menuContent += `<a href='#' class="menu-item">`;
+    menuContent += `<div class="menu-itemcount">${value.total}</div>`;
+    menuContent += `<i class="menu-itemicon fas fa-asterisk"></i>`;
     menuContent += `</a>`;
+    menuContent += `</div>`;
 
     // DONE
-    menuContent += `<div class="menu-spacer"></div>`;
+    menuContent += `<div class="menu-itemgroup">`;
 
-    menuContent += `<a href='#done-true'>`;
-    menuContent += `<div class="menu-item">`;
-    menuContent += `<div class="count">${value.done}</div>`;
-    menuContent += `<i class="fas fa-check"></i>`;
-    menuContent += `</div>`;
+    menuContent += `<a href='#done-true' class="menu-item">`;
+    menuContent += `<div class="menu-itemcount">${value.done}</div>`;
+    menuContent += `<i class="menu-itemicon fas fa-check"></i>`;
     menuContent += `</a>`;
 
-    menuContent += `<a href='#done-false'>`;
-    menuContent += `<div class="menu-item">`;
-    menuContent += `<div class="count">${value.total - value.done}</div>`;
-    menuContent += `<i class="fas fa-times"></i>`;
-    menuContent += `</div>`;
+    menuContent += `<a href='#done-false' class="menu-item">`;
+    menuContent += `<div class="menu-itemcount">${value.total - value.done}</div>`;
+    menuContent += `<i class="menu-itemicon fas fa-times"></i>`;
     menuContent += `</a>`;
 
-    menuContent += `<div class="menu-spacer"></div>`;
-
+    menuContent += `</div>`;
+    menuContent += `<div class="menu-itemgroup">`;
     for (var ty = 0; ty < Math.min(value.types.length, SETTINGS.STATSNUMTYPE); ty++) 
     {
       if (value.types[ty][0] == 'article')
       {
-        menuContent += `<a href='#type-article'>`;
-        menuContent += `<div class="menu-item">`;
-        menuContent += `<div class="count">${value.types[ty][1]}</div>`;
-        menuContent += `<i class="far fa-newspaper"></i>`;
-        menuContent += `</div>`;
+        menuContent += `<a href='#type-article' class="menu-item">`;
+        menuContent += `<div class="menu-itemcount">${value.types[ty][1]}</div>`;
+        menuContent += `<i class="menu-itemicon far fa-newspaper"></i>`;
         menuContent += `</a>`;
       }
       else if (value.types[ty][0] == 'podcast')
       {
-        menuContent += `<a href='#type-podcast'>`;
-        menuContent += `<div class="menu-item">`;
-        menuContent += `<div class="count">${value.types[ty][1]}</div>`;
-        menuContent += `<i class="fas fa-podcast"></i>`;
-        menuContent += `</div>`;
+        menuContent += `<a href='#type-podcast' class="menu-item">`;
+        menuContent += `<div class="menu-itemcount">${value.types[ty][1]}</div>`;
+        menuContent += `<i class="menu-itemicon fas fa-podcast"></i>`;
         menuContent += `</a>`;
       }
       else if (value.types[ty][0] == 'video')
       {
-        menuContent += `<a href='#type-video'>`;
-        menuContent += `<div class="menu-item">`;
-        menuContent += `<div class="count">${value.types[ty][1]}</div>`;
-        menuContent += `<i class="fas fa-tv"></i>`;
-        menuContent += `</div>`;
+        menuContent += `<a href='#type-video' class="menu-item">`;
+        menuContent += `<div class="menu-itemcount">${value.types[ty][1]}</div>`;
+        menuContent += `<i class="menu-itemicon fas fa-tv"></i>`;
         menuContent += `</a>`;
       }
       else if (value.types[ty][0] == 'list')
       {
-        menuContent += `<a href='#type-list'>`;
-        menuContent += `<div class="menu-item">`;
-        menuContent += `<div class="count">${value.types[ty][1]}</div>`;
-        menuContent += `<i class="fas fa-file-alt"></i>`;
-        menuContent += `</div>`;
+        menuContent += `<a href='#type-list' class="menu-item">`;
+        menuContent += `<div class="menu-itemcount">${value.types[ty][1]}</div>`;
+        menuContent += `<i class="menu-itemicon fas fa-file-alt"></i>`;
         menuContent += `</a>`;
       }
       else if (value.types[ty][0] == 'book')
       {
-        menuContent += `<a href='#type-book'>`;
-        menuContent += `<div class="menu-item">`;
-        menuContent += `<div class="count">${value.types[ty][1]}</div>`;
-        menuContent += `<i class="fas fa-book-open"></i>`;
-        menuContent += `</div>`;
+        menuContent += `<a href='#type-book' class="menu-item">`;
+        menuContent += `<div class="menu-itemcount">${value.types[ty][1]}</div>`;
+        menuContent += `<i class="menu-itemicon fas fa-book-open"></i>`;
         menuContent += `</a>`;
       }
       else if (value.types[ty][0] == 'game')
       {
-        menuContent += `<a href='#type-game'>`;
-        menuContent += `<div class="menu-item">`;
-        menuContent += `<div class="count">${value.types[ty][1]}</div>`;
-        menuContent += `<i class="fas fa-gamepad"></i>`;
-        menuContent += `</div>`;
+        menuContent += `<a href='#type-game' class="menu-item">`;
+        menuContent += `<div class="menu-itemcount">${value.types[ty][1]}</div>`;
+        menuContent += `<i class="menu-itemicon fas fa-gamepad"></i>`;
         menuContent += `</a>`;
       }
       else if (value.types[ty][0] == 'service')
       {
-        menuContent += `<a href='#type-service'>`;
-        menuContent += `<div class="menu-item">`;
-        menuContent += `<div class="count">${value.types[ty][1]}</div>`;
-        menuContent += `<i class="fas fa-server"></i>`;
-        menuContent += `</div>`;
+        menuContent += `<a href='#type-service' class="menu-item">`;
+        menuContent += `<div class="menu-itemcount">${value.types[ty][1]}</div>`;
+        menuContent += `<i class="menu-itemicon fas fa-server"></i>`;
         menuContent += `</a>`;
       }
       else if (value.types[ty][0] == 'lecture')
       {
-        menuContent += `<a href='#type-lecture'>`;
-        menuContent += `<div class="menu-item">`;
-        menuContent += `<div class="count">${value.types[ty][1]}</div>`;
-        menuContent += `<i class="fas fa-chalkboard-teacher"></i>`;
-        menuContent += `</div>`;
+        menuContent += `<a href='#type-lecture' class="menu-item">`;
+        menuContent += `<div class="menu-itemcount">${value.types[ty][1]}</div>`;
+        menuContent += `<i class="menu-itemicon fas fa-chalkboard-teacher"></i>`;
         menuContent += `</a>`;
       }
       else if (value.types[ty][0] == 'quote')
       {
-        menuContent += `<a href='#type-quote'>`;
-        menuContent += `<div class="menu-item">`;
-        menuContent += `<div class="count">${value.types[ty][1]}</div>`;
-        menuContent += `<i class="fas fa-comment"></i>`;
-        menuContent += `</div>`;
+        menuContent += `<a href='#type-quote' class="menu-item">`;
+        menuContent += `<div class="menu-itemcount">${value.types[ty][1]}</div>`;
+        menuContent += `<i class="menu-itemicon fas fa-comment"></i>`;
         menuContent += `</a>`;
       }
       else if (value.types[ty][0] == 'tool')
       {
-        menuContent += `<a href='#type-tool'>`;
-        menuContent += `<div class="menu-item">`;
-        menuContent += `<div class="count">${value.types[ty][1]}</div>`;
-        menuContent += `<i class="fas fa-wrench"></i>`;
-        menuContent += `</div>`;
+        menuContent += `<a href='#type-tool' class="menu-item">`;
+        menuContent += `<div class="menu-itemcount">${value.types[ty][1]}</div>`;
+        menuContent += `<i class="menu-itemicon fas fa-wrench"></i>`;
         menuContent += `</a>`;
       }
       else if (value.types[ty][0] == 'music')
       {
-        menuContent += `<a href='#type-music'>`;
-        menuContent += `<div class="menu-item">`;
-        menuContent += `<div class="count">${value.types[ty][1]}</div>`;
-        menuContent += `<i class="fas fa-music"></i>`;
-        menuContent += `</div>`;
+        menuContent += `<a href='#type-music' class="menu-item">`;
+        menuContent += `<div class="menu-itemcount">${value.types[ty][1]}</div>`;
+        menuContent += `<i class="menu-itemicon fas fa-music"></i>`;
         menuContent += `</a>`;
       }
       else if (value.types[ty][0] == 'image')
       {
-        menuContent += `<a href='#type-image'>`;
-        menuContent += `<div class="menu-item">`;
-        menuContent += `<div class="count">${value.types[ty][1]}</div>`;
-        menuContent += `<i class="fas fa-image"></i>`;
-        menuContent += `</div>`;
+        menuContent += `<a href='#type-image' class="menu-item">`;
+        menuContent += `<div class="menu-itemcount">${value.types[ty][1]}</div>`;
+        menuContent += `<i class="menu-itemicon fas fa-image"></i>`;
         menuContent += `</a>`;
       }
       else if (value.types[ty][0] == 'encyclopedia')
       {
-        menuContent += `<a href='#type-encyclopedia'>`;
-        menuContent += `<div class="menu-item">`;
-        menuContent += `<div class="count">${value.types[ty][1]}</div>`;
-        menuContent += `<i class="fas fa-globe"></i>`;
-        menuContent += `</div>`;
+        menuContent += `<a href='#type-encyclopedia' class="menu-item">`;
+        menuContent += `<div class="menu-itemcount">${value.types[ty][1]}</div>`;
+        menuContent += `<i class="menu-itemicon fas fa-globe"></i>`;
         menuContent += `</a>`;
       }
     }
-
-    menuContent += `<div class="menu-spacer"></div>`;
-
+    menuContent += `</div>`;
+    
     // TERM
+    menuContent += `<div class="menu-itemgroup">`;
     if (value.terms > 0)
     {
       // menuContent += `<div class="menu-item-space"></div>`;
-      menuContent += `<a href='#term'>`;
-      menuContent += `<div class="menu-item">`;
-      menuContent += `<div class="count">${value.terms}</div>`;
-      menuContent += `<i class="fas fa-ribbon"></i>`;
-      menuContent += `</div>`;
+      menuContent += `<a href='#term' class="menu-item">`;
+      menuContent += `<div class="menu-itemcount">${value.terms}</div>`;
+      menuContent += `<i class="menu-itemicon fas fa-ribbon"></i>`;
       menuContent += `</a>`;
     }
 
-    menuContent += `<div class="menu-spacer"></div>`;
+    menuContent += `</div>`;
 
     // TAGS
+    menuContent += `<div class="menu-itemgroup">`;
     if (value.tags.length > 0)
     {
-      menuContent += `<div class="menu-tag-container">`;
-      menuContent += `<i class="fas fa-tag"></i>`;
+      menuContent += `<div class="menu-tagcontainer">`;
+      menuContent += `<i class="menu-tagicon fas fa-tag"></i>`;
       for (var t = 0; t < Math.min(value.types.length, SETTINGS.STATSNUMTAGS); t++) 
       {
-        menuContent += `<a href='#tag-${value.tags[t][0]}'>`;
-        menuContent += `<div class="menu-tag">`;
+        menuContent += `<a class="menu-tag" href='#tag-${value.tags[t][0]}'>`;
         // menuContent += `<i class="fas fa-tag textIcon"></i>`;
-        menuContent += `<div class="menu-tag-count">${value.tags[t][1]}</div>`;
-        menuContent += `<div class="menu-tag-label">${value.tags[t][0]}</div>`;
-        menuContent += `</div>`;
+        menuContent += `<div class="menu-tagcount">${value.tags[t][1]}</div>`;
+        menuContent += `<div class="menu-taglabel">${value.tags[t][0]}</div>`;
         menuContent += `</a>`;
       }
       menuContent += `</div>`;
     }
+    menuContent += `</div>`;
 
     this.menu.innerHTML = ``;
     this.menu.innerHTML += menuContent;
