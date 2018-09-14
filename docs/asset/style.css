@@ -1,13 +1,13 @@
 :root {
   --color-bg: var(--background);
 
-  --color-menu: var(--f_high);        /*previously --b_med*/
+  --color-menu: var(--f_high);
   --color-menubg: var(--b_low);
-  --color-menuascent: var(--b_inv);
+  --color-menuascent: var(--f_med);
 
   --color-item: var(--f_high);
   --color-itembg: var(--b_low);
-  --color-itemascent: var(--b_inv);
+  --color-itemascent: var(--f_med);
 
   --color-image: #fff;                /*Text overlaying an image item*/
   --color-imagedarken: #000;          /*Overlay on image as text background */

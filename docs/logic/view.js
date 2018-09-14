@@ -104,7 +104,7 @@ function View()
     {
       if (typeof value.TYPE !== 'undefined' && value.TYPE == 'image')
       {
-        itemClass += " grid-item-image";
+        itemClass += " grid-itemimage";
       }
     }
 
@@ -127,14 +127,14 @@ function View()
       // LINK START
       if (SETTINGS.SHOWLINK)
       {
-        entry += `<a href="${String(value.LINK)}" id="${idUrl}" class="link">`;
+        entry += `<a href="${String(value.LINK)}" id="${idUrl}" class="grid-itemlink">`;
       }
     }
 
     // UPPER CONTENT START
     if (SETTINGS.SHOWUPPER)
     {
-      entry += `<div class="grid-item-upper-content">`;
+      entry += `<div class="grid-itemupper">`;
 
       // TITLE
       if (SETTINGS.SHOWTITLE)
@@ -147,7 +147,7 @@ function View()
       {
         if (typeof value.LINK !== 'undefined')
         {
-          entry += `<div class="link-line"><i class="fas fa-link textIcon"></i><div class="link-title">${this.extractRootDomain(value.LINK)}</div></div></a>`;
+          entry += `<div class="link-line"><i class="grid-itemlinkicon fas fa-link textIcon"></i><div class="link-title">${this.extractRootDomain(value.LINK)}</div></div></a>`;
         }
       }
 
@@ -224,7 +224,7 @@ function View()
     // LOWER CONTENT START
     if (SETTINGS.SHOWLOWER)
     {
-      entry += `<div class="grid-item-lower-content">`;
+      entry += `<div class="grid-itemlower">`;
 
       // AUTHOR
       if (SETTINGS.SHOWAUTH)
@@ -305,7 +305,7 @@ function View()
           {
             entry += `<div class="image-overlay"></div>`;
           }
-          entry += `<img src="content/media/${value.FILE}">`;
+          entry += `<grid-item-imageimg src="content/media/${value.FILE}">`;
           entry += `</div>`;
         }
       }
@@ -448,7 +448,7 @@ function View()
       }
     }
     menuContent += `</div>`;
-    
+
     // TERM
     menuContent += `<div class="menu-itemgroup">`;
     if (value.terms > 0)
