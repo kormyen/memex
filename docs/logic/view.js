@@ -147,7 +147,7 @@ function View()
       {
         if (typeof value.LINK !== 'undefined')
         {
-          entry += `<div class="link-line"><i class="grid-itemlinkicon fas fa-link textIcon"></i><div class="link-title">${this.extractRootDomain(value.LINK)}</div></div></a>`;
+          entry += `<div class="link-line"><i class="grid-itemlinkicon fas fa-link"></i><div class="link-title">${this.extractRootDomain(value.LINK)}</div></div></a>`;
         }
       }
 
@@ -305,7 +305,7 @@ function View()
           {
             entry += `<div class="image-overlay"></div>`;
           }
-          entry += `<grid-item-imageimg src="content/media/${value.FILE}">`;
+          entry += `<img src="content/media/${value.FILE}">`;
           entry += `</div>`;
         }
       }

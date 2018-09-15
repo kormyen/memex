@@ -213,31 +213,54 @@ body {
 .grid-itemlower:empty {
   display: none;
 }
-.grid-item-image {
+.grid-itemimage {
   background: transparent;
   padding-bottom: 0;
   overflow: hidden;
 }
-.grid-item-image .grid-itemupper {
+.grid-itemimage .grid-itemupper {
   position: absolute;
   height: 100%;
   width: 100%;
   left: 0;
+  z-index: 300;
   top: 0;
 }
-.grid-item-image .grid-itemlower {
+.grid-itemimage .grid-itemlower {
   padding-bottom: var(--size-grid-gutter);
   position: absolute;
   width: 100%;
   bottom: 0;
+  z-index: 300;
   left: 0;
 }
-.grid-item-imageimg {
+/*.grid-itemimageimg {*/
+  /*border-radius: var(--size-item-corner);*/
+  /*vertical-align: middle;  vertical-align css hack removes bottom padding */
+  /*max-height: 1000px;*/
+  /*margin-bottom: 0px;*/
+  /*object-fit: cover;*/
+  /*width: 100%;*/
+  /*z-index: 0;*/
+  /*z-index: -10;*/
+/*}*/
+.grid-item .image {
   border-radius: var(--size-item-corner);
   vertical-align: middle; /* vertical-align css hack removes bottom padding */
-  max-height: 1000px;
-  margin-bottom: 0px;
   object-fit: cover;
+  margin-bottom: 0px;
+  width: 100%;
+  max-height: 1000px;
+  position: relative;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+.grid-item img {
+  /*border-radius: var(--size-item-corner);*/
+  vertical-align: middle; /* vertical-align css hack removes bottom padding */
+  object-fit: cover;
+  height: 100%;
   width: 100%;
   z-index: 0;
 }
@@ -246,10 +269,12 @@ body {
   position: absolute;
   height: 100%;
   width: 100%;
-  z-index: 10;
+  z-index: 150;
   opacity: 0;
+  /*display: none;*/
+  /*opacity: 0.6;*/
 }
-.grid-item-image:hover .image-overlay { 
+.grid-itemimage:hover .image-overlay { 
   opacity: var(--alpha-darken);
 }
 
@@ -267,10 +292,10 @@ body {
   text-decoration: none;
   display: inline-block;
 }
-.grid-item-image .grid-itemlink {
+.grid-itemimage .grid-itemlink {
   display: none;
 }
-.grid-item-image:hover .grid-itemlink {
+.grid-itemimage:hover .grid-itemlink {
   display: initial;
   text-shadow: 0 0 3em #000;
 }
@@ -285,10 +310,10 @@ body {
 .grid-item:hover .title {
   opacity: var(--alpha-ascent);
 }
-.grid-item-image .title {
+.grid-itemimage .title {
   display: none;
 }
-.grid-item-image:hover .title {
+.grid-itemimage:hover .title {
   display: initial;
   text-shadow: 0 0 3em #000;
   color: white;
@@ -299,8 +324,10 @@ body {
   clear: both;
 }
 .grid-itemlinkicon { 
-  float: left;
+  margin-right: var(--size-item-elem-sep);
   opacity: var(--alpha-idle);
+  color: var(--color-item);
+  float: left;
 }
 .grid-itemlink .link-title { 
   color: var(--color-item);
@@ -331,15 +358,15 @@ body {
   right: 0px;
   top: 0px;
 }
-.grid-item-image .grid-itemupper a .type i {
+.grid-itemimage .grid-itemupper a .type i {
   display: none;
 }
-.grid-item-image:hover .grid-itemupper a .type i  {
+.grid-itemimage:hover .grid-itemupper a .type i  {
   display: initial;
   color: var(--color-image);
   opacity: var(--alpha-enabled);
 }
-.grid-item-image:hover .grid-itemupper a:hover .type i {
+.grid-itemimage:hover .grid-itemupper a:hover .type i {
   display: initial;
   color: var(--color-image);
 }
@@ -393,20 +420,20 @@ body {
 /*.grid-item:hover .tags:hover {
   opacity: var(--alpha-ascent);
 }*/
-.grid-item-image .grid-itemlower .link, 
-.grid-item-image .grid-itemlower .note, 
-.grid-item-image .grid-itemlower .quote, 
-.grid-item-image .grid-itemlower .term, 
-.grid-item-image .grid-itemlower .tags,
-.grid-item-image .grid-itemlower .auth,
-.grid-item-image .grid-itemlower .prog {
+.grid-itemimage .grid-itemlower .link, 
+.grid-itemimage .grid-itemlower .note, 
+.grid-itemimage .grid-itemlower .quote, 
+.grid-itemimage .grid-itemlower .term, 
+.grid-itemimage .grid-itemlower .tags,
+.grid-itemimage .grid-itemlower .auth,
+.grid-itemimage .grid-itemlower .prog {
   color: var(--color-image); 
 }
 
-.grid-item-image .grid-itemlower {
+.grid-itemimage .grid-itemlower {
   display: none;
 }
-.grid-item-image:hover .grid-itemlower {
+.grid-itemimage:hover .grid-itemlower {
   display: initial;
 }
 .tags a {
@@ -420,17 +447,16 @@ body {
 	background-color: var(--color-itemascent);
 	color: var(--color-itembg);
 }
-.grid-item-image:hover .tags a {
+.grid-itemimage:hover .tags a {
   color: #fff; 
 }
-.grid-item-image:hover .tags a:hover {
+.grid-itemimage:hover .tags a:hover {
   color: #fff; 
 }
 
 /* SMALL ICONS */
 .textIcon {
   margin-right: var(--size-item-elem-sep); 
-  color: var(--color-item); 
 }
 .grid-item:hover .textIcon {
 	color: var(--color-item);
