@@ -126,7 +126,7 @@ function View()
       // LINK START
       if (SETTINGS.SHOWLINK)
       {
-        entry += `<a href="${String(value.LINK)}" id="${idUrl}" class="griditem-link">`;
+        entry += `<a class="griditem-link" href="${String(value.LINK)}" id="${idUrl}">`;
       }
     }
 
@@ -155,63 +155,61 @@ function View()
       {
         if (typeof value.TYPE !== 'undefined')
         {
-          entry += `<a href='#type-${String(value.TYPE)}'>`;
-          entry += `<div class="griditem-type">`;
+          entry += `<a class="griditem-type" href='#type-${String(value.TYPE)}'>`;
 
           if (value.TYPE == 'article')
           {
-            entry += `<i class="far fa-newspaper"></i>`;
+            entry += `<i class="griditem-typeicon far fa-newspaper"></i>`;
           }
           else if (value.TYPE == 'podcast')
           {
-            entry += `<i class="fas fa-podcast"></i>`;
+            entry += `<i class="griditem-typeicon fas fa-podcast"></i>`;
           }
           else if (value.TYPE == 'video')
           {
-            entry += `<i class="fas fa-tv"></i>`;
+            entry += `<i class="griditem-typeicon fas fa-tv"></i>`;
           }
           else if (value.TYPE == 'list')
           {
-            entry += `<i class="fas fa-file-alt"></i>`;
+            entry += `<i class="griditem-typeicon fas fa-file-alt"></i>`;
           }
           else if (value.TYPE == 'book')
           {
-            entry += `<i class="fas fa-book-open"></i>`;
+            entry += `<i class="griditem-typeicon fas fa-book-open"></i>`;
           }
           else if (value.TYPE == 'game')
           {
-            entry += `<i class="fas fa-gamepad"></i>`;
+            entry += `<i class="griditem-typeicon fas fa-gamepad"></i>`;
           }
           else if (value.TYPE == 'service')
           {
-            entry += `<i class="fas fa-server"></i>`;
+            entry += `<i class="griditem-typeicon fas fa-server"></i>`;
           }
           else if (value.TYPE == 'lecture')
           {
-            entry += `<i class="fas fa-chalkboard-teacher"></i>`;
+            entry += `<i class="griditem-typeicon fas fa-chalkboard-teacher"></i>`;
           }
           else if (value.TYPE == 'quote')
           {
-            entry += `<i class="fas fa-comment"></i>`;
+            entry += `<i class="griditem-typeicon fas fa-comment"></i>`;
           }
           else if (value.TYPE == 'tool')
           {
-            entry += `<i class="fas fa-wrench"></i>`;
+            entry += `<i class="griditem-typeicon fas fa-wrench"></i>`;
           }
           else if (value.TYPE == 'music')
           {
-            entry += `<i class="fas fa-music"></i>`;
+            entry += `<i class="griditem-typeicon fas fa-music"></i>`;
           }
           else if (value.TYPE == 'image')
           {
-            entry += `<i class="fas fa-image"></i>`;
+            entry += `<i class="griditem-typeicon fas fa-image"></i>`;
           }
           else if (value.TYPE == 'encyclopedia')
           {
-            entry += `<i class="fas fa-globe"></i>`;
+            entry += `<i class="griditem-typeicon fas fa-globe"></i>`;
           }
            
-          entry += `</div>`;
           entry += `</a>`;
         }
       }
@@ -230,7 +228,7 @@ function View()
       {
         if (typeof value.AUTH !== 'undefined')
         {
-          entry += `<div class="auth"><i class="fas fa-user textIcon"></i>${value.AUTH}</div>`;
+          entry += `<div class="griditem-auth"><i class="fas fa-user textIcon"></i>${value.AUTH}</div>`;
         }
       }
 
@@ -239,7 +237,7 @@ function View()
       {
         if (typeof value.TAGS !== 'undefined')
         {
-          entry += `<div class="tags"><i class="fas fa-tag textIcon"></i>`;
+          entry += `<div class="griditem-tags"><i class="fas fa-tag textIcon"></i>`;
           for (var i = 0; i < value.TAGS.length; i++)
           {
             entry += `<a href="#tag-${value.TAGS[i]}">${value.TAGS[i]}</a>`;
@@ -257,7 +255,7 @@ function View()
       {
         if (typeof value.NOTE !== 'undefined')
         {
-          entry += this.buildArrayElement(value.NOTE, "note", "fas fa-sticky-note textIcon");
+          entry += this.buildArrayElement(value.NOTE, "griditem-note", "fas fa-sticky-note textIcon");
         }
       }
 
@@ -266,7 +264,7 @@ function View()
       {
         if (typeof value.QOTE !== 'undefined')
         {
-          entry += this.buildArrayElement(value.QOTE, "quote", "fas fa-comment textIcon");
+          entry += this.buildArrayElement(value.QOTE, "griditem-quote", "fas fa-comment textIcon");
         }
       }
 
@@ -275,7 +273,7 @@ function View()
       {
         if (typeof value.TERM !== 'undefined')
         {
-          entry += this.buildArrayElement(value.TERM, "term", "fas fa-ribbon textIcon");
+          entry += this.buildArrayElement(value.TERM, "griditem-term", "fas fa-ribbon textIcon");
         }
       }
 
@@ -284,7 +282,7 @@ function View()
       {
         if (typeof value.PROG !== 'undefined')
         {
-          entry += `<div class="prog"><i class="fas fa-clock textIcon"></i>${value.PROG}</div>`;
+          entry += `<div class="griditem-prog"><i class="fas fa-clock textIcon"></i>${value.PROG}</div>`;
         }
       }
 

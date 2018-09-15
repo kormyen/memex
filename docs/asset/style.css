@@ -63,6 +63,9 @@ body {
 	padding: 0em;
 	margin: 0; 
 }
+::selection {
+    background: var(--color-bg);
+}
 
 /*MENU*/
 .menu {
@@ -203,6 +206,9 @@ body {
   background: var(--color-itembg);
   opacity: 1;
 }
+.griditem::selection {
+    background: var(--b_high);
+}
 .griditem-containerupper {
   padding: var(--size-grid-gutter) var(--size-grid-gutter) 0 var(--size-grid-gutter);
   display: inline-block;
@@ -334,10 +340,10 @@ body {
   right: 0px;
   top: 0px;
 }
-.griditem-image .griditem-type i {
+.griditem-image .griditem-typeicon {
   display: none;
 }
-.griditem-image:hover .griditem-type i  {
+.griditem-image:hover .griditem-typeicon  {
   display: initial;
   color: var(--color-image);
   opacity: var(--alpha-enabled);
@@ -346,7 +352,7 @@ body {
   opacity: var(--alpha-enabled);
   color: var(--color-item);
 }
-.griditem:hover .griditem-type:hover {
+.griditem-type:hover i {
   opacity: var(--alpha-ascent);
   color: var(--color-itemascent);
 }
@@ -358,18 +364,50 @@ body {
 .griditem-linkicon {
   opacity: var(--alpha-idle);
 }
-.griditem:hover .griditem-linktitle {
+.griditem-linktitle {
   opacity: var(--alpha-enabled);
 }
-.griditem:hover a:hover .griditem-linktitle {
+.griditem-link:hover .griditem-linktitle {
   opacity: var(--alpha-ascent);
 }
-.griditem:hover .griditem-linkicon {
+.griditem-linkicon {
   opacity: var(--alpha-enabled);
 }
 
+/* NOTE, QUOTE, TERM, TAGS, AUTH, PROG */
+.griditem-note, .griditem-quote, .griditem-term, .griditem-tags, .griditem-auth, .griditem-prog {
+  opacity: var(--alpha-idle);
+  padding-top: var(--size-item-elem-padding);
+  color: var(--color-item); 
+  font-size: var(--size-font-body);
+  float: left;
+  clear: both;
+}
+.griditem:hover .griditem-note, 
+.griditem:hover .griditem-quote, 
+.griditem:hover .griditem-term, 
+.griditem:hover .griditem-tags,
+.griditem:hover .griditem-auth,
+.griditem:hover .griditem-prog {
+  opacity:; var(--alpha-enabled);
+  color: var(--color-item);
+}
+.griditem-image .griditem-containerlower .link, 
+.griditem-image .griditem-containerlower .griditem-note, 
+.griditem-image .griditem-containerlower .griditem-quote, 
+.griditem-image .griditem-containerlower .griditem-term, 
+.griditem-image .griditem-containerlower .griditem-tags,
+.griditem-image .griditem-containerlower .griditem-auth,
+.griditem-image .griditem-containerlower .griditem-prog {
+  color: var(--color-image); 
+}
 
-
+.griditem-image .griditem-containerlower {
+  display: none;
+}
+.griditem-image:hover .griditem-containerlower {
+  display: initial;
+}
 
 
 
@@ -385,55 +423,22 @@ body {
 /*TODO: refactor below; */
 
 
-/* NOTE, QUOTE, TERM, TAGS, AUTH, PROG */
-.note, .quote, .term, .tags, .auth, .prog {
-  opacity: var(--alpha-idle);
-	padding-top: var(--size-item-elem-padding);
-  color: var(--color-item); 
-	font-size: var(--size-font-body);
-  float: left;
-  clear: both;
-}
-.griditem:hover .note, 
-.griditem:hover .quote, 
-.griditem:hover .term, 
-.griditem:hover .tags,
-.griditem:hover .auth,
-.griditem:hover .prog {
-  opacity:; var(--alpha-enabled);
-	color: var(--color-item);
-}
-.griditem-image .griditem-containerlower .link, 
-.griditem-image .griditem-containerlower .note, 
-.griditem-image .griditem-containerlower .quote, 
-.griditem-image .griditem-containerlower .term, 
-.griditem-image .griditem-containerlower .tags,
-.griditem-image .griditem-containerlower .auth,
-.griditem-image .griditem-containerlower .prog {
-  color: var(--color-image); 
-}
 
-.griditem-image .griditem-containerlower {
-  display: none;
-}
-.griditem-image:hover .griditem-containerlower {
-  display: initial;
-}
-.tags a {
+.griditem-tags a {
 	color: var(--color-item); 
 	text-decoration:none; 
 }
-.griditem:hover .tags a {
+.griditem:hover .griditem-tags a {
 	color: var(--color-item); 
 }
-.griditem:hover .tags a:hover {
+.griditem:hover .griditem-tags a:hover {
 	background-color: var(--color-itemascent);
 	color: var(--color-itembg);
 }
-.griditem-image:hover .tags a {
+.griditem-image:hover .griditem-tags a {
   color: #fff; 
 }
-.griditem-image:hover .tags a:hover {
+.griditem-image:hover .griditem-tags a:hover {
   color: #fff; 
 }
 
