@@ -63,6 +63,8 @@ body {
 	padding: 0em;
 	margin: 0; 
 }
+
+/*MENU*/
 .menu {
 	padding-top: var(--size-grid-gutter);
   background: var(--color-bg);
@@ -177,7 +179,9 @@ body {
   content: '';
   clear: both;
 }
-.grid-item, .grid-itemwide {
+
+/*GRID ITEM*/
+.griditem, .griditem-wide {
   padding-bottom: var(--size-grid-gutter);
 	border-radius: var(--size-item-corner);
   margin-bottom: var(--size-grid-gutter);
@@ -187,38 +191,35 @@ body {
   position: relative;
 	float: left;
 }
-.grid-item:hover, .grid-itemwide:hover {
+.griditem:hover, .griditem-wide:hover {
   opacity: var(--alpha-ascent);
 }
 @media screen and (min-width: 886px) {
-	.grid-itemwide { 
+	.griditem-wide { 
 		width: calc(var(--size-grid-column) * 2 + var(--size-grid-gutter));
 	}
 }
-
-.grid-item:hover { 
+.griditem:hover { 
   background: var(--color-itembg);
   opacity: 1;
 }
-.grid-itemupper {
+.griditem-containerupper {
   padding: var(--size-grid-gutter) var(--size-grid-gutter) 0 var(--size-grid-gutter);
   display: inline-block;
   z-index: 100;
   width: 100%;
 }
-.grid-itemlower {
+
+.griditem-containerlower {
   padding: 0 var(--size-grid-gutter) 0 var(--size-grid-gutter);
   z-index: 100;
 }
-.grid-itemlower:empty {
+.griditem-containerlower:empty {
   display: none;
 }
-.grid-itemimage {
-  background: transparent;
-  padding-bottom: 0;
-  overflow: hidden;
-}
-.grid-itemimage .grid-itemupper {
+
+/*IMAGE*/
+.griditem-image .griditem-containerupper {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -226,7 +227,7 @@ body {
   z-index: 300;
   top: 0;
 }
-.grid-itemimage .grid-itemlower {
+.griditem-image .griditem-containerlower {
   padding-bottom: var(--size-grid-gutter);
   position: absolute;
   width: 100%;
@@ -234,18 +235,12 @@ body {
   z-index: 300;
   left: 0;
 }
-/*.grid-itemimageimg {*/
-  /*border-radius: var(--size-item-corner);*/
-  /*vertical-align: middle;  vertical-align css hack removes bottom padding */
-  /*max-height: 1000px;*/
-  /*margin-bottom: 0px;*/
-  /*object-fit: cover;*/
-  /*width: 100%;*/
-  /*z-index: 0;*/
-  /*z-index: -10;*/
-/*}*/
-.grid-item .image {
-  border-radius: var(--size-item-corner);
+.griditem-image {
+  background: transparent;
+  padding-bottom: 0;
+  overflow: hidden;
+}
+.griditem-image-img {
   vertical-align: middle; /* vertical-align css hack removes bottom padding */
   object-fit: cover;
   margin-bottom: 0px;
@@ -256,14 +251,6 @@ body {
   top: 0;
   left: 0;
 }
-.grid-item img {
-  /*border-radius: var(--size-item-corner);*/
-  vertical-align: middle; /* vertical-align css hack removes bottom padding */
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-  z-index: 0;
-}
 .image-overlay { 
   background-color: var(--color-imagedarken);
   position: absolute;
@@ -271,35 +258,20 @@ body {
   width: 100%;
   z-index: 150;
   opacity: 0;
-  /*display: none;*/
-  /*opacity: 0.6;*/
 }
-.grid-itemimage:hover .image-overlay { 
+.griditem-image:hover .image-overlay { 
   opacity: var(--alpha-darken);
 }
-
-
-
-
-/*TODO: refactor below; */
-
-
-/* LINK */
-.grid-itemlink {
-  width: calc(100% - var(--size-font-bodytypes)*2);
-  float: left;
-  clear: both;
-  text-decoration: none;
-  display: inline-block;
-}
-.grid-itemimage .grid-itemlink {
+.griditem-image .griditem-link {
   display: none;
 }
-.grid-itemimage:hover .grid-itemlink {
+.griditem-image:hover .griditem-link {
   display: initial;
   text-shadow: 0 0 3em #000;
 }
-.grid-item .title { 
+
+/*TITLE*/
+.griditem-title { 
   opacity: var(--alpha-enabled);
   color: var(--color-item);
   font-size: var(--size-font-title);
@@ -307,45 +279,49 @@ body {
   float: left;
   clear: both;
 }
-.grid-item:hover .title {
+.griditem:hover .griditem-title {
   opacity: var(--alpha-ascent);
 }
-.grid-itemimage .title {
+.griditem-image .griditem-title {
   display: none;
 }
-.grid-itemimage:hover .title {
+.griditem-image:hover .griditem-title {
   display: initial;
   text-shadow: 0 0 3em #000;
   color: white;
 }
-.grid-itemlink .link-line { 
+
+/*LINK*/
+.griditem-linkcontainer { 
   margin-top: var(--size-item-elem-padding);
   float: left;
   clear: both;
 }
-.grid-itemlinkicon { 
+.griditem-link {
+  width: calc(100% - var(--size-font-bodytypes) * 2);
+  float: left;
+  clear: both;
+  text-decoration: none;
+  display: inline-block;
+}
+.griditem-linkicon { 
   margin-right: var(--size-item-elem-sep);
   opacity: var(--alpha-idle);
   color: var(--color-item);
   float: left;
 }
-.grid-itemlink .link-title { 
+.griditem-link .griditem-linktitle { 
   color: var(--color-item);
   font-size: var(--size-font-body);
   float: left;
 }
-.grid-itemlink:hover .link-title { 
+.griditem-link:hover .griditem-linktitle { 
   background-color: var(--color-itemascent);
   color: var(--color-itembg);
 }
 
-
-
-
-
-
 /* TYPE */
-.grid-item .type {
+.griditem-type {
   opacity: var(--alpha-idle);
   width: calc(var(--size-font-bodytypes)*2 + var(--size-grid-gutter));
   color: var(--color-item);
@@ -358,45 +334,55 @@ body {
   right: 0px;
   top: 0px;
 }
-.grid-itemimage .grid-itemupper a .type i {
+.griditem-image .griditem-type i {
   display: none;
 }
-.grid-itemimage:hover .grid-itemupper a .type i  {
+.griditem-image:hover .griditem-type i  {
   display: initial;
   color: var(--color-image);
   opacity: var(--alpha-enabled);
 }
-.grid-itemimage:hover .grid-itemupper a:hover .type i {
-  display: initial;
-  color: var(--color-image);
-}
-.grid-item:hover .type {
+.griditem:hover .griditem-type {
   opacity: var(--alpha-enabled);
   color: var(--color-item);
 }
-.grid-item:hover .type:hover {
+.griditem:hover .griditem-type:hover {
   opacity: var(--alpha-ascent);
   color: var(--color-itemascent);
 }
 
-.grid-item .link-title {
+/*LINK*/
+.griditem-linktitle {
   opacity: var(--alpha-idle);
 }
-.grid-item .fas {
+.griditem-linkicon {
   opacity: var(--alpha-idle);
 }
-.grid-item:hover .link-title {
+.griditem:hover .griditem-linktitle {
   opacity: var(--alpha-enabled);
 }
-.grid-item:hover a:hover .link-title {
+.griditem:hover a:hover .griditem-linktitle {
   opacity: var(--alpha-ascent);
 }
-/*.grid-item:hover a:hover .fas {
-  opacity: var(--alpha-ascent);
-}*/
-.grid-item:hover .fas {
+.griditem:hover .griditem-linkicon {
   opacity: var(--alpha-enabled);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*TODO: refactor below; */
 
 
 /* NOTE, QUOTE, TERM, TAGS, AUTH, PROG */
@@ -408,49 +394,46 @@ body {
   float: left;
   clear: both;
 }
-.grid-item:hover .note, 
-.grid-item:hover .quote, 
-.grid-item:hover .term, 
-.grid-item:hover .tags,
-.grid-item:hover .auth,
-.grid-item:hover .prog {
-  opacity: var(--alpha-enabled);
+.griditem:hover .note, 
+.griditem:hover .quote, 
+.griditem:hover .term, 
+.griditem:hover .tags,
+.griditem:hover .auth,
+.griditem:hover .prog {
+  opacity:; var(--alpha-enabled);
 	color: var(--color-item);
 }
-/*.grid-item:hover .tags:hover {
-  opacity: var(--alpha-ascent);
-}*/
-.grid-itemimage .grid-itemlower .link, 
-.grid-itemimage .grid-itemlower .note, 
-.grid-itemimage .grid-itemlower .quote, 
-.grid-itemimage .grid-itemlower .term, 
-.grid-itemimage .grid-itemlower .tags,
-.grid-itemimage .grid-itemlower .auth,
-.grid-itemimage .grid-itemlower .prog {
+.griditem-image .griditem-containerlower .link, 
+.griditem-image .griditem-containerlower .note, 
+.griditem-image .griditem-containerlower .quote, 
+.griditem-image .griditem-containerlower .term, 
+.griditem-image .griditem-containerlower .tags,
+.griditem-image .griditem-containerlower .auth,
+.griditem-image .griditem-containerlower .prog {
   color: var(--color-image); 
 }
 
-.grid-itemimage .grid-itemlower {
+.griditem-image .griditem-containerlower {
   display: none;
 }
-.grid-itemimage:hover .grid-itemlower {
+.griditem-image:hover .griditem-containerlower {
   display: initial;
 }
 .tags a {
 	color: var(--color-item); 
 	text-decoration:none; 
 }
-.grid-item:hover .tags a {
+.griditem:hover .tags a {
 	color: var(--color-item); 
 }
-.grid-item:hover .tags a:hover {
+.griditem:hover .tags a:hover {
 	background-color: var(--color-itemascent);
 	color: var(--color-itembg);
 }
-.grid-itemimage:hover .tags a {
+.griditem-image:hover .tags a {
   color: #fff; 
 }
-.grid-itemimage:hover .tags a:hover {
+.griditem-image:hover .tags a:hover {
   color: #fff; 
 }
 
@@ -458,7 +441,7 @@ body {
 .textIcon {
   margin-right: var(--size-item-elem-sep); 
 }
-.grid-item:hover .textIcon {
+.griditem:hover .textIcon {
 	color: var(--color-item);
 }
 

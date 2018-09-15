@@ -39,7 +39,7 @@ function View()
     {
       this.msnry = new Masonry('.grid', 
       {
-        itemSelector: '.grid-item',
+        itemSelector: '.griditem',
         columnWidth: 350,
         gutter: 20,
         fitWidth: true,
@@ -59,7 +59,6 @@ function View()
 
     // BUILD
     this.grid.innerHTML = '';
-    this.grid.innerHTML += "<div class='grid-sizer'></div>"; 
     var dbKeys = Object.keys(db);
     var i = 0;
     while (i < dbKeys.length) 
@@ -84,18 +83,18 @@ function View()
   {
     let value = db[key];
 
-    let itemClass = "grid-item";
+    let itemClass = "griditem";
     if (SETTINGS.WIDEGRIDITEM)
     {
       if (typeof value.WIDE !== 'undefined' && value.WIDE)
       {
-        itemClass += " grid-itemwide";
+        itemClass += " griditem-wide";
       }
       else if (typeof value.QOTE !== 'undefined')
       {
         if (Array.isArray(value.QOTE) && value.QOTE.length > 4)
         {
-          itemClass += " grid-itemwide";
+          itemClass += " griditem-wide";
         } 
       }
     }
@@ -104,7 +103,7 @@ function View()
     {
       if (typeof value.TYPE !== 'undefined' && value.TYPE == 'image')
       {
-        itemClass += " grid-itemimage";
+        itemClass += " griditem-image";
       }
     }
 
@@ -127,19 +126,19 @@ function View()
       // LINK START
       if (SETTINGS.SHOWLINK)
       {
-        entry += `<a href="${String(value.LINK)}" id="${idUrl}" class="grid-itemlink">`;
+        entry += `<a href="${String(value.LINK)}" id="${idUrl}" class="griditem-link">`;
       }
     }
 
     // UPPER CONTENT START
     if (SETTINGS.SHOWUPPER)
     {
-      entry += `<div class="grid-itemupper">`;
+      entry += `<div class="griditem-containerupper">`;
 
       // TITLE
       if (SETTINGS.SHOWTITLE)
       {
-        entry += `<div class="title">${key.to_properCase()}</div>`;
+        entry += `<div class="griditem-title">${key.to_properCase()}</div>`;
       }
 
       // LINK END
@@ -147,7 +146,7 @@ function View()
       {
         if (typeof value.LINK !== 'undefined')
         {
-          entry += `<div class="link-line"><i class="grid-itemlinkicon fas fa-link"></i><div class="link-title">${this.extractRootDomain(value.LINK)}</div></div></a>`;
+          entry += `<div class="griditem-linkcontainer"><i class="griditem-linkicon fas fa-link"></i><div class="griditem-linktitle">${this.extractRootDomain(value.LINK)}</div></div></a>`;
         }
       }
 
@@ -157,7 +156,7 @@ function View()
         if (typeof value.TYPE !== 'undefined')
         {
           entry += `<a href='#type-${String(value.TYPE)}'>`;
-          entry += `<div class="type">`;
+          entry += `<div class="griditem-type">`;
 
           if (value.TYPE == 'article')
           {
@@ -224,7 +223,7 @@ function View()
     // LOWER CONTENT START
     if (SETTINGS.SHOWLOWER)
     {
-      entry += `<div class="grid-itemlower">`;
+      entry += `<div class="griditem-containerlower">`;
 
       // AUTHOR
       if (SETTINGS.SHOWAUTH)
@@ -305,7 +304,7 @@ function View()
           {
             entry += `<div class="image-overlay"></div>`;
           }
-          entry += `<img src="content/media/${value.FILE}">`;
+          entry += `<img class="griditem-image-img" src="content/media/${value.FILE}">`;
           entry += `</div>`;
         }
       }
