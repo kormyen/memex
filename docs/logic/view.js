@@ -240,7 +240,7 @@ function View()
           entry += `<div class="griditem-tags"><i class="fas fa-tag textIcon"></i>`;
           for (var i = 0; i < value.TAGS.length; i++)
           {
-            entry += `<a href="#tag-${value.TAGS[i]}">${value.TAGS[i]}</a>`;
+            entry += `<a class="griditem-taglink" href="#tag-${value.TAGS[i]}">${value.TAGS[i]}</a>`;
             if (i+1 != value.TAGS.length)
             {
               entry += `, `;

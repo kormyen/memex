@@ -12,6 +12,12 @@
   --color-image: #fff;                /*Text overlaying an image item*/
   --color-imagedarken: #000;          /*Overlay on image as text background */
 
+  --color-page-bg: #000;
+  --color-page-input: #111;
+  --color-page-i: #222;               /*idle*/
+  --color-page-e: #333;               /*enabled*/
+  --color-page-a: #666;               /*ascent*/
+
   --alpha-darken: 0.2;
   --alpha-idle: 0.4;
   --alpha-enabled: 0.8;
@@ -35,18 +41,6 @@
   --size-font-menutypes: 1em;
   --size-font-menutags: 0.8em;
   --size-font-bodytypes: 1em;         /*font size of type icon/count*/
-
-
-
-
-
-
-  /*TODO: refactor variables below; */
-  --color-overlay-bg-i: #000;         /*idle*/
-  --color-overlay-bg-e: #111;         /*enabled*/
-  --color-overlay-item-i: #222;       /*idle*/
-  --color-overlay-item-e: #333;       /*enabled*/
-  --color-overlay-item-a: #666;       /*ascent*/
 }
 
 * {
@@ -64,10 +58,20 @@ body {
 	margin: 0; 
 }
 ::selection {
-    background: var(--color-bg);
+  background: var(--color-bg);
+}
+.noselect {
+/*noselect stops an unwanted selection visual on button click*/
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
 }
 
-/*MENU*/
+/* MENU */
 .menu {
 	padding-top: var(--size-grid-gutter);
   background: var(--color-bg);
@@ -183,7 +187,7 @@ body {
   clear: both;
 }
 
-/*GRID ITEM*/
+/* GRID ITEM */
 .griditem, .griditem-wide {
   padding-bottom: var(--size-grid-gutter);
 	border-radius: var(--size-item-corner);
@@ -215,7 +219,6 @@ body {
   z-index: 100;
   width: 100%;
 }
-
 .griditem-containerlower {
   padding: 0 var(--size-grid-gutter) 0 var(--size-grid-gutter);
   z-index: 100;
@@ -276,7 +279,7 @@ body {
   text-shadow: 0 0 3em #000;
 }
 
-/*TITLE*/
+/* TITLE */
 .griditem-title { 
   opacity: var(--alpha-enabled);
   color: var(--color-item);
@@ -297,7 +300,7 @@ body {
   color: white;
 }
 
-/*LINK*/
+/* LINK */
 .griditem-linkcontainer { 
   margin-top: var(--size-item-elem-padding);
   float: left;
@@ -352,12 +355,12 @@ body {
   opacity: var(--alpha-enabled);
   color: var(--color-item);
 }
-.griditem-type:hover i {
+.griditem-type:hover .griditem-typeicon {
   opacity: var(--alpha-ascent);
   color: var(--color-itemascent);
 }
 
-/*LINK*/
+/* LINK */
 .griditem-linktitle {
   opacity: var(--alpha-idle);
 }
@@ -402,12 +405,41 @@ body {
   color: var(--color-image); 
 }
 
+/* IMAGE */
 .griditem-image .griditem-containerlower {
   display: none;
 }
 .griditem-image:hover .griditem-containerlower {
   display: initial;
 }
+.griditem-taglink {
+  color: var(--color-item); 
+  text-decoration:none; 
+}
+.griditem:hover .griditem-taglink {
+  color: var(--color-item); 
+}
+.griditem:hover .griditem-taglink:hover {
+  background-color: var(--color-itemascent);
+  color: var(--color-itembg);
+}
+.griditem-image:hover .griditem-taglink {
+  color: #fff; 
+}
+.griditem-image:hover .griditem-taglink:hover {
+  color: #fff; 
+}
+
+/* SMALL ICONS */
+.textIcon {
+  margin-right: var(--size-item-elem-sep); 
+}
+.griditem:hover .textIcon {
+  color: var(--color-item);
+}
+
+
+
 
 
 
@@ -422,70 +454,10 @@ body {
 
 /*TODO: refactor below; */
 
-
-
-.griditem-tags a {
-	color: var(--color-item); 
-	text-decoration:none; 
-}
-.griditem:hover .griditem-tags a {
-	color: var(--color-item); 
-}
-.griditem:hover .griditem-tags a:hover {
-	background-color: var(--color-itemascent);
-	color: var(--color-itembg);
-}
-.griditem-image:hover .griditem-tags a {
-  color: #fff; 
-}
-.griditem-image:hover .griditem-tags a:hover {
-  color: #fff; 
-}
-
-/* SMALL ICONS */
-.textIcon {
-  margin-right: var(--size-item-elem-sep); 
-}
-.griditem:hover .textIcon {
-	color: var(--color-item);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* PAGE */
 .page-overlay {
   /* visual */
-  background-color: var(--color-overlay-bg-i);
+  background-color: var(--color-page-bg);
   opacity: 0;
   /*-webkit-transition: opacity var(--animation-time) linear;
   transition: opacity var(--animation-time) linear;*/
@@ -513,16 +485,15 @@ body {
   border-radius: var(--size-item-corner);
 }
 .page-overlay .content-menu:hover {
-  background-color: var(--color-overlay-item-i);
+  background-color: var(--color-page-i);
 }
 .page-overlay .content-menu:hover a {
-  color: var(--color-overlay-item-a);
+  color: var(--color-page-a);
 }
 .page-overlay .content-menu a {
-  color: var(--color-overlay-item-e);
+  color: var(--color-page-e);
   text-decoration: none;
 }
-
 .page-overlay .content-menu .content-menu-option {
   height: 100px;
   width: 100px;
@@ -535,7 +506,7 @@ body {
 }
 .page-overlay .content .row .key {
   width: 100px;
-  color: var(--color-overlay-item-a);
+  color: var(--color-page-a);
   visibility: hidden;
   float: left;
   padding: 9px 7px 10px 0;
@@ -547,7 +518,7 @@ body {
   width: 400px;
   margin-bottom: 10px;
   /*background-color: transparent;*/
-  background-color: var(--color-overlay-bg-e);
+  background-color: var(--color-page-input);
   color: #fff;
   border-width: 0px;
   /*border-width: 1px;
@@ -561,11 +532,11 @@ body {
 }
 .page-overlay .content .row input:hover {
   /*background-color: var(--color-itemascent);*/
-  background-color: var(--color-overlay-item-i);
+  background-color: var(--color-page-i);
 }
 .page-overlay .content .row input:focus {
   /*background-color: var(--color-itemascent);*/
-  background-color: var(--color-overlay-item-e);
+  background-color: var(--color-page-e);
 }
 .page-overlay .content .display {
   float: left;
@@ -573,7 +544,7 @@ body {
   width: 400px;
   padding: 10px;
   margin-left: 50px;
-  color: var(--color-overlay-item-e);
+  color: var(--color-page-e);
 }
 .page-overlay .content-enter {
   margin-top: 50px;
@@ -597,29 +568,12 @@ body {
   justify-content: center;
 }
 .page-overlay .content-enter:hover {
-  background-color: var(--color-overlay-item-i);
+  background-color: var(--color-page-i);
 }
 .page-overlay .content-enter:hover a {
-  color: var(--color-overlay-item-a);
+  color: var(--color-page-a);
 }
 .page-overlay .content-enter a {
-  color: var(--color-overlay-item-e);
+  color: var(--color-page-e);
   text-decoration: none;
-}
-
-
-
-
-
-
-
-/*noselect stops an unwanted selection visual on button click*/
-.noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome and Opera */
 }
