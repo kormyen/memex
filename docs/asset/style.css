@@ -329,7 +329,7 @@ body {
 .griditem-linkicon { 
   margin-right: var(--size-item-elem-sep);
   color: var(--color-item);
-  opacity: var(--alpha-idleicon);
+  opacity: calc(var(--alpha-idleicon) - 0.1);
   float: left;
 }
 .griditem-linktitle {
