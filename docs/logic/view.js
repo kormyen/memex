@@ -222,6 +222,15 @@ function View()
         }
       }
 
+      // TERM
+      if (SETTINGS.SHOWTERM)
+      {
+        if (typeof value.TERM !== 'undefined')
+        {
+          entry += this.buildArrayElement(value.TERM, "griditem-term", "fas fa-ribbon textIcon");
+        }
+      }
+
       // NOTE
       if (SETTINGS.SHOWNOTE)
       {
@@ -237,15 +246,6 @@ function View()
         if (typeof value.QOTE !== 'undefined')
         {
           entry += this.buildArrayElement(value.QOTE, "griditem-quote", "fas fa-comment textIcon");
-        }
-      }
-
-      // TERM
-      if (SETTINGS.SHOWTERM)
-      {
-        if (typeof value.TERM !== 'undefined')
-        {
-          entry += this.buildArrayElement(value.TERM, "griditem-term", "fas fa-ribbon textIcon");
         }
       }
 
