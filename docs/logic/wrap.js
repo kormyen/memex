@@ -61,15 +61,34 @@ function Wrap()
       if (splitTarget[0] == 'tag')
       {
         // TAG
-        var tagDecoded = decodeURI(splitTarget[1]);
-        for (i = 0; i < this.keys.length; i++) 
+        let tagRequest = decodeURI(splitTarget[1]);
+        for (let i = 0; i < this.keys.length; i++) 
         { 
           let value = this.database[this.keys[i]];
           if (typeof value.TAGS !== 'undefined')
           {
-            for (var t = 0; t < value.TAGS.length; t++)
+            for (let t = 0; t < value.TAGS.length; t++)
             {
-              if (value.TAGS[t] == tagDecoded)
+              if (value.TAGS[t] == tagRequest)
+              {
+                tempDatabase[this.keys[i]] = this.database[this.keys[i]];
+              }
+            }
+          }
+        }
+      }
+      if (splitTarget[0] == 'proj')
+      {
+        // PROJECT
+        let projectRequest = decodeURI(splitTarget[1]);
+        for (let i = 0; i < this.keys.length; i++) 
+        { 
+          let value = this.database[this.keys[i]];
+          if (typeof value.PROJ !== 'undefined')
+          {
+            for (let p = 0; p < value.PROJ.length; p++)
+            {
+              if (value.PROJ[p] == projectRequest)
               {
                 tempDatabase[this.keys[i]] = this.database[this.keys[i]];
               }
@@ -80,8 +99,8 @@ function Wrap()
       else if (splitTarget[0] == 'type')
       {
         // TYPE
-        var typeRequest = decodeURI(splitTarget[1]);
-        for (i = 0; i < this.keys.length; i++) 
+        let typeRequest = decodeURI(splitTarget[1]);
+        for (let i = 0; i < this.keys.length; i++) 
         { 
           let value = this.database[this.keys[i]];
           if (typeof value.TYPE !== 'undefined')
@@ -111,8 +130,8 @@ function Wrap()
       else if (splitTarget[0] == 'done')
       {
         // DONE
-        var doneValue = decodeURI(splitTarget[1]);
-        for (i = 0; i < this.keys.length; i++) 
+        let doneValue = decodeURI(splitTarget[1]);
+        for (let i = 0; i < this.keys.length; i++) 
         { 
           let value = this.database[this.keys[i]];
           if (doneValue == 'true')

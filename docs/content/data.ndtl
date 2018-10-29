@@ -3872,7 +3872,6 @@ WHY WATER BATTERIES
 
 SBS 100F
   DATE : 12018-10-22
-  TYPE : list
   NOTE 
     > Recommended operating temperature range for optimum life and performance is 20°C to 25°C
     - On constant voltage float charge systems the design life expectancy is 10+ years at 25°C and 15+ years at 20°C
@@ -3964,6 +3963,7 @@ LUGS (TERMINALS)
 
 TRACER BN COMMS
   DATE : 12018-10-23
+  TYPE : tool
   LINK
     > https://github.com/danieloneill/EpsolarServer
     > https://github.com/jaminNZx/Tracer-RS485-Modbus-Blynk
@@ -4010,6 +4010,7 @@ VAN ELECTRICAL GUIDES
     > https://www.parkedinparadise.com/electrical/
   PROJ : Van
   TAGS : electronics
+  TYPE : list
 
 BATTERY BANK WIRING
   LINK : http://www.smartgauge.co.uk/batt_con.html

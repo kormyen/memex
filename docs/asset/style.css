@@ -388,7 +388,7 @@ body {
 }
 
 /* NOTE, QUOTE, TERM, TAGS, AUTH, PROG */
-.griditem-note, .griditem-quote, .griditem-term, .griditem-tags, .griditem-auth, .griditem-prog {
+.griditem-note, .griditem-quote, .griditem-term, .griditem-tags, .griditem-proj, .griditem-auth, .griditem-prog {
   opacity: var(--alpha-idle);
   padding-top: var(--size-item-elem-padding);
   color: var(--color-item); 
@@ -400,6 +400,7 @@ body {
 .griditem:hover .griditem-quote, 
 .griditem:hover .griditem-term, 
 .griditem:hover .griditem-tags,
+.griditem:hover .griditem-proj,
 .griditem:hover .griditem-auth,
 .griditem:hover .griditem-prog {
   opacity: var(--alpha-enabled);
@@ -410,6 +411,7 @@ body {
 .griditem-image .griditem-quote, 
 .griditem-image .griditem-term, 
 .griditem-image .griditem-tags,
+.griditem-image .griditem-proj,
 .griditem-image .griditem-auth,
 .griditem-image .griditem-prog {
   color: var(--color-image); 

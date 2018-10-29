@@ -20,6 +20,7 @@ function View()
     SHOWLINK: true,
     SHOWLOWER: true,
     SHOWTAGS: true,
+    SHOWPROJ: true,
     SHOWNOTE: true,
     SHOWQOTE: true,
     SHOWTERM: true,
@@ -213,7 +214,25 @@ function View()
           for (var i = 0; i < value.TAGS.length; i++)
           {
             entry += `<a class="griditem-taglink" href="#tag-${value.TAGS[i]}">${value.TAGS[i]}</a>`;
-            if (i+1 != value.TAGS.length)
+            if (i + 1 != value.TAGS.length)
+            {
+              entry += `, `;
+            }
+          };
+          entry += `</div>`;
+        }
+      }
+
+      // PROJECT
+      {
+      if (SETTINGS.SHOWPROJ)
+        if (typeof value.PROJ !== 'undefined')
+        {
+          entry += `<div class="griditem-proj"><i class="fas fa-leaf textIcon"></i>`;
+          for (var i = 0; i < value.PROJ.length; i++)
+          {
+            entry += `<a class="griditem-taglink" href="#proj-${value.PROJ[i]}">${value.PROJ[i]}</a>`;
+            if (i + 1 != value.PROJ.length)
             {
               entry += `, `;
             }
