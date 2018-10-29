@@ -78,14 +78,18 @@ function View()
     imgLoad.on( 'always', function() { parent.msnry.layout(); } );
   }
 
+  this.isDefined = function(value)
+  {
+    return (typeof value !== 'undefined');
+  }
+
   this.buildEntry = function(db, key)
   {
     let value = db[key];
-
     let itemClass = "griditem";
     if (SETTINGS.WIDEGRIDITEM)
     {
-      if (typeof value.WIDE !== 'undefined' && value.WIDE)
+      if (this.isDefined(value.WIDE) && value.WIDE)
       {
         itemClass += " griditem-wide";
       }
@@ -100,7 +104,7 @@ function View()
 
     if (SETTINGS.SHOWIMAG)
     {
-      if (typeof value.TYPE !== 'undefined' && value.TYPE == 'image')
+      if (this.isDefined(value.TYPE) && value.TYPE == 'image')
       {
         itemClass += " griditem-image";
       }
@@ -110,11 +114,10 @@ function View()
 
     // ITEM DIV
     entry += `<div class="${itemClass}" id="${SETTINGS.GRIDITEMIDBASE + value.DIID}">`;
-
-    if (typeof value.LINK !== 'undefined')
+    if (this.isDefined(value.LINK))
     {
       var idUrl = "url";
-      if (typeof value.SEEN !== 'undefined')
+      if (this.isDefined(value.SEEN))
       {
         if (value.SEEN == "true")
         {
@@ -147,7 +150,7 @@ function View()
       // LINK END
       if (SETTINGS.SHOWLINK)
       {
-        if (typeof value.LINK !== 'undefined')
+        if (this.isDefined(value.LINK))
         {
           if (typeof value.LINK == 'object')
           {
@@ -168,22 +171,22 @@ function View()
       if (SETTINGS.SHOWTYPE)
       {
         entry += `<div class="griditem-typecontainer">`;
-          if (typeof value.TYPE !== 'undefined')
+        if (this.isDefined(value.TYPE))
+        {
+          if (typeof value.TYPE == 'object')
           {
-            if (typeof value.TYPE == 'object')
+            // This entry has an array of types
+            for (var i = 0; i < value.TYPE.length; i++)
             {
-              // This entry has an array of types
-              for (var i = 0; i < value.TYPE.length; i++)
-              {
-                entry += this.doTypeIcon(value.TYPE[i]);
-              }
-            }
-            else
-            {
-              // This entry has a single type
               entry += this.doTypeIcon(value.TYPE[i]);
             }
           }
+          else
+          {
+            // This entry has a single type
+            entry += this.doTypeIcon(value.TYPE[i]);
+          }
+        }
         entry += `</div>`; //griditem-typecontainer
       }
 
@@ -199,7 +202,7 @@ function View()
       // AUTHOR
       if (SETTINGS.SHOWAUTH)
       {
-        if (typeof value.AUTH !== 'undefined')
+        if (this.isDefined(value.AUTH))
         {
           entry += `<div class="griditem-auth"><i class="fas fa-user textIcon"></i>${value.AUTH}</div>`;
         }
@@ -208,7 +211,7 @@ function View()
       // TAGS
       if (SETTINGS.SHOWTAGS)
       {
-        if (typeof value.TAGS !== 'undefined')
+        if (this.isDefined(value.TAGS))
         {
           entry += `<div class="griditem-tags"><i class="fas fa-tag textIcon"></i>`;
           for (var i = 0; i < value.TAGS.length; i++)
@@ -224,9 +227,9 @@ function View()
       }
 
       // PROJECT
-      {
       if (SETTINGS.SHOWPROJ)
-        if (typeof value.PROJ !== 'undefined')
+      {
+        if (this.isDefined(value.PROJ))
         {
           entry += `<div class="griditem-proj"><i class="fas fa-leaf textIcon"></i>`;
           for (var i = 0; i < value.PROJ.length; i++)
@@ -244,7 +247,7 @@ function View()
       // TERM
       if (SETTINGS.SHOWTERM)
       {
-        if (typeof value.TERM !== 'undefined')
+        if (this.isDefined(value.TERM))
         {
           entry += this.buildArrayElement(value.TERM, "griditem-term", "fas fa-ribbon textIcon");
         }
@@ -253,7 +256,7 @@ function View()
       // NOTE
       if (SETTINGS.SHOWNOTE)
       {
-        if (typeof value.NOTE !== 'undefined')
+        if (this.isDefined(value.NOTE))
         {
           entry += this.buildArrayElement(value.NOTE, "griditem-note", "fas fa-sticky-note textIcon");
         }
@@ -262,7 +265,7 @@ function View()
       // QUOTE
       if (SETTINGS.SHOWQOTE)
       {
-        if (typeof value.QOTE !== 'undefined')
+        if (this.isDefined(value.QOTE))
         {
           entry += this.buildArrayElement(value.QOTE, "griditem-quote", "fas fa-comment textIcon");
         }
@@ -271,7 +274,7 @@ function View()
       // PROGRESS
       if (SETTINGS.SHOWPROG)
       {
-        if (typeof value.PROG !== 'undefined')
+        if (this.isDefined(value.PROG))
         {
           entry += `<div class="griditem-prog"><i class="fas fa-clock textIcon"></i>${value.PROG}</div>`;
         }
@@ -284,9 +287,9 @@ function View()
     // IMAGE
     if (SETTINGS.SHOWIMAG)
     {
-      if (typeof value.TYPE !== 'undefined' && value.TYPE == 'image')
+      if (this.isDefined(value.TYPE) && value.TYPE == 'image')
       {
-        if (typeof value.FILE !== 'undefined')
+        if (this.isDefined(value.FILE))
         {
           entry += `<div class="image">`;
           if (SETTINGS.SHOWOVERLAY)
@@ -307,57 +310,47 @@ function View()
   this.doTypeIcon = function(type, count)
   {
     let result = `<a class="griditem-type" href='#type-${String(type)}'>`;
-    if (type == 'article')
+    switch (type) 
     {
-      result += `<i class="griditem-typeicon far fa-newspaper"></i>`;
-    }
-    else if (type == 'podcast')
-    {
-      result += `<i class="griditem-typeicon fas fa-podcast"></i>`;
-    }
-    else if (type == 'video')
-    {
-      result += `<i class="griditem-typeicon fas fa-tv"></i>`;
-    }
-    else if (type == 'list')
-    {
-      result += `<i class="griditem-typeicon fas fa-file-alt"></i>`;
-    }
-    else if (type == 'book')
-    {
-      result += `<i class="griditem-typeicon fas fa-book-open"></i>`;
-    }
-    else if (type == 'game')
-    {
-      result += `<i class="griditem-typeicon fas fa-gamepad"></i>`;
-    }
-    else if (type == 'service')
-    {
-      result += `<i class="griditem-typeicon fas fa-server"></i>`;
-    }
-    else if (type == 'lecture')
-    {
-      result += `<i class="griditem-typeicon fas fa-chalkboard-teacher"></i>`;
-    }
-    else if (type == 'quote')
-    {
-      result += `<i class="griditem-typeicon fas fa-comment"></i>`;
-    }
-    else if (type == 'tool')
-    {
-      result += `<i class="griditem-typeicon fas fa-wrench"></i>`;
-    }
-    else if (type == 'music')
-    {
-      result += `<i class="griditem-typeicon fas fa-music"></i>`;
-    }
-    else if (type == 'image')
-    {
-      result += `<i class="griditem-typeicon fas fa-image"></i>`;
-    }
-    else if (type == 'encyclopedia')
-    {
-      result += `<i class="griditem-typeicon fas fa-globe"></i>`;
+      case 'article':
+        result += `<i class="griditem-typeicon far fa-newspaper"></i>`;
+        break;
+      case 'podcast':
+        result += `<i class="griditem-typeicon fas fa-podcast"></i>`;
+        break;
+      case 'video':
+        result += `<i class="griditem-typeicon fas fa-tv"></i>`;
+        break;
+      case 'list':
+        result += `<i class="griditem-typeicon fas fa-file-alt"></i>`;
+        break;
+      case 'book':
+        result += `<i class="griditem-typeicon fas fa-book-open"></i>`;
+        break;
+      case 'game':
+        result += `<i class="griditem-typeicon fas fa-gamepad"></i>`;
+        break;
+      case 'service':
+        result += `<i class="griditem-typeicon fas fa-server"></i>`;
+        break;
+      case 'lecture':
+        result += `<i class="griditem-typeicon fas fa-chalkboard-teacher"></i>`;
+        break;
+      case 'quote':
+        result += `<i class="griditem-typeicon fas fa-comment"></i>`;
+        break;
+      case 'tool':
+        result += `<i class="griditem-typeicon fas fa-wrench"></i>`;
+        break;
+      case 'music':
+        result += `<i class="griditem-typeicon fas fa-music"></i>`;
+        break;
+      case 'image':
+        result += `<i class="griditem-typeicon fas fa-image"></i>`;
+        break;
+      case 'encyclopedia':
+        result += `<i class="griditem-typeicon fas fa-globe"></i>`;
+        break;
     }
     result += `</a>`;
     return result;

@@ -34,7 +34,6 @@ function Wrap()
 
       this.database[this.keys[i]].DIID = i;
     }
-    console.log(this.database);
   }
 
   this.filter = function(target)
