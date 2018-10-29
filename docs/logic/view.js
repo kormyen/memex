@@ -531,11 +531,7 @@ function View()
     {
       for (var i in data)
       {
-        if (data[i] == "& ")
-        {
-          // blank line, do nothing
-        }
-        else if (data[i].substring(0, 2) == "> ")
+        if (data[i].substring(0, 2) == "> ")
         {
           // New item
           if (data[i].includes(": "))
@@ -556,6 +552,11 @@ function View()
         {
           // New line in current item
           result += `<div class="${className}">${data[i].substring(2)}</div>`;
+        }
+        else if (data[i].substring(0, 2) == "- ")
+        {
+          // Bullet point
+          result += `<div class="${className}"><i class="fas fa-caret-right textIcon"></i>${data[i].substring(2)}</div>`;
         }
         else
         {
