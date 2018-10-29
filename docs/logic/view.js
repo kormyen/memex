@@ -50,8 +50,6 @@ function View()
 
   this.display = function(db)
   {
-    console.log('display ' + db)
-
     if (window.showAdd != undefined && window.showAdd)
     {
       main.add.setOverlay(false);
@@ -126,7 +124,11 @@ function View()
       // LINK START
       if (SETTINGS.SHOWLINK)
       {
-        entry += `<a class="griditem-link" href="${String(value.LINK)}" id="${idUrl}">`;
+        if (typeof value.LINK != 'object')
+        {
+          // If this item has only one link then make the whole title the link
+          entry += `<a class="griditem-link" href="${String(value.LINK)}" id="${idUrl}">`;
+        }
       }
     }
 
@@ -146,7 +148,18 @@ function View()
       {
         if (typeof value.LINK !== 'undefined')
         {
-          entry += `<div class="griditem-linkcontainer"><i class="griditem-linkicon fas fa-link"></i><div class="griditem-linktitle">${this.extractRootDomain(value.LINK)}</div></div></a>`;
+          if (typeof value.LINK == 'object')
+          {
+            for (let l = 0; l < value.LINK.length; l++)
+            {
+              entry += `<a class="griditem-link" href="${String(value.LINK[l])}" id="${idUrl}">`;
+              entry += `<div class="griditem-linkcontainer"><i class="griditem-linkicon fas fa-link"></i><div class="griditem-linktitle">${this.extractRootDomain(value.LINK[l])}</div></div></a>`;
+            }
+          }
+          else
+          {
+            entry += `<div class="griditem-linkcontainer"><i class="griditem-linkicon fas fa-link"></i><div class="griditem-linktitle">${this.extractRootDomain(value.LINK)}</div></div></a>`;
+          }
         }
       }
 

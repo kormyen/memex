@@ -16,17 +16,20 @@ function Wrap()
     { 
       let value = this.database[this.keys[i]];
 
-      // TAGS
-      if (typeof value.TAGS !== 'undefined')
+      this.database[this.keys[i]].TAGS = this.commaSplit(value.TAGS);
+      this.database[this.keys[i]].TYPE = this.commaSplit(value.TYPE);
+      this.database[this.keys[i]].PROJ = this.commaSplit(value.PROJ);
+
+      // LINK
+      if (typeof value.LINK == 'object')
       {
-        var tags = value.TAGS.split(",");
-
-        for (var t = 0; t < tags.length; t++)
+        for (let l = 0; l < value.LINK.length; l++)
         {
-          tags[t] = tags[t].trim().toLowerCase();
+          if (value.LINK[l].substr(0,2) == '> ')
+          {
+            value.LINK[l] = value.LINK[l].substr(2,value.LINK[l].length-1);
+          }
         }
-
-        this.database[this.keys[i]].TAGS = tags;
       }
 
       this.database[this.keys[i]].DIID = i;
@@ -221,5 +224,19 @@ function Wrap()
     stats.tags = tagItems;
 
     return stats;
+  }
+
+  this.commaSplit = function(data)
+  {
+    if (data !== undefined)
+    {
+      var result = data.split(",");
+      for (var t = 0; t < result.length; t++)
+      {
+        result[t] = result[t].trim().toLowerCase();
+      }
+      return result;
+    }
+    return data;
   }
 }
