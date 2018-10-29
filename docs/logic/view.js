@@ -166,65 +166,24 @@ function View()
       // TYPE
       if (SETTINGS.SHOWTYPE)
       {
-        if (typeof value.TYPE !== 'undefined')
-        {
-          entry += `<a class="griditem-type" href='#type-${String(value.TYPE)}'>`;
-
-          if (value.TYPE == 'article')
+        entry += `<div class="griditem-typecontainer">`;
+          if (typeof value.TYPE !== 'undefined')
           {
-            entry += `<i class="griditem-typeicon far fa-newspaper"></i>`;
+            if (typeof value.TYPE == 'object')
+            {
+              // This entry has an array of types
+              for (var i = 0; i < value.TYPE.length; i++)
+              {
+                entry += this.doTypeIcon(value.TYPE[i]);
+              }
+            }
+            else
+            {
+              // This entry has a single type
+              entry += this.doTypeIcon(value.TYPE[i]);
+            }
           }
-          else if (value.TYPE == 'podcast')
-          {
-            entry += `<i class="griditem-typeicon fas fa-podcast"></i>`;
-          }
-          else if (value.TYPE == 'video')
-          {
-            entry += `<i class="griditem-typeicon fas fa-tv"></i>`;
-          }
-          else if (value.TYPE == 'list')
-          {
-            entry += `<i class="griditem-typeicon fas fa-file-alt"></i>`;
-          }
-          else if (value.TYPE == 'book')
-          {
-            entry += `<i class="griditem-typeicon fas fa-book-open"></i>`;
-          }
-          else if (value.TYPE == 'game')
-          {
-            entry += `<i class="griditem-typeicon fas fa-gamepad"></i>`;
-          }
-          else if (value.TYPE == 'service')
-          {
-            entry += `<i class="griditem-typeicon fas fa-server"></i>`;
-          }
-          else if (value.TYPE == 'lecture')
-          {
-            entry += `<i class="griditem-typeicon fas fa-chalkboard-teacher"></i>`;
-          }
-          else if (value.TYPE == 'quote')
-          {
-            entry += `<i class="griditem-typeicon fas fa-comment"></i>`;
-          }
-          else if (value.TYPE == 'tool')
-          {
-            entry += `<i class="griditem-typeicon fas fa-wrench"></i>`;
-          }
-          else if (value.TYPE == 'music')
-          {
-            entry += `<i class="griditem-typeicon fas fa-music"></i>`;
-          }
-          else if (value.TYPE == 'image')
-          {
-            entry += `<i class="griditem-typeicon fas fa-image"></i>`;
-          }
-          else if (value.TYPE == 'encyclopedia')
-          {
-            entry += `<i class="griditem-typeicon fas fa-globe"></i>`;
-          }
-           
-          entry += `</a>`;
-        }
+        entry += `</div>`; //griditem-typecontainer
       }
 
       // UPPER CONTENT END
@@ -324,6 +283,65 @@ function View()
     entry += `</div>`;
 
     this.grid.innerHTML += entry;
+  }
+
+  this.doTypeIcon = function(type, count)
+  {
+    let result = `<a class="griditem-type" href='#type-${String(type)}'>`;
+    if (type == 'article')
+    {
+      result += `<i class="griditem-typeicon far fa-newspaper"></i>`;
+    }
+    else if (type == 'podcast')
+    {
+      result += `<i class="griditem-typeicon fas fa-podcast"></i>`;
+    }
+    else if (type == 'video')
+    {
+      result += `<i class="griditem-typeicon fas fa-tv"></i>`;
+    }
+    else if (type == 'list')
+    {
+      result += `<i class="griditem-typeicon fas fa-file-alt"></i>`;
+    }
+    else if (type == 'book')
+    {
+      result += `<i class="griditem-typeicon fas fa-book-open"></i>`;
+    }
+    else if (type == 'game')
+    {
+      result += `<i class="griditem-typeicon fas fa-gamepad"></i>`;
+    }
+    else if (type == 'service')
+    {
+      result += `<i class="griditem-typeicon fas fa-server"></i>`;
+    }
+    else if (type == 'lecture')
+    {
+      result += `<i class="griditem-typeicon fas fa-chalkboard-teacher"></i>`;
+    }
+    else if (type == 'quote')
+    {
+      result += `<i class="griditem-typeicon fas fa-comment"></i>`;
+    }
+    else if (type == 'tool')
+    {
+      result += `<i class="griditem-typeicon fas fa-wrench"></i>`;
+    }
+    else if (type == 'music')
+    {
+      result += `<i class="griditem-typeicon fas fa-music"></i>`;
+    }
+    else if (type == 'image')
+    {
+      result += `<i class="griditem-typeicon fas fa-image"></i>`;
+    }
+    else if (type == 'encyclopedia')
+    {
+      result += `<i class="griditem-typeicon fas fa-globe"></i>`;
+    }
+    result += `</a>`;
+    return result;
   }
 
   this.stats = function(value)

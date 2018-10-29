@@ -34,6 +34,7 @@ function Wrap()
 
       this.database[this.keys[i]].DIID = i;
     }
+    console.log(this.database);
   }
 
   this.filter = function(target)
@@ -79,15 +80,30 @@ function Wrap()
       else if (splitTarget[0] == 'type')
       {
         // TYPE
-        var tagDecoded = decodeURI(splitTarget[1]);
+        var typeRequest = decodeURI(splitTarget[1]);
         for (i = 0; i < this.keys.length; i++) 
         { 
           let value = this.database[this.keys[i]];
           if (typeof value.TYPE !== 'undefined')
           {
-            if (value.TYPE == tagDecoded)
+            if (typeof value.TYPE == 'object')
             {
-              tempDatabase[this.keys[i]] = this.database[this.keys[i]];
+              // This entry has multiple types
+              for (let t = 0; t < value.TYPE.length; t++)
+              {
+                if (value.TYPE[t] == typeRequest)
+                {
+                  tempDatabase[this.keys[i]] = this.database[this.keys[i]];
+                }
+              }
+            }
+            else
+            {
+              // This entry has a single type
+              if (value.TYPE == typeRequest)
+              {
+                tempDatabase[this.keys[i]] = this.database[this.keys[i]];
+              }
             }
           }
         }

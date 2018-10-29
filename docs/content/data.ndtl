@@ -2732,7 +2732,7 @@ MURRAY BOOKCHIN
   TERM 
     > Communalism: "a theory of government or a system of government in which independent communes participate in a federation", "the principles and practice of communal ownership."
 
-Hypocognition
+HYPERCOGNITION
   DATE : 12018-08-21
   PERS : alx
   SRCE : Merveilles
@@ -2878,10 +2878,10 @@ SUNBEAM CITY
     > Solarpunk: Solarpunks cherish both nature and progress, the individual and the community.
     & They believe in a world that is green, colourful, and bright. It can be described as a literary genre, an aesthetic, or a movement. 
     & The key points are:
-    & An emphasis on renewable energy, especially solar power.
-    & A demand for technology and society to re-centre around sustainability, longevity, and balance.
-    & A focus on decentralisation, community activism, social justice and civic empowerment.
-    & A recognition that economic, social, and ecological injustices are all deeply inter-connected.
+    - An emphasis on renewable energy, especially solar power.
+    - A demand for technology and society to re-centre around sustainability, longevity, and balance.
+    - A focus on decentralisation, community activism, social justice and civic empowerment.
+    - A recognition that economic, social, and ecological injustices are all deeply inter-connected.
 
 SUSPIRIA 2018
   DATE : 12018-08-31
@@ -3039,16 +3039,22 @@ CLOUD ATLAS
   QOTE : "Our lives are not our own. We are bound to others, past and present, and by each crime and every kindness, we birth our future"
   AUTH : David Mitchell
 
+THROUGH THE HEART
   DATE : 12018-09-08
   AUTH : Aleksandr Solzhenitsyn
+  TYPE : quote
   QOTE 
     > “If only it were all so simple! If only there were evil people somewhere insidiously committing evil deeds, and it were necessary only to separate them from the rest of us and destroy them. But the line dividing good and evil cuts through the heart of every human being. And who is willing to destroy a piece of his own heart?”
     & "During the life of any heart this line keeps changing place; sometimes it is squeezed one way by exuberant evil and sometimes it shifts to allow enough space for good to flourish. One and the same human being is, at various ages, under various circumstances, a totally different human being. At times he is close to being a devil, at times to sainthood. But his name doesn't change, and to that name we ascribe the whole lot, good and evil."
 
+BEAUTY ENTHUSE, WORK RAISE
+  TYPE : quote
   DATE : 12018-09-08
   AUTH : Cyprian Norwid
   QOTE : "Beauty is to enthuse us for work, and work is to raise us up"
   
+BEAUTY SAVE
+  TYPE : quote
   DATE : 12018-09-08
   AUTH : Aleksandr Solzhenitsyn
   QOTE : "Beauty will save the world"
@@ -3089,13 +3095,15 @@ CONVENTIONAL MINDS
   QOTE 
     > John Anthony West: "Few things in this world are more predictable that the reaction of conventional minds to unconventional ideas."
 
-
+CRYPTO VOXELS
   DATE : 12018-09-10
+  TYPE : game
   LINK : https://www.cryptovoxels.com/play?coords=NE@53E,31S
 
+PROGRAMMING TALKS
+  TYPE : list
   DATE : 12018-09-10
   LINK : https://github.com/hellerve/programming-talks
-
 
 JAVASCRIPT
   DATE : 12018-09-10
@@ -3126,9 +3134,6 @@ The alternative is to simply run out the clock and wait to fade off into oblivio
 
 https://www.reddit.com/r/YouShouldKnow/comments/20n1mz/ysk_that_a_newly_announced_measurement_of/cg52uxc/?context=2
 
-
-
-
 https://embraceclarity.com/
 https://github.com/nayafia/lemonade-stand
 https://micro.blog/
@@ -3157,19 +3162,12 @@ http://catb.org/~esr/faqs/smart-questions.html
 https://ipfs.io/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Exocortex.html
 https://medium.com/swlh/deliberate-practice-makes-perfect-how-to-become-an-expert-in-anything-ec30e0c1314e
 
-
-
-
 ELLIOT WAVE NOTES
-
 
 JLCPCB
 https://jlcpcb.com/
 GreatScott!
 YouTube
-
-
-
 
 pcell: hmm, punk to me has always been ‘not accepting the status quo : destroying ’
 neauoire: "I guess I'm more on the side of  ' not accepting the status quo : building ’"
@@ -3177,13 +3175,14 @@ neauoire: "I guess I'm more on the side of  ' not accepting the status quo : bui
 "longtermism, long now, these sorts of ideas"
 "sustainability, longevity, and balance"
 
-"We’re Solarpunks because the only other options are denial or despair."
-https://hieroglyph.asu.edu/2014/09/Solarpunk-notes-toward-a-manifesto/
-
-
+DENIAL OR DESPAIR ALTERNATIVE
+  QOTE : "We’re Solarpunks because the only other options are denial or despair."
+  LINK : https://hieroglyph.asu.edu/2014/09/Solarpunk-notes-toward-a-manifesto/
+  TYPE : quote
 
 IMPLOSION VS EXPLOSION
   DATE : 12018-09-12
+  PROJ : Megamex
   NOTE
     > Implosion
     & Blue
@@ -3261,8 +3260,6 @@ http://geocosmicrex.com/
 http://www.sacred-geometry.com/
 https://www.youtube.com/watch?v=ta_9na0-mwA
 
-
-
   DATE : 12018-09-13
   via: https://reading.supply/@jim/alpha-update-LrVis5
 https://shapeofdesignbook.com/
@@ -3278,45 +3275,56 @@ https://www.naibooksellers.nl/design-interior/design/designing-design-kenya-hara
 https://www.lars-mueller-publishers.com/white
 https://shop.nplusonemag.com/products/social-medium-artists-writing-2000-2015
 
+PROGRAM FOR HUMANS
+  QOTE : "Programs must be written for people to read, and only incidentally for machines to execute." - Abelson & Sussman, SICP, preface to the first edition
 
-QOTE : "Programs must be written for people to read, and only incidentally for machines to execute." - Abelson & Sussman, SICP, preface to the first edition
+ENTHSIASM FOR HAPPINESS
+  QOTE : "We act as though comfort and luxury were the chief requirements of life, when all that we need to make us happy is something to be enthusiastic about." - Charles Kingsley
 
-QOTE : "We act as though comfort and luxury were the chief requirements of life, when all that we need to make us happy is something to be enthusiastic about." - Charles Kingsley
+DON'T CHANGE MINDS
+  QOTE : "People don't change their minds. They die, and are replaced by people with different opinions." - Arturo Albergati
 
-QOTE : "People don't change their minds. They die, and are replaced by people with different opinions." - Arturo Albergati
+SAYING NO
+  QOTE : "Focusing is about saying no." - Steve Jobs
 
-QOTE : "Focusing is about saying no." - Steve Jobs
+FEAR STILL
+  QOTE : "Don't fear moving slowly. Fear standing still." - Chinese proverb
 
-QOTE : "Don't fear moving slowly. Fear standing still." - Chinese proverb
+LEARN ALL THE TIME
+  QOTE : "I think a life properly lived is just learn, learn, learn all the time." - Charlie Munger
 
-QOTE : "I think a life properly lived is just learn, learn, learn all the time." - Charlie Munger
+FLINTKNAPPING
+  TYPE : term
+  TERM 
+    > flintknapping: the process of chipping away material from high silica stones like "flint" in a carefully controlled manner with special tools to produce sharp projectile points or tools. 
+  PROJ : Megamex
 
-
-
-flintknapping: the process of chipping away material from high silica stones like "flint" in a carefully controlled manner with special tools to produce sharp projectile points or tools. 
-
-Water hammer: pressure spike (potentially extreme) from quickly shutting valve (tap) on running water. Depends on celecity (medium elasticity), medium speed, shut speed. A water tower can be used to absorb the pressure change.
-
-
+WATER HAMMER
+  TYPE : term
+  TERM
+    > Water hammer: pressure spike (potentially extreme) from quickly shutting valve (tap) on running water. Depends on celecity (medium elasticity), medium speed, shut speed. A water tower can be used to absorb the pressure change.
+  PROJ : Megamex
 
 COUSINS ACROSS THE SEA
   DATE : 12018-09-14
   TYPE : video
   LINK : https://www.youtube.com/watch?v=E9nGHrLWlic
+  PROJ : Megamex
 
+CULTURE MAGIC
+  TYPE : term
+  TERM 
+    > Tohunga: (Maori) "an expert practitioner of any skill or art, either religious or otherwise. Tohunga include expert priests, healers, navigators, carvers, builders, teachers and advisors."
+    > Kahuna: (Hawaiian) "priest, sorcerer, magician, wizard, minister, expert in any profession"
+  PROJ : Megamex
 
-Tohunga: (Maori) "an expert practitioner of any skill or art, either religious or otherwise. Tohunga include expert priests, healers, navigators, carvers, builders, teachers and advisors."
-
-Kahuna: (Hawaiian) "priest, sorcerer, magician, wizard, minister, expert in any profession"
-
-NEWEARTH MEGALYTHS.ORG
-https://www.youtube.com/user/everhungriescatgang/videos?sort=p&flow=grid&view=0
-http://www.megaliths.org/
-
+MEGALYTHS.ORG
+  LINK
+    > https://www.youtube.com/user/everhungriescatgang/videos?sort=p&flow=grid&view=0
+    > http://www.megaliths.org/
+  PROJ : Megamex
 
 https://www.nzonscreen.com/title/who-was-here-before-us-2000
-
-
 
 LOG ATTRIBUTES
   PROJ : Log
@@ -3352,8 +3360,6 @@ CSS NAME CONVENTION
     & .modulename
     & .modulename-submodule
     & .modulename-subcomponent
-
-
 
 PROPANE BOX DIY
   PROJ : Van
@@ -3396,9 +3402,11 @@ CYMATICS
     > Cymascope: a type of scientific instrument that makes sound visible.
   NOTE : Mandala like
 
+NEUROPLASTICITY
   TERM : Neuroplasticity: The brain's ability to reorganize itself by forming new neural connections throughout life. Neuroplasticity allows the neurons (nerve cells) in the brain to compensate for injury and disease and to adjust their activities in response to new situations or to changes in their environment.
-  LINK : joe rogan 1171
+  NOTE : joe rogan 1171
 
+LOOKING AT THE STARS
   QOTE : Oscar Wilde: "We are all in the gutter, but some of us are looking at the stars." 
 
 SELL THE WHY
@@ -3412,6 +3420,7 @@ PALE BLUE DOT
   QOTE 
     > Carl Sagan: "Look again at that dot. That's here. That's home. That's us. On it everyone you love, everyone you know, everyone you ever heard of, every human being who ever was, lived out their lives. The aggregate of our joy and suffering, thousands of confident religions, ideologies, and economic doctrines, every hunter and forager, every hero and coward, every creator and destroyer of civilization, every king and peasant, every young couple in love, every mother and father, hopeful child, inventor and explorer, every teacher of morals, every corrupt politician, every 'superstar,' every 'supreme leader,' every saint and sinner in the history of our species lived there—on a mote of dust suspended in a sunbeam."
 
+ORIGINAL THOUGHT
   QOTE 
     > Diogenes: "One original thought is worth a thousand mindless quotings"
 
@@ -3423,8 +3432,10 @@ MAGIC
     > Reike
     > Orgon
     > Vril
+  PROJ : Megamex
 
-  BLOND RED BLUE
+BLOND RED BLUE
+  NOTE
     > Basque (Euskara)
     & Berbers (Amazigh)
     & Guanche (Canary Islands
@@ -3459,7 +3470,6 @@ MAGIC
     > "Half of European men share King Tut's DNA" ""
 
 Time > Constellations > Ancient Culture
-
 
 KATAKOMBY
   LINK : https://translate.google.com/translate?hl=en&sl=ru&tl=en&u=http%3A%2F%2Fwww.katakomby.odessa.ua%2F
@@ -3544,7 +3554,6 @@ RUSSEEL BRAND HELP
 DOCUMENTATION
   DATE : 12018-10-02
   LINK : https://www.divio.com/blog/documentation/
-  NOTE : 
   QOTE : "There is a secret that needs to be understood in order to write good software documentation: there isn’t one thing called documentation, there are four... tutorials, how-to guides, explanation and technical reference."
 
 BEAUTIFUL PEOPLE
@@ -3561,6 +3570,7 @@ SONDER
   TERM
     > sonder: the realization that everyone has a story
   LINK : https://www.youtube.com/watch?v=AkoML0_FiV4
+  NOTE : Dictionary of Obscure Sorrows
 
 CUSTOM CONTROLLER
   LINK : https://geekhack.org/index.php?topic=74463.350
@@ -3673,7 +3683,10 @@ DIKE
   DATE : 12018-10-16
   TYPE : term
   TERM 
-    > Dike: "To remove or disable a portion of something, as a wire from a computer or a subroutine from a program. A standard slogan is “When in doubt, dike it out”. (The implication is that it is usually more effective to attack software problems by reducing complexity than by increasing it.) The word ‘dikes’ is widely used to mean ‘diagonal cutters’, a kind of wire cutter. To ‘dike something out’ means to use such cutters to remove something. Indeed, the TMRC Dictionary defined dike as “to attack with dikes”. Among hackers this term has been metaphorically extended to informational objects such as sections of code."
+    > Dike: "To remove or disable a portion of something, as a wire from a computer or a subroutine from a program. A standard slogan is “When in doubt, dike it out”. 
+    & The implication is that it is usually more effective to attack software problems by reducing complexity than by increasing it.
+    & The word ‘dikes’ is widely used to mean ‘diagonal cutters’, a kind of wire cutter. To ‘dike something out’ means to use such cutters to remove something. 
+    & Indeed, the TMRC Dictionary defined dike as “to attack with dikes”. Among hackers this term has been metaphorically extended to informational objects such as sections of code."
   LINK : http://www.catb.org/jargon/html/D/dike.html
 
 NEONIOUS
@@ -3847,6 +3860,7 @@ AGM SEALED
     > Sealed batteries are not sealed
     - aka "VRLA (valve-regulated lead-acid battery)"
   PROJ : Solar, Van
+  TAGS : electronics
 
 WHY WATER BATTERIES
   DATE : 12018-10-20
@@ -3858,6 +3872,7 @@ WHY WATER BATTERIES
 
 SBS 100F
   DATE : 12018-10-22
+  TYPE : list
   NOTE 
     > Recommended operating temperature range for optimum life and performance is 20°C to 25°C
     - On constant voltage float charge systems the design life expectancy is 10+ years at 25°C and 15+ years at 20°C
@@ -3910,6 +3925,7 @@ SBS 100F
 
 WIRE SIZING
   DATE : 12018-10-22
+  TYPE : tool
   LINK : http://www.solar-wind.co.uk/cable-sizing-DC-cables.html
   PROJ : Solar, Van
   TAGS : electronics, solar
@@ -3920,20 +3936,20 @@ SOLAR FUZES
     > Why
     - Fuzes are to protect the wiring from damage in the case of a short or surge.
     - It acts as the weakpoint in the curcuit, so if something goes wrong it will break where you expect (the fuze) rather than heat up and melt/burn wires which can cause a hazard (fire).
-  - Fuse on positive wire for convension's sake.
-  - Fuse as close to power source as reasonable.
-  > Fuze requirements
-  - between PV and CC
-  - between CC and BB
-  - between BB and inverter
-  > Fuze sizing
+    - Fuse on positive wire for convension's sake.
+    - Fuse as close to power source as reasonable.
+    > Fuze requirements
+    - between PV and CC
+    - between CC and BB
+    - between BB and inverter
+    > Fuze sizing
     - https://www.renogy.com/blog/how-to-fuse-your-solar-system/
-  - CC to BB - match amperage of CC. 
-  - eg: 30a CC = 30a fuze.
-  - PV to CC - PV output + 25% rounded up to nearest fuze. 
-  - eg: 24v 15a PV setup = 20a fuze.
-  - BB to inverter - see inverter's manual. General rule: “Continuous Watts / Battery Voltage times 1.25"
-  - eg: 1000W 12V inverter draws up 83~ continuous amps + 25% safety factor = 105 Amps, round up to 150a fuse.
+    - CC to BB - match amperage of CC. 
+    - eg: 30a CC = 30a fuze.
+    - PV to CC - PV output + 25% rounded up to nearest fuze. 
+    - eg: 24v 15a PV setup = 20a fuze.
+    - BB to inverter - see inverter's manual. General rule: “Continuous Watts / Battery Voltage times 1.25"
+    - eg: 1000W 12V inverter draws up 83~ continuous amps + 25% safety factor = 105 Amps, round up to 150a fuse.
   PROJ : Solar, Van
   TAGS : electronics, solar
 
@@ -3941,12 +3957,12 @@ LUGS (TERMINALS)
   DATE : 12018-10-22
   NOTE 
     > Battery Bank: ring terminal lug (depends on battery connection). Match thickness to BB wire thickness and hole size to battery connection. 
-  - eg: 25mm2 BB wire and M6 battery connector = 25x6 ring terminal lug.
-  > Solar panels (PV): MC4 connectors must all be the same source/brand for certification.
+    - eg: 25mm2 BB wire and M6 battery connector = 25x6 ring terminal lug.
+    > Solar panels (PV): MC4 connectors must all be the same source/brand for certification.
   PROJ : Solar, Van
   TAGS : electronics, solar
 
-TRACER COMMS
+TRACER BN COMMS
   DATE : 12018-10-23
   LINK
     > https://github.com/danieloneill/EpsolarServer
@@ -3975,16 +3991,17 @@ OGHAM
   NOTE : Ogham is an old Irish script made by carving notches into stones. It fell out of use more than a millennium ago - but it's an interesting exception to a linguistics and computer-science rule that I'd never even realised existed. Let's talk about the Ogham Space Mark.
   PROJ : Swordy
 
-ALTERNATOR CHARGING
+ALTERNATOR CHARGING OPTIONS
   DATE : 12018-10-24
   NOTE
-    > VSR (Voltage sensing relay)
-    > ACR (Automatic Charging Relay)
-    > B2B
-    > Manual switch
-    > Basic Relay (signal to van acc on)
-    > Diode Based Isolator
+    - VSR (Voltage sensing relay)
+    - ACR (Automatic Charging Relay)
+    - B2B charger
+    - Manual switch
+    - Basic Relay (signal connected to van acc on)
+    - Diode Based Isolator
   PROJ : Van
+  TAGS : electronics
 
 VAN ELECTRICAL GUIDES
   LINK 
@@ -3992,20 +4009,24 @@ VAN ELECTRICAL GUIDES
     > https://gnomadhome.com/van-build-solar-electrical-wiring/
     > https://www.parkedinparadise.com/electrical/
   PROJ : Van
+  TAGS : electronics
 
 BATTERY BANK WIRING
   LINK : http://www.smartgauge.co.uk/batt_con.html
   FILE : 12018-10-25_bbwire.pdf
   PROJ : Van
+  TAGS : electronics
 
 NCASE REMEMBER
   LINK : https://ncase.me/remember/
   NOTE : Anki style interactive comic
 
 DESIGN PILLARS
+  DATE : 12018-10-28
   TAGS : core
   TYPE : term
-  TERM : Design pillars: Narrowed focus core aspects to steer design and development toward to cohesive whole
+  TERM
+    > Design pillars: Narrowed focus core aspects to steer design and development toward to cohesive whole
   NOTE 
     > Known by entire team. 
     > Established early and referenced (check project/decisions against) throughout development.
@@ -4017,3 +4038,17 @@ DESIGN PILLARS
   LINK : https://www.youtube.com/watch?v=-Sq0nc5LxCc
 
 LOG LINE
+  DATE : 12018-10-28
+  TAGS : core
+  TYPE : term
+  TERM 
+    > Log line: 
+
+ANTI-FRAGILITY
+  DATE : 12018-10-29
+  TYPE : term
+  TERM : Antifragility: "a property of systems that increase in capability, resilience, or robustness as a result of stressors, shocks, volatility, noise, mistakes, faults, attacks, or failures."
+  LINK
+    > https://www.youtube.com/watch?v=uWYYbRxWS7Q&index=1&list=WL
+    > https://en.wikipedia.org/wiki/Antifragility
+  TAGS : antifragile

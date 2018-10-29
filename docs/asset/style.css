@@ -346,18 +346,22 @@ body {
 }
 
 /* TYPE */
+.griditem-typecontainer {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  margin-right: var(--size-grid-gutter);
+}
 .griditem-type {
   opacity: var(--alpha-idle);
-  width: calc(var(--size-font-bodytypes)*2 + var(--size-grid-gutter));
+  width: calc(var(--size-font-bodytypes)*2);
   color: var(--color-item);
   padding-bottom: var(--size-grid-gutter);
   font-size: var(--size-font-bodytypes);
   padding-top: var(--size-grid-gutter);
   vertical-align: top;
   text-align: center;
-  position: absolute;
-  right: 0px;
-  top: 0px;
+  float: right;
 }
 .griditem-typeicon {
   opacity: var(--alpha-idleicon);
