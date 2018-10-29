@@ -32,6 +32,18 @@ function Wrap()
         }
       }
 
+      // FILE
+      if (typeof value.FILE == 'object')
+      {
+        for (let f = 0; f < value.FILE.length; f++)
+        {
+          if (value.FILE[f].substr(0,2) == '> ')
+          {
+            value.FILE[f] = value.FILE[f].substr(2,value.FILE[f].length-1);
+          }
+        }
+      }
+
       this.database[this.keys[i]].DIID = i;
     }
   }

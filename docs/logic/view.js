@@ -26,6 +26,7 @@ function View()
     SHOWTERM: true,
     SHOWPROG: true,
     SHOWIMAG: true,
+    SHOWFILE: true,
     SHOWOVERLAY: true
   }
 
@@ -277,6 +278,26 @@ function View()
         if (this.isDefined(value.PROG))
         {
           entry += `<div class="griditem-prog"><i class="fas fa-clock textIcon"></i>${value.PROG}</div>`;
+        }
+      }
+
+      // FILE
+      if (SETTINGS.SHOWFILE)
+      {
+        if (this.isDefined(value.FILE))
+        {
+          if (typeof value.FILE == 'object')
+          {
+            for (var i = 0; i < value.FILE.length; i++) 
+            {
+              entry += `<div class="griditem-file"><i class="fas fa-folder-open textIcon"></i><a class="griditem-file-link" href="content/media/${value.FILE[i]}">${value.FILE[i]}</a></div>`;
+            }
+          }
+          else
+          {
+            // single
+            entry += `<div class="griditem-file"><i class="fas fa-folder-open textIcon"></i><a class="griditem-file-link" href="content/media/${value.FILE}">${value.FILE}</a></div>`;
+          }
         }
       }
 
