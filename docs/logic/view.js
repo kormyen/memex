@@ -149,7 +149,9 @@ function View()
       // LINK END
       if (SETTINGS.SHOWLINK && typeof value.LINK !== 'undefined')
       {
-        entry += `<div class="griditem-linkcontainer"><i class="griditem-linkicon fas fa-link"></i><div class="griditem-linktitle">${this.extractRootDomain(value.LINK)}</div></div></a>`;
+        entry += `</a>`;
+
+        //entry += `<div class="griditem-linkcontainer"><i class="griditem-linkicon fas fa-link"></i><div class="griditem-linktitle">${this.extractRootDomain(value.LINK)}</div></div></a>`;
       }
 
       // TYPE
@@ -541,6 +543,8 @@ function View()
     }
     else
     {
+      console.log('calling extract on: ' + url);
+
       hostname = url.split('/')[0];
     }
 
