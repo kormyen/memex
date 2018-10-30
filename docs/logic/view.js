@@ -101,15 +101,17 @@ function View()
       }
     }
 
-    if (SETTINGS.SHOWIMAG && this.isDefined(value.TYPE) && value.TYPE[0] === 'image')
+    let onclickImage = ``;
+    if (SETTINGS.SHOWIMAG && this.isType(value.TYPE, 'image'))
     {
       itemClass += " griditem-image";
+      onclickImage = `onclick="main.lightbox.load('content/media/${value.FILE}')" style="cursor: pointer;"`;
     }
 
     let entry = ``;
+    entry += `<div class="${itemClass}" id="${SETTINGS.GRIDITEMIDBASE + value.DIID}">`;
 
     // ITEM DIV
-    entry += `<div class="${itemClass}" id="${SETTINGS.GRIDITEMIDBASE + value.DIID}">`;
     if (this.isDefined(value.LINK))
     {
       var idUrl = "url";
@@ -129,7 +131,7 @@ function View()
     // UPPER CONTENT START
     if (SETTINGS.SHOWUPPER)
     {
-      entry += `<div class="griditem-containerupper">`;
+      entry += `<div class="griditem-containerupper" ${onclickImage}>`;
 
       // TITLE
       if (SETTINGS.SHOWTITLE)
@@ -176,7 +178,7 @@ function View()
     // LOWER CONTENT START
     if (SETTINGS.SHOWLOWER)
     {
-      entry += `<div class="griditem-containerlower">`;
+      entry += `<div class="griditem-containerlower" ${onclickImage}>`;
 
       // AUTHOR
       if (SETTINGS.SHOWAUTH && this.isDefined(value.AUTH))
@@ -245,7 +247,7 @@ function View()
         && this.isImage(value.FILE))
       {
         entry += `<div class="image">`;
-        entry += `<img class="griditem-img" src="content/media/${value.FILE}">`;
+        entry += `<img class="griditem-img" src="content/media/${value.FILE}" onclick="main.lightbox.load('content/media/${value.FILE}')">`;
         entry += `</div>`;
       }
 

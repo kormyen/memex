@@ -4,16 +4,22 @@ function Main()
   this.view = null;
   this.add = null;
   this.write = null;
+  this.theme = null;
+  this.lightbox = null;
+
   this.queryCur = '';
   this.queryPrev = '';
   this.queryPrevAdd = '';
-  this.theme = new Theme();
+
   var parent = this;
   const FILELOCATION = 'content/data.ndtl';
 
   this.install = function()
   {
+    this.theme = new Theme();
     this.theme.install();
+    this.lightbox = new Lightbox;
+    this.lightbox.install();
 
     var oReq = new XMLHttpRequest();
     oReq.open('GET', FILELOCATION);
@@ -52,6 +58,8 @@ function Main()
 
   this.load = function(target)
   {
+    this.lightbox.close();
+
     document.activeElement.blur();
     if (this.queryCur !== 'add')
     {
