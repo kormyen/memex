@@ -356,7 +356,7 @@ function View()
     {
       menuContent += `<div class="menu-tagcontainer">`;
       menuContent += `<i class="menu-tagicon fas fa-tag"></i>`;
-      for (var t = 0; t < Math.min(value.types.length, SETTINGS.STATSNUMTAGS); t++) 
+      for (var t = 0; t < Math.min(value.tags.length, SETTINGS.STATSNUMTAGS); t++) 
       {
         menuContent += `<a class="menu-tag" href='#tag-${value.tags[t][0]}'>`;
         // menuContent += `<i class="fas fa-tag textIcon"></i>`;
