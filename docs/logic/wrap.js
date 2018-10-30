@@ -12,8 +12,8 @@ function Wrap()
 
   this.process = function()
   {
-    for (i = 0; i < this.keys.length; i++) 
-    { 
+    for (let i = 0; i < this.keys.length; i++)
+    {
       let value = this.database[this.keys[i]];
 
       // TAGS
@@ -42,8 +42,8 @@ function Wrap()
     }
     else if (target == 'term')
     {
-      for (i = 0; i < this.keys.length; i++) 
-      { 
+      for (let i = 0; i < this.keys.length; i++)
+      {
         let value = this.database[this.keys[i]];
         if (typeof value.TERM !== 'undefined')
         {
@@ -58,8 +58,8 @@ function Wrap()
       {
         // TAG
         var tagDecoded = decodeURI(splitTarget[1]);
-        for (i = 0; i < this.keys.length; i++) 
-        { 
+        for (let i = 0; i < this.keys.length; i++)
+        {
           let value = this.database[this.keys[i]];
           if (typeof value.TAGS !== 'undefined')
           {
@@ -77,8 +77,8 @@ function Wrap()
       {
         // TYPE
         var tagDecoded = decodeURI(splitTarget[1]);
-        for (i = 0; i < this.keys.length; i++) 
-        { 
+        for (let i = 0; i < this.keys.length; i++)
+        {
           let value = this.database[this.keys[i]];
           if (typeof value.TYPE !== 'undefined')
           {
@@ -93,8 +93,8 @@ function Wrap()
       {
         // DONE
         var doneValue = decodeURI(splitTarget[1]);
-        for (i = 0; i < this.keys.length; i++) 
-        { 
+        for (let i = 0; i < this.keys.length; i++)
+        {
           let value = this.database[this.keys[i]];
           if (doneValue == 'true')
           {
