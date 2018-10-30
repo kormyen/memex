@@ -78,6 +78,8 @@ function View()
     let imgLoad = imagesLoaded( container );
     // When all images finish: redo mansonry layout
     imgLoad.on( 'always', function() { parent.msnry.layout(); } );
+    // As images load one by one: redo masonry layout
+    // imgLoad.on( 'progress', function() { parent.msnry.layout(); } );
   }
 
   this.buildEntry = function(db, key)
@@ -230,16 +232,21 @@ function View()
         entry += this.doMultilineFormatting(value.QOTE, "griditem-quote", "fas fa-comment textIcon");
       }
 
-      // TERM
-      if (SETTINGS.SHOWTERM && this.isDefined(value.TERM))
-      {
-        entry += this.doMultilineFormatting(value.TERM, "griditem-term", "fas fa-ribbon textIcon");
-      }
-
       // PROGRESS
       if (SETTINGS.SHOWPROG && this.isDefined(value.PROG))
       {
         entry += `<div class="griditem-prog"><i class="fas fa-clock textIcon"></i>${value.PROG}</div>`;
+      }
+
+      // IMAGE - for non-image-type-entry
+      if (SETTINGS.SHOWIMAG 
+        && !this.isType(value.TYPE, 'image')
+        && this.isDefined(value.FILE)
+        && this.isImage(value.FILE))
+      {
+        entry += `<div class="image">`;
+        entry += `<img class="griditem-img" src="content/media/${value.FILE}">`;
+        entry += `</div>`;
       }
 
       // FILE
@@ -263,9 +270,11 @@ function View()
       entry += `</div>`;
     }
 
-    // IMAGE
-    if (SETTINGS.SHOWIMAG && this.isDefined(value.TYPE) 
-      && value.TYPE[0] === 'image' && this.isDefined(value.FILE))
+    // IMAGE - for image-type-entry
+    if (SETTINGS.SHOWIMAG 
+        && this.isType(value.TYPE, 'image')
+        && this.isDefined(value.FILE)
+        && this.isImage(value.FILE))
     {
       entry += `<div class="image">`;
       if (SETTINGS.SHOWOVERLAY)
@@ -430,7 +439,7 @@ function View()
     return icon;
   }
 
-  // GENERAL HELPER
+  // HELPER
   this.isDefined = function(value)
   {
     return (typeof value !== 'undefined');
@@ -439,6 +448,26 @@ function View()
   this.isObject = function(value)
   {
     return (typeof value == 'object');
+  }
+
+  this.isImage = function(filename)
+  {
+    return (/\.(gif|jpg|jpeg|tiff|png)$/i).test(filename);
+  }
+
+  this.isType = function(typeArray, value)
+  {
+    if (this.isDefined(typeArray))
+    {
+      for (var i = 0; i < typeArray.length; i++)
+      {
+        if (typeArray[i] == value)
+        {
+          return true;
+        }
+      }
+    }
+    return false;
   }
 
   String.prototype.to_properCase = function()

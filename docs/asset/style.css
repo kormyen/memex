@@ -262,6 +262,14 @@ body {
   top: 0;
   left: 0;
 }
+.griditem-img {
+  vertical-align: middle; /* vertical-align css hack removes bottom padding */
+  width: calc(100% + var(--size-grid-gutter)*2);
+  max-height: 1000px;
+  margin-left: calc(-1 * var(--size-grid-gutter));
+  margin-right: calc(-1 * var(--size-grid-gutter));
+  padding-top: var(--size-grid-gutter);
+}
 .image-overlay { 
   background-color: var(--color-imagedarken);
   position: absolute;
