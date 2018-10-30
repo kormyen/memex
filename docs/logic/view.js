@@ -58,14 +58,15 @@ function View()
     }
 
     // BUILD
-    this.grid.innerHTML = '';
-    var dbKeys = Object.keys(db);
-    var i = 0;
+    let dbKeys = Object.keys(db);
+    let i = 0;
+    let contentHtml = '';
     while (i < dbKeys.length) 
     {
-      this.buildEntry(db, dbKeys[i]);
+      contentHtml += this.buildEntry(db, dbKeys[i]);
       i++;
     }
+    this.grid.innerHTML = contentHtml;
 
     // LAYOUT
     if (SETTINGS.USEMASONRY)
@@ -74,7 +75,7 @@ function View()
       this.msnry.layout();
     }
 
-    var imgLoad = imagesLoaded( container );
+    let imgLoad = imagesLoaded( container );
     // When all images finish: redo mansonry layout
     imgLoad.on( 'always', function() { parent.msnry.layout(); } );
   }
@@ -324,8 +325,7 @@ function View()
     }
 
     entry += `</div>`;
-
-    this.grid.innerHTML += entry;
+    return entry;
   }
 
   this.doTypeIcon = function(type, count)
