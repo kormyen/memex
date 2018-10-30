@@ -357,6 +357,9 @@ function View()
       case 'encyclopedia':
         result += `<i class="griditem-typeicon fas fa-globe"></i>`;
         break;
+      case 'term':
+        result += `<i class="griditem-typeicon fas fa-ribbon"></i>`;
+        break;
     }
     result += `</a>`;
     return result;
@@ -419,6 +422,7 @@ function View()
         case 'music': icon = 'fas fa-music'; break;
         case 'image': icon = 'fas fa-image'; break;
         case 'encyclopedia': icon = 'fas fa-globe'; break;
+        case 'term': icon = 'fas fa-ribbon'; break;
       }
 
       menuContent += `<a href='#type-${type}' class="menu-item">`;
