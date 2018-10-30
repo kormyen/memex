@@ -99,7 +99,7 @@ function View()
       }
     }
 
-    if (SETTINGS.SHOWIMAG && this.isDefined(value.TYP) && value.TYPE === 'image')
+    if (SETTINGS.SHOWIMAG && this.isDefined(value.TYPE) && value.TYPE[0] === 'image')
     {
       itemClass += " griditem-image";
     }
@@ -265,7 +265,7 @@ function View()
 
     // IMAGE
     if (SETTINGS.SHOWIMAG && this.isDefined(value.TYPE) 
-      && value.TYPE === 'image' && this.isDefined(value.FILE))
+      && value.TYPE[0] === 'image' && this.isDefined(value.FILE))
     {
       entry += `<div class="image">`;
       if (SETTINGS.SHOWOVERLAY)
@@ -312,7 +312,7 @@ function View()
     menuContent += `<i class="menu-itemicon fas fa-times"></i>`;
     menuContent += `</a>`;
     menuContent += `</div>`;
-    
+
     menuContent += `<div class="menu-itemgroup">`;
     for (let ty = 0; ty < Math.min(value.types.length, SETTINGS.STATSNUMTYPE); ty++) 
     {
