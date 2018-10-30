@@ -52,7 +52,7 @@ function View()
 
   this.display = function(db)
   {
-    if (window.showAdd != undefined && window.showAdd)
+    if (window.showAdd !== undefined && window.showAdd)
     {
       main.add.setOverlay(false);
     }
@@ -104,12 +104,12 @@ function View()
       }
     }
 
-    if (SETTINGS.SHOWIMAG)
+    if (
+      SETTINGS.SHOWIMAG
+      && typeof value.TYPE !== 'undefined' && value.TYPE === 'image'
+    )
     {
-      if (this.isDefined(value.TYPE) && value.TYPE == 'image')
-      {
-        itemClass += " griditem-image";
-      }
+      itemClass += " griditem-image";
     }
 
     let entry = ``;
@@ -119,12 +119,9 @@ function View()
     if (this.isDefined(value.LINK))
     {
       var idUrl = "url";
-      if (this.isDefined(value.SEEN))
+      if (typeof value.SEEN !== 'undefined' && value.SEEN === "true")
       {
-        if (value.SEEN == "true")
-        {
-          idUrl = "urlseen";
-        }
+        idUrl = "urlseen";
       }
 
       // LINK START
@@ -150,46 +147,34 @@ function View()
       }
 
       // LINK END
-      if (SETTINGS.SHOWLINK)
+      if (SETTINGS.SHOWLINK && typeof value.LINK !== 'undefined')
       {
-        if (this.isDefined(value.LINK))
-        {
-          if (typeof value.LINK == 'object')
-          {
-            for (let l = 0; l < value.LINK.length; l++)
-            {
-              entry += `<a class="griditem-link" href="${String(value.LINK[l])}" id="${idUrl}">`;
-              entry += `<div class="griditem-linkcontainer"><i class="griditem-linkicon fas fa-link"></i><div class="griditem-linktitle">${this.extractRootDomain(value.LINK[l])}</div></div></a>`;
-            }
-          }
-          else
-          {
-            entry += `<div class="griditem-linkcontainer"><i class="griditem-linkicon fas fa-link"></i><div class="griditem-linktitle">${this.extractRootDomain(value.LINK)}</div></div></a>`;
-          }
-        }
+        entry += `<div class="griditem-linkcontainer"><i class="griditem-linkicon fas fa-link"></i><div class="griditem-linktitle">${this.extractRootDomain(value.LINK)}</div></div></a>`;
       }
 
       // TYPE
-      if (SETTINGS.SHOWTYPE)
+      if (SETTINGS.SHOWTYPE && typeof value.TYPE !== 'undefined')
       {
-        entry += `<div class="griditem-typecontainer">`;
-        if (this.isDefined(value.TYPE))
-        {
-          if (typeof value.TYPE == 'object')
-          {
-            // This entry has an array of types
-            for (var i = 0; i < value.TYPE.length; i++)
-            {
-              entry += this.doTypeIcon(value.TYPE[i]);
-            }
-          }
-          else
-          {
-            // This entry has a single type
-            entry += this.doTypeIcon(value.TYPE[i]);
-          }
+        let icon = '';
+        switch (value.TYPE) {
+          case 'article': icon = 'far fa-newspaper'; break;
+          case 'podcast': icon = 'fas fa-podcast'; break;
+          case 'video': icon = 'fas fa-tv'; break;
+          case 'list': icon = 'fas fa-file-alt'; break;
+          case 'book': icon = 'fas fa-book-open'; break;
+          case 'game': icon = 'fas fa-gamepad'; break;
+          case 'service': icon = 'fas fa-server'; break;
+          case 'lecture': icon = 'fas fa-chalkboard-teacher'; break;
+          case 'quote': icon = 'fas fa-comment'; break;
+          case 'tool': icon = 'fas fa-wrench'; break;
+          case 'music': icon = 'fas fa-music'; break;
+          case 'image': icon = 'fas fa-image'; break;
+          case 'encyclopedia': icon = 'fas fa-globe'; break;
         }
-        entry += `</div>`; //griditem-typecontainer
+
+        entry += `<a class="griditem-type" href='#type-${value.TYPE}'>`;
+        entry += `<i class="griditem-typeicon ${icon}"></i>`;
+        entry += `</a>`;
       }
 
       // UPPER CONTENT END
@@ -202,30 +187,24 @@ function View()
       entry += `<div class="griditem-containerlower">`;
 
       // AUTHOR
-      if (SETTINGS.SHOWAUTH)
+      if (SETTINGS.SHOWAUTH && typeof value.AUTH !== 'undefined')
       {
-        if (this.isDefined(value.AUTH))
-        {
-          entry += `<div class="griditem-auth"><i class="fas fa-user textIcon"></i>${value.AUTH}</div>`;
-        }
+        entry += `<div class="griditem-auth"><i class="fas fa-user textIcon"></i>${value.AUTH}</div>`;
       }
 
       // TAGS
-      if (SETTINGS.SHOWTAGS)
+      if (SETTINGS.SHOWTAGS && typeof value.TAGS !== 'undefined')
       {
-        if (this.isDefined(value.TAGS))
+        entry += `<div class="griditem-tags"><i class="fas fa-tag textIcon"></i>`;
+        for (var i = 0; i < value.TAGS.length; i++)
         {
-          entry += `<div class="griditem-tags"><i class="fas fa-tag textIcon"></i>`;
-          for (var i = 0; i < value.TAGS.length; i++)
+          entry += `<a class="griditem-taglink" href="#tag-${value.TAGS[i]}">${value.TAGS[i]}</a>`;
+          if (i+1 !== value.TAGS.length)
           {
-            entry += `<a class="griditem-taglink" href="#tag-${value.TAGS[i]}">${value.TAGS[i]}</a>`;
-            if (i + 1 != value.TAGS.length)
-            {
-              entry += `, `;
-            }
-          };
-          entry += `</div>`;
-        }
+            entry += `, `;
+          }
+        };
+        entry += `</div>`;
       }
 
       // PROJECT
@@ -256,30 +235,27 @@ function View()
       }
 
       // NOTE
-      if (SETTINGS.SHOWNOTE)
+      if (SETTINGS.SHOWNOTE && typeof value.NOTE !== 'undefined')
       {
-        if (this.isDefined(value.NOTE))
-        {
-          entry += this.buildArrayElement(value.NOTE, "griditem-note", "fas fa-sticky-note textIcon");
-        }
+        entry += this.buildArrayElement(value.NOTE, "griditem-note", "fas fa-sticky-note textIcon");
       }
 
       // QUOTE
-      if (SETTINGS.SHOWQOTE)
+      if (SETTINGS.SHOWQOTE && typeof value.QOTE !== 'undefined')
       {
-        if (this.isDefined(value.QOTE))
-        {
-          entry += this.buildArrayElement(value.QOTE, "griditem-quote", "fas fa-comment textIcon");
-        }
+        entry += this.buildArrayElement(value.QOTE, "griditem-quote", "fas fa-comment textIcon");
+      }
+
+      // TERM
+      if (SETTINGS.SHOWTERM && typeof value.TERM !== 'undefined')
+      {
+        entry += this.buildArrayElement(value.TERM, "griditem-term", "fas fa-ribbon textIcon");
       }
 
       // PROGRESS
-      if (SETTINGS.SHOWPROG)
+      if (SETTINGS.SHOWPROG && typeof value.PROG !== 'undefined')
       {
-        if (this.isDefined(value.PROG))
-        {
-          entry += `<div class="griditem-prog"><i class="fas fa-clock textIcon"></i>${value.PROG}</div>`;
-        }
+        entry += `<div class="griditem-prog"><i class="fas fa-clock textIcon"></i>${value.PROG}</div>`;
       }
 
       // FILE
@@ -307,21 +283,19 @@ function View()
     }
 
     // IMAGE
-    if (SETTINGS.SHOWIMAG)
+    if (
+      SETTINGS.SHOWIMAG
+      && typeof value.TYPE !== 'undefined' && value.TYPE === 'image'
+      && typeof value.FILE !== 'undefined'
+    )
     {
-      if (this.isDefined(value.TYPE) && value.TYPE == 'image')
+      entry += `<div class="image">`;
+      if (SETTINGS.SHOWOVERLAY)
       {
-        if (this.isDefined(value.FILE))
-        {
-          entry += `<div class="image">`;
-          if (SETTINGS.SHOWOVERLAY)
-          {
-            entry += `<div class="image-overlay"></div>`;
-          }
-          entry += `<img class="griditem-image-img" src="content/media/${value.FILE}">`;
-          entry += `</div>`;
-        }
+        entry += `<div class="image-overlay"></div>`;
       }
+      entry += `<img class="griditem-image-img" src="content/media/${value.FILE}">`;
+      entry += `</div>`;
     }
 
     entry += `</div>`;
@@ -380,8 +354,8 @@ function View()
   this.stats = function(value)
   {
     let menuContent = ``;
-    
-    if (window.showAdd != undefined && window.showAdd)
+
+    if (window.showAdd !== undefined && window.showAdd)
     {
       // ADD
       menuContent += `<div class="menu-itemgroup">`;
@@ -416,97 +390,30 @@ function View()
     menuContent += `<div class="menu-itemgroup">`;
     for (var ty = 0; ty < Math.min(value.types.length, SETTINGS.STATSNUMTYPE); ty++) 
     {
-      if (value.types[ty][0] == 'article')
-      {
-        menuContent += `<a href='#type-article' class="menu-item">`;
-        menuContent += `<div class="menu-itemcount">${value.types[ty][1]}</div>`;
-        menuContent += `<i class="menu-itemicon far fa-newspaper"></i>`;
-        menuContent += `</a>`;
+      const type = value.types[ty][0];
+      const count = value.types[ty][1];
+      let icon = '';
+
+      switch (type) {
+        case 'article': icon = 'far fa-newspaper'; break;
+        case 'podcast': icon = 'fas fa-podcast'; break;
+        case 'video': icon = 'fas fa-tv'; break;
+        case 'list': icon = 'fas fa-file-alt'; break;
+        case 'book': icon = 'fas fa-book-open'; break;
+        case 'game': icon = 'fas fa-gamepad'; break;
+        case 'service': icon = 'fas fa-server'; break;
+        case 'lecture': icon = 'fas fa-chalkboard-teacher'; break;
+        case 'quote': icon = 'fas fa-comment'; break;
+        case 'tool': icon = 'fas fa-wrench'; break;
+        case 'music': icon = 'fas fa-music'; break;
+        case 'image': icon = 'fas fa-image'; break;
+        case 'encyclopedia': icon = 'fas fa-globe'; break;
       }
-      else if (value.types[ty][0] == 'podcast')
-      {
-        menuContent += `<a href='#type-podcast' class="menu-item">`;
-        menuContent += `<div class="menu-itemcount">${value.types[ty][1]}</div>`;
-        menuContent += `<i class="menu-itemicon fas fa-podcast"></i>`;
-        menuContent += `</a>`;
-      }
-      else if (value.types[ty][0] == 'video')
-      {
-        menuContent += `<a href='#type-video' class="menu-item">`;
-        menuContent += `<div class="menu-itemcount">${value.types[ty][1]}</div>`;
-        menuContent += `<i class="menu-itemicon fas fa-tv"></i>`;
-        menuContent += `</a>`;
-      }
-      else if (value.types[ty][0] == 'list')
-      {
-        menuContent += `<a href='#type-list' class="menu-item">`;
-        menuContent += `<div class="menu-itemcount">${value.types[ty][1]}</div>`;
-        menuContent += `<i class="menu-itemicon fas fa-file-alt"></i>`;
-        menuContent += `</a>`;
-      }
-      else if (value.types[ty][0] == 'book')
-      {
-        menuContent += `<a href='#type-book' class="menu-item">`;
-        menuContent += `<div class="menu-itemcount">${value.types[ty][1]}</div>`;
-        menuContent += `<i class="menu-itemicon fas fa-book-open"></i>`;
-        menuContent += `</a>`;
-      }
-      else if (value.types[ty][0] == 'game')
-      {
-        menuContent += `<a href='#type-game' class="menu-item">`;
-        menuContent += `<div class="menu-itemcount">${value.types[ty][1]}</div>`;
-        menuContent += `<i class="menu-itemicon fas fa-gamepad"></i>`;
-        menuContent += `</a>`;
-      }
-      else if (value.types[ty][0] == 'service')
-      {
-        menuContent += `<a href='#type-service' class="menu-item">`;
-        menuContent += `<div class="menu-itemcount">${value.types[ty][1]}</div>`;
-        menuContent += `<i class="menu-itemicon fas fa-server"></i>`;
-        menuContent += `</a>`;
-      }
-      else if (value.types[ty][0] == 'lecture')
-      {
-        menuContent += `<a href='#type-lecture' class="menu-item">`;
-        menuContent += `<div class="menu-itemcount">${value.types[ty][1]}</div>`;
-        menuContent += `<i class="menu-itemicon fas fa-chalkboard-teacher"></i>`;
-        menuContent += `</a>`;
-      }
-      else if (value.types[ty][0] == 'quote')
-      {
-        menuContent += `<a href='#type-quote' class="menu-item">`;
-        menuContent += `<div class="menu-itemcount">${value.types[ty][1]}</div>`;
-        menuContent += `<i class="menu-itemicon fas fa-comment"></i>`;
-        menuContent += `</a>`;
-      }
-      else if (value.types[ty][0] == 'tool')
-      {
-        menuContent += `<a href='#type-tool' class="menu-item">`;
-        menuContent += `<div class="menu-itemcount">${value.types[ty][1]}</div>`;
-        menuContent += `<i class="menu-itemicon fas fa-wrench"></i>`;
-        menuContent += `</a>`;
-      }
-      else if (value.types[ty][0] == 'music')
-      {
-        menuContent += `<a href='#type-music' class="menu-item">`;
-        menuContent += `<div class="menu-itemcount">${value.types[ty][1]}</div>`;
-        menuContent += `<i class="menu-itemicon fas fa-music"></i>`;
-        menuContent += `</a>`;
-      }
-      else if (value.types[ty][0] == 'image')
-      {
-        menuContent += `<a href='#type-image' class="menu-item">`;
-        menuContent += `<div class="menu-itemcount">${value.types[ty][1]}</div>`;
-        menuContent += `<i class="menu-itemicon fas fa-image"></i>`;
-        menuContent += `</a>`;
-      }
-      else if (value.types[ty][0] == 'encyclopedia')
-      {
-        menuContent += `<a href='#type-encyclopedia' class="menu-item">`;
-        menuContent += `<div class="menu-itemcount">${value.types[ty][1]}</div>`;
-        menuContent += `<i class="menu-itemicon fas fa-globe"></i>`;
-        menuContent += `</a>`;
-      }
+
+      menuContent += `<a href='#type-${type}' class="menu-item">`;
+      menuContent += `<div class="menu-itemcount">${count}</div>`;
+      menuContent += `<i class="menu-itemicon ${icon}"></i>`;
+      menuContent += `</a>`;
     }
     menuContent += `</div>`;
 
@@ -569,7 +476,7 @@ function View()
             result += `<div class="${className}"><i class="${iconName}"></i>${data[i].substring(2)}</div>`;
           }
         }
-        else if (data[i].substring(0, 2) == "& ")
+        else if (data[i].substring(0, 2) === "& ")
         {
           // New line in current item
           result += `<div class="${className}">${data[i].substring(2)}</div>`;
@@ -613,7 +520,7 @@ function View()
     {
       domain = splitArr[arrLen - 2] + '.' + splitArr[arrLen - 1];
       // check to see if it's using a Country Code Top Level Domain (ccTLD) (i.e. ".me.uk")
-      if (splitArr[arrLen - 2].length == 2 && splitArr[arrLen - 1].length == 2)
+      if (splitArr[arrLen - 2].length === 2 && splitArr[arrLen - 1].length === 2)
       {
         // this is using a ccTLD
         domain = splitArr[arrLen - 3] + '.' + domain;

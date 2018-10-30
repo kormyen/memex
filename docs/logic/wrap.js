@@ -12,8 +12,8 @@ function Wrap()
 
   this.process = function()
   {
-    for (i = 0; i < this.keys.length; i++) 
-    { 
+    for (let i = 0; i < this.keys.length; i++)
+    {
       let value = this.database[this.keys[i]];
 
       this.database[this.keys[i]].TAGS = this.commaSplit(value.TAGS);
@@ -57,8 +57,8 @@ function Wrap()
     }
     else if (target == 'term')
     {
-      for (i = 0; i < this.keys.length; i++) 
-      { 
+      for (let i = 0; i < this.keys.length; i++)
+      {
         let value = this.database[this.keys[i]];
         if (typeof value.TERM !== 'undefined')
         {
@@ -74,7 +74,7 @@ function Wrap()
         // TAG
         let tagRequest = decodeURI(splitTarget[1]);
         for (let i = 0; i < this.keys.length; i++) 
-        { 
+        {
           let value = this.database[this.keys[i]];
           if (typeof value.TAGS !== 'undefined')
           {
