@@ -3014,7 +3014,7 @@ POMEGRANATES COLOR
   DATE : 12018-09-06
   TYPE : video
   LINK : https://www.youtube.com/watch?v=8MXjUf05HVE
-  QOTE : 
+  QOTE
     > "The world is a window" 
     > "Stop asking 'what does this mean?', and start asking 'how does it make me feel?'"
     > "There is always a new way to see."
@@ -3349,6 +3349,7 @@ MAGIC
   PROJ : Megamex
 
 BLOND RED BLUE
+  PROJ : Megamex
   NOTE
     > Basque (Euskara)
     & Berbers (Amazigh)
@@ -3383,18 +3384,19 @@ BLOND RED BLUE
     > Chariot (egypt and rome)
     > "Half of European men share King Tut's DNA" ""
 
-Time > Constellations > Ancient Culture
-
 KATAKOMBY
+  PROJ : Megamex
   LINK : https://translate.google.com/translate?hl=en&sl=ru&tl=en&u=http%3A%2F%2Fwww.katakomby.odessa.ua%2F
   LINK : http://www.katakomby.odessa.ua/
   NOTE : Ukraine and Paris catacombs "For 20 years, 240 kilometers of underground workings have been mapped"
   FILE : 12018-09-16_katacomby.jpg
 
 CELTIC NZ
+  PROJ : Megamex
   LINK : http://www.celticnz.co.nz/articles.html
 
 LEY-LINES
+  PROJ : Megamex
   TERM
     > Feng-Shui
     > Chinese art/science meaning 'wind and water', 'that which cannot be seen and cannot be grasped'. 
@@ -3501,12 +3503,13 @@ REGENERATIVE ECONOMIC THEORY
   LINK : https://www.youtube.com/watch?v=YMCcoKXh3K0
   FILE : 12018-10-05_regencap.pdf
 
-MEMEX
+MEMEX SIXTY YEARS LATER
   DATE : 12018-10-08
   FILE : 12018-10-08_memexSurvey.pdf
   NOTE : "Building the Memex Sixty Years Later: Trends and Directions in Personal Knowledge Bases"
   PERS : neauoire
   SRCE : mastodon
+  PROJ : Memex
 
 TO BURN TO MEMORY
   DATE : 12018-10-18
@@ -3521,6 +3524,7 @@ TO BURN TO MEMORY
     & Locked door - Salandre Residence, Boulevard, Latin Quarter
 
 OPPOSITES IN BALANCE
+  PROJ : Megamex
   NOTE 
     > Sun and moon combined
     > Opposites in balance
@@ -3541,6 +3545,7 @@ OPPOSITES IN BALANCE
     > "The ability to see the harmony... is nowhere more prominent than in Indian theology. Transcending of all pairs of opposites is central to Hindu thought." - Steven Rosen, Essential Hinduism
 
 TRINITY
+  PROJ : Megamex
   NOTE
     > Jachin Boaz Triangle
     > Yang Yin Tao (the whole, circle, eternity)
@@ -3918,7 +3923,7 @@ LOG LINE
   TAGS : core
   TYPE : term
   TERM 
-    > Log line: 
+    > Log line: "a one (or occasionally two) sentence description that boils the script down to its essential dramatic narrative in as succinct a manner as possible."
 
 ANTI-FRAGILITY
   DATE : 12018-10-29
