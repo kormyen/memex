@@ -166,26 +166,16 @@ function View()
       // TYPE
       if (SETTINGS.SHOWTYPE && typeof value.TYPE !== 'undefined')
       {
-        let icon = '';
-        switch (value.TYPE) {
-          case 'article': icon = 'far fa-newspaper'; break;
-          case 'podcast': icon = 'fas fa-podcast'; break;
-          case 'video': icon = 'fas fa-tv'; break;
-          case 'list': icon = 'fas fa-file-alt'; break;
-          case 'book': icon = 'fas fa-book-open'; break;
-          case 'game': icon = 'fas fa-gamepad'; break;
-          case 'service': icon = 'fas fa-server'; break;
-          case 'lecture': icon = 'fas fa-chalkboard-teacher'; break;
-          case 'quote': icon = 'fas fa-comment'; break;
-          case 'tool': icon = 'fas fa-wrench'; break;
-          case 'music': icon = 'fas fa-music'; break;
-          case 'image': icon = 'fas fa-image'; break;
-          case 'encyclopedia': icon = 'fas fa-globe'; break;
-        }
 
-        entry += `<a class="griditem-type" href='#type-${value.TYPE}'>`;
-        entry += `<i class="griditem-typeicon ${icon}"></i>`;
-        entry += `</a>`;
+        entry += `<div class="griditem-typecontainer">`;
+        for (let tc = 0; tc < value.TYPE.length; tc++)
+        {
+          const icon = getTypeIconName(value.TYPE[tc]);
+          entry += `<a class="griditem-type" href='#type-${value.TYPE[tc]}'>`;
+          entry += `<i class="griditem-typeicon ${icon}"></i>`;
+          entry += `</a>`;
+        }
+        entry += `</div>`; // griditem-typecontainer
       }
 
       // UPPER CONTENT END
@@ -313,58 +303,6 @@ function View()
     return entry;
   }
 
-  this.doTypeIcon = function(type, count)
-  {
-    let result = `<a class="griditem-type" href='#type-${String(type)}'>`;
-    switch (type) 
-    {
-      case 'article':
-        result += `<i class="griditem-typeicon far fa-newspaper"></i>`;
-        break;
-      case 'podcast':
-        result += `<i class="griditem-typeicon fas fa-podcast"></i>`;
-        break;
-      case 'video':
-        result += `<i class="griditem-typeicon fas fa-tv"></i>`;
-        break;
-      case 'list':
-        result += `<i class="griditem-typeicon fas fa-file-alt"></i>`;
-        break;
-      case 'book':
-        result += `<i class="griditem-typeicon fas fa-book-open"></i>`;
-        break;
-      case 'game':
-        result += `<i class="griditem-typeicon fas fa-gamepad"></i>`;
-        break;
-      case 'service':
-        result += `<i class="griditem-typeicon fas fa-server"></i>`;
-        break;
-      case 'lecture':
-        result += `<i class="griditem-typeicon fas fa-chalkboard-teacher"></i>`;
-        break;
-      case 'quote':
-        result += `<i class="griditem-typeicon fas fa-comment"></i>`;
-        break;
-      case 'tool':
-        result += `<i class="griditem-typeicon fas fa-wrench"></i>`;
-        break;
-      case 'music':
-        result += `<i class="griditem-typeicon fas fa-music"></i>`;
-        break;
-      case 'image':
-        result += `<i class="griditem-typeicon fas fa-image"></i>`;
-        break;
-      case 'encyclopedia':
-        result += `<i class="griditem-typeicon fas fa-globe"></i>`;
-        break;
-      case 'term':
-        result += `<i class="griditem-typeicon fas fa-ribbon"></i>`;
-        break;
-    }
-    result += `</a>`;
-    return result;
-  }
-
   this.stats = function(value)
   {
     let menuContent = ``;
@@ -402,29 +340,12 @@ function View()
 
     menuContent += `</div>`;
     menuContent += `<div class="menu-itemgroup">`;
-    for (var ty = 0; ty < Math.min(value.types.length, SETTINGS.STATSNUMTYPE); ty++) 
+
+    for (let ty = 0; ty < Math.min(value.types.length, SETTINGS.STATSNUMTYPE); ty++) 
     {
       const type = value.types[ty][0];
       const count = value.types[ty][1];
-      let icon = '';
-
-      switch (type) {
-        case 'article': icon = 'far fa-newspaper'; break;
-        case 'podcast': icon = 'fas fa-podcast'; break;
-        case 'video': icon = 'fas fa-tv'; break;
-        case 'list': icon = 'fas fa-file-alt'; break;
-        case 'book': icon = 'fas fa-book-open'; break;
-        case 'game': icon = 'fas fa-gamepad'; break;
-        case 'service': icon = 'fas fa-server'; break;
-        case 'lecture': icon = 'fas fa-chalkboard-teacher'; break;
-        case 'quote': icon = 'fas fa-comment'; break;
-        case 'tool': icon = 'fas fa-wrench'; break;
-        case 'music': icon = 'fas fa-music'; break;
-        case 'image': icon = 'fas fa-image'; break;
-        case 'encyclopedia': icon = 'fas fa-globe'; break;
-        case 'term': icon = 'fas fa-ribbon'; break;
-      }
-
+      const icon = getTypeIconName(type);
       menuContent += `<a href='#type-${type}' class="menu-item">`;
       menuContent += `<div class="menu-itemcount">${count}</div>`;
       menuContent += `<i class="menu-itemicon ${icon}"></i>`;
@@ -517,6 +438,29 @@ function View()
   }
 
   // HELPER
+  getTypeIconName = function(type)
+  {
+    let icon = '';
+    switch (type) 
+    {
+        case 'article': icon = 'far fa-newspaper'; break;
+        case 'podcast': icon = 'fas fa-podcast'; break;
+        case 'video': icon = 'fas fa-tv'; break;
+        case 'list': icon = 'fas fa-file-alt'; break;
+        case 'book': icon = 'fas fa-book-open'; break;
+        case 'game': icon = 'fas fa-gamepad'; break;
+        case 'service': icon = 'fas fa-server'; break;
+        case 'lecture': icon = 'fas fa-chalkboard-teacher'; break;
+        case 'quote': icon = 'fas fa-comment'; break;
+        case 'tool': icon = 'fas fa-wrench'; break;
+        case 'music': icon = 'fas fa-music'; break;
+        case 'image': icon = 'fas fa-image'; break;
+        case 'encyclopedia': icon = 'fas fa-globe'; break;
+        case 'term': icon = 'fas fa-ribbon'; break;
+      }
+    return icon;
+  }
+
   String.prototype.to_properCase = function()
   {
     return this.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
