@@ -50,13 +50,22 @@ function View()
     {
       this.msnry.reloadItems();
       this.msnry.layout();
-    }
 
-    let imgLoad = imagesLoaded( container );
-    // When all images finish: redo mansonry layout
-    imgLoad.on( 'always', function() { parent.msnry.layout(); } );
-    // As images load one by one: redo masonry layout
-    // imgLoad.on( 'progress', function() { parent.msnry.layout(); } );
+      if (SETTINGS.MASONRYCOMPLETE || SETTINGS.MASONRYPROGRESS)
+      {
+        let imgLoad = imagesLoaded( container );
+        if (SETTINGS.MASONRYCOMPLETE)
+        {
+          // When all images finish: redo mansonry layout
+          imgLoad.on( 'always', function() { parent.msnry.layout(); } );
+        }
+        if (SETTINGS.MASONRYPROGRESS)
+        {
+          // As images load one by one: redo masonry layout
+          imgLoad.on( 'progress', function() { parent.msnry.layout(); } );
+        }
+      }
+    }
   }
 
   this.buildEntry = function(db, key)
