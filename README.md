@@ -14,12 +14,18 @@ Memex has two modes:
 Memex supports:
 
 - filtering
-- links
+- tags
 - images
 - notes
 - quotes
 - terms
-- tags
+- links
+- author
+- files
+- projects
+- [themes](https://github.com/hundredrabbits/Themes)
+
+To change theme simply drag a theme svg file onto the Memex app/webpage. Theme files and more information can be found [here](https://github.com/hundredrabbits/Themes).
 
 #### Data
 
@@ -27,7 +33,16 @@ Stored in a human-readable, flat-file database called [Indental](https://wiki.xx
 
 - [docs/content/data.ndtl](docs/content/data.ndtl)
 
-#### Development
+#### Web Development
+```
+git clone git@github.com:kormyen/memex.git
+cd memex
+open Memex\docs\index.html in browser
+```
+
+The web content is isolated in a folder to seperate it from app/Electron content. The folder is called 'docs' so that the 'Github Pages' feature can host it, another folder name doesn't seem supported.
+
+#### App Development
 ```
 git clone git@github.com:kormyen/memex.git
 cd memex
@@ -41,8 +56,11 @@ npm start
 - Database parser: [Indental](https://wiki.xxiivv.com/#indental)
 - Template parser: [Runic](https://wiki.xxiivv.com/#runic)
 - Grid layout: [Masonry](https://masonry.desandro.com/)
+- Theming: [Themes](https://github.com/hundredrabbits/Themes)
 
-Thanks to Devine Lu Linvega ([Oscean](https://github.com/XXIIVV/Oscean)), Josh Avanier ([Log](https://github.com/joshavanier/log)), Rekka Bell ([kokorobot](https://github.com/rekkabell/kokorobot)), Alexey Botkov ([Legacy](https://github.com/nomand/Legacy)), Seena Burns ([Isolate](https://github.com/seenaburns/isolate))
+#### Thanks
+
+Thanks to Devine Lu Linvega ([Oscean](https://github.com/XXIIVV/Oscean)), Josh Avanier ([Log](https://github.com/joshavanier/log)), Rekka Bell ([kokorobot](https://github.com/rekkabell/kokorobot)), Alexey Botkov ([Legacy](https://github.com/nomand/Legacy)), Seena Burns ([Isolate](https://github.com/seenaburns/isolate)), Hundred Rabbits ([Ecosystem](https://github.com/hundredrabbits))
 
 ---
 
