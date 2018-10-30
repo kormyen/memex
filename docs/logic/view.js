@@ -291,16 +291,19 @@ function View()
     menuContent += `</div>`;
 
     // DONE
-    menuContent += `<div class="menu-itemgroup">`;
-    menuContent += `<a href='#done-true' class="menu-item">`;
-    menuContent += `<div class="menu-itemcount">${value.done}</div>`;
-    menuContent += `<i class="menu-itemicon fas fa-check"></i>`;
-    menuContent += `</a>`;
-    menuContent += `<a href='#done-false' class="menu-item">`;
-    menuContent += `<div class="menu-itemcount">${value.total - value.done}</div>`;
-    menuContent += `<i class="menu-itemicon fas fa-times"></i>`;
-    menuContent += `</a>`;
-    menuContent += `</div>`;
+    if (SETTINGS.SHOWDONE)
+    {
+      menuContent += `<div class="menu-itemgroup">`;
+      menuContent += `<a href='#done-true' class="menu-item">`;
+      menuContent += `<div class="menu-itemcount">${value.done}</div>`;
+      menuContent += `<i class="menu-itemicon fas fa-check"></i>`;
+      menuContent += `</a>`;
+      menuContent += `<a href='#done-false' class="menu-item">`;
+      menuContent += `<div class="menu-itemcount">${value.total - value.done}</div>`;
+      menuContent += `<i class="menu-itemicon fas fa-times"></i>`;
+      menuContent += `</a>`;
+      menuContent += `</div>`;
+    }
 
     menuContent += `<div class="menu-itemgroup">`;
     for (let ty = 0; ty < Math.min(value.types.length, SETTINGS.STATSNUMTYPE); ty++) 
