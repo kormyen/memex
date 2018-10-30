@@ -54,12 +54,12 @@ function View()
       if (SETTINGS.MASONRYCOMPLETE || SETTINGS.MASONRYPROGRESS)
       {
         let imgLoad = imagesLoaded( container );
-        if (SETTINGS.MASONRYCOMPLETE)
+        if (!SETTINGS.MASONRYPROGRESS)
         {
           // When all images finish: redo mansonry layout
           imgLoad.on( 'always', function() { parent.msnry.layout(); } );
         }
-        if (SETTINGS.MASONRYPROGRESS)
+        else
         {
           // As images load one by one: redo masonry layout
           imgLoad.on( 'progress', function() { parent.msnry.layout(); } );
