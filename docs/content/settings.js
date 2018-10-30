@@ -1,0 +1,23 @@
+const SETTINGS = 
+{
+	STATSNUMTAGS: 5,
+	STATSNUMTYPE: 10,
+	WIDEGRIDITEM: true,
+	USEMASONRY: true,
+	GRIDITEMIDBASE: 'item',
+	SHOWUPPER: true,
+	SHOWTITLE: true,
+	SHOWAUTH: true,
+	SHOWTYPE: true,
+	SHOWLINK: true,
+	SHOWLOWER: true,
+	SHOWTAGS: true,
+	SHOWPROJ: true,
+	SHOWNOTE: true,
+	SHOWQOTE: true,
+	SHOWTERM: true,
+	SHOWPROG: true,
+	SHOWIMAG: true,
+	SHOWFILE: true,
+	SHOWOVERLAY: true
+}
