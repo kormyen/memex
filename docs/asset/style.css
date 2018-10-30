@@ -402,7 +402,6 @@ body {
   font-size: var(--size-font-body);
   float: left;
   clear: both;
-  word-break:break-all;
 }
 .griditem:hover .griditem-note, 
 .griditem:hover .griditem-quote, 
@@ -427,13 +426,19 @@ body {
   color: var(--color-image); 
 }
 
+.griditem-file {
+  word-break: break-all;
+}
+
 .griditem-file-link {
   color: var(--color-item); 
   text-decoration: none;
 }
 
 .griditem-file-link:hover {
-  text-decoration: underline;
+  background-color: var(--color-itemascent);
+  color: var(--color-itembg);
+  word-break: break-all;
 }
 
 /* IMAGE */
