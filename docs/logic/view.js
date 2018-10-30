@@ -80,11 +80,6 @@ function View()
     imgLoad.on( 'always', function() { parent.msnry.layout(); } );
   }
 
-  this.isDefined = function(value)
-  {
-    return (typeof value !== 'undefined');
-  }
-
   this.buildEntry = function(db, key)
   {
     let value = db[key];
@@ -95,7 +90,7 @@ function View()
       {
         itemClass += " griditem-wide";
       }
-      else if (typeof value.QOTE !== 'undefined')
+      else if (this.isDefined(value.QOTE))
       {
         if (Array.isArray(value.QOTE) && value.QOTE.length > 4)
         {
@@ -104,10 +99,7 @@ function View()
       }
     }
 
-    if (
-      SETTINGS.SHOWIMAG
-      && typeof value.TYPE !== 'undefined' && value.TYPE === 'image'
-    )
+    if (SETTINGS.SHOWIMAG && this.isDefined(value.TYP) && value.TYPE === 'image')
     {
       itemClass += " griditem-image";
     }
@@ -119,19 +111,16 @@ function View()
     if (this.isDefined(value.LINK))
     {
       var idUrl = "url";
-      if (typeof value.SEEN !== 'undefined' && value.SEEN === "true")
+      if (this.isDefined(value.SEEN) && value.SEEN === "true")
       {
         idUrl = "urlseen";
       }
 
       // LINK START
-      if (SETTINGS.SHOWLINK)
+      if (SETTINGS.SHOWLINK && !this.isObject(value.LINK))
       {
-        if (typeof value.LINK != 'object')
-        {
-          // If this item has only one link then make the whole title the link
-          entry += `<a class="griditem-link" href="${String(value.LINK)}" id="${idUrl}">`;
-        }
+        // If this item has only one link then make the whole title the link
+        entry += `<a class="griditem-link" href="${String(value.LINK)}" id="${idUrl}">`;
       }
     }
 
@@ -147,9 +136,9 @@ function View()
       }
 
       // LINK END
-      if (SETTINGS.SHOWLINK && typeof value.LINK !== 'undefined')
+      if (SETTINGS.SHOWLINK && this.isDefined(value.LINK))
       {
-        if (typeof value.LINK == 'object')
+        if (this.isObject(value.LINK))
         {
           for (let l = 0; l < value.LINK.length; l++)
           {
@@ -164,7 +153,7 @@ function View()
       }
 
       // TYPE
-      if (SETTINGS.SHOWTYPE && typeof value.TYPE !== 'undefined')
+      if (SETTINGS.SHOWTYPE && this.isDefined(value.TYPE))
       {
 
         entry += `<div class="griditem-typecontainer">`;
@@ -188,13 +177,13 @@ function View()
       entry += `<div class="griditem-containerlower">`;
 
       // AUTHOR
-      if (SETTINGS.SHOWAUTH && typeof value.AUTH !== 'undefined')
+      if (SETTINGS.SHOWAUTH && this.isDefined(value.AUTH))
       {
         entry += `<div class="griditem-auth"><i class="fas fa-user textIcon"></i>${value.AUTH}</div>`;
       }
 
       // TAGS
-      if (SETTINGS.SHOWTAGS && typeof value.TAGS !== 'undefined')
+      if (SETTINGS.SHOWTAGS && this.isDefined(value.TAGS))
       {
         entry += `<div class="griditem-tags"><i class="fas fa-tag textIcon"></i>`;
         for (var i = 0; i < value.TAGS.length; i++)
@@ -209,73 +198,64 @@ function View()
       }
 
       // PROJECT
-      if (SETTINGS.SHOWPROJ)
+      if (SETTINGS.SHOWPROJ && this.isDefined(value.PROJ))
       {
-        if (this.isDefined(value.PROJ))
+        entry += `<div class="griditem-proj"><i class="fas fa-leaf textIcon"></i>`;
+        for (var i = 0; i < value.PROJ.length; i++)
         {
-          entry += `<div class="griditem-proj"><i class="fas fa-leaf textIcon"></i>`;
-          for (var i = 0; i < value.PROJ.length; i++)
+          entry += `<a class="griditem-taglink" href="#proj-${value.PROJ[i]}">${value.PROJ[i].to_properCase()}</a>`;
+          if (i + 1 != value.PROJ.length)
           {
-            entry += `<a class="griditem-taglink" href="#proj-${value.PROJ[i]}">${value.PROJ[i]}</a>`;
-            if (i + 1 != value.PROJ.length)
-            {
-              entry += `, `;
-            }
-          };
-          entry += `</div>`;
+            entry += `, `;
+          }
         }
+        entry += `</div>`;
       }
 
       // TERM
-      if (SETTINGS.SHOWTERM)
+      if (SETTINGS.SHOWTERM && this.isDefined(value.TERM))
       {
-        if (this.isDefined(value.TERM))
-        {
-          entry += this.buildArrayElement(value.TERM, "griditem-term", "fas fa-ribbon textIcon");
-        }
+        entry += this.doMultilineFormatting(value.TERM, "griditem-term", "fas fa-ribbon textIcon");
       }
 
       // NOTE
-      if (SETTINGS.SHOWNOTE && typeof value.NOTE !== 'undefined')
+      if (SETTINGS.SHOWNOTE && this.isDefined(value.NOTE))
       {
-        entry += this.buildArrayElement(value.NOTE, "griditem-note", "fas fa-sticky-note textIcon");
+        entry += this.doMultilineFormatting(value.NOTE, "griditem-note", "fas fa-sticky-note textIcon");
       }
 
       // QUOTE
-      if (SETTINGS.SHOWQOTE && typeof value.QOTE !== 'undefined')
+      if (SETTINGS.SHOWQOTE && this.isDefined(value.QOTE))
       {
-        entry += this.buildArrayElement(value.QOTE, "griditem-quote", "fas fa-comment textIcon");
+        entry += this.doMultilineFormatting(value.QOTE, "griditem-quote", "fas fa-comment textIcon");
       }
 
       // TERM
-      if (SETTINGS.SHOWTERM && typeof value.TERM !== 'undefined')
+      if (SETTINGS.SHOWTERM && this.isDefined(value.TERM))
       {
-        entry += this.buildArrayElement(value.TERM, "griditem-term", "fas fa-ribbon textIcon");
+        entry += this.doMultilineFormatting(value.TERM, "griditem-term", "fas fa-ribbon textIcon");
       }
 
       // PROGRESS
-      if (SETTINGS.SHOWPROG && typeof value.PROG !== 'undefined')
+      if (SETTINGS.SHOWPROG && this.isDefined(value.PROG))
       {
         entry += `<div class="griditem-prog"><i class="fas fa-clock textIcon"></i>${value.PROG}</div>`;
       }
 
       // FILE
-      if (SETTINGS.SHOWFILE)
+      if (SETTINGS.SHOWFILE && this.isDefined(value.FILE))
       {
-        if (this.isDefined(value.FILE))
+        if (this.isObject(value.FILE))
         {
-          if (typeof value.FILE == 'object')
+          for (var i = 0; i < value.FILE.length; i++) 
           {
-            for (var i = 0; i < value.FILE.length; i++) 
-            {
-              entry += `<div class="griditem-file"><i class="fas fa-folder-open textIcon"></i><a class="griditem-file-link" href="content/media/${value.FILE[i]}">${value.FILE[i]}</a></div>`;
-            }
+            entry += `<div class="griditem-file"><i class="fas fa-folder-open textIcon"></i><a class="griditem-file-link" href="content/media/${value.FILE[i]}">${value.FILE[i]}</a></div>`;
           }
-          else
-          {
-            // single
-            entry += `<div class="griditem-file"><i class="fas fa-folder-open textIcon"></i><a class="griditem-file-link" href="content/media/${value.FILE}">${value.FILE}</a></div>`;
-          }
+        }
+        else
+        {
+          // single
+          entry += `<div class="griditem-file"><i class="fas fa-folder-open textIcon"></i><a class="griditem-file-link" href="content/media/${value.FILE}">${value.FILE}</a></div>`;
         }
       }
 
@@ -284,11 +264,8 @@ function View()
     }
 
     // IMAGE
-    if (
-      SETTINGS.SHOWIMAG
-      && typeof value.TYPE !== 'undefined' && value.TYPE === 'image'
-      && typeof value.FILE !== 'undefined'
-    )
+    if (SETTINGS.SHOWIMAG && this.isDefined(value.TYPE) 
+      && value.TYPE === 'image' && this.isDefined(value.FILE))
     {
       entry += `<div class="image">`;
       if (SETTINGS.SHOWOVERLAY)
@@ -306,7 +283,6 @@ function View()
   this.stats = function(value)
   {
     let menuContent = ``;
-
     if (window.showAdd !== undefined && window.showAdd)
     {
       // ADD
@@ -327,20 +303,17 @@ function View()
 
     // DONE
     menuContent += `<div class="menu-itemgroup">`;
-
     menuContent += `<a href='#done-true' class="menu-item">`;
     menuContent += `<div class="menu-itemcount">${value.done}</div>`;
     menuContent += `<i class="menu-itemicon fas fa-check"></i>`;
     menuContent += `</a>`;
-
     menuContent += `<a href='#done-false' class="menu-item">`;
     menuContent += `<div class="menu-itemcount">${value.total - value.done}</div>`;
     menuContent += `<i class="menu-itemicon fas fa-times"></i>`;
     menuContent += `</a>`;
-
     menuContent += `</div>`;
+    
     menuContent += `<div class="menu-itemgroup">`;
-
     for (let ty = 0; ty < Math.min(value.types.length, SETTINGS.STATSNUMTYPE); ty++) 
     {
       const type = value.types[ty][0];
@@ -363,7 +336,6 @@ function View()
       menuContent += `<i class="menu-itemicon fas fa-ribbon"></i>`;
       menuContent += `</a>`;
     }
-
     menuContent += `</div>`;
 
     // TAGS
@@ -383,12 +355,10 @@ function View()
       menuContent += `</div>`;
     }
     menuContent += `</div>`;
-
-    this.menu.innerHTML = ``;
-    this.menu.innerHTML += menuContent;
+    this.menu.innerHTML = menuContent;
   }
 
-  this.buildArrayElement = function(data, className, iconName)
+  this.doMultilineFormatting = function(data, className, iconName)
   {
     let result = '';
     if (Array.isArray(data))
@@ -437,7 +407,6 @@ function View()
     return result;
   }
 
-  // HELPER
   getTypeIconName = function(type)
   {
     let icon = '';
@@ -459,6 +428,17 @@ function View()
         case 'term': icon = 'fas fa-ribbon'; break;
       }
     return icon;
+  }
+
+  // GENERAL HELPER
+  this.isDefined = function(value)
+  {
+    return (typeof value !== 'undefined');
+  }
+
+  this.isObject = function(value)
+  {
+    return (typeof value == 'object');
   }
 
   String.prototype.to_properCase = function()
@@ -500,8 +480,6 @@ function View()
     }
     else
     {
-      console.log('calling extract on: ' + url);
-
       hostname = url.split('/')[0];
     }
 
