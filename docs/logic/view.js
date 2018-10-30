@@ -105,7 +105,8 @@ function View()
     if (SETTINGS.SHOWIMAG && this.isType(value.TYPE, 'image'))
     {
       itemClass += " griditem-image";
-      onclickImage = `onclick="main.lightbox.load('content/media/${value.FILE}')" style="cursor: pointer;"`;
+      onclickImage = `onclick="main.view.handleImageClick(event, this, '${value.FILE}');"
+        style="cursor: pointer;"`;
     }
 
     let entry = ``;
@@ -367,6 +368,19 @@ function View()
     }
     menuContent += `</div>`;
     this.menu.innerHTML = menuContent;
+  }
+
+  this.handleImageClick = function(e, element, file)
+  {
+    e = e || window.event;
+    var target = e.target || e.srcElement;
+    if (target == element)
+    {
+      // If user is clicking given element, or element's background... 
+      // as opposed to an element's child content, then do lightbox.
+      // This stops lightbox from happening when clicking on tags, file etc
+      main.lightbox.load(`content/media/${file}`);
+    }
   }
 
   this.doMultilineFormatting = function(data, className, iconName)

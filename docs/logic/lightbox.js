@@ -13,7 +13,7 @@ function Lightbox()
 
   this.load = function(file)
   {
-  	this.item.innerHTML = `<img class="lightbox-img" src="${file}">`;
+  	this.item.innerHTML = `<img class="lightbox-img" src="${file}" onclick="main.lightbox.close()">`;
   	this.container.style.display = 'block';
   }
 
