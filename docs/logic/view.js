@@ -149,9 +149,18 @@ function View()
       // LINK END
       if (SETTINGS.SHOWLINK && typeof value.LINK !== 'undefined')
       {
-        entry += `</a>`;
-
-        //entry += `<div class="griditem-linkcontainer"><i class="griditem-linkicon fas fa-link"></i><div class="griditem-linktitle">${this.extractRootDomain(value.LINK)}</div></div></a>`;
+        if (typeof value.LINK == 'object')
+        {
+          for (let l = 0; l < value.LINK.length; l++)
+          {
+            entry += `<a class="griditem-link" href="${String(value.LINK[l])}" id="${idUrl}">`;
+            entry += `<div class="griditem-linkcontainer"><i class="griditem-linkicon fas fa-link"></i><div class="griditem-linktitle">${this.extractRootDomain(value.LINK[l])}</div></div></a>`;
+          }
+        }
+        else
+        {
+          entry += `<div class="griditem-linkcontainer"><i class="griditem-linkicon fas fa-link"></i><div class="griditem-linktitle">${this.extractRootDomain(value.LINK)}</div></div></a>`;
+        }
       }
 
       // TYPE
