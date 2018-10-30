@@ -4,7 +4,7 @@ A bookmarks and notes application to help with storage and overview.
 
 [Live web version here](https://kormyen.github.io/memex/)
 
-<img src='https://raw.githubusercontent.com/kormyen/memex/master/PREVIEW.jpg' width="600"/>
+<img src='https://raw.githubusercontent.com/kormyen/memex/master/PREVIEW.jpg'/>
 
 Memex has two modes:
 
@@ -25,13 +25,20 @@ Memex supports:
 - projects
 - [themes](https://github.com/hundredrabbits/Themes)
 
-To change theme simply drag a theme svg file onto the Memex app/webpage. Theme files and more information can be found [here](https://github.com/hundredrabbits/Themes).
+To change theme simply drag a theme svg file onto the Memex app/webpage. 
+Theme files and more information can be found [here](https://github.com/hundredrabbits/Themes).
 
 #### Data
 
 Stored in a human-readable, flat-file database called [Indental](https://wiki.xxiivv.com/#indental) which is made by Devine Lu Linvega
 
 - [docs/content/data.ndtl](docs/content/data.ndtl)
+
+#### Live Examples
+
+[Kormyen's Memex](https://kormyen.github.io/memex/) - this repo
+[Shinestrength's Portfolio](http://www.shinestrength.xyz/) - [repo](https://github.com/shinestrength/memex)
+Dotcli's Memex - [repo](https://github.com/dotcli/memex)
 
 #### Web Development
 ```
@@ -40,7 +47,8 @@ cd memex
 open Memex\docs\index.html in browser
 ```
 
-The web content is isolated in a folder to seperate it from app/Electron content. The folder is called 'docs' so that the 'Github Pages' feature can host it, another folder name doesn't seem supported.
+The web content is isolated in a folder to seperate it from app/Electron content. 
+The folder is called 'docs' so that the 'Github Pages' feature can host it, another folder name doesn't seem supported.
 
 #### App Development
 ```
