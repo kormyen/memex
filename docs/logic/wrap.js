@@ -16,17 +16,32 @@ function Wrap()
     {
       let value = this.database[this.keys[i]];
 
-      // TAGS
-      if (typeof value.TAGS !== 'undefined')
+      this.database[this.keys[i]].TAGS = this.commaSplit(value.TAGS);
+      this.database[this.keys[i]].TYPE = this.commaSplit(value.TYPE);
+      this.database[this.keys[i]].PROJ = this.commaSplit(value.PROJ);
+
+      // LINK
+      if (typeof value.LINK == 'object')
       {
-        var tags = value.TAGS.split(",");
-
-        for (var t = 0; t < tags.length; t++)
+        for (let l = 0; l < value.LINK.length; l++)
         {
-          tags[t] = tags[t].trim().toLowerCase();
+          if (value.LINK[l].substr(0,2) == '> ')
+          {
+            value.LINK[l] = value.LINK[l].substr(2,value.LINK[l].length-1);
+          }
         }
+      }
 
-        this.database[this.keys[i]].TAGS = tags;
+      // FILE
+      if (typeof value.FILE == 'object')
+      {
+        for (let f = 0; f < value.FILE.length; f++)
+        {
+          if (value.FILE[f].substr(0,2) == '> ')
+          {
+            value.FILE[f] = value.FILE[f].substr(2,value.FILE[f].length-1);
+          }
+        }
       }
 
       this.database[this.keys[i]].DIID = i;
@@ -57,15 +72,34 @@ function Wrap()
       if (splitTarget[0] == 'tag')
       {
         // TAG
-        var tagDecoded = decodeURI(splitTarget[1]);
-        for (let i = 0; i < this.keys.length; i++)
+        let tagRequest = decodeURI(splitTarget[1]);
+        for (let i = 0; i < this.keys.length; i++) 
         {
           let value = this.database[this.keys[i]];
           if (typeof value.TAGS !== 'undefined')
           {
-            for (var t = 0; t < value.TAGS.length; t++)
+            for (let t = 0; t < value.TAGS.length; t++)
             {
-              if (value.TAGS[t] == tagDecoded)
+              if (value.TAGS[t] == tagRequest)
+              {
+                tempDatabase[this.keys[i]] = this.database[this.keys[i]];
+              }
+            }
+          }
+        }
+      }
+      if (splitTarget[0] == 'proj')
+      {
+        // PROJECT
+        let projectRequest = decodeURI(splitTarget[1]);
+        for (let i = 0; i < this.keys.length; i++) 
+        { 
+          let value = this.database[this.keys[i]];
+          if (typeof value.PROJ !== 'undefined')
+          {
+            for (let p = 0; p < value.PROJ.length; p++)
+            {
+              if (value.PROJ[p] == projectRequest)
               {
                 tempDatabase[this.keys[i]] = this.database[this.keys[i]];
               }
@@ -76,15 +110,30 @@ function Wrap()
       else if (splitTarget[0] == 'type')
       {
         // TYPE
-        var tagDecoded = decodeURI(splitTarget[1]);
-        for (let i = 0; i < this.keys.length; i++)
-        {
+        let typeRequest = decodeURI(splitTarget[1]);
+        for (let i = 0; i < this.keys.length; i++) 
+        { 
           let value = this.database[this.keys[i]];
           if (typeof value.TYPE !== 'undefined')
           {
-            if (value.TYPE == tagDecoded)
+            if (typeof value.TYPE == 'object')
             {
-              tempDatabase[this.keys[i]] = this.database[this.keys[i]];
+              // This entry has multiple types
+              for (let t = 0; t < value.TYPE.length; t++)
+              {
+                if (value.TYPE[t] == typeRequest)
+                {
+                  tempDatabase[this.keys[i]] = this.database[this.keys[i]];
+                }
+              }
+            }
+            else
+            {
+              // This entry has a single type
+              if (value.TYPE == typeRequest)
+              {
+                tempDatabase[this.keys[i]] = this.database[this.keys[i]];
+              }
             }
           }
         }
@@ -92,9 +141,9 @@ function Wrap()
       else if (splitTarget[0] == 'done')
       {
         // DONE
-        var doneValue = decodeURI(splitTarget[1]);
-        for (let i = 0; i < this.keys.length; i++)
-        {
+        let doneValue = decodeURI(splitTarget[1]);
+        for (let i = 0; i < this.keys.length; i++) 
+        { 
           let value = this.database[this.keys[i]];
           if (doneValue == 'true')
           {
@@ -221,5 +270,19 @@ function Wrap()
     stats.tags = tagItems;
 
     return stats;
+  }
+
+  this.commaSplit = function(data)
+  {
+    if (data !== undefined)
+    {
+      var result = data.split(",");
+      for (var t = 0; t < result.length; t++)
+      {
+        result[t] = result[t].trim().toLowerCase();
+      }
+      return result;
+    }
+    return data;
   }
 }

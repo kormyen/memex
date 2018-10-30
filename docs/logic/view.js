@@ -20,11 +20,13 @@ function View()
     SHOWLINK: true,
     SHOWLOWER: true,
     SHOWTAGS: true,
+    SHOWPROJ: true,
     SHOWNOTE: true,
     SHOWQOTE: true,
     SHOWTERM: true,
     SHOWPROG: true,
     SHOWIMAG: true,
+    SHOWFILE: true,
     SHOWOVERLAY: true
   }
 
@@ -50,22 +52,21 @@ function View()
 
   this.display = function(db)
   {
-    console.log('display ' + db)
-
     if (window.showAdd !== undefined && window.showAdd)
     {
       main.add.setOverlay(false);
     }
 
     // BUILD
-    this.grid.innerHTML = '';
-    var dbKeys = Object.keys(db);
-    var i = 0;
+    let dbKeys = Object.keys(db);
+    let i = 0;
+    let contentHtml = '';
     while (i < dbKeys.length) 
     {
-      this.buildEntry(db, dbKeys[i]);
+      contentHtml += this.buildEntry(db, dbKeys[i]);
       i++;
     }
+    this.grid.innerHTML = contentHtml;
 
     // LAYOUT
     if (SETTINGS.USEMASONRY)
@@ -74,19 +75,23 @@ function View()
       this.msnry.layout();
     }
 
-    var imgLoad = imagesLoaded( container );
+    let imgLoad = imagesLoaded( container );
     // When all images finish: redo mansonry layout
     imgLoad.on( 'always', function() { parent.msnry.layout(); } );
+  }
+
+  this.isDefined = function(value)
+  {
+    return (typeof value !== 'undefined');
   }
 
   this.buildEntry = function(db, key)
   {
     let value = db[key];
-
     let itemClass = "griditem";
     if (SETTINGS.WIDEGRIDITEM)
     {
-      if (typeof value.WIDE !== 'undefined' && value.WIDE)
+      if (this.isDefined(value.WIDE) && value.WIDE)
       {
         itemClass += " griditem-wide";
       }
@@ -111,8 +116,7 @@ function View()
 
     // ITEM DIV
     entry += `<div class="${itemClass}" id="${SETTINGS.GRIDITEMIDBASE + value.DIID}">`;
-
-    if (typeof value.LINK !== 'undefined')
+    if (this.isDefined(value.LINK))
     {
       var idUrl = "url";
       if (typeof value.SEEN !== 'undefined' && value.SEEN === "true")
@@ -123,7 +127,11 @@ function View()
       // LINK START
       if (SETTINGS.SHOWLINK)
       {
-        entry += `<a class="griditem-link" href="${String(value.LINK)}" id="${idUrl}">`;
+        if (typeof value.LINK != 'object')
+        {
+          // If this item has only one link then make the whole title the link
+          entry += `<a class="griditem-link" href="${String(value.LINK)}" id="${idUrl}">`;
+        }
       }
     }
 
@@ -199,6 +207,33 @@ function View()
         entry += `</div>`;
       }
 
+      // PROJECT
+      if (SETTINGS.SHOWPROJ)
+      {
+        if (this.isDefined(value.PROJ))
+        {
+          entry += `<div class="griditem-proj"><i class="fas fa-leaf textIcon"></i>`;
+          for (var i = 0; i < value.PROJ.length; i++)
+          {
+            entry += `<a class="griditem-taglink" href="#proj-${value.PROJ[i]}">${value.PROJ[i]}</a>`;
+            if (i + 1 != value.PROJ.length)
+            {
+              entry += `, `;
+            }
+          };
+          entry += `</div>`;
+        }
+      }
+
+      // TERM
+      if (SETTINGS.SHOWTERM)
+      {
+        if (this.isDefined(value.TERM))
+        {
+          entry += this.buildArrayElement(value.TERM, "griditem-term", "fas fa-ribbon textIcon");
+        }
+      }
+
       // NOTE
       if (SETTINGS.SHOWNOTE && typeof value.NOTE !== 'undefined')
       {
@@ -223,6 +258,26 @@ function View()
         entry += `<div class="griditem-prog"><i class="fas fa-clock textIcon"></i>${value.PROG}</div>`;
       }
 
+      // FILE
+      if (SETTINGS.SHOWFILE)
+      {
+        if (this.isDefined(value.FILE))
+        {
+          if (typeof value.FILE == 'object')
+          {
+            for (var i = 0; i < value.FILE.length; i++) 
+            {
+              entry += `<div class="griditem-file"><i class="fas fa-folder-open textIcon"></i><a class="griditem-file-link" href="content/media/${value.FILE[i]}">${value.FILE[i]}</a></div>`;
+            }
+          }
+          else
+          {
+            // single
+            entry += `<div class="griditem-file"><i class="fas fa-folder-open textIcon"></i><a class="griditem-file-link" href="content/media/${value.FILE}">${value.FILE}</a></div>`;
+          }
+        }
+      }
+
       // LOWER CONTENT END
       entry += `</div>`;
     }
@@ -244,8 +299,56 @@ function View()
     }
 
     entry += `</div>`;
+    return entry;
+  }
 
-    this.grid.innerHTML += entry;
+  this.doTypeIcon = function(type, count)
+  {
+    let result = `<a class="griditem-type" href='#type-${String(type)}'>`;
+    switch (type) 
+    {
+      case 'article':
+        result += `<i class="griditem-typeicon far fa-newspaper"></i>`;
+        break;
+      case 'podcast':
+        result += `<i class="griditem-typeicon fas fa-podcast"></i>`;
+        break;
+      case 'video':
+        result += `<i class="griditem-typeicon fas fa-tv"></i>`;
+        break;
+      case 'list':
+        result += `<i class="griditem-typeicon fas fa-file-alt"></i>`;
+        break;
+      case 'book':
+        result += `<i class="griditem-typeicon fas fa-book-open"></i>`;
+        break;
+      case 'game':
+        result += `<i class="griditem-typeicon fas fa-gamepad"></i>`;
+        break;
+      case 'service':
+        result += `<i class="griditem-typeicon fas fa-server"></i>`;
+        break;
+      case 'lecture':
+        result += `<i class="griditem-typeicon fas fa-chalkboard-teacher"></i>`;
+        break;
+      case 'quote':
+        result += `<i class="griditem-typeicon fas fa-comment"></i>`;
+        break;
+      case 'tool':
+        result += `<i class="griditem-typeicon fas fa-wrench"></i>`;
+        break;
+      case 'music':
+        result += `<i class="griditem-typeicon fas fa-music"></i>`;
+        break;
+      case 'image':
+        result += `<i class="griditem-typeicon fas fa-image"></i>`;
+        break;
+      case 'encyclopedia':
+        result += `<i class="griditem-typeicon fas fa-globe"></i>`;
+        break;
+    }
+    result += `</a>`;
+    return result;
   }
 
   this.stats = function(value)
@@ -356,11 +459,7 @@ function View()
     {
       for (var i in data)
       {
-        if (data[i] === "& ")
-        {
-          // blank line, do nothing
-        }
-        else if (data[i].substring(0, 2) === "> ")
+        if (data[i].substring(0, 2) == "> ")
         {
           // New item
           if (data[i].includes(": "))
@@ -381,6 +480,11 @@ function View()
         {
           // New line in current item
           result += `<div class="${className}">${data[i].substring(2)}</div>`;
+        }
+        else if (data[i].substring(0, 2) == "- ")
+        {
+          // Bullet point
+          result += `<div class="${className}"><i class="fas fa-caret-right textIcon"></i>${data[i].substring(2)}</div>`;
         }
         else
         {

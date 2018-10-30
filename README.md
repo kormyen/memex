@@ -1,4 +1,6 @@
-**Memex** is a bookmarks and notes application to help with storage and overview
+**Memex** is a [personal knowledge base](https://scholar.colorado.edu/csci_techreports/931/).
+
+A bookmarks and notes application to help with storage and overview.
 
 [Live web version here](https://kormyen.github.io/memex/)
 

@@ -52,8 +52,6 @@ function Main()
 
   this.load = function(target)
   {
-    console.log('main.load: ' + target)
-
     document.activeElement.blur();
     if (this.queryCur !== 'add')
     {
