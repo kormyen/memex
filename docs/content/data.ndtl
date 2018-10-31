@@ -1,3 +1,4 @@
+var DATABASE = `
 AGAINST BEAUTY IN PHYSICS
   PERS : faun
   SRCE : Merveilles
@@ -4002,3 +4003,4 @@ HOW TO MAKE A ROGUELIKE
   LINK : https://www.gridsagegames.com/blog/2018/10/how-to-make-a-roguelike/
   PERS : Phil James
   TAGS : gamedev
+`

@@ -12,7 +12,6 @@ function Main()
   this.queryPrevAdd = '';
 
   var parent = this;
-  const FILELOCATION = 'content/data.ndtl';
 
   this.install = function()
   {
@@ -21,17 +20,8 @@ function Main()
     this.lightbox = new Lightbox;
     this.lightbox.install();
 
-    var oReq = new XMLHttpRequest();
-    oReq.open('GET', FILELOCATION);
-    oReq.overrideMimeType("text/plain");
-    oReq.addEventListener("load", function() { parent.setup(this.responseText); } );
-    oReq.send();
-  }
-
-  this.setup = function(data)
-  {
     this.db = new Wrap();
-    this.db.install(data);
+    this.db.install(DATABASE);
     this.view = new View();
     this.view.install();
 
@@ -45,8 +35,6 @@ function Main()
       //   main.add.close();
       // }
     }
-
-    this.start();
   }
 
   this.start = function()
