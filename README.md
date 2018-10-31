@@ -23,17 +23,17 @@ Memex supports:
 - author
 - files
 - projects
-- [themes](https://github.com/hundredrabbits/Themes)
+- themes
 
-To change theme simply drag a theme svg file onto the Memex app/webpage. 
+To change theme simply drag a [theme svg file](https://github.com/hundredrabbits/Themes/tree/master/themes) onto the Memex webpage or app. 
 
-Theme files and more information can be found [here](https://github.com/hundredrabbits/Themes).
+More information on themes can be found [here](https://github.com/hundredrabbits/Themes).
 
 ### Live Examples
 
-- [Kormyen's Memex](https://kormyen.github.io/memex/) (this repo)
-- [Shinestrength's Portfolio](http://www.shinestrength.xyz/) [(repo)](https://github.com/shinestrength/memex)
-- Dotcli's Memex [(repo)](https://github.com/dotcli/memex)
+- [Kormyen's Memex](https://kormyen.github.io/memex/) - this repo
+- [Shinestrength's Portfolio](http://www.shinestrength.xyz/) - [repo](https://github.com/shinestrength/memex)
+- Dotcli's Memex - [repo](https://github.com/dotcli/memex)
 
 ### Data
 
@@ -49,7 +49,7 @@ Stored in a human-readable, flat-file database called [Indental](https://wiki.xx
 |            ---: | :---                                                                                                |
 |    STATSNUMTAGS | max limit of tags to show in menu                                                                   |
 |    STATSNUMTYPE | max limit of types to show in menu                                                                  |
-|    WIDEGRIDITEM | allow wide entries (manually set by `WIDE : true` or more than 'AUTOWIDETRIGGER' number of `QOTES`) |
+|    WIDEGRIDITEM | allow wide entries `WIDE : true`)                                                                   |
 | AUTOWIDETRIGGER | automaticly wide entry if it has more QOTE entries this number                                      |
 |      USEMASONRY | enable [masonry](https://masonry.desandro.com/) layout library usage                                |
 | MASONRYPROGRESS | masonry re-layout as images load (true), or only once all images complete (false)                   |
@@ -69,16 +69,15 @@ Stored in a human-readable, flat-file database called [Indental](https://wiki.xx
 |        SHOWPROG | toggle display of entry progress notes                                                              |
 |        SHOWIMAG | toggle display of entry image                                                                       |
 |        SHOWFILE | toggle display of entry file(s)                                                                     |
-|    SHOWOVERLAY  | toggle display of dark overlay on hover of image type entry                                         |
+|     SHOWOVERLAY | toggle display of dark overlay on hover of image type entry                                         |
 
 ### Web Development
 ```
 git clone git@github.com:kormyen/memex.git
-cd memex
-open Memex\docs\index.html in browser
+open memex/docs/index.html in browser
 ```
 
-The web content is isolated in a folder to seperate it from app/Electron content. 
+The web content is isolated in a folder to seperate it from Electron (app building) related files. 
 
 The folder is called 'docs' so that the 'Github Pages' feature can host it, another folder name doesn't seem supported.
 
