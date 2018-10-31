@@ -88,7 +88,8 @@ function View()
     }
 
     let onclickImage = ``;
-    if (SETTINGS.SHOWIMAG && this.isType(value.TYPE, 'image'))
+    let entryIsImageType = (SETTINGS.SHOWIMAG && this.isType(value.TYPE, 'image'));
+    if (entryIsImageType)
     {
       itemClass += " griditem-image";
       onclickImage = `onclick="main.view.handleImageClick(event, this, '${value.FILE}');"
@@ -118,7 +119,12 @@ function View()
     // UPPER CONTENT START
     if (SETTINGS.SHOWUPPER)
     {
-      entry += `<div class="griditem-containerupper" ${onclickImage}>`;
+      let upperClass = 'griditem-containerupper';
+      if (entryIsImageType)
+      {
+        upperClass = 'griditem-containerupper-image';
+      }
+      entry += `<div class="${upperClass}" ${onclickImage}>`;
 
       // TITLE
       if (SETTINGS.SHOWTITLE)
@@ -165,7 +171,12 @@ function View()
     // LOWER CONTENT START
     if (SETTINGS.SHOWLOWER)
     {
-      entry += `<div class="griditem-containerlower" ${onclickImage}>`;
+      let lowerClass = 'griditem-containerlower';
+      if (entryIsImageType)
+      {
+        lowerClass = 'griditem-containerlower-image';
+      }
+      entry += `<div class="${lowerClass}" ${onclickImage}>`;
 
       // AUTHOR
       if (SETTINGS.SHOWAUTH && this.isDefined(value.AUTH))
@@ -260,8 +271,7 @@ function View()
     }
 
     // IMAGE - for image-type-entry
-    if (SETTINGS.SHOWIMAG 
-        && this.isType(value.TYPE, 'image')
+    if (entryIsImageType
         && this.isDefined(value.FILE)
         && this.isImage(value.FILE))
     {
