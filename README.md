@@ -29,19 +29,47 @@ To change theme simply drag a theme svg file onto the Memex app/webpage.
 
 Theme files and more information can be found [here](https://github.com/hundredrabbits/Themes).
 
-#### Data
+### Data
 
 Stored in a human-readable, flat-file database called [Indental](https://wiki.xxiivv.com/#indental) which is made by Devine Lu Linvega
 
 - [docs/content/data.ndtl](docs/content/data.ndtl)
 
-#### Live Examples
+### Settings
+
+[docs/content/settings.js](docs/content/settings.js)
+
+- STATSNUMTAGS = max limit of tags to show in menu
+- STATSNUMTYPE = max limit of types to show in menu
+- WIDEGRIDITEM = allow wide entries (manually set by `WIDE : true` or automatic long `NOTES`)
+- AUTOWIDETRIGGER = automaticly wide entry if it has more QOTE entries this number
+- USEMASONRY = enable [Masonry](https://masonry.desandro.com/) layout library usage
+- MASONRYPROGRESS = Masonry re-layout as images load (true), or only once all images complete (false)
+- GRIDITEMIDBASE = CSS name prefix
+- SHOWUPPER = toggle display of upper entry elements
+- SHOWTITLE = toggle display of entry title
+- SHOWAUTH = toggle display of entry author
+- SHOWTYPE = toggle display of entry type
+- SHOWLINK = toggle display of entry link
+- SHOWLOWER = toggle display of lower entry elements
+- SHOWTAGS = toggle display of entry tags
+- SHOWPROJ = toggle display of entry project
+- SHOWNOTE = toggle display of entry notes
+- SHOWQOTE = toggle display of entry quotes
+- SHOWTERM = toggle display of entry terms
+- SHOWDONE = toggle display of menu done (tick/cross)
+- SHOWPROG = toggle display of entry progress notes
+- SHOWIMAG = toggle display of entry image
+- SHOWFILE = toggle display of entry file
+- SHOWOVERLAY = toggle display of dark overlay on hover of image type entry
+
+### Live Examples
 
 - [Kormyen's Memex](https://kormyen.github.io/memex/) (this repo)
 - [Shinestrength's Portfolio](http://www.shinestrength.xyz/) [(repo)](https://github.com/shinestrength/memex)
 - Dotcli's Memex [(repo)](https://github.com/dotcli/memex)
 
-#### Web Development
+### Web Development
 ```
 git clone git@github.com:kormyen/memex.git
 cd memex
@@ -52,7 +80,7 @@ The web content is isolated in a folder to seperate it from app/Electron content
 
 The folder is called 'docs' so that the 'Github Pages' feature can host it, another folder name doesn't seem supported.
 
-#### App Development
+### App Development
 ```
 git clone git@github.com:kormyen/memex.git
 cd memex
@@ -60,7 +88,7 @@ npm install
 npm start
 ```
 
-#### Dependencies
+### Dependencies
 
 - App builder: [Electron](https://electronjs.org/)
 - Database parser: [Indental](https://wiki.xxiivv.com/#indental)
@@ -68,9 +96,14 @@ npm start
 - Grid layout: [Masonry](https://masonry.desandro.com/)
 - Theming: [Themes](https://github.com/hundredrabbits/Themes)
 
-#### Thanks
+### Thanks
 
-Thanks to Devine Lu Linvega ([Oscean](https://github.com/XXIIVV/Oscean)), Josh Avanier ([Log](https://github.com/joshavanier/log)), Rekka Bell ([kokorobot](https://github.com/rekkabell/kokorobot)), Alexey Botkov ([Legacy](https://github.com/nomand/Legacy)), Seena Burns ([Isolate](https://github.com/seenaburns/isolate)), Hundred Rabbits ([Ecosystem](https://github.com/hundredrabbits))
+- Devine Lu Linvega ([Oscean](https://github.com/XXIIVV/Oscean))
+- Rekka Bell ([kokorobot](https://github.com/rekkabell/kokorobot))
+- Hundred Rabbits ([Ecosystem](https://github.com/hundredrabbits))
+- Josh Avanier ([Log](https://github.com/joshavanier/log))
+- Alexey Botkov ([Legacy](https://github.com/nomand/Legacy))
+- Seena Burns ([Isolate](https://github.com/seenaburns/isolate))
 
 ---
 

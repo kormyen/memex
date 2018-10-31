@@ -80,7 +80,7 @@ function View()
       }
       else if (this.isDefined(value.QOTE))
       {
-        if (Array.isArray(value.QOTE) && value.QOTE.length > 4)
+        if (Array.isArray(value.QOTE) && value.QOTE.length > SETTINGS.AUTOWIDETRIGGER)
         {
           itemClass += " griditem-wide";
         } 
