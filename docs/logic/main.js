@@ -4,7 +4,6 @@ function Main()
   this.view = null;
   this.add = null;
   this.write = null;
-  this.theme = null;
   this.lightbox = null;
 
   this.queryCur = '';
@@ -15,15 +14,12 @@ function Main()
 
   this.install = function()
   {
-    this.theme = new Theme();
-    this.theme.install();
-    this.lightbox = new Lightbox;
-    this.lightbox.install();
-
     this.db = new Wrap();
     this.db.install(DATABASE);
     this.view = new View();
     this.view.install();
+    this.lightbox = new Lightbox;
+    this.lightbox.install();
 
     if (window.showAdd !== undefined && window.showAdd)
     {
@@ -39,7 +35,6 @@ function Main()
 
   this.start = function()
   {
-    this.theme.start();
     this.load(window.document.location.hash);
     this.view.stats(this.db.stats());
   }

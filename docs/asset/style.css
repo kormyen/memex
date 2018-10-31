@@ -73,6 +73,59 @@ body {
                                   supported by Chrome and Opera */
 }
 
+/* LOADING */
+.loading-wave {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 94px;
+  height: 40px;
+  transform: translateY(-50%) translateX(-50%);
+}
+.loading-wave div {
+  position: absolute;
+  top: 14px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--color-itemascent);
+  animation: loading-wave 1.5s infinite;
+  transition-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out; 
+}
+.loading-wave div:nth-child(1) {
+  left: 0px;
+  animation-delay: 0s;
+}
+.loading-wave div:nth-child(2) {
+  left: 20px;
+  animation-delay: -0.1s;
+}
+.loading-wave div:nth-child(3) {
+  left: 40px;
+  animation-delay: -0.2s;
+}
+.loading-wave div:nth-child(4) {
+  left: 60px;
+  animation-delay: -0.3s;
+}
+.loading-wave div:nth-child(5) {
+  left: 80px;
+  animation-delay: -0.4s;
+}
+@keyframes loading-wave {
+  0% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
 /* MENU */
 .menu {
 	padding-top: var(--size-grid-gutter);

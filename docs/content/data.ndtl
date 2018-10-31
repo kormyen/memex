@@ -4003,4 +4003,152 @@ HOW TO MAKE A ROGUELIKE
   LINK : https://www.gridsagegames.com/blog/2018/10/how-to-make-a-roguelike/
   PERS : Phil James
   TAGS : gamedev
+
+SETGESHGUI
+  DATE : 12018-10-31
+  TERM : Setgeshgui: The "last" number (10^66) in Mongolian labeled by Rolbiidorj (1717-1766), meaning "unimaginable" refering to infinity.
+  TYPE : term
+
+BALANCED TERNARY
+  DATE : 12018-10-31
+  PERS : joshavanier
+  TERM : Balanced ternary: "a non-standard positional numeral system (a balanced form), used in some early computers and useful in the solution of balance puzzles. It is a ternary (base 3) number system in which the digits have the values –1, 0, and 1, in contrast to the standard (unbalanced) ternary system, in which digits have values 0, 1 and 2. Balanced ternary can represent all integers without using a separate minus sign; the value of the leading non-zero digit of a number has the sign of the number itself."
+  LINK : https://github.com/joshavanier/ternara
+  NOTE : Ternara is joshavanier's balanced ternary library.
+  TYPE : tool
+  TAGS : stenography
+
+CONCENTRIC
+  DATE : 12018-10-31
+  LINK : https://github.com/joshavanier/concentric
+  TYPE : tool
+  PROJ : Dastime
+  AUTH : joshavanier
+
+HAIAKU
+  DATE : 12018-10-31
+  TOOL : https://github.com/joshavanier/haiaku
+  TAGS : stenography
+  TYPE : tool
+
+MORTEM
+  DATE : 12018-10-31
+  LINK : https://github.com/joshavanier/mortem
+  AUTH : joshavanier
+  TYPE : tool
+  PROJ : web
+
+ROVARSPRAKET
+  DATE : 12018-10-31
+  TERM : Rövarspråket: "The Robber Language". A simple word encoding. "Every consonant (spelling matters, not pronunciation) is doubled, and an o is inserted in-between. Vowels are left intact." Not easy to understand when a fluent speaker speaks it quickly. Tongue twister for Swedish children. 
+  TAGS : stenography
+  NOTE 
+    > Example:
+    - stubborn = sos-tot-u-bob-bob-o-ror-non or sostotubobboborornon
+  LINK : https://github.com/joshavanier/rovarspraket
+  AUTH : joshavanier
+
+V-OS
+  LINK : https://v-os.ca/
+  PROJ : web
+  TAGS : inspiration
+
+TEXTE
+  DATE : 12018-10-31
+  LINK : https://github.com/joshavanier/texte
+  AUTH : joshavanier
+  TYPE : tool
+  NOTE : minimalist text based game engine
+  TAGS : javascript
+
+JS PROMISE INTRO
+  DATE : 12018-10-31
+  TYPE : article
+  PROJ : Memex, web
+  TAGS : code, web, javascript
+  LINK : https://developers.google.com/web/fundamentals/primers/promises#whats-all-the-fuss-about
+  NOTE 
+    > Like event but, success or fail and only called once.
+    > Can be:
+    - fulfilled: The action relating to the promise succeeded
+    - rejected: The action relating to the promise failed
+    - pending: Hasn't fulfilled or rejected yet
+    - settled: Has fulfilled or rejected
+    > Example:
+    & img1.ready().then(function() {
+    &   // loaded
+    & }, function() {
+    &   // failed
+    & });
+    & // and…
+    & Promise.all([img1.ready(), img2.ready()]).then(function() {
+    & // all loaded
+    & }, function() {
+    &   // one or more failed
+    & });
+    > Create promise:
+    & var promise = new Promise(function(resolve, reject) {
+    &   // do a thing, possibly async, then…
+    &   if (/* everything turned out fine */) {
+    &     resolve("Stuff worked!");
+    &   }
+    &   else {
+    &     reject(Error("It broke"));
+    &   }
+    & });
+    > Use promise:
+    & promise.then(function(result) {
+    &   console.log(result); // "Stuff worked!"
+    & }, function(err) {
+    &   console.log(err); // Error: "It broke"
+    & });
+
+PROGRESSIVE ENHANCEMENT IS FASTER
+  DATE : 12018-10-31
+  LINK 
+    > https://jakearchibald.com/2013/progressive-enhancement-is-faster/
+    > https://jakearchibald.com/2013/progressive-enhancement-still-important/
+  TAGS : code, web, javascript
+  NOTE
+    > Best to have some HTML and CSS to display basic content on screen
+    > CSS, JS and HTML will load simultaneously but HTML gets a head start until the CSS/JS links are downloaded.
+    > CSS should not render at all until the entire thing is downloaded.
+    > You can inline some CSS for top of the page elements above the HTML CSS link embed if you want styling quick
+  QOTE : "Getting something on screen as soon as possible really improves the user-experience"
+  TERM : Progressive enhancement: Render a usable HTML website first, then enhance it once the javascript loads. Benefits: much faster load times for client, backwards compatibility, js not required.
+
+JS SCRIPT LOADING
+  DATE : 12018-10-31
+  LINK : https://www.html5rocks.com/en/tutorials/speed/script-loading/
+  TAGS : code, web, javascript
+  PROJ : Memex, web
+  NOTE
+    > With two 'script src' tags: both simultaneous download, execution in order (if 2 loads first it will not execute until 1 has downloaded and executed).
+    - The browser blocks rendering while this happens! Newer browsers will parse the page in the background and download upcoming resources, but rendering pauses.
+    - TIP: put 'script src's at bottom of page.
+    > '<script src="x.js" async></script>'. The 'async' removes the requirement to execute in order.
+    > "async-download but ordered-execution" is possible, see article for snippit.
+    > Suggestion is normal 'script src's at bottom of body.
+
+JS APP START SPEED TAKE AWAYS
+  DATE : 12018-10-31
+  TAGS : code, web, javascript
+  PROJ : Memex, web
+  NOTE
+    > Have the HTML and CSS actually display something sane first (without any JS!)
+    - even just bg-color and a loading-spinner gif
+    > Put JS includes at the bottom of HTML body as it blocks rendering while downloading and executing.
+
+THREEJS PARTICLES
+  DATE : 12018-11-01
+  LINK : http://opencontinents.com/?stars=1
+  PROJ : hii
+  TAGS : web, design, code, inspiration, javascript
+
+CSS LOADERS
+  DATE : 12018-11-01
+  LINK : https://freefrontend.com/css-loaders/
+  PROJ : Memex, web
+  TYPE : list
+  TAGS : web, design, code, inspiration
 `
