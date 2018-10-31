@@ -55,18 +55,18 @@ Stored in a human-readable, flat-file database called [Indental](https://wiki.xx
 - SHOWUPPER = toggle display of upper entry elements
 - SHOWTITLE = toggle display of entry title
 - SHOWAUTH = toggle display of entry author
-- SHOWTYPE = toggle display of entry type
-- SHOWLINK = toggle display of entry link
+- SHOWTYPE = toggle display of entry type(s)
+- SHOWLINK = toggle display of entry link(s)
 - SHOWLOWER = toggle display of lower entry elements
-- SHOWTAGS = toggle display of entry tags
-- SHOWPROJ = toggle display of entry project
+- SHOWTAGS = toggle display of entry tag(s)
+- SHOWPROJ = toggle display of entry project(s)
 - SHOWNOTE = toggle display of entry notes
-- SHOWQOTE = toggle display of entry quotes
-- SHOWTERM = toggle display of entry terms
+- SHOWQOTE = toggle display of entry quote(s)
+- SHOWTERM = toggle display of entry term(s)
 - SHOWDONE = toggle display of menu done (tick/cross)
 - SHOWPROG = toggle display of entry progress notes
 - SHOWIMAG = toggle display of entry image
-- SHOWFILE = toggle display of entry file
+- SHOWFILE = toggle display of entry file(s)
 - SHOWOVERLAY = toggle display of dark overlay on hover of image type entry
 
 ### Web Development

@@ -181,7 +181,10 @@ function View()
       // AUTHOR
       if (SETTINGS.SHOWAUTH && this.isDefined(value.AUTH))
       {
-        entry += `<div class="griditem-auth"><i class="fas fa-user textIcon"></i>${value.AUTH}</div>`;
+        for (var i = 0; i < value.AUTH.length; i++)
+        {
+          entry += `<div class="griditem-auth"><i class="fas fa-user textIcon"></i>${value.AUTH[i].to_properCase()}</div>`;
+        }
       }
 
       // TAGS

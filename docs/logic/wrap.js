@@ -16,6 +16,7 @@ function Wrap()
     {
       let value = this.database[this.keys[i]];
 
+      this.database[this.keys[i]].AUTH = this.commaSplit(value.AUTH);
       this.database[this.keys[i]].TAGS = this.commaSplit(value.TAGS);
       this.database[this.keys[i]].TYPE = this.commaSplit(value.TYPE);
       this.database[this.keys[i]].PROJ = this.commaSplit(value.PROJ);
