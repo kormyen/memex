@@ -1,8 +1,8 @@
+[**Live web version here**](https://kormyen.github.io/memex/)
+
 **Memex** is a [personal knowledge base](https://scholar.colorado.edu/csci_techreports/931/).
 
 A bookmarks and notes application to help with storage and overview.
-
-[Live web version here](https://kormyen.github.io/memex/)
 
 <img src='https://raw.githubusercontent.com/kormyen/memex/master/PREVIEW.jpg'/>
 
@@ -29,11 +29,17 @@ To change theme simply drag a theme svg file onto the Memex app/webpage.
 
 Theme files and more information can be found [here](https://github.com/hundredrabbits/Themes).
 
+### Live Examples
+
+- [Kormyen's Memex](https://kormyen.github.io/memex/) (this repo)
+- [Shinestrength's Portfolio](http://www.shinestrength.xyz/) [(repo)](https://github.com/shinestrength/memex)
+- Dotcli's Memex [(repo)](https://github.com/dotcli/memex)
+
 ### Data
 
-Stored in a human-readable, flat-file database called [Indental](https://wiki.xxiivv.com/#indental) which is made by Devine Lu Linvega
+[docs/content/data.ndtl](docs/content/data.ndtl)
 
-- [docs/content/data.ndtl](docs/content/data.ndtl)
+Stored in a human-readable, flat-file database called [Indental](https://wiki.xxiivv.com/#indental) which is made by Devine Lu Linvega
 
 ### Settings
 
@@ -62,12 +68,6 @@ Stored in a human-readable, flat-file database called [Indental](https://wiki.xx
 - SHOWIMAG = toggle display of entry image
 - SHOWFILE = toggle display of entry file
 - SHOWOVERLAY = toggle display of dark overlay on hover of image type entry
-
-### Live Examples
-
-- [Kormyen's Memex](https://kormyen.github.io/memex/) (this repo)
-- [Shinestrength's Portfolio](http://www.shinestrength.xyz/) [(repo)](https://github.com/shinestrength/memex)
-- Dotcli's Memex [(repo)](https://github.com/dotcli/memex)
 
 ### Web Development
 ```
