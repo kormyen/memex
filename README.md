@@ -35,22 +35,41 @@ More information on themes can be found [here](https://github.com/hundredrabbits
 - [Shinestrength's Portfolio](http://www.shinestrength.xyz/) - [repo](https://github.com/shinestrength/memex)
 - Dotcli's Memex - [repo](https://github.com/dotcli/memex)
 
+### Web Development
+```
+git clone git@github.com:kormyen/memex.git
+```
+
+Then open `memex/docs/index.html` in any web browser.
+
+The web content is isolated in a folder to seperate it from Electron (app-building) files. 
+
+The folder is called 'docs' so that the 'Github Pages' feature can host it, another folder name doesn't seem supported.
+
+### App Development
+```
+git clone git@github.com:kormyen/memex.git
+cd memex
+npm install
+npm start
+```
+
 ### Data
 
-[docs/content/data.ndtl](docs/content/data.ndtl)
+[memex/docs/content/data.ndtl](docs/content/data.ndtl)
 
 Stored in a human-readable, flat-file database called [Indental](https://wiki.xxiivv.com/#indental) which is made by Devine Lu Linvega
 
 ### Settings
 
-[docs/content/settings.js](docs/content/settings.js)
+[memex/docs/content/settings.js](docs/content/settings.js)
 
 | Setting  | Description |
 |            ---: | :---                                                                                                |
 |    STATSNUMTAGS | max limit of tags to show in menu                                                                   |
 |    STATSNUMTYPE | max limit of types to show in menu                                                                  |
-|    WIDEGRIDITEM | allow wide entries `WIDE : true`)                                                                   |
-| AUTOWIDETRIGGER | automaticly wide entry if it has more QOTE entries this number                                      |
+|    WIDEGRIDITEM | allow wide entries (`WIDE : true`)                                                                  |
+| AUTOWIDETRIGGER | automaticly wide entry if it has more QOTE entries than this number                                 |
 |      USEMASONRY | enable [masonry](https://masonry.desandro.com/) layout library usage                                |
 | MASONRYPROGRESS | masonry re-layout as images load (true), or only once all images complete (false)                   |
 |  GRIDITEMIDBASE | CSS name prefix                                                                                     |
@@ -69,25 +88,7 @@ Stored in a human-readable, flat-file database called [Indental](https://wiki.xx
 |        SHOWPROG | toggle display of entry progress notes                                                              |
 |        SHOWIMAG | toggle display of entry image                                                                       |
 |        SHOWFILE | toggle display of entry file(s)                                                                     |
-|     SHOWOVERLAY | toggle display of dark overlay on hover of image type entry                                         |
-
-### Web Development
-```
-git clone git@github.com:kormyen/memex.git
-open memex/docs/index.html in browser
-```
-
-The web content is isolated in a folder to seperate it from Electron (app building) related files. 
-
-The folder is called 'docs' so that the 'Github Pages' feature can host it, another folder name doesn't seem supported.
-
-### App Development
-```
-git clone git@github.com:kormyen/memex.git
-cd memex
-npm install
-npm start
-```
+|     SHOWOVERLAY | toggle display of dark overlay shown when hovering image type entries to improve text readability   |
 
 ### Dependencies
 
