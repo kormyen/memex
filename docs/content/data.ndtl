@@ -4147,8 +4147,15 @@ THREEJS PARTICLES
 
 CSS LOADERS
   DATE : 12018-11-01
-  LINK : https://freefrontend.com/css-loaders/
+  LINK 
+    > https://freefrontend.com/css-loaders/
+    > https://steelkiwi.com/blog/30-most-captivating-preloaders-for-website/
   PROJ : Memex, web
   TYPE : list
   TAGS : web, design, code, inspiration
+
+BOOK OF SHADERS
+  LINK 
+    > https://thebookofshaders.com/
+    > https://github.com/patriciogonzalezvivo/thebookofshaders
 `
