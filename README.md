@@ -25,9 +25,9 @@ Memex supports:
 - projects
 - themes
 
-To change theme simply drag a [theme svg file](https://github.com/hundredrabbits/Themes/tree/master/themes) onto the Memex webpage or app. 
+To change theme simply drag a [theme svg file](https://github.com/hundredrabbits/Themes/tree/master/themes) onto the Memex webpage or app
 
-More information on themes can be found [here](https://github.com/hundredrabbits/Themes).
+More information on themes can be found [here](https://github.com/hundredrabbits/Themes)
 
 ### Live Examples
 
@@ -40,11 +40,11 @@ More information on themes can be found [here](https://github.com/hundredrabbits
 git clone git@github.com:kormyen/memex.git
 ```
 
-Then open `memex/docs/index.html` in any web browser.
+Then open `memex/docs/index.html` in any web browser
 
-The web content is isolated in a folder to seperate it from Electron (app-building) files. 
+The web content is isolated in a folder to seperate it from Electron (app-building) files
 
-The folder is called 'docs' so that the 'Github Pages' feature can host it, another folder name doesn't seem supported.
+The folder is called 'docs' so that the 'Github Pages' feature can host it, another folder name doesn't seem supported
 
 ### App Development
 ```
@@ -93,7 +93,6 @@ Stored in a human-readable, flat-file database called [Indental](https://wiki.xx
 ### Dependencies
 
 - Database parser: [Indental](https://wiki.xxiivv.com/#indental)
-- Template parser: [Runic](https://wiki.xxiivv.com/#runic)
 - Theming: [Themes](https://github.com/hundredrabbits/Themes)
 - Grid layout: [Masonry](https://masonry.desandro.com/)
 - App builder: [Electron](https://electronjs.org/)
