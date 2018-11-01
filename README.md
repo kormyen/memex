@@ -97,6 +97,7 @@ Stored in a human-readable, flat-file database called [Indental](https://wiki.xx
 - Theming: [Themes](https://github.com/hundredrabbits/Themes)
 - Grid layout: [Masonry](https://masonry.desandro.com/)
 - App builder: [Electron](https://electronjs.org/)
+- Icons: [Font Awesome](https://fontawesome.com/)
 
 ### Thanks
 
