@@ -4,7 +4,6 @@ function Main()
   this.view = null;
   this.add = null;
   this.write = null;
-  this.lightbox = null;
 
   this.queryCur = '';
   this.queryPrev = '';
@@ -22,8 +21,6 @@ function Main()
       document.querySelector('.container'),
       document.querySelector('main'),
       document.querySelector('.page-overlay'));
-    this.lightbox = new Lightbox;
-    this.lightbox.install(document.querySelector('.lightbox'), 'lightbox');
 
     if (window.showAdd !== undefined && window.showAdd)
     {
@@ -45,7 +42,7 @@ function Main()
 
   this.load = function(target)
   {
-    this.lightbox.close();
+    lightbox.close();
 
     document.activeElement.blur();
     if (this.queryCur !== 'add')

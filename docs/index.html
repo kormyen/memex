@@ -37,9 +37,13 @@
       document.querySelector('.error').style.display = 'inline-block';
     };
 
+    let lightbox = new Lightbox;
+    lightbox.install(document.querySelector('.lightbox'), 'lightbox');
+
     var main = new Main();
     main.install();
     main.start();
+
     document.querySelector('.loading-wave').style.display = 'none';
   </script>
 </body>

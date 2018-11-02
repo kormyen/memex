@@ -249,7 +249,7 @@ function View()
         && this.isImage(value.FILE))
       {
         entry += `<div class="image">`;
-        entry += `<img class="griditem-img" src="content/media/${value.FILE}" onclick="main.lightbox.load('content/media/${value.FILE}')">`;
+        entry += `<img class="griditem-img" src="content/media/${value.FILE}" onclick="lightbox.load('content/media/${value.FILE}')">`;
         entry += `</div>`;
       }
 
@@ -382,7 +382,7 @@ function View()
       // If user is clicking given element, or element's background... 
       // as opposed to an element's child content, then do lightbox.
       // This stops lightbox from happening when clicking on tags, file etc
-      main.lightbox.load(`content/media/${file}`);
+      lightbox.load(`content/media/${file}`);
     }
   }
 
