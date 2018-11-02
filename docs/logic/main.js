@@ -17,9 +17,13 @@ function Main()
     this.db = new Wrap();
     this.db.install(DATABASE);
     this.view = new View();
-    this.view.install();
+    this.view.install(
+      document.querySelector('nav'), 
+      document.querySelector('.container'),
+      document.querySelector('main'),
+      document.querySelector('.page-overlay'));
     this.lightbox = new Lightbox;
-    this.lightbox.install();
+    this.lightbox.install(document.querySelector('.lightbox'), 'lightbox');
 
     if (window.showAdd !== undefined && window.showAdd)
     {

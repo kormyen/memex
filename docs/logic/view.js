@@ -1,24 +1,25 @@
 function View()
 {
-  this.msnry = null;
-  this.overlay = null;
+  this.nav = null;
   this.container = null;
   this.grid = null;
-  this.menu = null;
+  this.overlay = null;
+
+  this.msnry = null;
   var parent = this;
 
-  this.install = function()
+  this.install = function(nav, container, grid, overlay)
   {
-    this.overlay = document.getElementById("overlay");
-    this.container = document.getElementById("container");
-    this.grid = document.getElementById("grid");
-    this.menu = document.getElementById("menu");
+    this.nav = nav;
+    this.container = container;
+    this.grid = grid;
+    this.overlay = overlay;
 
     if (SETTINGS.USEMASONRY)
     {
-      this.msnry = new Masonry('.grid', 
+      this.msnry = new Masonry('main', 
       {
-        itemSelector: '.griditem',
+        itemSelector: 'article',
         columnWidth: 350,
         gutter: 20,
         fitWidth: true,
@@ -53,7 +54,7 @@ function View()
 
       if (SETTINGS.MASONRYCOMPLETE || SETTINGS.MASONRYPROGRESS)
       {
-        let imgLoad = imagesLoaded( container );
+        let imgLoad = imagesLoaded( this.container );
         if (!SETTINGS.MASONRYPROGRESS)
         {
           // When all images finish: redo mansonry layout
@@ -71,7 +72,7 @@ function View()
   this.buildEntry = function(db, key)
   {
     let value = db[key];
-    let itemClass = "griditem";
+    let itemClass = "article";
     if (SETTINGS.WIDEGRIDITEM)
     {
       if (this.isDefined(value.WIDE) && value.WIDE)
@@ -97,7 +98,7 @@ function View()
     }
 
     let entry = ``;
-    entry += `<div class="${itemClass}" id="${SETTINGS.GRIDITEMIDBASE + value.DIID}">`;
+    entry += `<article class="${itemClass}" id="${SETTINGS.GRIDITEMIDBASE + value.DIID}">`;
 
     // ITEM DIV
     if (this.isDefined(value.LINK))
@@ -129,7 +130,7 @@ function View()
       // TITLE
       if (SETTINGS.SHOWTITLE)
       {
-        entry += `<div class="griditem-title">${key.to_properCase()}</div>`;
+        entry += `<header class="griditem-title">${key.to_properCase()}</header>`;
       }
 
       // LINK END
@@ -140,7 +141,7 @@ function View()
           for (let l = 0; l < value.LINK.length; l++)
           {
             entry += `<a class="griditem-link" href="${String(value.LINK[l])}" id="${idUrl}">`;
-            entry += `<div class="griditem-linkcontainer"><i class="griditem-linkicon fas fa-link"></i><div class="griditem-linktitle">${this.extractRootDomain(value.LINK[l])}</div></div></a>`;
+            entry += `<div class="griditem-linkcontainer"><i title="link" class="griditem-linkicon fas fa-link"></i><div class="griditem-linktitle">${this.extractRootDomain(value.LINK[l])}</div></div></a>`;
           }
         }
         else
@@ -158,7 +159,7 @@ function View()
         {
           const icon = getTypeIconName(value.TYPE[tc]);
           entry += `<a class="griditem-type" href='#type-${value.TYPE[tc]}'>`;
-          entry += `<i class="griditem-typeicon ${icon}"></i>`;
+          entry += `<i title="${value.TYPE[tc]}" class="griditem-typeicon ${icon}"></i>`;
           entry += `</a>`;
         }
         entry += `</div>`; // griditem-typecontainer
@@ -183,14 +184,14 @@ function View()
       {
         for (var i = 0; i < value.AUTH.length; i++)
         {
-          entry += `<div class="griditem-auth"><i class="fas fa-user textIcon"></i>${value.AUTH[i].to_properCase()}</div>`;
+          entry += `<div class="griditem-auth"><i title="author" class="fas fa-user textIcon"></i>${value.AUTH[i].to_properCase()}</div>`;
         }
       }
 
       // TAGS
       if (SETTINGS.SHOWTAGS && this.isDefined(value.TAGS))
       {
-        entry += `<div class="griditem-tags"><i class="fas fa-tag textIcon"></i>`;
+        entry += `<div class="griditem-tags"><i title="tags" class="fas fa-tag textIcon"></i>`;
         for (var i = 0; i < value.TAGS.length; i++)
         {
           entry += `<a class="griditem-taglink" href="#tag-${value.TAGS[i]}">${value.TAGS[i]}</a>`;
@@ -205,7 +206,7 @@ function View()
       // PROJECT
       if (SETTINGS.SHOWPROJ && this.isDefined(value.PROJ))
       {
-        entry += `<div class="griditem-proj"><i class="fas fa-leaf textIcon"></i>`;
+        entry += `<div class="griditem-proj"><i title="project" class="fas fa-leaf textIcon"></i>`;
         for (var i = 0; i < value.PROJ.length; i++)
         {
           entry += `<a class="griditem-taglink" href="#proj-${value.PROJ[i]}">${value.PROJ[i].to_properCase()}</a>`;
@@ -220,25 +221,25 @@ function View()
       // TERM
       if (SETTINGS.SHOWTERM && this.isDefined(value.TERM))
       {
-        entry += this.doMultilineFormatting(value.TERM, "griditem-term", "fas fa-ribbon textIcon");
+        entry += this.doMultilineFormatting(value.TERM, "term", "griditem-term", "fas fa-ribbon textIcon");
       }
 
       // NOTE
       if (SETTINGS.SHOWNOTE && this.isDefined(value.NOTE))
       {
-        entry += this.doMultilineFormatting(value.NOTE, "griditem-note", "fas fa-sticky-note textIcon");
+        entry += this.doMultilineFormatting(value.NOTE, "note", "griditem-note", "fas fa-sticky-note textIcon");
       }
 
       // QUOTE
       if (SETTINGS.SHOWQOTE && this.isDefined(value.QOTE))
       {
-        entry += this.doMultilineFormatting(value.QOTE, "griditem-quote", "fas fa-comment textIcon");
+        entry += this.doMultilineFormatting(value.QOTE, "quote", "griditem-quote", "fas fa-comment textIcon");
       }
 
       // PROGRESS
       if (SETTINGS.SHOWPROG && this.isDefined(value.PROG))
       {
-        entry += `<div class="griditem-prog"><i class="fas fa-clock textIcon"></i>${value.PROG}</div>`;
+        entry += `<div class="griditem-prog"><i title="progress" class="fas fa-clock textIcon"></i>${value.PROG}</div>`;
       }
 
       // IMAGE - for non-image-type-entry
@@ -259,13 +260,13 @@ function View()
         {
           for (var i = 0; i < value.FILE.length; i++) 
           {
-            entry += `<div class="griditem-file"><i class="fas fa-folder-open textIcon"></i><a class="griditem-file-link" href="content/media/${value.FILE[i]}">${value.FILE[i]}</a></div>`;
+            entry += `<div class="griditem-file"><i title="file" class="fas fa-folder-open textIcon"></i><a class="griditem-file-link" href="content/media/${value.FILE[i]}">${value.FILE[i]}</a></div>`;
           }
         }
         else
         {
           // single
-          entry += `<div class="griditem-file"><i class="fas fa-folder-open textIcon"></i><a class="griditem-file-link" href="content/media/${value.FILE}">${value.FILE}</a></div>`;
+          entry += `<div class="griditem-file"><i title="file" class="fas fa-folder-open textIcon"></i><a class="griditem-file-link" href="content/media/${value.FILE}">${value.FILE}</a></div>`;
         }
       }
 
@@ -287,7 +288,7 @@ function View()
       entry += `</div>`;
     }
 
-    entry += `</div>`;
+    entry += `</article>`;
     return entry;
   }
 
@@ -308,7 +309,7 @@ function View()
     menuContent += `<div class="menu-itemgroup">`;
     menuContent += `<a href='#' class="menu-item">`;
     menuContent += `<div class="menu-itemcount">${value.total}</div>`;
-    menuContent += `<i class="menu-itemicon fas fa-asterisk"></i>`;
+    menuContent += `<i title="all" class="menu-itemicon fas fa-asterisk"></i>`;
     menuContent += `</a>`;
     menuContent += `</div>`;
 
@@ -318,11 +319,11 @@ function View()
       menuContent += `<div class="menu-itemgroup">`;
       menuContent += `<a href='#done-true' class="menu-item">`;
       menuContent += `<div class="menu-itemcount">${value.done}</div>`;
-      menuContent += `<i class="menu-itemicon fas fa-check"></i>`;
+      menuContent += `<i title="done" class="menu-itemicon fas fa-check"></i>`;
       menuContent += `</a>`;
       menuContent += `<a href='#done-false' class="menu-item">`;
       menuContent += `<div class="menu-itemcount">${value.total - value.done}</div>`;
-      menuContent += `<i class="menu-itemicon fas fa-times"></i>`;
+      menuContent += `<i title="to do" class="menu-itemicon fas fa-times"></i>`;
       menuContent += `</a>`;
       menuContent += `</div>`;
     }
@@ -335,7 +336,7 @@ function View()
       const icon = getTypeIconName(type);
       menuContent += `<a href='#type-${type}' class="menu-item">`;
       menuContent += `<div class="menu-itemcount">${count}</div>`;
-      menuContent += `<i class="menu-itemicon ${icon}"></i>`;
+      menuContent += `<i title="${type}" class="menu-itemicon ${icon}"></i>`;
       menuContent += `</a>`;
     }
     menuContent += `</div>`;
@@ -347,7 +348,7 @@ function View()
       // menuContent += `<div class="menu-item-space"></div>`;
       menuContent += `<a href='#term' class="menu-item">`;
       menuContent += `<div class="menu-itemcount">${value.terms}</div>`;
-      menuContent += `<i class="menu-itemicon fas fa-ribbon"></i>`;
+      menuContent += `<i title="terms" class="menu-itemicon fas fa-ribbon"></i>`;
       menuContent += `</a>`;
     }
     menuContent += `</div>`;
@@ -357,7 +358,7 @@ function View()
     if (value.tags.length > 0)
     {
       menuContent += `<div class="menu-tagcontainer">`;
-      menuContent += `<i class="menu-tagicon fas fa-tag"></i>`;
+      menuContent += `<i title="tags" class="menu-tagicon fas fa-tag"></i>`;
       for (var t = 0; t < Math.min(value.tags.length, SETTINGS.STATSNUMTAGS); t++) 
       {
         menuContent += `<a class="menu-tag" href='#tag-${value.tags[t][0]}'>`;
@@ -369,7 +370,7 @@ function View()
       menuContent += `</div>`;
     }
     menuContent += `</div>`;
-    this.menu.innerHTML = menuContent;
+    this.nav.innerHTML = menuContent;
   }
 
   this.handleImageClick = function(e, element, file)
@@ -385,7 +386,7 @@ function View()
     }
   }
 
-  this.doMultilineFormatting = function(data, className, iconName)
+  this.doMultilineFormatting = function(data, title, className, iconName)
   {
     let result = '';
     if (Array.isArray(data))
@@ -402,11 +403,11 @@ function View()
             {
               titleSplit[e] = titleSplit[e].trim();
             }
-            result += `<div class="${className}"><i class="${iconName}"></i><b>${titleSplit[0]}</b>: ${titleSplit[1]}</div>`;
+            result += `<div class="${className}"><i title="${title}" class="${iconName}"></i><b>${titleSplit[0]}</b>: ${titleSplit[1]}</div>`;
           }
           else
           {
-            result += `<div class="${className}"><i class="${iconName}"></i>${data[i].substring(2)}</div>`;
+            result += `<div class="${className}"><i title="${title}" class="${iconName}"></i>${data[i].substring(2)}</div>`;
           }
         }
         else if (data[i].substring(0, 2) === "& ")
@@ -422,14 +423,14 @@ function View()
         else
         {
           // Handle unformatted
-          result += `<div class="${className}"><i class="${iconName}"></i>${data[i]}</div>`;
+          result += `<div class="${className}"><i title="${title}" class="${iconName}"></i>${data[i]}</div>`;
         }
       }
     }
     else
     {
       // Handle not array
-      result += `<div class="${className}"><i class="${iconName}"></i>${data}</div>`;
+      result += `<div class="${className}"><i title="${title}" class="${iconName}"></i>${data}</div>`;
     }
     return result;
   }

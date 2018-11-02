@@ -10,14 +10,15 @@
 <body>
   <script> let theme = new Theme(); theme.install(); theme.start(); </script>
   <div class="loading-wave"><div></div><div></div><div></div><div></div><div></div></div>
+  <div class="error"></div>
 
-  <div class="menu" id="menu"></div>
-  <div class="container" id="container">
-    <div class="grid" id="grid"></div>
+  <nav></nav>
+  <div class="container">
+    <main></main>
   </div>
 
-  <div class="lightbox" id="lightbox"></div>
-  <div class="page-overlay noselect" id="overlay"></div>
+  <div class="lightbox"></div>
+  <div class="page-overlay"></div>
   
   <script src="logic/lib/imagesloaded.js"></script>
   <script src="logic/lib/masonry.js"></script>
@@ -31,6 +32,11 @@
   <script src="logic/add.js"></script>
   <script src="logic/lightbox.js"></script>
   <script>
+    window.onerror = function(error, url, line) {
+      document.querySelector('.loading-wave').style.display = 'none';
+      document.querySelector('.error').style.display = 'inline-block';
+    };
+
     var main = new Main();
     main.install();
     main.start();
