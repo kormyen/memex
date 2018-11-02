@@ -4139,6 +4139,11 @@ JS APP START SPEED TAKE AWAYS
     - even just bg-color and a loading-spinner gif
     > Put JS includes at the bottom of HTML body as it blocks rendering while downloading and executing.
 
+NEURAL INCEPTIONISM
+  DATE : 12018-10-31
+  LINK : https://ai.googleblog.com/2015/06/inceptionism-going-deeper-into-neural.html
+  TAGS : ai
+
 THREEJS PARTICLES
   DATE : 12018-11-01
   LINK : http://opencontinents.com/?stars=1
@@ -4156,6 +4161,8 @@ CSS LOADERS
 
 BOOK OF SHADERS
   DATE : 12018-11-01
+  DONE : false
+  REVI : true
   LINK 
     > https://thebookofshaders.com/
     > https://github.com/patriciogonzalezvivo/thebookofshaders
@@ -4174,4 +4181,52 @@ TYRES WHEEL SIZE GRIP
 MAKE IT
   DATE : 12018-11-01
   QOTE : "If you feel like you've made it, what is the motivation to keep going?"
+
+CODE LICENSE
+  DATE : 12018-11-02
+  LINK : https://felixcrux.com/library/what-you-need-to-know-about-open-source-licensing
+  TYPE : video
+  PROJ : web, Memex
+
+SHAPE LANGUAGE
+  DATE : 12018-11-02
+  LINK
+    > https://www.youtube.com/watch?v=0sbUdMNIG20
+    > https://www.youtube.com/watch?v=lLQJiEpCLQE
+  NOTE
+    > Square
+    - stubborn
+    - pride
+    - strength
+    - simplicity
+    > Circle
+    - softness
+    - friendly
+    - trust
+    Triangle
+    - danger
+    - unpredictability
+    - wildness
+  TAGS : design
+
+LICENSING
+  LINK
+    > http://www.gnu.org/licenses/license-recommendations.html
+    > http://www.gnu.org/licenses/license-list.html
+    > https://en.wikipedia.org/wiki/Permissive_software_licence
+    > https://en.wikipedia.org/wiki/Public-domain_software
+  PROJ : Memex, 
+  NOTE
+    > MIT: Use for anything but copyright to author.
+    > CC0: Use for anything. No Rights Reserved.
+
+PV WIRING
+  LINK : https://www.solargroup.co.nz/UserFiles/File/Solar%20PV/Technical/PV%20Introduction%20guide%20for%20electricians.pdf
+  NOTE
+    > Voltage losses along the DC cables shall be less than 4% 
+    > All DC cables should be installed to provide as short a run as possible
+    > Positive and negative cables of the same string or main DC supply should be bundled together, avoiding the creation of loops in the system.
+    > ["Pairs should be together in the same raceway/conduit/bundled together."](https://forum.solar-electric.com/discussion/22145/bundling-dc-cabling-together-through-plastic-electrical-conduit)
+    - I assume 'pairs' mean pairs of positive and negative.
+    > ["cables that are bundled together generate a cumulative amount of heat, and have more difficulty dissipating that heat than when they are run individually. This is something to be aware of, but the relevant ABYC standard only applies to wiring carrying 50 volts or more, so it is typically a problem with AC circuits on a boat, not your typical 12 volt DC wiring installation. In general, if three conductors are bundled, reduce maximum amperage by 30%. If four to six conductors are bundled, reduce maximum amperage by 40%. If seven to 24 conductors are bundled, reduce amperage by 50%."](https://www.westmarine.com/WestAdvisor/Marine-Wire-Terminal-Tech-Specs)
 `
