@@ -464,7 +464,7 @@ article:hover .griditem-linktitle {
   opacity: var(--alpha-idleicon);
   color: var(--color-item);
 }
-.griditem:hover .griditem-type {
+article:hover .griditem-type {
   opacity: var(--alpha-enabled);
   color: var(--color-item);
 }
