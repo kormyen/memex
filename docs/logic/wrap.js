@@ -14,33 +14,33 @@ function Wrap()
   {
     for (let i = 0; i < this.keys.length; i++)
     {
-      let value = this.database[this.keys[i]];
+      let entry = this.database[this.keys[i]];
 
-      this.database[this.keys[i]].AUTH = this.commaSplit(value.AUTH);
-      this.database[this.keys[i]].TAGS = this.commaSplit(value.TAGS);
-      this.database[this.keys[i]].TYPE = this.commaSplit(value.TYPE);
-      this.database[this.keys[i]].PROJ = this.commaSplit(value.PROJ);
+      entry.AUTH = this.commaSplit(entry.AUTH);
+      entry.TAGS = this.commaSplit(entry.TAGS);
+      entry.TYPE = this.commaSplit(entry.TYPE);
+      entry.PROJ = this.commaSplit(entry.PROJ);
 
       // LINK
-      if (typeof value.LINK == 'object')
+      if (typeof entry.LINK == 'object')
       {
-        for (let l = 0; l < value.LINK.length; l++)
+        for (let l = 0; l < entry.LINK.length; l++)
         {
-          if (value.LINK[l].substr(0,2) == '> ')
+          if (entry.LINK[l].substr(0,2) == '> ')
           {
-            value.LINK[l] = value.LINK[l].substr(2,value.LINK[l].length-1);
+            entry.LINK[l] = entry.LINK[l].substr(2,entry.LINK[l].length-1);
           }
         }
       }
 
       // FILE
-      if (typeof value.FILE == 'object')
+      if (typeof entry.FILE == 'object')
       {
-        for (let f = 0; f < value.FILE.length; f++)
+        for (let f = 0; f < entry.FILE.length; f++)
         {
-          if (value.FILE[f].substr(0,2) == '> ')
+          if (entry.FILE[f].substr(0,2) == '> ')
           {
-            value.FILE[f] = value.FILE[f].substr(2,value.FILE[f].length-1);
+            entry.FILE[f] = entry.FILE[f].substr(2,entry.FILE[f].length-1);
           }
         }
       }

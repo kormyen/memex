@@ -474,6 +474,7 @@ article:hover .griditem-type {
 }
 
 /* NOTE, QUOTE, TERM, TAGS, AUTH, PROG */
+.griditem-date,
 .griditem-note,
 .griditem-quote,
 .griditem-term,
@@ -489,6 +490,7 @@ article:hover .griditem-type {
   float: left;
   clear: both;
 }
+article:hover .griditem-date, 
 article:hover .griditem-note, 
 article:hover .griditem-quote, 
 article:hover .griditem-term, 
@@ -501,6 +503,7 @@ article:hover .griditem-prog {
   color: var(--color-item);
 }
 .griditem-image .griditem-link, 
+.griditem-image .griditem-date, 
 .griditem-image .griditem-note, 
 .griditem-image .griditem-quote, 
 .griditem-image .griditem-term, 

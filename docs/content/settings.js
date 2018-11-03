@@ -9,6 +9,7 @@ const SETTINGS =
 	GRIDITEMIDBASE: 'item',
 	SHOWUPPER: true,
 	SHOWTITLE: true,
+	SHOWDATE: true,
 	SHOWAUTH: true,
 	SHOWTYPE: true,
 	SHOWLINK: true,

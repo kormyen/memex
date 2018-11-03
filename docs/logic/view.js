@@ -179,6 +179,12 @@ function View()
       }
       entry += `<div class="${lowerClass}" ${onclickImage}>`;
 
+      // TIME
+      if (SETTINGS.SHOWDATE && this.isDefined(value.DATE))
+      {
+        entry += `<time class="griditem-date"><i title="date" class="fas fa-clock textIcon"></i>${value.DATE}</time>`;
+      }
+
       // AUTHOR
       if (SETTINGS.SHOWAUTH && this.isDefined(value.AUTH))
       {
