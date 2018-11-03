@@ -71,6 +71,43 @@ function Main()
     }
     else
     {
+      // this.db.filter(this.queryCur)
+      //   .then(function(results){ 
+      //     // Map our array of entries to
+      //     // an array of template promises.
+      //     // This makes sure they all template in parallel.
+      //     return results.map(this.view.templateEntry)
+      //       .reduce(function(sequence, chapterPromise) {
+      //         // Use reduce to chain the promises together,
+      //         // adding content to the page for each entry
+      //         return sequence.then(function() {
+      //           // Wait for everything in the sequence so far,
+      //           // then wait for this template to arrive.
+      //           return chapterPromise;
+      //         }).then(function(article) {
+      //           this.view.addHtmlToPage(article.html);
+      //         });
+      //       }, Promise.resolve());  
+      //   })
+      //   .then(function() { console.log("done"); })
+      //   .catch(function(err) { console.log("error: " + err.message); });
+      //   .then(function() { console.log("stop loading anim"); })
+      
+      // see: https://developers.google.com/web/fundamentals/primers/promises#whats-all-the-fuss-about
+
+      // this.db.filter(this.queryCur)
+      //   .then(function(results){
+      //     return this.view.templateEntry(results[0]);
+      //   }).then(function(article) {
+      //     this.view.addHtmlToPage(article.html);
+      //   }).catch(function() {
+      //     console.log("error: " + err.message);
+      //   }).then(function() {
+      //     console.log("stop loading anim");
+      //   })
+
+      // see: https://developers.google.com/web/fundamentals/primers/promises#whats-all-the-fuss-about
+
       this.view.display(this.db.filter(this.queryCur));
     }
   }
