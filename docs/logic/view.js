@@ -89,8 +89,8 @@ function View()
     }
 
     let onclickImage = ``;
-    let entryIsImageType = (SETTINGS.SHOWIMAG && this.isType(value.TYPE, 'image'));
-    if (entryIsImageType)
+    let articleIsImageType = (SETTINGS.SHOWIMAG && this.isType(value.TYPE, 'image'));
+    if (articleIsImageType)
     {
       itemClass += " article-image";
       onclickImage = `onclick="main.view.handleImageClick(event, this, '${value.FILE}');"
@@ -98,7 +98,7 @@ function View()
     }
 
     // ARTICLE
-    let entry = `<article class="${itemClass}" id="${SETTINGS.ARTICLEIDBASE + value.DIID}">`;
+    let article = `<article class="${itemClass}" id="${SETTINGS.ARTICLEIDBASE + value.DIID}">`;
     if (this.isDefined(value.LINK))
     {
       var idUrl = "url";
@@ -111,7 +111,7 @@ function View()
       if (SETTINGS.SHOWLINK && !this.isObject(value.LINK))
       {
         // If this item has only one link then make the whole title the link
-        entry += `<a class="article-link" href="${String(value.LINK)}" id="${idUrl}">`;
+        article += `<a class="article-link" href="${String(value.LINK)}" id="${idUrl}">`;
       }
     }
 
@@ -119,16 +119,16 @@ function View()
     if (SETTINGS.SHOWUPPER)
     {
       let upperClass = 'article-containerupper';
-      if (entryIsImageType)
+      if (articleIsImageType)
       {
         upperClass = 'article-containerupper-image';
       }
-      entry += `<div class="${upperClass}" ${onclickImage}>`;
+      article += `<div class="${upperClass}" ${onclickImage}>`;
 
       // TITLE
       if (SETTINGS.SHOWTITLE)
       {
-        entry += `<header class="article-title">${key.to_properCase()}</header>`;
+        article += `<header class="article-title">${key.to_properCase()}</header>`;
       }
 
       // LINK END
@@ -138,13 +138,13 @@ function View()
         {
           for (let l = 0; l < value.LINK.length; l++)
           {
-            entry += `<a class="article-link" href="${String(value.LINK[l])}" id="${idUrl}">`;
-            entry += `<div class="article-linkcontainer"><div class="article-linkicon">${this.buildIcon('link')}</div><div class="article-linktitle">${this.extractRootDomain(value.LINK[l])}</div></div></a>`;
+            article += `<a class="article-link" href="${String(value.LINK[l])}" id="${idUrl}">`;
+            article += `<div class="article-linkcontainer"><div class="article-linkicon">${this.buildIcon('link')}</div><div class="article-linktitle">${this.extractRootDomain(value.LINK[l])}</div></div></a>`;
           }
         }
         else
         {
-          entry += `<div class="article-linkcontainer"><div class="article-linkicon">${this.buildIcon('link')}</div><div class="article-linktitle">${this.extractRootDomain(value.LINK)}</div></div></a>`;
+          article += `<div class="article-linkcontainer"><div class="article-linkicon">${this.buildIcon('link')}</div><div class="article-linktitle">${this.extractRootDomain(value.LINK)}</div></div></a>`;
         }
       }
 
@@ -152,34 +152,34 @@ function View()
       if (SETTINGS.SHOWTYPE && this.isDefined(value.TYPE))
       {
 
-        entry += `<div class="article-typecontainer">`;
+        article += `<div class="article-typecontainer">`;
         for (let tc = 0; tc < value.TYPE.length; tc++)
         {
-          entry += `<a class="article-type" href='#type-${value.TYPE[tc]}'>`;
-          entry += this.buildIcon(value.TYPE[tc], value.TYPE[tc], 'article-typeicon');
-          entry += `</a>`;
+          article += `<a class="article-type" href='#type-${value.TYPE[tc]}'>`;
+          article += this.buildIcon(value.TYPE[tc], value.TYPE[tc], 'article-typeicon');
+          article += `</a>`;
         }
-        entry += `</div>`;
+        article += `</div>`;
       }
 
       // UPPER CONTENT END
-      entry += `</div>`;
+      article += `</div>`;
     }
 
     // LOWER CONTENT START
     if (SETTINGS.SHOWLOWER)
     {
       let lowerClass = 'article-containerlower';
-      if (entryIsImageType)
+      if (articleIsImageType)
       {
         lowerClass = 'article-containerlower-image';
       }
-      entry += `<div class="${lowerClass}" ${onclickImage}>`;
+      article += `<div class="${lowerClass}" ${onclickImage}>`;
 
       // TIME
       if (SETTINGS.SHOWDATE && this.isDefined(value.DATE))
       {
-        entry += this.doRow('date', value.DATE);
+        article += this.doRow('date', value.DATE);
       }
 
       // AUTHOR
@@ -187,73 +187,55 @@ function View()
       {
         for (var i = 0; i < value.AUTH.length; i++)
         {
-          entry += this.doRow('author', value.AUTH[i].to_properCase());
+          article += this.doRow('author', value.AUTH[i].to_properCase());
         }
       }
 
       // TAGS
       if (SETTINGS.SHOWTAGS && this.isDefined(value.TAGS))
       {
-        let content = '';
-        for (var i = 0; i < value.TAGS.length; i++)
-        {
-          content += `<a class="article-taglink" href="#tag-${value.TAGS[i]}">${value.TAGS[i]}</a>`;
-          if (i + 1 !== value.TAGS.length)
-          {
-            content += `, `;
-          }
-        };
-        entry += this.doRow('tags', content);
+        article += this.doRowArray('tags', value.TAGS, 'tag', false);
       }
 
       // PROJECT
       if (SETTINGS.SHOWPROJ && this.isDefined(value.PROJ))
       {
-        let content = '';
-        for (var i = 0; i < value.PROJ.length; i++)
-        {
-          content += `<a class="article-taglink" href="#proj-${value.PROJ[i]}">${value.PROJ[i].to_properCase()}</a>`;
-          if (i + 1 != value.PROJ.length)
-          {
-            content += `, `;
-          }
-        }
-        entry += this.doRow('project', content);
+        article += this.doRowArray('project', value.PROJ, 'proj', true);
       }
 
       // TERM
       if (SETTINGS.SHOWTERM && this.isDefined(value.TERM))
       {
-        entry += this.doMultilineFormatting('term', value.TERM);
+        article += this.doRowMulti('term', value.TERM);
       }
 
       // NOTE
       if (SETTINGS.SHOWNOTE && this.isDefined(value.NOTE))
       {
-        entry += this.doMultilineFormatting('note', value.NOTE);
+        article += this.doRowMulti('note', value.NOTE);
       }
 
       // QUOTE
       if (SETTINGS.SHOWQOTE && this.isDefined(value.QOTE))
       {
-        entry += this.doMultilineFormatting('quote', value.QOTE);
+        article += this.doRowMulti('quote', value.QOTE);
       }
 
       // PROGRESS
       if (SETTINGS.SHOWPROG && this.isDefined(value.PROG))
       {
-        entry += this.doRow('progress', value.PROG);
+        article += this.doRow('progress', value.PROG);
       }
       
-      // IMAGE - for non-image-type-entry
+      // IMAGE - for non-image-type-article
       if (SETTINGS.SHOWIMAG 
         && !this.isType(value.TYPE, 'image')
         && this.isDefined(value.FILE)
         && this.isImage(value.FILE))
       {
-        entry += `<div class="image">`;
-        entry += `<img class="article-img" src="content/media/${value.FILE}" onclick="lightbox.load('content/media/${value.FILE}')">`;
-        entry += `</div>`;
+        article += `<div class="image">`;
+        article += `<img class="article-img" src="content/media/${value.FILE}" onclick="lightbox.load('content/media/${value.FILE}')">`;
+        article += `</div>`;
       }
 
       // FILE
@@ -263,36 +245,36 @@ function View()
         {
           for (var i = 0; i < value.FILE.length; i++) 
           {
-            entry += this.doRow('file', `<a class="article-file-link" href="content/media/${value.FILE[i]}">${value.FILE[i]}</a>`, 'article-file');
+            article += this.doRow('file', `<a class="article-file-link" href="content/media/${value.FILE[i]}">${value.FILE[i]}</a>`, 'article-file');
           }
         }
         else
         {
           // single
-          entry += this.doRow('file', `<a class="article-file-link" href="content/media/${value.FILE}">${value.FILE}</a>`, 'article-file');
+          article += this.doRow('file', `<a class="article-file-link" href="content/media/${value.FILE}">${value.FILE}</a>`, 'article-file');
         }
       }
 
       // LOWER CONTENT END
-      entry += `</div>`;
+      article += `</div>`;
     }
 
-    // IMAGE - for image-type-entry
-    if (entryIsImageType
+    // IMAGE - for image-type-article
+    if (articleIsImageType
         && this.isDefined(value.FILE)
         && this.isImage(value.FILE))
     {
-      entry += `<div class="image">`;
+      article += `<div class="image">`;
       if (SETTINGS.SHOWOVERLAY)
       {
-        entry += `<div class="image-overlay"></div>`;
+        article += `<div class="image-overlay"></div>`;
       }
-      entry += `<img class="article-image-img" src="content/media/${value.FILE}">`;
-      entry += `</div>`;
+      article += `<img class="article-image-img" src="content/media/${value.FILE}">`;
+      article += `</div>`;
     }
 
-    entry += `</article>`;
-    return entry;
+    article += `</article>`;
+    return article;
   }
 
   this.doRow = function(type, content, extraClass)
@@ -301,6 +283,69 @@ function View()
     ${type != undefined ? this.buildIcon(type) : ''}
     <div class="article-rowtext">${content}</div>
     </div>`;
+  }
+
+  this.doRowArray = function(type, data, query, propercase)
+  {
+    let content = '';
+    for (var i = 0; i < data.length; i++)
+    {
+      content += `<a class="article-taglink" href="#${query}-${data[i]}">${propercase == true ? data[i].to_properCase() : data[i]}</a>`;
+      if (i + 1 !== data.length)
+      {
+        content += `, `;
+      }
+    }
+    return this.doRow(type, content);
+  }
+
+  this.doRowMulti = function(type, data)
+  {
+    let result = '';
+    if (Array.isArray(data))
+    {
+      for (var i in data)
+      {
+        if (data[i].substring(0, 2) == "> ")
+        {
+          // New item
+          if (data[i].includes(": "))
+          {
+            let titleSplit = data[i].substring(2).split(': '); // .substring(2) removes the "> "
+            for (var e = 0; e < titleSplit.length; e++) 
+            {
+              titleSplit[e] = titleSplit[e].trim();
+            }
+            result += this.doRow(type, `<b>${titleSplit[0]}</b>: ${titleSplit[1]}`);
+          }
+          else
+          {
+            result += this.doRow(type, data[i].substring(2));
+          }
+        }
+        else if (data[i].substring(0, 2) === "& ")
+        {
+          // New line in current item
+          result += this.doRow(null, data[i].substring(2));
+        }
+        else if (data[i].substring(0, 2) == "- ")
+        {
+          // Bullet point
+          result += this.doRow('dash', data[i].substring(2));
+        }
+        else
+        {
+          // Handle unformatted
+          result += this.doRow(type, data[i]);
+        }
+      }
+    }
+    else
+    {
+      // Handle not array
+      result += this.doRow(type, data);
+    }
+    return result;
   }
 
   this.stats = function(value)
@@ -393,55 +438,6 @@ function View()
       // This stops lightbox from happening when clicking on tags, file etc
       lightbox.load(`content/media/${file}`);
     }
-  }
-
-  this.doMultilineFormatting = function(type, data)
-  {
-    let result = '';
-    if (Array.isArray(data))
-    {
-      for (var i in data)
-      {
-        if (data[i].substring(0, 2) == "> ")
-        {
-          // New item
-          if (data[i].includes(": "))
-          {
-            let titleSplit = data[i].substring(2).split(': '); // .substring(2) removes the "> "
-            for (var e = 0; e < titleSplit.length; e++) 
-            {
-              titleSplit[e] = titleSplit[e].trim();
-            }
-            result += this.doRow(type, `<b>${titleSplit[0]}</b>: ${titleSplit[1]}`);
-          }
-          else
-          {
-            result += this.doRow(type, data[i].substring(2));
-          }
-        }
-        else if (data[i].substring(0, 2) === "& ")
-        {
-          // New line in current item
-          result += this.doRow(null, data[i].substring(2));
-        }
-        else if (data[i].substring(0, 2) == "- ")
-        {
-          // Bullet point
-          result += this.doRow('dash', data[i].substring(2));
-        }
-        else
-        {
-          // Handle unformatted
-          result += this.doRow(type, data[i]);
-        }
-      }
-    }
-    else
-    {
-      // Handle not array
-      result += this.doRow(type, data);
-    }
-    return result;
   }
 
   this.buildIcon = function(type, label, altClass)
