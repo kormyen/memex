@@ -1,7 +1,9 @@
 function Main()
 {
+  this.util = null;
   this.db = null;
-  this.view = null;
+  this.grid = null;
+  this.nav = null;
   this.add = null;
   this.write = null;
 
@@ -13,14 +15,17 @@ function Main()
 
   this.install = function()
   {
+    this.util = new Util();
     this.db = new Wrap();
     this.db.install(DATABASE);
-    this.view = new View();
-    this.view.install(
-      document.querySelector('nav'), 
-      document.querySelector('.container'),
+    this.grid = new Grid();
+    this.grid.install(
       document.querySelector('main'),
-      document.querySelector('.page-overlay'));
+      document.querySelector('.page-overlay'),
+      'main',
+      'article');
+    this.nav = new Nav();
+    this.nav.install(document.querySelector('nav'));
 
     if (window.showAdd !== undefined && window.showAdd)
     {
@@ -37,7 +42,7 @@ function Main()
   this.start = function()
   {
     this.load(window.document.location.hash);
-    this.view.stats(this.db.stats());
+    this.nav.display(this.db.stats());
   }
 
   this.load = function(target)
@@ -76,7 +81,7 @@ function Main()
       //     // Map our array of entries to
       //     // an array of template promises.
       //     // This makes sure they all template in parallel.
-      //     return results.map(this.view.templateEntry)
+      //     return results.map(this.grid.templateEntry)
       //       .reduce(function(sequence, chapterPromise) {
       //         // Use reduce to chain the promises together,
       //         // adding content to the page for each entry
@@ -85,7 +90,7 @@ function Main()
       //           // then wait for this template to arrive.
       //           return chapterPromise;
       //         }).then(function(article) {
-      //           this.view.addHtmlToPage(article.html);
+      //           this.grid.addHtmlToPage(article.html);
       //         });
       //       }, Promise.resolve());  
       //   })
@@ -97,9 +102,9 @@ function Main()
 
       // this.db.filter(this.queryCur)
       //   .then(function(results){
-      //     return this.view.templateEntry(results[0]);
+      //     return this.grid.templateEntry(results[0]);
       //   }).then(function(article) {
-      //     this.view.addHtmlToPage(article.html);
+      //     this.grid.addHtmlToPage(article.html);
       //   }).catch(function() {
       //     console.log("error: " + err.message);
       //   }).then(function() {
@@ -108,7 +113,7 @@ function Main()
 
       // see: https://developers.google.com/web/fundamentals/primers/promises#whats-all-the-fuss-about
 
-      this.view.display(this.db.filter(this.queryCur));
+      this.grid.display(this.db.filter(this.queryCur));
     }
   }
 }
