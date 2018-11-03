@@ -73,17 +73,17 @@ function View()
   {
     let value = db[key];
     let itemClass = "article";
-    if (SETTINGS.WIDEGRIDITEM)
+    if (SETTINGS.WIDEARTICLE)
     {
       if (this.isDefined(value.WIDE) && value.WIDE)
       {
-        itemClass += " griditem-wide";
+        itemClass += " article-wide";
       }
       else if (this.isDefined(value.QOTE))
       {
         if (Array.isArray(value.QOTE) && value.QOTE.length > SETTINGS.AUTOWIDETRIGGER)
         {
-          itemClass += " griditem-wide";
+          itemClass += " article-wide";
         } 
       }
     }
@@ -92,13 +92,13 @@ function View()
     let entryIsImageType = (SETTINGS.SHOWIMAG && this.isType(value.TYPE, 'image'));
     if (entryIsImageType)
     {
-      itemClass += " griditem-image";
+      itemClass += " article-image";
       onclickImage = `onclick="main.view.handleImageClick(event, this, '${value.FILE}');"
         style="cursor: pointer;"`;
     }
 
     // ARTICLE
-    let entry = `<article class="${itemClass}" id="${SETTINGS.GRIDITEMIDBASE + value.DIID}">`;
+    let entry = `<article class="${itemClass}" id="${SETTINGS.ARTICLEIDBASE + value.DIID}">`;
     if (this.isDefined(value.LINK))
     {
       var idUrl = "url";
@@ -111,24 +111,24 @@ function View()
       if (SETTINGS.SHOWLINK && !this.isObject(value.LINK))
       {
         // If this item has only one link then make the whole title the link
-        entry += `<a class="griditem-link" href="${String(value.LINK)}" id="${idUrl}">`;
+        entry += `<a class="article-link" href="${String(value.LINK)}" id="${idUrl}">`;
       }
     }
 
     // UPPER CONTENT START
     if (SETTINGS.SHOWUPPER)
     {
-      let upperClass = 'griditem-containerupper';
+      let upperClass = 'article-containerupper';
       if (entryIsImageType)
       {
-        upperClass = 'griditem-containerupper-image';
+        upperClass = 'article-containerupper-image';
       }
       entry += `<div class="${upperClass}" ${onclickImage}>`;
 
       // TITLE
       if (SETTINGS.SHOWTITLE)
       {
-        entry += `<header class="griditem-title">${key.to_properCase()}</header>`;
+        entry += `<header class="article-title">${key.to_properCase()}</header>`;
       }
 
       // LINK END
@@ -138,13 +138,13 @@ function View()
         {
           for (let l = 0; l < value.LINK.length; l++)
           {
-            entry += `<a class="griditem-link" href="${String(value.LINK[l])}" id="${idUrl}">`;
-            entry += `<div class="griditem-linkcontainer"><div class="griditem-linkicon">${this.buildIcon('link')}</div><div class="griditem-linktitle">${this.extractRootDomain(value.LINK[l])}</div></div></a>`;
+            entry += `<a class="article-link" href="${String(value.LINK[l])}" id="${idUrl}">`;
+            entry += `<div class="article-linkcontainer"><div class="article-linkicon">${this.buildIcon('link')}</div><div class="article-linktitle">${this.extractRootDomain(value.LINK[l])}</div></div></a>`;
           }
         }
         else
         {
-          entry += `<div class="griditem-linkcontainer"><div class="griditem-linkicon">${this.buildIcon('link')}</div><div class="griditem-linktitle">${this.extractRootDomain(value.LINK)}</div></div></a>`;
+          entry += `<div class="article-linkcontainer"><div class="article-linkicon">${this.buildIcon('link')}</div><div class="article-linktitle">${this.extractRootDomain(value.LINK)}</div></div></a>`;
         }
       }
 
@@ -152,11 +152,11 @@ function View()
       if (SETTINGS.SHOWTYPE && this.isDefined(value.TYPE))
       {
 
-        entry += `<div class="griditem-typecontainer">`;
+        entry += `<div class="article-typecontainer">`;
         for (let tc = 0; tc < value.TYPE.length; tc++)
         {
-          entry += `<a class="griditem-type" href='#type-${value.TYPE[tc]}'>`;
-          entry += this.buildIcon(value.TYPE[tc], value.TYPE[tc], 'griditem-typeicon');
+          entry += `<a class="article-type" href='#type-${value.TYPE[tc]}'>`;
+          entry += this.buildIcon(value.TYPE[tc], value.TYPE[tc], 'article-typeicon');
           entry += `</a>`;
         }
         entry += `</div>`;
@@ -169,10 +169,10 @@ function View()
     // LOWER CONTENT START
     if (SETTINGS.SHOWLOWER)
     {
-      let lowerClass = 'griditem-containerlower';
+      let lowerClass = 'article-containerlower';
       if (entryIsImageType)
       {
-        lowerClass = 'griditem-containerlower-image';
+        lowerClass = 'article-containerlower-image';
       }
       entry += `<div class="${lowerClass}" ${onclickImage}>`;
 
@@ -197,7 +197,7 @@ function View()
         let content = '';
         for (var i = 0; i < value.TAGS.length; i++)
         {
-          content += `<a class="griditem-taglink" href="#tag-${value.TAGS[i]}">${value.TAGS[i]}</a>`;
+          content += `<a class="article-taglink" href="#tag-${value.TAGS[i]}">${value.TAGS[i]}</a>`;
           if (i + 1 !== value.TAGS.length)
           {
             content += `, `;
@@ -212,7 +212,7 @@ function View()
         let content = '';
         for (var i = 0; i < value.PROJ.length; i++)
         {
-          content += `<a class="griditem-taglink" href="#proj-${value.PROJ[i]}">${value.PROJ[i].to_properCase()}</a>`;
+          content += `<a class="article-taglink" href="#proj-${value.PROJ[i]}">${value.PROJ[i].to_properCase()}</a>`;
           if (i + 1 != value.PROJ.length)
           {
             content += `, `;
@@ -252,7 +252,7 @@ function View()
         && this.isImage(value.FILE))
       {
         entry += `<div class="image">`;
-        entry += `<img class="griditem-img" src="content/media/${value.FILE}" onclick="lightbox.load('content/media/${value.FILE}')">`;
+        entry += `<img class="article-img" src="content/media/${value.FILE}" onclick="lightbox.load('content/media/${value.FILE}')">`;
         entry += `</div>`;
       }
 
@@ -263,13 +263,13 @@ function View()
         {
           for (var i = 0; i < value.FILE.length; i++) 
           {
-            entry += this.doRow('file', `<a class="griditem-file-link" href="content/media/${value.FILE[i]}">${value.FILE[i]}</a>`, 'griditem-file');
+            entry += this.doRow('file', `<a class="article-file-link" href="content/media/${value.FILE[i]}">${value.FILE[i]}</a>`, 'article-file');
           }
         }
         else
         {
           // single
-          entry += this.doRow('file', `<a class="griditem-file-link" href="content/media/${value.FILE}">${value.FILE}</a>`, 'griditem-file');
+          entry += this.doRow('file', `<a class="article-file-link" href="content/media/${value.FILE}">${value.FILE}</a>`, 'article-file');
         }
       }
 
@@ -287,7 +287,7 @@ function View()
       {
         entry += `<div class="image-overlay"></div>`;
       }
-      entry += `<img class="griditem-image-img" src="content/media/${value.FILE}">`;
+      entry += `<img class="article-image-img" src="content/media/${value.FILE}">`;
       entry += `</div>`;
     }
 
@@ -297,90 +297,89 @@ function View()
 
   this.doRow = function(type, content, extraClass)
   {
-    return `<div class="griditem-row${extraClass != undefined ? ' '+extraClass : ''}">
+    return `<div class="article-row${extraClass != undefined ? ' '+extraClass : ''}">
     ${type != undefined ? this.buildIcon(type) : ''}
-    <div class="griditem-rowtext">${content}</div>
+    <div class="article-rowtext">${content}</div>
     </div>`;
   }
 
   this.stats = function(value)
   {
-    let menuContent = ``;
+    let navContent = ``;
     if (window.showAdd !== undefined && window.showAdd)
     {
       // ADD
-      menuContent += `<div class="menu-itemgroup">`;
-      menuContent += `<a href='#add' class="menu-item">`;
-      menuContent += `<b>a</b>dd`;
-      menuContent += `</a>`;
-      menuContent += `</div>`;
+      navContent += `<div class="nav-itemgroup">`;
+      navContent += `<a href='#add' class="nav-item">`;
+      navContent += `<b>a</b>dd`;
+      navContent += `</a>`;
+      navContent += `</div>`;
     }
 
     // TOTAL
-    menuContent += `<div class="menu-itemgroup">`;
-    menuContent += `<a href='#' class="menu-item">`;
-    menuContent += `<div class="menu-itemcount">${value.total}</div>`;
-    menuContent += `<i title="all" class="menu-itemicon fas fa-asterisk"></i>`;
-    menuContent += `</a>`;
-    menuContent += `</div>`;
+    navContent += `<div class="nav-itemgroup">`;
+    navContent += `<a href='#' class="nav-item">`;
+    navContent += `<div class="nav-itemcount">${value.total}</div>`;
+    navContent += `<i title="all" class="nav-itemicon fas fa-asterisk"></i>`;
+    navContent += `</a>`;
+    navContent += `</div>`;
 
     // DONE
     if (SETTINGS.SHOWDONE)
     {
-      menuContent += `<div class="menu-itemgroup">`;
-      menuContent += `<a href='#done-true' class="menu-item">`;
-      menuContent += `<div class="menu-itemcount">${value.done}</div>`;
-      menuContent += `<i title="done" class="menu-itemicon fas fa-check"></i>`;
-      menuContent += `</a>`;
-      menuContent += `<a href='#done-false' class="menu-item">`;
-      menuContent += `<div class="menu-itemcount">${value.total - value.done}</div>`;
-      menuContent += `<i title="to do" class="menu-itemicon fas fa-times"></i>`;
-      menuContent += `</a>`;
-      menuContent += `</div>`;
+      navContent += `<div class="nav-itemgroup">`;
+      navContent += `<a href='#done-true' class="nav-item">`;
+      navContent += `<div class="nav-itemcount">${value.done}</div>`;
+      navContent += `<i title="done" class="nav-itemicon fas fa-check"></i>`;
+      navContent += `</a>`;
+      navContent += `<a href='#done-false' class="nav-item">`;
+      navContent += `<div class="nav-itemcount">${value.total - value.done}</div>`;
+      navContent += `<i title="to do" class="nav-itemicon fas fa-times"></i>`;
+      navContent += `</a>`;
+      navContent += `</div>`;
     }
 
-    menuContent += `<div class="menu-itemgroup">`;
+    navContent += `<div class="nav-itemgroup">`;
     for (let ty = 0; ty < Math.min(value.types.length, SETTINGS.STATSNUMTYPE); ty++) 
     {
       const type = value.types[ty][0];
       const count = value.types[ty][1];
       const icon = this.getIcon(type);
-      menuContent += `<a href='#type-${type}' class="menu-item">`;
-      menuContent += `<div class="menu-itemcount">${count}</div>`;
-      menuContent += `<i title="${type}" class="menu-itemicon ${icon}"></i>`;
-      menuContent += `</a>`;
+      navContent += `<a href='#type-${type}' class="nav-item">`;
+      navContent += `<div class="nav-itemcount">${count}</div>`;
+      navContent += `<i title="${type}" class="nav-itemicon ${icon}"></i>`;
+      navContent += `</a>`;
     }
-    menuContent += `</div>`;
+    navContent += `</div>`;
 
     // TERM
-    menuContent += `<div class="menu-itemgroup">`;
+    navContent += `<div class="nav-itemgroup">`;
     if (value.terms > 0)
     {
-      // menuContent += `<div class="menu-item-space"></div>`;
-      menuContent += `<a href='#term' class="menu-item">`;
-      menuContent += `<div class="menu-itemcount">${value.terms}</div>`;
-      menuContent += `<i title="terms" class="menu-itemicon fas fa-ribbon"></i>`;
-      menuContent += `</a>`;
+      navContent += `<a href='#term' class="nav-item">`;
+      navContent += `<div class="nav-itemcount">${value.terms}</div>`;
+      navContent += `<i title="terms" class="nav-itemicon fas fa-ribbon"></i>`;
+      navContent += `</a>`;
     }
-    menuContent += `</div>`;
+    navContent += `</div>`;
 
     // TAGS
-    menuContent += `<div class="menu-itemgroup">`;
+    navContent += `<div class="nav-itemgroup">`;
     if (value.tags.length > 0)
     {
-      menuContent += `<div class="menu-tagcontainer">`;
-      menuContent += `<i title="tags" class="menu-tagicon fas fa-tag"></i>`;
+      navContent += `<div class="nav-tagcontainer">`;
+      navContent += `<i title="tags" class="nav-tagicon fas fa-tag"></i>`;
       for (var t = 0; t < Math.min(value.tags.length, SETTINGS.STATSNUMTAGS); t++) 
       {
-        menuContent += `<a class="menu-tag" href='#tag-${value.tags[t][0]}'>`;
-        menuContent += `<div class="menu-tagcount">${value.tags[t][1]}</div>`;
-        menuContent += `<div class="menu-taglabel">${value.tags[t][0]}</div>`;
-        menuContent += `</a>`;
+        navContent += `<a class="nav-tag" href='#tag-${value.tags[t][0]}'>`;
+        navContent += `<div class="nav-tagcount">${value.tags[t][1]}</div>`;
+        navContent += `<div class="nav-taglabel">${value.tags[t][0]}</div>`;
+        navContent += `</a>`;
       }
-      menuContent += `</div>`;
+      navContent += `</div>`;
     }
-    menuContent += `</div>`;
-    this.nav.innerHTML = menuContent;
+    navContent += `</div>`;
+    this.nav.innerHTML = navContent;
   }
 
   this.handleImageClick = function(e, element, file)
