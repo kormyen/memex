@@ -145,16 +145,28 @@ function Grid()
       }
 
       // TYPE
-      if (SETTINGS.SHOWTYPE && main.util.isDefined(value.TYPE))
+      if (SETTINGS.SHOWTYPE || SETTINGS.SHOWDONE)
       {
-
         article += `<div class="article-typecontainer">`;
-        for (let tc = 0; tc < value.TYPE.length; tc++)
+
+        if (SETTINGS.SHOWTYPE && main.util.isDefined(value.TYPE))
         {
-          article += `<a class="article-type" href='#type-${value.TYPE[tc]}'>`;
-          article += main.util.buildIcon(value.TYPE[tc], value.TYPE[tc], 'article-typeicon');
+          for (let tc = 0; tc < value.TYPE.length; tc++)
+          {
+            article += `<a class="article-type" href='#type-${value.TYPE[tc]}'>`;
+            article += main.util.buildIcon(value.TYPE[tc], value.TYPE[tc], 'article-typeicon');
+            article += `</a>`;
+          }
+        }
+
+        if (SETTINGS.SHOWDONE)
+        {
+          let done = main.util.isDefined(value.DONE) ? value.DONE : 'false';
+          article += `<a class="article-type" href='#done-${done}'>`;
+          article += main.util.buildIcon(done, done, 'article-typeicon');
           article += `</a>`;
         }
+
         article += `</div>`;
       }
 
@@ -355,13 +367,5 @@ function Grid()
       // This stops lightbox from happening when clicking on tags, file etc
       lightbox.load(`content/media/${file}`);
     }
-  }
-
-  main.util.buildIcon = function(type, label, altClass)
-  {
-    if (label == undefined) { label = type; }
-    let labelElem = label != null ? `title="${label}" ` : ``;
-    let iconClass = altClass == undefined ? 'article-icon' : altClass;
-    return `<i ${labelElem}class="${main.util.getIcon(type)} textIcon ${iconClass}"></i>`;
   }
 }

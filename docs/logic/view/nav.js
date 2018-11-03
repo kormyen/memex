@@ -34,11 +34,11 @@ function Nav()
       navContent += `<div class="nav-itemgroup">`;
       navContent += `<a href='#done-true' class="nav-item">`;
       navContent += `<div class="nav-itemcount">${value.done}</div>`;
-      navContent += `<i title="done" class="nav-itemicon fas fa-check"></i>`;
+      navContent += `<i title="done" class="nav-itemicon ${main.util.getIcon('true')}"></i>`;
       navContent += `</a>`;
       navContent += `<a href='#done-false' class="nav-item">`;
       navContent += `<div class="nav-itemcount">${value.total - value.done}</div>`;
-      navContent += `<i title="to do" class="nav-itemicon fas fa-times"></i>`;
+      navContent += `<i title="to do" class="nav-itemicon ${main.util.getIcon('false')}"></i>`;
       navContent += `</a>`;
       navContent += `</div>`;
     }

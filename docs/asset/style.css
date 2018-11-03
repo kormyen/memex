@@ -421,15 +421,16 @@ article:hover .article-linktitle {
   margin-right: var(--size-grid-gutter);
 }
 .article-type {
-  width: calc(var(--size-font-bodytypes)*2);
   color: var(--color-item);
   padding-bottom: var(--size-grid-gutter);
-  font-size: var(--size-font-bodytypes);
   padding-top: var(--size-grid-gutter);
+  font-size: var(--size-font-bodytypes);
   vertical-align: top;
   text-align: center;
   float: right;
   text-decoration: none;
+  width: 30px;
+  padding-left: 10px;
 }
 .article-image .article-typeicon {
   display: none;
@@ -574,7 +575,7 @@ article:hover .textIcon {
   left: 0;
   top: 0;
   /* content */
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   user-select: none;

@@ -1,5 +1,13 @@
 function Util()
 {
+  this.buildIcon = function(type, label, altClass)
+  {
+    if (label == undefined) { label = type; }
+    let labelElem = label != null ? `title="${label}" ` : ``;
+    let iconClass = altClass == undefined ? 'article-icon' : altClass;
+    return `<i ${labelElem}class="${main.util.getIcon(type)} textIcon ${iconClass}"></i>`;
+  }
+
   this.getIcon = function(type)
   {
     let icon = '';
@@ -28,6 +36,8 @@ function Util()
         case 'file': icon = 'fas fa-folder-open'; break;
         case 'dash': icon = 'fas fa-caret-right'; break;
         case 'link': icon = 'fas fa-link'; break;
+        case 'true': icon = 'fas fa-check'; break;
+        case 'false': icon = 'fas fa-times'; break;
       }
     return icon;
   }
