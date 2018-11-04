@@ -320,6 +320,7 @@ article:hover .article-containerupper-image {
   display: inline-block;
 }
 .article-containerlower-image {
+  cursor: var(--cursor-expandImage);
   padding: var(--size-grid-gutter);
   position: absolute;
   /*width: 100%;*/
@@ -497,6 +498,7 @@ article:hover .article-icon {
   font-size: var(--size-font-body);
   float: left;
   clear: both;
+  cursor: default;
 }
 article:hover .article-row {
   color: var(--color-item);
