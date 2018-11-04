@@ -88,13 +88,6 @@ function Grid()
     let articleIsImageType = (SETTINGS.SHOWIMAG && main.util.isType(value.TYPE, 'image'));
     if (articleIsImageType)
     {
-      // itemClass += " article-image";
-      // itemClass = 'article-typeImg';
-      // if (SETTINGS.WIDEARTICLE && main.util.isDefined(value.WIDE) && value.WIDE)
-      // {
-      //   itemClass = 'article-typeImg-wide';
-      // }
-      // article += `<div class='article-image'>`;
       onclickImage = `onclick="main.grid.handleImageClick(event, this, '${value.FILE}');"`;
     }
 
@@ -223,8 +216,6 @@ function Grid()
           article += this.doRowMulti('progress', value.PROG);
         }
       article += `</div>`;
-
-      // article += `</div>`;
     }
     else 
     {

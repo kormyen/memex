@@ -271,7 +271,6 @@ main:after {
   position: relative;
 	float: left;
   overflow: hidden;
-  /*padding-bottom: var(--size-grid-gutter);*/
 }
 @media screen and (min-width: 886px) {
 	.article-wide { 
@@ -295,23 +294,17 @@ article::selection {
   display: inline-block;
   z-index: 100;
 }
-/*.article-containerlower:empty {
-  display: none;
-}*/
 
 /*IMAGE*/
 .article-imageType-imgContainer {
   z-index: 200;
   position: relative;
-  /*display: none;*/
 }
 .article-containerupper-image {
   cursor: var(--cursor-expandImage);
   padding: var(--size-grid-gutter) var(--size-grid-gutter) 0 var(--size-grid-gutter);
-  /*display: inline-block;*/
   display: none;
   position: absolute;
-  /*height: 100%;*/
   width: 100%;
   left: 0;
   z-index: 300;
@@ -324,7 +317,6 @@ article:hover .article-containerupper-image {
   cursor: var(--cursor-expandImage);
   padding: var(--size-grid-gutter);
   position: absolute;
-  /*width: 100%;*/
   bottom: 0;
   z-index: 200;
   left: 0;
