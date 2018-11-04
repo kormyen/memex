@@ -86,18 +86,22 @@ function Grid()
 
     let onclickImage = ``;
     let articleIsImageType = (SETTINGS.SHOWIMAG && main.util.isType(value.TYPE, 'image'));
-
-    // ARTICLE
-    let article = `<article class="${itemClass}" id="${SETTINGS.ARTICLEIDBASE + value.DIID}">`;
-    
     if (articleIsImageType)
     {
       // itemClass += " article-image";
+      // itemClass = 'article-typeImg';
+      // if (SETTINGS.WIDEARTICLE && main.util.isDefined(value.WIDE) && value.WIDE)
+      // {
+      //   itemClass = 'article-typeImg-wide';
+      // }
       // article += `<div class='article-image'>`;
       onclickImage = `onclick="main.grid.handleImageClick(event, this, '${value.FILE}');"
         style="cursor: pointer;"`;
     }
 
+    // ARTICLE
+    let article = `<article class="${itemClass}" id="${SETTINGS.ARTICLEIDBASE + value.DIID}">`;
+    
     if (main.util.isDefined(value.LINK))
     {
       var idUrl = "url";
@@ -187,7 +191,7 @@ function Grid()
       article += `<div class="article-imageType-imgContainer">`;
       if (SETTINGS.SHOWOVERLAY)
       {
-        article += `<div class="image-overlay"></div>`;
+        article += `<div class="image-overlay" ${onclickImage}></div>`;
       }
       article += `<img class="article-image-img" src="content/media/${value.FILE}">`;
       

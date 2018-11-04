@@ -18,7 +18,7 @@
   --color-page-e: #333;               /*enabled*/
   --color-page-a: #666;               /*ascent*/
 
-  --alpha-darken: 0.2;
+  --alpha-darken: 0.3;
   --alpha-idleicon: 0.2;
   --alpha-idle: 0.4;
   --alpha-enabledicon: 0.4;
@@ -258,8 +258,7 @@ main:after {
 }
 
 /* GRID ITEM */
-article, .article-wide {
-  /*padding-bottom: var(--size-grid-gutter);*/
+.article, .article-wide {
 	border-radius: var(--size-item-corner);
   margin-bottom: var(--size-grid-gutter);
   background: var(--color-itembg);
@@ -267,6 +266,7 @@ article, .article-wide {
   text-decoration: none; 
   position: relative;
 	float: left;
+  /*padding-bottom: var(--size-grid-gutter);*/
 }
 @media screen and (min-width: 886px) {
 	.article-wide { 
@@ -286,7 +286,8 @@ article::selection {
   width: 100%;
 }
 .article-containerlower {
-  padding: 0 var(--size-grid-gutter) 0 var(--size-grid-gutter);
+  padding: 0 var(--size-grid-gutter) var(--size-grid-gutter);
+  display: inline-block;
   z-index: 100;
 }
 .article-containerlower:empty {
