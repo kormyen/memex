@@ -340,6 +340,9 @@ article:hover .article-containerlower-image {
   padding-top: calc(var(--size-grid-gutter)/2);
   padding-bottom: var(--size-grid-gutter);
 }
+.article-containerbelow:empty {
+  display: none;
+}
 
 .article-image {
   position: absolute;
