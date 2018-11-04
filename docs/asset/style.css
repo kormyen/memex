@@ -294,9 +294,9 @@ article::selection {
   display: inline-block;
   z-index: 100;
 }
-.article-containerlower:empty {
+/*.article-containerlower:empty {
   display: none;
-}
+}*/
 
 /*IMAGE*/
 .article-imageType-imgContainer {
