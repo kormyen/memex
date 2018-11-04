@@ -18,7 +18,7 @@
   --color-page-e: #333;               /*enabled*/
   --color-page-a: #666;               /*ascent*/
 
-  --alpha-darken: 0.3;
+  --alpha-darken: 0.6;
   --alpha-idleicon: 0.2;
   --alpha-idle: 0.4;
   --alpha-enabledicon: 0.4;
@@ -266,6 +266,7 @@ main:after {
   text-decoration: none; 
   position: relative;
 	float: left;
+  overflow: hidden;
   /*padding-bottom: var(--size-grid-gutter);*/
 }
 @media screen and (min-width: 886px) {
