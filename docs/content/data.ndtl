@@ -802,6 +802,13 @@ SEE IN EVERYTHING
   TYPE : quote
   DATE : 12018-07-10
 
+LIVING BRIDGE
+  DATE : 12018-06-10
+  FILE : 12018-06-10_livingBridge.jpg
+  TYPE : image
+  TAGS : inspiration, solarpunk, nature, antifragile
+  WIDE : true
+
 AZOLLA
   PERS : alx
   SRCE : Merveilles
@@ -1131,6 +1138,13 @@ TUDOR MONASTERY FARM
   DONE : true
   TAGS : history
   PROJ : Swordy
+
+HOLOCENE ERA
+  DATE : 12018-07-15
+  AUTH : Kurzgesagt
+  TAGS : inspiration, time, history
+  LINK : https://www.youtube.com/watch?v=czgOWmtGVGs
+  TERM : Holocene Era: 
 
 CLIMATE CHANGE IN POST TRUTH
   LINK : https://medium.com/@christinelariviere/the-fisher-king-solving-climate-change-in-a-post-truth-world-7b18c8eafd53
@@ -1624,6 +1638,15 @@ CSS VARIABLES
   TAGS : web, code
   PROJ : Memex
 
+THE NATANIEV OVERSEER
+  DATE : 12018-07-18
+  AUTH : neauoire
+  TAGS : inspiration, tool, design
+  LINK : https://twitter.com/neauoire/status/1019489401192116224
+  TYPE : image
+  FILE : 12018-07-18_theNatanievOverseer.jpg
+  WIDE : true
+
 SLIDE
   DATE : 12018-05-03
   FILE : 12018-05-03_slide.jpg
@@ -1647,7 +1670,12 @@ FPV MOD
   PROJ : Drone
   TAGS : log, kor
   DONE : true
-  NOTE : Diy modified large battery and record module onto drone fpv headset
+  NOTE 
+    > Diy modified large battery and record module onto drone fpv headset
+    > test
+    > test
+    > test
+    > test
 
 SWITCH PANEL
   DATE : 12018-03-20
@@ -2168,6 +2196,14 @@ AESTHETICS
   LINK : https://www.youtube.com/watch?v=HCHFjj_qr5Q
   TAGS : design
 
+STAR TIGER
+  DATE : 12018-07-27
+  TYPE : image
+  FILE : 12018-07-27_starTiger.jpg
+  AUTH : Natalie Ruka
+  TAGS : inspiration, art, spirit, celest, sketch, bnw
+  LINK : https://twitter.com/natalieruka/status/890486936732921857
+
 TYPEFACE PAIRING
   DATE : 12018-07-27
   PERS : rutherford
@@ -2648,6 +2684,13 @@ CRYPTOSTORM VPN
   TYPE : tool
   TAGS : security
 
+RAMATREE VANLIFE SISTERS
+  DATE : 12018-08-18
+  TAGS : inspiration, vanlife, hygge, love
+  AUTH : RamaTree
+  LINK : https://www.youtube.com/watch?v=0Xcpqq1zSP4
+  TYPE : video
+
 PARTICLE MESH
   DATE : 12018-08-19
   LINK : https://www.particle.io/mesh/
@@ -3011,6 +3054,13 @@ UNENCUMBERED
   DATE : 12018-09-04
   TYPE : quote
   QOTE : "this sense of first sight unencumbered by knowingness"
+
+SOUND OF ICE
+  DATE : 12018-09-05
+  TYPE : video
+  TAGS : inspiration, hygge, nature
+  AUTH : Jonna Jinton
+  LINK : https://www.youtube.com/watch?v=YYAS6Dwz0II
 
 POMEGRANATES COLOR
   DATE : 12018-09-06
@@ -3421,6 +3471,29 @@ LEY-LINES
   FILE
     > 2018-09-28_Magneticfield.pdf
 
+EXURB1A THING
+  DATE : 12018-09-22
+  TAGS : inspiration, life
+  AUTH : exurb1a
+  TYPE : video
+  LINK : https://www.youtube.com/watch?v=SvbTFwXagdQ
+
+MOON PRECESSION
+  DATE : 12018-09-26
+  TYPE : image
+  TAGS : inspiration, moon, celest, nature, photography
+  AUTH : Giorgia Hofer
+  LINK : www.giorgiahoferphotography.com
+  FILE : 12018-09-26_moonPrecession.jpg
+
+GOLDEN ALPINE LAKE
+  DATE : 12018-09-27
+  TYPE : image
+  TAGS : inspiration, nature, env, photography
+  AUTH : estrandberg
+  LINK : https://www.reddit.com/r/EarthPorn/comments/9iux8o/golden_hour_in_the_alpine_lakes_wilderness_in/
+  FILE : 12018-09-27_goldenAlpineLake.jpg
+
 COMMUNICATION PRIVACY
   DATE : 12018-09-29
   TYPE : quote
@@ -3430,6 +3503,12 @@ COMMUNICATION PRIVACY
 BACK TO THINKING
   DATE : 12018-09-29
   QOTE : "We must do away with the absolutely specious notion that everybody has to earn a living. It is a fact today that one in ten thousand of us can make a technological breakthrough capable of supporting all the rest. The youth of today are absolutely right in recognizing this nonsense of earning a living. We keep inventing jobs because of this false idea that everybody has to be emploted at some kind of drudgery because, according to Malthusian-Darwinian theory, he must justify his right to exist. So we have inspectors of inspectors and people making instruments for inspectors to inspect inspectors. The true business of people should be to go back to school and think about whatever it was they were thinking about before somebody came along and told them they had to earn a living." - Richard Buckminster Fuller (1985 - 1983)
+
+ATLANTIS
+  DATE : 12018-09-29
+  FILE : 12018-09-29_atlantis.jpg
+  TYPE : image
+  TAGS : inspiration, env, architecture
 
 UDON SIN
   DATE : 12018-09-30
@@ -3443,6 +3522,13 @@ DANCE
   DATE : 12018-09-30
   QOTE : And those who were seen dancing were thought to be insane by those who could not hear the music.
   AUTH : Friedrich Nietzsche
+
+UNDERSEA CANYONS
+  DATE : 12018-09-30
+  TYPE : image
+  TAGS : inspiration, nature, env
+  AUTH : National Geographic
+  FILE : 12018-09-30_underseaCanyons.jpg
 
 WARMTH
   DATE : 12018-10-01
@@ -3469,6 +3555,13 @@ RUSSEEL BRAND HELP
   AUTH : Jonathan Rowson
   TYPE : book
 
+RAMATREE BOATLIFE 2
+  DATE : 12018-10-01
+  AUTH : Ramatree
+  LINK : https://www.youtube.com/watch?v=j5oZGtQ1Nps
+  TYPE : video
+  TAGS : inspiration, boatlife
+
 DOCUMENTATION
   DATE : 12018-10-02
   LINK : https://www.divio.com/blog/documentation/
@@ -3490,11 +3583,35 @@ SONDER
   LINK : https://www.youtube.com/watch?v=AkoML0_FiV4
   NOTE : Dictionary of Obscure Sorrows
 
+MAGNETIC TURBULENCE
+  DATE : 12018-10-02
+  LINK : https://www.nasa.gov/feature/goddard/2018/nasa-spacecraft-discovers-new-magnetic-process-in-turbulent-space
+  TAGS : inspiration, nature, env
+  AUTH : NASA
+  FILE : 12018-10-02_magneticTurbulence.jpg
+  TYPE : image
+
 CUSTOM CONTROLLER
   LINK : https://geekhack.org/index.php?topic=74463.350
 
 HANDTOP
   LINK : https://geekhack.org/index.php?topic=84603.0
+
+ALASKA FALL
+  DATE : 12018-10-03
+  AUTH : bdorts
+  TAGS : inspiration, nature, env, photography
+  LINK : https://www.reddit.com/r/EarthPorn/comments/9kwgq2/fall_in_alaska_oc4443x5554/
+  FILE : 12018-10-03_alaskaFall.jpg
+  TYPE : image
+
+SCOTLAND MOUNTAIN
+  DATE : 12018-10-04
+  AUTH : timsharifsoltani
+  LINK : https://www.reddit.com/r/EarthPorn/comments/9kthqq/scotland_has_definitely_an_amazing_scenery_to/
+  TAGS : inspiration, nature, env, photography
+  TYPE : image
+  FILE : 12018-10-04_scotlandMountain.jpg
 
 REGENERATIVE ECONOMIC THEORY
   DATE : 12018-10-05
@@ -3512,18 +3629,6 @@ MEMEX SIXTY YEARS LATER
   PERS : neauoire
   SRCE : mastodon
   PROJ : Memex
-
-TO BURN TO MEMORY
-  DATE : 12018-10-18
-  TYPE : game
-  AUTH : theneko
-  SRCE : Merveilles
-  PROG
-    > Safe - "The Requisitioned Terminal, Old Quarter"
-    & Safe - Principal Director's Office, Imperial Opera, Latin Quater
-    & Sun door - "Beneath Tower, Piazza Institute"
-    & Crystalline Gate - "Iron Gardens, Old Quarter"
-    & Locked door - Salandre Residence, Boulevard, Latin Quarter
 
 OPPOSITES IN BALANCE
   PROJ : Megamex
@@ -3560,6 +3665,22 @@ TRINITY
     > Earth Moon Sun
     > left-hemisphere right-hemisphere pineal
     > Triptych doorways
+
+DOG LIFE ADVENTURE
+  AUTH : Ben Moon
+  DATE : 12018-10-12
+  TAGS : inspiration, dog, adventure
+  LINK : https://www.youtube.com/watch?v=P2zQbsEGh_Q
+  TYPE : video
+
+GOODBYE MOON
+  AUTH : goodbye.computer
+  DATE : 12018-10-15
+  LINK : https://cybre.space/@goodbyecomputer/100586351148975679
+  TAGS : inspiration, moon, time, design
+  FILE : 12018-10-15_goodbyeMoon.jpg
+  TYPE : image
+  PROJ : Memex
 
 DIKE
   DATE : 12018-10-16
@@ -3736,6 +3857,41 @@ UNCONDITIONAL LOVE
   DATE : 12018-10-17
   QOTE : "I know the secret to happiness. It took years of introspection, observation, and comparison, analyzation, insecurity, but I finally figured it out. It feels like it was under my nose the whole time. All you have to do is learn to appreciate the world. Appreciate everything. Love everything for what it is. Embrace the fact that everything has a reason, don't try to deny anything for the sake of being right. And after all, hasn't true love always been thought of as complete appreciation for a partner with no thoughts or intentions to ever change them? Unconditional love. I understand that term now. Because you realize that no matter how horrible a person's decision might seem, he or she has a reason for it. Nobody is a bad person, some just have a little more weighing on their conscience."
 
+TO BURN TO MEMORY
+  DATE : 12018-10-18
+  TYPE : game
+  AUTH : theneko
+  SRCE : Merveilles
+  PROG
+    > Safe - "The Requisitioned Terminal, Old Quarter"
+    & Safe - Principal Director's Office, Imperial Opera, Latin Quater
+    & Sun door - "Beneath Tower, Piazza Institute"
+    & Crystalline Gate - "Iron Gardens, Old Quarter"
+    & Locked door - Salandre Residence, Boulevard, Latin Quarter
+
+INTERNETJADE
+  DATE : 12018-10-18
+  AUTH : internetjade
+  TAGS : inspiration, design, mervellies
+  LINK : https://twitter.com/internetjade/status/1052608789688377344
+  FILE : 12018-10-18_internetJade.jpg
+  TYPE : image
+
+BILLAIN HORIZON
+  DATE : 12018-10-19
+  AUTH : Billain
+  LINK : https://twitter.com/Billain/status/1052754136985350144
+  TAGS : inspiration, design, mervellies
+  FILE : 12018-10-19_billainHorizon.jpg
+  TYPE : image
+
+RAMATREE BOATLIFE
+  DATE : 12018-10-20
+  AUTH : Ramatree
+  LINK : https://www.youtube.com/watch?v=MrNTmMr_G-E
+  TYPE : video
+  TAGS : inspiration, boatlife
+
 AGM SEALED
   DATE : 12018-10-20
   NOTE 
@@ -3886,6 +4042,7 @@ ALTERNATOR CHARGING OPTIONS
   TAGS : electronics
 
 VAN ELECTRICAL GUIDES
+  DATE : 12018-10-25
   LINK 
     > https://faroutride.com/electrical-system/
     > https://gnomadhome.com/van-build-solar-electrical-wiring/
@@ -3895,10 +4052,19 @@ VAN ELECTRICAL GUIDES
   TYPE : list
 
 BATTERY BANK WIRING
+  DATE : 12018-10-25
   LINK : http://www.smartgauge.co.uk/batt_con.html
   FILE : 12018-10-25_bbwire.pdf
   PROJ : Van
   TAGS : electronics
+
+BO BARTLETT
+  AUTH : Bo Bartlett
+  DATE : 12018-10-25
+  TYPE : image
+  TAGS : inspiration, art
+  LINK : https://www.reddit.com/r/Art/comments/9qz9uj/halloween_by_bo_barlett_80x100cm_oil_on_linen/
+  FILE : 12018-10-25_bo Bartlett.jpg
 
 NCASE REMEMBER
   LINK : https://ncase.me/remember/
@@ -3957,6 +4123,23 @@ WITH LOVE FROM VERY SMALL PLACES
   AUTH : kodedninja
   TAGS : ambient, calm
   LINK : https://0x22.bandcamp.com/album/with-love-from-very-small-places
+
+GRAIN
+  DATE : 12018-10-30
+  TYPE : image
+  AUTH : Phil James
+  TAGS : inspiration, art, bnw
+  LINK : http://shinestrength.xyz/
+  FILE : 12018-10-30_grain2013.jpg
+  WIDE : true
+
+THRESHING NEST
+  DATE : 12018-10-31
+  TYPE : image
+  AUTH : Phil James
+  TAGS : inspiration, art, bnw
+  LINK : http://the-threshing-nest.tumblr.com/post/69138350040
+  FILE : 12018-10-31_threshingNest.jpg
 
 LIGHTING FIRES POETICS AND SENSATION
   DATE : 12018-10-31
