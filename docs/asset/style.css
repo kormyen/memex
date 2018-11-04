@@ -63,7 +63,8 @@ body {
 	margin: 0; 
 }
 ::selection {
-  background: var(--color-bg);
+  background: var(--color-itemascent);
+  color: var(--color-itembg)
 }
 
 /* LOADING */
