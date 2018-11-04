@@ -86,15 +86,18 @@ function Grid()
 
     let onclickImage = ``;
     let articleIsImageType = (SETTINGS.SHOWIMAG && main.util.isType(value.TYPE, 'image'));
+
+    // ARTICLE
+    let article = `<article class="${itemClass}" id="${SETTINGS.ARTICLEIDBASE + value.DIID}">`;
+    
     if (articleIsImageType)
     {
-      itemClass += " article-image";
+      // itemClass += " article-image";
+      // article += `<div class='article-image'>`;
       onclickImage = `onclick="main.grid.handleImageClick(event, this, '${value.FILE}');"
         style="cursor: pointer;"`;
     }
 
-    // ARTICLE
-    let article = `<article class="${itemClass}" id="${SETTINGS.ARTICLEIDBASE + value.DIID}">`;
     if (main.util.isDefined(value.LINK))
     {
       var idUrl = "url";
@@ -174,6 +177,65 @@ function Grid()
       article += `</div>`;
     }
 
+    // IMAGE - for image-type-article
+    if (articleIsImageType
+        && main.util.isDefined(value.FILE)
+        && main.util.isImage(value.FILE))
+    {
+      // IMAGE ARTICLE
+
+      article += `<div class="article-imageType-imgContainer">`;
+      if (SETTINGS.SHOWOVERLAY)
+      {
+        article += `<div class="image-overlay"></div>`;
+      }
+      article += `<img class="article-image-img" src="content/media/${value.FILE}">`;
+      
+      article += this.doLower(value, articleIsImageType, onclickImage);
+
+      article += `</div>`;
+
+      article += `<div class="article-containerbelow">`;
+        // TERM
+        if (SETTINGS.SHOWTERM && main.util.isDefined(value.TERM))
+        {
+          article += this.doRowMulti('term', value.TERM);
+        }
+
+        // NOTE
+        if (SETTINGS.SHOWNOTE && main.util.isDefined(value.NOTE))
+        {
+          article += this.doRowMulti('note', value.NOTE);
+        }
+
+        // QUOTE
+        if (SETTINGS.SHOWQOTE && main.util.isDefined(value.QOTE))
+        {
+          article += this.doRowMulti('quote', value.QOTE);
+        }
+
+        // PROGRESS
+        if (SETTINGS.SHOWPROG && main.util.isDefined(value.PROG))
+        {
+          article += this.doRowMulti('progress', value.PROG);
+        }
+      article += `</div>`;
+
+      // article += `</div>`;
+    }
+    else 
+    {
+      // NORMAL ARTICLE (NON-IMAGE)
+      article += this.doLower(value, articleIsImageType, onclickImage);
+    }
+
+    article += `</article>`;
+    return article;
+  }
+
+  this.doLower = function(value, articleIsImageType, onclickImage)
+  {
+    let article = '';
     // LOWER CONTENT START
     if (SETTINGS.SHOWLOWER)
     {
@@ -211,28 +273,31 @@ function Grid()
         article += this.doRowArray('project', value.PROJ, 'proj', true);
       }
 
-      // TERM
-      if (SETTINGS.SHOWTERM && main.util.isDefined(value.TERM))
+      if (!articleIsImageType)
       {
-        article += this.doRowMulti('term', value.TERM);
-      }
+        // TERM
+        if (SETTINGS.SHOWTERM && main.util.isDefined(value.TERM))
+        {
+          article += this.doRowMulti('term', value.TERM);
+        }
 
-      // NOTE
-      if (SETTINGS.SHOWNOTE && main.util.isDefined(value.NOTE))
-      {
-        article += this.doRowMulti('note', value.NOTE);
-      }
+        // NOTE
+        if (SETTINGS.SHOWNOTE && main.util.isDefined(value.NOTE))
+        {
+          article += this.doRowMulti('note', value.NOTE);
+        }
 
-      // QUOTE
-      if (SETTINGS.SHOWQOTE && main.util.isDefined(value.QOTE))
-      {
-        article += this.doRowMulti('quote', value.QOTE);
-      }
+        // QUOTE
+        if (SETTINGS.SHOWQOTE && main.util.isDefined(value.QOTE))
+        {
+          article += this.doRowMulti('quote', value.QOTE);
+        }
 
-      // PROGRESS
-      if (SETTINGS.SHOWPROG && main.util.isDefined(value.PROG))
-      {
-        article += this.doRow('progress', value.PROG);
+        // PROGRESS
+        if (SETTINGS.SHOWPROG && main.util.isDefined(value.PROG))
+        {
+          article += this.doRowMulti('progress', value.PROG);
+        }
       }
       
       // IMAGE - for non-image-type-article
@@ -266,22 +331,6 @@ function Grid()
       // LOWER CONTENT END
       article += `</div>`;
     }
-
-    // IMAGE - for image-type-article
-    if (articleIsImageType
-        && main.util.isDefined(value.FILE)
-        && main.util.isImage(value.FILE))
-    {
-      article += `<div class="image">`;
-      if (SETTINGS.SHOWOVERLAY)
-      {
-        article += `<div class="image-overlay"></div>`;
-      }
-      article += `<img class="article-image-img" src="content/media/${value.FILE}">`;
-      article += `</div>`;
-    }
-
-    article += `</article>`;
     return article;
   }
 

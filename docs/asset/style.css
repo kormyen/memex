@@ -34,7 +34,7 @@
   --size-grid-gutter: 20px;
   --size-grid-column: 350px;
 
-  --size-item-corner: 3px;
+  --size-item-corner: 10px;
   --size-item-elem-padding: 1em;      /*vertical space between grid item internal elements (tags, notes, quotes etc)*/
   --size-item-elem-sep: 0.75em;       /*horizontal space between item element icon and element text (tag icon and tags)*/
 
@@ -259,7 +259,7 @@ main:after {
 
 /* GRID ITEM */
 article, .article-wide {
-  padding-bottom: var(--size-grid-gutter);
+  /*padding-bottom: var(--size-grid-gutter);*/
 	border-radius: var(--size-item-corner);
   margin-bottom: var(--size-grid-gutter);
   background: var(--color-itembg);
@@ -294,15 +294,24 @@ article::selection {
 }
 
 /*IMAGE*/
+.article-imageType-imgContainer {
+  z-index: 200;
+  position: relative;
+  /*display: none;*/
+}
 .article-containerupper-image {
   padding: var(--size-grid-gutter) var(--size-grid-gutter) 0 var(--size-grid-gutter);
-  display: inline-block;
+  /*display: inline-block;*/
+  display: none;
   position: absolute;
-  height: 100%;
+  /*height: 100%;*/
   width: 100%;
   left: 0;
-  z-index: 200;
+  z-index: 300;
   top: 0;
+}
+article:hover .article-containerupper-image {
+  display: inline-block;
 }
 .article-containerlower-image {
   padding: var(--size-grid-gutter);
@@ -315,7 +324,20 @@ article::selection {
 .article-containerlower-image:empty {
   display: none;
 }
+article:hover .article-containerlower-image {
+  display: inline-block;
+}
+.article-containerbelow {
+  display: table;
+  padding-left: var(--size-grid-gutter);
+  padding-right: var(--size-grid-gutter);
+  padding-top: calc(var(--size-grid-gutter)/2);
+  padding-bottom: var(--size-grid-gutter);
+}
+
 .article-image {
+  position: absolute;
+  top: 0;
   background: transparent;
   padding-bottom: 0;
   overflow: hidden;
@@ -348,7 +370,7 @@ article::selection {
   z-index: 150;
   opacity: 0;
 }
-.article-image:hover .image-overlay { 
+.article:hover .image-overlay { 
   opacity: var(--alpha-darken);
 }
 .article-image .article-link {
