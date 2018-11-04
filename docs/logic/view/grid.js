@@ -95,8 +95,7 @@ function Grid()
       //   itemClass = 'article-typeImg-wide';
       // }
       // article += `<div class='article-image'>`;
-      onclickImage = `onclick="main.grid.handleImageClick(event, this, '${value.FILE}');"
-        style="cursor: pointer;"`;
+      onclickImage = `onclick="main.grid.handleImageClick(event, this, '${value.FILE}');"`;
     }
 
     // ARTICLE

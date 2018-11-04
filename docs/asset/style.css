@@ -43,6 +43,9 @@
   --size-font-menutypes: 1em;
   --size-font-menutags: 0.8em;
   --size-font-bodytypes: 1em;         /*font size of type icon/count*/
+
+  --cursor-expandImage: zoom-in;
+  --cursor-minimizeImage: zoom-out;
 }
 
 * {
@@ -302,6 +305,7 @@ article::selection {
   /*display: none;*/
 }
 .article-containerupper-image {
+  cursor: var(--cursor-expandImage);
   padding: var(--size-grid-gutter) var(--size-grid-gutter) 0 var(--size-grid-gutter);
   /*display: inline-block;*/
   display: none;
@@ -318,7 +322,7 @@ article:hover .article-containerupper-image {
 .article-containerlower-image {
   padding: var(--size-grid-gutter);
   position: absolute;
-  width: 100%;
+  /*width: 100%;*/
   bottom: 0;
   z-index: 200;
   left: 0;
@@ -362,7 +366,7 @@ article:hover .article-containerlower-image {
   margin-left: calc(-1 * var(--size-grid-gutter));
   margin-right: calc(-1 * var(--size-grid-gutter));
   padding-top: var(--size-grid-gutter);
-  cursor: pointer;
+  cursor: var(--cursor-expandImage);
 }
 .image-overlay { 
   background-color: var(--color-imagedarken);
@@ -371,6 +375,7 @@ article:hover .article-containerlower-image {
   width: 100%;
   z-index: 150;
   opacity: 0;
+  cursor: var(--cursor-expandImage);
 }
 .article:hover .image-overlay { 
   opacity: var(--alpha-darken);
@@ -565,7 +570,7 @@ article:hover .textIcon {
   width: 100%;
   height: 100%;
   background-color: rgba(0,0,0,0.9);
-  cursor: pointer;
+  cursor: var(--cursor-minimizeImage);
 }
 .lightbox-img {
   position: absolute;
@@ -575,7 +580,7 @@ article:hover .textIcon {
   max-width: 100vw;
   transform: translateY(-50%) translateX(-50%);
   vertical-align: middle;
-  cursor: pointer;
+  cursor: var(--cursor-minimizeImage);
 }
 
 
