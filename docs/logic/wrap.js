@@ -7,46 +7,58 @@ function Wrap()
   {
     this.database = new Indental(data).parse();
     this.keys = Object.keys(this.database);
-    this.process();
   }
 
-  this.process = function()
+  this.start = function(data)
   {
-    for (let i = 0; i < this.keys.length; i++)
+    return new Promise(function(resolve, reject) 
     {
-      let entry = this.database[this.keys[i]];
-
-      entry.AUTH = this.commaSplit(entry.AUTH);
-      entry.TAGS = this.commaSplit(entry.TAGS);
-      entry.TYPE = this.commaSplit(entry.TYPE);
-      entry.PROJ = this.commaSplit(entry.PROJ);
-
-      // LINK
-      if (typeof entry.LINK == 'object')
+      let commaSplit = function(data)
       {
-        for (let l = 0; l < entry.LINK.length; l++)
+        if (data !== undefined)
         {
-          if (entry.LINK[l].substr(0,2) == '> ')
+          var result = data.split(",");
+          for (var c = 0; c < result.length; c++)
           {
-            entry.LINK[l] = entry.LINK[l].substr(2,entry.LINK[l].length-1);
+            result[c] = result[c].trim().toLowerCase();
           }
+          return result;
         }
+        return data;  
       }
 
-      // FILE
-      if (typeof entry.FILE == 'object')
+      let objectSplit = function(data)
       {
-        for (let f = 0; f < entry.FILE.length; f++)
+        if (typeof data == 'object')
         {
-          if (entry.FILE[f].substr(0,2) == '> ')
+          for (let o = 0; o < data.length; o++)
           {
-            entry.FILE[f] = entry.FILE[f].substr(2,entry.FILE[f].length-1);
+            if (data[o].substr(0,2) == '> ')
+            {
+              data[o] = data[o].substr(2,data[o].length-1);
+            }
           }
         }
+        return data;
       }
 
-      this.database[this.keys[i]].DIID = i;
-    }
+      let keys = Object.keys(data);
+      for (let i = 0; i < keys.length; i++)
+      {
+        let entry = data[keys[i]];
+
+        entry.AUTH = commaSplit(entry.AUTH);
+        entry.TAGS = commaSplit(entry.TAGS);
+        entry.TYPE = commaSplit(entry.TYPE);
+        entry.PROJ = commaSplit(entry.PROJ);
+
+        entry.LINK = objectSplit(entry.LINK);
+        entry.FILE = objectSplit(entry.FILE);
+
+        data[keys[i]].DIID = i;
+      }
+      resolve(data);
+    });
   }
 
   this.filter = function(target)

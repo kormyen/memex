@@ -24,6 +24,16 @@ function Grid()
     }
   }
 
+  this.formatArticle = function(entry)
+  {
+    return '<div>test</div>';
+  }
+
+  this.addHtmlToPage = function()
+  {
+    this.container.innerHTML += contentHtml;
+  }
+
   this.display = function(db)
   {
     if (window.showAdd !== undefined && window.showAdd)
@@ -37,7 +47,7 @@ function Grid()
     let contentHtml = '';
     while (i < dbKeys.length) 
     {
-      contentHtml += this.buildArticle(db, dbKeys[i]);
+      contentHtml += this.buildArticle(db[dbKeys[i]], dbKeys[i]);
       i++;
     }
     this.container.innerHTML = contentHtml;
@@ -65,9 +75,9 @@ function Grid()
     }
   }
 
-  this.buildArticle = function(db, key)
+  this.buildArticle = function(value, key)
   {
-    let value = db[key];
+    // let value = db[key];
     let itemClass = "article";
     if (SETTINGS.WIDEARTICLE)
     {

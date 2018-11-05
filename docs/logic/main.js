@@ -1,7 +1,7 @@
 function Main()
 {
   this.util = null;
-  this.db = null;
+  this.database = null;
   this.grid = null;
   this.nav = null;
   this.add = null;
@@ -16,8 +16,8 @@ function Main()
   this.install = function()
   {
     this.util = new Util();
-    this.db = new Wrap();
-    this.db.install(DATABASE);
+    this.database = new Wrap();
+    // this.database.install(DATABASE);
     this.grid = new Grid();
     this.grid.install(
       document.querySelector('main'),
@@ -41,8 +41,33 @@ function Main()
 
   this.start = function()
   {
-    this.load(window.document.location.hash);
-    this.nav.display(this.db.stats());
+    console.log(Date.now() + ' - start');
+    let dbPromise = this.database.start(new Indental(DATABASE).parse());
+    dbPromise.then((db) => {
+      console.log(Date.now() + ' - db ready');
+      // console.log(db);
+
+      let dbKeys = Object.keys(db);
+      let i = 0;
+      let contentHtml = '';
+      while (i < dbKeys.length) 
+      {
+        contentHtml += this.grid.buildArticle(db[dbKeys[i]], dbKeys[i]);
+        i++;
+      }
+      
+      return contentHtml;
+    })
+    .then((html) => {
+      console.log(Date.now() + ' - html ready');
+      document.querySelector('main').innerHTML = html;
+      console.log(Date.now() + ' - rendered!');
+    })
+    .catch((error) => {
+      console.log('ERROR:', error);
+    })
+    // this.load(window.document.location.hash);
+    // this.nav.display(this.db.stats());
   }
 
   this.load = function(target)
