@@ -1974,11 +1974,11 @@ JOURNALING NOTES
 
 EVERYTHING
   DATE : 12018-07-19
-  PERS : neauoire
+  AUTH : neauoire
   SRCE : Merveilles
   QOTE : 'have you tried writing down everything you know about everything?' - neauoire
-  TYPE : encyclopedia
-  TAGS : inspiration
+  TYPE : quote
+  TAGS : inspiration, neauoire
 
 MUSIC THEORY
   DATE : 12018-07-20
@@ -2162,7 +2162,7 @@ MORE DATA SIMPLE LOG
   DATE : 12018-07-23
   LINK : https://gist.github.com/neauoire/71f7f63038db0bf24302f44a31027294#file-hannah-md
   TYPE : article
-  TAGS : productivity
+  TAGS : productivity, neauoire
   QOTE 
     > The hardest thing about logging, is logging itself, and to keep doing it. Optimizing redundant logs, turning them into quick codes, like the fh/ch codes to generate the task/hour made this whole process a lot more fun. Giving instant feedback, through dataviz for instance, was excellent too.
     > The biggest adjustment to my lifestyle, that I made recently, that yeilded the biggest difference, was to record more data. I've recently pushed this further, and started offloading almost all thought that goes through my mind at all time onto this digital paper. It has slowed time, helped me with focus and mindfulness.
@@ -4249,14 +4249,17 @@ JS PROMISE INTRO
   TYPE : article
   PROJ : Memex, web
   TAGS : code, web, javascript
-  LINK : https://developers.google.com/web/fundamentals/primers/promises#whats-all-the-fuss-about
+  LINK : > https://medium.com/quick-code/javascript-promises-in-twenty-minutes-3aac5b65b887
+    >https://developers.google.com/web/fundamentals/primers/promises#whats-all-the-fuss-about
   NOTE 
-    > Like event but, success or fail and only called once.
-    > Can be:
+    > Simplified async function chaining (and error handling)
+    > "A promise represents the eventual result of an asynchronous operation. The primary way of interaction with a promise is through its then method, which registers callbacks to receive either a promise’s eventual value or the reason why the promise cannot be fulfilled."
+    > Promise state can be:
     - fulfilled: The action relating to the promise succeeded
     - rejected: The action relating to the promise failed
     - pending: Hasn't fulfilled or rejected yet
-    - settled: Has fulfilled or rejected
+    > A "settled" promise has been fulfilled or rejected
+    & A promise can only be settled (mutated) once
     > Example:
     & img1.ready().then(function() {
     &   // loaded
@@ -4508,9 +4511,47 @@ GENEROUS TIT FOR TAT
   QOTE : "A problem with the tit-for-tat strategy is that it is overly sensitive to misunderstanding or misimplementation. This can be effectively corrected by adding some generosity (occasionally cooperating after the other player defects), or contrition (cooperating after being punished for an unintended defection) (Wu and Axelrod, 1995)."
   LINK : https://www.wnycstudios.org/story/104010-one-good-deed-deserves-another
   TAGS : philosophy, psychology
+  NOTE
+    > First interaction: cooperate
+    > Second and further interactions:
+    - if partner's previous interaction was cooperate: cooperate
+    - if partner's previous interaction was defect: 90% chance of defect, 10% change of cooperate
 
 GUJARATI INDIAN
   DATE : 12018-11-05
   TYPE : book
   NOTE : "Little Bit of This, A Little Bit of That: A Gujarati Indian Cookbook for Aotearoa"
+  TAGS : food
+
+BLOCKCHAIN EXPLAIN
+  DATE : 12018-11-06
+  LINK : https://bitcoin.stackexchange.com/questions/5540/what-does-the-term-longest-chain-mean
+  TAGS : bitcoin, blockchain
+  TERM 
+    > Blockchain: a distributed (p2p) ledger ("chain") of blocks of transactions with a dynamic-difficulty-adjusted brute-force key (next block ID) discovery system (used by the system's "accountants" called "miners").
+    > Block Tree: "consists of all valid blocks whose entire ancestry is known, up to the genesis block. The rules for validness include no double spending, valid signatures, no introduction of more currency than allowed, ... These are the network rules, and every full Bitcoin node verifies them."
+    > Active Chain: "is one path from genesis block at the top to some leaf node at the bottom of the block tree. Every such path is a valid choice, but nodes are expected to pick the one with the most "work" in it they know about (where work is loosely defined as the sum of the difficulties). Relativity and technological constraints prevent us from doing instant communication across the globe, so two nodes can not be expected to pick the same chain as the active one. This is no problem: the mining mechanism makes sure that the chance two nodes disagree about blocks in the past decreases exponentially as they are older."
+  NOTE 
+    > "Imagine that the blockchain is 210000 blocks long and TWO miners both find valid blocks within a few seconds of each other and broadcast them to the network.
+    - This is perfectly normal as the Bitcoin network is peer to peer and global.
+    - You now have two chains, each of length 210001. Neither of these are longer than each other. Some bitcoind nodes will see the first miner's block and some bitcoind nodes will see the second.
+    - Temporarily you have two forks of the blockchain, each of length 210001 blocks long. They are identical for 210000 blocks, but the 210001st is different on the two forks.
+    - Sometime later another miner finds another valid block, the 210002nd block, and that will be attached to exactly one of the forks.
+    - This chain is now the longest at 210002 blocks and becomes the longest chain. It becomes the "definitive" blockchain.
+    - (The transactions in the alternate fork don't disappear - they simply get put back into the pool of unconfirmed transactions and miners will put them into a subsequent block)."
+
+TIME TRAVEL NOTES
+  DATE : 12018-11-06
+  LINK : https://www.youtube.com/watch?v=wPODghAr3Vc
+  FILE : 12018-11-06_travel.jpg
+  TAGS : time
+
+JS MAP IS DICTIONARY?
+  LINK : https://www.beyondjava.net/map-vs-object
+  TAGS : code, web
+  NOTE
+    - It iterates without surprises.
+    - It's optimized for adding items to and removing items from the map.
+    - The keys can by any type, not just strings.
+    - You can't pollute it with custom methods.
 `
