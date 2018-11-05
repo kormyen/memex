@@ -670,6 +670,14 @@ POLITCAL CORRECTNESS DEBATE
   QOTE : "Fuck political correctness, resist, fight. If you have a point of view, fight for it in the proper manner." - Stephen Fry
   TAGS : politics
 
+PANEL 84V42
+  AUTH : eelfroth
+  LINK : https://twitter.com/eelfroth/status/1015467918581288960
+  TAGS : inspiration, design
+  TYPE : image
+  FILE : 12018-07-07_eelfroth.jpg
+  WIDE : true
+
 BORROWED TIME
   PERS : neauoire
   SRCE : Merveilles
@@ -1641,7 +1649,7 @@ CSS VARIABLES
 THE NATANIEV OVERSEER
   DATE : 12018-07-18
   AUTH : neauoire
-  TAGS : inspiration, tool, design
+  TAGS : inspiration, tool, design, neauoire
   LINK : https://twitter.com/neauoire/status/1019489401192116224
   TYPE : image
   FILE : 12018-07-18_theNatanievOverseer.jpg
@@ -1715,26 +1723,26 @@ WHITE
   DATE : 12018-07-19
   FILE : 12018-07-19_white.jpg
   TYPE : image
-  TAGS : hamish, test
+  TAGS : hamish
 
 BLACK
   DATE : 12018-07-19
   FILE : 12018-07-19_black.jpg
   TYPE : image
-  TAGS : hamish, test
+  TAGS : hamish
 
 TALL CUT SHORT
   DATE : 12018-07-19
   FILE : 12018-07-19_tall.jpg
   TYPE : image
-  TAGS : hamish, test
+  TAGS : hamish
 
 RANGITOTO
   DATE : 12018-07-19
   FILE : 12018-07-19_wide.jpg
   TYPE : image
   WIDE : true
-  TAGS : log, test test
+  TAGS : log
 
 MQTT
   PERS : autophagy
@@ -2018,6 +2026,7 @@ CALM TECH
   PERS : josh
   SRCE : Merveilles
   LINK : https://calmtech.com/
+  TAGS : design
 
 VR LEARNINGS
   PERS : changbai
@@ -2031,21 +2040,21 @@ RADICAL MARKETS
 
 ARDUSAMBER TIME
   TYPE : image
-  TAGS : log, kor, arduino
+  TAGS : log, kor, arduino, neauoire
   FILE : 12018-05-18_ardusamberTimeAndDate.jpg
   LINK : https://github.com/kormyen/ardusamber
   NOTE : Arduino experiements with Devine Lu Linvega's time format Desamber.
 
 ARDUSAMBER
   TYPE : image
-  TAGS : log, kor, arduino
+  TAGS : log, kor, arduino, neauoire
   FILE : 12018-06-04_ardusamber.jpg
   LINK : https://github.com/kormyen/ardusamber
   NOTE : Arduino experiements with Devine Lu Linvega's time format Desamber.
 
 DASTIME
   TYPE : image
-  TAGS : log, kor, arduino
+  TAGS : log, kor, arduino, celest
   FILE : 12018-07-04_dastime.jpg
   NOTE : Self designed/built clock. Shows year, month, day and lunation visually from an overview perspective of Earth.
   LINK : https://github.com/kormyen/dastime
@@ -2593,7 +2602,7 @@ HORAIRE
   AUTH : Devine Lu Linvega 
   DATE : 12018-08-13
   LINK : https://wiki.xxiivv.com/#horaire
-  TAGS : inspiration, tracking
+  TAGS : inspiration, tracking, neauoire
   TYPE : tool
   TERM 
     > Fh (PERCENTAGE OF DAY) The Focus Hour(Fh) or value: is an index of attention for the day's task — where 1 indicates that no time was invested in the task, and 9 indicates that all available time was invested in the task.
@@ -2805,7 +2814,7 @@ CSS WHAT USE
 
 CELESTIAL NAVIGATION
   DATE : 12018-08-21
-  TAGS : boat, env
+  TAGS : boat, env, celest
   NOTE 
     > 'Celestial Navigation in the GPS age'
     > "Personally, learning celestial nav, really added to my journeys, making me feel incredibly connected to the surface of the sphere we are rotating on, and within the sphere of stars we  live within. It has added a real 'beauty' for me, admittedly I am mathematical, and a bit of a hippy, but the added awareness of seeing stars move overhead as you move North and South, and over the equator, is pretty magic. 120 nm moved north or south changes all the angles of the stars you see, and the angle they rise at from the equator. (It's called amplitude) You can then really FEEL how you're moving over the surface of the globe. YOu can really start to 'feel' the spherical nature of the planet/galaxy/universe where we all live. You can 'feel' the equator. The world stops being flat, and becomes 'angles' and spheres. For me, I stopped thinking in terms of countries and boundaries, and just started to feel 'curves' and rotation."
@@ -3002,13 +3011,6 @@ DREAM
     & That they may act their dreams with open 
     & eyes to make it possible"
   AUTH : T. E. Lawrence
-
-ARTISTS
-  DATE : 12018-09-01
-  TYPE : quote
-  AUTH : Alan Moore
-  QOTE : “In latter times, I think that artists and writers have allowed themselves to be sold down the river. They have accepted the prevailing belief that art and writing are merely forms of entertainment. They are not seen as transformative forces that can change a human being, that can change a society. They are seen as simple entertainment. Things with which to fill 20 minutes, half an hour while we are waiting to die.
-  & It is not the job of artists to give the audience what the audience wants. If the audience knew what they needed then they wouldn’t be audience, they would be the artists. It is the job of artists to give the audience what they need.”
 
 BILLIONS
   TYPE : quote
@@ -3583,7 +3585,7 @@ SONDER
 MAGNETIC TURBULENCE
   DATE : 12018-10-02
   LINK : https://www.nasa.gov/feature/goddard/2018/nasa-spacecraft-discovers-new-magnetic-process-in-turbulent-space
-  TAGS : inspiration, nature, env
+  TAGS : inspiration, nature, env, celest
   AUTH : NASA
   FILE : 12018-10-02_magneticTurbulence.jpg
   TYPE : image
@@ -3592,6 +3594,7 @@ CUSTOM CONTROLLER
   LINK : https://geekhack.org/index.php?topic=74463.350
 
 HANDTOP
+  TYPE : tool
   LINK : https://geekhack.org/index.php?topic=84603.0
 
 ALASKA FALL
@@ -4409,4 +4412,105 @@ PV WIRING
     > ["Pairs should be together in the same raceway/conduit/bundled together."](https://forum.solar-electric.com/discussion/22145/bundling-dc-cabling-together-through-plastic-electrical-conduit)
     - I assume 'pairs' mean pairs of positive and negative.
     > ["cables that are bundled together generate a cumulative amount of heat, and have more difficulty dissipating that heat than when they are run individually. This is something to be aware of, but the relevant ABYC standard only applies to wiring carrying 50 volts or more, so it is typically a problem with AC circuits on a boat, not your typical 12 volt DC wiring installation. In general, if three conductors are bundled, reduce maximum amperage by 30%. If four to six conductors are bundled, reduce maximum amperage by 40%. If seven to 24 conductors are bundled, reduce amperage by 50%."](https://www.westmarine.com/WestAdvisor/Marine-Wire-Terminal-Tech-Specs)
+
+LUKE MUEHLHAUSER PROJECT WISH
+  DATE : 12018-11-05
+  LINK : http://lukemuehlhauser.com/projects-i-wish-i-had-time-for/
+  NOTE : "Projects I wish I had time for"
+  AUTH : Luke Muehlhauser
+  TYPE : list
+
+FROM AI TO ZOMBIES
+  DATE : 12018-11-05
+  AUTH : Eliezer Yudkowsky
+  PERS : Luke Muehlhauser
+  LINK : http://lukemuehlhauser.com/my-worldview-in-5-books/
+  NOTE 
+    > "Rationality: From AI to Zombies" (2015)
+    > "A singular introduction to critical thinking, rationality, and naturalistic philosophy. Both more advanced and more practically useful than any comparable guide I’ve encountered."
+  TYPE : book
+
+THE BIG PICTURE
+  DATE : 12018-11-05
+  AUTH : Sean Carroll
+  PERS : Luke Muehlhauser
+  LINK : http://lukemuehlhauser.com/my-worldview-in-5-books/
+  NOTE 
+    > "The Big Picture" (2016)
+    "If Yudkowsky’s book is “how to think 101,” then Carroll’s book is “what to think 101,” i.e. an introduction to what exists and how it works, according to standard scientific naturalism."
+  TYPE : book
+
+DOING GOOD BETTER
+  DATE : 12018-11-05
+  AUTH : William Macaskill
+  PERS : Luke Muehlhauser
+  LINK : http://lukemuehlhauser.com/my-worldview-in-5-books/
+  NOTE 
+    > "Doing Good Better" (2015)
+    "My current favorite “how to do good 101” book, covering important practical considerations such as scale of impact, tractability, neglectedness, efficiency, cause neutrality, counterfactuals, and some strategies for thinking about expected value across diverse cause areas.
+    & Importantly, it’s missing (a) a quick survey of the strongest arguments for and against utilitarianism, and (b) much discussion of near-term vs. animal-inclusive vs. long-term views and their implications (when paired with lots of empirical facts). But those topics are understandably beyond the book’s scope, and in any case there aren’t yet any books with good coverage of (a) and (b), in my opinion."
+  TYPE : book
+
+ENLIGHTENMENT NOW
+  DATE : 12018-11-05
+  AUTH : Steven Pinker
+  PERS : Luke Muehlhauser
+  LINK : http://lukemuehlhauser.com/my-worldview-in-5-books/
+  NOTE
+    > "Enlightenment Now" (2018)
+    > "Almost everything has gotten dramatically better for humans over the past few centuries, likely substantially due to the spread and application of reason, science, and humanism."
+  TYPE : book
+
+MOORE'S LAW OF MAD SCIENCE
+  DATE : 12018-11-05
+  TYPE : quote
+  LINK : https://www.azquotes.com/author/19388-Eliezer_Yudkowsky
+  QOTE : "Every eighteen months, the minimum IQ necessary to destroy the world drops by one point."
+  AUTH : Eliezer Yudkowsky
+
+GROW MORE ETHICAL
+  DATE : 12018-11-05
+  TYPE : quote
+  LINK : https://www.azquotes.com/author/19388-Eliezer_Yudkowsky
+  QOTE : "You are personally responsible for becoming more ethical than the society you grew up in."
+  AUTH : Eliezer Yudkowsky
+
+FACE DARKNESS
+  DATE : 12018-11-05
+  TYPE : quote
+  LINK : https://www.azquotes.com/author/19388-Eliezer_Yudkowsky
+  QOTE : "Many have stood their ground and faced the darkness when it comes for them. Fewer come for the darkness and force it to face them."
+  AUTH : Eliezer Yudkowsky
+
+LAW OF COMPARATIVE ADVANTAGE LITMUS
+  DATE : 12018-11-05
+  TYPE : quote
+  LINK : https://www.azquotes.com/author/19388-Eliezer_Yudkowsky
+  QOTE : "Litmus test: If you can't describe Ricardo's Law of Comparative Advantage and explain why people find it counterintuitive, you don't know enough about economics to direct any criticism or praise at "capitalism" because you don't know what other people are referring to when they use that word."
+  AUTH : Eliezer Yudkowsky
+
+MORE DARING
+  DATE : 12018-11-05
+  TYPE : quote
+  LINK : https://www.azquotes.com/author/19388-Eliezer_Yudkowsky
+  QOTE : "Remember, if you succeed in everything you try in life, you're living below your full potential and you should take up more difficult or daring things."
+  AUTH : Eliezer Yudkowsky
+
+MORE DARING
+  DATE : 12018-11-05
+  TYPE : quote
+  LINK : https://www.azquotes.com/author/19388-Eliezer_Yudkowsky
+  QOTE : "There is no justice in the laws of nature, no term for fairness in the equations of motion. The Universe is neither evil, nor good, it simply does not care. The stars don't care, or the Sun, or the sky. But they don't have to! WE care! There IS light in the world, and it is US!"
+  AUTH : Eliezer Yudkowsky
+
+GENEROUS TIT FOR TAT
+  DATE : 12018-11-05
+  QOTE : "A problem with the tit-for-tat strategy is that it is overly sensitive to misunderstanding or misimplementation. This can be effectively corrected by adding some generosity (occasionally cooperating after the other player defects), or contrition (cooperating after being punished for an unintended defection) (Wu and Axelrod, 1995)."
+  LINK : https://www.wnycstudios.org/story/104010-one-good-deed-deserves-another
+  TAGS : philosophy, psychology
+
+GUJARATI INDIAN
+  DATE : 12018-11-05
+  TYPE : book
+  NOTE : "Little Bit of This, A Little Bit of That: A Gujarati Indian Cookbook for Aotearoa"
 `
