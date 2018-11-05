@@ -4554,4 +4554,16 @@ JS MAP IS DICTIONARY?
     - It's optimized for adding items to and removing items from the map.
     - The keys can by any type, not just strings.
     - You can't pollute it with custom methods.
+
+JS REDUCE
+  NOTE
+    > "Whenever you need to transform a list into a single object, consider using reduce"
+
+CSS LINK IN BODY
+  LINK
+    > https://stackoverflow.com/questions/6236097/is-link-not-rel-stylesheet-allowed-to-be-used-in-body
+    > https://github.com/whatwg/html/commit/179983e9eb99efe417349a40ebb664bd11668ddd
+    > http://w3c.github.io/html/document-metadata.html#the-link-element
+  TAGS : code, web
+  PROJ : Memex
 `

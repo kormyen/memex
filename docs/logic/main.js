@@ -11,6 +11,9 @@ function Main()
   this.queryPrev = '';
   this.queryPrevAdd = '';
 
+  this.timeStore = Date.now();
+  this.curTime = null;
+
   var parent = this;
 
   this.install = function()
@@ -39,35 +42,25 @@ function Main()
     }
   }
 
+  this.timediff = function(label)
+    {
+      this.curTime = Date.now();
+      console.log((this.curTime - this.timeStore) + ' ms to ' + label);
+      this.timeStore = this.curTime;
+    }
+
   this.start = function()
   {
-    console.log(Date.now() + ' - start');
-    let dbPromise = this.database.start(new Indental(DATABASE).parse());
-    dbPromise.then((db) => {
-      console.log(Date.now() + ' - db ready');
-      // console.log(db);
-
-
-
-      setTimeout(() => {
-      let dbKeys = Object.keys(db);
-      let i = 0;
-
-      console.log(Date.now() + ' - start render');
-
-      while (i < 200)//dbKeys.length) 
-      {
-        document.querySelector('main').innerHTML += this.grid.buildArticle(db[dbKeys[i]], dbKeys[i]);
-        console.log(Date.now() + ' - did one! LAAAAAAG while reflowing');
-        i++;
-      }
-
-      console.log('COMPLETED ALL ARTICLES - lag stops')
-      return 'done';
-    }, 2000);
-
-
-
+    this.timediff('call start');
+    this.database.start(new Indental(DATABASE).parse())
+    .then((db) => {
+      this.timediff('process db');
+      return this.grid.buildAllArticles(db);
+    })
+    .then((html) => {
+      this.timediff('build html');
+      document.querySelector('main').innerHTML = html;
+      this.timediff('render html');
     })
     .catch((error) => {
       console.log('ERROR:', error);
