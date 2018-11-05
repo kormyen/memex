@@ -9,13 +9,20 @@
 <body>
   <script> let theme = new Theme(); theme.install(); theme.start(); </script>
   <div class="loading-wave"><div></div><div></div><div></div><div></div><div></div></div>
-  <div class="error"></div>
 
   <nav></nav>
   <div class="container">
     <main></main>
   </div>
 
+  <!-- everything above here is for initial load (display pretty loading anim ASAP) -->
+
+  <script src="logic/main.js"></script>
+  <script>
+    var main = new Main(); // starts benchmark timing
+  </script>
+
+  <div class="error"></div>
   <div class="lightbox"></div>
   <div class="page-overlay"></div>
   
@@ -30,7 +37,6 @@
   <script src="logic/view/grid.js"></script>
   <script src="logic/view/nav.js"></script>
   <script src="logic/wrap.js"></script>
-  <script src="logic/main.js"></script>
   <script src="logic/add.js"></script>
   <script src="logic/lightbox.js"></script>
   <script>
@@ -42,7 +48,6 @@
     let lightbox = new Lightbox;
     lightbox.install(document.querySelector('.lightbox'), 'lightbox');
 
-    var main = new Main();
     main.install();
     main.start();
 

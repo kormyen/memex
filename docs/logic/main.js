@@ -11,6 +11,7 @@ function Main()
   this.queryPrev = '';
   this.queryPrevAdd = '';
 
+  this.timeBegin = Date.now();
   this.timeStore = Date.now();
   this.curTime = null;
 
@@ -43,15 +44,15 @@ function Main()
   }
 
   this.timediff = function(label)
-    {
-      this.curTime = Date.now();
-      console.log((this.curTime - this.timeStore) + ' ms to ' + label);
-      this.timeStore = this.curTime;
-    }
+  {
+    this.curTime = Date.now();
+    console.log((this.curTime - this.timeStore) + ' ms to ' + label);
+    this.timeStore = this.curTime;
+  }
 
   this.start = function()
   {
-    this.timediff('call start');
+    this.timediff('load all js files');
     this.database.start(new Indental(DATABASE).parse())
     .then((db) => {
       this.timediff('process db');
@@ -61,6 +62,7 @@ function Main()
       this.timediff('build html');
       document.querySelector('main').innerHTML = html;
       this.timediff('render html');
+      console.log('TOTAL: ' + (Date.now() - this.timeBegin) + ' ms');
     })
     .catch((error) => {
       console.log('ERROR:', error);
@@ -100,43 +102,6 @@ function Main()
     }
     else
     {
-      // this.db.filter(this.queryCur)
-      //   .then(function(results){ 
-      //     // Map our array of entries to
-      //     // an array of template promises.
-      //     // This makes sure they all template in parallel.
-      //     return results.map(this.grid.templateEntry)
-      //       .reduce(function(sequence, chapterPromise) {
-      //         // Use reduce to chain the promises together,
-      //         // adding content to the page for each entry
-      //         return sequence.then(function() {
-      //           // Wait for everything in the sequence so far,
-      //           // then wait for this template to arrive.
-      //           return chapterPromise;
-      //         }).then(function(article) {
-      //           this.grid.addHtmlToPage(article.html);
-      //         });
-      //       }, Promise.resolve());  
-      //   })
-      //   .then(function() { console.log("done"); })
-      //   .catch(function(err) { console.log("error: " + err.message); });
-      //   .then(function() { console.log("stop loading anim"); })
-      
-      // see: https://developers.google.com/web/fundamentals/primers/promises#whats-all-the-fuss-about
-
-      // this.db.filter(this.queryCur)
-      //   .then(function(results){
-      //     return this.grid.templateEntry(results[0]);
-      //   }).then(function(article) {
-      //     this.grid.addHtmlToPage(article.html);
-      //   }).catch(function() {
-      //     console.log("error: " + err.message);
-      //   }).then(function() {
-      //     console.log("stop loading anim");
-      //   })
-
-      // see: https://developers.google.com/web/fundamentals/primers/promises#whats-all-the-fuss-about
-
       this.grid.display(this.db.filter(this.queryCur));
     }
   }
