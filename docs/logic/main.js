@@ -47,21 +47,27 @@ function Main()
       console.log(Date.now() + ' - db ready');
       // console.log(db);
 
+
+
+      setTimeout(() => {
       let dbKeys = Object.keys(db);
       let i = 0;
-      let contentHtml = '';
-      while (i < dbKeys.length) 
+
+      console.log(Date.now() + ' - start render');
+
+      while (i < 200)//dbKeys.length) 
       {
-        contentHtml += this.grid.buildArticle(db[dbKeys[i]], dbKeys[i]);
+        document.querySelector('main').innerHTML += this.grid.buildArticle(db[dbKeys[i]], dbKeys[i]);
+        console.log(Date.now() + ' - did one! LAAAAAAG while reflowing');
         i++;
       }
-      
-      return contentHtml;
-    })
-    .then((html) => {
-      console.log(Date.now() + ' - html ready');
-      document.querySelector('main').innerHTML = html;
-      console.log(Date.now() + ' - rendered!');
+
+      console.log('COMPLETED ALL ARTICLES - lag stops')
+      return 'done';
+    }, 2000);
+
+
+
     })
     .catch((error) => {
       console.log('ERROR:', error);
