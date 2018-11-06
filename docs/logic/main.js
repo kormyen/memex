@@ -65,21 +65,23 @@ function Main()
 
   this.start = function()
   {
-    this.database.start()
-    .then((db) => {
-      seer.note('process db');
-      
-      this.resetPage();
-      this.updateQuery();
+    this.database.start();
+    seer.note('process db');
+    this.load();
+  }
 
-      seer.note('prep query');
-      return this.database.filter(db, this.queryCur);
-    })
-    .then((filtered) => {
-      seer.note('filter db');
-      return this.grid.buildAllArticles(filtered);
-    })
-    .then((html) => {
+  this.load = function()
+  {
+    this.resetPage();
+    this.updateQuery();
+    seer.note('prep query');
+
+    let filtered = this.database.filter(this.queryCur);
+    seer.note('filter db');
+    
+    this.grid.buildAllArticles(filtered)
+    .then((html) =>
+    {
       seer.note('build html');
 
       let stats = this.database.stats();
@@ -89,57 +91,10 @@ function Main()
       seer.note('render stats');
 
       this.grid.newDisplay(html);
-      // seer.note('render html');
-
       seer.report();
-
-      document.querySelector('.loading-wave').style.display = 'none';
-    })
-    .catch((error) => {
-      console.log('ERROR:', error);
-    })
-    // this.load(window.document.location.hash);
-    // 
+    });
+    document.querySelector('.loading-wave').style.display = 'none';
   }
-
-  this.load = function()
-  {
-
-  }
-
-//   this.load = function(target)
-//   {
-//     lightbox.close();
-//     document.activeElement.blur();
-//     if (this.queryCur !== 'add')
-//     {
-//       this.queryPrev = this.queryCur;
-//     }
-
-//     target = target.substr(0,1) === "#" ? target.substr(1,target.length-1) : target;
-//     this.queryCur = target.trim();
-
-//     if (window.location.hash != this.queryCur)
-//     {
-//       window.location.hash = this.queryCur;
-//     }
-
-//     if (this.queryCur === 'add')
-//     {
-//       if (window.showAdd != undefined && window.showAdd)
-//       {
-//         this.add.show();
-//       }
-//       else
-//       {
-//         window.location.hash = this.queryPrev;
-//       }
-//     }
-//     else
-//     {
-//       this.grid.display(this.db.filter(this.queryCur));
-//     }
-//   }
 }
 
-// window.addEventListener("hashchange", function() { main.load(window.document.location.hash); });
+window.addEventListener("hashchange", function() { main.load(); });

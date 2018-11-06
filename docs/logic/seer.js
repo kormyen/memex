@@ -3,6 +3,7 @@ function Seer()
 {
   this.verbose = false
   this.quota = 0;
+  this.limbo = false;
   
   this.timeBegin = null;
   this.timeRef = null;
@@ -12,13 +13,24 @@ function Seer()
   {
     this.verbose = verbose;
     this.quota = quota;
-  	this.timeBegin = Date.now();
+  	this.rebirth();
+  }
+
+  this.rebirth = function()
+  {
+    this.timeBegin = Date.now();
     this.timeRef = Date.now();
     this.book = [];
+    this.limbo = false;
   }
 
   this.note = function(desc)
   {
+    if (this.limbo)
+    {
+      this.rebirth();
+    }
+
     var entry = [desc, (Date.now() - this.timeRef)];
     this.book.push(entry);
     if (this.verbose)
@@ -44,5 +56,7 @@ function Seer()
         console.log(percentage + ' % of time spent on: ' + this.book[i][0]);
       }
     }
+    console.log('_____________________________');
+    this.limbo = true;
   }
 }

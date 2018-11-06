@@ -11,59 +11,26 @@ function Wrap()
 
   this.start = function()
   {
-    let data = this.database;
-    return new Promise(function(resolve, reject) 
+    let keys = Object.keys(this.database);
+    for (let i = 0; i < keys.length; i++)
     {
-      let commaSplit = function(data)
-      {
-        if (data !== undefined)
-        {
-          var result = data.split(",");
-          for (var c = 0; c < result.length; c++)
-          {
-            result[c] = result[c].trim().toLowerCase();
-          }
-          return result;
-        }
-        return data;  
-      }
+      let entry = this.database[keys[i]];
 
-      let objectSplit = function(data)
-      {
-        if (typeof data == 'object')
-        {
-          for (let o = 0; o < data.length; o++)
-          {
-            if (data[o].substr(0,2) == '> ')
-            {
-              data[o] = data[o].substr(2,data[o].length-1);
-            }
-          }
-        }
-        return data;
-      }
+      entry.AUTH = commaSplit(entry.AUTH);
+      entry.TAGS = commaSplit(entry.TAGS);
+      entry.TYPE = commaSplit(entry.TYPE);
+      entry.PROJ = commaSplit(entry.PROJ);
 
-      let keys = Object.keys(data);
-      for (let i = 0; i < keys.length; i++)
-      {
-        let entry = data[keys[i]];
+      entry.LINK = objectSplit(entry.LINK);
+      entry.FILE = objectSplit(entry.FILE);
 
-        entry.AUTH = commaSplit(entry.AUTH);
-        entry.TAGS = commaSplit(entry.TAGS);
-        entry.TYPE = commaSplit(entry.TYPE);
-        entry.PROJ = commaSplit(entry.PROJ);
-
-        entry.LINK = objectSplit(entry.LINK);
-        entry.FILE = objectSplit(entry.FILE);
-
-        data[keys[i]].DIID = i;
-      }
-      resolve(data);
-    });
+      this.database[keys[i]].DIID = i;
+    }
   }
 
-  this.filter = function(db, target)
+  this.filter = function(target, data)
   {
+    let db = this.database;//data == undefined ? this.database : data;
     let tempDatabase = {};
     if (target == '')
     {
@@ -190,6 +157,35 @@ function Wrap()
       }
     }
     return tempDatabase;
+  }
+
+  let commaSplit = function(data)
+  {
+    if (data !== undefined)
+    {
+      var result = data.split(",");
+      for (var c = 0; c < result.length; c++)
+      {
+        result[c] = result[c].trim().toLowerCase();
+      }
+      return result;
+    }
+    return data;  
+  }
+
+  let objectSplit = function(data)
+  {
+    if (typeof data == 'object')
+    {
+      for (let o = 0; o < data.length; o++)
+      {
+        if (data[o].substr(0,2) == '> ')
+        {
+          data[o] = data[o].substr(2,data[o].length-1);
+        }
+      }
+    }
+    return data;
   }
 
   this.stats = function(db = this.database)
