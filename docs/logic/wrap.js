@@ -61,129 +61,134 @@ function Wrap()
     });
   }
 
-  this.filter = function(target)
+  this.filter = function(db, target)
   {
-    var tempDatabase = {};
+    let tempDatabase = {};
     if (target == '')
     {
-      tempDatabase = this.database;
-    }
-    else if (target == 'term')
-    {
-      for (let i = 0; i < this.keys.length; i++)
-      {
-        let value = this.database[this.keys[i]];
-        if (typeof value.TERM !== 'undefined')
-        {
-          tempDatabase[this.keys[i]] = this.database[this.keys[i]];
-        }
-      }
+      tempDatabase = db;
     }
     else
     {
-      var splitTarget = target.split("-");
-      if (splitTarget[0] == 'tag')
+      let keys = Object.keys(db);
+      if (target == 'term')
       {
-        // TAG
-        let tagRequest = decodeURI(splitTarget[1]);
-        for (let i = 0; i < this.keys.length; i++) 
+        for (let i = 0; i < keys.length; i++)
         {
-          let value = this.database[this.keys[i]];
-          if (typeof value.TAGS !== 'undefined')
+          let value = db[keys[i]];
+          if (typeof value.TERM !== 'undefined')
           {
-            for (let t = 0; t < value.TAGS.length; t++)
-            {
-              if (value.TAGS[t] == tagRequest)
-              {
-                tempDatabase[this.keys[i]] = this.database[this.keys[i]];
-              }
-            }
+            tempDatabase[keys[i]] = db[keys[i]];
           }
         }
       }
-      if (splitTarget[0] == 'proj')
+      else
       {
-        // PROJECT
-        let projectRequest = decodeURI(splitTarget[1]);
-        for (let i = 0; i < this.keys.length; i++) 
-        { 
-          let value = this.database[this.keys[i]];
-          if (typeof value.PROJ !== 'undefined')
+        var splitTarget = target.split("-");
+        if (splitTarget[0] == 'tag')
+        {
+          // TAG
+          let tagRequest = decodeURI(splitTarget[1]);
+          for (let i = 0; i < keys.length; i++) 
           {
-            for (let p = 0; p < value.PROJ.length; p++)
+            let value = db[keys[i]];
+            if (typeof value.TAGS !== 'undefined')
             {
-              if (value.PROJ[p] == projectRequest)
+              for (let t = 0; t < value.TAGS.length; t++)
               {
-                tempDatabase[this.keys[i]] = this.database[this.keys[i]];
-              }
-            }
-          }
-        }
-      }
-      else if (splitTarget[0] == 'type')
-      {
-        // TYPE
-        let typeRequest = decodeURI(splitTarget[1]);
-        for (let i = 0; i < this.keys.length; i++) 
-        { 
-          let value = this.database[this.keys[i]];
-          if (typeof value.TYPE !== 'undefined')
-          {
-            if (typeof value.TYPE == 'object')
-            {
-              // This entry has multiple types
-              for (let t = 0; t < value.TYPE.length; t++)
-              {
-                if (value.TYPE[t] == typeRequest)
+                if (value.TAGS[t] == tagRequest)
                 {
-                  tempDatabase[this.keys[i]] = this.database[this.keys[i]];
+                  tempDatabase[keys[i]] = db[keys[i]];
+                }
+              }
+            }
+          }
+        }
+        if (splitTarget[0] == 'proj')
+        {
+          // PROJECT
+          let projectRequest = decodeURI(splitTarget[1]);
+          for (let i = 0; i < keys.length; i++) 
+          { 
+            let value = db[keys[i]];
+            if (typeof value.PROJ !== 'undefined')
+            {
+              for (let p = 0; p < value.PROJ.length; p++)
+              {
+                if (value.PROJ[p] == projectRequest)
+                {
+                  tempDatabase[keys[i]] = db[keys[i]];
+                }
+              }
+            }
+          }
+        }
+        else if (splitTarget[0] == 'type')
+        {
+          // TYPE
+          let typeRequest = decodeURI(splitTarget[1]);
+          for (let i = 0; i < keys.length; i++) 
+          { 
+            let value = db[keys[i]];
+            if (typeof value.TYPE !== 'undefined')
+            {
+              if (typeof value.TYPE == 'object')
+              {
+                // This entry has multiple types
+                for (let t = 0; t < value.TYPE.length; t++)
+                {
+                  if (value.TYPE[t] == typeRequest)
+                  {
+                    tempDatabase[keys[i]] = db[keys[i]];
+                  }
+                }
+              }
+              else
+              {
+                // This entry has a single type
+                if (value.TYPE == typeRequest)
+                {
+                  tempDatabase[keys[i]] = db[keys[i]];
+                }
+              }
+            }
+          }
+        }
+        else if (splitTarget[0] == 'done')
+        {
+          // DONE
+          let doneValue = decodeURI(splitTarget[1]);
+          for (let i = 0; i < keys.length; i++) 
+          { 
+            let value = db[keys[i]];
+            if (doneValue == 'true')
+            {
+              // true
+              if (typeof value.DONE !== 'undefined')
+              {
+                if (value.DONE == 'true')
+                {
+                  tempDatabase[keys[i]] = db[keys[i]];
                 }
               }
             }
             else
             {
-              // This entry has a single type
-              if (value.TYPE == typeRequest)
+              // false
+              if (typeof value.DONE === 'undefined')
               {
-                tempDatabase[this.keys[i]] = this.database[this.keys[i]];
+                tempDatabase[keys[i]] = db[keys[i]];
               }
-            }
-          }
-        }
-      }
-      else if (splitTarget[0] == 'done')
-      {
-        // DONE
-        let doneValue = decodeURI(splitTarget[1]);
-        for (let i = 0; i < this.keys.length; i++) 
-        { 
-          let value = this.database[this.keys[i]];
-          if (doneValue == 'true')
-          {
-            // true
-            if (typeof value.DONE !== 'undefined')
-            {
-              if (value.DONE == 'true')
+              else if (value.DONE == false)
               {
-                tempDatabase[this.keys[i]] = this.database[this.keys[i]];
+                tempDatabase[keys[i]] = db[keys[i]];
               }
-            }
-          }
-          else
-          {
-            // false
-            if (typeof value.DONE === 'undefined')
-            {
-              tempDatabase[this.keys[i]] = this.database[this.keys[i]];
-            }
-            else if (value.DONE == false)
-            {
-              tempDatabase[this.keys[i]] = this.database[this.keys[i]];
             }
           }
         }
       }
     }
+    
     return tempDatabase;
   }
 

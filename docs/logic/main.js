@@ -56,7 +56,29 @@ function Main()
     this.database.start(new Indental(DATABASE).parse())
     .then((db) => {
       this.timediff('process db');
-      return this.grid.buildAllArticles(db);
+      let target = window.document.location.hash;
+
+      lightbox.close();
+      document.activeElement.blur();
+      if (this.queryCur !== 'add')
+      {
+        this.queryPrev = this.queryCur;
+      }
+
+      target = target.substr(0,1) === "#" ? target.substr(1,target.length-1) : target;
+      this.queryCur = target.trim();
+
+      if (window.location.hash != this.queryCur)
+      {
+        window.location.hash = this.queryCur;
+      }
+
+      this.timediff('prep query \'' + this.queryCur + '\'');
+      return this.database.filter(db, this.queryCur);
+    })
+    .then((filtered) => {
+      this.timediff('filter db');
+      return this.grid.buildAllArticles(filtered);
     })
     .then((html) => {
       this.timediff('build html');
@@ -71,40 +93,39 @@ function Main()
     // this.nav.display(this.db.stats());
   }
 
-  this.load = function(target)
-  {
-    lightbox.close();
+//   this.load = function(target)
+//   {
+//     lightbox.close();
+//     document.activeElement.blur();
+//     if (this.queryCur !== 'add')
+//     {
+//       this.queryPrev = this.queryCur;
+//     }
 
-    document.activeElement.blur();
-    if (this.queryCur !== 'add')
-    {
-      this.queryPrev = this.queryCur;
-    }
+//     target = target.substr(0,1) === "#" ? target.substr(1,target.length-1) : target;
+//     this.queryCur = target.trim();
 
-    target = target.substr(0,1) === "#" ? target.substr(1,target.length-1) : target;
-    this.queryCur = target.trim();
+//     if (window.location.hash != this.queryCur)
+//     {
+//       window.location.hash = this.queryCur;
+//     }
 
-    if (window.location.hash != this.queryCur)
-    {
-      window.location.hash = this.queryCur;
-    }
-
-    if (this.queryCur === 'add')
-    {
-      if (window.showAdd != undefined && window.showAdd)
-      {
-        this.add.show();
-      }
-      else
-      {
-        window.location.hash = this.queryPrev;
-      }
-    }
-    else
-    {
-      this.grid.display(this.db.filter(this.queryCur));
-    }
-  }
+//     if (this.queryCur === 'add')
+//     {
+//       if (window.showAdd != undefined && window.showAdd)
+//       {
+//         this.add.show();
+//       }
+//       else
+//       {
+//         window.location.hash = this.queryPrev;
+//       }
+//     }
+//     else
+//     {
+//       this.grid.display(this.db.filter(this.queryCur));
+//     }
+//   }
 }
 
-window.addEventListener("hashchange", function() { main.load(window.document.location.hash); });
+// window.addEventListener("hashchange", function() { main.load(window.document.location.hash); });

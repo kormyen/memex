@@ -24,16 +24,6 @@ function Grid()
     }
   }
 
-  this.formatArticle = function(entry)
-  {
-    return '<div>test</div>';
-  }
-
-  this.addHtmlToPage = function()
-  {
-    this.container.innerHTML += contentHtml;
-  }
-
   this.display = function(db)
   {
     if (window.showAdd !== undefined && window.showAdd)
