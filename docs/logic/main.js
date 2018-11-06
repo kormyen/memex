@@ -1,7 +1,8 @@
 function Main()
 {
   this.util = null;
-  this.database = null;
+  this.wrap = null;
+  this.articles = null;
   this.grid = null;
   this.nav = null;
   this.add = null;
@@ -17,8 +18,7 @@ function Main()
     seer.note('load all js files');
 
     this.util = new Util();
-    this.database = new Wrap();
-    this.database.install(DATABASE);
+    this.wrap = new Wrap();
     this.grid = new Grid();
     this.grid.install(
       document.querySelector('main'),
@@ -42,6 +42,49 @@ function Main()
     seer.note('install main');
   }
 
+  this.start = function()
+  {
+    this.wrap.start(DATABASE)
+    .then((db) => 
+    {
+      this.articles = db;
+      seer.note('process db');
+
+      let stats = this.wrap.stats(this.articles);
+      seer.note('calc stats');
+      this.nav.display(stats);
+      seer.note('render stats');
+
+      return this.load();
+    })
+    .catch((error) =>
+    {
+      console.log('ERROR: ' + error, error);
+    });
+  }
+
+  this.load = function()
+  {
+    this.resetPage();
+    this.updateQuery();
+
+    let filtered = this.wrap.filter(this.queryCur, this.articles);
+    seer.note('filter db');
+    
+    this.grid.buildAllArticles(filtered)
+    .then((html) =>
+    {
+      seer.note('build html');
+
+      this.grid.newDisplay(html);
+      document.querySelector('.loading-wave').style.display = 'none';
+      return seer.report();
+    }).catch((error) =>
+    {
+      console.log('ERROR: ' + error, error);
+    });
+  }
+
   this.resetPage = function()
   {
     lightbox.close();
@@ -61,39 +104,6 @@ function Main()
     {
       window.location.hash = this.queryCur;
     }
-  }
-
-  this.start = function()
-  {
-    this.database.start();
-    seer.note('process db');
-    this.load();
-  }
-
-  this.load = function()
-  {
-    this.resetPage();
-    this.updateQuery();
-    seer.note('prep query');
-
-    let filtered = this.database.filter(this.queryCur);
-    seer.note('filter db');
-    
-    this.grid.buildAllArticles(filtered)
-    .then((html) =>
-    {
-      seer.note('build html');
-
-      let stats = this.database.stats();
-      seer.note('calc stats');
-
-      this.nav.display(stats);
-      seer.note('render stats');
-
-      this.grid.newDisplay(html);
-      seer.report();
-    });
-    document.querySelector('.loading-wave').style.display = 'none';
   }
 }
 
