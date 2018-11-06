@@ -386,7 +386,7 @@ article:hover .article-containerlower-image {
 }
 
 /* TITLE */
-.article-title { 
+.article-title {
   color: var(--color-item);
   font-size: var(--size-font-title);
   text-decoration: none;

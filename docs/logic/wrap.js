@@ -9,8 +9,9 @@ function Wrap()
     this.keys = Object.keys(this.database);
   }
 
-  this.start = function(data)
+  this.start = function()
   {
+    let data = this.database;
     return new Promise(function(resolve, reject) 
     {
       let commaSplit = function(data)
@@ -188,7 +189,6 @@ function Wrap()
         }
       }
     }
-    
     return tempDatabase;
   }
 
@@ -288,19 +288,5 @@ function Wrap()
     stats.tags = tagItems;
 
     return stats;
-  }
-
-  this.commaSplit = function(data)
-  {
-    if (data !== undefined)
-    {
-      var result = data.split(",");
-      for (var t = 0; t < result.length; t++)
-      {
-        result[t] = result[t].trim().toLowerCase();
-      }
-      return result;
-    }
-    return data;
   }
 }

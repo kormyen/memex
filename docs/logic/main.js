@@ -21,7 +21,7 @@ function Main()
   {
     this.util = new Util();
     this.database = new Wrap();
-    // this.database.install(DATABASE);
+    this.database.install(DATABASE);
     this.grid = new Grid();
     this.grid.install(
       document.querySelector('main'),
@@ -50,28 +50,36 @@ function Main()
     this.timeStore = this.curTime;
   }
 
+  this.resetPage = function()
+  {
+    lightbox.close();
+    document.activeElement.blur();
+  }
+
+  this.updateQuery = function()
+  {
+    let target = window.document.location.hash;
+    if (this.queryCur !== 'add')
+    {
+      this.queryPrev = this.queryCur;
+    }
+    target = target.substr(0,1) === "#" ? target.substr(1,target.length-1) : target;
+    this.queryCur = target.trim();
+    if (window.location.hash != this.queryCur)
+    {
+      window.location.hash = this.queryCur;
+    }
+  }
+
   this.start = function()
   {
     this.timediff('load all js files');
-    this.database.start(new Indental(DATABASE).parse())
+    this.database.start()
     .then((db) => {
       this.timediff('process db');
-      let target = window.document.location.hash;
-
-      lightbox.close();
-      document.activeElement.blur();
-      if (this.queryCur !== 'add')
-      {
-        this.queryPrev = this.queryCur;
-      }
-
-      target = target.substr(0,1) === "#" ? target.substr(1,target.length-1) : target;
-      this.queryCur = target.trim();
-
-      if (window.location.hash != this.queryCur)
-      {
-        window.location.hash = this.queryCur;
-      }
+      
+      this.resetPage();
+      this.updateQuery();
 
       this.timediff('prep query \'' + this.queryCur + '\'');
       return this.database.filter(db, this.queryCur);
