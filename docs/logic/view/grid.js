@@ -33,7 +33,7 @@ function Grid()
 
     document.querySelector('main').innerHTML = html;
     
-    benchmark.note('render html');
+    seer.note('render html');
 
     // LAYOUT
     if (SETTINGS.USEMASONRY)
@@ -56,7 +56,7 @@ function Grid()
         }
       }
 
-      benchmark.special('masonry layout');
+      seer.note('masonry layout');
     }
   }
 

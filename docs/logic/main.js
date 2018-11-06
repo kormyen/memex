@@ -14,7 +14,7 @@ function Main()
 
   this.install = function()
   {
-    benchmark.note('load all js files');
+    seer.note('load all js files');
 
     this.util = new Util();
     this.database = new Wrap();
@@ -39,7 +39,7 @@ function Main()
       // }
     }
 
-    benchmark.note('install main');
+    seer.note('install main');
   }
 
   this.resetPage = function()
@@ -67,31 +67,31 @@ function Main()
   {
     this.database.start()
     .then((db) => {
-      benchmark.note('process db');
+      seer.note('process db');
       
       this.resetPage();
       this.updateQuery();
 
-      benchmark.note('prep query');
+      seer.note('prep query');
       return this.database.filter(db, this.queryCur);
     })
     .then((filtered) => {
-      benchmark.note('filter db');
+      seer.note('filter db');
       return this.grid.buildAllArticles(filtered);
     })
     .then((html) => {
-      benchmark.note('build html');
+      seer.note('build html');
 
       let stats = this.database.stats();
-      benchmark.note('calc stats');
+      seer.note('calc stats');
 
       this.nav.display(stats);
-      benchmark.note('render stats');
+      seer.note('render stats');
 
       this.grid.newDisplay(html);
-      // benchmark.note('render html');
+      // seer.note('render html');
 
-      benchmark.complete();
+      seer.report();
 
       document.querySelector('.loading-wave').style.display = 'none';
     })
@@ -100,6 +100,11 @@ function Main()
     })
     // this.load(window.document.location.hash);
     // 
+  }
+
+  this.load = function()
+  {
+
   }
 
 //   this.load = function(target)
