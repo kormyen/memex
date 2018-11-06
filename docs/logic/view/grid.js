@@ -24,6 +24,42 @@ function Grid()
     }
   }
 
+  this.newDisplay = function(html)
+  {
+    if (window.showAdd !== undefined && window.showAdd)
+    {
+      main.add.setOverlay(false);
+    }
+
+    document.querySelector('main').innerHTML = html;
+    
+    benchmark.note('render html');
+
+    // LAYOUT
+    if (SETTINGS.USEMASONRY)
+    {
+      this.msnry.reloadItems();
+      this.msnry.layout();
+
+      if (SETTINGS.MASONRYCOMPLETE || SETTINGS.MASONRYPROGRESS)
+      {
+        let imgLoad = imagesLoaded( this.container );
+        if (!SETTINGS.MASONRYPROGRESS)
+        {
+          // When all images finish: redo mansonry layout
+          imgLoad.on( 'always', function() { parent.msnry.layout(); } );
+        }
+        else
+        {
+          // As images load one by one: redo masonry layout
+          imgLoad.on( 'progress', function() { parent.msnry.layout(); } );
+        }
+      }
+
+      benchmark.special('masonry layout');
+    }
+  }
+
   this.display = function(db)
   {
     if (window.showAdd !== undefined && window.showAdd)

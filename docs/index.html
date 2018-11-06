@@ -15,11 +15,12 @@
     <main></main>
   </div>
 
-  <!-- everything above here is for initial load (display pretty loading anim ASAP) -->
+  <!-- everything above here is for initial load (aka: display bg and pretty loading anim ASAP!) -->
 
-  <script src="logic/main.js"></script>
+  <script src="logic/mark.js"></script>
   <script>
-    var main = new Main(); // starts benchmark timing
+    var benchmark = new Mark();
+    benchmark.install();
   </script>
 
   <div class="error"></div>
@@ -38,6 +39,7 @@
   <script src="logic/view/nav.js"></script>
   <script src="logic/wrap.js"></script>
   <script src="logic/add.js"></script>
+  <script src="logic/main.js"></script>
   <script src="logic/lightbox.js"></script>
   <script>
     window.onerror = function(error, url, line) {
@@ -48,10 +50,9 @@
     let lightbox = new Lightbox;
     lightbox.install(document.querySelector('.lightbox'), 'lightbox');
 
+    var main = new Main();
     main.install();
     main.start();
-
-    document.querySelector('.loading-wave').style.display = 'none';
   </script>
 </body>
 </html>

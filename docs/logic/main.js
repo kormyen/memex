@@ -10,15 +10,12 @@ function Main()
   this.queryCur = '';
   this.queryPrev = '';
   this.queryPrevAdd = '';
-
-  this.timeBegin = Date.now();
-  this.timeStore = Date.now();
-  this.curTime = null;
-
   var parent = this;
 
   this.install = function()
   {
+    benchmark.note('load all js files');
+
     this.util = new Util();
     this.database = new Wrap();
     this.database.install(DATABASE);
@@ -41,13 +38,8 @@ function Main()
       //   main.add.close();
       // }
     }
-  }
 
-  this.timediff = function(label)
-  {
-    this.curTime = Date.now();
-    console.log((this.curTime - this.timeStore) + ' ms to ' + label);
-    this.timeStore = this.curTime;
+    benchmark.note('install main');
   }
 
   this.resetPage = function()
@@ -73,32 +65,41 @@ function Main()
 
   this.start = function()
   {
-    this.timediff('load all js files');
     this.database.start()
     .then((db) => {
-      this.timediff('process db');
+      benchmark.note('process db');
       
       this.resetPage();
       this.updateQuery();
 
-      this.timediff('prep query \'' + this.queryCur + '\'');
+      benchmark.note('prep query');
       return this.database.filter(db, this.queryCur);
     })
     .then((filtered) => {
-      this.timediff('filter db');
+      benchmark.note('filter db');
       return this.grid.buildAllArticles(filtered);
     })
     .then((html) => {
-      this.timediff('build html');
-      document.querySelector('main').innerHTML = html;
-      this.timediff('render html');
-      console.log('TOTAL: ' + (Date.now() - this.timeBegin) + ' ms');
+      benchmark.note('build html');
+
+      let stats = this.database.stats();
+      benchmark.note('calc stats');
+
+      this.nav.display(stats);
+      benchmark.note('render stats');
+
+      this.grid.newDisplay(html);
+      // benchmark.note('render html');
+
+      benchmark.complete();
+
+      document.querySelector('.loading-wave').style.display = 'none';
     })
     .catch((error) => {
       console.log('ERROR:', error);
     })
     // this.load(window.document.location.hash);
-    // this.nav.display(this.db.stats());
+    // 
   }
 
 //   this.load = function(target)
