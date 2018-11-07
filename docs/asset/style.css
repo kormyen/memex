@@ -70,7 +70,8 @@ body {
 /* LOADING */
 .loading-wave {
   display: inline-block;
-  position: absolute;
+  position: fixed;
+  margin-left: calc(var(--size-menu)/2);
   top: 50%;
   left: 50%;
   width: 94px;

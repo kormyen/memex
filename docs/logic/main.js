@@ -3,6 +3,7 @@ function Main()
   this.util = null;
   this.wrap = null;
   this.articles = null;
+  this.articlesDisplayed = 0;
   this.grid = null;
   this.nav = null;
   this.add = null;
@@ -55,41 +56,13 @@ function Main()
     this.load();
   }
 
-  this.test = function()
-  {
-    this.grid.clear();
-    document.querySelector('.loading-wave').style.display = 'inline-block';
-    setTimeout(this.load(), 1000);
-  }
-
   this.load = function()
   {
-    // this.grid.clear();
-    // document.querySelector('.loading-wave').style.display = 'inline-block';
-
-    this.resetPage();
-    this.updateQuery();
-
-    let filtered = this.wrap.filter(this.queryCur, this.articles);
-    seer.note('filter db');
-    
-    let html = this.grid.buildAllArticles(filtered)
-    seer.note('build html');
-
-    this.grid.display(html);
-    seer.report();
-
-    document.querySelector('.loading-wave').style.display = 'none';
-  }
-
-  this.resetPage = function()
-  {
+    // RESET
     lightbox.close();
     document.activeElement.blur();
-  }
 
-  this.updateQuery = function()
-  {
+    // UPDATE QUERY
     let target = window.document.location.hash;
     if (this.queryCur !== 'add')
     {
@@ -101,7 +74,35 @@ function Main()
     {
       window.location.hash = this.queryCur;
     }
+
+    // DISPLAY
+    let filtered = main.wrap.filter(main.queryCur, main.articles);
+    let filteredLength = Object.keys(filtered).length;
+    seer.note('filter db');
+    
+    let delay = 0;
+    if (filteredLength > 50 || this.articlesDisplayed > 50)
+    {
+      // adding or removing a large number of articles can take time, so show loader
+      this.grid.clear();
+      document.querySelector('.loading-wave').style.display = 'inline-block';
+      delay = 10; // Small delay gives the preloader time to display
+    }
+    this.articlesDisplayed = filteredLength;
+
+    setTimeout(function() { main.build(filtered) }, delay);
+  }
+
+  this.build = function(filtered)
+  {
+    let html = main.grid.buildAllArticles(filtered)
+    seer.note('build html');
+
+    main.grid.display(html);
+    seer.report();
+
+    document.querySelector('.loading-wave').style.display = 'none';
   }
 }
 
-window.addEventListener("hashchange", function() { main.test(); });
+window.addEventListener("hashchange", function() { main.load(); });
