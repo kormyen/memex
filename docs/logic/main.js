@@ -3,7 +3,6 @@ function Main()
   this.util = null;
   this.wrap = null;
   this.articles = null;
-  this.articlesDisplayed = 0;
   this.grid = null;
   this.nav = null;
   this.add = null;
@@ -12,6 +11,7 @@ function Main()
   this.queryCur = '';
   this.queryPrev = '';
   this.queryPrevAdd = '';
+  this.articlesDisplayed = 0;
   var parent = this;
 
   this.install = function()
@@ -81,7 +81,7 @@ function Main()
     seer.note('filter db');
     
     let delay = 0;
-    if (filteredLength > 50 || this.articlesDisplayed > 50)
+    if (filteredLength > SETTINGS.LOADANIMNUM || this.articlesDisplayed > SETTINGS.LOADANIMNUM)
     {
       // adding or removing a large number of articles can take time, so show loader
       this.grid.clear();

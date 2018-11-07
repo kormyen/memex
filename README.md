@@ -68,11 +68,12 @@ Stored in a human-readable, flat-file database called [Indental](https://wiki.xx
 |            ---: | :---                                                                                                |
 |    STATSNUMTAGS | max limit of tags to show in menu                                                                   |
 |    STATSNUMTYPE | max limit of types to show in menu                                                                  |
-|    WIDEARTICLE | allow wide entries (`WIDE : true`)                                                                   |
-| AUTOWIDETRIGGER | automaticly wide entry if it has more QOTE entries than this number                                 |
+|     LOADANIMNUM | threshold number of articles in query/displayed to trigger loading animation to display             |
+|     WIDEARTICLE | allow wide entries (`WIDE : true`)                                                                  |
+| AUTOWIDETRIGGER | automatically wide entry if it has more QOTE entries than this number                               |
 |      USEMASONRY | enable [masonry](https://masonry.desandro.com/) layout library usage                                |
 | MASONRYPROGRESS | masonry re-layout as images load (true), or only once all images complete (false)                   |
-|  ARTICLEIDBASE | CSS name prefix                                                                                      |
+|   ARTICLEIDBASE | CSS name prefix                                                                                     |
 |       SHOWUPPER | toggle display of upper entry element(s)                                                            |
 |       SHOWTITLE | toggle display of entry title                                                                       |
 |        SHOWAUTH | toggle display of entry author(s)                                                                   |
