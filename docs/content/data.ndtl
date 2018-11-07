@@ -4547,6 +4547,7 @@ TIME TRAVEL NOTES
   TAGS : time
 
 JS MAP IS DICTIONARY?
+  DATE : 12018-11-06
   LINK : https://www.beyondjava.net/map-vs-object
   TAGS : code, web
   NOTE
@@ -4556,14 +4557,90 @@ JS MAP IS DICTIONARY?
     - You can't pollute it with custom methods.
 
 JS REDUCE
+  DATE : 12018-11-06
   NOTE
     > "Whenever you need to transform a list into a single object, consider using reduce"
 
 CSS LINK IN BODY
+  DATE : 12018-11-06
   LINK
     > https://stackoverflow.com/questions/6236097/is-link-not-rel-stylesheet-allowed-to-be-used-in-body
     > https://github.com/whatwg/html/commit/179983e9eb99efe417349a40ebb664bd11668ddd
     > http://w3c.github.io/html/document-metadata.html#the-link-element
   TAGS : code, web
   PROJ : Memex
+
+GIT SQUASH
+  DATE : 12018-11-06
+  LINK : https://github.com/todotxt/todo.txt-android/wiki/Squash-All-Commits-Related-to-a-Single-Issue-into-a-Single-Commit
+  TAGS : code, git
+
+PV JUNCTION POSITION
+  DATE : 12018-11-06
+  PROJ : Van
+  NOTE
+    > Considerations (in order of importance)
+    1 Access MC4 connectors with panels on (add/remove/replace MC4 inline fuses, dc panels)
+    2 Cable length (total)
+    3 Cable length (roof)
+    4 Street visibility
+    5 Access junction box with panels on (adjust cable length)
+
+    > Front
+    + can access junction box with panels on (adjust cable length)
+    + can access MC4 connectors with panels on (add/remove/replace MC4 inline fuses, dc panels)
+    ~ medium cable length (roof)
+    - more cable length (total)
+    - visible from street
+
+    > Back
+    + can access junction box with panels on (adjust cable length)
+    + hidden from street
+    ~ additional cable connection to access MC4 connectors with panels on (add/remove/replace MC4 inline fuses, dc panels)
+    - more cable length (total)
+    - more cable length (roof)
+
+    > Mid
+    + less cable length (roof)
+    + hidden from street
+    ~ medium cable length (total)
+    - can't access MC4 connectors with panels on (add/remove/replace MC4 inline fuses, dc panels)
+    - can't access junction box with panels on (adjust cable length)
+
+DOVE MAGE
+  DATE : 12018-11-06
+  LINK : https://twitter.com/komiya_ma/status/1059456425603158016
+  FILE : 12018-11-06_komiyaMa.png
+  AUTH : Komiya Ma
+  TYPE : image
+  TAGS : inspiration, bnw, bird
+
+  AUTH : brennan
+  SRCE : Merveilles
+  QOTE
+    > "I think growing up is funny because when you're a kid there's this pretty strict hierarchy of kids and adults, or "grade 5 is higher than grade 4" and then as you grow, you become a teen and there's 'kids, teens, adults'  and then "kids, teens, college, adults" and so on and so on in this infinite fractal until it eventually becomes merely an amorphous haze.
+    & and that haze, what we sometimes call "being in the real world" or some similarly inept name, just describes the post-schooling era where adults basically don't have any single agreed-upon hierarchy by which to measure themselves, so they invent new ones: career ladders, job titles, status symbols, income, moms trying to be "the best mom" by buying Baby Einstein DVDs, Tumblr inventing new obscure things to care about in competitive, performative social justice campaigns, 4chan inventing new things to hate in competitive, performative hatred campaigns.
+    & ...we're all trying to quiet the existential maw of pecking order to some degree, through fitting in to existing structures or inventing our own.
+    & my advice, in the end, isn't to pretend these things don't exist, but to pick the one(s) you genuinely want to fit into. I don't even think you have to pick one to fight upwards and 'win' - the existential searching part is simply not knowing _where_ you are, because even if you're in the middle (and most of us realize we're average) finally knowing _where_ is perhaps the most comfortable thing of all.
+    & but I said it last night and I want to rephrase it a little here: a lot of people will just find that rock to cling to in the haze and then never let go / will be destroyed when they lose that part of their identity. I said that stagnation was the ultimate failure, but stagnation has to have some sort of relativity to be stagnant against. I think, in this framework and metaphor you have a few places to be truly stagnant while appearing to move and a few places to appear stagnant but are growing laterally, or existing in multiple groups and so forth, so perhaps my warning is just about self awareness and self honesty about that growth (which is really what all good advice comes down to in the end, eh?)"
+
+OUT OF BALANCE
+  NOTE
+    > "Unhinged pressesion"
+    > Planet reflects balance of world
+    > /\/\/\/\/////////////
+  PROJ : Swordy
+
+LIMINAL
+  DATE : 12018-11-06
+  PERS : brennan
+  SRCE : Merveilles
+  TERM : Liminal places:
+
+PARETO EFFICIENCY
+  DATE : 12018-11-06
+  LINK : https://en.wikipedia.org/wiki/Pareto_efficiency
+  PERS : horsman
+  SRCE : Merveilles
+  TERM : Pareto efficiency:
 `
