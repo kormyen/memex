@@ -4719,13 +4719,14 @@ SYLO STYLE NOTES
     - cards (background boxes)
     & Can use red-shift / blue-shift for orange/blue usage?
 
-MIGRATE TO LIBRARY SETUP
+MIGRATE TO LIBRARY SETUP (MASTER STYLE GUIDE)
   DATE : 2018-11-13
   PROJ : Sylo, Sketch
   TAGS : ux, ui
   LINK
     > https://medium.com/@jamesfuthey/migrating-your-existing-sketch-projects-to-libraries-2af33d545449
     > https://github.com/zeroheight/library-symbol-replacer
+    > https://sketch.cloud/
   NOTE
     & Libraries of shared symbols
     & Libraries can reference other libraries
@@ -4740,6 +4741,7 @@ MIGRATE TO LIBRARY SETUP
     - includes SyloLibrary_Segments (tab menus etc, combos of elements)
     - includes SyloLibrary_Colors
     - Might not actually need all the different library files
+    > Use Sketch Cloud to sync between team members
 
 TECHNIQUE FOR SYMBOLS WITH DROPDOWN OPTIONS
   DATE : 2018-11-13
