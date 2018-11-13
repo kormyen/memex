@@ -4643,4 +4643,174 @@ PARETO EFFICIENCY
   PERS : horsman
   SRCE : Merveilles
   TERM : Pareto efficiency:
+
+LED BREAKOUT
+  DATE : 12018-11-08
+  LINK 
+    > https://www.sparkfun.com/products/10616
+    > https://electronics.stackexchange.com/questions/27014/looking-to-create-36-channels-of-pwm-control-for-led-sculpture
+    > https://www.adafruit.com/product/815
+  PROJ : Light
+
+FEEL THE COLD
+  LINK : https://www.youtube.com/watch?v=eEDmZlVCCzc
+  TAGS : inspiration, env, nature
+  TYPE : video
+
+SKETCH BASICS
+  DATE : 12018-11-13
+  TYPE : note
+  PROJ : Sylo, Sketch
+  TAGS : ux, ui
+  NOTE 
+    > Insert menu
+    & Top left
+    - "Artboard" like a canvas
+    - Shape, Vector, Pencil, Text, Image = normal
+    - "Symbol" (like Photoshop "smart obj")
+    
+    > Zoom shortcuts
+    - Command + 1 = Center Canvas
+    - Command + 2 = Zoom Selection
+    - Command + 3 = Center Selection
+    
+    > Alignment
+    - Hold shift, click (select) multiple objects, then can click align to align relative to each other
+    
+    > "Shared Styles"
+    - In inspector on right hand side, drop down "No Shared Style"
+    - Dropdown option "Create new Shared Style"
+    
+    > Symbols
+    & Like a Photoshop 'smart object'
+    - Right click symbol 'Detach from Symbol' to un-symbol
+    - To create: select items, then click "Create Symbol" in top menu
+    
+    > Duplicating object
+    - Select layer, hold alt/option and drag it
+    - red lines for alignment while dragging
+    
+    > Even spacing between objects
+    - Select multiple objects, then click "Distribute Horizontally" (from right inspector menu, near top)
+    
+    > Exporting
+    & Batch smart exporting of objects for app
+    - Must select each artboard and check "Background Color" (otherwise transparent) and "Include in Export" from right-hand inspector
+  PROJ : Sylo
+  LINK : http://megumi.co/learn/sketch2.htm
+
+SYLO STYLE NOTES
+  DATE : 2018-11-12
+  TYPE : note
+  PROJ : Sylo
+  TAGS : ux, ui
+  NOTE
+    > Spacing in 6s
+    - 6, 12, 18
+    
+    > Color
+    & Mainly white with bright accents
+    & blue for messages
+    & Orange for active buttons
+    & Grey (dark to light)
+    - text
+    - secondary
+    - lines (and top/bottom)
+    - cards (background boxes)
+    & Can use red-shift / blue-shift for orange/blue usage?
+
+MIGRATE TO LIBRARY SETUP
+  DATE : 2018-11-13
+  PROJ : Sylo, Sketch
+  TAGS : ux, ui
+  LINK
+    > https://medium.com/@jamesfuthey/migrating-your-existing-sketch-projects-to-libraries-2af33d545449
+    > https://github.com/zeroheight/library-symbol-replacer
+  NOTE
+    & Libraries of shared symbols
+    & Libraries can reference other libraries
+    > New file structure
+    & SyloDesign_FeatureX (includes "SyloLibrary_Core")
+    & SyloDesign_Tablet (includes "SyloLibrary_Core")
+    & SyloDesign_GroupChat (includes "SyloLibrary_Core")
+    & SyloLibrary_Core
+    - includes SyloLibrary_Buttons
+    - includes SyloLibrary_Icons
+    - includes SyloLibrary_Illustrations
+    - includes SyloLibrary_Segments (tab menus etc, combos of elements)
+    - includes SyloLibrary_Colors
+    - Might not actually need all the different library files
+
+TECHNIQUE FOR SYMBOLS WITH DROPDOWN OPTIONS
+  DATE : 2018-11-13
+  TAGS : ux, ui
+  PROJ : Sylo, Sketch
+  LINK : https://medium.com/ux-power-tools/this-is-without-a-doubt-the-coolest-sketch-technique-youll-see-all-day-ddefa65ea959
+
+EASY COLOR CHANGE FOR ICONS
+  DATE : 2018-11-13
+  TAGS : ux, ui
+  PROJ : Sylo, Sketch
+  NOTE : Set all icons as masks and use a color symbol on top of it. That way you can just override the color symbol if you want to change the color. One icon symbol…any color you want
+  LINK
+    > https://medium.com/design-prototype/sketch-tint-icons-using-nested-symbols-2d52867e0d29
+    > https://medium.com/ux-power-tools/a-better-way-to-make-buttons-in-sketch-6c23470f27c
+    > https://www.uxpower.tools
+
+SYMBOL NAMING / STRUCTURE
+  DATE : 2018-11-13
+  TAGS : ux, ui
+  PROJ : Sylo, Sketch
+  LINK : https://medium.com/@lloyd/sketch-symbols-best-practices-now-that-nested-overrides-are-a-thing-9b651d3fe1a4
+  NOTE 
+    - Use slashes for categories (ie: Button/Thing/Whatsit)
+    - Use function and state for naming, not visual descriptors (ie: "Button/Primary" not "Button/Red")
+    - Be consistent
+    - "Ensure that nested symbols you’ll regularly replace (i.e. for different states) have the same text layer names. If you replace a symbol, it will persist any override text if it shares the same text layer name." 
+    - Convention: Instance names lowercase, editable text (label, text in field) UPPERCASE
+    - "Put any editable text on top of your groups as a rule. Then when you hit return twice to expand a group, you’re immediately editing text!"
+    - "Your layer hierarchy is reflected in the overrides panel"
+    - "Symbols which are the same dimensions will be available in the overrides panel as a replacement option" - useful for icons, and states (input field - norm, req, error, ok etc)
+
+SYMBOL RESIZE
+  DATE : 2018-11-13
+  PROJ : Sylo, Sketch
+  TAGS : ux, ui
+  LINK
+    > https://medium.com/sketch-app-sources/sketch-39-resizing-cheat-sheet-feec0450e7e2
+    > https://medium.com/@lloyd/sketch-symbols-best-practices-now-that-nested-overrides-are-a-thing-9b651d3fe1a4
+  NOTE
+    > Can set resize settings, and resize instances of symbols
+    > Resizing elements inside of symbols will be synchronized among 
+    > All symbols should be re-sizable!*
+    - Stretch = free transform
+    - Pin to Corner = same distance from closest corner, or centered
+    - Resize Object = obj change size but keep edge (margin) distance
+    - Float in Place = tab-menu-like even spacing
+    > Turn on "Pixel fit when resizing layers" in Sketch preferences
+    > Control + 1 or 2 or 3 or 4 set resize rule to selected layer
+    > Resize rules are excluded from 'Shared Styles'
+    > "Text should be fixed, and aligned correctly, so that when you resize a symbol it maintains its position & padding properly. Text should have a “Resize Object” resizing property."
+    > "Design the smallest version of a symbol. It’s easier to design around stretching Symbols than compressing them."
+    > "Lock nested symbols to prevent them from appearing in the overrides panel. By locking nested symbols on the symbols original artboard, they no longer appear as an override in the inspector"
+    > right-click => Set to Original Size
+
+PRINCIPLE ANIMATE SKETCH
+  DATE : 2018-11-13
+  TAGS : ux, ui
+  LINK : http://principleformac.com
+  TYPE : tool
+  NOTE : Animate Sketch designs
+  PROJ : Sylo, Sketch, Principle
+
+RUNNER SKETCH PLUGIN
+  DATE : 2018-11-13
+  LINK : https://sketchrunner.com
+  NOTE
+    > Plugin for Sketch, makes spotlight/alfred like quick command runner text box
+    - Command+' = open input
+    - Shift+Command+' = run last command 
+  TYPE : tool
+  TAGS : ux, ui
+  PROJ : Sylo, Sketch
 `
