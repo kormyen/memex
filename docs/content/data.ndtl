@@ -4815,4 +4815,90 @@ RUNNER SKETCH PLUGIN
   TYPE : tool
   TAGS : ux, ui
   PROJ : Sylo, Sketch
+
+  SENSIBLE SIDE BUTTONS
+  TYPE : tool
+  TAGS : osx
+  DATE : 2018-11-15
+  LINK : https://sensible-side-buttons.archagon.net
+  NOTE : Support for 3rd party mouse (forward/back buttons)
+
+SYLO COLOURS
+  PROJ : Sylo
+  DATE : 2018-11-14
+  NOTE
+    > PRIMARY
+  - Colour/Primary #F15A29 - Call to action (as button bg), or primary option link button (as text color)
+  - Secondary #495162 - Titles, user input, chat messages
+  - Main #4D6AA7 - your (outgoing) messages/payment (small arrow in transaction icon) etc, toggle switch, empty avatar, secondary option link button (eg: 'Add Token'), checkboxes
+
+    > SECONDARY
+  - Colour/Active #8A96AA - description text, text input line active
+  - Colour/Inactive #C1C5CA - lines and inactive tab icon
+  - Placeholder #D2D8DE - input placeholder/hint text
+  - Background #F6F6F6 - card background, messages from others
+
+  > SPECIAL
+  - Fail #EE3D52 - failed transaction, errors
+  - Warn #FFA001 - warnings
+  - Done #33BB5D - completed incoming transactions
+
+  > OPACITY
+  - 15% - background (circle) of transaction (arrow/direction) icon
+
+SKETCH AUTO WIDTH BUTTON
+  TYPE : tool
+  PROJ : Sketch
+  DATE : 2018-11-14
+  LINK
+  > https://github.com/dwilliames/paddy-sketch-plugin
+  > https://animaapp.github.io
+  NOTE
+  > Plugins for auto width buttons based on text width
+  > None of them really work properly, all have some gotcha. Will be good when one supports nested symbols
+  - Anima's Autolayout - doesn't work in Symbols...
+  - Paddy (discontinued)
+  - compo
+
+SKETCH BUTTON STATES
+  PERS : Matthieu
+  SRCE : Hackland
+  DATE : 12018-11-15
+  PROJ : Sketch
+  NOTE : Symbol for hover state color = color symbol + white/black 50% opacity over the top of button background symbol / rect (shared style)
+
+SKETCH CRAFT
+  PERS : Matthieu
+  SRCE : Hackland
+  TYPE : tool
+  DATE : 12018-11-15
+  PROJ : Sketch
+  LINK : 
+  NOTE : Suggested plugin suite
+
+INVISION
+  DATE : 12018-11-15
+  PROJ : Sketch
+  TYPE : tool
+  LINK : https://www.invisionapp.com/
+  NOTE : Interactive flow prototype from Sketch files (or Figma / PS etc)
+  PROJ : Sketch
+
+SKETCH SYNCING
+  DATE : 12018-11-15
+  PROJ : Sketch
+  LINK
+    > https://www.goabstract.com
+    > https://plantapp.io
+  NOTE
+    > Kactus
+    > Abstract
+    > Plant
+    > Sketch Cloud
+
+SHARED STYLES
+  DATE : 12018-11-15
+  PROJ : Sketch
+  TYPE : article
+  LINK : https://medium.com/sketch-app-sources/using-shared-styles-and-symbols-in-sketch-8cab4650dc55
 `
