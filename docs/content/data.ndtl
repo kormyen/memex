@@ -4901,4 +4901,102 @@ SHARED STYLES
   PROJ : Sketch
   TYPE : article
   LINK : https://medium.com/sketch-app-sources/using-shared-styles-and-symbols-in-sketch-8cab4650dc55
+
+RABBIT HOLES
+  DATE : 12018-11-28
+  PERS : neauoire
+  SRCE : Merveilles
+  QOTE
+    > "having a platform to create rich content(read context) has made the stories grow
+    & and created an interaction with people that wasn't there before.
+    & people grow attached to recurring characters, or worlds, and rabbit holes of content is a good way to create an attachment"
+
+WE ARE ALL BIRDS
+  DATE : 12019-01-04
+  PERS : neauoire
+  AUTH : neauoire
+  SRCE : Merveilles
+  FILE : 12019-01-04_birds.jpg
+  TYPE : image
+  WIDE : true
+
+SEEKING MAGICIANS
+  DATE : 12018-12-18
+  TYPE : quote
+  PERS : Matthew Gatland
+  SRCE : Twitter
+  LINK
+    > https://twitter.com/michael_nielsen/status/1074150124169773056
+    > https://autotranslucence.wordpress.com/2018/03/30/becoming-a-magician/
+  QOTE 
+    > "...my definition of magic - competence so much more advanced than yours with such alien mental models that you cannot predict the outcomes of the model at all."
+    > "The way to extraordinary growth and changes often involes a fundamental ontological or 'lens' shift in how you see the world. Magicians are wearing not just better, but fundamentally different shaped lenses to the rest of us. And regardless of your skills and experience, it is likely that you are a magician to someone else."
+    > "Meeting magicians is the first step to becoming one - when you are attempting to learn implicit knowledge that by definition you don't understand, it is important to have a bunch of examples in front of you to feed your brain's pattern-recognition systems. This will start to change your worldview without the controlling 'you' explicitly approving or denying every new belief or framework."
+    > "Magicians or their work often seem to have a subconcious glow that I am drawn to, particulary if they use a type of magic that I recognise is on my critical path and thus something I'm currently seeking. Concrete steps I take to find them include asking my most interesting friends to introduce me to their most interesting friends, going down similar rabbit holes with bibliographies of books that excite me, and generally living in 'explore' mode at various points in life, while recognising that not every avenue will lead to a jackpot."
+
+PERSONALITY ARCHITYPES
+  DATE : 12018-12-22
+  LINK : http://www.personalitypage.com/html/INTJ.html
+  PERS : Sasha
+  SRCE : Sylo
+
+FUTTER
+  DATE : 12018-12-30
+  TYPE : tool
+  LINK : https://flutter.io
+  NOTE : Multiplatform app dev tool
+
+SIXTEEN PERSONALITIES
+  DATE : 12019-01-11
+  PERS : Sasha
+  SRCE : Sylo
+  TYPE : tool
+  LINK : https://www.16personalities.com/articles/our-theory
+  NOTE
+    > All just 'introverted', or 'extroverted' states of four elements of input/output: mind, energy, nature, tactics. 
+    > MIND
+    - Introverted
+    - Extroverted
+
+    > ENERGY: how you see the world and what kind of information you focus on. Whether we prefer to focus most of our energy on looking for novel, intuitive connections or on observing and utilizing what we already see around us
+    - Sensual / Observant (S): pragmatic and down-to-earth. More interested in facts and observable things, focusing on the tried and tested. Enjoy seeing, touching, feeling and experiencing. Significantly better at focusing on just one thing at a time instead of bursting with energy and juggling multiple activities.
+    - Intuitive (N):imaginative, open-minded and curious. Visionary, more interested in ideas, focusing on novelty. Dream, fantasize and question why things happen the way they do. Always feeling slightly detached from the actual, concrete world.
+
+    > NATURE: how we make decisions and cope with emotions. Mostly related to our interactions with other people.
+    - Thinking (T): focus on objectivity and rationality, prioritizing logic over emotions. They tend to hide their feelings and see efficiency as more important than cooperation. Seek logic and rational arguments, relying on their head rather than their heart. Safeguard their emotions. Just as emotional as those with the Feeling trait – but they tend to subdue and override their feelings with their rational logic. 
+    - Feeling (F): sensitive and emotionally expressive. They are more empathic and less competitive than Thinking types, and focus on social harmony and cooperation. Follow their hearts and emotions and care little about hiding them. These individuals tend to be compassionate, sensitive and highly emotional. Rather cooperate than compete but likely to fight tooth and nail for what they believe in. A decision that makes everyone happier is just as valid as a decision that gets the job done fastest.
+
+    > TACTICS - work, planning and decision-making
+    - Judging (J): decisive, thorough and highly organized. Clarity, predictability and closure, preferring structure and planning to spontaneity
+    - Prospecting (P): Improvising and spotting opportunities. Flexible, relaxed nonconformists who prefer keeping their options open.
+
+    > IDENTITY
+    - Assertive (-A): Self-assured, even-tempered and resistant to stress. Refuse to worry too much and do not push themselves too hard.
+    - Turbulent (-T): Self-conscious and sensitive to stress. Experience a wide range of emotions and to be success-driven, perfectionistic and eager to improve.
+
+WTFPL
+  DATE : 12019-01-30
+  LINK : https://en.wikipedia.org/wiki/WTFPL 
+  TYPE : tool
+  NOTE : "What the fuck public license" aka "do what the fuck you want"
+
+NATURE HOME
+  DATE : 12019-01-30
+  PERS : InvaderXan
+  SRCE : Merveilles
+  QOTE : “Nature is not a place to visit. It is home.”
+  AUTH : Gary Snyder
+  LINK : https://kitty.town/@InvaderXan/101411209086684756
+  TYPE : quote
+
+CSS STATS
+  DATE : 12019-01-30
+  LINK : https://cssstats.com/
+  TYPE : tool
+
+ANIMAL LIBERATION
+  DATE : 12019-01-30
+  TYPE : book
+  PERS : neauoire
+  AUTH : Peter Signer
 `
