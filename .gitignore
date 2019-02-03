@@ -1,11 +1,8 @@
-node_modules/
-builds/
 .DS_Store
 */.DS_Store
-package-lock.json
 
-docs/content/media/*.pdf
-docs/content/media/*.zip
-docs/content/media/*.rar
-docs/content/media/*.html
-docs/content/media/*.mobi
+content/media/*.pdf
+content/media/*.zip
+content/media/*.rar
+content/media/*.html
+content/media/*.mobi

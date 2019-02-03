@@ -2,14 +2,11 @@
 
 **Memex** is a [personal knowledge base](https://scholar.colorado.edu/csci_techreports/931/).
 
-A bookmarks and notes application to help with storage and overview.
+A bookmarks and notes tool to help with storage and overview.
+
+Read-only and 'sever-less' for easy sharing.
 
 <img src='https://raw.githubusercontent.com/kormyen/memex/master/PREVIEW.jpg'/>
-
-Memex has two modes:
-
-1. **website** that is read-only and 'sever-less' for easy sharing
-2. **standalone** application for bookmark and note cataloging
 
 Memex supports:
 
@@ -25,7 +22,7 @@ Memex supports:
 - projects
 - themes
 
-To change theme simply drag a [theme svg file](https://github.com/hundredrabbits/Themes/tree/master/themes) onto the Memex webpage or app
+To change theme simply drag a [theme svg file](https://github.com/hundredrabbits/Themes/tree/master/themes) onto the Memex webpage
 
 More information on themes can be found [here](https://github.com/hundredrabbits/Themes)
 
@@ -40,29 +37,17 @@ More information on themes can be found [here](https://github.com/hundredrabbits
 git clone git@github.com:kormyen/memex.git
 ```
 
-Then open `memex/docs/index.html` in any web browser
-
-The web content is isolated in a folder to seperate it from Electron (app-building) files
-
-The folder is called 'docs' so that the 'Github Pages' feature can host it, another folder name doesn't seem supported
-
-### App Development
-```
-git clone git@github.com:kormyen/memex.git
-cd memex
-npm install
-npm start
-```
+Then open `memex/index.html` in any web browser
 
 ### Data
 
-[memex/docs/content/data.ndtl](docs/content/data.ndtl)
+[memex/content/data.ndtl](content/data.ndtl)
 
 Stored in a human-readable, flat-file database called [Indental](https://wiki.xxiivv.com/#indental) which is made by Devine Lu Linvega
 
 ### Settings
 
-[memex/docs/content/settings.js](docs/content/settings.js)
+[memex/content/settings.js](content/settings.js)
 
 | Setting  | Description |
 |            ---: | :---                                                                                                |
@@ -96,7 +81,6 @@ Stored in a human-readable, flat-file database called [Indental](https://wiki.xx
 - Database parser: [Indental](https://wiki.xxiivv.com/#indental)
 - Theming: [Themes](https://github.com/hundredrabbits/Themes)
 - Grid layout: [Masonry](https://masonry.desandro.com/)
-- App builder: [Electron](https://electronjs.org/)
 - Icons: [Font Awesome](https://fontawesome.com/)
 
 ### Thanks
