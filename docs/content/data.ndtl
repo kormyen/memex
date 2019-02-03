@@ -4952,6 +4952,7 @@ SIXTEEN PERSONALITIES
   SRCE : Sylo
   TYPE : tool
   LINK : https://www.16personalities.com/articles/our-theory
+  FILE : 12018-02-01_INTJ_profile.pdf
   NOTE
     > All just 'introverted', or 'extroverted' states of four elements of input/output: mind, energy, nature, tactics. 
     > MIND
@@ -4999,4 +5000,86 @@ ANIMAL LIBERATION
   TYPE : book
   PERS : neauoire
   AUTH : Peter Signer
+
+WORK REQ
+  SRCE : reddit
+  TYPE : quote
+  AUTH : explots
+  QOTE : "...Once you figure out how much time you want to work a week, how much you care about $$$$ vs a happy work life balance vs a good work environment vs a topic you're passionate about vs a topic you find intellectually stimulating (I'm at 7 | 5 | 8 | 9 | 8 in my current role - pretty decent) - you can pick between these options and lean into the skill set: coding, finance, etc. And then you need a bunch of networking to get your foot in the door, but you'll prob find those people even on this subreddit."
+
+OILS EXPERIMENT
+  FILE : 12019-02-01_oil.jpg
+  TYPE : image
+  TAGS : inspiration
+  AUTH : Miles Johnston
+  LINK : https://twitter.com/MilesJohnston/status/1090677622848278528
+
+CONCIOUSNESS LEVEL
+  AUTH : Albert Einstein
+  QOTE : "No problem can be solved from the same level of consciousness that created it."
+
+PERSONALITY PLAY UNIFIED MODEL
+  LINK : https://www.gamasutra.com/view/feature/134842/personality_and_play_styles_a_.php
+  TYPE : article
+  PERS : Phil James
+  TAGS : psychology, gamedev
+  DONE : false
+
+TILTED LOSS
+  FILE : 12019-02-02_tiltedLoss.jpg
+  TYPE : image
+  TAGS : inspiration
+  AUTH : Miles Johnston
+‏  LINK : https://twitter.com/MilesJohnston/status/1091428927724232704
+
+SAILING NOTES
+  DATE : 12019-02-02
+  FILE : 12019-02-02_sailDirections.jpg
+  TERM
+    > Bow / Foredeck: front
+    > Midship: middle
+    > Stern: rear
+    > Port: Left (four letters in "port" and "left", "there is PORT LEFT in the bottle")
+    > Starboard: Right
+    > Cockpit: Driver's section
+    > Tiller: Steering stick, turns the rudder
+    > Rudder: Steering wing undersea
+    > Keel: Undersea wing/fin
+    > Hull: Bottom and sides of boat
+    > Helm: Steering wheel
+    > Mast: Tall post for main sail
+    > Boom: Attached to mast, holds bottom of main sail
+    > Sheet: Rope
+    > Main Sheet: rope that connects to boom to control amount of movement the boom has 
+    > Jib Sheet: 
+    > Halyard: Rope connecting to top of (each) sail, rope for pulling up the sail
+    > Dock lines
+    > Head of the sail: top point of the sail
+    > Trim: Adjust sail
+    > Main sail: Main wing
+    > Winch: clockwise tension maker
+    > Head sail sheets
+    > Rigging: Wires to support the mast
+    > Backstay: Rear rigging attached attached to mast
+    > Shrouds: Side rigging attached attached to mast
+    > Forestay/Jibstay: Front rigging attached to mast
+    > Headsail/Jibsail: Front sail on Forestay/Jibstay. "100% or less" in size meaning a right angle triangle to the mast. If the headsail in >100% (past the mast) then it is called a Genoa
+    > Genoa: Deadsail >100% in size (from forestay to beyond the mast)
+    > Roller furling: Roll up system for headsail
+
+    > (Sail) Head: Top triangle
+    > (Sail) Tack: Front triangle which attaches to the bow
+    > (Sail) Clew: Back triangle
+    > Wind vane: top of mast wind direction display
+    > (Sail) Telltales: Strings on sail that help display wind movement along the sail (to tell if the sail is in the right position)
+
+    > Tack: Turn where the bow of the boat passes through the wind (Close haul / close reach switch)
+    > Jibe: Turning where the stern passes through the wind (Broad reach switch)
+
+    > Spinnaker: Large parachute like sail for down wind sailing (or broad reach). Typically used in lighter wind, often used by beginners. Opens on the outside of rigging, uses extra/different rigging and pole.
+  NOTE
+    > Lines, Halyards, Sheets = different ropes.
+  LINK
+    > https://www.youtube.com/watch?v=WjBYRUZbU4Y
+    > https://www.youtube.com/watch?v=OUakTKXdHmA
 `
