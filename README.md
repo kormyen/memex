@@ -26,13 +26,13 @@ To change theme simply drag a [theme svg file](https://github.com/hundredrabbits
 
 More information on themes can be found [here](https://github.com/hundredrabbits/Themes)
 
-### Live Examples
+### Examples
 
 - [Kormyen's Memex](https://kormyen.github.io/memex/) - this repo
 - [Shinestrength's Portfolio](http://www.shinestrength.xyz/) - [repo](https://github.com/shinestrength/memex)
 - Dotcli's Memex - [repo](https://github.com/dotcli/memex)
 
-### Web Development
+### Dev
 ```
 git clone git@github.com:kormyen/memex.git
 ```
