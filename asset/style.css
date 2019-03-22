@@ -67,6 +67,11 @@ body {
   color: var(--color-itembg)
 }
 
+a:active, a:focus {
+  outline:0;
+  border: none;
+}
+
 /* LOADING */
 .loading-wave {
   display: inline-block;
