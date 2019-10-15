@@ -169,7 +169,7 @@ function Wrap()
               {
                 tempDatabase[keys[i]] = db[keys[i]];
               }
-              else if (value.DONE == false)
+              else if (value.DONE == 'false')
               {
                 tempDatabase[keys[i]] = db[keys[i]];
               }
