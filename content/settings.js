@@ -13,7 +13,6 @@ const SETTINGS =
 	SHOWDATE: true,
 	SHOWAUTH: true,
 	SHOWTYPE: true,
-	SHOWDONE: true,
 	SHOWLINK: true,
 	SHOWLOWER: true,
 	SHOWTAGS: true,
