@@ -28,6 +28,7 @@ function Util()
         case 'encyclopedia': icon = 'fas fa-globe'; break;
         case 'term': icon = 'fas fa-ribbon'; break;
         case 'note': icon = 'fas fa-sticky-note'; break;
+        case 'inspiration': icon = 'fas fa-star'; break;
         case 'date': icon = 'fas fa-clock'; break;
         case 'author': icon = 'fas fa-user'; break;
         case 'tags': icon = 'fas fa-tag'; break;
