@@ -6,6 +6,8 @@ A bookmarks and notes tool to help with storage and overview.
 
 Read-only and 'sever-less' for easy sharing.
 
+Memex is proud to be part of the [0data Appring](https://ring.0data.app/). 0data apps keep your data under your control. Visit a [random site](https://ring.0data.app/#random) in the ring!
+
 <img src='https://raw.githubusercontent.com/kormyen/memex/master/PREVIEW.jpg'/>
 
 Memex supports:
