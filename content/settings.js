@@ -1,6 +1,6 @@
 const SETTINGS = 
 {
-	STATSNUMTAGS: 5,
+	STATSNUMTAGS: 15,
 	STATSNUMTYPE: 10,
 	LOADANIMNUM: 50,
 	WIDEARTICLE: true,
@@ -20,8 +20,8 @@ const SETTINGS =
 	SHOWNOTE: true,
 	SHOWQOTE: true,
 	SHOWTERM: true,
-	SHOWDONE: true,
-	SHOWPROG: true,
+	SHOWDONE: false,
+	SHOWPROG: false,
 	SHOWIMAG: true,
 	SHOWFILE: true,
 	SHOWOVERLAY: true

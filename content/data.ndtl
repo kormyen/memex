@@ -1,40 +1,10 @@
 var DATABASE = `
-AGAINST BEAUTY IN PHYSICS
-  PERS : faun
-  SRCE : Merveilles
-  LINK : http://rationallyspeakingpodcast.org/show/rs-211-sabine-hossenfelder-on-the-case-against-beauty-in-phy.html
-  TYPE : podcast
-  DATE : 12018-07-03
-  TAGS : philosophy, science
-  QOTE : 'It hit me pretty hard. Some of this stuff is really philosophically potent in a way that's easy to overlook.' - faun
-  DONE : true
-  REVI : true
-
-HACKETY HACK
-  PERS : cblgh
-  SRCE : Merveilles
-  LINK : https://vimeo.com/5047563
-  TYPE : lecture
-  DATE : 12018-07-03
-  TAGS : code
-  QOTE : 'It's super inspiring in general, but he also presents a game he made to teach programming without the players realizing until it's too late and they're already wizards' - cblgh
-  DONE : true
-
-FOR AND AGAINST EDU
-  PERS : neauoire
-  SRCE : Merveilles
-  LINK : https://80000hours.org/podcast/episodes/bryan-caplan-case-for-and-against-education/
-  TYPE : podcast
-  DATE : 12018-07-03
-  TAGS : philosophy
-  NOTE : Testing anti school sentiments
-  DONE : false
 
 OCCAM'S RAZOR
   LINK : https://en.wikipedia.org/wiki/Occam%27s_razor
   TYPE : article
   TAGS : philosophy
-  DATE : 12018-07-03
+  DATE : 22E14
   DONE : false
 
 NEAUOIRE AESTHETICS
@@ -43,7 +13,7 @@ NEAUOIRE AESTHETICS
   LINK : https://wiki.xxiivv.com/#aesthetics
   TYPE : article
   TAGS : philosophy, design, inspiration
-  DATE : 12018-07-03
+  DATE : 22E14
   DONE : true
   REVI : true
 
@@ -53,7 +23,7 @@ SQUARING THE TRIANGLE
   LINK : http://www.aaronsw.com/weblog/squarezooko
   TYPE : article
   TAGS : p2p
-  DATE : 12018-07-03
+  DATE : 22E14
   QOTE : 'Secure, Decentralized, Human-Readable Names'
   DONE : false
 
@@ -62,7 +32,7 @@ SETHIAN GLYPH RUNE GAME
   SRCE : Merveilles
   LINK : https://gqul.itch.io/sethian
   TYPE : game
-  DATE : 12018-07-03
+  DATE : 22E14
   NOTE : Glyph / rune game
   DONE : false
 
@@ -72,213 +42,41 @@ LIFE WITHOUT PLASTIC
   LINK : https://www.lifewithoutplastic.com/store/
   TYPE : list
   TAGS : env
-  DATE : 12018-07-03
+  DATE : 22E14
   DONE : false
-
-THOREAU JOURNAL
-  PERS : neauoire
-  SRCE : Merveilles
-  LINK : https://www.walden.org/wp-content/uploads/2016/02/Chapter1.pdf
-  TYPE : article
-  DATE : 12018-07-03
-  DONE : false
-
-CLOCK OF THE LONG NOW
-  LINK : https://en.wikipedia.org/wiki/Clock_of_the_Long_Now
-  TYPE : article
-  DATE : 12018-07-03
-  TAGS : time
-  DONE : true
-  REVI : true
-  PROJ : Dastime
-
-GAMEDEV TOOLS +
-  LINK : https://www.slideshare.net/KatharineNeil/game-design-tools-for-when-spreadsheets-and-flowcharts-arent-enough
-  TYPE : lecture
-  DATE : 12018-07-03
-  TAGS : gamedev
-  DONE : false
-
-MOD SUPPORT IN UNITY
-  LINK : http://nihilocrat.tumblr.com/post/157890290188/mod-support-in-unity
-  TYPE : article
-  DATE : 12018-07-03
-  TAGS : gamedev, unity3d
-  DONE : false
-
-PSALM 46
-  LINK : http://ludix.com/moriarty/psalm46.html
-  TYPE : lecture
-  DATE : 12018-07-03
-  TAGS : gamedev
-  DONE : true
-  REVI : true
-
-C# GC
-  LINK : http://benbowen.blog/post/three_garbage_examples/
-  TYPE : article
-  DATE : 12018-07-03
-  TAGS : gamedev, code, unity3d
-  DONE : true
-  REVI : true
-
-DECIDE TO MAKE
-  LINK : http://www.gdcvault.com/play/1023135/Deciding-What-to-Make-A
-  TYPE : lecture
-  DATE : 12018-07-03
-  TAGS : gamedev
-  NOTE : Deciding what to make.
-  DONE : false
-
-ALT WAD EXPLAINED
-  PERS : Phil James
-  LINK : https://unwinnable.com/2013/10/24/lost-worlds-a-l-t/
-  TYPE : article
-  DATE : 12018-07-03
-  TAGS : gamedev, game
-  NOTE : 'ALT' an original Doom level pack collab
-  DONE : true
-  PROG : Finish playing it. Level 7?
-
-PROC GEN RESEARCH
-  LINK : http://pcgbook.com/
-  TYPE : book
-  TAGS : gamedev
-  QOTE : 'generation in games - a textbook and an overview of current research'
-  DONE : false
-  DATE : 12018-07-03
 
 TYPOGRAPHY FOR UI
   LINK : https://viljamis.com/2016/typography-for-user-interfaces/
   TYPE : article
   TAGS : ux
   DONE : true
-  DATE : 12018-07-03
-
-EARLY ACCESS STUDY
-  LINK : https://www.gamasutra.com/view/news/275719/7_successful_Early_Access_games_that_all_developers_should_study.php
-  TYPE : article
-  DATE : 12018-07-03
-  TAGS : gamedev
-  DONE : true
-
-CYCLIC DUNGEON
-  LINK : http://ctrl500.com/tech/handcrafted-feel-dungeon-generation-unexplored-explores-cyclic-dungeon-generation/
-  TYPE : article
-  DATE : 12018-07-03
-  TAGS : gamedev, game
-  DONE : false
-  NOTE : 'Unexplored' game
-
-GENERATE GREAT DUNGEONS
-  LINK : https://www.rockpapershotgun.com/2017/03/10/how-unexplored-generates-great-roguelike-dungeons/
-  TYPE : article
-  DATE : 12018-07-03
-  TAGS : gamedev, game
-  DONE : false
-  NOTE : 'Unexplored' game
+  DATE : 22E14
 
 TECHNOLOGIST CLIMATE
   LINK : http://worrydream.com/ClimateChange/
   TYPE : article
-  DATE : 12018-07-03
+  DATE : 22E14
   TAGS : advice, env
   DONE : true
 
 NETWORKED PHYSICS
   LINK : https://gafferongames.com/post/introduction_to_networked_physics/
   TYPE : article
-  DATE : 12018-07-03
+  DATE : 22E14
   TAGS : gamedev
   DONE : true
-
-MEAT
-  LINK : http://www.terrybisson.com/page6/page6.html
-  TYPE : article
-  DATE : 12018-07-03
-  QOTE : 'Meat. They're made out of meat.'
-  DONE : true
-  TAGS : fiction
 
 ENCRYPT LIFE
   LINK : https://medium.freecodecamp.org/tor-signal-and-beyond-a-law-abiding-citizens-guide-to-privacy-1a593f2104c3
   TYPE : article
-  DATE : 12018-07-03
+  DATE : 22E14
   TAGS : privacy
   DONE : true
 
-INTERACTION DESIGN FUTURE
-  LINK : http://worrydream.com/ABriefRantOnTheFutureOfInteractionDesign/
-  TYPE : article
-  DATE : 12018-07-03
-  TAGS : ux, design
-  DONE : true
-
-MAGIC INK
-  LINK : http://worrydream.com/MagicInk/
-  TYPE : article
-  DATE : 12018-07-03
-  TAGS : ux, design
-  DONE : true
-
-PROCEDURAL NARRATIVES
-  LINK : https://www.gamasutra.com/blogs/JoshGe/20161116/285647/Weaving_Narratives_into_Procedural_Worlds.php
-  TYPE : article
-  DATE : 12018-07-03
-  TAGS : gamedev
-  DONE : false
-
-SIGNAL TOLVA
-  LINK : https://killscreen.com/articles/quick-look-landscape-art-signal-tolva/
-  TYPE : article
-  DATE : 12018-07-03
-  TAGS : gamedev, game
-  QOTE : 'I would have been even more cryptic if I thought I could get away with it'
-  DONE : false
-  NOTE : 'Signal From Tolva'
-
-FOLDED LEVEL DESIGN
-  LINK : http://critical-gaming.com/blog/2008/8/5/folded-level-design.html
-  TYPE : article
-  DATE : 12018-07-03
-  TAGS : gamedev, inspiration
-  QOTE : 'I want to focus on a type of level design that is like climbing a tall tree to rescue a cat; going one way provides one kind of challenge (ie. climbing a tree), and getting back is a different challenge that builds upon the original challenge by adding a layer of depth/complexity (ie. climbing down a tree with a cat in one hand). I call this kind of level design folded level design.'
-  DONE : false
-
-STEAM CONTROLLER LARS
-  LINK : https://www.gamasutra.com/blogs/LarsDoucet/20170125/289904/The_Steam_Controller_Configurators_Untapped_Power.php
-  TYPE : article
-  DATE : 12018-07-03
-  TAGS : gamedev
-  DONE : true
-
-COST DISEASE
-  LINK : http://slatestarcodex.com/2017/02/09/considerations-on-cost-disease/
-  TYPE : article
-  DATE : 12018-07-03
-  DONE : false
-
-RV BATTERY RANT
-  LINK : https://handybobsolar.wordpress.com/the-rv-battery-charging-puzzle-2/
-  TYPE : article
-  DATE : 12018-07-03
-  TAGS : offgrid
-  NOTE : Rant
-  DONE : true
-  PROJ : Van
-
-HYPER LIGHT DIFFICULTY
-  LINK : https://www.gamasutra.com/view/news/269957/How_Hyper_Light_Drifter_balances_difficulty_with_fairness.php
-  TYPE : article
-  DATE : 12018-07-03
-  TAGS : gamedev, game
-  DONE : false
-  NOTE : 'Hyper Light Drifter'
-
-CAVE ALLEGORY
+PLATO'S ALLEGORY OF THE CAVE
   LINK : http://www.historyguide.org/intellect/allegory.html
   TYPE : article
-  DATE : 12018-07-03
+  DATE : 22E14
   TAGS : philosohpy
   DONE : false
 
@@ -287,18 +85,8 @@ NEWCOMB'S PARADOX
   SRCE : Merveilles
   LINK : https://en.wikipedia.org/wiki/Newcomb's_paradox
   TYPE : article
-  DATE : 12018-07-04
+  DATE : 22E14
   TAGS : philosohpy, paradox
-  DONE : true
-  REVI : true
-
-GNOSTICISM
-  PERS : faun
-  SRCE : Merveilles
-  LINK : https://en.wikipedia.org/wiki/Gnosticism
-  TYPE : article
-  DATE : 12018-07-04
-  TAGS : philosohpy
   DONE : true
   REVI : true
 
@@ -308,120 +96,28 @@ KOAN
   LINK : https://en.wikipedia.org/wiki/K%C5%8Dan
   LINK : http://www.ashidakim.com/zenkoans/zenindex.html
   TYPE : list
-  DATE : 12018-07-04
+  DATE : 22E14
   TAGS : philosohpy, paradox
   DONE : true
   REVI : true
   TERM 
     > Koan: 'A paradoxical anecdote or riddle without a solution, used in Zen Buddhism to demonstrate the inadequacy of logical reasoning and provoke enlightenment.'
 
-GERMANY POST WW
-  LINK : https://www.youtube.com/watch?v=DJUf8MxbcdA
-  TYPE : video
-  DATE : 12018-07-04
-  TAGS : politics
-  DONE : true
-  NOTE : Not endorsement. Wondering how this happened.
-  TAGS : history, war
-
-DECISIONS THAT MATTER
-  LINK : https://www.dropbox.com/s/6axk95bl2htagt5/Matthias_Worch_Decisions_That_Matterv101.pdf
-  TYPE : lecture
-  DATE : 12018-07-04
-  TAGS : gamedev
-  DONE : true
-
-THE FRANKFURT SCHOOL SERIES
-  LINK : http://philosophizethis.org/frankfurt-school-intro/
-  TYPE : podcast
-  DATE : 12018-07-05
-  TAGS : philosophy
-  DONE : true
-  REVI : true
-  NOTE : The Frankfurt School
-
-ART AS A TOOL FOR LIBERATION
-  LINK : http://philosophizethis.org/art-as-a-tool-for-liberation/
-  TYPE : podcast
-  DATE : 12018-07-05
-  TAGS : philosophy
-  DONE : true
-  REVI : true
-  NOTE : The Frankfurt School
-
-METAPHYSICS AND LOVE
-  LINK : http://philosophizethis.org/schopenhauer-pt-1/
-  TYPE : podcast
-  DATE : 12018-07-05
-  TAGS : philosophy
-  DONE : true
-  REVI : true
-  NOTE : Arthur Schopenhauer (1788-1860)
-
-PHENOMENOLOGY AND DASEIN
-  LINK : http://philosophizethis.org/heidegger-dasein/
-  TYPE : podcast
-  DATE : 12018-07-05
-  TAGS : philosophy
-  DONE : true
-  REVI : true
-  NOTE : Martin Heidegger (1889-1976)
-
-A LOOK AT SUFFERING
-  PERS : neauoire
-  SRCE : Merveilles
-  LINK : http://philosophizethis.org/a-look-at-suffering/
-  TYPE : podcast
-  DATE : 12018-07-05
-  TAGS : philosophy
-  DONE : true
-  REVI : true
-  NOTE : Fyodor Dostoyevsky (1821–1881)
-
 NIETZSCHE
   LINK : http://philosophizethis.org/god-is-dead-and-so-is/
   TYPE : podcast
-  DATE : 12018-07-05
+  DATE : 22E14
   TAGS : philosophy
   DONE : true
   REVI : true
   NOTE : Friedrich Nietzsche (1844–1900)
-
-SARTRE AND CAMUS FREEDOM
-  LINK : http://philosophizethis.org/sartre-on-freedom/
-  TYPE : podcast
-  DATE : 12018-07-05
-  TAGS : philosophy
-  DONE : true
-  REVI : true
-  NOTE : Jean-Paul Sartre (1905–1980)
-
-EFFECTIVE ALTRUISM
-  PERS : neauoire
-  SRCE : Merveilles
-  LINK : http://philosophizethis.org/peter-singer/
-  TYPE : podcast
-  DATE : 12018-07-05
-  TAGS : philosophy
-  DONE : true
-  REVI : true
-  NOTE : Peter Singer (1946-present)
-
-ROUSSEAU
-  LINK : http://philosophizethis.org/rousseau-government/
-  TYPE : podcast
-  DATE : 12018-07-05
-  TAGS : philosophy
-  DONE : true
-  REVI : true
-  NOTE : Jean-Jacques Rousseau (1712-1778)
 
 PHILANTHROPY ANALYSIS
   PERS : neauoire
   SRCE : Merveilles
   LINK : https://80000hours.org/podcast/episodes/holden-karnofsky-open-philanthropy/
   TYPE : podcast
-  DATE : 12018-07-05
+  DATE : 22E14
   TAGS : research
   QOTE : "It’s basically a 'transhumanistic vegan sci-fi' podcast" - neauoire
   DONE : true
@@ -431,26 +127,17 @@ THE INTELLECTUAL DARK WEB
   SRCE : Merveilles
   LINK : https://integrallife.com/the-intellectual-dark-web-an-integral-view/
   TYPE : video
-  DATE : 12018-07-05
+  DATE : 22E14
   TAGS : philosophy, psychology
   DONE : true
   NOTE : Wtf 'Spiral Dynamics Integral'
-
-TRUMP AND A POST-TRUTH WORLD
-  PERS : anand
-  SRCE : Merveilles
-  LINK : https://integrallife.com/trump-post-truth-world/
-  TYPE : article
-  DATE : 12018-07-05
-  TAGS : philosophy, psychology, politics
-  DONE : false
 
 LONG-TERM MEMORY
   PERS : alx
   SRCE : Merveilles
   LINK : http://augmentingcognition.com/ltm.html
   TYPE : article
-  DATE : 12018-07-06
+  DATE : 22E14
   TAGS : psychology
   TERM 
     > Anki: memory tool/app. Manually entered questions and answers. The app repeatedly asks you every question, every time you know the answer the duration it waits before asking that question again doubles. If you forget an answer then the wait duration resets to one day.
@@ -462,213 +149,45 @@ INDEPENDENCE IN CYBERSPACE
   SRCE : Merveilles
   LINK : https://www.eff.org/cyberspace-independence
   TYPE : article
-  DATE : 12018-07-06
+  DATE : 22E14
   TAGS : philosophy
   DONE : true
 
 CURATOR MIND DESIGN
   LINK : https://medium.com/@lintropy/murat-pak-designing-the-mind-of-an-online-curator-5785e373127d
   TYPE : article
-  DATE : 12018-07-06
+  DATE : 22E14
   TAGS : philosophy, design
   DONE : true
-
-THE CANCER IN BITCOIN
-  LINK : https://www.yours.org/content/the-cancer-in-bitcoin-e75381d0fd75
-  TYPE : article
-  DATE : 12018-07-06
-  TAGS : bitcoin
-  DONE : false
 
 DIY WRISTWATCH
   PERS : nomand
   SRCE : Merveilles
   LINK : http://blog.zakkemble.co.uk/diy-digital-wristwatch/
   TYPE : article
-  DATE : 12018-07-06
+  DATE : 22E14
   TAGS : time, diy
   DONE : true
   REVI : true
   NOTE : https://github.com/zkemble/NWatch
   PROJ : Dastime
 
-BITCOIN HOT-WIRED FOR SETTLEMENT
-  LINK : https://medium.com/@jgarzik/bitcoin-is-being-hot-wired-for-settlement-a5beb1df223a
-  TYPE : article
-  DATE : 12018-07-06
-  TAGS : bitcoin
-  DONE : false
-
-BITCOIN CONSPIRACY
-  LINK : https://np.reddit.com/r/BitcoinMarkets/comments/6rxw7k/informative_btc_vs_bch_articles/dl8v4lp/
-  TYPE : article
-  DATE : 12018-07-06
-  TAGS : bitcoin
-  DONE : true
-
-NEWWEB
-  LINK : https://blog.plan99.net/what-should-follow-the-web-8dcbbeaccd93
-  TYPE : article
-  DATE : 12018-07-06
-  TAGS : web, design, code, newweb
-  DONE : true
-
-OVERWHELM
-  LINK : https://store.steampowered.com/app/785880/OVERWHELM/
-  TYPE : game
-  DATE : 12018-07-06
-  DONE : true
-  NOTE : Stylish pixel platformer
-  NOTE : 'Overwhelm'
-
-COMPASS
-  PERS : faun
-  SRCE : Merveilles
-  LINK : https://dlareme.bandcamp.com/album/compass
-  TYPE : music
-  DATE : 12018-07-06
-  DONE : true
-  REVI : true
-  TAGS : inspiration
-
-TOP SLATE STAR CODEX
-  PERS : neauoire
-  SRCE : Merveilles
-  LINK : http://slatestarcodex.com/top-posts/
-  TYPE : list
-  DATE : 12018-07-06
-  DONE : false
-  REVI : true
-  TAGS : inspiration, psychology, society, research, philosophy
-
-UNDER THE SKIN: J PETERSON
-  LINK : https://youtu.be/r2S58rH0PAw?t=1h1m38s
-  TYPE : podcast
-  Date : 12018-07-06
-  DONE : true
-  REVI : false
-  TAGS : society, psychology, philosophy
-  QOTE
-    > The good quote is 'The proper exchange of ideas between free individuals keeps tyranny at bay.' 
-    & ...however media centralization and widely popular material escapism distorts societal discourse.
-    > A the related quote is: '...the problem with hierarchies is that people stack up at the bottom and that they tilt toward tyranny across time'. 
-    > Fuller context: 'If you're going to values some things more than others then hierarchies are inevitable. You have to value some things more than others or you don't have anything valuable." "Like beauty or strength or something." "Or competence. ...whatever it happens to be. The ability to play the flute. It doesn't matter what it is. Obviously if you value music you are going to value some musicians more than others because some are better. So you have to value things in order to more forward in life, and you have to value things in order to have something valuable to produce. But if you play out the value in a social landscape you produce a hierarchy. The problem with producing a hierarchy is that a small number of people are going to be more successful than the majority, and a very large number of people are not going to be successful at all - at that particular thing. It's inevitable. 
-    & ...So you say "we have to put up with that because we need to pursue things of value". OK fine, so that is the right wing perspective - the hierarchies are justifiable and necessary. 
-    & The left wing perspective is 'yeah but wait a minute, the problem with hierarchies is that people stack up at the bottom and that they tilt toward tyranny across time' and that's also true. 
-    & You need that dialect in society between the right wing that says you know "we need the hierarchies and they are useful and you should be grateful for them, they structure you and give you form and provide value" 
-    & and the left that says "yeah but they exclude people, people stack up at the bottom and that is dangerous to the hierarchy itself, it means that people might not have opportunity" and you have to say yes to that (too). 
-    & The problem comes -and this is the situation we are in right now- where the radical left-ists (and this is mostly a problem that really permeates the Universities) say "Yeah but all hierarchies are just tyrannical power", it's like oh no their not. Hierarchies are based on competence in a functioning society and mostly our society functions... ...That doesn't mean that hierarchies don't tilt toward self interest and tyranny across time but that's a bad thing. Even a bad thing from a conservative perspective. There's room for the left because the poor will always be with us and the dispossessed need a voice, not least because there are talented people among the dispossessed and if they are stuck at zero everyone suffers because we don't have access to their talents. It's bad use of resources. On the right its like "no, we need the damn value hierarchies, we need to be grateful for our traditions and structures because they stop us from degenerating into chaos."'
-
-JAPANESE POST-WAR DESIGN
-  LINK : https://www.disegnodaily.com/article/the-story-of-design-japanese-post-war-design
-  TYPE : article
-  DATE : 12018-07-06
-  DONE : false
-  TAGS : design
-
-SCP FOUNDATION
-  LINK : http://www.scp-wiki.net/
-  TYPE : list
-  DATE : 12018-07-06
-  DONE : true
-  REVI : true
-  TAGS : fiction
-
-TENDRILS OF MESS IN OUR BRAINS
-  LINK : https://www.ribbonfarm.com/2017/01/05/tendrils-of-mess-in-our-brains/
-  TYPE : article
-  DATE : 12018-07-06
-  DONE : false
-  TAGS : psychology
-
-RIBBONFARM 2017
-  LINK : https://www.ribbonfarm.com/2017/12/21/complete-2017-roundup/
-  TYPE : list
-  DATE : 12018-07-06
-  DONE : false
-  REVI : true
-  TAGS : inspiration, psychology, society, research, philosophy
-
-THE BATTLE FOR PSYCHOLOGY
-  LINK : https://www.lesswrong.com/posts/GpkoTHJzsAAJx7c5T/the-battle-for-psychology
-  TYPE : article
-  DATE : 12018-07-06
-  DONE : false
-  TAGS : psychology
-
-CIRCULAR ECONOMY
-  LINK : https://en.wikipedia.org/wiki/Circular_economy
-  TYPE : article
-  DATE : 12018-07-06
-  DONE : true
-  TAGS : society, economics
-  TERM 
-    > Circular economy: 'is a regenerative system in which resource input and waste, emission, and energy leakage are minimised by slowing, closing, and narrowing energy and material loops. This can be achieved through long-lasting design, maintenance, repair, reuse, remanufacturing, refurbishing, and recycling. This is in contrast to a linear economy which is a "take, make, dispose" model of production.'
-
-SPACESHIP EARTH ECONOMICS
-  LINK : http://arachnid.biosci.utexas.edu/courses/THOC/Readings/Boulding_SpaceshipEarth.pdf
-  TYPE : article
-  DATE : 12018-07-06
-  DONE : false
-  TAGS : society, economics
-  FILE : 12018-07-06_Boulding_SpaceshipEarth.pdf
-
 FUNGI FROM YUFFOTH
   LINK : http://www.hplovecraft.com/writings/texts/poetry/p289.aspx
   TYPE : article
-  DATE : 12018-07-06
+  DATE : 22E14
   DONE : false
-  FILE : 12018-07-06_FungiFromYuggoth_byHP.pdf
+  FILE : 22E14_FungiFromYuggoth_byHP.pdf
   TAGS : fiction
-
-TWO ENVELOPE PROBLEM
-  PERS : neauoire
-  SRCE : Merveilles
-  LINK : https://brilliant.org/wiki/two-envelope-paradox/
-  TYPE : article
-  DATE : 12018-07-06
-  DONE : true
-  TAGS : paradox
 
 WIKTOPHER
   PERS : Rekka
   LINK : https://wiktopher.kokorobot.ca/
   TYPE : book
-  DATE : 12018-07-06
+  DATE : 22E14
   DONE : true
   REVI : true
   TAGS : fiction
-
-JAN VERWOERT 2017-11-09
-  PERS : Phil James
-  LINK : https://www.youtube.com/watch?v=VlyLQFcoFP0
-  TYPE : video
-  DATE : 12018-07-06
-  DONE : false
-  TAGS : art, philosophy
-
-SELF AUTHORING
-  LINK : https://selfauthoring.com/
-  TYPE : lecture
-  DATE : 12018-07-06
-  DONE : true
-  REVI : true
-  TAGS : psychology
-
-FRANKFURT SCHOOL
-  LINK : https://en.wikipedia.org/wiki/Frankfurt_School
-  TYPE : article
-  DATE : 12018-07-06
-  DONE : false
-  TAGS : philosophy
-
-POLITCAL CORRECTNESS DEBATE
-  LINK : https://www.youtube.com/watch?v=GxYimeaoea0
-  TYPE : video
-  DATE : 12018-07-06
-  DONE : true
-  QOTE : "Fuck political correctness, resist, fight. If you have a point of view, fight for it in the proper manner." - Stephen Fry
-  TAGS : politics
 
 PANEL 84V42
   AUTH : eelfroth
@@ -686,103 +205,10 @@ BORROWED TIME
   QOTE 
     > "The average person lives about 75 years. Now then, I multiplied 75 times 52 and came up with 3,900, which is the number of Saturdays that the average person has in his lifetime. It took me until I was 55 years old to think about this in any detail, and by that time I had lived through over 2,800 Saturdays."
     & "Now let me tell you one last thought before I sign off and take my lovely wife out to breakfast. This morning, I took the very last marble out of the container. I figure if I make it until next Saturday, then I have been given a little extra time."
-  DATE : 12018-07-08
+  DATE : 22E14
   TAGS : philosophy
   PROJ : Dastime
   DONE : true
-
-WIDSOM CALENDAR
-  PERS : neauoire
-  SRCE : Merveilles
-  LINK : https://a-calendar-of-wisdom.blogspot.com/
-  TYPE : article
-  QOTE : "You can read it online, it’s 'not that great' — I pointed this out more like an example of tooling, rather than content."
-  DATE : 12018-07-08
-  DONE : false
-
-SULLIVAN
-  PERS : alx
-  SRCE : Merveilles
-  LINK : http://ep.yimg.com/ty/cdn/paulgraham/sullivan.html
-  TYPE : article
-  DONE : false
-  DATE : 12018-07-08
-
-TASTE FOR MAKERS
-  PERS : alx
-  SRCE : Merveilles
-  LINK : http://www.paulgraham.com/taste.html
-  TYPE : article
-  DONE : false
-  DATE : 12018-07-08
-  TAGS : design
-
-MIND THE GAP
-  PERS : neaoire
-  SRCE : Merveilles
-  LINK : http://www.paulgraham.com/gap.html
-  TYPE : article
-  DONE : false
-  DATE : 12018-07-08
-  TAGS : society, economics
-
-PYTHON PARADOX
-  PERS : neaoire
-  SRCE : Merveilles
-  LINK : http://www.paulgraham.com/pypar.html
-  TYPE : article
-  DONE : false
-  DATE : 12018-07-08
-  TAGS : code, paradox
-
-VANILLA JS
-  PERS : alx
-  SRCE : Merveilles
-  LINK : http://vanilla-js.com/
-  TYPE : article
-  DONE : true
-  DATE : 12018-07-08
-  TAGS : funny
-
-GREENSPACE
-  PERS : alx
-  SRCE : Merveilles
-  LINK : https://www.uea.ac.uk/about/-/it-s-official-spending-time-outside-is-good-for-you
-  TYPE : article
-  TERM 
-    > Greenspace: 'open, undeveloped land with natural vegetation as well as urban greenspaces, which include urban parks and street greenery.'
-  DONE : true
-  DATE : 12018-07-08
-  TAGS : psychology, economics, env
-
-CLIENT SIDE ROUTING
-  PERS : james
-  SRCE : Merveilles
-  LINK : http://krasimirtsonev.com/blog/article/deep-dive-into-client-side-routing-navigo-pushstate-hash
-  TYPE : article
-  DONE : false
-  DATE : 12018-07-09
-  TAGS : web
-
-METHOD OF LOCI
-  LINK : https://en.wikipedia.org/wiki/Method_of_loci
-  TYPE : article
-  DONE : false
-  REVI : true
-  NOTE : First encountered in book "Season of the Witch" by Natasha Mostert
-  DATE : 12018-07-09
-  TAGS : psychology, philosophy
-  TERM 
-    > Memory Palace: 'the subject memorizes the layout of some building, or the arrangement of shops on a street, or any geographical entity which is composed of a number of discrete loci. When desiring to remember a set of items the subject 'walks' through these loci in their imagination and commits an item to each one by forming an image between the item and any feature of that locus. Retrieval of items is achieved by 'walking' through the loci, allowing the latter to activate the desired items.'
-
-MALICK'S OBSESSIONS
-  PERS : dormin
-  SRCE : Merveilles
-  LINK : https://www.youtube.com/watch?v=5f6rpDlfX5A
-  TYPE : video
-  DONE : true
-  DATE : 12018-07-09
-  TAGS : film
 
 ARCANE ALGO ARCHIVE
   PERS : alx
@@ -790,28 +216,16 @@ ARCANE ALGO ARCHIVE
   LINK : https://www.algorithm-archive.org/
   TYPE : list
   DONE : true
-  DATE : 12018-07-10
+  DATE : 22E14
   TAGS : code
-
-INCREMENTALISM
-  LINK : http://freakonomics.com/podcast/in-praise-of-incrementalism-rebroadcast/
-  TYPE : podcast
-  DONE : true
-  DATE : 12018-07-10
-  NOTE 
-    - Social movement advice (Linda Hershman):
-    - 1) Put your own interest first
-    - 2) Take the moral highground
-    - 3) Have weekly meetings
-  TAGS : society
 
 SEE IN EVERYTHING
   QOTE : Miyamoto Musashi — 'If you know the way broadly you will see it in everything.'
   TYPE : quote
-  DATE : 12018-07-10
+  DATE : 22E14
 
 LIVING BRIDGE
-  DATE : 12018-06-10
+  DATE : 22E14
   FILE : 12018-06-10_livingBridge.jpg
   TYPE : image
   TAGS : inspiration, solarpunk, nature, antifragile
@@ -823,40 +237,13 @@ AZOLLA
   LINK : https://en.wikipedia.org/wiki/Azolla_event
   TYPE : article
   DONE : true
-  DATE : 12018-07-11
+  DATE : 22E14
   TAGS : time
-
-INCORRECT USE TERM AI
-  PERS : alx
-  SRCE : Merveilles
-  LINK : https://becominghuman.ai/are-you-using-the-term-ai-incorrectly-911ac23ab4f5
-  TYPE : article
-  DONE : true
-  DATE : 12018-07-11
-  TAGS : etymology, ai
-
-CEPHALOPOD INTELLIGENCE
-  PERS : alx
-  SRCE : Merveilles
-  LINK : https://en.m.wikipedia.org/wiki/Cephalopod_intelligence
-  TYPE : article
-  DATE : 12018-07-11
-  DONE : true
-  TAGS : psychology, animal
-
-REINFORCEMENT LEARNING FLAW
-  PERS : alif
-  SRCE : Merveilles
-  LINK : https://thegradient.pub/why-rl-is-flawed/
-  TYPE : article
-  DONE : false
-  DATE : 12018-07-11
-  TAGS : ai
 
 GLOBAL 1%
   QOTE : "You need just $34,000 USD annual income to be in the global elite... half the world's richest people live in the U.S."
   TYPE : quote
-  DATE : 12018-07-11
+  DATE : 22E14
 
 DISCOURSE CHEATSHEET
   PERS : Neauoire
@@ -865,64 +252,8 @@ DISCOURSE CHEATSHEET
   TYPE : article
   DONE : true
   REVI : true
-  DATE : 12018-07-11
+  DATE : 22E14
   TAGS : etymology, psychology
-
-ARGUMENT VARIETIES
-  PERS : Neauoire
-  SRCE : Merveilles
-  LINK : http://slatestarcodex.com/2018/05/08/varieties-of-argumentative-experience/
-  TYPE : article
-  DONE : false
-  REVI : true
-  DATE : 12018-07-11
-  TAGS : etymology, psychology
-
-DISAGREE
-  PERS : Neauoire
-  SRCE : Merveilles
-  LINK : http://www.paulgraham.com/disagree.html
-  TYPE : article
-  DONE : false
-  REVI : true
-  DATE : 12018-07-11
-  TAGS : etymology, psychology
-
-THREE TIER MIND
-  PERS : Neauoire
-  SRCE : Merveilles
-  LINK : https://www.pftq.com/blabberbox/?page=Three_Tiers_of_Mind
-  TYPE : article
-  DONE : false
-  REVI : true
-  DATE : 12018-07-11
-  TAGS : etymology, psychology
-
-JORDAN PETERSON JRE 1139
-  LINK : http://jrecompanion.com/jordan-peterson-jre-1139/
-  TYPE : podcast
-  NOTE : Incrementalism in position and trajectory
-  QOTE : "The spoken word is now as powerful as the written word, thats never happen before in human history." 2:34:XX
-  DATE : 12018-07-11
-  DONE : true
-
-SKEPTOID APE SIGN LANGUAGE
-  PERS : faun
-  SRCE : Merveilles
-  LINK : https://skeptoid.com/episodes/4630
-  TYPE : podcast
-  TAGS : animal, psychology
-  DONE : false
-
-BLINDSIGHT
-  PERS : tttlllrrr
-  SRCE : Merveilles
-  LINK : http://www.rifters.com/real/shorts/PeterWatts_Blindsight.pdf
-  TYPE : book
-  DATE : 12018-07-12
-  FILE : 12018-07-12_PeterWatts_Blindsight.pdf
-  TAGS : fiction
-  DONE : false
 
 ZEIT STATIC HOSTING
   PERS : atteinmos
@@ -930,435 +261,87 @@ ZEIT STATIC HOSTING
   LINK : https://zeit.co/
   TYPE : tool
   TAGS : web
-  DATE : 12018-07-12
+  DATE : 22E14
   NOTE : Web hosting
   DONE : true
-
-PRIVACY POSSUM
-  PERS : alx
-  SRCE : Merveilles
-  LINK : https://github.com/cowlicks/privacypossum
-  TYPE : tool
-  TAGS : web
-  DATE : 12018-07-12
-  DONE : false
 
 KNOWLEDGE NOTES
   LINK : https://github.com/yoshuawuyts/knowledge
   TYPE : encyclopedia
   DONE : false
   REVI : true
-  DATE : 12018-07-13
+  DATE : 22E14
   NOTE : Notes on everything
   TAGS : inspiration, research
-
-WONDERBOOK
-  PERS : stephen
-  SRCE : Merveilles
-  LINK : http://wonderbooknow.com/
-  TYPE : book
-  NOTE : "The Illustrated Guide to Creating Imaginative Fiction."
-  DATE : 12018-07-13
-  DONE : false
-  TAGS : art, design
 
 WORRYDREAM REFERENCES
   PERS : neauoire
   SRCE : Merveilles
   LINK : http://worrydream.com/refs/
   TYPE : list
-  DATE : 12018-07-13
+  DATE : 22E14
   FILE : 12018-07-13_WDR_*
   TAGS : philosophy, design, inspiration, science, research, society, code, ai, psychology
   DONE : false
   REVI : true
 
-HELLO
-  LINK : https://www.wnycstudios.org/story/hello
-  TYPE : podcast
-  DATE : 12018-07-13
-  TAGS : philosophy, science, society, psychology, animal
-  DONE : true
-  REVI : true
-
-5till L1 Complex
-  PERS : Phil James
-  LINK : https://www.doomworld.com/idgames/levels/doom2/Ports/0-9/5l1c
-  TYPE : game
-  FILE : 12018-07-14_5l1c.zip
-  TAGS : gamedev, game
-  DONE : false
-  DATE : 12018-07-14
-  NOTE : '5till L1 Complex' a large custom Doom level.
-
-BLADE RUNNER 2049 DESIGN
-  LINK : https://www.engadget.com/2017/10/20/designing-the-technology-of-blade-runner-2049/
-  TYPE : article
-  TAGS : design, film
-  DATE : 12018-07-14
-  DONE : false
-
-REACTIVE PROGRAMMING INTRO
-  LINK : https://gist.github.com/staltz/868e7e9bc2a7b8c1f754
-  TYPE : article
-  TAGS : code
-  DATE : 12018-07-14
-  DONE : false
-  REVI : true
-
-FRACTAL FILM CGI
-  LINK : https://www.fxguide.com/featured/the-fractal-nature-of-guardians-of-the-galaxy-vol-2/
-  TYPE : article
-  TAGS : fractal, film
-  DATE : 12018-07-14
-  DONE : false
-
-VORTICAL + FRACTAL MACHINES
-  LINK : https://www.fxguide.com/featured/suicide-squad-vortical-flows-and-fractal-machines/
-  TYPE : article
-  TAGS : fractal, film
-  DATE : 12018-07-14
-  DONE : false
-
-FRACTALS AND ROUGHNESS
-  LINK : https://www.ted.com/talks/benoit_mandelbrot_fractals_the_art_of_roughness
-  TYPE : video
-  TAGS : fractal, research
-  DATE : 12018-07-14
-  DONE : false
-  
-AI IN A BOX
-  LINK : https://www.lesswrong.com/posts/c5GHf2kMGhA4Tsj4g/the-ai-in-a-box-boxes-you
-  TYPE : article
-  TAGS : philosophy, ai, paradox
-  DATE : 12018-07-14
-  DONE : true
-
-LEARNING SHADERS
-  LINK : https://www.alanzucconi.com/category/shader/
-  TYPE : list
-  TAGS : gamedev, code
-  DATE : 12018-07-14
-  DONE : false
-  REVI : true
-
-ACID BODHISATTVA
-  LINK : http://acid.kommak.ch/en.php
-  TYPE : article
-  TAGS : psychedelics, psychology, philosophy
-  DATE : 12018-07-14
-  DONE : false
-  REVI : true
-
-THE DOORS OF PERCEPTION
-  LINK : https://www.erowid.org/psychoactives/writings/huxley_doors.shtml
-  TYPE : article
-  TAGS : psychedelics, psychology, philosophy
-  DATE : 12018-07-14
-  DONE : false
-  REVI : true
-  FILE : 12018-07-14_TheDoorsOfPerception_byAldousHuxley.pdf
-
 VULTR
   LINK : https://www.vultr.com
   TYPE : tool
   TAGS : web
-  DATE : 12018-07-14
+  DATE : 22E14
   NOTE : Web hosting
   DONE : true
-
-WW1 BY WEEK
-  LINK : https://www.youtube.com/playlist?list=PLB2vhKMBjSxOb_127vxjaRRC7yu2TJlJX
-  TYPE : video
-  TAGS : history, war
-  DATE : 12018-07-14
-  NOTE : Week by week history of WW1.
-  DONE : false
-  PROG : Week 7
 
 SOLARPUNK REFERENCES
   LINK : https://medium.com/solarpunks/solarpunk-a-reference-guide-8bcf18871965
   TYPE : article
   TAGS : solarpunk, env
-  DATE : 12018-07-14
+  DATE : 22E14
   DONE : false
-
-SYSTEMS ARE EVERYWHERE
-  LINK : https://www.youtube.com/watch?v=Gelpn4mksXQ
-  TYPE : video
-  TAGS : gamedev
-  DATE : 12018-07-14
-  DONE : false
-
-NZ EXCHANGE
-  LINK : https://www.tokenroom.co.nz/
-  TYPE : tool
-  TAGS : bitcoin
-  DATE : 12018-07-14
-  DONE : true
-
-PRINCETON CRYPTO LECTURES
-  LINK : https://www.reddit.com/r/Bitcoin/comments/7il1sx/sixty_free_lectures_from_princeton_on_bitcoin_and/
-  TYPE : list
-  TAGS : bitcoin
-  DATE : 12018-07-14
-  DONE : false
-
-PILANESBERY DELINQUENTS
-  LINK : https://www.kotafoundation.org/the-delinquents-in-pilanesberg/
-  TYPE : article
-  TAGS : psychology, animals
-  DATE : 12018-07-14
-  DONE : false
-
-FIND PASSION BAD ADVICE
-  PERS : alx
-  SRCE : Merveilles
-  LINK : https://www.theatlantic.com/science/archive/2018/07/find-your-passion-is-terrible-advice/564932/
-  TYPE : article
-  TAGS : psychology
-  DATE : 12018-07-14
-  DONE : false
-
-THE EMPIRE
-  LINK : http://www.duncantrussell.com/episodes/2018/7/10/abby-martin
-  TYPE : podcast
-  DATE : 12018-07-14
-  DONE : true
-  TAGS : politics
-
-TARYN SOUTHERN DTFH
-  AUTH : DTFH
-  LINK : http://www.duncantrussell.com/episodes/2018/7/12/taryn-southern
-  TYPE : podcast
-  TERM 
-    > Horseshit problem: a problem that seems existentially bad but is later solved trivially/indirectly by technology. The name refers to horse manue starting to be a major problem when horses were extensively used for transport, their manure ending up everywhere - poisoning water wells etc. When the car was invented and mass adopted it was suddenly no longer an issue.
-  DATE : 12018-07-14
-  DONE : true
-  TAGS : politics
-
-TUDOR MONASTERY FARM
-  PERS : faun
-  SRCE : Merveilles
-  LINK : https://www.youtube.com/watch?v=t1ERDYjsHBg
-  TYPE : video
-  DATE : 12018-07-14
-  DONE : true
-  TAGS : history
-  PROJ : Swordy
 
 HOLOCENE ERA
-  DATE : 12018-07-15
+  DATE : 22E14
   AUTH : Kurzgesagt
   TAGS : inspiration, time, history
   LINK : https://www.youtube.com/watch?v=czgOWmtGVGs
   TERM : Holocene Era: 
 
-CLIMATE CHANGE IN POST TRUTH
-  LINK : https://medium.com/@christinelariviere/the-fisher-king-solving-climate-change-in-a-post-truth-world-7b18c8eafd53
-  TYPE : article
-  DATE : 12018-07-15
-  DONE : false
-  TAGS : env
-
-JIM CRAWFORD INTERVIEW
-  LINK : https://pokyfriends.com/blog/36/an-interview-with-jim-crawford-frog-fractions-2-and-zzt
-  TYPE : article
-  DATE : 12018-07-15
-  DONE : false
-  TAGS : gamedev, game
-  NOTE : 'Frog Fractions 2'
-
-TARN ADAMS INTERVIEW
-  LINK : https://www.pcgamer.com/dwarf-fortress-creator-tarn-adams-talks-about-simulating-the-most-complex-magic-system-ever/
-  TYPE : article
-  DATE : 12018-07-15
-  DONE : false
-  TAGS : gamedev, game
-  NOTE : 'Dwarf Fortress'
-
 WHISTLE BLOWING
   LINK : https://theintercept.com/2016/05/03/edward-snowden-whistleblowing-is-not-just-leaking-its-an-act-of-political-resistance/
   TYPE : article
-  DATE : 12018-07-15
+  DATE : 22E14
   DONE : false
   TAGS : political
-
-TACTICAL SEMIOTICS
-  LINK : https://d.rip/mikerugnetta/posts/RHJvcFBvc3QtMzM0NA==
-  TYPE : article
-  DATE : 12018-07-15
-  DONE : true
-  TAGS : design
 
 SAD POSTING
   LINK : http://humaniterations.net/2018/05/22/sadposting
   TYPE : article
-  DATE : 12018-07-15
+  DATE : 22E14
   DONE : false
   TAGS : psychology
-
-CHANNELING ARCHITECTURE
-  LINK : http://viewzone2.com/archeosoundx.html
-  TYPE : article
-  DATE : 12018-07-15
-  DONE : false
-  TAGS : architecture, history
-  TERM 
-    > 111hz: '...Findings of MRI scans suggest that at exactly 111hz, the brain switches off the prefrontal cortex, deactivating the language center, and temporaryly switches from left to right-sided dominance, that is responsible for intuition, creativity, holistic processing, inducing a state of meditation or a trance. Further research directed by Prof. Robert Jahn has tested acoustic behaviour in megalithic sites in the UK, showing that they sustained a strong resonance at a sound frequency between 95 and 120 heartz.' ...can't find source of the 'MRI' studies. Prof. Robert Jahn seems controversial. None-the-less interesting.
-  FILE : 12018-07-15_AcousticalResonancesOfAssortedAncientStructures.pdf
-  PROJ : Swordy
-
-THE PSYCHOLOGY OF MONEY
-  LINK : http://www.collaborativefund.com/blog/the-psychology-of-money/
-  TYPE : article
-  DATE : 12018-07-15
-  DONE : false
-  TAGS : economics, psychology
 
 FRACTAL CONSCIOUSNESS
   LINK : http://nautil.us/issue/47/consciousness/is-consciousness-fractal
   TYPE : article
-  DATE : 12018-07-15
+  DATE : 22E14
   DONE : false
   TAGS : philosophy, psychology
-
-HIGH DIMENSIONAL SPACE
-  LINK : https://marckhoury.github.io/counterintuitive-properties-of-high-dimensional-space/
-  TYPE : article
-  DATE : 12018-07-15
-  DONE : false
-  TAGS : philosophy
-
-SEXAGESIMAL SYSTEM
-  LINK : https://www.tapatalk.com/groups/tranquility/the-sexagesimal-system-t4647.html
-  TYPE : article
-  DATE : 12018-07-15
-  DONE : false
-  TAGS : time
-  FILE : 12018-07-15_TheSexagesimalSystem-IntoInfinity.pdf
-  PROJ : Dastime
-
-ZOMBIES REDACTED
-  LINK : https://www.lesswrong.com/posts/7DmA3yWwa6AT5jFXt/zombies-redacted
-  TYPE : article
-  DATE : 12018-07-15
-  DONE : false
-  TAGS : philosophy
-  TERM 
-    > Zombie: 'in the philosophical usage of the term, is putatively a being that is exactly like you in every respect—identical behavior, identical speech, identical brain; every atom and quark in exactly the same position, moving according to the same causal laws of motion—except that your zombie is not conscious.'
-
-KREMLIN MEDIA
-  LINK : https://meduza.io/en/feature/2015/08/13/this-is-how-russian-internet-censorship-works
-  TYPE : article
-  DATE : 12018-07-15
-  DONE : false
-  TAGS : politics
-  FILE : 12018-07-15_KremlinMedia.pdf
-
-FUNDAMENTAL MISCONCEPTIONS
-  LINK : http://mwil.co/articles/03/
-  TYPE : article
-  DATE : 12018-07-15
-  DONE : false
-  TAGS : bitcoin
-  FILE : 12018-07-15_FundamentalMisconceptions.pdf
-
-CALENDAR REFORM
-  LINK : http://myweb.ecu.edu/mccartyr/eastman.html
-  TYPE : article
-  DATE : 12018-07-15
-  DONE : false
-  TAGS : time
-  PROJ : Dastime
 
 NON EUCLIDEAN ROOM
   LINK : http://ludumdare.com/compo/2016/12/23/non-euclidean-room-postmortem/
   TYPE : article
-  DATE : 12018-07-15
+  DATE : 22E14
   DONE : false
   TAGS : gamedev
   FILE : 12018-07-15_NonEuclideanRoom.pdf
-
-SAN JUAN ISLANDS
-  LINK : https://arachnoid.com/sailbook/Chapter_1_--_Introduction,_San_Juan_Islands.html
-  TYPE : article
-  DATE : 12018-07-15
-  DONE : false
-  FILE : 12018-07-15_SanJuanIslands.pdf
-
-PROGRAMMERS KNOW FEELINGS
-  LINK : https://medium.com/enspiral-tales/good-programmers-know-more-about-feelings-than-computers-fa19f62495ae
-  TYPE : article
-  DATE : 12018-07-15
-  DONE : false
-  TAGS : code
-  FILE : 12018-07-15_GoodProgrammersKnowMoreAboutFeelingsThanComputers.pdf
-
-THE EMPIRE FILES
-  LINK : http://theempirefiles.tv/
-  TYPE : list
-  DATE : 12018-07-15
-  DONE : false
-  TAGS : politics
-
-PRODUCTIVE DISTORTIONS
-  PERS : alx
-  SRCE : Merveilles
-  LINK : https://pdfs.semanticscholar.org/presentation/1a59/7a9ca8b03d86ae9a2f86dd90e7bbff481fab.pdf
-  TYPE : article
-  DATE : 12018-07-15
-  DONE : false
-  TAGS : psychology
-
-KILLED GREEN SCREEN
-  PERS : goldbuick
-  SRCE : Merveilles
-  LINK : https://vimeo.com/264282403
-  TYPE : video
-  DATE : 12018-07-15
-  DONE : false
-
-CLIENT SIDE ROUTING
-  LINK : https://blog.risingstack.com/writing-a-javascript-framework-client-side-routing/
-  TYPE : article
-  DATE : 12018-07-16
-  DONE : false
-  TAGS : web, code
-  PROJ : Memex
-
-NOON GUEST
-  LINK : https://aliceffekt.bandcamp.com/album/noon-guest
-  TYPE : music
-  DATE : 12018-07-16
-  DONE : true
-  TAGS : game
-
-SECRETS OF THE CASTLE
-  LINK : https://www.youtube.com/watch?v=jWZWTwJ_5Ag
-  TYPE : video
-  DATE : 12018-07-16
-  DONE : true
-  TAGS : history
-  NOTE : Modern day 25 year project to build a castle with traditional methods and tools.
-  PROJ : Swordy
-
-VICTORIAN FARM
-  LINK : https://www.youtube.com/watch?v=BodKsqkZk2Q
-  TYPE : video
-  DATE : 12018-07-16
-  DONE : true
-  TAGS : history
-  TERM
-    > Shoddy: 'a type of woollen yarn produced by tearing old woollen rags into shreds and weaving the strands.'
-  PROJ : Swordy
 
 LOW TECH MAGAZINE
   PERS : josh
   SRCE : Merveilles
   LINK : http://www.lowtechmagazine.com/
   TYPE : list
-  DATE : 12018-07-16
+  DATE : 22E14
   DONE : false
   TAGS : history, solarpunk, env, offgrid
 
@@ -1367,34 +350,9 @@ GWERN
   SRCE : Merveilles
   LINK : http://www.gwern.net/
   TYPE : encyclopedia
-  DATE : 12018-07-16
+  DATE : 22E14
   DONE : false
   TAGS : inspiration, history, psychology, science, ai, bitcoin, code, psychedelics, env
-
-MANSONRY GRID LIB
-  LINK : https://masonry.desandro.com/
-  TYPE : tool
-  DATE : 12018-07-17
-  DONE : true
-  TAGS : code, web
-  PROJ : Memex
-
-ISOTOPE GRID LIB
-  LINK : https://isotope.metafizzy.co/
-  TYPE : tool
-  DATE : 12018-07-17
-  DONE : true
-  TAGS : code, web
-  PROJ : Memex
-
-MEASURED ITERATION
-  QOTE : 'The most important thing you can do is to get into an iteration cycle where you can measure the impact of your work, have a hypothesis about how making changes will affect those variables, and ship changes regularly. It doesn't even matter that much what the content is - it's the iteration of hypothesis, changes, and measurement that will make you better at a faster rate than anything else we have seen.' - Gabe Newell
-  LINK : https://www.reddit.com/r/The_Gaben/comments/5olhj4/hi_im_gabe_newell_ama/
-  DATE : 12018-07-17
-  DONE : true
-  REVI : true
-  TAGS : gamedev
-  TYPE : quote
 
 ENVIRONMENT INFLUENCE
   QOTE
@@ -1404,7 +362,7 @@ ENVIRONMENT INFLUENCE
     > 'Our thoughts shape out spaces, and our spaces return the favor'
   NOTE : Rat park cocaine. Heroin Vietnam.
   LINK : https://www.youtube.com/watch?v=nH9IPpDrVTs
-  DATE : 12018-07-17
+  DATE : 22E14
   DONE : true
   REVI : true
   TAGS : env, design
@@ -1412,28 +370,21 @@ ENVIRONMENT INFLUENCE
 
 BREATH
   QOTE : 'Keep breathing'
-  DATE : 12018-07-17
-  DONE : true
-  TAGS : philosophy
-  TYPE : quote
-
-LIVE
-  QOTE : 'Life should be lived to the point of tears'
-  DATE : 12018-07-17
+  DATE : 22E14
   DONE : true
   TAGS : philosophy
   TYPE : quote
 
 ZOO
   QOTE : 'Zoos are animal prisons that operate for profit. It’s not education, it’s "entertainment".'
-  DATE : 12018-07-17
+  DATE : 22E14
   DONE : true
   TAGS : philosophy, env
   TYPE : quote
 
 SEE
   QOTE : 'Do you yearn to defend your own beliefs or to see the world as clearly as you possibly can?'
-  DATE : 12018-07-17
+  DATE : 22E14
   DONE : true
   TAGS : philosophy
   TYPE : quote
@@ -1453,7 +404,7 @@ MARRIAGE
     & Date to establish trust. Time is actually your friend, not your enemy. Do not ignore ANY red flag you see in a relationship. Examine it for what it is, then determine if it is something you can work through with the other person, or is it something they refuse to acknowledge or deal with? If you're dating someone who is selfish and they refuse to see it, they will not magically become unselfish because you were kind enough to marry them. Red Flags ignored in dating will become the rocks upon which your marriage boat smashes in the coming storms. If there are multiple red flags and they won't talk to you about any of them, walk away. It doesn't matter if you've already moved in, share the bank account, the dog, and a car. Get out now. If they're not willing to work on things that impact the security of a relationship today, you can count on them not working on them after you get married.
     & Marriage is not easy. It requires a lot of work sometimes, even when you are both on the same page, have great communication, great sex (which will happen very easily if the rest of the relationship is healthy by the way) and great chemistry. People get sick, they get laid off, their family members die, children get sick, get hurt in accidents, friends have affairs, get divorced...life is challenging and it impacts our relationships, sometimes in ways we're not expecting or prepared for. If you're not willing to value your marriage above everything else in your life, its going to be really hard for it to survive the day in and day out challenges of living.'
   LINK : https://np.reddit.com/r/AskMen/comments/52h1h8/whats_the_most_common_mistake_people_make_when/d7kyny9?context=3
-  DATE : 12018-07-17
+  DATE : 22E14
   DONE : true
   TAGS : psychology
   TYPE : quote
@@ -1462,14 +413,14 @@ GROWTH
   QOTE : 'Growth for the sake of growth is the ideology of the cancer cell.'
   AUTH : Edward Abbey
   NOTE : The Journey Home: Some Words in Defense of the American West
-  DATE : 12018-07-17
+  DATE : 22E14
   DONE : true
   TAGS : philosophy
   TYPE : quote
 
 EDUCATION
   QOTE : 'Education is the passport to the future, for tomorrow belongs to those who prepare for it today.' - Malcom X
-  DATE : 12018-07-17
+  DATE : 22E14
   DONE : true
   TAGS : philosophy
   TYPE : quote
@@ -1489,7 +440,7 @@ CODEX
     > 'Social media is a form of gambling. Treat it with caution.'
     > 'Running away from technology is pointless. Build something better on top of existing technology.'
     > 'Optimize for skills, not pay grade.'
-  DATE : 12018-07-17
+  DATE : 22E14
   DONE : true
   REVI : true
   TAGS : inspiration, philosophy, code, psychology
@@ -1497,157 +448,30 @@ CODEX
 LET'S ENCRYPT
   LINK : https://letsencrypt.org/
   TYPE : tool
-  DATE : 12018-07-17
+  DATE : 22E14
   DONE : true
   TAGS : code, web
   NOTE : Free encryption ssl cert
-
-LIGAND
-  PERS : deuveir
-  SRCE : Merveilles
-  LINK : https://ultimae.bandcamp.com/album/ligand-24bit
-  TYPE : music
-  DATE : 12018-07-17
-  DONE : true
-  NOTE : Ambient
-
-COMPRO
-  PERS : deuveir
-  SRCE : Merveilles
-  LINK : https://iliantape.bandcamp.com/album/itlp04-skee-mask-compro
-  TYPE : music
-  DATE : 12018-07-17
-  DONE : true
-  NOTE : Ambient
-
-UNYT
-  PERS : deuveir
-  SRCE : Merveilles
-  LINK : https://ultimae.bandcamp.com/album/unyt-24bit
-  TYPE : music
-  DATE : 12018-07-17
-  DONE : false
-
-JS PROTOTYPE
-  LINK : https://medium.freecodecamp.org/prototype-in-js-busted-5547ec68872
-  TYPE : article
-  DATE : 12018-07-17
-  DONE : false
-  TAGS : web, code
-  PROJ : memex
-
-INTERNAL FLIGHTS
-  LINK : https://estastonne.bandcamp.com/album/internal-flight-2013-guitar-version
-  TYPE : music
-  DATE : 12018-07-17
-  DONE : true
-  REVI : true
-  NOTE : Amaze
 
 LICENSE ZERO
   PERS : cblgh
   SRCE : Merveilles
   LINK : https://licensezero.com/
   TYPE : tool
-  DATE : 12018-07-17
+  DATE : 22E14
   TAGS : code, web
   DONE : true
-
-CATASTROPHE JOURNAL
-  PERS : cblgh
-  SRCE : Merveilles
-  LINK : https://seths.blog/2018/07/a-catastrophe-journal/
-  TYPE : article
-  DATE : 12018-07-17
-  TAGS : philosophy, psychology
-  DONE : true
-
-ZERO CARBON BILL SUB
-  LINK : https://blog.greens.org.nz/2018/06/22/guide-making-submission-zero-carbon-bill/
-  TYPE : tool
-  DATE : 12018-07-17
-  TAGS : env
-  DONE : true
-  FILE : 12018-07-17_zeroCarbonBill-DiscussionDocument.pdf
-
-SKY INTERVIEW
-  LINK : http://shareaslicepodcast.com/2016/11/16/sky/
-  TYPE : podcast
-  DATE : 12018-07-17
-  DONE : true
-
-LITTLE SOUND DJ
-  LINK : https://www.littlesounddj.com
-  TYPE : tool
-  DATE : 12018-07-17
-  DONE : true
-
-COVOX DUBSLIDE
-  LINK : https://www.littlesounddj.com/lsd/sounds/covox_-_dubslide.mp3
-  TYPE : music
-  DATE : 12018-07-17
-  DONE : true
-  NOTE : Made with LSDJ
-
-THE POT COVER
-  LINK : https://www.youtube.com/watch?v=8zfYO9sZjrE
-  TYPE : music
-  DATE : 12018-07-17
-  DONE : true
-  NOTE : Four trumpeteers, a drummer, guitarist, saxman and epic Sophia Urista cover 'The Pot'
-
-OVEN
-  NOTE
-    > Oven close to bed, then bench with sink can be cut diagonal
-    & Build right to edge (including counter lip)
-    > ENO
-    & Height (400 - 470)
-    & Width (504 - 517)
-    & Depth (410 - 418)
-    > GAS
-    & Height (470)
-    & Width (530)
-    & Depth (310)
-  PROJ : Van
-  DATE : 12018-07-17
-  DONE : false
-
-MISE EN BAG
-  PERS : cblgh
-  SRCE : Merveilles
-  LINK : https://miseenbag.com/
-  TYPE : article
-  DATE : 12018-07-18
-  DONE : true
-  TAGS : food
-  NOTE : Guerilla cooking backpack
-
-PRELUDIO A COLON
-  PERS : Symbol
-  SRCE : Merveilles
-  LINK : https://www.youtube.com/watch?v=lOihGnn6HoE
-  TYPE : music
-  DATE : 12018-07-18
-  DONE : true
-  NOTE : Julián Carrillo
-
-EDWARDIAN FARM
-  LINK : https://www.youtube.com/playlist?list=PLDJIWiwfNABlM7J0d3e63sZ6U2bwg_hMX
-  TYPE : video
-  DATE : 12018-07-18
-  DONE : false
-  TAGS : history
 
 CSS VARIABLES
   LINK : https://css-tricks.com/difference-between-types-of-css-variables/
   TYPE : article
-  DATE : 12018-07-18
+  DATE : 22E14
   DONE : true
   TAGS : web, code
   PROJ : Memex
 
 THE NATANIEV OVERSEER
-  DATE : 12018-07-18
+  DATE : 22E14
   AUTH : neauoire
   TAGS : inspiration, tool, design, neauoire
   LINK : https://twitter.com/neauoire/status/1019489401192116224
@@ -1656,23 +480,15 @@ THE NATANIEV OVERSEER
   WIDE : true
 
 SLIDE
-  DATE : 12018-05-03
+  DATE : 22E14
   FILE : 12018-05-03_slide.jpg
   TYPE : image
   DONE : true
   WIDE : true
   TAGS : log, hamish
 
-VAN
-  DATE : 12017-01-20
-  FILE : 12017-01-20_van.jpg
-  TYPE : image
-  PROJ : Van
-  TAGS : log
-  DONE : true
-
 FPV MOD
-  DATE : 12018-03-20
+  DATE : 22E14
   FILE : 12018-03-20_fpvMod.jpg
   TYPE : image
   PROJ : Drone
@@ -1682,7 +498,7 @@ FPV MOD
     > Diy modified large battery and record module onto drone fpv headset
 
 SWITCH PANEL
-  DATE : 12018-03-20
+  DATE : 22E14
   FILE : 12018-07-10_switchPanel.jpg
   TYPE : image
   PROJ : Van
@@ -1695,79 +511,38 @@ APPLIED MINIMALISM
   PERS : Symbol
   SRCE : Merveilles
   LINK : https://vimeo.com/13617755
-  DATE : 12018-07-18
+  DATE : 22E14
   TYPE : music
   DONE : true
 
-VELADYA CHAPMAN VANLIFE
-  LINK : http://shareaslicepodcast.com/2018/07/16/vanlife/
-  DATE : 12018-07-18
-  TYPE : podcast
-  DONE : true
-  PROJ : Van
-
-AMISH ATHEIST
-  LINK : http://shareaslicepodcast.com/2018/05/09/copp1/
-  DATE : 12018-07-18
-  TYPE : podcast
-  DONE : true
-
-JOHN LAW
-  LINK : http://shareaslicepodcast.com/2017/10/24/dada/
-  NOTE : DADA, Burning Man, Cacophony Society & Suicide Club
-  DATE : 12018-07-18
-  TYPE : podcast
-  DONE : true
-
 WHITE
-  DATE : 12018-07-19
+  DATE : 22E14
   FILE : 12018-07-19_white.jpg
   TYPE : image
   TAGS : hamish
 
 BLACK
-  DATE : 12018-07-19
+  DATE : 22E14
   FILE : 12018-07-19_black.jpg
   TYPE : image
   TAGS : hamish
-
-TALL CUT SHORT
-  DATE : 12018-07-19
-  FILE : 12018-07-19_tall.jpg
-  TYPE : image
-  TAGS : hamish
-
-RANGITOTO
-  DATE : 12018-07-19
-  FILE : 12018-07-19_wide.jpg
-  TYPE : image
-  WIDE : true
-  TAGS : log
 
 MQTT
   PERS : autophagy
   SRCE : Merveilles
   LINK : http://mqtt.org/
   TYPE : tool
-  DATE : 12018-07-19
+  DATE : 22E14
   TAGS : code, web
   TERM
     > MQTT: 'MQTT is a machine-to-machine (M2M)/"Internet of Things" connectivity protocol. It was designed as an extremely lightweight publish/subscribe messaging transport. It is useful for connections with remote locations where a small code footprint is required and/or network bandwidth is at a premium.'
-
-CHART.JS
-  PERS : autophagy
-  SRCE : Merveilles
-  LINK : https://www.chartjs.org/
-  TYPE : tool
-  DATE : 12018-07-19
-  TAGS : code, web
 
 CSS UTIL CLASSES
   PERS : stephen
   SRCE : Merveilles
   LINK : https://adamwathan.me/css-utility-classes-and-separation-of-concerns/
   TYPE : article
-  DATE : 12018-07-19
+  DATE : 22E14
   TAGS : code, web
   
 SIBYLLINE BOOKS
@@ -1812,67 +587,15 @@ KNOWLEDGE
   TYPE : encyclopedia
   TAGS : inspiration
 
-SAILING RESOURCES
-  PERS : neauoire
-  SRCE : Merveilles
-  LINK : https://100r.co/resources.html
-  TYPE : list
-
-A DEPTH OF BEGINNING
-  PERS : sebastian
-  SRCE : Merveilles
-  LINK : http://sebastiansiverand.com/library/NoK.pdf
-  FILE : 12018-07-19_NoK.pdf
-  TYPE : book
-  TAGS : occult
-  NOTE : 'Notes on Kabbalah' - Colin Low
-
 UI PATTERN SMART
   PERS : yoshuawuyts
   SRCE : knowledge
   LINK : https://www.awwwards.com/mastering-ui-patterns-for-smarter-design.html
   DONE : true
 
-OCTOBER
-  PERS : alx
-  SRCE : Merveilles
-  NOTE : 'October' - Chine Meiville
-  TYPE : book
-  QOTE 
-    > It's very easy to read, extremely lucid
-    & The problem is, it's still a difficult read
-    & At least at the moment, I'm early in the book, so there are a lot of things going on, some of them horrifying
-    & A mix of xenophobes, fascists, and antisemites did some horrible things to toddlers :c
-    & Traditional teaching of the history of the revolution in russia kind of ignores the horrific things that were happening that led up to it
-    & I'm also going through the TTC russian history course ('From Peter the Great to Gorbachev'), and as far as I can tell, they completely pass over the mass protests and the sheer disregard for human life that the previous regime had (edited)
-    & I recommend it, but it's a difficult read for the same sorts of reasons that "Why I don't talk [to white people] about race" is a difficult read
-
-BLACK TRUTHS
-  LINK : https://dreamflesh.com/post/2017/black-truths-jordan-peterson/
-  TYPE : article
-  NOTE : Critique of Jordan Peterson
-  QOTE 
-    > Important
-    & "(This is the core of the bill: making sure people aren’t denied employment or housing, for example, because of their gender expression or identity. The pronouns stuff is supplementary, besides being misrepresented by Peterson.)"
-    > Funny
-    & "We should note that Peterson is very comfortable with non-binary approaches to categories he sees as forming the roots of civilisation — when it suits him. In another interview he says:"
-    & "People often ask me if I believe in God. I don’t like that question. First of all, it’s an attempt to box me in, in a sense. The reason it’s an attempt to box me in is because the question is asked so I can be firmly placed on one side of a binary argument. The reason I don’t like to answer it is, (a) I don’t like to be boxed in, and (b) because I don’t know what the person means by ‘believe’ or ‘God’. And they think they know. And the probability that they construe ‘belief’ and construe ‘God’ the same way I do is virtually zero."
-    > Summary
-    & "The root dynamic of the clash here, though, seems to be between the fact that legislation like C-16 is specifically meant to protect a minority who often suffer at the hands of rigid categories that work for the majority, whereas Peterson’s general fight is with the radicalism in postmodernism which seeks to completely dismantle those categories. Peterson sees the latter at work in the former, which I think is a paranoid overstatement."
-    > "In trying to get an easy-to-grasp handle on all this, it’s interesting that Peterson himself supplied me with the crucial tools. As with his opposition to binary ideas of belief in God, it’s testimony to the fact that he’s worth listening to for insight, even if you have to wade through some bile, and make some connections which he doesn’t manage."
-    > "Peterson isn’t intending harm, or intending to undermine people. But — as he’ll be the first to point out in other contexts, e.g. communism — good intent is never enough. One has to pay attention to systemic unintended harms. There’s some truth in what Peterson is saying (alongside the distortions and occasional falsehoods). But even this truth is sometimes — especially in the transgender debate — blackened by a certain blindness."
-    > Conclusion
-    & "There are serious and present threats to stability and social cohesion, but they owe far more to shifts in economics and ecology than to shifts in sexuality and gender. Postmodernism needs critiquing, since, as David Kidner showed, it’s implicated in our ecological crisis. But it needs better, less blind critics than Peterson. And freedom and civilisation need better, more far-sighted champions."
-  DONE : true
-
 EGREGORE
   TERM 
     > Egregore: 'is an occult concept representing a "thoughtform" or "collective group mind", an autonomous psychic entity made up of, and influencing, the thoughts of a group of people. The symbiotic relationship between an egregore and its group has been compared to the more recent, non-occult concepts of the corporation (as a legal entity) and the meme.' 'a kind of group mind that is created when people consciously come together for a common purpose.'
-
-NATURE AND PSYCHE
-  TYPE : book
-  LINK : https://dreamflesh.com/review/book/nature-and-psyche/
-  TAGS : env, politics, psychology
 
 LEARN ANYTHING
   TYPE : tool
@@ -1900,40 +623,14 @@ PRIVACY TOOLS
   TAGS : privacy
   DONE : true
 
-PRISM BREAK
-  TYPE : list
-  LINK : https://prism-break.org/
-  TAGS : privacy
-  DONE : true
-
-PROJECT BASED LEARNING
-  TYPE : article
-  LINK : https://medium.com/@NikitaVoloboev/project-based-learning-e511641869ca
-  TAGS : productivity
-  DONE : true
-
 HAIKU DEFINITIONS
   PERS : alx
   SRCE : Merveilles
   TYPE : list
   LINK : http://simplytom.com/definitions.txl
 
-MARCUS MEDITATIONS
-  PERS : neauoire
-  SRCE : Merveilles
-  LINK : http://files.libertyfund.org/files/2133/Aurelius_1464_LFeBk.pdf
-  FILE : 12018-07-20_Aurelius_1464_LFeBk.pdf
-
-
-WORK HURTS < PROCRASTINATION
-  PERS : neauoire
-  SRCE : Merveilles
-  LINK : https://www.lesswrong.com/posts/9o3QBg2xJXcRCxGjS/working-hurts-less-than-procrastinating-we-fear-the-twinge
-  DONE : true
-  TAGS : productivity, psychology
-
 JOURNALING NOTES
-  DATE : 12018-07-19
+  DATE : 22E14
   PERS : neauoire
   SRCE : Merveilles
   TAGS : productivity
@@ -1973,34 +670,12 @@ JOURNALING NOTES
     & "If the psychology can be mapped precisely. You can use the appropriate symbolism in a UI to help guide and prime movements in this metaphysical space and facilitate consistent workflow for users. This is one of my goals." - sebastian
 
 EVERYTHING
-  DATE : 12018-07-19
+  DATE : 22E14
   AUTH : neauoire
   SRCE : Merveilles
   QOTE : 'have you tried writing down everything you know about everything?' - neauoire
   TYPE : quote
   TAGS : inspiration, neauoire
-
-MUSIC THEORY
-  DATE : 12018-07-20
-  PERS : Symbol
-  SRCE : Merveilles
-  LINK : https://www.youtube.com/user/Rhaptapsody/videos
-  TYPE : list
-  TAGS : music, research
-
-GIT IMPERATIVE VERB
-  LINK : https://medium.com/@danielfeelfine/commit-verbs-101-why-i-like-to-use-this-and-why-you-should-also-like-it-d3ed2689ef70
-  TYPE : article
-  TAGS : code
-  NOTE 
-    > Convension for Git commit messages
-    & If applied, this commit will 'YOUR GIT COMMIT MESSAGE'
-    & The first word of your message should always be a common verb:
-    - *Add* some feature
-    - *Remove* class whatever
-    - *Update* dependency x
-    - *Refactor* function y
-    - *Fix* crazy bug
 
 LOST WEB
   LINK : https://github.com/pzwang/lostweb
@@ -2008,13 +683,13 @@ LOST WEB
   TAGS : web, research, newweb
 
 NEVER SHOW FOOLS
-  DATE : 12018-07-20
+  DATE : 22E14
   PERS : josh
   SRCE : Merveilles
   QOTE : “Never show fools unfinished work.” — Michael Schrage
 
 STATICRYPT
-  DATE : 12018-07-20
+  DATE : 22E14
   PERS : eel
   SRCE : Merveilles
   TYPE : tool
@@ -2022,21 +697,11 @@ STATICRYPT
   NOTE : Link is example. ps: test123
 
 CALM TECH
-  DATE : 12018-07-20
+  DATE : 22E14
   PERS : josh
   SRCE : Merveilles
   LINK : https://calmtech.com/
   TAGS : design
-
-VR LEARNINGS
-  PERS : changbai
-  SRCE : Merveilles
-  LINK : https://docs.google.com/document/d/1-UYCZcxKDmy5BF_-IXg1KDtwShJ5imNOch5xGPXzPr0/edit
-  TAGS : gamedev, vr
-
-RADICAL MARKETS
-  LINK : http://radicalmarkets.com/chapters/
-  TYPE : book
 
 ARDUSAMBER TIME
   TYPE : image
@@ -2056,15 +721,8 @@ DASTIME
   TYPE : image
   TAGS : log, kor, arduino, celest
   FILE : 12018-07-04_dastime.jpg
-  NOTE : Self designed/built clock. Shows year, month, day and lunation visually from an overview perspective of Earth.
+  NOTE : Shows year, month, day and lunation visually from an overview perspective of Earth.
   LINK : https://github.com/kormyen/dastime
-
-VAN NERVOUS SYSTEM
-  TYPE : image
-  TAGS : log, kor, arduino
-  FILE : 12018-07-05_vns.jpg
-  NOTE : Power distribution unit of self built RV IoT system.
-  LINK : https://github.com/kormyen/VNS
 
 VIOLENCE
   PERS : somnius
@@ -2073,205 +731,42 @@ VIOLENCE
   TYPE : music
   DONE : true
 
-ANIMATION
-  DATE : 12018-07-22
-  TAGS : ux
-  TYPE : note
-  NOTE 
-    > For animations for productivity or frequent use:
-    & Translation of self (think rollercoaster) or desired targets (teasing, shifting hitboxes) that the user is not in control of (scrolling is OK) should be avoided.
-    - Subtle translation animation *out* is acceptable.
-    - Translation animation *in* of dense content is not desireable.
-    & eg: Horizontally sliding pages. Translate out and fade out the old content, fade in (no translate) the new content."
-
-BRAIN NARRATIVE
-  QOTE 
-    > "The human brain needs a narrative, even if that narrative is told through code."
-    > "Writing deletable code is writing good code."
-  LINK : https://kellysutton.com/2017/05/29/deletability.html
-  TYPE : article
-  DATE : 12018-07-22
-  TAGS : psychology
-
 AMOR FATI
-  DATE : 12018-07-22
+  DATE : 22E14
   LINK : https://en.wikipedia.org/wiki/Amor_fati
   TYPE : article
   TERM 
     > Amor fati: (lit. "love of fate") is a Latin phrase that may be translated as "love of fate" or "love of one's fate". It is used to describe an attitude in which one sees everything that happens in one's life, including suffering and loss, as good or, at the very least, necessary, in that they are among the facts of one's life and existence, so they are always necessarily there whether one likes them or not. Moreover, amor fati is characterized by an acceptance of the events or situations that occur in one's life.
   TAGS : philosophy
 
-CSS MASONRY
-  DATE : 12018-07-23
-  LINK : https://codeburst.io/how-to-the-masonry-layout-56f0fe0b19df
-  TYPE : article
-  TAGS : code, web
-
-THE LAST-BUT-ONE ?
-  DATE : 12018-07-23
-  PERS : alx
-  SRCE : Merveilles
-  LINK : https://qntm.org/question
-  TYPE : article
-  TAGS : fiction
-  NOTE : "It's a parody of the Issac Asimov story"
-
-DAILY LOG
-  DATE : 12018-07-23
-  LINK : https://github.com/zehfernandes/dailylog/tree/master/2018
-  TYPE : article
-  REVI : true
-  TAGS : productivity
-
-VIOLENT GAMES
-  DATE : 12018-07-23
-  LINK : http://www.cracked.com/podcast/why-everyone-wrong-about-violent-video-games-your-brain/
-  TYPE : podcast
-  TAGS : gamedev
-
-SEVEN YEAR SHIP
-  DATE : 12018-07-23
-  LINK : http://www.gamasutra.com/blogs/BenPorter/20180718/322277/How_to_take_7_years_to_ship_a_beta.php
-  TYPE : article
-  TAGS : gamedev
-
-ART OF MASTERING
-  DATE : 12018-07-23
-  LINK : https://www.ableton.com/en/blog/mandy-parnell-art-mastering/
-  TYPE : video
-  TAGS : audio
-
-WEB DIE
-  DATE : 12018-07-23
-  LINK : https://staltz.com/the-web-began-dying-in-2014-heres-how.html
-  TYPE : article
-  TAGS : web, philosophy
-
-THE FOUR
-  DATE : 12018-07-23
-  LINK : https://www.youtube.com/watch?v=GWBjUsmO-Lw
-  TYPE : video
-  TAGS : privacy
-
-MOSQUITOES
-  DATE : 12018-07-23
-  LINK : https://100r.co/blog.html#rainy_with_a_chance_of_mosquitoes
-  TYPE : article
-
-MORE DATA SIMPLE LOG
-  DATE : 12018-07-23
-  LINK : https://gist.github.com/neauoire/71f7f63038db0bf24302f44a31027294#file-hannah-md
-  TYPE : article
-  TAGS : productivity, neauoire
-  QOTE 
-    > The hardest thing about logging, is logging itself, and to keep doing it. Optimizing redundant logs, turning them into quick codes, like the fh/ch codes to generate the task/hour made this whole process a lot more fun. Giving instant feedback, through dataviz for instance, was excellent too.
-    > The biggest adjustment to my lifestyle, that I made recently, that yeilded the biggest difference, was to record more data. I've recently pushed this further, and started offloading almost all thought that goes through my mind at all time onto this digital paper. It has slowed time, helped me with focus and mindfulness.
-
-LOCAL IGNORE
-  DATE : 12018-07-23
-  LINK : https://medium.com/@igloude/git-skip-worktree-and-how-i-used-to-hate-config-files-e84a44a8c859
-  TYPE : code
-  SNIP : git update-index --skip-worktree
-  TAGS : git, code
-  NOTE : Local ignore changes to file
-
-TAILWIND
-  DATE : 12018-07-23
-  LINK : https://tailwindcss.com/docs/what-is-tailwind/
-  TYPE : tool
-  TAGS : code, web
-
 DAY EVAL
   LINK : https://medium.com/@NikitaVoloboev/day-evaluations-5706f31c9c5e
   TYPE : article
   TAGS : productivity
 
-SAPIENS
-  TYPE : book
-  NOTE : 'Sapiens: A Brief History of Humankind' - Yuval Noah Harari
-  PERS : faun
-  SRCE : Merveilles
-  DATE : 12018-07-18
-
-AESTHETICS
-  DATE : 12018-07-26
-  TYPE : video
-  PERS : theneko
-  SRCE : Merveilles
-  LINK : https://www.youtube.com/watch?v=HCHFjj_qr5Q
-  TAGS : design
-
-STAR TIGER
-  DATE : 12018-07-27
-  TYPE : image
-  FILE : 12018-07-27_starTiger.jpg
-  AUTH : Natalie Ruka
-  TAGS : inspiration, art, spirit, celest, sketch, bnw
-  LINK : https://twitter.com/natalieruka/status/890486936732921857
-
 TYPEFACE PAIRING
-  DATE : 12018-07-27
+  DATE : 22E14
   PERS : rutherford
   SRCE : Merveilles
   TYPE : article
   LINK : https://craze.co.uk/typeface+pairing
   TAGS : design
 
-DECISIONS
-  DATE : 12018-07-28
-  QOTE : 'Personal decisions are the leading cause of death'
-  TYPE : quote
-  LINK : https://pdfs.semanticscholar.org/375e/8c9e3df49a7962d12bb186a4ec7dc7d2b3ab.pdf
-  FILE : 12018-07-28_PersonalDecisionsAreTheLeading.pdf
-
-MICROMORT
-  DATE : 12018-07-28
-  TYPE : term
-  TERM 
-    > Micromort: 'a unit of risk defined as one-in-a-million chance of death.'
-  LINK : https://en.wikipedia.org/wiki/Micromort
-
-ARTISTS SOLD
-  DATE : 12018-07-28
-  TYPE : quote
-  QOTE 
-    > Alan Moore: “In latter times, I think that artists and writers have allowed themselves to be sold down the river. They have accepted the prevailing belief that art and writing are merely forms of entertainment. They are not seen as transformative forces that can change a human being, that can change a society. They are seen as simple entertainment. Things with which to fill 20 minutes, half an hour while we are waiting to die.
-    & It is not the job of artists to give the audience what the audience wants. If the audience knew what they needed then they wouldn’t be audience, they would be the artists. It is the job of artists to give the audience what they need.”
-  LINK : http://intellectual-thoughts.com/Alan%20Moore%20Quote.htm
-  TAGS : philosophy
-
-ELECTRON MEMORY
-  DATE : 12018-08-05
-  TYPE : article
-  LINK : http://seenaburns.com/debugging-electron-memory-usage/
-  PERS : nnkd
-  SRCE : Merveilles
-  PROJ : Memex
-
 ISOLATE
-  DATE : 12018-08-05
+  DATE : 22E14
   TYPE : tool
   LINK : https://github.com/seenaburns/isolate
   TAGS : gallery, masonry, web, code, inspiration
   PROJ : Memex
 
-CHEMICAL IMBALANCE
-  DATE : 12018-08-05
-  TYPE : article
-  LINK : https://www.anxietycentre.com/anxiety/chemical-imbalance.shtml
-  TAGS : psychology
-  PERS : Adam Strauss
-  SRCE : DTFH
-  DONE : true
-
 SSL EXPLAINED
-  DATE : 12018-08-05
+  DATE : 22E14
   TYPE : article
   LINK : http://seenaburns.com/archive/
   TAGS : code
 
 ON ICONS
-  DATE : 12018-08-05
+  DATE : 22E14
   TYPE : article
   LINK : https://ia.net/topics/on-icons
   PERS : rutherford
@@ -2279,24 +774,8 @@ ON ICONS
   TAGS : design
   SEEN : true
 
-TURBO
-  DATE : 12018-08-05
-  TYPE : term
-  TAGS : car
-  TERM
-    > Turbo: compressor forcing additional air into an engine to allow for increased fuel ignition and thus increased power output. A turbo has two halves, one is driven by the exhaust from the engine the other forces air into the engine. Negative 'turbo lag' time until the engine can provide enough exhaust to spin up the turbo compressor. 
-    > Supercharger: Like a turbo but instead of being driven by exhaust gas it is driven mechanically (belt to engine). Negative  Takes power/efficiency away from driving engine output in order to drive the compressor.
-    > Electic supercharger: fully electronically driven turbo (generally powered by a higher voltage (48v) seperate from car 12v). Negative  high electricity use.
-    > Electic turbo: a hybrid electric-assisted turbo (generally powered by a higher voltage (48v) seperate from car 12v) using a DC motor to start the turbo spinning sooner to remove turbo lag or at low revs when not enough exhaust to produced. Once the engine is providing enough exhaust to spin the turbo the motor will stop output. It can also be a seperate electric supercharger working in conjunction with a standard turbo. Negative complexity.
-
-ELECTRON IPC
-  DATE : 12018-08-06
-  LINK : https://ourcodeworld.com/articles/read/537/how-to-execute-a-function-of-the-main-process-inside-the-renderer-process-in-electron-framework
-  PROJ : Memex
-  TAGS : web, code
-
 IROHA
-  DATE : 12018-08-06
+  DATE : 22E14
   PERS : james
   SRCE : Merveilles
   TYPE : quote
@@ -2312,7 +791,7 @@ IROHA
   LINK : http://rendakud.tumblr.com/post/156991025541/iroha-poem
 
 THE WAY
-  DATE : 12018-08-06
+  DATE : 22E14
   PERS : ypm
   SRCE : Merveilles
   TYPE : quote
@@ -2326,131 +805,51 @@ THE WAY
   LINK : http://peacefulrivers.homestead.com/laotzu.html
   SEEN : true
 
-COMMON GROUND
-  DATE : 12018-08-09
-  TYPE : podcast
-  LINK : http://rationallyspeakingpodcast.org/show/rs-214-anthony-aguirre-on-predicting-the-future-of-science-a.html
-  QOTE 
-    > "When we're exchanging individual sound bites or one paragraph arguments it's really easy to find ways to disagree with people and have lots of contention where as if you take the time to sort of engage in a little bit more a full way with a book or with a person or with multi paragraphs - the common ground is there if you look for it at all... I think looking for that common ground and then working your way back from there to see... now that we have that common ground where are the places that we disagree and can we identify why? Its just a so much more pleasent way of interacting with different ideas and different people than... saying OK my premise is that they think this and I think that and so we are in disagreement, now how am I going to defend my point of view..." - Anthony Aguirre on Rationally Speaking podcast #214 @ 44:30+
-  SEEN : true
-
-CLEAR TAMEI
-  DATE : 12018-08-09
-  LINK : https://iglooghost.bandcamp.com/album/clear-tamei
-  TYPE : music
-  SEEN : true
-
-STEEL MOGU
-  DATE : 12018-08-09
-  LINK : https://iglooghost.bandcamp.com/album/steel-mogu
-  TYPE : music
-  SEEN : false
-
-WATER WARS
-  DATE : 12018-08-09
-  PERS : neauoire
-  SRCE : Merveilles
-  LINK : https://www.thenation.com/article/the-future-of-climate-change-is-widespread-civil-war/
-  TYPE : article
-  SEEN : true
-  TAGS : env
-
-BROWSER TIMELINE
-  DATE : 12018-08-09
-  PERS : neauoire
-  SRCE : Merveilles
-  LINK : https://en.wikipedia.org/wiki/Timeline_of_web_browsers
-  TYPE : article
-  TAGS : web
-
-DARPA WEB
-  DATE : 12018-08-09
-  PERS : neauoire
-  SRCE : Merveilles
-  LINK : https://medium.com/@giacomo_59737/the-web-is-still-a-darpa-weapon-31e3c3b032b8
-  TYPE : article
-  TAGS : web
-
-DWEB SSB SOCIAL FEED
-  DATE : 12018-08-10
-  TYPE : article
-  LINK : https://hacks.mozilla.org/2018/08/dweb-social-feeds-with-secure-scuttlebutt/
-  PERS : Andre Staltz
-  SRCE : Twitter
-  TAGS : web, code
-
 FLORAL DIAGRAM GEN
-  DATE : 12018-08-10
+  DATE : 22E14
   TYPE : tool
   LINK : http://kvetnidiagram.8u.cz/index_en.php?tvarokv=1&amp;napodobap=1&amp;nuhelnikokv=7&amp;posunokv=0&amp;tvarkal=1&amp;napodobak=2&amp;nuhelnikkal=6&amp;posunkal=0&amp;tvarkor=1&amp;napodobac=3&amp;nuhelnikkor=5&amp;posunkor=36&amp;nuhelniklis=1&amp;stonek=1&amp;listence=1&amp;srpro=1&amp;priblizpro=&amp;nektaria=&amp;styl=0&amp;osy=&amp;posunosy=&amp;cba=1&amp;barvaokv=ora&amp;barvakal=zel&amp;barvatyc=zlu&amp;barvanek=zlz&amp;nuhelniktyc=4&amp;posuntyc=&amp;tvartyc=1&amp;upravytyc=&amp;upravytycs=&amp;srpes=0&amp;nuhelnikpes=3&amp;posunpes=&amp;tvarpes=10&amp;plosrust=2&amp;pespoloha=1&amp;pesvaj=1&amp;tvarvaj=0&amp;vernaceokv=1&amp;vernacekal=1&amp;vernacekor=1&amp;vernacekor2=1&amp;mezeryokv=1&amp;mezerykal=1&amp;mezerykor=1&amp;mezerykor2=1&amp;mezerylis=1&amp;aa=submit+form&amp;vzorec=P7+K6+C5+A4+_G%283%29
   PERS : cinnamon
   SRCE : Merveilles
   SEEN : true
 
-XINGTIAN
-  DATE : 12018-08-10
-  TYPE : article
-  LINK : https://en.m.wikipedia.org/wiki/Xingtian
-  PERS : changbai
-  SRCE : Merveilles
-
 NISSE
-  DATE : 12018-08-10
+  DATE : 22E14
   TYPE : article
   LINK : https://en.wikipedia.org/wiki/Nisse_(folklore)
   PERS : dormin
   SRCE : Merveilles
 
 SKOGSRA
-  DATE : 12018-08-10
+  DATE : 22E14
   TYPE : article
   LINK : https://en.wikipedia.org/wiki/Skogsr%C3%A5
   PERS : dormin
   SRCE : Merveilles
 
 JAPANESE CREATURES
-  DATE : 12018-08-10
+  DATE : 22E14
   TYPE : list
   LINK : https://en.wikipedia.org/wiki/List_of_legendary_creatures_from_Japan
   PERS : josh
   SRCE : Merveilles
 
 NECK
-  DATE : 12018-08-10
+  DATE : 22E14
   TYPE : article
   LINK : https://en.wikipedia.org/wiki/Neck_(water_spirit)#N%C3%A4ck,_N%C3%B8kk
   PERS : dormin
   SRCE : Merveilles
 
-SMALL SCREEN UX
-  DATE : 12018-08-10
-  TYPE : article
-  LINK : https://medium.com/dropbox-design/fostering-focus-for-small-screens-34a9f338668c
-  PROJ : Memex
-  TAGS : ux, design, web
-
-ZCCOUNT MANIFESTO
-  DATE : 12018-08-10
-  TYPE : article
-  LINK : https://tilde.team/~aewens/manifesto/
-  TAGS : web, code
-
 BUSY DISEASE
-  DATE : 12018-08-10
+  DATE : 22E14
   TYPE : article
   LINK : https://onbeing.org/blog/the-disease-of-being-busy/
   PERS : ypm
   SRCE : Merveilles
 
-HITFILM EXPRESS
-  DATE : 12018-08-10
-  TYPE : tool
-  LINK : https://fxhome.com/express
-  TAGS : video, software
-  NOTE : Free video editor like Premier or iMovie
-
 PARADICHLORISSE
-  DATE : 12018-08-10
+  DATE : 22E14
   TYPE : article
   LINK : https://wiki.xxiivv.com/#paradichlorisse
   PERS : neauoire
@@ -2458,61 +857,34 @@ PARADICHLORISSE
   TAGS : inspiration
 
 NEAUSEA
-  DATE : 12018-08-10
+  DATE : 22E14
   TYPE : article
   LINK : https://wiki.xxiivv.com/#neausea
   PERS : neauoire
   SRCE : Merveilles
   TAGS : inspiration
 
-FRATH
-  DATE : 12018-08-10
-  TYPE : list
-  LINK : http://www.frathwiki.com/Main_Page
-  PERS : neauoire
-  SRCE : Merveilles
-  TAGS : conlang, conworld
-
-SIXTH MASS EXTINCTION
-  DATE : 12018-08-10
-  TYPE : article
-  LINK : http://advances.sciencemag.org/content/1/5/e1400253.full
-  PERS : neauoire
-  SRCE : Merveilless
-  TAGS : env
-
-WHATS WARMING
-  DATE : 12018-08-10
-  TYPE : article
-  LINK : https://www.bloomberg.com/graphics/2015-whats-warming-the-world/
-  TAGS : env
-
 NOTATION AND THOUGHT
-  DATE : 12018-08-10
+  DATE : 22E14
   TYPE : article
   LINK : https://github.com/hypotext/notation
   TAGS : psychology
 
-PROBLEM SOLVE CRAYON
-  DATE : 12018-08-10
-  TYPE : article
-  LINK : https://www.lesswrong.com/posts/CPBmbgYZpsGqkiz2R/problem-solving-with-mazes-and-crayon
-
 MYST TWO HISTORY
-  DATE : 12018-08-10
+  DATE : 22E14
   TYPE : article
   LINK : https://medium.com/picking-up-the-pieces/two-histories-of-myst-8b37e1504f9e
   TAGS : game
 
 GOOD GOALS
-  DATE : 12018-08-10
+  DATE : 22E14
   TYPE : article
   LINK : https://medium.com/@Marianattestad/set-goals-you-have-complete-control-over-71cbf440cd1f
   QOTE 
     > "Setgoals you have complete control over"
 
 SIGNAL SECURITY
-  DATE : 12018-08-10
+  DATE : 22E14
   TAGS : privacy, security, code
   TYPE : article
   PERS : alx
@@ -2523,15 +895,9 @@ SIGNAL SECURITY
     > "Truly secure systems don’t require trust."
     > "If you can put together an argument which on the surface appears reasonable, but requires in-depth discussion to debunk, passerby will be reassured that your position is correct, and that the dissenters are just trolls. They won’t have time to read the lengthy discussion which demonstrates that your conclusions wrong, especially if you draw the discussion out like Moxie does. It can be hard to distinguish these from genuine positions held by the person you’re talking to, but when it conveniently allows them to make self-serving plays, it’s a big red flag."
 
-COMMON GROUND UP
-  DATE : 12018-08-11
-  QOTE : "When we're exchanging individual sound bites or one paragraph arguments it's really easy to find ways to disagree with people and have lots of contention where as if you take the time to sort of engage in a little bit more a full way with a book or with a person or with multi paragraphs - the common ground is there if you look for it at all... I think looking for that common ground and then working your way back from there to see... *now that we have that common ground where are the places that we disagree and can we identify why?* Its just a so much more pleasent way of interacting with different ideas and different people than... saying OK my premise is that they think this and I think that and so we are in disagreement, now how am I going to defend my point of view..." - Anthony Aguirre
-  LINK : http://rationallyspeakingpodcast.org/show/rs-214-anthony-aguirre-on-predicting-the-future-of-science-a.html
-  NOTE : Anthony Aguirre on Rationally Speaking podcast #214 @ 44:30+
-
 MEDITATION CLASS
   AUTH : DTFH
-  DATE : 12018-08-11
+  DATE : 22E14
   TAGS : psychology, spirit
   TERM 
     > Middle Way: "the middle way of moderation, between the extremes of sensual indulgence and self-mortification"
@@ -2542,46 +908,6 @@ MEDITATION CLASS
   TYPE : term
   NOTE : Centered and deep. Softened not dulled.
 
-ITS JUST GONE
-  AUTH : No Cartridge
-  DATE : 12018-08-11
-  TAGS : gamedev, game
-  NOTE : Demon's Souls with Scott Benson
-  TYPE : podcast
-  LINK : https://www.no-cartridge.net/episode-81-its-just-gone-demons-souls-with-scott-benson
-
-FAKE FRIENDS
-  AUTH : Shannon Strucci
-  DATE : 12018-08-13
-  PERS : theneko
-  SRCE : Merveilles
-  LINK : https://www.youtube.com/watch?v=KLA-uFKjQ-g
-  TAGS : psychology
-
-FLEXBOX GUIDE
-  DATE : 12018-08-13
-  TAGS : code, web
-  LINK : https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-  TYPE : article
-
-FLEXBOX HELP
-  DATE : 12018-08-13
-  TAGS : code, web
-  LINK : http://the-echoplex.net/flexyboxes/
-  TYPE : tool
-
-EXOCORTEX
-  DATE : 12018-08-13
-  TYPE : term
-  PERS : cblgh
-  SRCE : SSB
-  LINK : https://ipfs.io/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Exocortex.html
-  TERM 
-    > Exocortex: "An exocortex is a hypothetical artificial external information processing system that would augment a brain's biological high-level cognitive processes.
-    & An individual's exocortex would be composed of external memory modules, processors, IO devices and software systems that would interact with, and augment, a person's biological brain. Typically this interaction is described as being conducted through a direct brain–computer interface, making these extensions functionally part of the individual's mind.
-    & Individuals with significant exocortices could be classified as cyborgs or posthumans."
-  PROJ : Memex
-
 V OS LOG
   AUTH : Victor Ivanov
   DATE : 12018-08-13
@@ -2591,16 +917,9 @@ V OS LOG
   PERS : vi
   SRCE : Merveilles
 
-JOSH'S LOG
-  AUTH : Josh Avanier
-  DATE : 12018-08-13
-  LINK : https://github.com/joshavanier/log
-  TAGS : inspiration, tracking
-  TYPE : tool
-
 HORAIRE
   AUTH : Devine Lu Linvega 
-  DATE : 12018-08-13
+  DATE : 22E14
   LINK : https://wiki.xxiivv.com/#horaire
   TAGS : inspiration, tracking, neauoire
   TYPE : tool
@@ -2625,43 +944,18 @@ HORAIRE
   SEEN : true
 
 OPEN DESK
-  DATE : 12018-08-15
+  DATE : 22E14
   PERS : Jono Shields
   SRCE : Hakland
   LINK : https://www.opendesk.cc/
   SEEN : true
 
 100:10:1
-  DATE : 12018-08-15
+  DATE : 22E14
   PERS : neauoire
   SRCE : Merveilles
   LINK : http://blog.fogus.me/2015/11/04/the-100101-method-my-approach-to-open-source/
   TAGS : philosophy, code
-
-SNORT
-  DATE : 12018-08-15
-  LINK : https://www.snort.org
-  TYPE : tool
-  TAGS : security, code, net
-  SEEN : true
-
-WALKAWAY
-  DATE : 12018-08-17
-  AUTH : Cory Doctorow
-  PERS : cinnamon
-  SRCE : Merveilles
-  TYPE : podcast
-  SEEN : true
-  LINK : https://thefinalstrawradio.noblogs.org/post/2018/05/27/cory-doctorow-walkaway/
-  QOTE : "There are no atheists in a foxhole" like "its hard to be authoritarian on the internet"
-  TAGS : philosophy, politics, code
-
-TOKI PONA
-  DATE : 12018-08-17
-  PERS : stephen
-  SRCE : Merveilles
-  TYPE : tool
-  LINK : https://tokipona.org/
 
 P2P RESOURCES
   LINK : https://p2pforever.org/
@@ -2670,64 +964,8 @@ P2P RESOURCES
   SRCE : Cabal
   TAGS : p2p, code
 
-ISAAC ARTHUR
-  DATE : 12018-08-17
-  LINK : https://www.youtube.com/channel/UCZFipeZtQM5CKUjx6grh54g
-  TYPE : video
-  TAGS : inspiration, future, space 
-
-HOW TO BE HAPPY
-  DATE : 12018-08-17
-  TYPE : podcast
-  TERM : Hygge: (Hoo-gah) "The Danish Art of Cosiness" "In essence, hygge means creating a warm atmosphere and enjoying the good things in life with good people. The warm glow of candlelight is hygge. Cosying up with a loved one for a movie – that’s hygge, too. And there's nothing more hygge than sitting around with friends and family, discussing the big and small things in life."
-  LINK : http://freakonomics.com/podcast/happiness/
-  TAGS : politics, psychology
-
-CRYPTOSTORM VPN
-  DATE : 12018-08-18
-  LINK : https://cryptostorm.is/
-  TYPE : tool
-  TAGS : security
-
-RAMATREE VANLIFE SISTERS
-  DATE : 12018-08-18
-  TAGS : inspiration, vanlife, hygge, love
-  AUTH : RamaTree
-  LINK : https://www.youtube.com/watch?v=0Xcpqq1zSP4
-  TYPE : video
-
-PARTICLE MESH
-  DATE : 12018-08-19
-  LINK : https://www.particle.io/mesh/
-  TYPE : tool
-  TAGS : iot, hardware
-
-RUN DMC ON HIP HOP
-  DATE : 12018-08-19
-  LINK : https://www.youtube.com/watch?v=QPRmFJ_U8Ug
-  TYPE : video
-  TAGS : inspiration
-  
-OH SHIT GIT
-  DATE : 12018-08-20
-  LINK : http://ohshitgit.com/
-  TYPE : tool
-  TAGS : code, git
-
-NOTE BEST PRACTICES
-  DATE : 12018-08-20
-  LINK : https://github.com/i0natan/nodebestpractices
-  TYPE : list
-  TAGS : code
-
-JAVASCRIPT TALKS
-  DATE : 12018-08-20
-  LINK : https://github.com/AllThingsSmitty/must-watch-javascript
-  TYPE : list
-  TAGS : code
-
 THE HANDMAID'S TALE
-  DATE : 12018-08-20
+  DATE : 22E14
   PERS : neauoire
   SRCE : Merveilles
   DONE : false
@@ -2735,55 +973,9 @@ THE HANDMAID'S TALE
   TAGS : psychology, politics, inspiration
   AUTH : Margaret Atwood
   FILE : 12018-08-21_MargaretAtwood-TheHandmaidsTale.mobi
-
-THE HANDMAID'S Tale
-  DATE : 12018-08-20
-  PERS : neauoire
-  SRCE : Merveilles
-  DONE : false
-  TYPE : book
-  TAGS : psychology, politics, inspiration
-  AUTH : Margaret Atwood
-  FILE : 12018-08-21_MargaretAtwood-TheHandmaidsTale.mobi
-
-INFINITE JEST
-  DATE : 12018-08-20
-  PERS : neauoire
-  SRCE : Merveilles
-  DONE : false
-  TYPE : book
-  TAGS : psychology, politics, inspiration
-  AUTH : David Foster Wallace
-  FILE : 12018-08-21_DavidFosterWallace-InfiniteJest.mobi
-
-BEST PRACTICES
-  DATE : 12018-08-21
-  NOTE : "Tidbits of developer best practices from around the web "
-  LINK : https://github.com/timoxley/best-practices
-  DONE : true
-  TAGS : code, inspiration
-  TYPE : list
-
-THE ELEMENTS OF STYLE
-  DATE : 12018-08-21
-  TYPE : book
-  LINK : https://en.wikipedia.org/wiki/The_Elements_of_Style
-  TAGS : inspiration, design
-
-MURRAY BOOKCHIN
-  DATE : 12018-08-21
-  TYPE : article
-  LINK : https://en.wikipedia.org/wiki/Murray_Bookchin
-  AUTH : Murray Bookchin
-  TAGS : inspiration, design, politics
-  NOTE 
-    > "A pioneer in the ecology movement,[4] Bookchin formulated and developed the theory of social ecology and urban planning, within anarchist, libertarian socialist, and ecological thought. He was the author of two dozen books covering topics in politics, philosophy, history, urban affairs, and ecology. Among the most important were Our Synthetic Environment (1962), Post-Scarcity Anarchism (1971), The Ecology of Freedom (1982) and Urbanization Without Cities (1987). In the late-1990s he became disenchanted with the increasingly apolitical lifestylism of the contemporary anarchist movement, stopped referring to himself as an anarchist, and founded his own libertarian socialist ideology called Communalism."
-    > "...a prominent anti-capitalist and advocate of society's decentralisation along ecological and democratic lines."
-  TERM 
-    > Communalism: "a theory of government or a system of government in which independent communes participate in a federation", "the principles and practice of communal ownership."
 
 HYPERCOGNITION
-  DATE : 12018-08-21
+  DATE : 22E14
   PERS : alx
   SRCE : Merveilles
   NOTE : "What is hypocognition? If you don’t know, you’ve just experienced it."
@@ -2792,28 +984,8 @@ HYPERCOGNITION
   TERM 
     > Hypocognition: a term introduced to modern behavioral science by anthropologist Robert Levy, means the lack of a linguistic or cognitive representation for an object, category, or idea. The Martinique islanders were hypocognitive because they lacked a cognitive representation of refrigeration. But so are we hypocognitive of the numerous concepts that elude our awareness. We wander about the unknown terrains of life as novices more often than experts, complacent of what we know and oblivious to what we miss.
 
-FRONT END DEV THOUGHTS
-  DATE : 12018-08-21
-  PERS : jim
-  SRCE : Merveilles
-  LINK : https://reading.supply/@jim/thoughts-about-front-end-development-2WwhaP
-  DONE : true
-  TAGS : code
-
-CSS WHAT USE
-  DATE : 12018-08-21
-  LINK : http://clubmate.fi/oocss-acss-bem-smacss-what-are-they-what-should-i-use/
-  PERS : jim
-  SRCE : Merveilles
-  TYPE : article
-  TAGS : code, web
-  NOTE 
-    > Object Oriented CSS (OOCSS)
-    & Bad: ul li.list-item { ... }
-    & Good: .list-item { ... }
-
 CELESTIAL NAVIGATION
-  DATE : 12018-08-21
+  DATE : 22E14
   TAGS : boat, env, celest
   NOTE 
     > 'Celestial Navigation in the GPS age'
@@ -2823,7 +995,7 @@ CELESTIAL NAVIGATION
   TYPE : book
 
 EMERGENCY NAVIGATION
-  DATE : 12018-08-21
+  DATE : 22E14
   TYPE : book
   TAGS : boat, env
   NOTE 
@@ -2832,33 +1004,24 @@ EMERGENCY NAVIGATION
   AUTH : David Burch
 
 OUTGUESS
-  DATE : 12018-08-22
+  DATE : 22E14
   LINK : https://web.archive.org/web/20140629194046/http://www.outguess.org/
   TYPE : tool
   TERM 
     > Steganography: "is the practice of concealing a file, message, image, or video within another file, message, image, or video. The word steganography combines the Greek words steganos (στεγανός), meaning covered, concealed, or protected, and graphein (γράφειν) meaning writing."
 
-META KNOWLEDGE
-  DATE : 12018-08-22
-  PERS : neauiore
-  SRCE : Github
-  LINK : https://github.com/RichardLitt/meta-knowledge
-  TYPE : encyclopedia
-  TAGS : inspiration, history, psychology, science, ai, code, env
-  REVI : true
-
 CYBERIAD
-  DATE : 12018-08-26
+  DATE : 22E14
   TYPE : book
   NOTE : Cyberiad 
   PERS : neauoire
   SRCE : Merveilles
   QOTE 
-    > "it's a bit like douglas adams humour. it's the story of 2 scientists making machines. it's told in super abrupt format, every chapter is like 3-4 pages long. it made me laugh out loud a few times. like the first story, to give you an idea, is like, one of the scientist makes a machne that can create anything that starts with the letter n."
+    > "it's a bit like douglas adams humour. it's the story of 2 scientists making machines. it's told in super abrupt format, every chapter is like 3-4 pages long. it made me laugh out loud a few times. like the first story, to give you an idea, is like, one of the scientist makes a machine that can create anything that starts with the letter n."
     > "I love that chapter in the cyberiad about the armies that became too smart to fight became philosophers and pondered on the concept itself of "enemies" and went off to pick daisies instead"
 
 STAR DIARIES
-  DATE : 12018-08-26
+  DATE : 122E14
   TYPE : book
   NOTE : The Star Diaries
   PERS : alx
@@ -2869,16 +1032,8 @@ STAR DIARIES
     & where the one society makes moral laws physical
     & so if you say, try to hurt another person, the nanobots in the air simply make the air thicker so that you can't"
 
-MERMAID TAVERN
-  DATE : 12018-08-27
-  QOTE : London tavern where famous writers hung out in Shakespare's time. Like the 'White Horse Tavern' in NYC. 38:00ish
-  LINK : https://jrelibrary.com/1158-chuck-palahniuk/
-  AUTH : Chuck Palahniuk
-  TYPE : term
-  NOTE : Novelist Fight Club, Choke, Lullaby.
-
 P2P LINKS
-  DATE : 12018-08-31
+  DATE : 22E14
   LINK : https://docs.google.com/spreadsheets/d/1LFbflHSdTLqCDc0fio10cVKuuMQdG9qPJ4B7nmpIH5M/edit#gid=0
   TYPE : list
   PERS : zelf
@@ -2886,39 +1041,14 @@ P2P LINKS
   TAGS : p2p, philosophy
   REVI : true
 
-CRYPTOSPHERE PHILOSOPHY
-  DATE : 12018-08-31
-  LINK : https://github.com/cryptosphere/cryptosphere/wiki/Philosophy
-  TYPE : article
-  PERS : zelf
-  SRCE : SSB
-  TAGS : p2p, philosophy
-
-STRUCURELESSNESS TYRANNY
-  DATE : 12018-08-31
-  LINK : http://struggle.ws/pdfs/tyranny.pdf
-  TYPE : article
-  PERS : zelf
-  SRCE : SSB
-  TAGS : p2p, philosophy
-  FILE : 12018-08-31_tyranny.pdf
-
 SOLAR ORNAMENTING
-  DATE : 12018-08-31
+  DATE : 22E14
   LINK : https://www.e-flux.com/architecture/positions/191258/is-ornamenting-solar-panels-a-crime/
   TYPE : article
   TAGS : solarpunk
 
-LIFE OUTSIDE
-  DATE : 12018-08-31
-  LINK : http://syzygyzip.tumblr.com/post/177468735390/life-outside-the-settlement
-  TYPE : article
-  PERS : theneko
-  SRCE : Merveilles
-  TAGS : gamedev, game, dark souls
-
 SUNBEAM CITY
-  DATE : 12018-08-31
+  DATE : 22E14
   PERS : neauoire
   SRCE : Merveilles
   LINK : http://solarpunk.sunbeam.city/
@@ -2934,17 +1064,11 @@ SUNBEAM CITY
     - A recognition that economic, social, and ecological injustices are all deeply inter-connected.
 
 SUSPIRIA 2018
-  DATE : 12018-08-31
+  DATE : 22E14
   TYPE : video
 
-RIGHT TO FOOD
-  DATE : 12018-08-31
-  LINK : https://www.righttofood.org/
-  PERS : pcell
-  SRCE : Merveilles
-
 SOLARPUNK NOTES
-  DATE : 12018-08-31
+  DATE : 22E14
   LINK : https://hieroglyph.asu.edu/2014/09/Solarpunk-notes-toward-a-manifesto/
   PERS : neauoire
   SRCE : Merveilles
@@ -2952,32 +1076,15 @@ SOLARPUNK NOTES
   TYPE : article
 
 TATAMI GALAXY
-  DATE : 12018-08-31
+  DATE : 22E14
   LINK : https://en.wikipedia.org/wiki/The_Tatami_Galaxy
   PERS : neauoire
   SRCE : Merveilles
   TYPE : video
   NOTE : Allan Xia
 
-THIRTY MILLION LINE
-  DATE : 12018-08-31
-  LINK : https://www.youtube.com/watch?v=kZRE7HIO3vk
-  PERS : cancel
-  SRCE : Merveilles
-  TYPE : video
-  TAGS : code
-  NOTE : "A historical argument for creating a stable instruction set architecture (ISA) for entire system-on-a-chip (SoC) packages."
-
-ANTI-WEB-DESIGN
-  DATE : 12018-08-31
-  LINK : http://brandon.invergo.net/news/2013-03-10-Anti-web-design-Manifesto.html
-  PERS : nownpl
-  SRCE : Merveilles
-  TYPE : article
-  TAGS : code, web
-
 LEAN SOFTWARE
-  DATE : 12018-08-31
+  DATE : 22E14
   LINK : https://cr.yp.to/bib/1995/wirth.pdf
   PERS : neauoire
   SRCE : Merveilles
@@ -2986,21 +1093,15 @@ LEAN SOFTWARE
   TAGS : code
 
 MINIMAL MANIFESTO
-  DATE : 12018-08-31
+  DATE : 22E14
   LINK : https://lobste.rs/s/uptc4y/manifesto_for_minimalist_software
   TYPE : article
   TAGS : code, web
   PERS : neauoire
   SRCE : Merveilles
 
-ISEKAI
-  DATE : 12018-08-31
-  TYPE : term
-  TERM
-    > Isekai: (Japanese "different world") "a subgenre of Japanese fantasy light novels, manga, anime, and video games revolving around a normal person being transported to or trapped in a parallel universe. Often, this universe already exists in the protagonist's world as a fictional universe, but it may also be unbeknownst to them. The new universe can be an entirely different world where only the protagonist has any memory of their former life, as in Saga of Tanya the Evil or one where they reincarnate in. It may also be one where a formerly virtual world turns into a real one, such as in Log Horizon and Overlord."
-
 DREAM
-  DATE : 12018-09-01
+  DATE : 22E14
   TYPE : quote
   QOTE 
     > "All men dream; but not equally.
@@ -3014,54 +1115,37 @@ DREAM
 
 BILLIONS
   TYPE : quote
-  DATE : 12018-09-01
+  DATE : 22E14
   QOTE : “This is a present from a small distant world, a token of our sounds, our science, our images, our music, out thoughts and our feelings. We are attempting to survive our time so we may live into yours. We hope someday, having solved the problems we face, to join a community of galactic civilizations. This record represents our hope and our determination, and our good will in a vast and awesome universe.”
 
-CIVIL OBEDIENCE PROBLEM
-  AUTH : Howard Zinn
-  TYPE : quote
-  DATE : 12018-09-01
-  LINK : https://vimeo.com/48834336
-  QOTE : “… to establish the principles of the Declaration of Independence, we are going to need to go outside the law, to stop obeying the laws that demand killing or that allocate wealth the way it has been done, or that put people in jail for petty technical offences and keep other people out of jail for enormous crimes…”
-
 DIGITAL FIRES
-  DATE : 12018-09-01
+  DATE : 22E14
   TYPE : quote
   AUTH : Phil James
   QOTE : "...our small digital fires we keep alight at night."
 
 MARBLE
-  DATE : 12018-09-01
+  DATE : 22E14
   TYPE : quote
   QOTE : "As we got farther and farther away, the Earth diminished in size. Finally it shrank to the size of a marble, the most beauitful marble you can imagine... seeing this has to change a man."
   AUTH : James Irwin
   NOTE : Apollo 15
 
 DEATH OF AWE
-  DATE : 12018-09-04
+  DATE : 22E14
   TYPE : quote
   LINK : https://www.vice.com/en_us/article/9bg9x5/the-death-of-awe-in-the-age-of-awesome-394
   QOTE : "As spirituality wanes, experience is the new faith and we are refuges from the mundane."
 
-AESTHETIC CONTEMPLATION
-  DATE : 12018-09-04
-  TYPE : quote
-  QOTE : “For a transitory enchanted moment man must have held his breath in the presence of this continent, compelled into an aesthetic contemplation he neither understood nor desired, face to face for the last time in history with something commensurate to his capacity for wonder.”
-
-UNENCUMBERED
-  DATE : 12018-09-04
-  TYPE : quote
-  QOTE : "this sense of first sight unencumbered by knowingness"
-
 SOUND OF ICE
-  DATE : 12018-09-05
+  DATE : 22E14
   TYPE : video
   TAGS : inspiration, hygge, nature
   AUTH : Jonna Jinton
   LINK : https://www.youtube.com/watch?v=YYAS6Dwz0II
 
 POMEGRANATES COLOR
-  DATE : 12018-09-06
+  DATE : 22E14
   TYPE : video
   LINK : https://www.youtube.com/watch?v=8MXjUf05HVE
   QOTE
@@ -3070,48 +1154,28 @@ POMEGRANATES COLOR
     > "There is always a new way to see."
 
 IKIGAI
-  DATE : 12018-09-06
+  DATE : 22E14
   TYPE : term
   TERM
     > Ikigai: "A Japanese concept meaning 'a reason for being'"
   FILE : 12018-09-06_ikigai.jpg
 
-MAGICIAN
-  DATE : 12018-09-08
-  TYPE : quote, video
-  LINK : https://www.youtube.com/watch?v=4unDD4OUUNQ
-  QOTE : "We often mistakenly think that we are very different from our ancient ancestors, with our great knowledge and our amazing technology. But the origins of our knowledge and technology lie in the minds of men like the old Aborigine. He, and all those like him in tribal and ancient societies were accessing the magician energy."
-  AUTH : Moore & Gillette
-
 CLOUD ATLAS
-  DATE : 12018-09-08
+  DATE : 22E14
   TYPE : quote, video, book
   QOTE : "Our lives are not our own. We are bound to others, past and present, and by each crime and every kindness, we birth our future"
   AUTH : David Mitchell
 
 THROUGH THE HEART
-  DATE : 12018-09-08
+  DATE : 22E14
   AUTH : Aleksandr Solzhenitsyn
   TYPE : quote
   QOTE 
     > “If only it were all so simple! If only there were evil people somewhere insidiously committing evil deeds, and it were necessary only to separate them from the rest of us and destroy them. But the line dividing good and evil cuts through the heart of every human being. And who is willing to destroy a piece of his own heart?”
     & "During the life of any heart this line keeps changing place; sometimes it is squeezed one way by exuberant evil and sometimes it shifts to allow enough space for good to flourish. One and the same human being is, at various ages, under various circumstances, a totally different human being. At times he is close to being a devil, at times to sainthood. But his name doesn't change, and to that name we ascribe the whole lot, good and evil."
 
-BEAUTY ENTHUSE, WORK RAISE
-  TYPE : quote
-  DATE : 12018-09-08
-  AUTH : Cyprian Norwid
-  QOTE : "Beauty is to enthuse us for work, and work is to raise us up"
-  
-BEAUTY SAVE
-  TYPE : quote
-  DATE : 12018-09-08
-  AUTH : Aleksandr Solzhenitsyn
-  QOTE : "Beauty will save the world"
-  LINK : https://www.youtube.com/watch?v=LwLP62fL83k
-
 GOLDEN MEAN
-  DATE : 12018-09-08
+  DATE : 22E14
   AUTH : Aristotle
   TAGS : philosphy
   TYPE : term
@@ -3119,46 +1183,14 @@ GOLDEN MEAN
     > Golden Mean: the desirable middle between two extremes, one of excess (recklessness) and the other of deficiency (cowardice).
 
 READER DEATH
-  DATE : 12018-09-08
+  DATE : 22E14
   AUTH : Roland Barthes
   QOTE : "a text's unity lies not in its origin but in its destination."
 
-GEO-CENTROID PYRAMID
-  DATE : 12018-09-08
-  LINK : https://en.wikipedia.org/wiki/Geographical_centre_of_Earth
-  TYPE : article
-  QOTE : "...knowledge of the Great Pyramid being the geographical centre was 'determined by many years of scientific investigation' and that the Great Pyramid was likely to be the "last of the present land surface of the earth" to survive a cataclysmic event, due to its positioning."
-  TAGS : pyramid, env
-  PROJ : Dastime
-
-MONEY SUPPLY
-  DATE : 12018-09-10
-  TYPE : quote
-  QOTE 
-    > Nathan Mayer Rothschild: "I care not what puppet is placed upon the throne of England to rule the Empire on which the sun never sets.
-    & "The man who controls Britain's money supply controls the British Empire, and I control the British money supply."
-  AUTH : 
-    > Mayer Amschel Rothschild: "Permit me to issue and control the money of a nation, and I care not who makes its laws."
-
 CONVENTIONAL MINDS
-  DATE : 12018-09-10
+  DATE : 22E14
   QOTE 
     > John Anthony West: "Few things in this world are more predictable that the reaction of conventional minds to unconventional ideas."
-
-CRYPTO VOXELS
-  DATE : 12018-09-10
-  TYPE : game
-  LINK : https://www.cryptovoxels.com/play?coords=NE@53E,31S
-
-PROGRAMMING TALKS
-  TYPE : list
-  DATE : 12018-09-10
-  LINK : https://github.com/hellerve/programming-talks
-
-JAVASCRIPT
-  DATE : 12018-09-10
-  SNIP
-    > call(): allows for a function/method belonging to one object to be assigned and called for a different object
 
 DENIAL OR DESPAIR ALTERNATIVE
   QOTE : "We’re Solarpunks because the only other options are denial or despair."
@@ -3166,7 +1198,7 @@ DENIAL OR DESPAIR ALTERNATIVE
   TYPE : quote
 
 IMPLOSION VS EXPLOSION
-  DATE : 12018-09-12
+  DATE : 22E14
   PROJ : Megamex
   NOTE
     > Implosion
@@ -3259,35 +1291,11 @@ FEAR STILL
 LEARN ALL THE TIME
   QOTE : "I think a life properly lived is just learn, learn, learn all the time." - Charlie Munger
 
-FLINTKNAPPING
-  TYPE : term
-  TERM 
-    > flintknapping: the process of chipping away material from high silica stones like "flint" in a carefully controlled manner with special tools to produce sharp projectile points or tools. 
-  PROJ : Megamex
-
-WATER HAMMER
-  TYPE : term
-  TERM
-    > Water hammer: pressure spike (potentially extreme) from quickly shutting valve (tap) on running water. Depends on celecity (medium elasticity), medium speed, shut speed. A water tower can be used to absorb the pressure change.
-  PROJ : Megamex
-
-COUSINS ACROSS THE SEA
-  DATE : 12018-09-14
-  TYPE : video
-  LINK : https://www.youtube.com/watch?v=E9nGHrLWlic
-  PROJ : Megamex
-
 CULTURE MAGIC
   TYPE : term
   TERM 
     > Tohunga: (Maori) "an expert practitioner of any skill or art, either religious or otherwise. Tohunga include expert priests, healers, navigators, carvers, builders, teachers and advisors."
     > Kahuna: (Hawaiian) "priest, sorcerer, magician, wizard, minister, expert in any profession"
-  PROJ : Megamex
-
-MEGALYTHS.ORG
-  LINK
-    > https://www.youtube.com/user/everhungriescatgang/videos?sort=p&flow=grid&view=0
-    > http://www.megaliths.org/
   PROJ : Megamex
 
 LOG ATTRIBUTES
@@ -3310,47 +1318,20 @@ LOG ATTRIBUTES
     - x days since social
     - x days since exersize
 
-CSS NAME CONVENTION
-  PROJ : Log, Memex, Home
-  NOTE 
-    > No .super .long .css .classname .steps { }
-    & No css class nesting. Mixes things up, unclear, harder to quickly change all 'large buttons' when 'large' is used elsewhere
-    & INSTEAD clear intent:
-    & .btn { }
-    & .btn-small { }
-    & .btn-large { }
-    & .is-btn-active { }
-    & .is-btn-deactive { }
-    & .modulename
-    & .modulename-submodule
-    & .modulename-subcomponent
-
-PROPANE BOX DIY
-  PROJ : Van
-  LINK : https://faroutride.com/propane-system/
-
-S CONTEX
-  NOTE
-    > S as a spider snake kaleidoscope entry into a memory palace of a shaman who is trapped within his own mind
-    & Trailer would be a call to arms, a psychic plea for help
-    > Copy topography of megalith site
-    > Orion belt / star map as world map for megalith sites
-    > See underground cities for catacomb reference
-
 STENOTYPE
-  DATE : 12018-09-14
+  DATE : 22E14
   PERS : alx
   SRCE : Merveilles
   TERM
     > Stenotype: a specialized chorded keyboard or typewriter used by stenographers for shorthand use.
 
 VIMANA
-  DATE : 12018-09-15
+  DATE : 22E14
   TERM
     > Vimana: the mythological flying palaces or chariots described in Hindu texts and Sanskrit epics.
 
 MAORI FAE
-  DATE : 12018-09-15
+  DATE : 22E14
   TERM
     > Patupaiarehe: 
     > Tūrehu: 
@@ -3360,26 +1341,14 @@ MAORI FAE
   LINK : https://www.youtube.com/watch?v=9RITfMMxcRc
 
 CYMATICS
-  DATE : 12018-09-15
+  DATE : 22E14
   TERM
     > Cymatics: "the study of wave phenomena, esp sound, and their visual representations."
     > Cymascope: a type of scientific instrument that makes sound visible.
   NOTE : Mandala like
 
-NEUROPLASTICITY
-  TERM : Neuroplasticity: The brain's ability to reorganize itself by forming new neural connections throughout life. Neuroplasticity allows the neurons (nerve cells) in the brain to compensate for injury and disease and to adjust their activities in response to new situations or to changes in their environment.
-  NOTE : joe rogan 1171
-
-LOOKING AT THE STARS
-  QOTE : Oscar Wilde: "We are all in the gutter, but some of us are looking at the stars." 
-
-SELL THE WHY
-  DATE : 12018-09-15
-  TYPE : quote
-  QOTE : Antoine de Saint-Exupéry: "If you wish to build a ship, do not divide the men into teams and send them to the forest to cut wood. Instead, teach them to long for the vast and endless sea."
-
 PALE BLUE DOT
-  DATE : 12018-09-15
+  DATE : 22E14
   TYPE : quote
   QOTE 
     > Carl Sagan: "Look again at that dot. That's here. That's home. That's us. On it everyone you love, everyone you know, everyone you ever heard of, every human being who ever was, lived out their lives. The aggregate of our joy and suffering, thousands of confident religions, ideologies, and economic doctrines, every hunter and forager, every hero and coward, every creator and destroyer of civilization, every king and peasant, every young couple in love, every mother and father, hopeful child, inventor and explorer, every teacher of morals, every corrupt politician, every 'superstar,' every 'supreme leader,' every saint and sinner in the history of our species lived there—on a mote of dust suspended in a sunbeam."
@@ -3388,51 +1357,6 @@ ORIGINAL THOUGHT
   QOTE 
     > Diogenes: "One original thought is worth a thousand mindless quotings"
 
-MAGIC
-  TERM
-    > Chakras
-    > Chi
-    > Prana
-    > Reike
-    > Orgon
-    > Vril
-  PROJ : Megamex
-
-BLOND RED BLUE
-  PROJ : Megamex
-  NOTE
-    > Basque (Euskara)
-    & Berbers (Amazigh)
-    & Guanche (Canary Islands
-    & Gaelic (Celtic)
-    & "Ginger" (Egyptian mummy)
-    & Patupaiarehe (Maori)
-    & Ubermensch (Germany)
-    & Iceland
-    & Aryan
-    > Agharta And The Golden City Of Shambhala
-    > Swastika
-    - Ukraine
-    - Japan
-    - China
-    - Celt
-    - Hopi
-    - Aztec
-    - Jain
-    - Greek
-    - Tibet
-    - Rome
-    - Mongolian
-    - Iraq
-    - Iran
-    - Armenia
-    - Korea
-    - Anglo Saxon
-    - Navajo
-    - Russia
-    - etc
-    > Chariot (egypt and rome)
-    > "Half of European men share King Tut's DNA"
 
 KATAKOMBY
   PROJ : Megamex
@@ -3469,37 +1393,16 @@ LEY-LINES
   FILE
     > 2018-09-28_Magneticfield.pdf
 
-EXURB1A THING
-  DATE : 12018-09-22
-  TAGS : inspiration, life
-  AUTH : exurb1a
-  TYPE : video
-  LINK : https://www.youtube.com/watch?v=SvbTFwXagdQ
-
 MOON PRECESSION
-  DATE : 12018-09-26
+  DATE : 22E14
   TYPE : image
   TAGS : inspiration, moon, celest, nature, photography
   AUTH : Giorgia Hofer
   LINK : www.giorgiahoferphotography.com
   FILE : 12018-09-26_moonPrecession.jpg
 
-GOLDEN ALPINE LAKE
-  DATE : 12018-09-27
-  TYPE : image
-  TAGS : inspiration, nature, env, photography
-  AUTH : estrandberg
-  LINK : https://www.reddit.com/r/EarthPorn/comments/9iux8o/golden_hour_in_the_alpine_lakes_wilderness_in/
-  FILE : 12018-09-27_goldenAlpineLake.jpg
-
-COMMUNICATION PRIVACY
-  DATE : 12018-09-29
-  TYPE : quote
-  QOTE : "One of the problems there for a lot of people is identifying which you need requires understanding what your threat model is. Most humans have never heard that phrase, let alone had thoughts about it. So these decisions are then made for them and they choose based on usability, they choose based on where their friends are, they choose based on which chat messenger has inline gifs rather than which one has end to end encryption. People make poor choices, not because they don't care but because they don't know and they don't understand what they are necessarily giving up." - Amber Baldet, The Oslo Freedom Forum in New York: Why Decentralization Matters, Unchained: Big Ideas From The Worlds Of Blockchain And Cryptocurrency
-  LINK : http://unchainedpodcast.co/the-oslo-freedom-forum-in-new-york-why-decentralization-matters-ep85
-
 BACK TO THINKING
-  DATE : 12018-09-29
+  DATE : 22E14
   QOTE : "We must do away with the absolutely specious notion that everybody has to earn a living. It is a fact today that one in ten thousand of us can make a technological breakthrough capable of supporting all the rest. The youth of today are absolutely right in recognizing this nonsense of earning a living. We keep inventing jobs because of this false idea that everybody has to be emploted at some kind of drudgery because, according to Malthusian-Darwinian theory, he must justify his right to exist. So we have inspectors of inspectors and people making instruments for inspectors to inspect inspectors. The true business of people should be to go back to school and think about whatever it was they were thinking about before somebody came along and told them they had to earn a living." - Richard Buckminster Fuller (1985 - 1983)
 
 ATLANTIS
@@ -3510,120 +1413,50 @@ ATLANTIS
   PROJ : Megamex
 
 UDON SIN
-  DATE : 12018-09-30
+  DATE : 22E14
   QOTE : "Once you accept that we live (and can thrive) in a system of perpetual exploitation and generalized criminality, the whole world opens up. Most will end up as losers, that is the nature of it all."
 
 CONTINUING CREATION
-  DATE : 12018-09-30
+  DATE : 22E14
   QOTE : “Memory is never a precise duplicate of the original… it is a continuing act of creation”
 
 DANCE
-  DATE : 12018-09-30
+  DATE : 22E14
   QOTE : And those who were seen dancing were thought to be insane by those who could not hear the music.
   AUTH : Friedrich Nietzsche
 
 UNDERSEA CANYONS
-  DATE : 12018-09-30
+  DATE : 22E14
   TYPE : image
   TAGS : inspiration, nature, env
   AUTH : National Geographic
   FILE : 12018-09-30_underseaCanyons.jpg
 
 WARMTH
-  DATE : 12018-10-01
+  DATE : 22E14
   NOTE : Felt temperature affects feeling of trust. Eg: Hold hot cup of coffee for one second = significant feeling of trust toward target vs holding a ice cup of coffee for one second. Hypothetical origin: to baby human warmth = safty.
   LINK : https://www.wnycstudios.org/story/91640-choice
 
-FISH FRIENDS
-  DATE : 12018-10-01
-  PERS : Rekka Bell
-  QOTE : "Fish are more than aquatic automatons. They are quick learners, with strong memories, and can even out-perform primates at some mental tasks."
-  LINK : http://www.pbs.org/wgbh/nova/next/nature/fish-have-feelings-too/?utm_source=FBPAGE&utm_medium=social&utm_term=20180904&utm_content=1758065470&utm_campaign=NOVA%20Next&linkId=56417148
-
 THE LISTENING SOCIETY
-  DATE : 12018-10-01
+  DATE : 22E14
   TYPE : book
   AUTH : Hanzi Freinacht
-
-RUSSEEL BRAND HELP
-  DATE : 12018-10-01
-  LINK : https://www.youtube.com/watch?v=4XqvddgtkGM
-
-12 PERSPECTIVES ON JORDAN PETERSON
-  DATE : 12018-10-01
-  AUTH : Jonathan Rowson
-  TYPE : book
-
-RAMATREE BOATLIFE 2
-  DATE : 12018-10-01
-  AUTH : Ramatree
-  LINK : https://www.youtube.com/watch?v=j5oZGtQ1Nps
-  TYPE : video
-  TAGS : inspiration, boatlife
 
 DOCUMENTATION
   DATE : 12018-10-02
   LINK : https://www.divio.com/blog/documentation/
   QOTE : "There is a secret that needs to be understood in order to write good software documentation: there isn’t one thing called documentation, there are four... tutorials, how-to guides, explanation and technical reference."
 
-BEAUTIFUL PEOPLE
-  DATE : 12018-10-02
-  LINK
-    > https://www.youtube.com/playlist?list=PL_jxFaykzU8CT8n4yCGKwC1Ud4-UG-6hw
-    > https://www.youtube.com/playlist?list=PL_jxFaykzU8BItOwSPFFvyObWfW0pmsNY
-    > https://www.youtube.com/playlist?list=PL_jxFaykzU8A7mb6jDUP3vQ6YaJZBTkQB
-    > https://www.youtube.com/playlist?list=PL_jxFaykzU8BfyZc5XVuzotHpXyMmQSrW
-
 SONDER
-  DATE : 12018-10-02
+  DATE : 22E14
   TYPE : term
   TERM
     > sonder: the realization that everyone has a story
   LINK : https://www.youtube.com/watch?v=AkoML0_FiV4
   NOTE : Dictionary of Obscure Sorrows
 
-MAGNETIC TURBULENCE
-  DATE : 12018-10-02
-  LINK : https://www.nasa.gov/feature/goddard/2018/nasa-spacecraft-discovers-new-magnetic-process-in-turbulent-space
-  TAGS : inspiration, nature, env, celest
-  AUTH : NASA
-  FILE : 12018-10-02_magneticTurbulence.jpg
-  TYPE : image
-
-CUSTOM CONTROLLER
-  LINK : https://geekhack.org/index.php?topic=74463.350
-
-HANDTOP
-  TYPE : tool
-  LINK : https://geekhack.org/index.php?topic=84603.0
-
-ALASKA FALL
-  DATE : 12018-10-03
-  AUTH : bdorts
-  TAGS : inspiration, nature, env, photography
-  LINK : https://www.reddit.com/r/EarthPorn/comments/9kwgq2/fall_in_alaska_oc4443x5554/
-  FILE : 12018-10-03_alaskaFall.jpg
-  TYPE : image
-
-SCOTLAND MOUNTAIN
-  DATE : 12018-10-04
-  AUTH : timsharifsoltani
-  LINK : https://www.reddit.com/r/EarthPorn/comments/9kthqq/scotland_has_definitely_an_amazing_scenery_to/
-  TAGS : inspiration, nature, env, photography
-  TYPE : image
-  FILE : 12018-10-04_scotlandMountain.jpg
-
-REGENERATIVE ECONOMIC THEORY
-  DATE : 12018-10-05
-  TERM 
-    > Regenerative economic theory: "an economic system that works to regenerate capital assets. A capital asset is an asset that provides goods and/or services that are required for, or contribute to, our well being. In standard economic theory, one can either “regenerate” one's capital assets or consume them until the point where the asset cannot produce a viable stream of goods and/or services. What sets regenerative economics apart from standard economic theory is that it takes into account and gives hard economic value to the principal or original capital assets — the earth and the sun. We cannot do much to affect the sun although we can value access to the sun in such areas where access can be influenced. Therefore, most of Regenerative Economics focuses on the earth and the goods and services it supplies.
-    & Regenerative economics is completely comfortable within the capitalist economic framework. Recognizing the earth as the original capital asset places the true value on the human support system known as the environment. Not having this original value properly recognized has created the unsustainable economic condition referred to as uneconomic growth, a phrase coined by leading ecological economist and steady-state theorist Herman Daly, as stated in the book Reshaping the Built Environment.[1] The authors of the regenerative economic theory believe that uneconomic growth is the opposite of regenerative economics."
-  QOTE : > "...What sets regenerative economics apart from standard economic theory is that it takes into account and gives hard economic value to the principal or original capital assets — the earth and the sun...."
-  LINK : https://www.youtube.com/watch?v=YMCcoKXh3K0
-  FILE : 12018-10-05_regencap.pdf
-
 MEMEX SIXTY YEARS LATER
-  DATE : 12018-10-08
+  DATE : 22E14
   FILE : 12018-10-08_memexSurvey.pdf
   NOTE : "Building the Memex Sixty Years Later: Trends and Directions in Personal Knowledge Bases"
   PERS : neauoire
@@ -3666,158 +1499,102 @@ TRINITY
     > left-hemisphere right-hemisphere pineal
     > Triptych doorways
 
-DOG LIFE ADVENTURE
-  AUTH : Ben Moon
-  DATE : 12018-10-12
-  TAGS : inspiration, dog, adventure
-  LINK : https://www.youtube.com/watch?v=P2zQbsEGh_Q
-  TYPE : video
-
 GOODBYE MOON
   AUTH : goodbye.computer
-  DATE : 12018-10-15
+  DATE : 22E14
   LINK : https://cybre.space/@goodbyecomputer/100586351148975679
   TAGS : inspiration, moon, time, design
   FILE : 12018-10-15_goodbyeMoon.jpg
   TYPE : image
   PROJ : Memex
 
-DIKE
-  DATE : 12018-10-16
-  TYPE : term
-  TERM 
-    > Dike: "To remove or disable a portion of something, as a wire from a computer or a subroutine from a program. A standard slogan is “When in doubt, dike it out”. 
-    & The implication is that it is usually more effective to attack software problems by reducing complexity than by increasing it.
-    & The word ‘dikes’ is widely used to mean ‘diagonal cutters’, a kind of wire cutter. To ‘dike something out’ means to use such cutters to remove something. 
-    & Indeed, the TMRC Dictionary defined dike as “to attack with dikes”. Among hackers this term has been metaphorically extended to informational objects such as sections of code."
-  LINK : http://www.catb.org/jargon/html/D/dike.html
-
-NEONIOUS
-  DATE : 12018-10-16
-  TYPE : tool
-  TAGS : iot, web, nodejs
-  LINK : https://www.neonious.com/neoniousOne
-
-NOAH BRADLEY LANDSCAPE PHOTOS
-  DATE : 12018-10-16
-  TYPE : resource
-  NOTE : "Noah Bradley's free photo reference megapack": Bucharest & London, Australia, New Zealand, American Southwest, Switzerland, Iceland, England & France, Yosemite, Caves, Scotland
-  LINK : https://gumroad.com/d/ca7dfa7a4ec36ba24fcd03575d5cbd7d
-
-EBOOK FOUNDATION PROGRAMMING
-  DATE : 12018-10-16
-  TYPE : list
-  TAGS : code, web
-  LINK : https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books.md
-
-TALKING TO GOD
-  DATE : 12018-10-16
-  LINK : https://www.fullmoon.nu/pdfs/tal.pdf
-
-UNJUST LAWS
-  DATE : 12018-10-16
-  LINK : https://reading.supply/post/ed63cf7d-c205-4255-9be9-11caaf55e017
-
-CLIMATE VITAL SIGNS
-  DATE : 12018-10-16
-  TAGS : env
-  LINK
-    > https://climate.nasa.gov/vital-signs/global-temperature/
-    > https://xkcd.com/1732/
-
 BABEL LIB
-  DATE : 12018-10-16
+  DATE : 22E14
   TYPE : book
   NOTE : Borges' Library of Babel
   PERS : neauoire
 
 DES MAGICIENS
-  DATE : 12018-10-16
+  DATE : 22E14
   TYPE : book
   NOTE : Le matin des magiciens: L. Pauwels & J. Bergier. 1960
   PERS : neauoire
 
 INVISIBILI
-  DATE : 12018-10-16
+  DATE : 22E14
   TYPE : book
   NOTE : Le città invisibili: Italo Calvino. 1972
   PERS : neauoire
 
 FICCIONES
-  DATE : 12018-10-16
+  DATE : 22E14
   TYPE : book
   NOTE : Ficciones: Jorge Luis Borges. 1941
   PERS : neauoire
 
 NUMBER 44
-  DATE : 12018-10-16
+  DATE : 22E14
   TYPE : book
   NOTE : No.44: Mark Twain. 1916
   PERS : neauoire
 
 KYBALION
-  DATE : 12018-10-16
+  DATE : 22E14
   TYPE : book
   NOTE : Kybalion: Three Initiates. 1908
   PERS : neauoire
 
 LINGUA PERFETTA
-  DATE : 12018-10-16
+  DATE : 22E14
   TYPE : book
   NOTE : La ricerca della lingua perfetta: Umberto Eco. 1993
   PERS : neauoire
-    
-THE HANDMAID'S TALE
-  DATE : 12018-10-16
-  TYPE : book
-  NOTE : The handmaid's tale: Margaret Atwood. 1985
-  PERS : neauoire
 
 FLATLAND
-  DATE : 12018-10-16
+  DATE : 22E14
   TYPE : book
   NOTE : Flatland: Edwin A. Abbott. 1884
   PERS : neauoire
     
 BLUMROCH
-  DATE : 12018-10-16
+  DATE : 22E14
   TYPE : book
   NOTE : Blumroch l'admirable: Louis Pauwels. 1976
   PERS : neauoire
 
 CYBERIADA
-  DATE : 12018-10-16
+  DATE : 22E14
   TYPE : book
   NOTE : Cyberiada: Stanisław Lem
   PERS : neauoire
 
 THE BOOK OF TEA
-  DATE : 12018-10-16
+  DATE : 22E14
   TYPE : book
   NOTE : The book of tea: Okakura Kakuzō. 1906
   PERS : neauoire
     
 THOREAU JOURNALS
-  DATE : 12018-10-16
+  DATE : 22E14
   TYPE : book
   NOTE : Journals: Henry David Thoreau. 1837
   PERS : neauoire
 
 ETIDORHPA
-  DATE : 12018-10-16
+  DATE : 22E14
   TYPE : book
   NOTE : Etidorhpa: John Uri Lloyd. 1895
   PERS : neauoire
 
 EX NIHILO
-  DATE : 12018-10-17
+  DATE : 22E14
   TYPE : term
   TERM
     > Ex nihilo: a Latin phrase meaning "out of nothing"
   LINK : https://en.wikipedia.org/wiki/Ex_nihilo
 
 20 YEARS 20 QUESTIONS
-  DATE : 12018-10-17
+  DATE : 22E14
   NOTE
     > Fighting against human nature is a losing battle
     > Aesthetics matter
@@ -3843,22 +1620,13 @@ EX NIHILO
   TAGS : gamedev
 
 NO CURE FOR CURIOSITY
-  DATE : 12018-10-17
+  DATE : 22E14
   NOTE : "The cure for boredom is curiosity... there is no cure for curiosity."
   FILE : 12018-10-17_curiosity.jpg
   TAGS : gamedev
 
-MONEY OUT OF NOTHING
-  DATE : 12018-10-17
-  QOTE : "Thus it can now be said with confidence for the first time - possibly in the 5000 years' history of banking - that it has been empirically demonstrated that each individual bank creates credit and money out of nothing, when it extends what is called a ‘bank loan’. The bank does not loan any existing money, but instead creates new money. The money supply is created as ‘fairy dust’ produced by the banks out of thin air. The implications are far-reaching."
-  FILE : 12018-10-17_moneyFromNothing.pdf
-
-UNCONDITIONAL LOVE
-  DATE : 12018-10-17
-  QOTE : "I know the secret to happiness. It took years of introspection, observation, and comparison, analyzation, insecurity, but I finally figured it out. It feels like it was under my nose the whole time. All you have to do is learn to appreciate the world. Appreciate everything. Love everything for what it is. Embrace the fact that everything has a reason, don't try to deny anything for the sake of being right. And after all, hasn't true love always been thought of as complete appreciation for a partner with no thoughts or intentions to ever change them? Unconditional love. I understand that term now. Because you realize that no matter how horrible a person's decision might seem, he or she has a reason for it. Nobody is a bad person, some just have a little more weighing on their conscience."
-
 TO BURN TO MEMORY
-  DATE : 12018-10-18
+  DATE : 22E14
   TYPE : game
   AUTH : theneko
   SRCE : Merveilles
@@ -3869,209 +1637,18 @@ TO BURN TO MEMORY
     & Crystalline Gate - "Iron Gardens, Old Quarter"
     & Locked door - Salandre Residence, Boulevard, Latin Quarter
 
-INTERNETJADE
-  DATE : 12018-10-18
-  AUTH : internetjade
-  TAGS : inspiration, design, mervellies
-  LINK : https://twitter.com/internetjade/status/1052608789688377344
-  FILE : 12018-10-18_internetJade.jpg
-  TYPE : image
-
-BILLAIN HORIZON
-  DATE : 12018-10-19
-  AUTH : Billain
-  LINK : https://twitter.com/Billain/status/1052754136985350144
-  TAGS : inspiration, design, mervellies
-  FILE : 12018-10-19_billainHorizon.jpg
-  TYPE : image
-
-RAMATREE BOATLIFE
-  DATE : 12018-10-20
-  AUTH : Ramatree
-  LINK : https://www.youtube.com/watch?v=MrNTmMr_G-E
-  TYPE : video
-  TAGS : inspiration, boatlife
-
-AGM SEALED
-  DATE : 12018-10-20
-  NOTE 
-    > Sealed batteries are not sealed
-    - aka "VRLA (valve-regulated lead-acid battery)"
-  PROJ : Solar, Van
-  TAGS : electronics
-
-WHY WATER BATTERIES
-  DATE : 12018-10-20
-  NOTE : "When a charge current flows through a fully charged conventional lead acid cell, electrolysis of water occurs to produce hydrogen from the negative electrode and oxygen from the positive electrode. This means that water is lost from the cell and regular topping up is needed."
-  FILE : 12018-10-21_sbs.pdf
-  LINK : https://download.siliconexpert.com/pdfs/2013/7/7/8/20/13/16/ens_/manual/ensbs_pg_001_0203.pdf
-  PROJ : Solar, Van
-  TAGS : electronics, solar
-
-SBS 100F
-  DATE : 12018-10-22
-  NOTE 
-    > Recommended operating temperature range for optimum life and performance is 20°C to 25°C
-    - On constant voltage float charge systems the design life expectancy is 10+ years at 25°C and 15+ years at 20°C
-    - Can be operated in the temperature range -40°C to 50°C
-    - Battery capacity is affected by the discharge rate, end voltage, temperature and age.
-    - Battery life is reduced by 50% for every 10°C increase in temperature.
-    > Can be installed in any orientation except upside down (vents on the bottom)
-    > Flame retardant (UL94 V-0) case
-    > Gas emission is virtually negligible
-    > Constant voltage chargers are recommended. The acceptable float voltage range is 2.27-2.29Vpc at 20ºC and 2.25-2.27Vpc at 25ºC
-    - 13.62-13.74v float at 20ºC
-    - 13.50-13.62v float at 25ºC
-    - 2.27Vpc + 0.004 mV per cell per °C below 25°C
-    - 2.27Vpc – 0.004 mV per cell per °C above 25°C
-    > Recommended float voltage temperature compensation is:
-    - 10ºC: 2.33 Vpc
-    - 15ºC: 2.31 Vpc
-    - 20ºC: 2.29 Vpc
-    - 25ºC: 2.27 Vpc
-    - 30ºC: 2.25 Vpc
-    - 35ºC: 2.23 Vpc
-    - 40ºC: 2.21 Vpc
-    - The minimum charging voltage, at any temperature, is 2.21Vpc
-    > Do not discharge the battery beyond the voltage cut-off limit for the given discharge rates: 
-    - 1.80Vpc @ 10 hr rate
-    - 1.75Vpc @ 8 hr rate
-    - 1.75Vpc @ 5 hr rate
-    - 1.70Vpc @ 3 hr rate
-    - 1.60Vpc @ 1 hr rate
-    - 1.60Vpc @ 15 min rate
-    > Every six months maintenance
-    - Measure battery string voltage
-    - temperature
-    - float current
-    - inter-module resistances and internal ohmic values
-    - if necessary adjust the float voltage to the correct value
-    - The individual module voltages must be within ± 0.30V of the nominal float voltage
-    - Inspect for contamination by dust and loose or corroded connections
-    > The battery and ambient temperatures can be significantly different. Batteries have a large thermal mass, and there is a substantial time lag between changes in ambient and battery temperature. Sensors on the side of blocs should be insulated from ambient temperature. Place thermometer sensor:
-    - Front terminal models - in the centre of the side wall of a bloc, in the middle of the string
-    - Top terminal models - attached by a ring terminal to the terminal of a bloc in the middle of a string
-    > There is no limit on the charging current provided the float voltage is set at the recommended value as the battery itself will regulate the current, accepting only as much as is required to reach float voltage.
-    - Fast charge 2.38 volts per cell at 25°C (14.28v)
-    - However, it is recommended that this higher potential only be applied until the charging current remains constant for a period of two hours. The voltage should then be set at the recommended float voltage.
-  FILE 
-    > 12018-10-21_sbs.pdf
-    > 12018-10-21_sbs2.pdf
-  PROJ : Solar, Van
-  TAGS : electronics, solar
-
-WIRE SIZING
-  DATE : 12018-10-22
-  TYPE : tool
-  LINK : http://www.solar-wind.co.uk/cable-sizing-DC-cables.html
-  PROJ : Solar, Van
-  TAGS : electronics, solar
-
-SOLAR FUZES
-  DATE : 12018-10-22
-  NOTE
-    > Why
-    - Fuzes are to protect the wiring from damage in the case of a short or surge.
-    - It acts as the weakpoint in the curcuit, so if something goes wrong it will break where you expect (the fuze) rather than heat up and melt/burn wires which can cause a hazard (fire).
-    - Fuse on positive wire for convension's sake.
-    - Fuse as close to power source as reasonable.
-    > Fuze requirements
-    - between PV and CC
-    - between CC and BB
-    - between BB and inverter
-    > Fuze sizing
-    - https://www.renogy.com/blog/how-to-fuse-your-solar-system/
-    - CC to BB - match amperage of CC. 
-    - eg: 30a CC = 30a fuze.
-    - PV to CC - PV output + 25% rounded up to nearest fuze. 
-    - eg: 24v 15a PV setup = 20a fuze.
-    - BB to inverter - see inverter's manual. General rule: “Continuous Watts / Battery Voltage times 1.25"
-    - eg: 1000W 12V inverter draws up 83~ continuous amps + 25% safety factor = 105 Amps, round up to 150a fuse.
-  PROJ : Solar, Van
-  TAGS : electronics, solar
-
-LUGS (TERMINALS)
-  DATE : 12018-10-22
-  NOTE 
-    > Battery Bank: ring terminal lug (depends on battery connection). Match thickness to BB wire thickness and hole size to battery connection. 
-    - eg: 25mm2 BB wire and M6 battery connector = 25x6 ring terminal lug.
-    > Solar panels (PV): MC4 connectors must all be the same source/brand for certification.
-  PROJ : Solar, Van
-  TAGS : electronics, solar
-
-TRACER BN COMMS
-  DATE : 12018-10-23
-  TYPE : tool
-  LINK
-    > https://github.com/danieloneill/EpsolarServer
-    > https://github.com/jaminNZx/Tracer-RS485-Modbus-Blynk
-    > https://github.com/toggio/PhpEpsolarTracer
-  PROJ : Solar, Van
-  TAGS : electronics, solar
-
 SELF MASTO FEDI
-  DATE : 12018-10-23
+  DATE : 22E14
   LINK
     > https://blog.joinmastodon.org/2018/06/how-to-implement-a-basic-activitypub-server/
     > https://github.com/wimvanderbauwhede/limited-systems/wiki/Mastodon-and-Pleroma-on-the-Raspberry-Pi-3
-
-INUKTITUT SYLLABIC
-  DATE : 12018-10-24
-  NOTE : Inuktitut syllabics are brilliant. A writing system that's not an alphabet, but something really clever: an abugida, one designed from scratch for a language very unlike anything European. [Pull down the description!] Context and history: 
-  LINK 
-    > https://www.youtube.com/watch?v=xW4hI_METac
-    > https://www.noslangues-ourlanguages.gc.ca/collaborateurs-contributors/articles/inuk-eng.html
-    > https://thediscoverblog.com/2015/06/11/aboriginal-syllabic-scripts/
-  PROJ : Swordy
-
-OGHAM
-  DATE : 12018-10-24
-  NOTE : Ogham is an old Irish script made by carving notches into stones. It fell out of use more than a millennium ago - but it's an interesting exception to a linguistics and computer-science rule that I'd never even realised existed. Let's talk about the Ogham Space Mark.
-  PROJ : Swordy
-
-ALTERNATOR CHARGING OPTIONS
-  DATE : 12018-10-24
-  NOTE
-    - VSR (Voltage sensing relay)
-    - ACR (Automatic Charging Relay)
-    - B2B charger
-    - Manual switch
-    - Basic Relay (signal connected to van acc on)
-    - Diode Based Isolator
-  PROJ : Van
-  TAGS : electronics
-
-VAN ELECTRICAL GUIDES
-  DATE : 12018-10-25
-  LINK 
-    > https://faroutride.com/electrical-system/
-    > https://gnomadhome.com/van-build-solar-electrical-wiring/
-    > https://www.parkedinparadise.com/electrical/
-  PROJ : Van
-  TAGS : electronics
-  TYPE : list
-
-BATTERY BANK WIRING
-  DATE : 12018-10-25
-  LINK : http://www.smartgauge.co.uk/batt_con.html
-  FILE : 12018-10-25_bbwire.pdf
-  PROJ : Van
-  TAGS : electronics
-
-BO BARTLETT
-  AUTH : Bo Bartlett
-  DATE : 12018-10-25
-  TYPE : image
-  TAGS : inspiration, art
-  LINK : https://www.reddit.com/r/Art/comments/9qz9uj/halloween_by_bo_barlett_80x100cm_oil_on_linen/
-  FILE : 12018-10-25_bo Bartlett.jpg
 
 NCASE REMEMBER
   LINK : https://ncase.me/remember/
   NOTE : Anki style interactive comic
 
 DESIGN PILLARS
-  DATE : 12018-10-28
+  DATE : 22E14
   TAGS : core
   TYPE : term
   TERM
@@ -4087,14 +1664,14 @@ DESIGN PILLARS
   LINK : https://www.youtube.com/watch?v=-Sq0nc5LxCc
 
 LOG LINE
-  DATE : 12018-10-28
+  DATE : 22E14
   TAGS : core
   TYPE : term
   TERM 
     > Log line: "a one (or occasionally two) sentence description that boils the script down to its essential dramatic narrative in as succinct a manner as possible."
 
 ANTI-FRAGILITY
-  DATE : 12018-10-29
+  DATE : 22E14
   TYPE : term
   TERM : Antifragility: "a property of systems that increase in capability, resilience, or robustness as a result of stressors, shocks, volatility, noise, mistakes, faults, attacks, or failures."
   LINK
@@ -4103,97 +1680,26 @@ ANTI-FRAGILITY
   TAGS : antifragile
 
 METAPHASES
-  DATE : 12018-10-30
+  DATE : 22E14
   TYPE : music
   AUTH : kodedninja
   LINK : https://0x22.bandcamp.com/album/metaphases
   TAGS : ambient, calm
 
-ORKL
-  DATE : 12018-10-29
-  TYPE : tool
-  AUTH : kodedninja
-  LINK : https://github.com/kodedninja/orkl
-  NOTE : reference for memex loading (spinner)
-  TAGS : p2p, dat, blog
-
 WITH LOVE FROM VERY SMALL PLACES
-  DATE : 12018-10-30
+  DATE : 22E14
   TYPE : music
   AUTH : kodedninja
   TAGS : ambient, calm
   LINK : https://0x22.bandcamp.com/album/with-love-from-very-small-places
 
-GRAIN
-  DATE : 12018-10-30
-  TYPE : image
-  AUTH : Phil James
-  TAGS : inspiration, art, bnw
-  LINK : http://shinestrength.xyz/
-  FILE : 12018-10-30_grain2013.jpg
-  WIDE : true
-
-THRESHING NEST
-  DATE : 12018-10-31
-  TYPE : image
-  AUTH : Phil James
-  TAGS : inspiration, art, bnw
-  LINK : http://the-threshing-nest.tumblr.com/post/69138350040
-  FILE : 12018-10-31_threshingNest.jpg
-
-LIGHTING FIRES POETICS AND SENSATION
-  DATE : 12018-10-31
-  PERS : Phil James
-  AUTH : Phil James
-  LINK : https://medium.com/@shinestrength/lighting-fires-poetics-and-sensation-991d083e15e9
-  FILE : 12018-10-31_lightingFires.pdf
-
-DARK SOULS MAP
-  DATE : 12018-10-31
-  LINK 
-    > https://github.com/colevk/dark-souls-map-viewer
-    > https://kayin.moe/?p=2218
-    > https://kayin.moe/?p=2249
-  FILE
-    > 12018-10-31_dsme.rar
-    > 12018-10-31_dsme-src.rar
-    > 12018-10-31_darksoulsmapviewer.zip
-  TYPE : tool
-  NOTE : Three versions, WebGL, app (viewer) and 2nd app (with source)
-  TAGS : dark souls
-
-PREPARE TO CRY
-  DATE : 12018-10-31
-  LINK 
-    > https://www.youtube.com/watch?v=7eJeUG1m6eI&list=PLWLedd0Zw3c5RCXboUsPwHsZJlXB2CzCz
-    > https://www.youtube.com/watch?v=7Ov6PK_bdfU&list=PLWLedd0Zw3c5TsicQnt7lFjzuUBPp13Qv
-  TYPE : list
-  NOTE : Dark Souls lore videos
-  TAGS : dark souls
-
-Joseph Anderson Dark Souls 2
-  DATE : 12018-10-31
-  LINK
-    > https://www.youtube.com/watch?v=b9jrShSwjPU
-    > https://www.youtube.com/watch?v=tKrli-EvCdk
-    > https://www.youtube.com/watch?v=9rrs9bdrwO4
-  TYPE : video
-  TAGS : dark souls
-  NOTE : In depth Dark Souls 2 video essays
-
-HOW TO MAKE A ROGUELIKE
-  DATE : 12018-10-31
-  LINK : https://www.gridsagegames.com/blog/2018/10/how-to-make-a-roguelike/
-  PERS : Phil James
-  TAGS : gamedev
-
 SETGESHGUI
-  DATE : 12018-10-31
+  DATE : 22E14
   TERM : Setgeshgui: The "last" number (10^66) in Mongolian labeled by Rolbiidorj (1717-1766), meaning "unimaginable" refering to infinity.
   TYPE : term
 
 BALANCED TERNARY
-  DATE : 12018-10-31
+  DATE : 22E14
   PERS : joshavanier
   TERM : Balanced ternary: "a non-standard positional numeral system (a balanced form), used in some early computers and useful in the solution of balance puzzles. It is a ternary (base 3) number system in which the digits have the values –1, 0, and 1, in contrast to the standard (unbalanced) ternary system, in which digits have values 0, 1 and 2. Balanced ternary can represent all integers without using a separate minus sign; the value of the leading non-zero digit of a number has the sign of the number itself."
   LINK : https://github.com/joshavanier/ternara
@@ -4201,96 +1707,21 @@ BALANCED TERNARY
   TYPE : tool
   TAGS : stenography
 
-CONCENTRIC
-  DATE : 12018-10-31
-  LINK : https://github.com/joshavanier/concentric
-  TYPE : tool
-  PROJ : Dastime
-  AUTH : joshavanier
-
-HAIAKU
-  DATE : 12018-10-31
-  TOOL : https://github.com/joshavanier/haiaku
-  TAGS : stenography
-  TYPE : tool
-
-MORTEM
-  DATE : 12018-10-31
-  LINK : https://github.com/joshavanier/mortem
-  AUTH : joshavanier
-  TYPE : tool
-  PROJ : web
-
-ROVARSPRAKET
-  DATE : 12018-10-31
-  TERM : Rövarspråket: "The Robber Language". A simple word encoding. "Every consonant (spelling matters, not pronunciation) is doubled, and an o is inserted in-between. Vowels are left intact." Not easy to understand when a fluent speaker speaks it quickly. Tongue twister for Swedish children. 
-  TAGS : stenography
-  NOTE 
-    > Example:
-    - stubborn = sos-tot-u-bob-bob-o-ror-non or sostotubobboborornon
-  LINK : https://github.com/joshavanier/rovarspraket
-  AUTH : joshavanier
-
 V-OS
   LINK : https://v-os.ca/
   PROJ : web
   TAGS : inspiration
 
 TEXTE
-  DATE : 12018-10-31
+  DATE : 22E14
   LINK : https://github.com/joshavanier/texte
   AUTH : joshavanier
   TYPE : tool
   NOTE : minimalist text based game engine
   TAGS : javascript
 
-JS PROMISE INTRO
-  DATE : 12018-10-31
-  TYPE : article
-  PROJ : Memex, web
-  TAGS : code, web, javascript
-  LINK : > https://medium.com/quick-code/javascript-promises-in-twenty-minutes-3aac5b65b887
-    >https://developers.google.com/web/fundamentals/primers/promises#whats-all-the-fuss-about
-  NOTE 
-    > Simplified async function chaining (and error handling)
-    > "A promise represents the eventual result of an asynchronous operation. The primary way of interaction with a promise is through its then method, which registers callbacks to receive either a promise’s eventual value or the reason why the promise cannot be fulfilled."
-    > Promise state can be:
-    - fulfilled: The action relating to the promise succeeded
-    - rejected: The action relating to the promise failed
-    - pending: Hasn't fulfilled or rejected yet
-    > A "settled" promise has been fulfilled or rejected
-    & A promise can only be settled (mutated) once
-    > Example:
-    & img1.ready().then(function() {
-    &   // loaded
-    & }, function() {
-    &   // failed
-    & });
-    & // and…
-    & Promise.all([img1.ready(), img2.ready()]).then(function() {
-    & // all loaded
-    & }, function() {
-    &   // one or more failed
-    & });
-    > Create promise:
-    & var promise = new Promise(function(resolve, reject) {
-    &   // do a thing, possibly async, then…
-    &   if (/* everything turned out fine */) {
-    &     resolve("Stuff worked!");
-    &   }
-    &   else {
-    &     reject(Error("It broke"));
-    &   }
-    & });
-    > Use promise:
-    & promise.then(function(result) {
-    &   console.log(result); // "Stuff worked!"
-    & }, function(err) {
-    &   console.log(err); // Error: "It broke"
-    & });
-
 PROGRESSIVE ENHANCEMENT IS FASTER
-  DATE : 12018-10-31
+  DATE : 22E14
   LINK 
     > https://jakearchibald.com/2013/progressive-enhancement-is-faster/
     > https://jakearchibald.com/2013/progressive-enhancement-still-important/
@@ -4303,79 +1734,18 @@ PROGRESSIVE ENHANCEMENT IS FASTER
   QOTE : "Getting something on screen as soon as possible really improves the user-experience"
   TERM : Progressive enhancement: Render a usable HTML website first, then enhance it once the javascript loads. Benefits: much faster load times for client, backwards compatibility, js not required.
 
-JS SCRIPT LOADING
-  DATE : 12018-10-31
-  LINK : https://www.html5rocks.com/en/tutorials/speed/script-loading/
-  TAGS : code, web, javascript
-  PROJ : Memex, web
-  NOTE
-    > With two 'script src' tags: both simultaneous download, execution in order (if 2 loads first it will not execute until 1 has downloaded and executed).
-    - The browser blocks rendering while this happens! Newer browsers will parse the page in the background and download upcoming resources, but rendering pauses.
-    - TIP: put 'script src's at bottom of page.
-    > '<script src="x.js" async></script>'. The 'async' removes the requirement to execute in order.
-    > "async-download but ordered-execution" is possible, see article for snippit.
-    > Suggestion is normal 'script src's at bottom of body.
-
-JS APP START SPEED TAKE AWAYS
-  DATE : 12018-10-31
-  TAGS : code, web, javascript
-  PROJ : Memex, web
-  NOTE
-    > Have the HTML and CSS actually display something sane first (without any JS!)
-    - even just bg-color and a loading-spinner gif
-    > Put JS includes at the bottom of HTML body as it blocks rendering while downloading and executing.
-
-NEURAL INCEPTIONISM
-  DATE : 12018-10-31
-  LINK : https://ai.googleblog.com/2015/06/inceptionism-going-deeper-into-neural.html
-  TAGS : ai
-
-THREEJS PARTICLES
-  DATE : 12018-11-01
-  LINK : http://opencontinents.com/?stars=1
-  PROJ : hii
-  TAGS : web, design, code, inspiration, javascript
-
-CSS LOADERS
-  DATE : 12018-11-01
-  LINK 
-    > https://freefrontend.com/css-loaders/
-    > https://steelkiwi.com/blog/30-most-captivating-preloaders-for-website/
-  PROJ : Memex, web
-  TYPE : list
-  TAGS : web, design, code, inspiration
-
-BOOK OF SHADERS
-  DATE : 12018-11-01
-  DONE : false
-  REVI : true
-  LINK 
-    > https://thebookofshaders.com/
-    > https://github.com/patriciogonzalezvivo/thebookofshaders
-
-TYRES WHEEL SIZE GRIP
-  DATE : 12018-11-01
-  LINK : https://www.youtube.com/watch?v=s79ID1SsE-8
-  TAGS : car
-  NOTE
-    > Bigger wheels generally allow for wider tyres
-    > Bigger wheels are generally heavier
-    > Wider tyres gives more grip
-    > Generally the more powerful an engine, the bigger and wider tyre you need in order to put the power down (not spin)
-    > Tyres size affects gear ratio
-
 MAKE IT
-  DATE : 12018-11-01
+  DATE : 22E14
   QOTE : "If you feel like you've made it, what is the motivation to keep going?"
 
 CODE LICENSE
-  DATE : 12018-11-02
+  DATE : 22E14
   LINK : https://felixcrux.com/library/what-you-need-to-know-about-open-source-licensing
   TYPE : video
   PROJ : web, Memex
 
 SHAPE LANGUAGE
-  DATE : 12018-11-02
+  DATE : 22E14
   LINK
     > https://www.youtube.com/watch?v=0sbUdMNIG20
     > https://www.youtube.com/watch?v=lLQJiEpCLQE
@@ -4406,108 +1776,43 @@ LICENSING
     > MIT: Use for anything but copyright to author.
     > CC0: Use for anything. No Rights Reserved.
 
-PV WIRING
-  LINK : https://www.solargroup.co.nz/UserFiles/File/Solar%20PV/Technical/PV%20Introduction%20guide%20for%20electricians.pdf
-  NOTE
-    > Voltage losses along the DC cables shall be less than 4% 
-    > All DC cables should be installed to provide as short a run as possible
-    > Positive and negative cables of the same string or main DC supply should be bundled together, avoiding the creation of loops in the system.
-    > ["Pairs should be together in the same raceway/conduit/bundled together."](https://forum.solar-electric.com/discussion/22145/bundling-dc-cabling-together-through-plastic-electrical-conduit)
-    - I assume 'pairs' mean pairs of positive and negative.
-    > ["cables that are bundled together generate a cumulative amount of heat, and have more difficulty dissipating that heat than when they are run individually. This is something to be aware of, but the relevant ABYC standard only applies to wiring carrying 50 volts or more, so it is typically a problem with AC circuits on a boat, not your typical 12 volt DC wiring installation. In general, if three conductors are bundled, reduce maximum amperage by 30%. If four to six conductors are bundled, reduce maximum amperage by 40%. If seven to 24 conductors are bundled, reduce amperage by 50%."](https://www.westmarine.com/WestAdvisor/Marine-Wire-Terminal-Tech-Specs)
-
-LUKE MUEHLHAUSER PROJECT WISH
-  DATE : 12018-11-05
-  LINK : http://lukemuehlhauser.com/projects-i-wish-i-had-time-for/
-  NOTE : "Projects I wish I had time for"
-  AUTH : Luke Muehlhauser
-  TYPE : list
-
-FROM AI TO ZOMBIES
-  DATE : 12018-11-05
-  AUTH : Eliezer Yudkowsky
-  PERS : Luke Muehlhauser
-  LINK : http://lukemuehlhauser.com/my-worldview-in-5-books/
-  NOTE 
-    > "Rationality: From AI to Zombies" (2015)
-    > "A singular introduction to critical thinking, rationality, and naturalistic philosophy. Both more advanced and more practically useful than any comparable guide I’ve encountered."
-  TYPE : book
-
-THE BIG PICTURE
-  DATE : 12018-11-05
-  AUTH : Sean Carroll
-  PERS : Luke Muehlhauser
-  LINK : http://lukemuehlhauser.com/my-worldview-in-5-books/
-  NOTE 
-    > "The Big Picture" (2016)
-    "If Yudkowsky’s book is “how to think 101,” then Carroll’s book is “what to think 101,” i.e. an introduction to what exists and how it works, according to standard scientific naturalism."
-  TYPE : book
-
-DOING GOOD BETTER
-  DATE : 12018-11-05
-  AUTH : William Macaskill
-  PERS : Luke Muehlhauser
-  LINK : http://lukemuehlhauser.com/my-worldview-in-5-books/
-  NOTE 
-    > "Doing Good Better" (2015)
-    "My current favorite “how to do good 101” book, covering important practical considerations such as scale of impact, tractability, neglectedness, efficiency, cause neutrality, counterfactuals, and some strategies for thinking about expected value across diverse cause areas.
-    & Importantly, it’s missing (a) a quick survey of the strongest arguments for and against utilitarianism, and (b) much discussion of near-term vs. animal-inclusive vs. long-term views and their implications (when paired with lots of empirical facts). But those topics are understandably beyond the book’s scope, and in any case there aren’t yet any books with good coverage of (a) and (b), in my opinion."
-  TYPE : book
-
-ENLIGHTENMENT NOW
-  DATE : 12018-11-05
-  AUTH : Steven Pinker
-  PERS : Luke Muehlhauser
-  LINK : http://lukemuehlhauser.com/my-worldview-in-5-books/
-  NOTE
-    > "Enlightenment Now" (2018)
-    > "Almost everything has gotten dramatically better for humans over the past few centuries, likely substantially due to the spread and application of reason, science, and humanism."
-  TYPE : book
-
 MOORE'S LAW OF MAD SCIENCE
-  DATE : 12018-11-05
+  DATE : 22E14
   TYPE : quote
   LINK : https://www.azquotes.com/author/19388-Eliezer_Yudkowsky
   QOTE : "Every eighteen months, the minimum IQ necessary to destroy the world drops by one point."
   AUTH : Eliezer Yudkowsky
 
 GROW MORE ETHICAL
-  DATE : 12018-11-05
+  DATE : 22E14
   TYPE : quote
   LINK : https://www.azquotes.com/author/19388-Eliezer_Yudkowsky
   QOTE : "You are personally responsible for becoming more ethical than the society you grew up in."
   AUTH : Eliezer Yudkowsky
 
 FACE DARKNESS
-  DATE : 12018-11-05
+  DATE : 22E14
   TYPE : quote
   LINK : https://www.azquotes.com/author/19388-Eliezer_Yudkowsky
   QOTE : "Many have stood their ground and faced the darkness when it comes for them. Fewer come for the darkness and force it to face them."
   AUTH : Eliezer Yudkowsky
 
 LAW OF COMPARATIVE ADVANTAGE LITMUS
-  DATE : 12018-11-05
+  DATE : 22E14
   TYPE : quote
   LINK : https://www.azquotes.com/author/19388-Eliezer_Yudkowsky
   QOTE : "Litmus test: If you can't describe Ricardo's Law of Comparative Advantage and explain why people find it counterintuitive, you don't know enough about economics to direct any criticism or praise at "capitalism" because you don't know what other people are referring to when they use that word."
   AUTH : Eliezer Yudkowsky
 
 MORE DARING
-  DATE : 12018-11-05
+  DATE : 22E14
   TYPE : quote
   LINK : https://www.azquotes.com/author/19388-Eliezer_Yudkowsky
   QOTE : "Remember, if you succeed in everything you try in life, you're living below your full potential and you should take up more difficult or daring things."
   AUTH : Eliezer Yudkowsky
 
-MORE DARING
-  DATE : 12018-11-05
-  TYPE : quote
-  LINK : https://www.azquotes.com/author/19388-Eliezer_Yudkowsky
-  QOTE : "There is no justice in the laws of nature, no term for fairness in the equations of motion. The Universe is neither evil, nor good, it simply does not care. The stars don't care, or the Sun, or the sky. But they don't have to! WE care! There IS light in the world, and it is US!"
-  AUTH : Eliezer Yudkowsky
-
 GENEROUS TIT FOR TAT
-  DATE : 12018-11-05
+  DATE : 22E14
   QOTE : "A problem with the tit-for-tat strategy is that it is overly sensitive to misunderstanding or misimplementation. This can be effectively corrected by adding some generosity (occasionally cooperating after the other player defects), or contrition (cooperating after being punished for an unintended defection) (Wu and Axelrod, 1995)."
   LINK : https://www.wnycstudios.org/story/104010-one-good-deed-deserves-another
   TAGS : philosophy, psychology
@@ -4517,14 +1822,8 @@ GENEROUS TIT FOR TAT
     - if partner's previous interaction was cooperate: cooperate
     - if partner's previous interaction was defect: 90% chance of defect, 10% change of cooperate
 
-GUJARATI INDIAN
-  DATE : 12018-11-05
-  TYPE : book
-  NOTE : "Little Bit of This, A Little Bit of That: A Gujarati Indian Cookbook for Aotearoa"
-  TAGS : food
-
 BLOCKCHAIN EXPLAIN
-  DATE : 12018-11-06
+  DATE : 22E14
   LINK : https://bitcoin.stackexchange.com/questions/5540/what-does-the-term-longest-chain-mean
   TAGS : bitcoin, blockchain
   TERM 
@@ -4540,81 +1839,13 @@ BLOCKCHAIN EXPLAIN
     - This chain is now the longest at 210002 blocks and becomes the longest chain. It becomes the "definitive" blockchain.
     - (The transactions in the alternate fork don't disappear - they simply get put back into the pool of unconfirmed transactions and miners will put them into a subsequent block)."
 
-TIME TRAVEL NOTES
-  DATE : 12018-11-06
-  LINK : https://www.youtube.com/watch?v=wPODghAr3Vc
-  FILE : 12018-11-06_travel.jpg
-  TAGS : time
-
-JS MAP IS DICTIONARY?
-  DATE : 12018-11-06
-  LINK : https://www.beyondjava.net/map-vs-object
-  TAGS : code, web
-  NOTE
-    - It iterates without surprises.
-    - It's optimized for adding items to and removing items from the map.
-    - The keys can by any type, not just strings.
-    - You can't pollute it with custom methods.
-
-JS REDUCE
-  DATE : 12018-11-06
-  NOTE
-    > "Whenever you need to transform a list into a single object, consider using reduce"
-
-CSS LINK IN BODY
-  DATE : 12018-11-06
-  LINK
-    > https://stackoverflow.com/questions/6236097/is-link-not-rel-stylesheet-allowed-to-be-used-in-body
-    > https://github.com/whatwg/html/commit/179983e9eb99efe417349a40ebb664bd11668ddd
-    > http://w3c.github.io/html/document-metadata.html#the-link-element
-  TAGS : code, web
-  PROJ : Memex
-
-GIT SQUASH
-  DATE : 12018-11-06
-  LINK : https://github.com/todotxt/todo.txt-android/wiki/Squash-All-Commits-Related-to-a-Single-Issue-into-a-Single-Commit
-  TAGS : code, git
-
-PV JUNCTION POSITION
-  DATE : 12018-11-06
-  PROJ : Van
-  NOTE
-    > Considerations (in order of importance)
-    1 Access MC4 connectors with panels on (add/remove/replace MC4 inline fuses, dc panels)
-    2 Cable length (total)
-    3 Cable length (roof)
-    4 Street visibility
-    5 Access junction box with panels on (adjust cable length)
-
-    > Front
-    + can access junction box with panels on (adjust cable length)
-    + can access MC4 connectors with panels on (add/remove/replace MC4 inline fuses, dc panels)
-    ~ medium cable length (roof)
-    - more cable length (total)
-    - visible from street
-
-    > Back
-    + can access junction box with panels on (adjust cable length)
-    + hidden from street
-    ~ additional cable connection to access MC4 connectors with panels on (add/remove/replace MC4 inline fuses, dc panels)
-    - more cable length (total)
-    - more cable length (roof)
-
-    > Mid
-    + less cable length (roof)
-    + hidden from street
-    ~ medium cable length (total)
-    - can't access MC4 connectors with panels on (add/remove/replace MC4 inline fuses, dc panels)
-    - can't access junction box with panels on (adjust cable length)
-
 DOVE MAGE
-  DATE : 12018-11-06
+  DATE : 22E14
   LINK : https://twitter.com/komiya_ma/status/1059456425603158016
   FILE : 12018-11-06_komiyaMa.png
   AUTH : Komiya Ma
   TYPE : image
   TAGS : inspiration, bnw, bird
-
   AUTH : brennan
   SRCE : Merveilles
   QOTE
@@ -4624,286 +1855,8 @@ DOVE MAGE
     & my advice, in the end, isn't to pretend these things don't exist, but to pick the one(s) you genuinely want to fit into. I don't even think you have to pick one to fight upwards and 'win' - the existential searching part is simply not knowing _where_ you are, because even if you're in the middle (and most of us realize we're average) finally knowing _where_ is perhaps the most comfortable thing of all.
     & but I said it last night and I want to rephrase it a little here: a lot of people will just find that rock to cling to in the haze and then never let go / will be destroyed when they lose that part of their identity. I said that stagnation was the ultimate failure, but stagnation has to have some sort of relativity to be stagnant against. I think, in this framework and metaphor you have a few places to be truly stagnant while appearing to move and a few places to appear stagnant but are growing laterally, or existing in multiple groups and so forth, so perhaps my warning is just about self awareness and self honesty about that growth (which is really what all good advice comes down to in the end, eh?)"
 
-OUT OF BALANCE
-  NOTE
-    > "Unhinged pressesion"
-    > Planet reflects balance of world
-    > /\/\/\/\/////////////
-  PROJ : Swordy
-
-LIMINAL
-  DATE : 12018-11-06
-  PERS : brennan
-  SRCE : Merveilles
-  TERM : Liminal places:
-
-PARETO EFFICIENCY
-  DATE : 12018-11-06
-  LINK : https://en.wikipedia.org/wiki/Pareto_efficiency
-  PERS : horsman
-  SRCE : Merveilles
-  TERM : Pareto efficiency:
-
-LED BREAKOUT
-  DATE : 12018-11-08
-  LINK 
-    > https://www.sparkfun.com/products/10616
-    > https://electronics.stackexchange.com/questions/27014/looking-to-create-36-channels-of-pwm-control-for-led-sculpture
-    > https://www.adafruit.com/product/815
-  PROJ : Light
-
-FEEL THE COLD
-  LINK : https://www.youtube.com/watch?v=eEDmZlVCCzc
-  TAGS : inspiration, env, nature
-  TYPE : video
-
-SKETCH BASICS
-  DATE : 12018-11-13
-  TYPE : note
-  PROJ : Sylo, Sketch
-  TAGS : ux, ui
-  NOTE 
-    > Insert menu
-    & Top left
-    - "Artboard" like a canvas
-    - Shape, Vector, Pencil, Text, Image = normal
-    - "Symbol" (like Photoshop "smart obj")
-    
-    > Zoom shortcuts
-    - Command + 1 = Center Canvas
-    - Command + 2 = Zoom Selection
-    - Command + 3 = Center Selection
-    
-    > Alignment
-    - Hold shift, click (select) multiple objects, then can click align to align relative to each other
-    
-    > "Shared Styles"
-    - In inspector on right hand side, drop down "No Shared Style"
-    - Dropdown option "Create new Shared Style"
-    
-    > Symbols
-    & Like a Photoshop 'smart object'
-    - Right click symbol 'Detach from Symbol' to un-symbol
-    - To create: select items, then click "Create Symbol" in top menu
-    
-    > Duplicating object
-    - Select layer, hold alt/option and drag it
-    - red lines for alignment while dragging
-    
-    > Even spacing between objects
-    - Select multiple objects, then click "Distribute Horizontally" (from right inspector menu, near top)
-    
-    > Exporting
-    & Batch smart exporting of objects for app
-    - Must select each artboard and check "Background Color" (otherwise transparent) and "Include in Export" from right-hand inspector
-  PROJ : Sylo
-  LINK : http://megumi.co/learn/sketch2.htm
-
-SYLO STYLE NOTES
-  DATE : 2018-11-12
-  TYPE : note
-  PROJ : Sylo
-  TAGS : ux, ui
-  NOTE
-    > Spacing in 6s
-    - 6, 12, 18
-    
-    > Color
-    & Mainly white with bright accents
-    & blue for messages
-    & Orange for active buttons
-    & Grey (dark to light)
-    - text
-    - secondary
-    - lines (and top/bottom)
-    - cards (background boxes)
-    & Can use red-shift / blue-shift for orange/blue usage?
-
-MIGRATE TO LIBRARY SETUP (MASTER STYLE GUIDE)
-  DATE : 2018-11-13
-  PROJ : Sylo, Sketch
-  TAGS : ux, ui
-  LINK
-    > https://medium.com/@jamesfuthey/migrating-your-existing-sketch-projects-to-libraries-2af33d545449
-    > https://github.com/zeroheight/library-symbol-replacer
-    > https://sketch.cloud/
-  NOTE
-    & Libraries of shared symbols
-    & Libraries can reference other libraries
-    > New file structure
-    & SyloDesign_FeatureX (includes "SyloLibrary_Core")
-    & SyloDesign_Tablet (includes "SyloLibrary_Core")
-    & SyloDesign_GroupChat (includes "SyloLibrary_Core")
-    & SyloLibrary_Core
-    - includes SyloLibrary_Buttons
-    - includes SyloLibrary_Icons
-    - includes SyloLibrary_Illustrations
-    - includes SyloLibrary_Segments (tab menus etc, combos of elements)
-    - includes SyloLibrary_Colors
-    - Might not actually need all the different library files
-    > Use Sketch Cloud to sync between team members
-
-TECHNIQUE FOR SYMBOLS WITH DROPDOWN OPTIONS
-  DATE : 2018-11-13
-  TAGS : ux, ui
-  PROJ : Sylo, Sketch
-  LINK : https://medium.com/ux-power-tools/this-is-without-a-doubt-the-coolest-sketch-technique-youll-see-all-day-ddefa65ea959
-
-EASY COLOR CHANGE FOR ICONS
-  DATE : 2018-11-13
-  TAGS : ux, ui
-  PROJ : Sylo, Sketch
-  NOTE : Set all icons as masks and use a color symbol on top of it. That way you can just override the color symbol if you want to change the color. One icon symbol…any color you want
-  LINK
-    > https://medium.com/design-prototype/sketch-tint-icons-using-nested-symbols-2d52867e0d29
-    > https://medium.com/ux-power-tools/a-better-way-to-make-buttons-in-sketch-6c23470f27c
-    > https://www.uxpower.tools
-
-SYMBOL NAMING / STRUCTURE
-  DATE : 2018-11-13
-  TAGS : ux, ui
-  PROJ : Sylo, Sketch
-  LINK : https://medium.com/@lloyd/sketch-symbols-best-practices-now-that-nested-overrides-are-a-thing-9b651d3fe1a4
-  NOTE 
-    - Use slashes for categories (ie: Button/Thing/Whatsit)
-    - Use function and state for naming, not visual descriptors (ie: "Button/Primary" not "Button/Red")
-    - Be consistent
-    - "Ensure that nested symbols you’ll regularly replace (i.e. for different states) have the same text layer names. If you replace a symbol, it will persist any override text if it shares the same text layer name." 
-    - Convention: Instance names lowercase, editable text (label, text in field) UPPERCASE
-    - "Put any editable text on top of your groups as a rule. Then when you hit return twice to expand a group, you’re immediately editing text!"
-    - "Your layer hierarchy is reflected in the overrides panel"
-    - "Symbols which are the same dimensions will be available in the overrides panel as a replacement option" - useful for icons, and states (input field - norm, req, error, ok etc)
-
-SYMBOL RESIZE
-  DATE : 2018-11-13
-  PROJ : Sylo, Sketch
-  TAGS : ux, ui
-  LINK
-    > https://medium.com/sketch-app-sources/sketch-39-resizing-cheat-sheet-feec0450e7e2
-    > https://medium.com/@lloyd/sketch-symbols-best-practices-now-that-nested-overrides-are-a-thing-9b651d3fe1a4
-  NOTE
-    > Can set resize settings, and resize instances of symbols
-    > Resizing elements inside of symbols will be synchronized among 
-    > All symbols should be re-sizable!*
-    - Stretch = free transform
-    - Pin to Corner = same distance from closest corner, or centered
-    - Resize Object = obj change size but keep edge (margin) distance
-    - Float in Place = tab-menu-like even spacing
-    > Turn on "Pixel fit when resizing layers" in Sketch preferences
-    > Control + 1 or 2 or 3 or 4 set resize rule to selected layer
-    > Resize rules are excluded from 'Shared Styles'
-    > "Text should be fixed, and aligned correctly, so that when you resize a symbol it maintains its position & padding properly. Text should have a “Resize Object” resizing property."
-    > "Design the smallest version of a symbol. It’s easier to design around stretching Symbols than compressing them."
-    > "Lock nested symbols to prevent them from appearing in the overrides panel. By locking nested symbols on the symbols original artboard, they no longer appear as an override in the inspector"
-    > right-click => Set to Original Size
-
-PRINCIPLE ANIMATE SKETCH
-  DATE : 2018-11-13
-  TAGS : ux, ui
-  LINK : http://principleformac.com
-  TYPE : tool
-  NOTE : Animate Sketch designs
-  PROJ : Sylo, Sketch, Principle
-
-RUNNER SKETCH PLUGIN
-  DATE : 2018-11-13
-  LINK : https://sketchrunner.com
-  NOTE
-    > Plugin for Sketch, makes spotlight/alfred like quick command runner text box
-    - Command+' = open input
-    - Shift+Command+' = run last command 
-  TYPE : tool
-  TAGS : ux, ui
-  PROJ : Sylo, Sketch
-
-  SENSIBLE SIDE BUTTONS
-  TYPE : tool
-  TAGS : osx
-  DATE : 2018-11-15
-  LINK : https://sensible-side-buttons.archagon.net
-  NOTE : Support for 3rd party mouse (forward/back buttons)
-
-SYLO COLOURS
-  PROJ : Sylo
-  DATE : 2018-11-14
-  NOTE
-    > PRIMARY
-  - Colour/Primary #F15A29 - Call to action (as button bg), or primary option link button (as text color)
-  - Secondary #495162 - Titles, user input, chat messages
-  - Main #4D6AA7 - your (outgoing) messages/payment (small arrow in transaction icon) etc, toggle switch, empty avatar, secondary option link button (eg: 'Add Token'), checkboxes
-
-    > SECONDARY
-  - Colour/Active #8A96AA - description text, text input line active
-  - Colour/Inactive #C1C5CA - lines and inactive tab icon
-  - Placeholder #D2D8DE - input placeholder/hint text
-  - Background #F6F6F6 - card background, messages from others
-
-  > SPECIAL
-  - Fail #EE3D52 - failed transaction, errors
-  - Warn #FFA001 - warnings
-  - Done #33BB5D - completed incoming transactions
-
-  > OPACITY
-  - 15% - background (circle) of transaction (arrow/direction) icon
-
-SKETCH AUTO WIDTH BUTTON
-  TYPE : tool
-  PROJ : Sketch
-  DATE : 2018-11-14
-  LINK
-  > https://github.com/dwilliames/paddy-sketch-plugin
-  > https://animaapp.github.io
-  NOTE
-  > Plugins for auto width buttons based on text width
-  > None of them really work properly, all have some gotcha. Will be good when one supports nested symbols
-  - Anima's Autolayout - doesn't work in Symbols...
-  - Paddy (discontinued)
-  - compo
-
-SKETCH BUTTON STATES
-  PERS : Matthieu
-  SRCE : Hackland
-  DATE : 12018-11-15
-  PROJ : Sketch
-  NOTE : Symbol for hover state color = color symbol + white/black 50% opacity over the top of button background symbol / rect (shared style)
-
-SKETCH CRAFT
-  PERS : Matthieu
-  SRCE : Hackland
-  TYPE : tool
-  DATE : 12018-11-15
-  PROJ : Sketch
-  LINK : 
-  NOTE : Suggested plugin suite
-
-INVISION
-  DATE : 12018-11-15
-  PROJ : Sketch
-  TYPE : tool
-  LINK : https://www.invisionapp.com/
-  NOTE : Interactive flow prototype from Sketch files (or Figma / PS etc)
-  PROJ : Sketch
-
-SKETCH SYNCING
-  DATE : 12018-11-15
-  PROJ : Sketch
-  LINK
-    > https://www.goabstract.com
-    > https://plantapp.io
-  NOTE
-    > Kactus
-    > Abstract
-    > Plant
-    > Sketch Cloud
-
-SHARED STYLES
-  DATE : 12018-11-15
-  PROJ : Sketch
-  TYPE : article
-  LINK : https://medium.com/sketch-app-sources/using-shared-styles-and-symbols-in-sketch-8cab4650dc55
-
 RABBIT HOLES
-  DATE : 12018-11-28
+  DATE : 22E14
   PERS : neauoire
   SRCE : Merveilles
   QOTE
@@ -4912,7 +1865,7 @@ RABBIT HOLES
     & people grow attached to recurring characters, or worlds, and rabbit holes of content is a good way to create an attachment"
 
 WE ARE ALL BIRDS
-  DATE : 12019-01-04
+  DATE : 22E14
   PERS : neauoire
   AUTH : neauoire
   SRCE : Merveilles
@@ -4920,34 +1873,8 @@ WE ARE ALL BIRDS
   TYPE : image
   WIDE : true
 
-SEEKING MAGICIANS
-  DATE : 12018-12-18
-  TYPE : quote
-  PERS : Matthew Gatland
-  SRCE : Twitter
-  LINK
-    > https://twitter.com/michael_nielsen/status/1074150124169773056
-    > https://autotranslucence.wordpress.com/2018/03/30/becoming-a-magician/
-  QOTE 
-    > "...my definition of magic - competence so much more advanced than yours with such alien mental models that you cannot predict the outcomes of the model at all."
-    > "The way to extraordinary growth and changes often involes a fundamental ontological or 'lens' shift in how you see the world. Magicians are wearing not just better, but fundamentally different shaped lenses to the rest of us. And regardless of your skills and experience, it is likely that you are a magician to someone else."
-    > "Meeting magicians is the first step to becoming one - when you are attempting to learn implicit knowledge that by definition you don't understand, it is important to have a bunch of examples in front of you to feed your brain's pattern-recognition systems. This will start to change your worldview without the controlling 'you' explicitly approving or denying every new belief or framework."
-    > "Magicians or their work often seem to have a subconcious glow that I am drawn to, particulary if they use a type of magic that I recognise is on my critical path and thus something I'm currently seeking. Concrete steps I take to find them include asking my most interesting friends to introduce me to their most interesting friends, going down similar rabbit holes with bibliographies of books that excite me, and generally living in 'explore' mode at various points in life, while recognising that not every avenue will lead to a jackpot."
-
-PERSONALITY ARCHITYPES
-  DATE : 12018-12-22
-  LINK : http://www.personalitypage.com/html/INTJ.html
-  PERS : Sasha
-  SRCE : Sylo
-
-FUTTER
-  DATE : 12018-12-30
-  TYPE : tool
-  LINK : https://flutter.io
-  NOTE : Multiplatform app dev tool
-
 SIXTEEN PERSONALITIES
-  DATE : 12019-01-11
+  DATE : 22E14
   PERS : Sasha
   SRCE : Sylo
   TYPE : tool
@@ -4976,13 +1903,13 @@ SIXTEEN PERSONALITIES
     - Turbulent (-T): Self-conscious and sensitive to stress. Experience a wide range of emotions and to be success-driven, perfectionistic and eager to improve.
 
 WTFPL
-  DATE : 12019-01-30
+  DATE : 22E14
   LINK : https://en.wikipedia.org/wiki/WTFPL 
   TYPE : tool
   NOTE : "What the fuck public license" aka "do what the fuck you want"
 
 NATURE HOME
-  DATE : 12019-01-30
+  DATE : 22E14
   PERS : InvaderXan
   SRCE : Merveilles
   QOTE : “Nature is not a place to visit. It is home.”
@@ -4990,121 +1917,28 @@ NATURE HOME
   LINK : https://kitty.town/@InvaderXan/101411209086684756
   TYPE : quote
 
-CSS STATS
-  DATE : 12019-01-30
-  LINK : https://cssstats.com/
-  TYPE : tool
-
 ANIMAL LIBERATION
-  DATE : 12019-01-30
+  DATE : 22E14
   TYPE : book
   PERS : neauoire
   AUTH : Peter Signer
-
-WORK REQ
-  SRCE : reddit
-  TYPE : quote
-  AUTH : explots
-  QOTE : "...Once you figure out how much time you want to work a week, how much you care about $$$$ vs a happy work life balance vs a good work environment vs a topic you're passionate about vs a topic you find intellectually stimulating (I'm at 7 | 5 | 8 | 9 | 8 in my current role - pretty decent) - you can pick between these options and lean into the skill set: coding, finance, etc. And then you need a bunch of networking to get your foot in the door, but you'll prob find those people even on this subreddit."
-
-OILS EXPERIMENT
-  FILE : 12019-02-01_oil.jpg
-  TYPE : image
-  TAGS : inspiration
-  AUTH : Miles Johnston
-  LINK : https://twitter.com/MilesJohnston/status/1090677622848278528
 
 CONCIOUSNESS LEVEL
   AUTH : Albert Einstein
   QOTE : "No problem can be solved from the same level of consciousness that created it."
 
-PERSONALITY PLAY UNIFIED MODEL
-  LINK : https://www.gamasutra.com/view/feature/134842/personality_and_play_styles_a_.php
-  TYPE : article
-  PERS : Phil James
-  TAGS : psychology, gamedev
-  DONE : false
-
-TILTED LOSS
-  FILE : 12019-02-02_tiltedLoss.jpg
-  TYPE : image
-  TAGS : inspiration
-  AUTH : Miles Johnston
-‏  LINK : https://twitter.com/MilesJohnston/status/1091428927724232704
-
-SAILING NOTES
-  DATE : 12019-02-02
-  FILE : 12019-02-02_sailDirections.jpg
-  TAGS : sailing
-  TERM
-    > Bow / Foredeck: front
-    > Midship: middle
-    > Stern: rear
-    > Port: Left (four letters in "port" and "left", "there is PORT LEFT in the bottle")
-    > Starboard: Right
-    > Cockpit: Driver's section
-    > Tiller: Steering stick, turns the rudder
-    > Rudder: Steering wing undersea
-    > Keel: Undersea wing/fin
-    > Hull: Bottom and sides of boat
-    > Helm: Steering wheel
-    > Mast: Tall post for main sail
-    > Boom: Attached to mast, holds bottom of main sail
-    > Sheet: Rope
-    > Main Sheet: rope that connects to boom to control amount of movement the boom has 
-    > Jib Sheet: 
-    > Halyard: Rope connecting to top of (each) sail, rope for pulling up the sail
-    > Dock lines
-    > Head of the sail: top point of the sail
-    > Trim: Adjust sail
-    > Main sail: Main wing
-    > Winch: clockwise tension maker
-    > Head sail sheets
-    > Rigging: Wires to support the mast
-    > Backstay: Rear rigging attached attached to mast
-    > Shrouds: Side rigging attached attached to mast
-    > Forestay/Jibstay: Front rigging attached to mast
-    > Headsail/Jibsail: Front sail on Forestay/Jibstay. "100% or less" in size meaning a right angle triangle to the mast. If the headsail in >100% (past the mast) then it is called a Genoa
-    > Genoa: Deadsail >100% in size (from forestay to beyond the mast)
-    > Roller furling: Roll up system for headsail
-
-    > (Sail) Head: Top triangle
-    > (Sail) Tack: Front triangle which attaches to the bow
-    > (Sail) Clew: Back triangle
-    > Wind vane: top of mast wind direction display
-    > (Sail) Telltales: Strings on sail that help display wind movement along the sail (to tell if the sail is in the right position)
-
-    > Tack: Turn where the bow of the boat passes through the wind (Close haul / close reach switch)
-    > Jibe: Turning where the stern passes through the wind (Broad reach switch)
-
-    > Spinnaker: Large parachute like sail for down wind sailing (or broad reach). Typically used in lighter wind, often used by beginners. Opens on the outside of rigging, uses extra/different rigging and pole.
-  NOTE
-    > Lines, Halyards, Sheets = different ropes.
-  LINK
-    > https://www.youtube.com/watch?v=WjBYRUZbU4Y
-    > https://www.youtube.com/watch?v=OUakTKXdHmA
-
-WILLAMETTE RIVER LIDAR 
-  DATE : 12019-03-29
-  TYPE : image
-  TYPE : inspiration
-  FILE
-    > 12019-03-29_WillametteRiverLidarMap.jpg
-    > 12019-03-29_WillametteRiver.pdf
-  LINK : https://www.oregongeology.org/pubs/ll/p-poster-willamette.htm
-
-FAROE ISLANDS
-  DATE : 12019-07-07
-  FILE : 12019-07-07_lucaOrioFaroeIslands.jpeg
-  TYPE : image
-  TAGS : inspiration
-  AUTH : Luca Orio
-  LINK : https://merveilles.town/web/statuses/102373310863735829
-
 MOVEMENTS
-  DATE : 12019-007-11
+  DATE : 22E14
   FILE : 12019-07-11_movements.gif
   TYPE : image
   TAGS : inspiration
   AUTH : The OA
-`
+
+META / A NEW WAY TO ORGANIZE
+  DATE : 22E14
+  PERS : Faen
+  SRCE : Self
+  LINK : https://kormyen.github.io/memex/
+  TAGS : Meta, Faen, Begin
+  NOTE : This is where my own posts to this memex begin. The previous posts were curated by the creator of this memex repository and tool, Kormyen. Although many of the posts are posts I would have made eventually, Kormyen is the original curator of them. I have removed posts that don't align with the sorts of things I'd like to share here, and have kept things I found interesting! From here onwards, all posts will be my own. I want to organize all of my thoughts, favorite places online, favorite albums, quotes, books, and similar. Many thanks to Kormyen for creating this system.
+  `
