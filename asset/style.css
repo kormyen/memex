@@ -163,7 +163,7 @@ nav {
 	z-index: 100;
 	left: 0px;
 	top: 0px;
-  /*overflow-y: scroll;*/                 /*allow menu to scroll on small screens*/
+  overflow-y: scroll;                 /*allow menu to scroll on small screens*/
 }
 nav:hover {
   opacity: var(--alpha-ascent);

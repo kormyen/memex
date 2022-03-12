@@ -12,7 +12,8 @@ function Theme (default_theme = { background: '#222', f_high: '#fff', f_med: '#c
   this.collection = {
     default: default_theme,
     noir: { background: '#222', f_high: '#fff', f_med: '#ccc', f_low: '#999', f_inv: '#fff', b_high: '#888', b_med: '#666', b_low: '#444', b_inv: '#000' },
-    pale: { background: '#e1e1e1', f_high: '#000', f_med: '#777', f_low: '#fff', f_inv: '#000', b_high: '#eee', b_med: '#999', b_low: '#ccc', b_inv: '#fff' }
+    pale: { background: '#e1e1e1', f_high: '#000', f_med: '#777', f_low: '#fff', f_inv: '#000', b_high: '#eee', b_med: '#999', b_low: '#ccc', b_inv: '#fff' },
+    faen: { background: '#000000', f_high: '#c3cedc', f_med: '#5F807F', f_low: '#4E5F6E', f_inv: '#0B0B0B', b_high: '#111111', b_med: '#0F0E0F', b_low: '#090909', b_inv: '#87A0B8' }
   }
 
   this.install = function (host = document.body, callback) {
@@ -30,7 +31,7 @@ function Theme (default_theme = { background: '#222', f_high: '#fff', f_med: '#c
     localStorage.setItem('theme', JSON.stringify(theme))
   }
 
-  this.load = function (theme, fall_back = this.collection.noir) {
+  this.load = function (theme, fall_back = this.collection.faen) {
     if (!theme || !theme.background) { console.warn('Theme', 'Not a theme', theme); return }
 
     this.save(theme)
