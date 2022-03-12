@@ -1,6 +1,6 @@
 'use strict'
 
-function Theme (default_theme = { background: '#222', f_high: '#fff', f_med: '#ccc', f_low: '#999', f_inv: '#fff', b_high: '#888', b_med: '#666', b_low: '#444', b_inv: '#000' }) {
+function Theme (default_theme = { background: '#000000', f_high: '#c3cedc', f_med: '#5F807F', f_low: '#4E5F6E', f_inv: '#0B0B0B', b_high: '#111111', b_med: '#0F0E0F', b_low: '#090909', b_inv: '#87A0B8' }) {
   const themer = this
 
   this.el = document.createElement('style')
