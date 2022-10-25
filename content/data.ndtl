@@ -5087,7 +5087,7 @@ SAILING NOTES
 WILLAMETTE RIVER LIDAR 
   DATE : 12019-03-29
   TYPE : image
-  TYPE : inspiration
+  TAGS : inspiration
   FILE
     > 12019-03-29_WillametteRiverLidarMap.jpg
     > 12019-03-29_WillametteRiver.pdf
@@ -5102,9 +5102,21 @@ FAROE ISLANDS
   LINK : https://merveilles.town/web/statuses/102373310863735829
 
 MOVEMENTS
-  DATE : 12019-007-11
+  DATE : 12019-07-11
   FILE : 12019-07-11_movements.gif
   TYPE : image
   TAGS : inspiration
   AUTH : The OA
+
+CMAP SAILING CHARTS
+  DATE : 12022-10-25
+  TAGS : sailing
+  TYPE : tool
+  LINK : https://www.c-map.com/chartexplorer/
+
+WETMAPS NZ SAILING CHARTS
+  DATE : 12022-10-25
+  TAGS : sailing
+  TYPE : tool
+  LINK : https://wetmaps.co.nz/
 `
